@@ -3,64 +3,182 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#291258">
 <meta name="description" content="Ofertas conferidas da Shopee, Amazon e Mercado Livre. @achadinhosdobinga">
+<meta property="og:title" content="Achadinhos da Semana">
+<meta property="og:description" content="Ofertas conferidas da Shopee, Amazon e Mercado Livre.">
+<meta property="og:type" content="website">
 <title>Achadinhos da Semana</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Nunito:wght@400;700;800&display=swap">
 <style>
-/* Layout: lista de ofertas com foto; cada item e um link inteiro */
-:root{--bg:#F4F0FF;--card:#FFFFFF;--fg:#291258;--mut:#5F5380;--line:#DDD4F5;--acc:#DC3C46;--pill:#291258;--pillfg:#FFC93B;--disp:"Baloo 2","Trebuchet MS",sans-serif;--body:"Nunito","Trebuchet MS",system-ui,sans-serif}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#291258;--card:#38206F;--fg:#FFFFFF;--mut:#C9BDEB;--line:#4D3590;--acc:#FFC93B;--pill:#FFC93B;--pillfg:#291258;color-scheme:dark}}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.4;margin:0;padding:28px 16px 40px}
-.wrap{max-width:640px;margin:0 auto}
-h1{font-family:var(--disp);font-size:clamp(2rem,8vw,2.8rem);line-height:1.02;margin:0 0 8px;text-wrap:balance;letter-spacing:-.02em}
-h2{font-family:var(--disp);font-size:1.4rem;margin:26px 0 10px}
-.sub{color:var(--mut);margin:0 0 20px;max-width:46ch}
-.aviso{font-size:.82rem;color:var(--mut);border-top:1px solid var(--line);padding-top:14px;margin-top:26px}
-ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.it a{display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 12px;text-decoration:none;color:inherit}
-.it a:hover{border-color:var(--acc)}
-.ph{width:64px;height:64px;border-radius:12px;background:#fff;object-fit:contain;display:block}
-.tx{display:flex;flex-direction:column;min-width:0}
-.nm{font-weight:700;font-size:.95rem;overflow-wrap:anywhere}
-.ex{font-size:.8rem;color:var(--mut)}
-.pr{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap;margin-top:2px}
-.pr b{font-family:var(--disp);font-size:1.3rem;color:var(--acc)}
-.pr small{font-size:.8rem;color:var(--mut);font-weight:700}
-.go{font-size:.78rem;font-weight:700;background:var(--pill);color:var(--pillfg);padding:6px 10px;border-radius:999px;text-align:center;white-space:nowrap}
-.logo{display:block;width:min(300px,80%);height:auto;margin:0 0 14px}.logo.d{display:none}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo.l{display:none}:root:not([data-theme="light"]) .logo.d{display:block}}
-@media (max-width:420px){.it a{grid-template-columns:56px 1fr;gap:10px}.ph{width:56px;height:56px}.go{grid-column:1/-1;justify-self:start}}
-
 /* busca-css-inicio */
-.busca{margin:0 0 6px}
-.busca input{width:100%;box-sizing:border-box;font:inherit;font-size:1rem;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--fg)}
-.busca input:focus{outline:2px solid var(--acc);outline-offset:1px}
-.bs{font-size:.82rem;color:var(--mut);margin:6px 2px 0;min-height:1.2em}
-.vazio{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-top:14px}
-.vazio p{margin:0 0 8px}
-.vazio a.go{display:inline-block;text-decoration:none}
-.vh{position:absolute;left:-9999px}
+:root{--bg:#F4F0FF;--card:#FFFFFF;--fg:#291258;--mut:#5F5380;--line:#DDD4F5;--acc:#DC3C46;--pill:#291258;--pillfg:#FFC93B;--deep:#291258;--deep2:#3C1E78;--gold:#FFC93B;--disp:"Baloo 2","Trebuchet MS",sans-serif;--body:"Nunito","Trebuchet MS",system-ui,sans-serif;--r:16px;--sh:0 8px 24px rgba(41,18,88,.12)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1B0C3D;--card:#2E1A63;--fg:#FFFFFF;--mut:#C9BDEB;--line:#4D3590;--acc:#FFC93B;--pill:#FFC93B;--pillfg:#291258;--deep:#140834;--deep2:#2E1A63;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.4;-webkit-text-size-adjust:100%}
+a{color:inherit}
+svg{display:block}
 [hidden]{display:none!important}
+.vh{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+/* faixa de aviso */
+.ann{background:var(--deep);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.02em}
+.ann .in{max-width:1040px;margin:0 auto;padding:8px 16px;min-height:36px;display:flex;align-items:center;justify-content:center;gap:24px}
+.ann span{display:none;align-items:center;gap:6px}
+.ann span.on{display:flex}
+.ann svg{width:14px;height:14px;color:var(--gold);flex:none}
+@media (min-width:720px){.ann .in{justify-content:space-between}.ann span{display:flex}}
+/* marca */
+.brand{display:flex;align-items:center;justify-content:space-between;padding:12px 16px 8px}
+.logo{display:block;height:54px;width:auto}.logo.d{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo.l{display:none}:root:not([data-theme="light"]) .logo.d{display:block}}
+.ig{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.85rem;text-decoration:none;border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:999px}
+.ig svg{width:18px;height:18px}
+/* barra fixa: busca + categorias */
+.bar{position:sticky;top:0;z-index:30;background:var(--bg);box-shadow:0 1px 0 var(--line)}
+.srow{display:flex;gap:8px;padding:8px 0}
+.sbox{flex:1;min-width:0;display:flex;align-items:center;gap:8px;height:44px;border:2px solid var(--line);background:var(--card);border-radius:999px;padding:0 6px 0 14px}
+.sbox:focus-within{border-color:var(--acc)}
+.sbox>svg{width:18px;height:18px;color:var(--mut);flex:none}
+.sbox input{flex:1;min-width:0;height:100%;border:0;background:transparent;color:var(--fg);font:inherit;font-size:1rem;outline:0}
+.sbox input::placeholder{color:var(--mut)}
+.sbox input::-webkit-search-cancel-button{display:none}
+.sbox button{flex:none;width:32px;height:32px;border:0;border-radius:50%;background:var(--line);color:var(--fg);font-size:1rem;line-height:1;cursor:pointer}
+.sel{height:44px;max-width:116px;border:2px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;font:inherit;font-weight:700;font-size:.85rem;padding:0 10px}
+.cats{background:var(--deep)}
+.cats .sc{max-width:1040px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:8px 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cats .sc::-webkit-scrollbar{display:none}
+.chip{flex:none;border:0;background:rgba(255,255,255,.12);color:#fff;font:inherit;font-weight:800;font-size:.85rem;padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.chip small{opacity:.75;font-weight:700;margin-left:4px}
+.chip[aria-pressed="true"]{background:var(--gold);color:#291258}
+/* hero */
+.hero{margin:16px 0 8px;border-radius:24px;padding:26px 22px 22px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 88% 12%,rgba(255,201,59,.30),transparent 46%),radial-gradient(circle at 5% 110%,rgba(220,60,70,.28),transparent 42%),linear-gradient(135deg,var(--deep) 0%,var(--deep2) 100%)}
+.hero h1{font-family:var(--disp);font-size:clamp(2.1rem,9.5vw,3.2rem);line-height:1;margin:0 0 10px;letter-spacing:-.02em;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{margin:0 0 16px;max-width:44ch;color:#E9E1FF}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;text-decoration:none;border-radius:999px;padding:12px 18px;font-size:.95rem}
+.btn.p{background:var(--gold);color:#291258}
+.btn.s{border:2px solid rgba(255,255,255,.4);color:#fff}
+.btn svg{width:18px;height:18px}
+.como{margin-top:14px;font-size:.85rem;color:#D8CCF5}
+.como summary{cursor:pointer;font-weight:800}
+.como p{margin:8px 0 0;font-size:.85rem;color:#D8CCF5}
+/* vantagens */
+.trust{list-style:none;margin:12px 0 4px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.trust li{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.trust .ic{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;flex:none;background:rgba(220,60,70,.10);color:var(--acc)}
+.trust .ic svg{width:18px;height:18px}
+.trust b{display:block;font-size:.85rem;line-height:1.1}
+.trust span{display:block;font-size:.74rem;color:var(--mut);line-height:1.15;margin-top:2px}
+@media (min-width:720px){.trust{grid-template-columns:repeat(4,1fr)}}
+/* títulos de seção */
+.sec-h h2,main h2{font-family:var(--disp);font-size:1.35rem;line-height:1.1;margin:26px 0 10px;display:flex;align-items:center;gap:10px;scroll-margin-top:118px}
+.sec-h h2::before,main h2::before{content:"";width:6px;height:1.15em;border-radius:3px;background:var(--gold);flex:none}
+.ct{font-family:var(--body);font-size:.75rem;font-weight:800;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--mut)}
+.sec-h p{margin:-4px 0 10px;color:var(--mut);font-size:.85rem}
+/* trilho: menores preços */
+.rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.rc{position:relative;flex:none;width:152px;scroll-snap-align:start;display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 10px 10px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s,border-color .15s}
+.rc:hover{transform:translateY(-2px);box-shadow:var(--sh);border-color:var(--acc)}
+.rc:focus-visible,.it a:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.rc img{width:84px;height:84px;border-radius:12px;background:#fff;object-fit:contain;align-self:center}
+.rc .k{position:absolute;top:8px;left:8px;width:24px;height:24px;border-radius:50%;background:var(--gold);color:#291258;font-weight:800;font-size:.8rem;display:grid;place-items:center}
+.rc .lj{align-self:flex-start}
+.rc .n{font-size:.82rem;font-weight:700;line-height:1.15;min-height:2.3em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rc .p{font-family:var(--disp);font-size:1.25rem;line-height:1;color:var(--acc)}
+/* lista de ofertas */
+main>ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-columns:1fr}
+@media (min-width:720px){main>ul{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){main>ul{grid-template-columns:repeat(3,1fr)}}
+.it a{display:grid;grid-template-columns:84px 1fr;grid-template-rows:1fr auto;gap:10px 12px;align-items:center;height:100%;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s,border-color .15s}
+.it a:hover{transform:translateY(-2px);box-shadow:var(--sh);border-color:var(--acc)}
+.ph{width:84px;height:84px;border-radius:12px;background:#fff;object-fit:contain;display:block}
+.tx{display:flex;flex-direction:column;align-items:flex-start;min-width:0;gap:3px}
+.nm{font-weight:700;font-size:.95rem;line-height:1.2;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ex{font-size:.8rem;color:var(--mut)}
+.pr{display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.pr b{font-family:var(--disp);font-size:1.5rem;line-height:1.05;color:var(--acc)}
+.pr small{font-size:.78rem;color:var(--mut);font-weight:700}
+.go{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:6px;background:var(--pill);color:var(--pillfg);font-size:.9rem;font-weight:800;padding:11px;border-radius:12px;text-align:center}
+.go::after{content:"→"}
+.lj{font-size:.66rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;line-height:1.5}
+.lj-shopee{background:#FDE6E0;color:#A92E16}
+.lj-amazon{background:#232F3E;color:#FFB84D}
+.lj-meli{background:#FFE600;color:#2D3277}
+/* estados */
+.bs{font-size:.82rem;color:var(--mut);margin:10px 2px 0;min-height:1.2em}
+.vazio{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-top:14px}
+.vazio p{margin:0 0 8px}
+.vazio a{display:inline-block;background:var(--pill);color:var(--pillfg);text-decoration:none;font-weight:800;font-size:.9rem;padding:10px 16px;border-radius:999px}
+/* rodapé */
+footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
+.aviso{font-size:.82rem;color:var(--mut);margin:0 0 12px}
+.fl{display:flex;gap:16px;flex-wrap:wrap;align-items:center;font-weight:800;font-size:.9rem;margin:0}
+.fl a{text-decoration:none;color:var(--fg)}
+.fl span{color:var(--mut);font-weight:700;font-size:.8rem}
+.up{position:fixed;right:16px;bottom:16px;width:46px;height:46px;border:0;border-radius:50%;background:var(--pill);color:var(--pillfg);box-shadow:var(--sh);display:none;place-items:center;cursor:pointer;z-index:40}
+.up.on{display:grid}
+.up svg{width:22px;height:22px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 /* busca-css-fim */
 </style>
 </head>
-<body>
-<div class="wrap">
-<img class="logo l" alt="achadinhos do binga" src="data:image/png;base64,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"><img class="logo d" alt="achadinhos do binga" src="data:image/png;base64,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">
-<h1>Achadinhos da semana</h1>
-<p class="sub">45 ofertas da Shopee, Amazon e Mercado Livre. Preços conferidos na página de cada produto em 22/10/2026; onde há variações (cor, tamanho), mostramos o menor preço. Toque no produto para abrir na loja; o cupom da Shopee pode baixar ainda mais.</p>
+<body id="topo">
 <!--busca-inicio-->
-<form class="busca" role="search" onsubmit="return false">
+<div class="ann"><div class="in">
+<span class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Preços conferidos em <b>22/10/2026</b></span>
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>Novas ofertas toda semana</span>
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5 10a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 9Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg>Shopee · Amazon · Mercado Livre</span>
+</div></div>
+<div class="wrap brand">
+<a href="./" aria-label="achadinhos do binga"><img class="logo l" alt="achadinhos do binga" src="data:image/png;base64,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"><img class="logo d" alt="achadinhos do binga" src="data:image/png;base64,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"></a>
+<a class="ig" href="https://instagram.com/achadinhosdobinga" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg>@achadinhosdobinga</a>
+</div>
+<div class="bar">
+<div class="wrap">
+<form class="srow" role="search" onsubmit="return false">
+<div class="sbox">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
 <label for="q" class="vh">Buscar produto</label>
-<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="Buscar produto (ex.: chaleira)">
-<p class="bs" id="bs" aria-live="polite"></p>
+<input id="q" type="search" inputmode="search" autocomplete="off" placeholder="Buscar produto">
+<button type="button" id="lp" aria-label="Limpar busca" hidden>&times;</button>
+</div>
+<label for="lj" class="vh">Filtrar por loja</label>
+<select id="lj" class="sel"><option value="">Lojas</option><option value="shopee">Shopee</option><option value="amazon">Amazon</option><option value="meli">Mercado Livre</option></select>
 </form>
+</div>
+<nav class="cats" aria-label="Categorias"><div class="sc" id="chips"></div></nav>
+</div>
+<div class="wrap">
+<section class="hero">
+<h1>Achadinhos da <em>semana</em></h1>
+<p><b id="n-of">45</b> ofertas da Shopee, Amazon e Mercado Livre, com preço conferido em 22/10/2026.</p>
+<div class="btns">
+<a class="btn p" href="#ofertas">Ver as ofertas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+<a class="btn s" href="https://instagram.com/achadinhosdobinga" rel="noopener">Seguir no Instagram</a>
+</div>
+<details class="como"><summary>Como funciona</summary>
+<p>Toque no produto para abrir direto na loja. Onde há variações (cor, tamanho), mostramos o menor preço. Na Shopee, cupons podem baixar o valor ainda mais.</p>
+</details>
+</section>
+<ul class="trust">
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Preço conferido</b><span>Na página de cada produto</span></div></li>
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5 10a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 9Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg></span><div><b>Compra na loja</b><span>Direto na Shopee, Amazon ou ML</span></div></li>
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg></span><div><b>Sem custo extra</b><span>A indicação não encarece</span></div></li>
+<li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div><b>Ofertas novas</b><span>Atualizado toda semana</span></div></li>
+</ul>
+<section id="baratos" aria-labelledby="bt"><div class="sec-h"><h2 id="bt">Menores preços da semana</h2></div><div class="rail" id="rail"></div></section>
+<p class="bs" id="bs" aria-live="polite"></p>
 <div class="vazio" id="vazio" hidden>
-<p><b>Nenhuma oferta encontrada para “<span id="vt"></span>”.</b></p>
+<p><b id="vmsg">Nenhuma oferta encontrada.</b></p>
 <p>Não achou? Peça pra gente e a gente procura o melhor preço.</p>
-<a class="go" href="https://ig.me/m/achadinhosdobinga" rel="noopener">Pedir este produto</a>
+<a href="https://ig.me/m/achadinhosdobinga" rel="noopener">Pedir este produto</a>
 </div>
 <!--busca-fim-->
+<main id="ofertas">
 <h2>Casa e cozinha</h2>
 <ul><li class="it"><a href="https://s.shopee.com.br/7famPlziOf" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRhgCAABXRUJQVlA4IAwCAACwDQCdASpQAFAAPuFgpk0opaOoszRMARAcCWIAy5wlTAG/gjb/4yzUGRBcyp51EpW8nEsx4lkJWmnyBwDnzwTjVySgpe8rDYMq0XelK6nMkbQv0DExpnJ+zj73RwzSfMQQl1QrfzCDbWy9YuYLLVGcmRuPRk4AAP7CkxEs06LUzIxOd28qsJaR3Z4z1bNLp687ZF07H5PkOXM/9hu+tvjxdzm0iZFM2HG84/PFZoN6n+OKt1iL/jaFlFcQjZ5LNBCn/sWcXB++CgP95Up4YfMx/UjYL70ejBUizkVRE8bxziYZUWLWOnrSPudbsLwAZsARWeuhu2TBGdPRVjeuV+oxuWu5QrSYPlmpxIj74IxDDiNsZZY7LXYRxekoN30fQ5iZW2w2LGyXVIPSIDlFw1AA9IBXMdCZhrYVcoFbrxQsWb50r02gWSi7HVXYgKIaI4HalW191QYeVRCurkZZqMDnqItie2quzckOyBEBnekRhxeL7h1+Up8UbK5qvGPE8YqEdzwRIukvHFxtcEBDWbjSf3TPd24RTBCGvFnmU9Lpy7tthmCK2OwHt54dKkGsgpISw2EJlUnA6s4Um/+xyUMta54OJfSN7wuY8lr5mug16edwG5NIbngOWBrW5s1JzODIJ1JVtBE3gsEKaAOf5Bnf/2mp4SUvErmxVGsAE/kvel/chO8TSog75IhAAA=="><span class="tx"><span class="nm">Abajur Touch LED USB</span><span class="pr"><b>R$ 29,99</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/2qVWerW7ba" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRvYBAABXRUJQVlA4IOoBAADQDQCdASpQAFAAPuleqE0pJSQiMfba6SAdCWkAEg4/CmPMhqejP8Sc9VlMVNZ6NndW7r4rF4N89Hkfs5mmgiJVyAv1I77P0gJgLrRHwGYpSKO48TDNaiCfiG/cipQPrJyvuqcNw/abLjZGVmO6S7+udh1yfjvywAD+9qZe8UhVHHcKqWbPz6VuXILhE7rBriOnVTpGZr41vSfqSnHaxMtg6x/eTW5fzx8VVfNTKQ20aPlyvQXDdGWZf9QGlZNRrCCVFIPb7ap2nvmGn4gCkiarOzrS1VfGBmQ3YKSNx9NVVO9DPhZcPfnCFoO/VMNitCGU0RH0kCTRipfKB3buJxAKvhGbwF8Du/WpL3quBptix7r6xMCded8n/kf5ijmrbvWDctQG47LN2EPYigR9TAUPAf7PZyyuZKjPaFfq1uPLTI2jbthcxkKB0Mb3CQaKV3PTsSB8bVF3l10fNznQ5iePU8MqjrlvwdsIIpaHbfVB0ojnut3Wbyq2Q0edWm1K2mqgqlwZ3dI1ziuUfyOhKNLNcr0Ym5layzw//8Qp2ZvMUjzUbyXhzMCRo2bAwj6OzYnnc4kSKtIgclDQUAUaeF6tOWpv3rFuJE1VBWbD6xjVSS9xtdY7r1HfOR8E2pYCktR2X6N3Tv4KAAAA"><span class="tx"><span class="nm">Conjunto Bowls de Inox Electrolux com Tampa 3 Peças</span><span class="pr"><b>R$ 74,90</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/8AX30gxoNi" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRm4DAABXRUJQVlA4IGIDAABQFQCdASpQAFAAPuleqlEpJCOiqlYMOSAdCUAYdIGxpdfnfQu64pQjPE/gZxFVnEdDlHBV5Q48guU76t4CF5Cf+Adgd2FcsKXE7r3aC0izeBjudh6TbXwUSNvNSMApDemE7NUMNZ0TdP2fiDOaabn0NhhEXSNR24zqrTR+32HnX6/tNnQS3CO1o9F0aoc+OPaQfgXLQJjmSqaiQm07LfYT85m7DDSUPNDMKurs54mA7CtAAAD+CtIAU4j5x6RM73MEwPR/XrO+xMh8jdmHlUDerQDRaXSkNdZJO0eIyLfrPPalKb0r25c4sGeyC4+wg3hDxB++YDVTeUH8ASbimbKed/IMMyBg+RuauLQTTXDAlAY1mpj3txzSUw/blu1xDKDHcMcO624o61s4n6+gAX2wQgVKYryb+kkwCtswrOtmQWX6snD9dLZyLqiK125OUpwwP+xDROq2p8e0JpCKcLWXvSdJWdJazeeHzEumCav1xuzGb/TU68cORxA+tXQQuT8ZR17Q88vVXbVHorX9DIGcBK36olC7gyWAIw16nXC4pV0Hmiwo59dhu559gZvHf0TFeEmRcf/gDLmRK6sL5s+zGZcdrhnFzWzofvmmBWGyN2rBN+PHpo/2mvZQY0ICj3ngvwpOOYsSfuy6rLzfEOECOIjfviRlIoKyiXGBG4ijDRX8NmS6sMzs+0esfP2B88cgiFqdRsJALaIxAkmRtggfxJkz/WMA1/hbM7hA25QyI13+Oe3Bql31O2mS+35ehskvLBxczy7Ju8zqysce3YoEHYNtzncghzB1u37ePDJ5hkzJmdeUA3x79yV+UrtPBndfOFgqS/n3BtCV+Bx4ZzkFgRsUbHC2qksQP734PhqNd5VZBMrSZLaz06I4+Jx2CLtCuQDaB50WpW3HIjAbiYpKq5gseCeTqkesTWZtJraFMUNiOkcMoDH7SmQdIduo3X68Q6CZ2cqXAd81jwt3kCoj9tnyQXAFPMOX+AJrOrx9RvMpfQ3zINOh432txQzjqsG8Buxjk/FFp1aPCT0uhH3jsu/GJOEZojpb/iijKq5YC5+C/Uo3rOah9ViYqL9q+pdSPyw54Xjh5q72v5iYoyr7Ejy8XSvrt4yET48qLXIrnzOGFVITT4jMMqGcTk0gTl4wAA=="><span class="tx"><span class="nm">Chaleira Elétrica 1,8L 220V</span><span class="pr"><b>R$ 44,42</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/50a1EtMf8R" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRnQDAABXRUJQVlA4IGgDAABQEgCdASpQAFAAPulqqlApJiOip7VdcSAdCUAWufaVpANAlU9d+FsbcuOPzLLpNFSEbvo7Zs29363AI1p/soOiw9QRIlqT10Xv1cbhpSXHM7TWUUjtkIL+5MFSclHdCkEwgfenWdICpATfO9U/jA+vNAq5k3hVz51vyWVCbZWyGMoMW/6NTpZr0CBmb20vAnslQXDGiNOasD36gAD+xu1xJtQySjpBlgdp785WJHDgK/EUxYgQlXkLnxc/saaktFkHMEzrcvJMYdeIoWJeIrjXa1I2Nvil4OJ1JAiAd7Ay7889ubYJluTIXvTkHaOkl7oN5X4rvGfeGhseFIiIIRAzslpsg1B7FFqDpMo1MziP2u/DQsgO3/h6bwE1wBXq6H7Wie5Eu/7sSqfLPXyzVGXXF2eiawUyCwtVFo6U/hiCFCr8JhTlqU2rMOWPhkcYKlKqozM6G9C0sow5NxcQiWwIrJBQeUXxxnQzYLzubaGCSAQW9kXhzchC2Bb+GYZJmTXM8pQ3pD+G6oNP8hKNLaswRyUeUS9imP48JKtfdl3CsxY2BNByRKG5Ttu16uDSuvIqx64VG8oNoG+jzcd038blXr7BrnhREvRscjo4UjQ9xYAI+4ZQD8RavL1pZo4aZx9fsDqvGVtono5Iz528zHKV/iVgJTOQQRa4joS9AhqqRiEj907nHyCqxnx80og+2uv0jqrXzFcfKXHpjyGdPcNqTHqoDTpMWvfKGEgNkJN4+aX8ssCYWUkDfrXIZZLWmbFvYoP8YzNdu502vSdlafv1Mk0y7ohEqZmnOk66kJaHYb55gHyam8IjOkDuZjW8k7s3Od8rrdASX848CXod7u2s9BxU3XqMjV9BOtpb556XNGebDhdSYaGFZMP4HOMinJMcLyEPDYgMVzTtHMajt25r/4UP1aAcnkzvpVujD2w2jKBsnqJgf5X+lZ4uVF8Y+ij847wmUQebeADpTuqQ2WOhJGBjgjUQ5yu5ZnTH9LYs5NXbkJwuSsdouEdEmQ9fgqGObBlinuZ7HyxcDkWLzuyRHGoc6JljstfWhOf2bo66QcoWIjbq56wCaw2SA9Lm4JkihxfkTQ2LmUuKnBZnQ8AGTfZ5QvfqYK4ldTqJbFH14/18XzcX1zoQIkIF3Pp+4HeyeXXXXrgAAA=="><span class="tx"><span class="nm">Chaleira Elétrica 1,8L - 110V</span><span class="pr"><b>R$ 44,90</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/gR24uqlIB" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRpICAABXRUJQVlA4IIYCAAAQEACdASpQAFAAPulyrlIpJyQro/qroXAdCWUAyrx9E+ZNgjp1QHmlnmVd1KzoXyPglei80E7j4F4oyza4TnVGi60u4+ATWb75E4TtFShFqpVDTjWjNU2yGMvtQPmL7hfATDt5NLRcClefn4/8xP8d2eKxWYOk5MtF/jyrfQXeM+ww+JP6kP9EAAD+s8YwwgUGpZasFbDl6Frm8HWg2Tv7Qy2HCUllcH/OUGQnHMgios5XWKYIsQSqdJJBZHIj/ArLv+xQ2HfXoWG/pZRixuPHk/NklbAQwRzIoJ5lQh4uHruckQ54rEBhpufoOH/Y4zyTlnO6k0Ddp6uQTSPR56FzyAt5ybqFqWxmAhoNN/2P5kQS4gOJsoTcOHIj2hQkbN3C+3yyUH6q1Lr+Mmutrtto1GezfP5PnfVvig5xKB9duungQbGf7dEsWZ+loAQwm9NdCoUl5BEl3+Zo47o7Zx/hQ9Lk/Gel+8j17/yXnhbDxeO4cu0Fvhkb4VQOQxckBcooOSWaW+NJPRIHoZJRVSmFNE6y+y0dWHRGBeldf+wn5r/qdz998SxmPA87nWV718c8++b0z11ZBwHnUpwVnJnYkN8hqYVBKIpny6NlGjek3zjjGf1bbYD1vJs8fdKqHZJqSNtKl3FS0r9B/lb2xevGO+EM+vcCreAs3bGBk5Wuv+vBZv+bpoXkoYmGFpZyrOyhg6SkJEbxbD5hsYPwDn2H8g5EQk/U2JKBKVz/FgKcD2vIoeDbTRKJtXXnG2+ZPp6QyZruVEZYYaXw1Lt5J9u775a3plxGMxXYnhlS8+NP3c/dsHVEPvTV2bmFOQsFdMqSTnazyH5ImzR9YNhvsBHfEv6oAAAA"><span class="tx"><span class="nm">Espelho Roma 70x50 Orgânico com Moldura em Couro Luxo</span><span class="pr"><b>R$ 79,90</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/LoBgIs1y9" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRh4EAABXRUJQVlA4IBIEAABwFQCdASpQAFAAPuFaok0opSMiNHgKqRAcCWUAzlGqFUsNYveLxqvcyynsboZZ14fFOk9a8q6ezgCwsWSbYnvkidEML/fIxDT2h6l5K5eanAnJqAvuWZdsODu6YMVryLij+LyhMghV4PArQ27Pm8rct3D1ic/wTroL0F8V9yaAKGPFTvPkXf+o/5t/153V1mG7W4Ung4eE/+chysrHLnaigvu0sVNkPmzCFYOrrSTORRf3OwAA/urzVZxMvf3okplrDwf630nfrvT0oaZ4NjMb6DLHhXmE0MjxgVbLy6m+JrKYrMxqXY3paOoB4Iek2puU2R4CcHs2JJLa3M5Hat9UyzQcxIeZQGe8afJabeAVCzjHgFwpTAFYxIvGmbhrBh/MiI1RrqEzDMt6KipV5hJpUeaGLzA/Zn8uedJWYaQ1MLxUOfauHMvTG9LMgqmezMXymLq/iIXCjRj08eeQsvlulwx/kSj4YZczQQ9nF2x0CrxSi125DmYGtQKTczBP1zpqpUS6/vPy141byvrpObYol4BYga/P+KZFR5WyUZhoP8pL6Y+0ICCGsYmQqrl0/ozqcjEpd9fWVh5BGTqatoJF6kEX6o9fBNxj/noZU4xICwY/9eFYKCZpxAWAt4sX74dW0QfacAHopyHVza65Y5mIVWvPW3+xA264RxjvRH/+B3SlQ7VlRxBkOoS9Lb1QC04WEKdU46TsR3kf9vbmzAPxp04ahmdNzHgdCXd2L97QwBkmD5l/qlF1uhAkdaYnY+xdlxGOUkE0bv8ME0CSenitCwwqgQ6uspW4CudFFcF6LJb9KNtkHTYV8IRDy9y+LIKx2S1pitBhEceRz8MuKqnLqv3BmHGO/4M8QZ2n/CI+rtO7R7pxGYG/cZc+AMqnoMo4SuTZtLPsB40s/Cq9xEAgWjHznpzsE66fJ0uaOzPYyYJfQ2YB80EPCT4YdUmPlBN2UnLln74gTk1kiOznOpxWKioQxwhl0QlJEc+TLgyy7/G9Y+j/BwNAuegZN0OHOeeo6GlQbN8Hf7/sxwFCk98fsaEpRyHnyn2KgmB3utRpAEcmxTqqZSuo8JXceQk6Lw8/OXCIdBRbhKdH3w1JxS2wdXDarZH1LgasrHado89Q4yys0QCWqiHm2b4BNNHw/oZupt9le+7LRUuGhGsSz8niacsVkGxNGlHlV1m2WXPn8XlVjdOfhk+ifT8d/Civ+ymQztAUYr1p6mJUxqVkTNXP9IQYzZyYP8X/Y7UX1D2AYwfxGltVY45KoFePZSsR8HqeP5KDiKnvG28qvPUCsoyAylCedWCKtrbAkY2oWDX+BowZ1VwrGyHK6P9PsMYGXphGMRf88lRWRcOiQX8gY7ZVGlGjQ2BwL8HKbLXrxUcziGAA"><span class="tx"><span class="nm">Torneira Bancada Cozinha Gourmet Flexível</span><span class="pr"><b>R$ 28,90</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/7puCc4z53g" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRpQEAABXRUJQVlA4IIgEAAAwFwCdASpQAFAAPuVcpE0pJSMiMfkroSAciWwArZtok2ygbe3hv2PKFGU3AXPG6czKbdNdgNW34KqX+9+o+TKQoY4MPQpeNwfLwJzxcr2nhiviK+xFfdq7zpqw7bWuGOZ4PpTP3xYb7MhsCaqV02Q4rCNPsXojyGIjrdTtTmvrVU1MezwGVNcOsJQ1VeoR0AIXbNo0z/3VJIVge8C09KY3jBdVIw80ZD5VPcdQ9TeYcDeRVOvpYfC6BRtT5VwMROojtAD89m4NH+o5Q2eYj+QK+2aucLAvH2qdtdVlbjzMf48GEHN3mG340E+b2Jubd9UhB9SK4pxc+4nuYudBbdPbIVcYDEUqGnviuSQKt0bq31ZHDfa85toU27HKL0JOkZpP6EnZu2YqW/o0wPti6A58KewUvn73mumnWJCF/E5zXKHU3UTj9c8qMYG0pz1Ft70i3ei1KLVGRy15wUS6HUWtvti/32OOSoZu2/sRE0XueJzek5b8V0MT4EZ2CzpOE0GgXTBhEkWe4AfhuLKIXxe76kT1HBPL9jWwZ+3hCE5GzT7Sp7fBsYblAqXxVc/4OiAaqPmhPJ5T/OIsEYp871ug2ui2DBQ73C4MaScpb7u7z021gKx0gNGXezuSt13UeVkktp51Soh+05E9kjKh7Lm0jmodZsOhm1o9j9zaPX1bSCsa3rKdOP13uEQaxiRFJ4hnx71PZyR4CuB5CUw/eLlOJ57zu1rgt3sr1WdMLv58dKqP5Hd+i2SE6Bes0QFxsq2VAjfaHVVJojsPda2n8qIpJUGzbUDXS45ePiBKsqG4E9+1MJGJ4BHUbx3L/Rn/9Sbsdh0fHLNZExnJuSjD0XPyNQf9CYbXWYY9J+sG04hdPfPX3bMaoSAYZxrA3ZFR7AyWwTfaSqNRYJOZH1yfcmJTuijsbT/NWpkjGCtm9wUK7ZTbOcaCcwk8NY9TibwMTLaoN9h+kyjUUD5z0JrAtxCZMyzeW/6krGCAH8x3ycJzgMGTWCAYz25jNCJu6+bSgAvppHCvPIxrSveXmHcD4pIMbmRUVtV7qORrqwu9Xl6aCVh4fSbGeZ0G9HPmp+hobg4OPJ/jaOwn+4j6ShC5YmIdv7TzY3LtChEMaaqT5I2Aowe53pc3QqhrPaEaPT8fy6R6EYZf1/xYrc80O1R3dhL8Ze9M9xLBtqfeVbtkg+9d7m5EFohrH4O/gmjLJhL8yEongPp2z0/M8HER2GoGmiU4SndU2F2Ityzc08bhIYFXg6PapQqiEP44p1N8BiaDfckiNsJ8hFENGNuvvDHHCYP/PqiXVLFKu08avHeZeiuydlGckAuOBF7omiwb8P2nI8ouTf8aMjM09sIlGxiXgp75fFy5G92qlYXS25M+TGBYWLZ6FLDSYIfxPG8SeDmbN2FJnhVE04KC66B2gSJBuh1+aPp/ArertgO1e//JwzRqomnJAODL/l9rIqhp6G0TiCUn7QG9euj5ptvw9f82/TAC5ZuC0hQMnMDdPC04qxCpElc77KoxvZifqoMIDATS6GqgMgVWlcgAAA=="><span class="tx"><span class="nm">Kit 10 Panos de Microfibra</span><span class="ex">R$1,13 cada</span><span class="pr"><b>R$ 18,37</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/4qGb2aNITM" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRrgCAABXRUJQVlA4IKwCAABwEACdASpQAFAAPulorVMpJSQipnM6ySAdCWcAzjgqjO0d64xWaaJjN/DdF0rikndNf5e/00xedcg4Lzz3YeUDtflpAnN0m6amGPUEhxP0Uy1PU0tWOTVKBRLeW4RKStCWXv4iea6Mz5lVdMoUtMSAX73cmnVVEX+jhoThB7Bwxo8kzN7VlzQtgWVm4ADOMs9o+uSwotWR833t6aQYCMpMuUNZjta56ubvda3iHxsA1pfpd+vNkCMVuA7sa/ubuUyvaiouMj9rdZuiBoJateuB1sk3XPoyOkVZaTCoAPQeLXBPpMObbRbfF9MxXWzHNCQyY7ydhFkEduVCEFnwguyRLCyTMXDCozPREziUvUkRvR0C3T9T34JJfo182ZNPDkyxCSVUZLezvZouepmH3fRczuFMH2vqqyGy4Q3pwPeW54sbbIJo3z/beKVOC0CXaHkfpaHfRohOuGX0GAhAa4qIrsbvnjkh/kZnG8pqTXvibATrQ1BG+HRf5emZvoRj1r26a5ey4EK6KhY+x6WfclcEQOirXGAehaqWyS/hm1getcoYq+w8VIGpNnJ2IBdatRqK983KXvErP9WjULLu0IpIAzoJkPX8sjOz8WqAkAw6WEhiphWUFtOx4SIb32k7WzSP29qC0jGp7zICWixLbFXjcN/wWnePoy57M+fMnkTKHnXUS6cqljuDImOWKGzZ9eOxwhwQKhY4nIxvtW+ZC5Th6CFIzCMsrFYZtEx3kZAj9wNKLvLfe5YiIsJ9IuKlpZLm7uWBnIsp78gdtfML0D/rh5C77mVFUfLcyA/F4+/m3FBVaDYUI9gF9BiuC3ahq7ex3RNj5VC9thSxP9VQiqBL0MVcTfAHDKkXEhg8FiwaTBO/aypzIn0Qe1JIMvULiIZmzMRqOHpDSuAmwAA="><span class="tx"><span class="nm">Porta Papel-Toalha Triplo 3 em 1 Preto para Cozinha</span><span class="pr"><b>R$ 16,95</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/1qczT4zFk0" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRqYDAABXRUJQVlA4IJoDAAAwFgCdASpQAFAAPulcpU4pJKMiMLdsASAdCWIAxNB2C9hB47G+uX/p+2pAuDdHyemiK7CZz64ccuoBaU49La9NWvTdR/J2LNC9RuQgX1KoE7CclmQ7OUpTy2bEjjDgKsezbLU7RiavD7nO3wMfDpVm6CdMt7tfNZc9vwzQkroZtBXSbzlcGMY1cPEYsDbKr9ukogkGtfuijN2ckrDyzgkGz1MSrqf2Poy79Uz2f1gvGrR6jDnP+I0qqAAA/uuK9IKscw2TGdYo/Ub/stxm+/kt/vMbv7DTYjdRioXvrlgKqJtbJ9CxfRmnNvK7KNUSsTOLG0V50Y6s4i/StgmMCeGxFMveH19C4Qt53qY1MK3n6+4K4/j3EtqCFHAJBw2qPOhpcQsBwlGf7zVtq7oR60S6WZr0GXq5S9PdQ/+ZI5VY3JA1icQ+NYTnLmQIt/Jg42TU2VZFInQDiMmnzr94cihzZVajwyV3zM1GLYY6TqRHyqtnMzdv2f2YriGRgD3V6CbQMLGsdDw8/G7laN8eTOKtUsB6Ssuz5UTNY7ceYy/keAv9fqeEv7v54SA0FPTT5D3AQsKpxLbq2TvG8jCgTWOsY6Keu9maNCqH5V7f6IyKHOllzFCnex9mUsVSS3laNkxiUM8QrlnBDlGGYqsGWoUwyKdId3x9vuXugJhfip+MRcK7irKYNVhvgGorep9w8XVW29Cvcg89lEPeCjihgs1gnZT5Pq6PlZoafs3PhNqvWazKK48V7AC50KL0KdMZM+rVaIxcguDjfId3t5w2JoQCIGtGpG2ZYFcKpMHJH18Qs597hzjsn3ZGQVNoblIhlaBujOgFZCmOF+TpexpooHn1y0SbLSl/Z1U98o1DRKoN6GP8fmEd2JH4L/hq0vFfN3BWkJAYk5q+9M+KbkNsr7UdgfSmQTQz0YV2c9mOeR+Gzv29T0Q5lLbpNq9QNRs6EKuBjbBOTpOjOpqByCrluee9lPd4JDEPPVrrIVcGGhDjdOlZCMlSo9nUIfm2XZZ7Lv27GJwNKL088fo+LvsTfWfZSIIPyLJx76H+ncQc8Xfijb2/ifoVrsNdyyLpzhmpB5JhNvUfM/7RBBavXe6UqsXA8qb8Blv9THURr1iKnAQchNK3NR/IB8OmxnAFJ5LY5Y5C8paV2LcL06P7wwiaFmdFruVk6HebvojAiZxGYp3v260YclLYyuq+CldbBQrTt5a7QBzuh1dPZ4gA"><span class="tx"><span class="nm">Frigideira de Cerâmica Antiaderente Vanilla Cream</span><span class="pr"><b>R$ 61,90</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/1W094T0WPy" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRk4DAABXRUJQVlA4IEIDAADQEwCdASpQAFAAPuFipk0opiOiLNZvcRAcCWMAykO3GlGAd1ong1MyQt1QoJunj1IPnUHnVGZgGHrv0/w4ErI85qjSg7gNzgDzjf0Xwzmk1f30HH7NxKhSEIO3V0bm2OeQltgn4Xqr4rxd7tQGuGmSN9Rim5OfOwtwYmQW2LEFT0+43iLqmPumYoUTxtXq1HYRQbOj7kMc8GAVrjANfj08YQLhzVJzgAD+iZQmFlxfOlw/tUqyeXNrQieA0If5c2n1DfT14jxSFJoagGcHvgtVCgREmJ6aUg+eVkxGFt9NJVSd4lIjO1hHUVuACDzkrlY6KlOj4ONcB7EKPu9+14rfA4kXPaApnzJF9tQSti4XQCRGtQHOqc8jjkDk6AmnOHlbWYvCmNLb6Vf/J9H5sWeS/5qs2mSxqBUoPedVlXRRfsgtvtzjoGjTA5Z+jJsptaNzkPpPaxTlQtauwkVw5VBkVMqWsPaQiNz89d1CYQSJ8xxQM+pSVzfoihqLCbaS+yLHDjx/ik5so4yx57ZGMqU+a7XT98zLBIU6j+9VuPpdaCGKpixqI/ImfUw4DDPG2FIiy8nnyqFc1ylOQIxtKDzfRfYTfe+qmq2VJxWg3tq1aTeG9SkkaaGf/NOFb9EojAX6yV+BUEnTZ/JFikZD9zOtTjCWW+VnQV44AJs+mUZGcV0KdnxqkM6D2pExIOSweVbwvXtZTFqZdIJlIE3XIsRe0Uo3alBXhJrno6o1NbdhQbxc/mBuTQboRJaTqKl57EpCY+bB4usSUYfj7YyiX1gVtZRFZfvHPAmPfd5Eq/ps1Kay/txW1F9hZvvCIScXGg1fpOzkHi0vH9FbaKdjmwbacN+MbwGrK186JaX9ID32ERQh7blmY96nav2q707IzJKgT3MkSSuDRpMlAJ58QmYWrJflKc/7AbienfluqzoW70SA/7G9EMxYZ9xQBakihOEb6HdwTdGEfRLiOlNzS6hju7g3Yl5RIrFSBNOHWkCdxpOvik/5jcAwouolh7R5jc/3SnGuoPKf7esxfGbX+AqUSs6JBh1MNLPLlt4h7VvYnaOpAfzU7JSv1S7XCB0Uwwj3bgluOyDwOmiOR0Or+ZyAAAA="><span class="tx"><span class="nm">Mop Spray com Reservatório</span><span class="pr"><b>R$ 39,99</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://s.shopee.com.br/4LKKRgFzpZ" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRrwBAABXRUJQVlA4ILABAACwCgCdASpQAFAAPulurlGpJiQipTQLaSAdCWcACwiHebkpX43vNdPYWcX+UPBuYIVcP22ruGJ7NTTR0dxMt7zMOQAoaDuVnvIJl8pQG8MTGdP+bHW6EaxHG+6gZMwAAP70oLi1EMyqPVjYQ8N2PuLmr2fsm8ElWhUqf/FaMF9BINtcgjlnINTu43hk5ot/Qb6uugzqgEpIICXriBDK85LLkGUyFIRm/LvGkwfxmRxYP4/hY635pmt4Z7z+TOVVoNlid8Yw6qHKKNO+RnLv9eJ8pRLltz1YXQjcO/CROl4e9VOm6COb9jieio1k7+9oodcY2kJdBau2OgzVn/r2pQXXQL82pUUuYnf69utbFLAzvohC+/qhiLCaj13xUD4fVCp4VmxhWEAWE5j893+JCfa2WhcZiHKOMjx/WwFd/G4OugHRXXKf247WdmOM23OZaWmzpXz4u3hbQ9CIvNbUjYKWTz5VrwhW1VNElh/xqz8pwJX/vEioabIOeMgr/aMakYGuf+8dD7STsbgQ8CKrVdZFUkoltDaJEH0FIPn79RfV/SUXnUUfshc3SsRPBhsAAAA="><span class="tx"><span class="nm">Jogo de Panelas Brinox Ceramic Life Easy 6 Peças</span><span class="pr"><b>R$ 314,90</b></span></span><span class="go">Ver na Shopee</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B07LC6189D?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRqwCAABXRUJQVlA4IKACAAAQDwCdASpQAFAAPulmrlCpJSQiqlgJ4SAdCWUAEgz+hGRVtqcdr27/9Nb2NwCS36s2hD/Y3MQKHGIWDKT/Y6Jqld+FEvpYC6JQv+kVFHQDuFL2/ufYDiT3lSF9Y55OkEkjsqC9wwuD1Y3fFlzl1Io0buT5+Nk3F6V+9rAnw7CPmkAA/vlBpxaTBEAu55cDAuCVHsUHSCokPrge7810cAOjlCIL6DhKqQovfIucAq28pGL6PfT1NQasWorQKl0dLYMAbvsjGEPd1OleCB27cegI3zvKNr4KrYmpEddHD2FOsw7wk7OuHAD37zH0dKVsqrC7GiSI4Ee4B8Wq/sSobacKqvH+Hd0dwEa/t43uEAez2WN6+1QodYwR5ak7Muefo3gVP3x6qYTRAU92NrwVQFr1jy5zZF4gUaEcdFJhtHG0KJH24MtCg3SoOBOIyYleGiD5TffnO+C0jE3QLSAwx8UnXvRLH5Q7uH2m4mukW92fI+qp56xf4Z1lCvZBRYTG8fZ+UwPE0f+5WaVmfK+s0IFGJszLuBuEHCdn4UXD5MKSILzeqPI+uCXilScS6zZ8uGBG1+e12pR3gdGm9ZMEtIjwiFcP4D8/VsT6HhbJk68/XiEM/S9xxhvgx6Vr2sKpu4T3aywr2V38JKyX2rgfqJDn0LqbPNDK8x3WI6na+/HR40xWAx9535wIh2K3HUITl6NK9wfEmtX7LJlOsZ3XeCMuaU3/IORACI9vrZO1sOcOnAY4dSxE/cdL+oVrMjTgPMHBlRgvhnyKCwr2RrVKhX19hKj6CpaqC6ZkDlNyvyJR8kETgyUjpBXi9hEXUIMt7HyrYV86AuAscFC1kivMj1Lp8S+ido/sNDZP5Yu5WGbkH8mPYoOos3XYG2k8ntAAAAA="><span class="tx"><span class="nm">Kit 4 Potes Herméticos Electrolux com Vedação de Silicone</span><span class="ex">Oferta por tempo limitado na Amazon</span><span class="pr"><b>R$ 34,19</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B0FVKRQSMF?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRvwDAABXRUJQVlA4IPADAADQFACdASpQAFAAPulyqlCpJ6OipnmcySAdCWMAzJxCvTr/fqCG9d0A/1XnRqCsfno2aKEL5kgCm/kbtkKpvkaxOmadPl7YEnVABNT54fxPAKJ8XHHO2dQf3NrP3AOva9K74qXTUPO8E4ZscgWkMuqIs+C6aSS5qxjqOwSXPNCZtosM3XOQQ4TWJcYy+vWbGpm361NALPXYGaP2eIeCGnGp3v0YDAzbyCdcLz2WLggAAP7uHY+oXp0Ho1zdhf4Af14VwY4YbMcGwj1zzdNvw7kWUOa+T311Mzbww/33EP7IAf9CoQ5wD0gFW1QyYVYauKrlWqK7HJeRRA2BzHDs6UJp3nen/DV93T2IrM+giasvnfyBRoHitifsoh0Kb1/QLyYFfHEn4dAFdizA1a5GoWjP5fa9AmcUVsaB7cil9GvlIQlWcKETj6WvxzOKWCC8VOaAqokkECIPky0vPoglHjRtAR7CP2YAhwP/BgkJcFezYBZZDAua5m+qeSF2nm/zwmzYU/w3e9bIahU78tC/kk/3ddpdnMkG+Gs0Q8ZNSlr3TLzz28R6pDjwwzQT15NqHG6aRJSP9moJ3sYhdzDd5pYQ2C+/dWNW6rkuvKqYjd/L6CxPRSntx5YNKG8aku77ysrTqb49aRRPAy0GkgyN9o4JtEhw4Eeswa6+w68gvkCQEb+PR908mhE4vruHxq41gXLgZ5fgFmBEUoYoZaYkKc39dgdyAAuwD2Qms9NHv1P3WqMFzC3jUaguYPRKgu3GIzj6gJ3f6Ri2fAxjvYGVnrlzLVbLP6cPq+lrRsf1Lj2ZPxPGYU3nBooBSRUUbAJOUfry8DI3OgQm7NVwnHkH9Mj4vu5E3Ciin8R2nXb1JiQbk9juipeqzo7VKoAnpOje3yxpOVVIikHjd3ZkY7XKcBcKP9mDxhdbgdjb2NK5MDgLe+2FO1Z2KEWLMnVeiakXa2PRJHTBQR/s+UXyvgfXyXQViPZqlyuZKo58FXoLWf0wxjCrgnpPZyLfZKGlmXx3xcP/YJ3yixtlerdtBnRKeC0TsUY/FPvx1HxB7s7ZNi+XnPY76pTG/qHHMQq6O3eTRnPeG1+CqsllUD5o1m89l487Mzi3UxQlhDplJaglH8dU8q3wbw7Wr1PWFQbGGpkAGTUFFA1QnBDc26vWdC3lBixrUbSn99B2HGpyhFbZ2VdXkOFrHshycJEPuj9cYtpLwYl2b3SfKJDNtRdskxk1NCmy5d0i+wkQMKPrLcLfQZKx7+6M+XAfUyeBquHZobdefLbCogCuO8VBJxVUhuJPktbKVsMgdg9ufsaKh6Nd5T40CViV4i2aavxbuA901q0AAAA="><span class="tx"><span class="nm">Garrafa Térmica MODUS 1,7 L Aço Inox com Canudo</span><span class="pr"><b>R$ 95,93</b></span></span><span class="go">Ver na Amazon</span></a></li></ul>
 <h2>Beleza e cuidados</h2>
@@ -75,35 +193,104 @@ ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 <ul><li class="it"><a href="https://www.amazon.com.br/dp/B0BBJPCMQM?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRnYEAABXRUJQVlA4IGoEAAAQEwCdASpQAFAAPtlYnU0oJSKiMywBABsJQBpZoMdk3cBAk+q0ji8Irx8oh0/r91F1e81Tyz5DlbQD6ReiPNXM8CD7hhMd0yAw/MEsTsM510deK2Gw4fxbKwRI76E1ylvzmLV/K3X2z7+lEKMDjJAxfYTJrd4cpGrw6qoKH9UpnX4MTOzEt5/3u/QIatpaHsRCGN7vDaL4U0W5eijc9WT1AAD++qAH808iB0q9qfZ9wcMYjQuDZXifFstB/XrivcWkErq4j82XbH129f08LhRouxAY+zYjsO4t1YMq50Twqvb+Js9kIPDURrxniVGjCzuvDieEkfJMsA7dld0NmrbUp02IE6FI9y/UhV569eeB+QsElg6sUDDoS7LvyAfHJdPsQrG5l2VnkIclnXiv01D77S/rPHyqI1qvo0ajqFAolAK3C8ER1DPO51I9S+XruddJO6jP5vwpcHar+yCzN0kOooDdLHybU7f5rikCPMm2Z2KKz3yp7O9H/+aBB1VcjmS0FThfnca1MbC6DAA/7jdM9YJ8A2arGkY31uI7ol2BYswHqzy4EPmS5E6tpZhKiuQ6LiIXNsa7tXrZ73su8VJaz7zPM06JTuY+z3p5ih5RydJrwzuF3jNIR6Ep3GHnwe2hUhWA3tAjvpOTT4QVPTs89kABNTW952EOBWWuVQ6TCcbiNNk58UryO8Z+vDa60xNuwZmuzwuQvjo2P2GEF0ijd589JvckzR8N1T3ecgJsKoTuVMNBRIXAmpevi3fX4JRfECm1upL5vulcN27NsdaDrhwGh2caOcaPz6Mq/0eknPU/o0oQ++FCjd2UyLraB1fyOQQayOQ3J1lxYniqOhfHgGI90I2pgJrLNvCHrgn8QsCnp67B6sHOF+F+wM2vnTp5bulKBNBDiTk8LVxWqrV7XfDhjRfjodjbpl7Vgm7rEjbe9NWRDD5laOspGoj6p2koUlyMubO00wHhhtD/lKt9TAc90kTY7X4O//TvFGwzS8n79LEkeFDcJ9fzgjLKyXyzs8S4xUZdai+BLQyzAZ2GQlXhgUGNy8CNdZTsN88Aj6FVqLKVfG2ZUZPyZxzztHqWGPEvswQNdegNVYdf/SQcoxjDDGwNwBQI3IJlUideGgn71xuEb52lkWgUh7lCbgwjuJpFU5Wx1M8O2ZFO4xsYDWBqYKx1CxaUI34vnO9w+GSrStdNQLPhTnY+COdvT7v76GJJQd9gJpjVkmozCMVrnZFc///63aiKvTQvTQxd6GQDTXOfhsj2frFUIsYK0d5aHexwXotXCyPlrSggq/3fd4xJd4wWPKTAelVD/d+JbsmDGlIz+CPUPqnsKk6ewB92TOmfHQ6EoUPjTrYLJdTJ13Te/TFv9BDyVvJxzR7sOwF+eYgzkXrp2RB48D7+WLQWa275HiqkqHwx6zjMfJZ+64wdc5/Vvz2F2i7jX3pwd4KdnmPrf6W7grNzNsvnuXt/uM9jVHkIACeF/wFAKvLCwmPHjrVqL6AAAA=="><span class="tx"><span class="nm">Maleta de Ferramentas Sparta com 165 Peças</span><span class="pr"><b>R$ 71,19</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B0785X3V3Z?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRgoDAABXRUJQVlA4IP4CAADwEACdASpQAFAAPulkpk2pJaMiL1gLESAdCWYBBgH6AaPPJn5dpDPgc8Bpu286V5VYAW9oSXgLTHlvwRS7OvPC5Y9tuT6y4F+Bj1SH4qBJvxm7k7ehmupu7RDkk8FG/QX7KgwET7pvlOsqBUREq1yLZ8V8mBrUu/dOY3MRnjScxifox1PeVqCyxkgqz6PW/iAA/vcuaXVwTLbWbov/4nf43s9a7L0KMqS/SUouoKQK92ClyD/H9jitJmuc4//jv8SsvacY5XwcdsGycB1Xs2ZRp0mXEryPyia6B049TpwPwA38qkucaCJZD859nAUOghwvCkctzGDK3ZfgbeTRwvHpHa1oFqJ3HE8GD7eUWr8bjRQa42DmgJBN+2Vs3Y2QG1r9duv7SfB/yJK0HbjoD3ZjzpUJFajfz6w4l7lG6jLzGxQOzLzKvVxvjQrrQlNcAXO1jCxgeLZAg1T8QFSd1K87fbyxSrLQyeyy8LOZovbB9qlBgdf2dzsA2h2wDwsdJ8Fq4BkUZVwarmbm87YNhgCRjVAdOtBsL54uB6sMnFmFjbQJ2mNDtI47guuMTKTdGmO/9eiJAQqIuoTJginMY65/4gN77BLKLMUXuraLwq0Y9JQ3jz8oluerv0WP8qGR0BDYw+RPlv2c/dtIcduKyaYruRF+friz+m+u2TOaesL9QAN7IkONMaP18mJX6w7YEPBRsUO+44tNG2Zqz5D/u4tnLFJfzau/8wTSeQnqPKxYJ+fnM0kjk6l+XRfVcBvKzadfEOD9nLEdfQ4EPetMGAYn9FxA9HXYrEXpVswjpE5Lm/JUcT9lYEaHC/j98Hw+nQOlGauk4VYw+mI48Sx9RXzqGMMwTeoZhxM2MOD7Zn235idvOFaq28BJhd0XixUZy5zCjuqQnE8eVlTTWFH3ivtPl2Mwpxl0sn5tBpgEOILF+YM/xhqB1XYU38QASGke6zxBgp62UmADZBGGjT0ouFQLOC3VjCCikg7zl7Ni97aewFl44bv2iDmdfgdiYAAA"><span class="tx"><span class="nm">Jogo de Ferramentas Vonder 36 Peças com Bolsa</span><span class="pr"><b>R$ 149,99</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://meli.la/2U4mLm8" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRgoDAABXRUJQVlA4IP4CAABQEQCdASpQAFAAPulgp00pJaOiLNZu6SAdCWcADq72ey7+Cum/xj8x2ydsVjEu3xIEZb3Hr2KHKrIXoD6oZ6CrHtG+9prlw9+7XZ0PgRBcBBuAMjxKwU37EnfK7JI8nLy3F70zr7E3jMMjIdzPKvyDm/xQv89gFzmOujkw5zxBLSxtz7M34OhUhW+xWwI9Ey0S0wAA/voWsTveLgmVZoYao5AFsW0WkpeFR/A2IzytoMKiAa5OkTe/H/O25Qw+dyB+peruwMG/0XsC5MKB8FWtS1ugdfke8jh5wvWrJdnuhmHmjjsNBGZVX/ipT31i4dKZ4/Twwf0vZZwa4CvLHFmsGypQluUWPJuRrXM0HrcxWhKTxvoJCtTzOa9CVajoXaLfQmQgvzAKh6Z3FpF7WgfsxfQg8XmxF57LBSncqfKu8qB4GGOvYi+KnlTogWaY0TVoxEdQ8SMz9kK+/oCAfNbShOkYpszXCy3/gSBgCADE11qu2VrvxEuNH9e76TZbYfyz4z+EQdVRAK6Tmi5axu98NHsr11NRAfNynmLAsgm2oOPPLR/H5RARg0EI9qnR7oAT4lq77od7uFv2FgByt/p4a5HrTLMMdwoPb7zUv0ubAMi+xecrdi+vRuTP40xkcrlwM7H4gVDGbwWs+1093IpzvtoCIq26gCt6b9QGXhluQD3pTpqOz6IM8YjeTlPIP6KTh2uVdxrOqItIbE6uzpV+vHyE4QmU6D7HZz/aUDOuVez+t1GQD1eThpRHR5AXoaqog9uNM1D566g/DqtlP0NKXzLhqJ5ubXWpj92APcOGc25lYUNYC3MKjuwj9/R+n/ARNO9WJf7+LO31kkdlUb0NhxQLHx2VI72Js+wY9DMxVHE0Dmy2nuI5zZfq790BQXRIhnqPWn6HydfpkwbUVVjkPiVFngdditTJkd0Tvw3OEb9OeL+67JHJItSq9nDu6k1itYG5H6oS78gWlhbzvDIqVtzW44z6H+y4hSLIRE5XReJPN/eCWCjPO3IAAAAA"><span class="tx"><span class="nm">Compressor de Ar Portátil Digital para Pneu, Bike e Moto</span><span class="pr"><b>R$ 65,95</b></span></span><span class="go">Ver na Mercado Livre</span></a></li></ul>
 <h2>Infantil e brinquedos</h2>
 <ul><li class="it"><a href="https://www.amazon.com.br/dp/B075QRWRYP?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRmwEAABXRUJQVlA4IGAEAADQFACdASpQAFAAPuVcqE0pJSQiMfgLoSAciWwAy5yFjbybbn25IukKLbj+Y3zb9OF3oSfd84IkrMvkpOmHNatvvAtKALbBFa0NE4cBO1924YuUOFXMB/fCfMutkPRNWCZL3bPEu4S5TOWvveN06y9DYutC3i9GnIExn4GeDDckLnFGrdUfXy7uMUF4znaxxSINGZb2w8Ho20+/rE1Mcq2vRJZGpODXXuxQyE1o0dlgAP76EIbydaZFayIty9WOVSDgZCqQLeQ+Kn+DH99msCZn/Y26zJPhQxPZapXjscUr4AjXChj/vWC4wqTeAmIOBMF8pxGK/iy193/nXRCCywjlSO4nh3gIBPDeiFIN+lYsqNqXVNtHYJZgczJwMRuNMrE2oSS3BCnkvndMDYc3jXK2UjPxtaTMV8x78Of7NFCcjTO0VLbxz85RNFZgo1KT4bAsEe86/YWHQkdtwKOQQGOxTTX/1790JZZAc0HygS6Z+tKg9X/jCzbBwVupx2FeVhEkn3TTB7OntPmiws4ndMEhWtIhMTIoBselPLZjqgw87+3emUlKI7q1Im10FzU5rUbVu57yqZ8I9dCLkMpy8wfktYT/I07Tnptt8TZaqeONXlhJgAJZuH7FbqoheKzBVJSwqHD/8ulz9kUHaLyA4oxBpfxdlY5Btz7jnkMO7qpgYueXUOOQarHykyefRAh7uqeElomFpUAvfJjw2Ryl2zMfovgApB02QdnJk9FJpctcpI9nc2NDhbH5adLiKQ2Jjbg889pW3OblUEMOgn3dBFwILZOj1+iyqTEI1yeqkb2YypKBvkYR5V+VDZu9BB+/Bs3Oge7NHmW8+Pe7/mjeHHeo8SBdhK5Odhgib1uwqq4rSn3NzMTnMR4DZy+shRLtqvgM1F/YpMdxHNtcWUydM2TM2b+LyIaXHUFdPAX1S99IK4V4UTbB4faksfSj8L5V3cdPC7dg95DbjWKnX/y/Dqp6TEejSvHcuYI65ENfQaXMWsMoNkwx4v2HFG5H+3Y759kAvmah7+tqihM5D9L+N86LujibBMFx+lUidOuug3HKiTRVeuB6vt+geHhdDun7uz2kUm0XyFUrTdEAyotKiqe8uH4ZVz/+f2f3qhFuPyi7UirworYFGIqzUYto8U6A820cA/8T8TWfYjszAenuN3dLlp3vDML98zebTa6Iq6CldsvY3ZPV1r+TorKS1DbCZ/6NJF3FBNBbH+rLxchuT31K4sMtjx69nopVZwWLRQagvCOTdfOr8bZOeseBtGfLRaXURZ/wS8TkYOfdfr4p2wPr62YIxMXBHbe+dMC+0l4GLMJG+Oj4DBuN1MHby/Qtz6ZP9xFLLANDnL6h7Eg5kOtwvcnjVjCmw/2sU9bpmpxkHJMxr6bZ7U3C9K9fq0lpp58QGxCQ57w7SMsP53bgNEY9vspJtg01h+OkGnsamnmbtX+FjTDlZv75RTfQ0o7cyFKJUfUDViHUZ/K//A6oAAAA"><span class="tx"><span class="nm">LEGO Classic 10713 Maleta da Criatividade (213 peças)</span><span class="pr"><b>R$ 116,99</b></span></span><span class="go">Ver na Amazon</span></a></li></ul>
+</main>
+<footer>
 <p class="aviso">Publicidade: estes são links de afiliado da Shopee, Amazon e Mercado Livre e eu posso receber comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em 22/10/2026 e podem ter mudado. Como Associado da Amazon, eu ganho com compras qualificadas.</p>
+<p class="fl"><a href="https://instagram.com/achadinhosdobinga" rel="noopener">Instagram @achadinhosdobinga</a><a href="#topo">Voltar ao topo</a><span>&copy; 2026 Achadinhos do Binga</span></p>
+</footer>
 </div>
+<button class="up" id="up" type="button" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 <script>
 /* busca-js-inicio */
 (function(){
-var q=document.getElementById('q');if(!q)return;
-var bs=document.getElementById('bs'),vz=document.getElementById('vazio'),vt=document.getElementById('vt');
-var items=[].slice.call(document.querySelectorAll('li.it'));
-function norm(t){return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
-items.forEach(function(li){
-var h=li.parentNode.previousElementSibling;
-li._t=norm(li.textContent+' '+(h&&h.tagName==='H2'?h.textContent:''));
+var $=function(s){return document.querySelector(s)};
+var $$=function(s){return [].slice.call(document.querySelectorAll(s))};
+var q=$('#q');if(!q)return;
+var bs=$('#bs'),vz=$('#vazio'),vmsg=$('#vmsg'),clr=$('#lp'),sel=$('#lj'),chips=$('#chips'),rail=$('#rail'),baratos=$('#baratos'),lista=$('#ofertas'),up=$('#up');
+var items=$$('#ofertas li.it'),heads=$$('#ofertas h2');
+var NAMES={shopee:'Shopee',amazon:'Amazon',meli:'Mercado Livre'};
+var st={cat:'',loja:''};
+function norm(t){return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+function slug(t){return norm(t).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
+function storeOf(h){h=h||'';return /shopee/.test(h)?'shopee':/amazon/.test(h)?'amazon':/meli\.la|mercadolivre/.test(h)?'meli':'';}
+function priceOf(li){var b=li.querySelector('.pr b');if(!b)return NaN;return parseFloat(b.textContent.replace(/[^\d,]/g,'').replace(',','.'));}
+function mk(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e;}
+var nOf=$('#n-of');if(nOf)nOf.textContent=items.length;
+/* categorias */
+heads.forEach(function(h){
+h.id=h.id||slug(h.textContent);
+var n=0,ul=h.nextElementSibling;
+if(ul)n=ul.querySelectorAll('li.it').length;
+h.appendChild(mk('span','ct',String(n)));
+h._n=n;
 });
+items.forEach(function(li){
+var h=li.parentNode.previousElementSibling,a=li.querySelector('a');
+var hn=h&&h.tagName==='H2'?h.firstChild.textContent:'';
+li._t=norm(li.textContent+' '+hn);
+li._c=h?h.id:'';
+li._s=storeOf(a&&a.href);
+li._p=priceOf(li);
+var tx=li.querySelector('.tx');
+if(tx&&li._s)tx.insertBefore(mk('span','lj lj-'+li._s,NAMES[li._s]),tx.firstChild);
+});
+function addChip(id,label,n){
+var b=mk('button','chip');b.type='button';b.setAttribute('data-c',id);b.setAttribute('aria-pressed',id===''?'true':'false');
+b.appendChild(document.createTextNode(label));b.appendChild(mk('small','',String(n)));
+b.addEventListener('click',function(){
+st.cat=(st.cat===id)?'':id;run();
+if(lista.getBoundingClientRect().top<0){lista.scrollIntoView({behavior:'smooth',block:'start'});}
+});
+chips.appendChild(b);
+}
+addChip('','Todas',items.length);
+heads.forEach(function(h){addChip(h.id,h.firstChild.textContent,h._n);});
+/* menores preços */
+var cheap=items.filter(function(li){return li._p>0;}).sort(function(a,b){return a._p-b._p;}).slice(0,8);
+cheap.forEach(function(li,i){
+var a=li.querySelector('a'),img=li.querySelector('img'),nm=li.querySelector('.nm'),pr=li.querySelector('.pr b');
+var c=mk('a','rc');c.href=a.href;c.rel='noopener sponsored';
+c.appendChild(mk('span','k',String(i+1)));
+if(img){var im=img.cloneNode();im.className='';im.width=84;im.height=84;c.appendChild(im);}
+if(li._s)c.appendChild(mk('span','lj lj-'+li._s,NAMES[li._s]));
+c.appendChild(mk('span','n',nm?nm.textContent:''));
+c.appendChild(mk('span','p',pr?pr.textContent:''));
+rail.appendChild(c);
+});
+if(!cheap.length)baratos.hidden=true;
+/* filtro */
 function run(){
 var raw=q.value.trim(),terms=norm(raw).split(/\s+/).filter(Boolean),n=0;
+var filtering=!!(terms.length||st.cat||st.loja);
 items.forEach(function(li){
-var ok=terms.every(function(t){return li._t.indexOf(t)>-1;});
+var ok=terms.every(function(t){return li._t.indexOf(t)>-1;})&&(!st.cat||li._c===st.cat)&&(!st.loja||li._s===st.loja);
 li.hidden=!ok;if(ok)n++;
 });
-[].slice.call(document.querySelectorAll('.wrap ul')).forEach(function(ul){
+$$('#ofertas ul').forEach(function(ul){
 var any=ul.querySelector('li.it:not([hidden])');
 ul.hidden=!any;
 var h=ul.previousElementSibling;if(h&&h.tagName==='H2')h.hidden=!any;
 });
-if(!terms.length){bs.textContent='';vz.hidden=true;return;}
+$$('.chip').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-c')||'')===st.cat));});
+clr.hidden=!raw;
+baratos.hidden=filtering||!cheap.length;
+if(!filtering){bs.textContent='';vz.hidden=true;return;}
 bs.textContent=n+' de '+items.length+' ofertas';
-vt.textContent=raw;vz.hidden=n>0;
+vmsg.textContent=raw?('Nenhuma oferta encontrada para “'+raw+'”.'):'Nenhuma oferta com esses filtros.';
+vz.hidden=n>0;
 }
 q.addEventListener('input',run);
+sel.addEventListener('change',function(){st.loja=sel.value;run();});
+clr.addEventListener('click',function(){q.value='';run();q.focus();});
+/* voltar ao topo */
+function onScroll(){up.classList.toggle('on',window.scrollY>600);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+up.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+/* faixa de avisos (celular) */
+var msgs=$$('.ann .in span');
+if(msgs.length>1&&window.matchMedia&&window.matchMedia('(max-width:719px)').matches&&!window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+var k=0;setInterval(function(){msgs[k].classList.remove('on');k=(k+1)%msgs.length;msgs[k].classList.add('on');},4000);
+}
 })();
 /* busca-js-fim */
 </script>
