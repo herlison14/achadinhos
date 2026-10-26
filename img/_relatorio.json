@@ -6,7 +6,7 @@
   "pagina": "https://s.shopee.com.br/7famPlziOf",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "77f4967b",
@@ -15,7 +15,7 @@
   "pagina": "https://s.shopee.com.br/2qVWerW7ba",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "066672ac",
@@ -24,7 +24,7 @@
   "pagina": "https://s.shopee.com.br/8AX30gxoNi",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "77eabcb3",
@@ -33,7 +33,7 @@
   "pagina": "https://s.shopee.com.br/50a1EtMf8R",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "6ddf4c48",
@@ -42,7 +42,7 @@
   "pagina": "https://s.shopee.com.br/gR24uqlIB",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "4f15da33",
@@ -51,7 +51,7 @@
   "pagina": "https://s.shopee.com.br/LoBgIs1y9",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "e1994255",
@@ -60,7 +60,7 @@
   "pagina": "https://s.shopee.com.br/7puCc4z53g",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "33c54483",
@@ -69,7 +69,7 @@
   "pagina": "https://s.shopee.com.br/4qGb2aNITM",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "ab180b39",
@@ -78,7 +78,7 @@
   "pagina": "https://s.shopee.com.br/1qczT4zFk0",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "d7bd7941",
@@ -87,7 +87,7 @@
   "pagina": "https://s.shopee.com.br/1W094T0WPy",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "fae05098",
@@ -96,14 +96,14 @@
   "pagina": "https://s.shopee.com.br/4LKKRgFzpZ",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "5decfec6",
   "loja": "amazon",
   "ok": false,
   "pagina": "https://www.amazon.com.br/dp/B07LC6189D?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (1160135 bytes)"
+  "erro": "sem imagem na página (1156006 bytes)"
  },
  {
   "id": "ce46f4cc",
@@ -119,7 +119,7 @@
   "pagina": "https://s.shopee.com.br/3LRnFmUDad",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "92897d37",
@@ -128,7 +128,7 @@
   "pagina": "https://s.shopee.com.br/3B8N3TUqvc",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "3c540256",
@@ -137,7 +137,7 @@
   "pagina": "https://s.shopee.com.br/80DcoNyRih",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "e8862c30",
@@ -146,7 +146,7 @@
   "pagina": "https://s.shopee.com.br/4LKKRfPCUF",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "f91e120d",
@@ -155,7 +155,7 @@
   "pagina": "https://s.shopee.com.br/gR24w3h6l",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "aac01a41",
@@ -164,14 +164,14 @@
   "pagina": "https://s.shopee.com.br/1LgisA19kx",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "e1ac29dd",
   "loja": "amazon",
   "ok": false,
   "pagina": "https://www.amazon.com.br/dp/B0GHP8GRX3?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (1152468 bytes)"
+  "erro": "sem imagem na página (777229 bytes)"
  },
  {
   "id": "16b683b6",
@@ -181,21 +181,13 @@
   "erro": "sem imagem na página (916169 bytes)"
  },
  {
-  "id": "669494f8",
-  "loja": "meli",
-  "ok": true,
-  "pagina": "https://www.mercadolivre.com.br/social/santosherlison?matt_word=santosherlison&matt_tool=1",
-  "imagem": "https://http2.mlstatic.com/D_NQ_NP_968734-MLA101181433884_122025-O.webp",
-  "tamanho": "460x500"
- },
- {
   "id": "557cc037",
   "loja": "shopee",
   "ok": false,
   "pagina": "https://s.shopee.com.br/8KqTCzxB2j",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "8c06713d",
@@ -204,7 +196,7 @@
   "pagina": "https://s.shopee.com.br/BUlTzsfJ8",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "7fd013c3",
@@ -213,7 +205,7 @@
   "pagina": "https://s.shopee.com.br/1BLHgtIe7",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "6794859a",
@@ -222,7 +214,7 @@
   "pagina": "https://s.shopee.com.br/20wPfNCI2w",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "b1748139",
@@ -231,7 +223,7 @@
   "pagina": "https://s.shopee.com.br/2BFprgBehz",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "5bd59d62",
@@ -240,7 +232,7 @@
   "pagina": "https://s.shopee.com.br/3LRnFqJnrL",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "0e3b11fa",
@@ -249,7 +241,7 @@
   "pagina": "https://s.shopee.com.br/4VdkdzFMUa",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "d626dce4",
@@ -258,7 +250,7 @@
   "pagina": "https://s.shopee.com.br/6AlycxxyXd",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "3d759d35",
@@ -267,7 +259,7 @@
   "pagina": "https://s.shopee.com.br/30owrAVUGb",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "3e459e3f",
@@ -276,7 +268,7 @@
   "pagina": "https://s.shopee.com.br/W7bsbrOdA",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "519fe3ec",
@@ -285,7 +277,7 @@
   "pagina": "https://s.shopee.com.br/3B8N3W7qgD",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "22f38da9",
@@ -294,7 +286,7 @@
   "pagina": "https://s.shopee.com.br/2gC6Sb9kh8",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "238e61c2",
@@ -303,7 +295,7 @@
   "pagina": "https://s.shopee.com.br/4fxAqHNvoL",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "ff98e0c7",
@@ -312,7 +304,7 @@
   "pagina": "https://s.shopee.com.br/5AtRRCM1nS",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "dda078f6",
@@ -321,23 +313,7 @@
   "pagina": "https://s.shopee.com.br/1gJZGlzt4z",
   "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
   "tamanho": "1200x630",
-  "erro": "og:image genérica da Shopee (descartada)"
- },
- {
-  "id": "cafebb2b",
-  "loja": "meli",
-  "ok": true,
-  "pagina": "https://www.mercadolivre.com.br/social/santosherlison?matt_word=santosherlison&matt_tool=1",
-  "imagem": "https://http2.mlstatic.com/D_NQ_NP_810844-MLA111157056648_052026-O.webp",
-  "tamanho": "494x500"
- },
- {
-  "id": "ec36ab29",
-  "loja": "meli",
-  "ok": true,
-  "pagina": "https://www.mercadolivre.com.br/social/santosherlison?matt_word=santosherlison&matt_tool=1",
-  "imagem": "https://http2.mlstatic.com/D_NQ_NP_826850-MLA116465697992_092026-O.webp",
-  "tamanho": "500x500"
+  "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
   "id": "b8342edf",
@@ -345,14 +321,6 @@
   "ok": false,
   "pagina": "https://www.amazon.com.br/dp/B07HJ9RKC6?tag=herlisonsanto-20",
   "erro": "sem imagem na página (788118 bytes)"
- },
- {
-  "id": "1a2ed99a",
-  "loja": "meli",
-  "ok": true,
-  "pagina": "https://www.mercadolivre.com.br/social/santosherlison?matt_word=santosherlison&matt_tool=1",
-  "imagem": "https://http2.mlstatic.com/D_NQ_NP_971200-MLA114202177794_082026-O.webp",
-  "tamanho": "403x500"
  },
  {
   "id": "00feb5c1",
@@ -369,18 +337,10 @@
   "erro": "sem imagem na página (727103 bytes)"
  },
  {
-  "id": "96fd14c8",
-  "loja": "meli",
-  "ok": true,
-  "pagina": "https://www.mercadolivre.com.br/social/santosherlison?matt_word=santosherlison&matt_tool=1",
-  "imagem": "https://http2.mlstatic.com/D_NQ_NP_769734-MLA104701374932_012026-O.webp",
-  "tamanho": "500x498"
- },
- {
   "id": "1e8701dd",
   "loja": "amazon",
   "ok": false,
   "pagina": "https://www.amazon.com.br/dp/B075QRWRYP?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (783625 bytes)"
+  "erro": "sem imagem na página (1217345 bytes)"
  }
 ]
