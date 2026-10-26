@@ -91,7 +91,8 @@ def telegram(texto):
     tok, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT")
     if not tok or not chat:
         sys.exit("Defina TELEGRAM_TOKEN e TELEGRAM_CHAT no ambiente (nunca no repositório).")
-    dados = urllib.parse.urlencode({"chat_id": chat, "text": texto, "parse_mode": "Markdown",
+    texto = texto.replace("*", "")   # texto puro: evita erro de formatação com nomes de produto
+    dados = urllib.parse.urlencode({"chat_id": chat, "text": texto,
                                     "disable_web_page_preview": "true"}).encode()
     r = urllib.request.urlopen(f"https://api.telegram.org/bot{tok}/sendMessage", dados, timeout=30)
     print("Telegram:", json.loads(r.read()).get("ok"))
@@ -119,7 +120,8 @@ def main(a):
         itens = escolher(int(arg(a, "-n", 4)))
         t = texto_boasvindas("tg") if a[1:2] == ["boasvindas"] else texto_ofertas(itens, "tg")
         if not t:
-            sys.exit("Sem itens novos conferidos nos últimos 7 dias.")
+            print("Sem itens novos conferidos nos últimos 7 dias: nada enviado.")
+            return
         telegram(t)
         if a[1:2] != ["boasvindas"]:
             registrar(itens)

@@ -1,0 +1,35 @@
+name: Canal do Telegram
+
+# Publica ofertas conferidas no canal https://t.me/achadinhosdobinga
+# Requer o secret TELEGRAM_TOKEN (token do bot, cadastrado só pelo dono do repositório).
+on:
+  schedule:
+    - cron: "0 15 * * 2,4,6"   # terça, quinta e sábado, 12:00 em Brasília
+  workflow_dispatch:
+    inputs:
+      tipo:
+        description: "ofertas ou boasvindas"
+        default: "ofertas"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: canal-telegram
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      TELEGRAM_CHAT: "@achadinhosdobinga"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enviar
+        run: python3 -I tools/canais.py enviar-telegram "${{ github.event.inputs.tipo || 'ofertas' }}" -n 3
+      - name: Guardar o registro do que foi enviado
+        run: |
+          git config user.name "canal-telegram"
+          git config user.email "actions@users.noreply.github.com"
+          git add dados/canais.json || true
+          git diff --cached --quiet || (git commit -m "Registro de envios ao canal" && git pull --rebase -q && git push -q)
