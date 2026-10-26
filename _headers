@@ -12,3 +12,6 @@
 
 /.well-known/security.txt
   Content-Type: text/plain; charset=utf-8
+
+/img/*
+  Cache-Control: public, max-age=604800

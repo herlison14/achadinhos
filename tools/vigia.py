@@ -59,7 +59,7 @@ def render(it):
     ex = '<span class="ex">%s</span>' % it['ex'] if it.get('ex') is not None else ''
     return ('<li class="it"><a href="%s" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="%s">'
             '<span class="tx"><span class="nm">%s</span>%s<span class="pr">%s<b>R$ %s</b>%s</span></span><span class="go">%s</span></a></li>'
-            % (it['href'], it['img'], it['nome'], ex, pre, it['preco'], pos, it['cta']))
+            % (it['href'], it.get('foto') or it['img'], it['nome'], ex, pre, it['preco'], pos, it['cta']))
 
 def parse(li, cat, datas):
     href = re.search(r'href="([^"]+)"', li).group(1)

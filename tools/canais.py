@@ -98,6 +98,12 @@ def foto_do_item(i):
     """Devolve a foto do item como imagem PIL, ou None se não conseguir baixar."""
     from PIL import Image
     img = i.get("img", "")
+    foto = i.get("foto")
+    if foto:
+        try:
+            return Image.open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), foto)).convert("RGB")
+        except Exception:
+            pass
     try:
         if img.startswith("data:"):
             return Image.open(io.BytesIO(base64.b64decode(img.split(",", 1)[1]))).convert("RGB")
