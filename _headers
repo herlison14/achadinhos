@@ -15,3 +15,6 @@
 
 /img/*
   Cache-Control: public, max-age=604800
+
+/painel/*
+  X-Robots-Tag: noindex, nofollow

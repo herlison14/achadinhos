@@ -8,6 +8,18 @@
 <meta property="og:title" content="Achadinhos da Semana">
 <meta property="og:description" content="Ofertas conferidas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Achadinhos do Binga">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://achadinhosdobinga.com.br/">
+<meta property="og:image" content="https://achadinhosdobinga.com.br/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Achadinhos do Binga: ofertas conferidas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://achadinhosdobinga.com.br/">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <title>Achadinhos da Semana</title>
 <link rel="preload" href="fonts/nunito-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fontes.css">
@@ -149,6 +161,8 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .s2 .btn.p{background:#fff;color:#291258}
 .s3{background:linear-gradient(135deg,#FFC93B 0%,#FFAE2B 100%);color:#291258!important}
 .s3::after{background:rgba(255,255,255,.28)!important}
+.s5{background:radial-gradient(circle at 85% 15%,rgba(255,201,59,.30),transparent 50%),linear-gradient(135deg,#0F0A1F 0%,#2A1A55 100%)}
+.s5 .big{color:var(--gold)}
 .s4{background:radial-gradient(circle at 90% 10%,rgba(34,158,217,.45),transparent 50%),linear-gradient(135deg,#291258 0%,#3C1E78 100%)}
 .storebtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;position:relative;z-index:1}
 .sb{border:0;font:inherit;font-weight:800;font-size:.9rem;background:#291258;color:#FFC93B;padding:10px 14px;border-radius:999px;cursor:pointer}
@@ -247,7 +261,14 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 </details>
 <div class="pics" id="pics-1"></div>
 </article>
-<article class="sl s2" aria-roledescription="slide" aria-label="2 de 4">
+<article class="sl s5" id="sl-bf" aria-roledescription="slide" aria-label="Black Friday" hidden>
+<p class="ey">Black Friday · 27/11/2026</p>
+<div class="big" id="bf-n">--</div>
+<p class="sn">Entre nos canais e receba as ofertas assim que saírem, sempre com preço conferido e a data da conferência.</p>
+<div class="btns"><a class="btn tg" href="https://t.me/achadinhosdobinga" rel="noopener">Telegram</a><a class="btn wa" href="https://whatsapp.com/channel/0029VbDhqE4FSAt3fXMI7f1S" rel="noopener">WhatsApp</a></div>
+<div class="pics" id="pics-5"></div>
+</article>
+<article class="sl s2" id="sl-menor" aria-roledescription="slide" aria-label="2 de 4">
 <p class="ey">Menor preço da semana</p>
 <div class="big" id="s2-p">R$ --</div>
 <p class="sn" id="s2-n"></p>
@@ -441,7 +462,15 @@ if(cheap.length){
 var c0=cheap[0],pb=c0.querySelector('.pr b'),nmz=c0.querySelector('.nm');
 $('#s2-p').textContent=pb?pb.textContent:'';
 $('#s2-n').textContent=(nmz?nmz.textContent:'')+' · '+NAMES[c0._s];
-}else{sls[1].hidden=true;}
+}else{$('#sl-menor').hidden=true;}
+(function(){
+var agora=new Date(),hoje0=new Date(agora.getFullYear(),agora.getMonth(),agora.getDate());
+var dias=Math.round((new Date(2026,10,27)-hoje0)/864e5);
+var sl=$('#sl-bf'),n=$('#bf-n');
+if(!sl||!n||dias<0||dias>60)return;
+n.textContent=dias<=0?'É hoje!':(dias===1?'Falta 1 dia':'Faltam '+dias+' dias');
+sl.hidden=false;
+})();
 var s3=$('#s3-b');
 lojas.forEach(function(k){
 var b=mk('button','sb',NAMES[k]);b.type='button';b.appendChild(mk('small','',String(count(k))));
@@ -501,6 +530,7 @@ lis.forEach(function(li){box.appendChild(tile(bigSrc(srcOf(li))));});
 pics('#pics-1',escolha(3,0));
 if(cheap.length)$('#pics-2').appendChild(tile(bigSrc(srcOf(cheap[0]))));
 pics('#pics-3',escolha(4,1),'q');
+(function(){var b5=$('#pics-5');if(b5){b5.appendChild(tile('img/marca.webp','brand'));escolha(2,3).forEach(function(li){b5.appendChild(tile(bigSrc(srcOf(li))));});}})();
 (function(){var b=$('#pics-4');if(!b)return;b.appendChild(tile('img/marca.webp','brand'));escolha(2,2).forEach(function(li){b.appendChild(tile(bigSrc(srcOf(li))));});})();
 /* filtro */
 function run(){
