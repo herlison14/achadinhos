@@ -9,6 +9,9 @@ Comandos:
   build                       regera o index.html a partir de dados/itens.json
   atualizar ARQUIVO.csv       aplica novos preços (colunas: id_ou_link;preco;data) e registra histórico
   relatorio [--dias N]        mostra quedas/altas, itens sem conferência recente e totais
+  importar [--data AAAA-MM-DD]  sincroniza dados/ com o index.html (use se a página foi editada à mão)
+  novo --loja L --cat "Categoria" --nome "Nome" --href URL --img URL --preco 12,34 [--ex ".."] [--pre ".."] [--pos ".."] [--data AAAA-MM-DD]
+  remover ID                  tira uma oferta de dados/itens.json (o histórico fica guardado)
 Datas nos arquivos de dados: AAAA-MM-DD. Na tela e nos relatórios: DD/MM/AAAA.
 """
 import sys, re, json, hashlib, csv, datetime, os, html
@@ -173,6 +176,61 @@ def cmd_relatorio(dias):
             n += 1; print('  %3d dias  [%s] %s  (%s)  id=%s' % (d, NOMES[i['loja']], i['nome'][:50], br(i['conferido']), i['id']))
     if not n: print('  nenhum')
 
+CTA = {'shopee': 'Ver na Shopee', 'amazon': 'Ver na Amazon', 'meli': 'Ver no Mercado Livre', 'aliexpress': 'Ver no AliExpress', 'magalu': 'Ver no Magalu'}
+
+def cmd_importar(data):
+    """Lê o index.html e alinha dados/ com ele: preço novo -> atualiza + histórico; item novo -> entra; item sumido -> sai."""
+    h = open(IDX, encoding='utf-8').read()
+    itens = ler(ITENS, []); hist = ler(HIST, {})
+    antigos = {i['id']: i for i in itens}
+    novos = []
+    for m in SEC.finditer(h):
+        for li in LI.findall(m.group(3)):
+            n = parse(li, m.group(2), {'*': data, 'shopee': data, 'amazon': data, 'meli': data, 'aliexpress': data, 'magalu': data})
+            a = antigos.get(n['id'])
+            if a:
+                if a['preco'] != n['preco']:
+                    print('PREÇO  %s: R$ %s -> R$ %s' % (n['nome'][:50], a['preco'], n['preco']))
+                    hist.setdefault(n['id'], []).append([data, n['preco']])
+                    a['preco'] = n['preco']; a['conferido'] = data
+                a.update({k: n[k] for k in ('cat', 'nome', 'img', 'cta')})
+                for k in ('pre', 'pos', 'ex'):
+                    if k in n: a[k] = n[k]
+                    else: a.pop(k, None)
+                novos.append(a)
+            else:
+                print('NOVO   %s (R$ %s)' % (n['nome'][:50], n['preco']))
+                hist[n['id']] = [[data, n['preco']]]
+                novos.append(n)
+    sumiram = [i for i in itens if i['id'] not in {n['id'] for n in novos}]
+    for i in sumiram: print('SAIU   %s' % i['nome'][:50])
+    gravar(ITENS, novos); gravar(HIST, hist)
+    print('importar: %d itens (%d novos, %d removidos)' % (len(novos), len([n for n in novos if n['id'] not in antigos]), len(sumiram)))
+
+def cmd_novo(a):
+    g = lambda k, d=None: a[a.index('--' + k) + 1] if '--' + k in a else d
+    for k in ('loja', 'cat', 'nome', 'href', 'img', 'preco'):
+        if g(k) is None: sys.exit('faltou --' + k)
+    loja = g('loja'); data = g('data', datetime.date.today().isoformat())
+    assert loja in NOMES, 'loja deve ser uma de: ' + ', '.join(NOMES)
+    assert loja_de(g('href')) == loja, 'o link não parece ser da loja informada'
+    assert re.fullmatch(r'[\d.]+,\d\d', g('preco')), 'preço no formato 1.234,56'
+    itens = ler(ITENS, []); hist = ler(HIST, {})
+    it = dict(id=id_de(g('href')), loja=loja, cat=g('cat'), nome=html.escape(g('nome'), quote=False), href=g('href'), img=g('img'),
+              preco=g('preco'), cta=CTA[loja], conferido=data)
+    for k in ('ex', 'pre', 'pos'):
+        if g(k): it[k] = g(k)
+    assert it['id'] not in {i['id'] for i in itens}, 'esse link já está na lista'
+    itens.append(it); hist[it['id']] = [[data, it['preco']]]
+    gravar(ITENS, itens); gravar(HIST, hist)
+    print('novo: id=%s' % it['id'])
+
+def cmd_remover(i):
+    itens = ler(ITENS, [])
+    alvo = [x for x in itens if x['id'] == i]
+    if not alvo: sys.exit('id não encontrado')
+    gravar(ITENS, [x for x in itens if x['id'] != i]); print('removido:', alvo[0]['nome'])
+
 if __name__ == '__main__':
     a = sys.argv[1:]
     if not a: print(__doc__); sys.exit(1)
@@ -180,5 +238,8 @@ if __name__ == '__main__':
         cmd_init({'aliexpress': '2026-10-26', 'magalu': '2026-10-26', '*': '2026-10-22'})
     elif a[0] == 'build': cmd_build()
     elif a[0] == 'atualizar': cmd_atualizar(a[1])
+    elif a[0] == 'importar': cmd_importar(a[a.index('--data') + 1] if '--data' in a else datetime.date.today().isoformat())
+    elif a[0] == 'novo': cmd_novo(a)
+    elif a[0] == 'remover': cmd_remover(a[1])
     elif a[0] == 'relatorio': cmd_relatorio(int(a[a.index('--dias') + 1]) if '--dias' in a else ALERTA_APOS_DIAS)
     else: print(__doc__); sys.exit(1)
