@@ -39,6 +39,21 @@ td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
 .down{color:var(--verde);font-weight:600}.up{color:var(--verm);font-weight:600}
 a{color:var(--roxo)}
 .msg{padding:12px 14px;border-radius:12px;border:1px dashed var(--bd);color:var(--mut);margin:10px 0}
+.ctl button,.ctl select,.ctl input{min-height:44px}
+.ctl button{padding:8px 16px;border:1px solid var(--roxo);background:var(--roxo);color:#fff;border-radius:10px;font:inherit;font-weight:600;cursor:pointer}
+.ctl button:disabled{opacity:.45;cursor:default}
+@media (prefers-color-scheme:dark){.ctl button{color:#16102a}}
+@media (max-width:600px){
+  header{padding:14px 14px 4px}h1{font-size:19px}main{padding:6px 12px 32px}
+  nav{flex-wrap:nowrap;overflow-x:auto;position:sticky;top:0;z-index:5;background:var(--lav);margin:8px -12px;padding:8px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  nav::-webkit-scrollbar{display:none}nav button{flex:none;min-height:42px;white-space:nowrap}
+  .ctl input,.ctl select,.ctl button{font-size:16px;flex:1 1 100%}
+  #c2,#cg{flex:1 1 40%!important;max-width:none!important}
+  #arq{width:100%;min-width:0;max-width:100%;font-size:14px}
+  #dias,#g-dias{flex:1 1 40%}#ver,#g-ver,#g-env{flex:1 1 100%}
+  .card{padding:12px 13px}.k{font-size:23px}.wide{grid-template-columns:1fr}
+  .bar .n{width:96px}.tw{max-height:70vh}
+}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -98,7 +113,7 @@ a{color:var(--roxo)}
     <h2>Ganhos (comissão)</h2>
     <p class="sub">Os valores ficam só no banco privado do Cloudflare e nunca vão para o repositório. Importe o relatório de comissão de cada programa em CSV, no modelo abaixo (separador ponto e vírgula, datas DD/MM/AAAA). Reimportar o mesmo dia e produto substitui o valor, sem duplicar.</p>
     <div class="ctl">
-      <input id="kg" type="password" autocomplete="off" placeholder="Chave do relatório (não é guardada)" aria-label="Chave do relatório">
+      <input id="kg" type="password" autocomplete="off" placeholder="Chave do relatório" aria-label="Chave do relatório">
       <input id="cg" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Código 2FA" aria-label="Código de 6 dígitos do app autenticador" style="max-width:110px">
       <button id="modelo" type="button">Baixar modelo do CSV</button>
       <input id="arq" type="file" accept=".csv,text/csv" aria-label="Arquivo CSV de comissão">
@@ -116,7 +131,7 @@ a{color:var(--roxo)}
     <h2>Cliques nos botões da página</h2>
     <p class="sub">Os cliques ficam no Cloudflare (D1), não no repositório. Digite a chave do relatório para carregar; ela vai só no cabeçalho da consulta, não é guardada e some quando você fecha a aba.</p>
     <div class="ctl">
-      <input id="k" type="password" autocomplete="off" placeholder="Chave do relatório (não é guardada)" aria-label="Chave do relatório">
+      <input id="k" type="password" autocomplete="off" placeholder="Chave do relatório" aria-label="Chave do relatório">
       <input id="c2" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Código 2FA" aria-label="Código de 6 dígitos do app autenticador" style="max-width:110px">
       <select id="dias" aria-label="Período"><option value="7">7 dias</option><option value="30">30 dias</option><option value="90">90 dias</option></select>
       <button id="ver" type="button">Carregar</button>
