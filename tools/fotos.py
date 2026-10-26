@@ -47,6 +47,7 @@ def main():
     itens = json.load(open(ITENS, encoding='utf-8'))
     os.makedirs(PASTA, exist_ok=True)
     rel = []
+    usadas = {}
     for it in itens:
         if not it['img'].startswith('data:'): continue          # AliExpress/Magalu já têm foto por URL
         dest = os.path.join(PASTA, it['id'] + '.webp')
@@ -64,7 +65,10 @@ def main():
                 dados, _, ct2 = baixar(u, ref=final)
                 im = Image.open(io.BytesIO(dados)).convert('RGB')
                 r['tamanho'] = '%dx%d' % im.size
-                if min(im.size) < 200:
+                usadas[u] = usadas.get(u, 0) + 1
+                if usadas[u] > 1 or 'homepagefe' in u or 'shopee-mobilemall' in u:
+                    r['erro'] = 'imagem genérica/repetida (não é do produto)'
+                elif min(im.size) < 200:
                     r['erro'] = 'imagem pequena demais'
                 else:
                     im.thumbnail((600, 600), Image.LANCZOS)
