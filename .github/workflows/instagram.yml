@@ -1,0 +1,39 @@
+name: Instagram (publicador)
+on:
+  schedule:
+    - cron: "*/20 11-23,0-1 * * *"   # a cada 20 min, das 08h à 22h40 (Brasília): publica o que estiver no horário
+    - cron: "0 13 * * 1"             # segunda 10h (Brasília): confere e renova o token
+  workflow_dispatch:
+    inputs:
+      acao:
+        description: "testar (só valida), publicar ou status (token)"
+        default: "testar"
+        type: choice
+        options: [testar, publicar, status]
+permissions:
+  contents: write
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+jobs:
+  instagram:
+    runs-on: ubuntu-latest
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+      TELEGRAM_CHAT: "@achadinhosdobinga"
+      ACAO: ${{ github.event.inputs.acao || (github.event.schedule == '0 13 * * 1' && 'status' || 'publicar') }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Executar
+        run: python3 tools/instagram.py "$ACAO"
+      - name: Guardar a fila (status dos posts)
+        run: |
+          git config user.name "achadinhos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add dados/posts.json
+          if git diff --cached --quiet; then echo "fila sem mudanças"; exit 0; fi
+          git commit -m "Instagram: atualiza status da fila"
+          git pull --rebase
+          git push

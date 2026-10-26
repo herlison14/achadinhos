@@ -18,3 +18,10 @@ Para incluir ou remover uma oferta, edite `itens.json` e rode o `build`. O texto
 - Registrar: `python3 -I tools/vigia.py post --data 2026-11-10 --formato carrossel --tema "5 achadinhos" --loja magalu --ids id1,id2 --status planejado`
 - Mudar status: `python3 -I tools/vigia.py post-status ID_DO_POST publicado`
 - Origem do clique: o link da bio é um só, então a origem é por canal (`?o=ig` bio, `?o=st` stories, `?o=tg` Telegram, `?o=wa` WhatsApp, `?o=bf` Black Friday).
+
+## Publicação automática no Instagram
+- `../tools/instagram.py` + `.github/workflows/instagram.yml` publicam sozinhos, pela API oficial, os posts de `posts.json` com `canal: "ig"`, `status: "agendado"` e formato `carrossel` ou `post` na data/hora marcadas (horário de Brasília). Reels continuam manuais.
+- Cada post agendado precisa de `imagens` (JPEG 1080x1350 em `postagens/<id>/01.jpg`, ...), `legenda` (texto completo, com "Publicidade: links de afiliado") e `produtos` (ids). Para colocar na fila: `python3 -I tools/vigia.py post-status ID agendado`.
+- Travas: preço de cada produto conferido há no máximo 7 dias e escrito na legenda como `R$ 52,82`; atraso de no máximo 6 h; imagens públicas em JPEG; não duplica se o texto já está no perfil. Se algo falha, o post vira `bloqueado` e o Telegram avisa.
+- Segredos do GitHub (nunca no repositório): `IG_TOKEN` e `IG_USER_ID`. O token vale 60 dias e é renovado toda segunda pelo fluxo.
+- Testar sem publicar: Actions > "Instagram (publicador)" > Run workflow > `testar`.
