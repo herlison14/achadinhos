@@ -24,9 +24,8 @@ async function ganhosApi(req, env, url) {
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: h });
   if (req.method !== 'GET' && req.method !== 'POST') return new Response('Metodo nao permitido', { status: 405, headers: h });
 
-  const auth = req.headers.get('Authorization') || '';
-  const k = auth.startsWith('Bearer ') ? auth.slice(7) : '';
-  if (!env.REPORT_KEY || !k || !iguais(k, env.REPORT_KEY)) return jsonG({ erro: 'nao autorizado' }, 401, h);
+  const negado = await autorizar(req, env, h);
+  if (negado) return negado;
 
   await env.DB.prepare(
     'CREATE TABLE IF NOT EXISTS ganhos (dia TEXT NOT NULL, loja TEXT NOT NULL, produto TEXT NOT NULL, ' +
