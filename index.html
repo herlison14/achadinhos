@@ -32,8 +32,6 @@ svg{display:block}
 @media (min-width:720px){.ann .in{justify-content:space-between}.ann span{display:flex}}
 /* marca */
 .brand{display:flex;align-items:center;justify-content:space-between;padding:12px 16px 8px}
-.logo{display:block;height:54px;width:auto}.logo.d{display:none}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo.l{display:none}:root:not([data-theme="light"]) .logo.d{display:block}}
 .ig{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.85rem;text-decoration:none;border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:999px}
 .ig svg{width:18px;height:18px}
 /* barra fixa: busca + categorias */
@@ -54,7 +52,7 @@ svg{display:block}
 .chip small{opacity:.75;font-weight:700;margin-left:4px}
 .chip[aria-pressed="true"]{background:var(--gold);color:#291258}
 /* hero */
-.hero{margin:16px 0 8px;border-radius:24px;padding:26px 22px 22px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 88% 12%,rgba(255,201,59,.30),transparent 46%),radial-gradient(circle at 5% 110%,rgba(220,60,70,.28),transparent 42%),linear-gradient(135deg,var(--deep) 0%,var(--deep2) 100%)}
+.hero{margin:0;border-radius:24px;padding:26px 22px 22px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 88% 12%,rgba(255,201,59,.30),transparent 46%),radial-gradient(circle at 5% 110%,rgba(220,60,70,.28),transparent 42%),linear-gradient(135deg,var(--deep) 0%,var(--deep2) 100%)}
 .hero h1{font-family:var(--disp);font-size:clamp(2.1rem,9.5vw,3.2rem);line-height:1;margin:0 0 10px;letter-spacing:-.02em;text-wrap:balance}
 .hero h1 em{font-style:normal;color:var(--gold)}
 .hero p{margin:0 0 16px;max-width:44ch;color:#E9E1FF}
@@ -126,6 +124,62 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .up.on{display:grid}
 .up svg{width:22px;height:22px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* marca (logo) */
+.lg{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg)}
+.lg img{width:48px;height:48px;border-radius:13px;display:block;flex:none}
+.lg span{font-family:var(--disp);font-weight:700;font-size:1.5rem;line-height:.9;letter-spacing:-.02em;display:flex;flex-direction:column}
+.lg b{font-weight:700;color:var(--acc)}
+@media (min-width:720px){.lg img{width:56px;height:56px;border-radius:15px}.lg span{font-size:1.75rem}}
+/* banner rotativo */
+.bnr{position:relative;margin:16px 0 8px}
+.bnr-t{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;border-radius:24px}
+.bnr-t::-webkit-scrollbar{display:none}
+.bnr-t:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.bnr .sl{flex:0 0 100%;scroll-snap-align:start;margin:0;min-width:0}
+.sl:not(.hero){border-radius:24px;padding:26px 22px 22px;color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.sl:not(.hero)::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.10);pointer-events:none}
+.sl .ey{margin:0;font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.sl .big{font-family:var(--disp);font-size:clamp(2.6rem,13vw,4.4rem);line-height:.95;letter-spacing:-.02em}
+.sl .big2{font-family:var(--disp);font-size:clamp(1.7rem,7.5vw,2.6rem);line-height:1.02;letter-spacing:-.02em;text-wrap:balance;max-width:20ch}
+.sl .sn{margin:0;max-width:46ch;font-size:.95rem}
+#s2-n{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sl .btns{margin-top:6px}
+.s2{background:linear-gradient(135deg,#DC3C46 0%,#7A1F5C 100%)}
+.s2 .btn.p{background:#fff;color:#291258}
+.s3{background:linear-gradient(135deg,#FFC93B 0%,#FFAE2B 100%);color:#291258!important}
+.s3::after{background:rgba(255,255,255,.28)!important}
+.s4{background:radial-gradient(circle at 90% 10%,rgba(34,158,217,.45),transparent 50%),linear-gradient(135deg,#291258 0%,#3C1E78 100%)}
+.storebtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;position:relative;z-index:1}
+.sb{border:0;font:inherit;font-weight:800;font-size:.9rem;background:#291258;color:#FFC93B;padding:10px 14px;border-radius:999px;cursor:pointer}
+.sb small{opacity:.8;margin-left:5px;font-weight:700}
+.btn.tg{background:#1479AE;color:#fff}
+.btn.wa{background:#25D366;color:#073B1E}
+.bnr .btn{position:relative;z-index:1}
+.bn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#291258;box-shadow:0 4px 14px rgba(0,0,0,.25);display:none;place-items:center;cursor:pointer;z-index:3}
+.bn svg{width:20px;height:20px}
+.bn.pv{left:10px}.bn.nx{right:10px}
+@media (min-width:720px) and (hover:hover){.bn{display:grid}}
+@media (min-width:720px) and (hover:hover){.bnr .sl{padding-left:66px!important;padding-right:66px!important}}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:10px}
+.dot{width:9px;height:9px;padding:0;border:0;border-radius:99px;background:var(--line);cursor:pointer;transition:width .2s,background .2s}
+.dot[aria-current="true"]{width:26px;background:var(--acc)}
+/* vitrines de promoções */
+.pm{margin-top:4px}
+.pm .sec-h h2{margin-top:22px}
+.rw{position:relative}
+.ra{position:absolute;top:42%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--fg);box-shadow:var(--sh);display:none;place-items:center;cursor:pointer;z-index:2}
+.ra svg{width:18px;height:18px}
+.ra.l{left:-8px}.ra.r{right:-8px}
+@media (min-width:720px) and (hover:hover){.ra{display:grid}.ra[hidden]{display:none}}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:0 2px 10px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:2px solid var(--line);background:var(--card);color:var(--fg);font:inherit;font-weight:800;font-size:.85rem;padding:7px 13px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.tab small{opacity:.7;margin-left:4px;font-weight:700}
+.tab[aria-pressed="true"]{background:var(--pill);border-color:var(--pill);color:var(--pillfg)}
+.rc .p small{display:block;font-family:var(--body);font-size:.7rem;font-weight:700;color:var(--mut);margin-top:3px}
+.rc .p{min-height:2.2em}
+@media (prefers-reduced-motion:reduce){.dot{transition:none}}
 /* busca-css-fim */
 </style>
 </head>
@@ -137,7 +191,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5 10a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 9Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg>Shopee · Amazon · Mercado Livre · AliExpress · Magalu</span>
 </div></div>
 <div class="wrap brand">
-<a href="./" aria-label="achadinhos do binga"><img class="logo l" alt="achadinhos do binga" src="data:image/png;base64,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"><img class="logo d" alt="achadinhos do binga" src="data:image/png;base64,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"></a>
+<a class="lg" href="./" aria-label="achadinhos do binga"><img src="data:image/webp;base64,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" alt="" width="48" height="48"><span>achadinhos<b>do binga</b></span></a>
 <a class="ig" href="https://instagram.com/achadinhosdobinga" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg>@achadinhosdobinga</a>
 </div>
 <div class="bar">
@@ -156,7 +210,9 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <nav class="cats" aria-label="Categorias"><div class="sc" id="chips"></div></nav>
 </div>
 <div class="wrap">
-<section class="hero">
+<section class="bnr" aria-roledescription="carousel" aria-label="Destaques da semana">
+<div class="bnr-t" id="bnr-t" tabindex="0">
+<article class="sl hero" aria-roledescription="slide" aria-label="1 de 4">
 <h1>Achadinhos da <em>semana</em></h1>
 <p><b id="n-of">103</b> ofertas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu, com preço conferido em 22/10/2026 (AliExpress e Magalu: 26/10/2026).</p>
 <div class="btns">
@@ -166,6 +222,28 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <details class="como"><summary>Como funciona</summary>
 <p>Toque no produto para abrir direto na loja. Onde há variações (cor, tamanho), mostramos o menor preço. Na Shopee, cupons podem baixar o valor ainda mais.</p>
 </details>
+</article>
+<article class="sl s2" aria-roledescription="slide" aria-label="2 de 4">
+<p class="ey">Menor preço da semana</p>
+<div class="big" id="s2-p">R$ --</div>
+<p class="sn" id="s2-n"></p>
+<div class="btns"><a class="btn p" href="#baratos">Ver os menores preços</a></div>
+</article>
+<article class="sl s3" aria-roledescription="slide" aria-label="3 de 4">
+<p class="ey">Escolha sua loja</p>
+<div class="big2">Ofertas separadas por loja</div>
+<div class="storebtns" id="s3-b"></div>
+</article>
+<article class="sl s4" aria-roledescription="slide" aria-label="4 de 4">
+<p class="ey">No seu celular</p>
+<div class="big2">Receba as ofertas nos nossos canais</div>
+<p class="sn">Canais gratuitos, com o mesmo cuidado: preço conferido e aviso de afiliado em todo post.</p>
+<div class="btns"><a class="btn tg" href="https://t.me/achadinhosdobinga" rel="noopener">Telegram</a><a class="btn wa" href="https://whatsapp.com/channel/0029VbDhqE4FSAt3fXMI7f1S" rel="noopener">WhatsApp</a></div>
+</article>
+</div>
+<button class="bn pv" id="bn-pv" type="button" aria-label="Destaque anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg></button>
+<button class="bn nx" id="bn-nx" type="button" aria-label="Próximo destaque"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></button>
+<div class="dots" id="dots"></div>
 </section>
 <ul class="trust">
 <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Preço conferido</b><span>Na página de cada produto</span></div></li>
@@ -173,7 +251,12 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg></span><div><b>Sem custo extra</b><span>A indicação não encarece</span></div></li>
 <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div><b>Ofertas novas</b><span>Atualizado toda semana</span></div></li>
 </ul>
-<section id="baratos" aria-labelledby="bt"><div class="sec-h"><h2 id="bt">Menores preços da semana</h2></div><div class="rail" id="rail"></div></section>
+<div id="promos">
+<section id="baratos" class="pm" aria-labelledby="bt"><div class="sec-h"><h2 id="bt">Menores preços da semana</h2></div><div class="rw"><div class="rail" id="rail"></div></div></section>
+<section id="pix" class="pm" aria-labelledby="pxt"><div class="sec-h"><h2 id="pxt">Preço no Pix</h2><p>Valores à vista no Pix, conferidos na loja.</p></div><div class="rw"><div class="rail" id="rail-pix"></div></div></section>
+<section id="ate20" class="pm" aria-labelledby="a20t"><div class="sec-h"><h2 id="a20t">Achadinhos até R$ 20</h2><p>Preço conferido de até R$ 20,00, das cinco lojas.</p></div><div class="rw"><div class="rail" id="rail-20"></div></div></section>
+<section id="porloja" class="pm" aria-labelledby="plt"><div class="sec-h"><h2 id="plt">Ofertas por loja</h2></div><div class="tabs" id="tabs" role="group" aria-label="Escolher loja"></div><div class="rw"><div class="rail" id="rail-loja"></div></div></section>
+</div>
 <p class="bs" id="bs" aria-live="polite"></p>
 <div class="vazio" id="vazio" hidden>
 <p><b id="vmsg">Nenhuma oferta encontrada.</b></p>
@@ -199,7 +282,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 </main>
 <footer>
 <p class="aviso">Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, AliExpress e Magalu e eu posso receber comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em 22/10/2026 (AliExpress e Magalu: 26/10/2026) e podem ter mudado. No Magalu, o preço mostrado é o do Pix; no cartão pode ser maior. Como Associado da Amazon, eu ganho com compras qualificadas.</p>
-<p class="fl"><a href="https://instagram.com/achadinhosdobinga" rel="noopener">Instagram @achadinhosdobinga</a><a href="privacidade.html">Privacidade</a><a href="#topo">Voltar ao topo</a><span>&copy; 2026 Achadinhos do Binga</span></p>
+<p class="fl"><a href="https://instagram.com/achadinhosdobinga" rel="noopener">Instagram @achadinhosdobinga</a><a href="https://t.me/achadinhosdobinga" rel="noopener">Telegram</a><a href="https://whatsapp.com/channel/0029VbDhqE4FSAt3fXMI7f1S" rel="noopener">WhatsApp</a><a href="privacidade.html">Privacidade</a><a href="#topo">Voltar ao topo</a><span>&copy; 2026 Achadinhos do Binga</span></p>
 </footer>
 </div>
 <button class="up" id="up" type="button" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
@@ -248,19 +331,96 @@ chips.appendChild(b);
 }
 addChip('','Todas',items.length);
 heads.forEach(function(h){addChip(h.id,h.firstChild.textContent,h._n);});
-/* menores preços */
-var cheap=items.filter(function(li){return li._p>0;}).sort(function(a,b){return a._p-b._p;}).slice(0,8);
-cheap.forEach(function(li,i){
+/* vitrines de promoções */
+var promos=$('#promos');
+var REDUCE=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+var ARROW_L='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg>',ARROW_R='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg>';
+function card(li,rank){
 var a=li.querySelector('a'),img=li.querySelector('img'),nm=li.querySelector('.nm'),pr=li.querySelector('.pr b');
 var c=mk('a','rc');c.href=a.href;c.rel='noopener sponsored';
-c.appendChild(mk('span','k',String(i+1)));
+if(rank)c.appendChild(mk('span','k',String(rank)));
 if(img){var im=img.cloneNode();im.className='';im.width=84;im.height=84;c.appendChild(im);}
 if(li._s)c.appendChild(mk('span','lj lj-'+li._s,NAMES[li._s]));
 c.appendChild(mk('span','n',nm?nm.textContent:''));
-c.appendChild(mk('span','p',pr?pr.textContent:''));
-rail.appendChild(c);
-});
+var p=mk('span','p',pr?pr.textContent:'');
+var sm=[].map.call(li.querySelectorAll('.pr small'),function(s){return s.textContent.trim();}).join(' ');
+if(sm)p.appendChild(mk('small','',sm));
+c.appendChild(p);
+return c;
+}
+function fill(box,list,ranked){
+box.textContent='';
+list.forEach(function(li,i){box.appendChild(card(li,ranked?i+1:0));});
+box.scrollLeft=0;
+}
+function arrows(box){
+var w=box.parentNode,l=mk('button','ra l'),r=mk('button','ra r');
+l.type=r.type='button';l.setAttribute('aria-label','Rolar para a esquerda');r.setAttribute('aria-label','Rolar para a direita');
+l.innerHTML=ARROW_L;r.innerHTML=ARROW_R;
+function upd(){l.hidden=box.scrollLeft<8;r.hidden=box.scrollLeft+box.clientWidth>=box.scrollWidth-8;}
+l.addEventListener('click',function(){box.scrollBy({left:-box.clientWidth*.8,behavior:REDUCE?'auto':'smooth'});});
+r.addEventListener('click',function(){box.scrollBy({left:box.clientWidth*.8,behavior:REDUCE?'auto':'smooth'});});
+box.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);
+w.appendChild(l);w.appendChild(r);upd();setTimeout(upd,300);
+return upd;
+}
+function hideIfEmpty(id,list){var s=$(id);if(s&&!list.length)s.hidden=true;}
+var priced=items.filter(function(li){return li._p>0;});
+var cheap=priced.slice().sort(function(a,b){return a._p-b._p;}).slice(0,12);
+fill(rail,cheap,true);arrows(rail);
 if(!cheap.length)baratos.hidden=true;
+var pix=priced.filter(function(li){var s=li.querySelector('.pr small');return s&&/pix/i.test(s.textContent);}).sort(function(a,b){return a._p-b._p;}).slice(0,12);
+fill($('#rail-pix'),pix,false);arrows($('#rail-pix'));hideIfEmpty('#pix',pix);
+/* até R$ 20: intercala as lojas para não ficar tudo da mesma */
+var ate=priced.filter(function(li){return li._p<=20;}).sort(function(a,b){return a._p-b._p;});
+var por={},mix=[],more=true;
+ate.forEach(function(li){(por[li._s]=por[li._s]||[]).push(li);});
+while(more&&mix.length<12){more=false;Object.keys(por).forEach(function(k){if(por[k].length&&mix.length<12){mix.push(por[k].shift());more=true;}});}
+fill($('#rail-20'),mix,false);arrows($('#rail-20'));hideIfEmpty('#ate20',mix);
+/* por loja (abas) */
+var tabs=$('#tabs'),railL=$('#rail-loja'),updL=arrows(railL);
+var lojas=Object.keys(NAMES).filter(function(k){return items.some(function(li){return li._s===k;});});
+function count(k){return items.filter(function(li){return li._s===k;}).length;}
+function showLoja(k){
+fill(railL,items.filter(function(li){return li._s===k;}).slice(0,14),false);updL();
+$$('#tabs .tab').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-l')===k));});
+}
+lojas.forEach(function(k){
+var b=mk('button','tab',NAMES[k]);b.type='button';b.setAttribute('data-l',k);b.appendChild(mk('small','',String(count(k))));
+b.addEventListener('click',function(){showLoja(k);});tabs.appendChild(b);
+});
+if(lojas.length)showLoja(lojas[0]);else $('#porloja').hidden=true;
+/* banner */
+var bt=$('#bnr-t'),dots=$('#dots'),sls=$$('#bnr-t .sl'),cur=0,timer=0,parou=false;
+if(cheap.length){
+var c0=cheap[0],pb=c0.querySelector('.pr b'),nmz=c0.querySelector('.nm');
+$('#s2-p').textContent=pb?pb.textContent:'';
+$('#s2-n').textContent=(nmz?nmz.textContent:'')+' · '+NAMES[c0._s];
+}else{sls[1].hidden=true;}
+var s3=$('#s3-b');
+lojas.forEach(function(k){
+var b=mk('button','sb',NAMES[k]);b.type='button';b.appendChild(mk('small','',String(count(k))));
+b.addEventListener('click',function(){st.loja=k;sel.value=k;run();lista.scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'start'});});
+s3.appendChild(b);
+});
+sls=sls.filter(function(s){return !s.hidden;});
+sls.forEach(function(s,i){
+s.setAttribute('aria-label',(i+1)+' de '+sls.length);
+var d=mk('button','dot');d.type='button';d.setAttribute('aria-label','Ir para o destaque '+(i+1));
+d.addEventListener('click',function(){parar();go(i);});dots.appendChild(d);
+});
+function mark(){[].forEach.call(dots.children,function(d,k){d.setAttribute('aria-current',String(k===cur));});}
+function go(i){cur=(i+sls.length)%sls.length;bt.scrollTo({left:cur*bt.clientWidth,behavior:REDUCE?'auto':'smooth'});mark();}
+function parar(){parou=true;clearInterval(timer);}
+function auto(){if(REDUCE||parou||sls.length<2)return;clearInterval(timer);timer=setInterval(function(){if(!document.hidden)go(cur+1);},6500);}
+bt.addEventListener('scroll',function(){var i=Math.round(bt.scrollLeft/bt.clientWidth);if(i!==cur&&i>=0&&i<sls.length){cur=i;mark();}},{passive:true});
+$('#bn-pv').addEventListener('click',function(){parar();go(cur-1);});
+$('#bn-nx').addEventListener('click',function(){parar();go(cur+1);});
+['touchstart','focusin','keydown','pointerdown'].forEach(function(ev){bt.addEventListener(ev,parar,{passive:true});});
+bt.parentNode.addEventListener('mouseenter',function(){clearInterval(timer);});
+bt.parentNode.addEventListener('mouseleave',auto);
+window.addEventListener('resize',function(){bt.scrollTo({left:cur*bt.clientWidth,behavior:'auto'});});
+mark();auto();
 /* filtro */
 function run(){
 var raw=q.value.trim(),terms=norm(raw).split(/\s+/).filter(Boolean),n=0;
@@ -276,7 +436,7 @@ var h=ul.previousElementSibling;if(h&&h.tagName==='H2')h.hidden=!any;
 });
 $$('.chip').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-c')||'')===st.cat));});
 clr.hidden=!raw;
-baratos.hidden=filtering||!cheap.length;
+promos.hidden=filtering;
 if(!filtering){bs.textContent='';vz.hidden=true;return;}
 bs.textContent=n+' de '+items.length+' ofertas';
 vmsg.textContent=raw?('Nenhuma oferta encontrada para “'+raw+'”.'):'Nenhuma oferta com esses filtros.';
