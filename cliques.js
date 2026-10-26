@@ -26,6 +26,11 @@
     return /magazinevoce/.test(h) ? 'magalu' : /shopee/.test(h) ? 'shopee' : /amazon/.test(h) ? 'amazon' : /meli\.la|mercadolivre/.test(h) ? 'meli' : /aliexpress/.test(h) ? 'aliexpress' : 'outra';
   }
 
+  function categoriaDe(li) {
+    var h = li && li.parentNode && li.parentNode.previousElementSibling;
+    return h && h.tagName === 'H2' && h.firstChild ? h.firstChild.textContent : '';
+  }
+
   var ultimo = { href: '', t: 0 };
 
   function aoClicar(ev) {
@@ -41,11 +46,17 @@
     var li = a.closest('li.it');
     if (li) {
       nm = li.querySelector('.nm');
-      var h = li.parentNode && li.parentNode.previousElementSibling;
-      if (h && h.tagName === 'H2' && h.firstChild) cat = h.firstChild.textContent;
+      cat = categoriaDe(li);
     } else if (a.classList.contains('rc')) {
       nm = a.querySelector('.n');
+      // O trilho "Menores preços" repete itens da lista: usa a categoria real do item
       cat = 'Menores preços da semana';
+      if (nm) {
+        var nomes = document.querySelectorAll('li.it .nm');
+        for (var i = 0; i < nomes.length; i++) {
+          if (nomes[i].textContent === nm.textContent) { cat = categoriaDe(nomes[i].closest('li.it')) || cat; break; }
+        }
+      }
     }
     var dados = JSON.stringify({
       p: nm ? nm.textContent : '',
