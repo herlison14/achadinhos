@@ -84,7 +84,7 @@ a{color:var(--roxo)}
 <section id="cliques" hidden>
   <div class="card">
     <h2>Cliques nos botões da página</h2>
-    <p class="sub">Os cliques ficam no Cloudflare (D1), não no repositório. Para ver aqui, o Worker precisa de um endpoint JSON protegido (ainda não ativado). Enquanto isso, o relatório atual abre pelo endereço /relatorio do Worker.</p>
+    <p class="sub">Os cliques ficam no Cloudflare (D1), não no repositório. Digite a chave do relatório para carregar; ela vai só no cabeçalho da consulta, não é guardada e some quando você fecha a aba.</p>
     <div class="ctl">
       <input id="k" type="password" autocomplete="off" placeholder="Chave do relatório (não é guardada)" aria-label="Chave do relatório">
       <select id="dias" aria-label="Período"><option value="7">7 dias</option><option value="30">30 dias</option><option value="90">90 dias</option></select>
@@ -172,7 +172,7 @@ function cliques(){
   var k=$('#k').value.trim(),out=$('#cl-out');out.textContent='';
   if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
   fetch(WORKER+'/api/cliques?dias='+encodeURIComponent($('#dias').value),{headers:{'Authorization':'Bearer '+k},cache:'no-store'})
-   .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave recusada.':'O Worker ainda não tem o endpoint /api/cliques (resposta '+r.status+').');return r.json()})
+   .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave recusada.':'O Worker respondeu '+r.status+'.');return r.json()})
    .then(function(d){
      var g=el('div','grid');var c=el('div','card');c.appendChild(el('div','k',String(d.total)));c.appendChild(el('div','l','cliques no período'));g.appendChild(c);out.appendChild(g);
      [['Por loja',d.lojas],['Por origem',d.origens],['Por categoria',d.categorias],['Produtos mais clicados',d.produtos]].forEach(function(s){
