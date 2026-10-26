@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       tipo:
-        description: "ofertas ou boasvindas"
+        description: "ofertas, boasvindas ou whatsapp (gera cartões e textos em canal/whatsapp)"
         default: "ofertas"
 
 permissions:
@@ -27,11 +27,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Instalar Pillow (cartões com foto)
         run: python3 -m pip install --quiet pillow
+      - name: Gerar cartões para o canal do WhatsApp
+        if: ${{ github.event.inputs.tipo == 'whatsapp' }}
+        run: python3 tools/canais.py whatsapp-cartoes -n 4 --saida canal/whatsapp
       - name: Enviar
+        if: ${{ github.event.inputs.tipo != 'whatsapp' }}
         run: python3 tools/canais.py enviar-telegram "${{ github.event.inputs.tipo || 'ofertas' }}" -n 3
       - name: Guardar o registro do que foi enviado
         run: |
           git config user.name "canal-telegram"
           git config user.email "actions@users.noreply.github.com"
-          git add dados/canais.json || true
+          git add dados/canais.json canal || true
           git diff --cached --quiet || (git commit -m "Registro de envios ao canal" && git pull --rebase -q && git push -q)

@@ -217,6 +217,44 @@ def telegram_foto(png, legenda_txt):
     print("Telegram foto:", json.loads(urllib.request.urlopen(req, timeout=60).read()).get("ok"))
 
 
+
+def cartao_boasvindas():
+    """Cartão de apresentação do canal (logo, nome e promessa). Devolve bytes PNG."""
+    from PIL import Image, ImageDraw
+    W = 1080
+    img = Image.new("RGB", (W, W), "#F4F0FF")
+    d = ImageDraw.Draw(img)
+    roxo, amarelo = "#291258", "#FFC93B"
+    logo = Image.open(RAIZ / "tools" / "logo.png").convert("RGBA").resize((420, 420))
+    img.paste(logo, ((W - 420) // 2, 120), logo)
+    f1 = fonte(74)
+    t = "Achadinhos do Binga"
+    d.text(((W - d.textlength(t, font=f1)) / 2, 580), t, font=f1, fill=roxo)
+    f2 = fonte(40)
+    for k, linha in enumerate(["Achadinhos e ofertas conferidas", "Shopee • Amazon • Mercado Livre",
+                               "AliExpress • Magalu"]):
+        d.text(((W - d.textlength(linha, font=f2)) / 2, 690 + k * 56), linha, font=f2, fill=roxo)
+    f3 = fonte(32)
+    t = "SEMPRE COM A DATA DA CONFERÊNCIA"
+    w = int(d.textlength(t, font=f3)) + 70
+    d.rounded_rectangle(((W - w) // 2, 900, (W + w) // 2, 966), 33, fill=roxo)
+    d.text(((W - d.textlength(t, font=f3)) / 2, 914), t, font=f3, fill=amarelo)
+    f4 = fonte(26)
+    t = "Publicidade: links de afiliado"
+    d.text(((W - d.textlength(t, font=f4)) / 2, 1000), t, font=f4, fill=roxo)
+    buf = io.BytesIO()
+    img.save(buf, "PNG")
+    return buf.getvalue()
+
+
+def legenda_whatsapp(i):
+    pre, preco, pos = preco_texto(i)
+    p = (pre + " " if pre else "") + preco + (" " + pos if pos else "")
+    return (f"*{html.unescape(i['nome'])}*\n{p} na {LOJAS.get(i['loja'], i['loja'])}\n"
+            f"Conferido em {br(i['conferido'])}. Pode mudar.\n\n{i['href']}\n\n"
+            f"Mais ofertas: {SITE}/?o=wa\n_{AVISO}_")
+
+
 def registrar(itens):
     d = ler(LOG, {"enviados": []})
     for i in itens:
@@ -266,6 +304,18 @@ def main(a):
             telegram_foto(cartao(i), legenda(i))
         telegram(f"Mais ofertas organizadas por categoria: {SITE}/?o=tg\n\n{AVISO}")
         registrar(itens)
+    elif cmd == "whatsapp-cartoes":            # cartões + legendas para colar no canal do WhatsApp (não registra)
+        pasta = Path(arg(a, "--saida", "canal/whatsapp"))
+        pasta.mkdir(parents=True, exist_ok=True)
+        for velho in list(pasta.glob("*.png")) + list(pasta.glob("*.txt")):
+            velho.unlink()
+        itens = escolher(int(arg(a, "-n", 4)))
+        (pasta / "00_boasvindas.png").write_bytes(cartao_boasvindas())
+        (pasta / "00_boasvindas.txt").write_text(texto_boasvindas("wa") + "\n", encoding="utf-8")
+        for n, i in enumerate(itens, 1):
+            (pasta / f"{n:02d}_{i['loja']}_{i['id']}.png").write_bytes(cartao(i))
+            (pasta / f"{n:02d}_{i['loja']}_{i['id']}.txt").write_text(legenda_whatsapp(i) + "\n", encoding="utf-8")
+        print(f"{len(itens)} cartões de oferta + boas-vindas em {pasta}")
     elif cmd == "cartao":                      # teste local: grava PNG do item (id) em --saida
         it = next(x for x in ler(ITENS, []) if x["id"] == a[1])
         Path(arg(a, "--saida", f"cartao_{a[1]}.png")).write_bytes(cartao(it))
