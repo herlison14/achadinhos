@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Painel — Achadinhos do Binga</title>
+<style>
+:root{--roxo:#291258;--lav:#f4f0ff;--amar:#ffc93b;--verm:#dc3c46;--verde:#1b7f4b;--txt:#1d1633;--mut:#6b6480;--bd:#e0d9f2;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--lav:#16102a;--card:#1f1838;--txt:#efeaff;--mut:#a79fc2;--bd:#352b57;--roxo:#c9b8ff;--verde:#4ad28a;--verm:#ff7a85}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--lav);color:var(--txt);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:20px 16px 8px;max-width:1100px;margin:0 auto}
+h1{font-size:22px;margin:0;color:var(--roxo)}h2{font-size:16px;margin:0 0 10px;color:var(--roxo)}
+.sub{color:var(--mut);font-size:13px}
+main{max-width:1100px;margin:0 auto;padding:8px 16px 40px}
+nav{display:flex;gap:6px;margin:14px 0;flex-wrap:wrap}
+nav button{border:1px solid var(--bd);background:var(--card);color:var(--txt);padding:7px 14px;border-radius:999px;font:inherit;cursor:pointer}
+nav button[aria-selected=true]{background:var(--roxo);color:#fff;border-color:var(--roxo)}
+@media (prefers-color-scheme:dark){nav button[aria-selected=true]{color:#16102a}}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px}
+.k{font-size:26px;font-weight:700;color:var(--roxo)}.l{font-size:12px;color:var(--mut)}
+.wide{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-bottom:16px}
+.bar{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:13px}
+.bar .n{width:120px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .t{flex:1;background:var(--lav);border-radius:6px;height:16px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--roxo);border-radius:6px}
+.bar .v{width:54px;text-align:right;font-variant-numeric:tabular-nums}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:7px 8px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}
+th{position:sticky;top:0;background:var(--card);cursor:pointer;white-space:nowrap;font-size:12px;color:var(--mut)}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+.tw{max-height:560px;overflow:auto;border:1px solid var(--bd);border-radius:12px;background:var(--card)}
+.ctl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.ctl input,.ctl select{padding:7px 10px;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--txt);font:inherit}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:11px;border:1px solid var(--bd)}
+.tag.rec{background:#fff3cd;color:#664d03;border-color:#ffe69c}.tag.sai{background:#f8d7da;color:#58151c;border-color:#f1aeb5}
+.down{color:var(--verde);font-weight:600}.up{color:var(--verm);font-weight:600}
+a{color:var(--roxo)}
+.msg{padding:12px 14px;border-radius:12px;border:1px dashed var(--bd);color:var(--mut);margin:10px 0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <h1>Painel — Achadinhos do Binga</h1>
+  <div class="sub" id="fonte">Carregando…</div>
+</header>
+<main>
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-aba="geral">Visão geral</button>
+  <button role="tab" aria-selected="false" data-aba="ofertas">Ofertas</button>
+  <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
+  <button role="tab" aria-selected="false" data-aba="cliques">Cliques</button>
+</nav>
+
+<section id="geral">
+  <div class="grid" id="kpis"></div>
+  <div class="wide">
+    <div class="card"><h2>Ofertas por loja</h2><div id="b-loja"></div></div>
+    <div class="card"><h2>Ofertas por categoria</h2><div id="b-cat"></div></div>
+    <div class="card"><h2>Idade da conferência</h2><div id="b-idade"></div></div>
+  </div>
+</section>
+
+<section id="ofertas" hidden>
+  <div class="ctl">
+    <input id="f-q" type="search" placeholder="Buscar produto…" aria-label="Buscar produto">
+    <select id="f-loja" aria-label="Loja"><option value="">Todas as lojas</option></select>
+    <select id="f-cat" aria-label="Categoria"><option value="">Todas as categorias</option></select>
+    <select id="f-sit" aria-label="Situação"><option value="">Qualquer situação</option><option>OK</option><option>Reconferir</option><option>Sair da página</option></select>
+  </div>
+  <div class="tw"><table id="tab"><thead><tr>
+    <th data-o="nome">Produto</th><th data-o="lojaN">Loja</th><th data-o="cat">Categoria</th><th class="r" data-o="p">Preço</th><th data-o="conf">Conferido</th><th class="r" data-o="dias">Dias</th><th>Situação</th><th>Histórico</th>
+  </tr></thead><tbody></tbody></table></div>
+  <div class="sub" id="cont" style="margin-top:6px"></div>
+</section>
+
+<section id="precos" hidden>
+  <div class="card"><h2>Variações registradas no histórico</h2><div class="tw" style="border:0"><table id="tvar"><thead><tr><th>Produto</th><th>Loja</th><th class="r">De</th><th class="r">Para</th><th class="r">Variação</th><th>Data</th></tr></thead><tbody></tbody></table></div><div class="msg" id="vazio-var" hidden>Ainda não há variação: o histórico começou em 22/10/2026 e cada produto só tem um registro. As quedas e altas aparecem aqui assim que a próxima conferência semanal for gravada.</div></div>
+</section>
+
+<section id="cliques" hidden>
+  <div class="card">
+    <h2>Cliques nos botões da página</h2>
+    <p class="sub">Os cliques ficam no Cloudflare (D1), não no repositório. Para ver aqui, o Worker precisa de um endpoint JSON protegido (ainda não ativado). Enquanto isso, o relatório atual abre pelo endereço /relatorio do Worker.</p>
+    <div class="ctl">
+      <input id="k" type="password" autocomplete="off" placeholder="Chave do relatório (não é guardada)" aria-label="Chave do relatório">
+      <select id="dias" aria-label="Período"><option value="7">7 dias</option><option value="30">30 dias</option><option value="90">90 dias</option></select>
+      <button id="ver" type="button">Carregar</button>
+    </div>
+    <div id="cl-out"></div>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+'use strict';
+var WORKER='https://cliques-binga.herlison14.workers.dev';
+var LOJA={shopee:'Shopee',amazon:'Amazon',meli:'Mercado Livre',aliexpress:'AliExpress',magalu:'Magalu'};
+var ALERTA=7, SAIR=30;
+function $(s,r){return (r||document).querySelector(s)}
+function dec(s){var t=document.createElement('textarea');t.innerHTML=s;return t.value}
+function num(p){return parseFloat(String(p).replace(/\./g,'').replace(',','.'))}
+function brl(n){return n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function dbr(iso){var a=iso.split('-');return a[2]+'/'+a[1]+'/'+a[0]}
+function dias(iso){var a=iso.split('-'),d=new Date(+a[0],a[1]-1,+a[2]),h=new Date();h=new Date(h.getFullYear(),h.getMonth(),h.getDate());return Math.round((h-d)/864e5)}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function spark(pts){
+  var ns='http://www.w3.org/2000/svg',w=70,h=20,s=document.createElementNS(ns,'svg');
+  s.setAttribute('width',w);s.setAttribute('height',h);s.setAttribute('role','img');
+  var v=pts.map(function(p){return num(p[1])});
+  s.setAttribute('aria-label',pts.length<2?'1 registro':'Histórico de '+pts.length+' registros');
+  if(v.length<2){var c=document.createElementNS(ns,'circle');c.setAttribute('cx',w/2);c.setAttribute('cy',h/2);c.setAttribute('r',3);c.setAttribute('fill','currentColor');s.appendChild(c);return s}
+  var mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),r=(mx-mn)||1;
+  var d=v.map(function(y,i){return (i?'L':'M')+(i*(w-4)/(v.length-1)+2).toFixed(1)+' '+(h-3-(y-mn)/r*(h-6)).toFixed(1)}).join('');
+  var p=document.createElementNS(ns,'path');p.setAttribute('d',d);p.setAttribute('fill','none');p.setAttribute('stroke','currentColor');p.setAttribute('stroke-width','1.6');s.appendChild(p);return s}
+function barras(alvo,pares){
+  alvo.textContent='';var mx=Math.max.apply(0,pares.map(function(p){return p[1]}))||1;
+  pares.forEach(function(p){
+    var b=el('div','bar'),n=el('span','n',p[0]);n.title=p[0];
+    var t=el('span','t'),i=el('i');i.style.width=(p[1]/mx*100)+'%';t.appendChild(i);
+    b.appendChild(n);b.appendChild(t);b.appendChild(el('span','v',String(p[1])));alvo.appendChild(b)})}
+function cont(arr,f){var m={};arr.forEach(function(x){var k=f(x);m[k]=(m[k]||0)+1});return Object.keys(m).map(function(k){return [k,m[k]]}).sort(function(a,b){return b[1]-a[1]})}
+
+var itens=[],hist={},ord={k:'nome',d:1};
+function sit(d){return d>SAIR?'Sair da página':d>ALERTA?'Reconferir':'OK'}
+
+function geral(){
+  var tot=itens.length,med=itens.reduce(function(s,i){return s+i.p},0)/tot;
+  var rec=itens.filter(function(i){return i.sit!=='OK'}).length;
+  var vars=variacoes(),q=vars.filter(function(v){return v.pct<0}).length;
+  var k=$('#kpis');k.textContent='';
+  [[tot,'ofertas na página'],[brl(med),'preço médio'],[rec,'a reconferir (mais de '+ALERTA+' dias)'],[q,'quedas registradas'],[Object.keys(LOJA).length,'lojas']].forEach(function(x){
+    var c=el('div','card');c.appendChild(el('div','k',String(x[0])));c.appendChild(el('div','l',x[1]));k.appendChild(c)});
+  barras($('#b-loja'),cont(itens,function(i){return i.lojaN}));
+  barras($('#b-cat'),cont(itens,function(i){return i.cat}));
+  barras($('#b-idade'),cont(itens,function(i){return i.dias<=ALERTA?'Até '+ALERTA+' dias':i.dias<=SAIR?(ALERTA+1)+' a '+SAIR+' dias':'Mais de '+SAIR+' dias'}));
+}
+function variacoes(){
+  var out=[];
+  itens.forEach(function(i){var h=hist[i.id]||[];
+    for(var j=1;j<h.length;j++){var a=num(h[j-1][1]),b=num(h[j][1]);if(a!==b)out.push({i:i,de:a,para:b,pct:b/a-1,data:h[j][0]})}});
+  return out.sort(function(a,b){return a.data<b.data?1:a.data>b.data?-1:a.pct-b.pct})}
+function tabelaVar(){
+  var v=variacoes(),tb=$('#tvar tbody');tb.textContent='';
+  $('#vazio-var').hidden=v.length>0;
+  v.forEach(function(x){var tr=el('tr');
+    tr.appendChild(el('td',0,x.i.nome));tr.appendChild(el('td',0,x.i.lojaN));
+    tr.appendChild(el('td','r',brl(x.de)));tr.appendChild(el('td','r',brl(x.para)));
+    tr.appendChild(el('td','r '+(x.pct<0?'down':'up'),(x.pct>0?'+':'')+(x.pct*100).toFixed(1).replace('.',',')+'%'));
+    tr.appendChild(el('td',0,dbr(x.data)));tb.appendChild(tr)})}
+function lista(){
+  var q=$('#f-q').value.toLowerCase(),l=$('#f-loja').value,c=$('#f-cat').value,s=$('#f-sit').value;
+  var a=itens.filter(function(i){return (!q||i.nome.toLowerCase().indexOf(q)>-1)&&(!l||i.lojaN===l)&&(!c||i.cat===c)&&(!s||i.sit===s)});
+  a.sort(function(x,y){var u=x[ord.k],v=y[ord.k];return (u<v?-1:u>v?1:0)*ord.d});
+  var tb=$('#tab tbody');tb.textContent='';
+  a.forEach(function(i){var tr=el('tr'),td=el('td'),an=el('a',0,i.nome);an.href=i.href;an.rel='noopener noreferrer';an.target='_blank';td.appendChild(an);tr.appendChild(td);
+    tr.appendChild(el('td',0,i.lojaN));tr.appendChild(el('td',0,i.cat));tr.appendChild(el('td','r',brl(i.p)));
+    tr.appendChild(el('td',0,dbr(i.conferido)));tr.appendChild(el('td','r',String(i.dias)));
+    var ts=el('td');ts.appendChild(el('span','tag'+(i.sit==='Reconferir'?' rec':i.sit==='Sair da página'?' sai':''),i.sit));tr.appendChild(ts);
+    var th=el('td');th.appendChild(spark(hist[i.id]||[]));tr.appendChild(th);tb.appendChild(tr)});
+  $('#cont').textContent=a.length+' de '+itens.length+' ofertas'}
+
+function aba(n){
+  document.querySelectorAll('main > section').forEach(function(s){s.hidden=s.id!==n});
+  document.querySelectorAll('nav button').forEach(function(b){b.setAttribute('aria-selected',b.dataset.aba===n)})}
+
+function cliques(){
+  var k=$('#k').value.trim(),out=$('#cl-out');out.textContent='';
+  if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
+  fetch(WORKER+'/api/cliques?dias='+encodeURIComponent($('#dias').value),{headers:{'Authorization':'Bearer '+k},cache:'no-store'})
+   .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave recusada.':'O Worker ainda não tem o endpoint /api/cliques (resposta '+r.status+').');return r.json()})
+   .then(function(d){
+     var g=el('div','grid');var c=el('div','card');c.appendChild(el('div','k',String(d.total)));c.appendChild(el('div','l','cliques no período'));g.appendChild(c);out.appendChild(g);
+     [['Por loja',d.lojas],['Por origem',d.origens],['Por categoria',d.categorias],['Produtos mais clicados',d.produtos]].forEach(function(s){
+       if(!s[1]||!s[1].length)return;var b=el('div','card');b.style.marginTop='12px';b.appendChild(el('h2',0,s[0]));var bx=el('div');b.appendChild(bx);out.appendChild(b);
+       barras(bx,s[1].map(function(x){return [x.nome,x.n]}))})})
+   .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
+
+Promise.all([fetch('../dados/itens.json',{cache:'no-store'}).then(function(r){return r.json()}),fetch('../dados/historico.json',{cache:'no-store'}).then(function(r){return r.json()})]).then(function(r){
+  hist=r[1];
+  itens=r[0].map(function(i){var d=dias(i.conferido);return {id:i.id,nome:dec(i.nome),loja:i.loja,lojaN:LOJA[i.loja]||i.loja,cat:i.cat,href:i.href,p:num(i.preco),conferido:i.conferido,dias:d,sit:sit(d)}});
+  var ult=itens.reduce(function(m,i){return i.conferido>m?i.conferido:m},'');
+  $('#fonte').textContent='Dados de dados/itens.json e dados/historico.json · última conferência em '+dbr(ult)+' · atualiza a cada commit no repositório';
+  var fl=$('#f-loja'),fc=$('#f-cat');
+  Object.keys(LOJA).forEach(function(k){var o=el('option',0,LOJA[k]);o.value=LOJA[k];fl.appendChild(o)});
+  cont(itens,function(i){return i.cat}).map(function(x){return x[0]}).sort().forEach(function(c){var o=el('option',0,c);o.value=c;fc.appendChild(o)});
+  geral();tabelaVar();lista();
+},function(){$('#fonte').textContent='Não consegui carregar os dados.'}).catch(function(){$('#fonte').textContent='Não consegui carregar os dados.'});
+
+document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba)})});
+['#f-q','#f-loja','#f-cat','#f-sit'].forEach(function(s){$(s).addEventListener('input',lista)});
+document.querySelectorAll('th[data-o]').forEach(function(t){t.addEventListener('click',function(){var k=t.dataset.o;ord=ord.k===k?{k:k,d:-ord.d}:{k:k,d:1};lista()})});
+$('#ver').addEventListener('click',cliques);
+})();
+</script>
+</body>
+</html>
