@@ -25,6 +25,8 @@ jobs:
       TELEGRAM_CHAT: "@achadinhosdobinga"
     steps:
       - uses: actions/checkout@v4
+      - name: Instalar Pillow (cartões com foto)
+        run: python3 -m pip install --quiet pillow
       - name: Enviar
         run: python3 -I tools/canais.py enviar-telegram "${{ github.event.inputs.tipo || 'ofertas' }}" -n 3
       - name: Guardar o registro do que foi enviado
