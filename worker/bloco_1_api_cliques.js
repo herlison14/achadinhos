@@ -26,8 +26,11 @@ async function apiCliques(req, env, url) {
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: h });
   if (req.method !== 'GET') return new Response('Metodo nao permitido', { status: 405, headers: h });
 
-  const negado = await autorizar(req, env, h);
-  if (negado) return negado;
+  const auth = req.headers.get('Authorization') || '';
+  const k = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+  if (!env.REPORT_KEY || !k || !iguais(k, env.REPORT_KEY)) {
+    return new Response(JSON.stringify({ erro: 'nao autorizado' }), { status: 401, headers: { ...h, 'Content-Type': 'application/json' } });
+  }
 
   let dias = parseInt(url.searchParams.get('dias') || '7', 10);
   if (!(dias >= 1)) dias = 7;

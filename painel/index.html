@@ -99,6 +99,7 @@ a{color:var(--roxo)}
     <p class="sub">Os valores ficam só no banco privado do Cloudflare e nunca vão para o repositório. Importe o relatório de comissão de cada programa em CSV, no modelo abaixo (separador ponto e vírgula, datas DD/MM/AAAA). Reimportar o mesmo dia e produto substitui o valor, sem duplicar.</p>
     <div class="ctl">
       <input id="kg" type="password" autocomplete="off" placeholder="Chave do relatório (não é guardada)" aria-label="Chave do relatório">
+      <input id="cg" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Código 2FA" aria-label="Código de 6 dígitos do app autenticador" style="max-width:110px">
       <button id="modelo" type="button">Baixar modelo do CSV</button>
       <input id="arq" type="file" accept=".csv,text/csv" aria-label="Arquivo CSV de comissão">
     </div>
@@ -116,6 +117,7 @@ a{color:var(--roxo)}
     <p class="sub">Os cliques ficam no Cloudflare (D1), não no repositório. Digite a chave do relatório para carregar; ela vai só no cabeçalho da consulta, não é guardada e some quando você fecha a aba.</p>
     <div class="ctl">
       <input id="k" type="password" autocomplete="off" placeholder="Chave do relatório (não é guardada)" aria-label="Chave do relatório">
+      <input id="c2" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Código 2FA" aria-label="Código de 6 dígitos do app autenticador" style="max-width:110px">
       <select id="dias" aria-label="Período"><option value="7">7 dias</option><option value="30">30 dias</option><option value="90">90 dias</option></select>
       <button id="ver" type="button">Carregar</button>
     </div>
@@ -216,8 +218,8 @@ function aba(n){
 function cliques(){
   var k=$('#k').value.trim(),out=$('#cl-out');out.textContent='';
   if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
-  fetch(WORKER+'/api/cliques?dias='+encodeURIComponent($('#dias').value),{headers:{'Authorization':'Bearer '+k},cache:'no-store'})
-   .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave recusada.':r.status===429?'Muitas tentativas erradas. Aguarde 15 minutos.':'O Worker respondeu '+r.status+'.');return r.json()})
+  fetch(WORKER+'/api/cliques?dias='+encodeURIComponent($('#dias').value),{headers:{'Authorization':'Bearer '+k+$('#c2').value.trim()},cache:'no-store'})
+   .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave ou código recusado.':r.status===429?'Muitas tentativas erradas. Aguarde 15 minutos.':'O Worker respondeu '+r.status+'.');return r.json()})
    .then(function(d){
      clDia={};(d.porDia||[]).forEach(function(x){clDia[x.nome]=x.n});calendario();
      var g=el('div','grid');var c=el('div','card');c.appendChild(el('div','k',String(d.total)));c.appendChild(el('div','l','cliques no período'));g.appendChild(c);out.appendChild(g);
@@ -263,13 +265,14 @@ function lerCSV(txt){
     ok.push({dia:m[3]+'-'+m[2]+'-'+m[1],loja:loja,produto:c[2],pedidos:ped,comissao:com})});
   return {ok:ok,er:er}}
 function gChave(){return $('#kg').value.trim()}
-function gPost(url,opt){opt=opt||{};opt.headers=Object.assign({'Authorization':'Bearer '+gChave()},opt.headers||{});opt.cache='no-store';return fetch(WORKER+url,opt)}
+function gToken(){return gChave()+$('#cg').value.trim()}
+function gPost(url,opt){opt=opt||{};opt.headers=Object.assign({'Authorization':'Bearer '+gToken()},opt.headers||{});opt.cache='no-store';return fetch(WORKER+url,opt)}
 function gMsg(alvo,txt){alvo.textContent='';alvo.appendChild(el('div','msg',txt))}
 function gVer(){
   var out=$('#g-out');out.textContent='';
   if(!gChave())return gMsg(out,'Digite a chave do relatório.');
   gPost('/api/ganhos?dias='+encodeURIComponent($('#g-dias').value)).then(function(r){
-    if(!r.ok)throw new Error(r.status===401?'Chave recusada.':r.status===429?'Muitas tentativas erradas. Aguarde 15 minutos.':'O Worker respondeu '+r.status+'.');return r.json()}).then(function(d){
+    if(!r.ok)throw new Error(r.status===401?'Chave ou código recusado.':r.status===429?'Muitas tentativas erradas. Aguarde 15 minutos.':'O Worker respondeu '+r.status+'.');return r.json()}).then(function(d){
     var cl={};(d.cliquesPorLoja||[]).forEach(function(x){cl[x.nome]=x.n});
     var tc=Object.keys(cl).reduce(function(s,k){return s+cl[k]},0);
     var g=el('div','grid');
@@ -290,7 +293,7 @@ function gEnviar(){
   gPost('/api/ganhos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({linhas:gLinhas})}).then(function(r){return r.json().then(function(j){return [r.status,j]})}).then(function(x){
     prev.hidden=false;
     if(x[0]===200){gMsg(prev,x[1].gravadas+' linhas gravadas. Clique em "Ver resultados".');gLinhas=[]}
-    else if(x[0]===401)gMsg(prev,'Chave recusada.');
+    else if(x[0]===401)gMsg(prev,'Chave ou código recusado.');
     else if(x[0]===429)gMsg(prev,'Muitas tentativas erradas. Aguarde 15 minutos.');
     else gMsg(prev,(x[1].erro||'Erro')+(x[1].detalhes?': '+x[1].detalhes.join('; '):''));
     $('#g-env').disabled=!gLinhas.length}).catch(function(){prev.hidden=false;gMsg(prev,'Não consegui falar com o Worker.');$('#g-env').disabled=!gLinhas.length})}
@@ -311,7 +314,7 @@ $('#arq').addEventListener('change',function(){
 
 })();
 
-(function(){var t;function zera(){['k','kg'].forEach(function(i){var e=document.getElementById(i);if(e)e.value=''})}
+(function(){var t;function zera(){['k','kg','c2','cg'].forEach(function(i){var e=document.getElementById(i);if(e)e.value=''})}
 function arma(){clearTimeout(t);t=setTimeout(zera,600000)}
 ['input','click','keydown'].forEach(function(ev){document.addEventListener(ev,arma,{passive:true})});
 document.addEventListener('visibilitychange',function(){if(document.hidden)arma()});arma()})();

@@ -13,4 +13,6 @@ if (url.pathname === '/api/cliques') return apiCliques(req, env, url);
 if (url.pathname === '/api/ganhos') return ganhosApi(req, env, url);
 ```
 
+Segurança em 3 camadas (`bloco_3_seguranca.js`): chave `REPORT_KEY` + código de 6 dígitos do app autenticador (segredo `TOTP_SECRET`; sem ele o 2º fator fica desligado) + bloqueio de 15 min após 5 erros por IP. No painel, o código vai colado depois da chave no cabeçalho `Authorization`. Rotas: `protegido(req, env, url, apiCliques)`.
+
 Segurança: a chave (`REPORT_KEY`) é um segredo do Worker e vai no cabeçalho `Authorization: Bearer`, nunca na URL. Comissão fica só no D1, nunca neste repositório.
