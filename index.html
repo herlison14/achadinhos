@@ -201,6 +201,8 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .pics.solo .pic:nth-child(1){transform:rotate(4deg)}
 .pics.q .pic{width:104px;height:104px}
 }
+.rc .k.pct{width:auto;min-width:24px;padding:0 8px;background:var(--acc);color:#fff;border-radius:12px;font-size:.78rem}
+.rc .p small.era{text-decoration:line-through}
 /* busca-css-fim */
 </style>
 </head>
@@ -277,6 +279,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div><b>Ofertas novas</b><span>Atualizado toda semana</span></div></li>
 </ul>
 <div id="promos">
+<section id="quedas" class="pm" aria-labelledby="qdt" hidden><div class="sec-h"><h2 id="qdt">Caiu de preço</h2><p id="qd-s">Preço menor que na conferência anterior.</p></div><div class="rw"><div class="rail" id="rail-quedas"></div></div></section>
 <section id="baratos" class="pm" aria-labelledby="bt"><div class="sec-h"><h2 id="bt">Menores preços da semana</h2></div><div class="rw"><div class="rail" id="rail"></div></div></section>
 <section id="pix" class="pm" aria-labelledby="pxt"><div class="sec-h"><h2 id="pxt">Preço no Pix</h2><p>Valores à vista no Pix, conferidos na loja.</p></div><div class="rw"><div class="rail" id="rail-pix"></div></div></section>
 <section id="ate20" class="pm" aria-labelledby="a20t"><div class="sec-h"><h2 id="a20t">Achadinhos até R$ 20</h2><p>Preço conferido de até R$ 20,00, das cinco lojas.</p></div><div class="rw"><div class="rail" id="rail-20"></div></div></section>
@@ -415,6 +418,23 @@ var b=mk('button','tab',NAMES[k]);b.type='button';b.setAttribute('data-l',k);b.a
 b.addEventListener('click',function(){showLoja(k);});tabs.appendChild(b);
 });
 if(lojas.length)showLoja(lojas[0]);else $('#porloja').hidden=true;
+/* quedas de preço (dados/quedas.json, gerado pelo vigia) */
+(function(){
+var qs=$('#quedas'),box=$('#rail-quedas');if(!qs||!window.fetch)return;
+var upd=arrows(box);
+fetch('dados/quedas.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():[];}).then(function(q){
+var por={};items.forEach(function(li){var a=li.querySelector('a');if(a)por[a.getAttribute('href')]=li;});
+var n=0,ult='';
+q.forEach(function(x){
+var li=por[x.href];if(!li)return;
+var c=card(li,0);
+c.insertBefore(mk('span','k pct','-'+x.pct+'%'),c.firstChild);
+var p=c.querySelector('.p');if(p){while(p.querySelector('small'))p.removeChild(p.querySelector('small'));p.appendChild(mk('small','era','era R$ '+x.antes));}
+box.appendChild(c);n++;if(x.data>ult)ult=x.data;
+});
+if(n){qs.hidden=false;var s=$('#qd-s');if(s&&ult){var d=ult.split('-');s.textContent='Preço menor que na conferência anterior (última queda: '+d[2]+'/'+d[1]+'/'+d[0]+').';}upd();}
+}).catch(function(){});
+})();
 /* banner */
 var bt=$('#bnr-t'),dots=$('#dots'),sls=$$('#bnr-t .sl'),cur=0,timer=0,parou=false;
 if(cheap.length){

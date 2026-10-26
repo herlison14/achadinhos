@@ -106,6 +106,21 @@ def datas_texto(itens):
         partes.append('%s: %s' % (n, br(d)))
     return br(base), (' (%s)' % '; '.join(partes) if partes else '')
 
+QUEDA_DIAS = 21         # a vitrine "Caiu de preço" mostra quedas conferidas nos últimos N dias
+
+def quedas(vis, hist, hoje):
+    """Itens cujo preço atual é menor que o da conferência anterior (dados reais de dados/historico.json)."""
+    out = []
+    for i in vis:
+        h = sorted(hist.get(i['id'], []))
+        if len(h) < 2: continue
+        (d0, p0), (d1, p1) = h[-2], h[-1]
+        if p1 != i['preco'] or num(p1) >= num(p0): continue
+        if (hoje - datetime.date.fromisoformat(d1)).days > QUEDA_DIAS: continue
+        out.append(dict(id=i['id'], href=i['href'], antes=p0, agora=p1, pct=int(round((1 - num(p1) / num(p0)) * 100)), data=d1))
+    out.sort(key=lambda x: -x['pct'])
+    return out
+
 def cmd_build():
     itens = ler(ITENS, [])
     hoje = datetime.date.today()
@@ -129,7 +144,9 @@ def cmd_build():
                     lambda m: m.group(1) + str(len(vis)) + m.group(2) + base + resto + m.group(3), h, flags=re.S)
     assert n1 == 1 and n2 == 1, (n1, n2)
     open(IDX, 'w', encoding='utf-8', newline='\n').write(h)
-    print('build: %d itens na página' % len(vis))
+    q = quedas(vis, ler(HIST, {}), hoje)
+    gravar(os.path.join(RAIZ, 'dados', 'quedas.json'), q)
+    print('build: %d itens na página, %d queda(s) de preço' % (len(vis), len(q)))
     for i, d in omitidos: print('  OMITIDO (sem conferência há %d dias): %s' % (d, i['nome']))
 
 def cmd_atualizar(arq):
