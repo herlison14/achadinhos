@@ -1,0 +1,29 @@
+{
+ "name": "Painel — Achadinhos do Binga",
+ "short_name": "Painel Binga",
+ "description": "Ofertas, cliques e ganhos do Achadinhos do Binga",
+ "lang": "pt-BR",
+ "start_url": "/painel/",
+ "scope": "/painel/",
+ "display": "standalone",
+ "background_color": "#f4f0ff",
+ "theme_color": "#291258",
+ "icons": [
+  {
+   "src": "icone-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icone-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icone-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#291258">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Painel Binga">
+<link rel="apple-touch-icon" href="icone-192.png">
 <title>Painel — Achadinhos do Binga</title>
 <style>
 :root{--roxo:#291258;--lav:#f4f0ff;--amar:#ffc93b;--verm:#dc3c46;--verde:#1b7f4b;--txt:#1d1633;--mut:#6b6480;--bd:#e0d9f2;--card:#fff}
@@ -54,6 +59,19 @@ a{color:var(--roxo)}
   .card{padding:12px 13px}.k{font-size:23px}.wide{grid-template-columns:1fr}
   .bar .n{width:96px}.tw{max-height:70vh}
 }
+.hoje{margin-bottom:16px}.hoje .ctl{margin:8px 0 0}
+.hoje table{margin-top:8px}.hoje td,.hoje th{white-space:nowrap}
+@media (max-width:600px){
+  table.cart,table.cart tbody,table.cart tr,table.cart td{display:block;width:100%}
+  table.cart thead{display:none}
+  table.cart tr{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin:0 0 10px}
+  table.cart td{border:0;padding:2px 0;text-align:left!important;display:flex;gap:8px;justify-content:space-between;align-items:baseline}
+  table.cart td::before{content:attr(data-l);color:var(--mut);font-size:12px;flex:none}
+  table.cart td:first-child{display:block;font-weight:600;font-size:15px;padding-bottom:4px}
+  table.cart td:first-child::before{content:none}
+  table.cart td:empty{display:none}
+  .tw:has(table.cart){border:0;background:none;overflow:visible}
+}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -73,6 +91,17 @@ a{color:var(--roxo)}
 </nav>
 
 <section id="geral">
+  <div class="card hoje" id="hoje">
+    <h2>Hoje e ontem</h2>
+    <div id="h-pub" class="sub"></div>
+    <div class="ctl">
+      <input id="kh" type="password" autocomplete="off" placeholder="Chave do relatório" aria-label="Chave do relatório">
+      <input id="ch" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Código 2FA" aria-label="Código de 6 dígitos do app autenticador" style="max-width:110px">
+      <button id="h-ver" type="button">Ver cliques e ganhos</button>
+    </div>
+    <div id="h-out"></div>
+    <div class="sub" style="margin-top:6px">Vendas e comissão entram depois que você importa o CSV na aba Ganhos (a Shopee atualiza o relatório às 10:30 do dia seguinte).</div>
+  </div>
   <div class="grid" id="kpis"></div>
   <div class="wide">
     <div class="card"><h2>Ofertas por loja</h2><div id="b-loja"></div></div>
@@ -208,7 +237,7 @@ function lista(){
     tr.appendChild(el('td',0,dbr(i.conferido)));tr.appendChild(el('td','r',String(i.dias)));
     var ts=el('td');ts.appendChild(el('span','tag'+(i.sit==='Reconferir'?' rec':i.sit==='Sair da página'?' sai':''),i.sit));tr.appendChild(ts);
     var th=el('td');th.appendChild(spark(hist[i.id]||[]));tr.appendChild(th);tb.appendChild(tr)});
-  $('#cont').textContent=a.length+' de '+itens.length+' ofertas'}
+  $('#cont').textContent=a.length+' de '+itens.length+' ofertas';rotular('tab')}
 
 function calendario(){
   var st=$('#c-st').value,tb=$('#tcal tbody');tb.textContent='';$('#c-det').hidden=true;
@@ -224,8 +253,30 @@ function calendario(){
       if(p.nota)d.appendChild(el('div','sub',p.nota));
       if(!p.produtos.length)d.appendChild(el('div','sub','Produtos não registrados.'));
       p.produtos.forEach(function(id){var i=porId[id];var l=el('div',0,i?(i.lojaN+' · '+i.nome+' · '+brl(i.p)):id+' (não está mais na página)');d.appendChild(l)})});
-    tb.appendChild(tr)})}
+    tb.appendChild(tr)});rotular('tcal')}
 
+
+function rotular(id){var t=document.getElementById(id);if(!t)return;t.classList.add('cart');
+  var h=[].map.call(t.querySelectorAll('thead th'),function(x){return x.textContent});
+  t.querySelectorAll('tbody tr').forEach(function(tr){[].forEach.call(tr.children,function(td,i){td.setAttribute('data-l',h[i]||'')})})}
+function dia(off){var d=new Date();d.setDate(d.getDate()+off);return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2)}
+function hojePub(){
+  var h=dia(0),q=variacoes().filter(function(v){return v.data===h});
+  var rec=itens.filter(function(i){return i.sit!=='OK'}).length;
+  $('#h-pub').textContent=dbr(h)+' · '+q.length+' variação(ões) de preço registrada(s) hoje · '+rec+' oferta(s) a reconferir'}
+function hojeVer(){
+  var k=$('#kh').value.trim(),c=$('#ch').value.trim(),out=$('#h-out');out.textContent='';
+  if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
+  var H={'Authorization':'Bearer '+k+c},o={headers:H,cache:'no-store'};
+  function ler(r){if(!r.ok)throw new Error(r.status===401?'Chave ou código recusado.':r.status===429?'Muitas tentativas erradas. Aguarde 15 minutos.':'O Worker respondeu '+r.status+'.');return r.json()}
+  Promise.all([fetch(WORKER+'/api/cliques?dias=2',o).then(ler),fetch(WORKER+'/api/ganhos?dias=2',o).then(ler)]).then(function(r){
+    var cl={},gn={};(r[0].porDia||[]).forEach(function(x){cl[x.nome]=x.n});(r[1].porDia||[]).forEach(function(x){gn[x.nome]=x});
+    var t=el('table');t.className='';var th=el('tr');['Dia','Cliques','Pedidos','Comissão'].forEach(function(x,i){th.appendChild(el('th',i?'r':'',x))});var hd=el('thead');hd.appendChild(th);t.appendChild(hd);
+    var tb=el('tbody');[[0,'Hoje'],[-1,'Ontem']].forEach(function(p){var d=dia(p[0]),g=gn[d]||{p:0,c:0},tr=el('tr');
+      tr.appendChild(el('td',0,p[1]+' ('+dbr(d)+')'));tr.appendChild(el('td','r',String(cl[d]||0)));tr.appendChild(el('td','r',String(g.p||0)));tr.appendChild(el('td','r',brl(g.c||0)));tb.appendChild(tr)});
+    t.appendChild(tb);out.appendChild(t);
+    $('#k').value=k;$('#c2').value=c;$('#kg').value=k;$('#cg').value=c})
+  .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
 function aba(n){
   document.querySelectorAll('main > section').forEach(function(s){s.hidden=s.id!==n});
   document.querySelectorAll('nav button').forEach(function(b){b.setAttribute('aria-selected',b.dataset.aba===n)})}
@@ -251,12 +302,13 @@ Promise.all([fetch('../dados/itens.json',{cache:'no-store'}).then(function(r){re
   var fl=$('#f-loja'),fc=$('#f-cat');
   Object.keys(LOJA).forEach(function(k){var o=el('option',0,LOJA[k]);o.value=LOJA[k];fl.appendChild(o)});
   cont(itens,function(i){return i.cat}).map(function(x){return x[0]}).sort().forEach(function(c){var o=el('option',0,c);o.value=c;fc.appendChild(o)});
-  geral();tabelaVar();lista();calendario();
+  geral();tabelaVar();lista();calendario();hojePub();rotular('tab');rotular('tvar');rotular('tcal');
 },function(){$('#fonte').textContent='Não consegui carregar os dados.'}).catch(function(){$('#fonte').textContent='Não consegui carregar os dados.'});
 
 document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba)})});
 ['#f-q','#f-loja','#f-cat','#f-sit'].forEach(function(s){$(s).addEventListener('input',lista)});
 $('#c-st').addEventListener('input',calendario);
+$('#h-ver').addEventListener('click',hojeVer);
 document.querySelectorAll('th[data-o]').forEach(function(t){t.addEventListener('click',function(){var k=t.dataset.o;ord=ord.k===k?{k:k,d:-ord.d}:{k:k,d:1};lista()})});
 $('#ver').addEventListener('click',cliques);
 /* ---- Ganhos ---- */
@@ -329,7 +381,7 @@ $('#arq').addEventListener('change',function(){
 
 })();
 
-(function(){var t;function zera(){['k','kg','c2','cg'].forEach(function(i){var e=document.getElementById(i);if(e)e.value=''})}
+(function(){var t;function zera(){['k','kg','c2','cg','kh','ch'].forEach(function(i){var e=document.getElementById(i);if(e)e.value=''})}
 function arma(){clearTimeout(t);t=setTimeout(zera,600000)}
 ['input','click','keydown'].forEach(function(ev){document.addEventListener(ev,arma,{passive:true})});
 document.addEventListener('visibilitychange',function(){if(document.hidden)arma()});arma()})();
