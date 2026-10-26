@@ -52,6 +52,7 @@ a{color:var(--roxo)}
   <button role="tab" aria-selected="true" data-aba="geral">Visão geral</button>
   <button role="tab" aria-selected="false" data-aba="ofertas">Ofertas</button>
   <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
+  <button role="tab" aria-selected="false" data-aba="calendario">Calendário</button>
   <button role="tab" aria-selected="false" data-aba="cliques">Cliques</button>
 </nav>
 
@@ -79,6 +80,16 @@ a{color:var(--roxo)}
 
 <section id="precos" hidden>
   <div class="card"><h2>Variações registradas no histórico</h2><div class="tw" style="border:0"><table id="tvar"><thead><tr><th>Produto</th><th>Loja</th><th class="r">De</th><th class="r">Para</th><th class="r">Variação</th><th>Data</th></tr></thead><tbody></tbody></table></div><div class="msg" id="vazio-var" hidden>Ainda não há variação: o histórico começou em 22/10/2026 e cada produto só tem um registro. As quedas e altas aparecem aqui assim que a próxima conferência semanal for gravada.</div></div>
+</section>
+
+<section id="calendario" hidden>
+  <div class="card">
+    <h2>Calendário de posts</h2>
+    <p class="sub">Cada post com os produtos que ele divulga. Depois de carregar os cliques (aba Cliques), a coluna "Cliques no dia" mostra o total do dia: dá para ver o efeito do post, mas o contador não separa post a post, porque o link da bio é um só.</p>
+    <div class="ctl"><select id="c-st" aria-label="Status"><option value="">Qualquer status</option><option>publicado</option><option>agendado</option><option>planejado</option><option>cancelado</option></select></div>
+    <div class="tw" style="border:0"><table id="tcal"><thead><tr><th>Data</th><th>Hora</th><th>Formato</th><th>Loja</th><th>Tema</th><th class="r">Produtos</th><th>Status</th><th class="r">Cliques no dia</th></tr></thead><tbody></tbody></table></div>
+    <div id="c-det" class="msg" hidden></div>
+  </div>
 </section>
 
 <section id="cliques" hidden>
@@ -125,7 +136,7 @@ function barras(alvo,pares){
     b.appendChild(n);b.appendChild(t);b.appendChild(el('span','v',String(p[1])));alvo.appendChild(b)})}
 function cont(arr,f){var m={};arr.forEach(function(x){var k=f(x);m[k]=(m[k]||0)+1});return Object.keys(m).map(function(k){return [k,m[k]]}).sort(function(a,b){return b[1]-a[1]})}
 
-var itens=[],hist={},ord={k:'nome',d:1};
+var itens=[],hist={},posts=[],clDia={},ord={k:'nome',d:1};
 function sit(d){return d>SAIR?'Sair da página':d>ALERTA?'Reconferir':'OK'}
 
 function geral(){
@@ -164,6 +175,22 @@ function lista(){
     var th=el('td');th.appendChild(spark(hist[i.id]||[]));tr.appendChild(th);tb.appendChild(tr)});
   $('#cont').textContent=a.length+' de '+itens.length+' ofertas'}
 
+function calendario(){
+  var st=$('#c-st').value,tb=$('#tcal tbody');tb.textContent='';$('#c-det').hidden=true;
+  var porId={};itens.forEach(function(i){porId[i.id]=i});
+  posts.filter(function(p){return !st||p.status===st}).forEach(function(p){
+    var tr=el('tr');tr.style.cursor='pointer';
+    tr.appendChild(el('td',0,dbr(p.data)));tr.appendChild(el('td',0,p.hora||'—'));tr.appendChild(el('td',0,p.formato));
+    tr.appendChild(el('td',0,LOJA[p.loja]||p.loja||'—'));tr.appendChild(el('td',0,p.tema));tr.appendChild(el('td','r',String(p.produtos.length)));
+    var t=el('td');t.appendChild(el('span','tag'+(p.status==='planejado'?' rec':p.status==='cancelado'?' sai':''),p.status));tr.appendChild(t);
+    tr.appendChild(el('td','r',clDia[p.data]!=null?String(clDia[p.data]):'—'));
+    tr.addEventListener('click',function(){
+      var d=$('#c-det');d.hidden=false;d.textContent='';d.appendChild(el('b',0,p.tema+' — '+dbr(p.data)));
+      if(p.nota)d.appendChild(el('div','sub',p.nota));
+      if(!p.produtos.length)d.appendChild(el('div','sub','Produtos não registrados.'));
+      p.produtos.forEach(function(id){var i=porId[id];var l=el('div',0,i?(i.lojaN+' · '+i.nome+' · '+brl(i.p)):id+' (não está mais na página)');d.appendChild(l)})});
+    tb.appendChild(tr)})}
+
 function aba(n){
   document.querySelectorAll('main > section').forEach(function(s){s.hidden=s.id!==n});
   document.querySelectorAll('nav button').forEach(function(b){b.setAttribute('aria-selected',b.dataset.aba===n)})}
@@ -174,25 +201,27 @@ function cliques(){
   fetch(WORKER+'/api/cliques?dias='+encodeURIComponent($('#dias').value),{headers:{'Authorization':'Bearer '+k},cache:'no-store'})
    .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave recusada.':'O Worker respondeu '+r.status+'.');return r.json()})
    .then(function(d){
+     clDia={};(d.porDia||[]).forEach(function(x){clDia[x.nome]=x.n});calendario();
      var g=el('div','grid');var c=el('div','card');c.appendChild(el('div','k',String(d.total)));c.appendChild(el('div','l','cliques no período'));g.appendChild(c);out.appendChild(g);
      [['Por loja',d.lojas],['Por origem',d.origens],['Por categoria',d.categorias],['Produtos mais clicados',d.produtos]].forEach(function(s){
        if(!s[1]||!s[1].length)return;var b=el('div','card');b.style.marginTop='12px';b.appendChild(el('h2',0,s[0]));var bx=el('div');b.appendChild(bx);out.appendChild(b);
        barras(bx,s[1].map(function(x){return [x.nome,x.n]}))})})
    .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
 
-Promise.all([fetch('../dados/itens.json',{cache:'no-store'}).then(function(r){return r.json()}),fetch('../dados/historico.json',{cache:'no-store'}).then(function(r){return r.json()})]).then(function(r){
-  hist=r[1];
+Promise.all([fetch('../dados/itens.json',{cache:'no-store'}).then(function(r){return r.json()}),fetch('../dados/historico.json',{cache:'no-store'}).then(function(r){return r.json()}),fetch('../dados/posts.json',{cache:'no-store'}).then(function(r){return r.json()}).catch(function(){return []})]).then(function(r){
+  hist=r[1];posts=r[2];
   itens=r[0].map(function(i){var d=dias(i.conferido);return {id:i.id,nome:dec(i.nome),loja:i.loja,lojaN:LOJA[i.loja]||i.loja,cat:i.cat,href:i.href,p:num(i.preco),conferido:i.conferido,dias:d,sit:sit(d)}});
   var ult=itens.reduce(function(m,i){return i.conferido>m?i.conferido:m},'');
   $('#fonte').textContent='Dados de dados/itens.json e dados/historico.json · última conferência em '+dbr(ult)+' · atualiza a cada commit no repositório';
   var fl=$('#f-loja'),fc=$('#f-cat');
   Object.keys(LOJA).forEach(function(k){var o=el('option',0,LOJA[k]);o.value=LOJA[k];fl.appendChild(o)});
   cont(itens,function(i){return i.cat}).map(function(x){return x[0]}).sort().forEach(function(c){var o=el('option',0,c);o.value=c;fc.appendChild(o)});
-  geral();tabelaVar();lista();
+  geral();tabelaVar();lista();calendario();
 },function(){$('#fonte').textContent='Não consegui carregar os dados.'}).catch(function(){$('#fonte').textContent='Não consegui carregar os dados.'});
 
 document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba)})});
 ['#f-q','#f-loja','#f-cat','#f-sit'].forEach(function(s){$(s).addEventListener('input',lista)});
+$('#c-st').addEventListener('input',calendario);
 document.querySelectorAll('th[data-o]').forEach(function(t){t.addEventListener('click',function(){var k=t.dataset.o;ord=ord.k===k?{k:k,d:-ord.d}:{k:k,d:1};lista()})});
 $('#ver').addEventListener('click',cliques);
 })();

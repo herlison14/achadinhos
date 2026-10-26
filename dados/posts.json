@@ -1,0 +1,218 @@
+[
+ {
+  "id": "2026-10-21-top5",
+  "data": "2026-10-21",
+  "hora": "",
+  "formato": "carrossel",
+  "loja": "",
+  "tema": "Top 5 achadinhos da semana (7 slides)",
+  "canal": "ig",
+  "produtos": [],
+  "status": "publicado",
+  "nota": "Produtos não registrados na época."
+ },
+ {
+  "id": "2026-10-21-comece",
+  "data": "2026-10-21",
+  "hora": "",
+  "formato": "post",
+  "loja": "",
+  "tema": "Comece por aqui",
+  "canal": "ig",
+  "produtos": [],
+  "status": "publicado",
+  "nota": ""
+ },
+ {
+  "id": "2026-10-26-airfryer",
+  "data": "2026-10-26",
+  "hora": "19:00",
+  "formato": "carrossel",
+  "loja": "magalu",
+  "tema": "3 air fryers até R$ 260",
+  "canal": "ig",
+  "produtos": [
+   "8d6f44c3",
+   "244eda85",
+   "670b2f11"
+  ],
+  "status": "agendado",
+  "nota": "Tarefa agendada às 19h; preços Pix reconferidos antes de postar."
+ },
+ {
+  "id": "2026-10-27-casa-ali",
+  "data": "2026-10-27",
+  "hora": "19:00",
+  "formato": "carrossel",
+  "loja": "aliexpress",
+  "tema": "4 achadinhos pra casa de R$ 7 a R$ 66",
+  "canal": "ig",
+  "produtos": [
+   "59d45f0c",
+   "0cb025bc",
+   "17a617aa",
+   "56410dcd"
+  ],
+  "status": "planejado",
+  "nota": "A agenda antiga marca \"já postado\"; confirmar."
+ },
+ {
+  "id": "2026-10-28-tenis",
+  "data": "2026-10-28",
+  "hora": "19:00",
+  "formato": "post",
+  "loja": "magalu",
+  "tema": "Tênis Olimp",
+  "canal": "ig",
+  "produtos": [
+   "cebbce0e"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-10-29-reel10",
+  "data": "2026-10-29",
+  "hora": "12:00",
+  "formato": "reel",
+  "loja": "aliexpress",
+  "tema": "3 achadinhos por menos de R$ 10",
+  "canal": "ig",
+  "produtos": [
+   "d5cf73ed",
+   "8e4423f6",
+   "59d45f0c"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-10-30-casa-mag",
+  "data": "2026-10-30",
+  "hora": "19:00",
+  "formato": "carrossel",
+  "loja": "magalu",
+  "tema": "5 achadinhos pra casa de R$ 52 a R$ 82",
+  "canal": "ig",
+  "produtos": [
+   "a4aa5038",
+   "0ef7094d",
+   "5b89e0f0",
+   "4dcaa306",
+   "9e5741a0"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-10-31-tech-ali",
+  "data": "2026-10-31",
+  "hora": "11:00",
+  "formato": "carrossel",
+  "loja": "aliexpress",
+  "tema": "5 achadinhos tech até R$ 35",
+  "canal": "ig",
+  "produtos": [
+   "d5cf73ed",
+   "258d02f2",
+   "9390d294",
+   "95254577",
+   "31d0b9c1"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-11-01-mochila",
+  "data": "2026-11-01",
+  "hora": "11:00",
+  "formato": "post",
+  "loja": "magalu",
+  "tema": "Mochila Dazzore",
+  "canal": "ig",
+  "produtos": [
+   "160bc6a8"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-11-03-beleza-ali",
+  "data": "2026-11-03",
+  "hora": "19:00",
+  "formato": "carrossel",
+  "loja": "aliexpress",
+  "tema": "5 achadinhos de beleza até R$ 35",
+  "canal": "ig",
+  "produtos": [
+   "8e4423f6",
+   "c0cc8464",
+   "4ea5e24a",
+   "1401ffd1",
+   "f870c30d"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-11-04-ate130",
+  "data": "2026-11-04",
+  "hora": "19:00",
+  "formato": "carrossel",
+  "loja": "magalu",
+  "tema": "5 achadinhos até R$ 130",
+  "canal": "ig",
+  "produtos": [
+   "dce4ccf5",
+   "160bc6a8",
+   "56d5e324",
+   "cebbce0e",
+   "0b2e7141"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-11-05-reel-acendedor",
+  "data": "2026-11-05",
+  "hora": "12:00",
+  "formato": "reel",
+  "loja": "aliexpress",
+  "tema": "Acendedor eletrônico USB",
+  "canal": "ig",
+  "produtos": [
+   "0cb025bc"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-11-06-fone-qcy",
+  "data": "2026-11-06",
+  "hora": "19:00",
+  "formato": "post",
+  "loja": "magalu",
+  "tema": "Fone QCY T43",
+  "canal": "ig",
+  "produtos": [
+   "0b2e7141"
+  ],
+  "status": "planejado",
+  "nota": ""
+ },
+ {
+  "id": "2026-11-07-reel-beleza",
+  "data": "2026-11-07",
+  "hora": "12:00",
+  "formato": "reel",
+  "loja": "magalu",
+  "tema": "2 achadinhos de beleza por menos de R$ 25",
+  "canal": "ig",
+  "produtos": [
+   "b905b372",
+   "f7e86c39"
+  ],
+  "status": "planejado",
+  "nota": ""
+ }
+]

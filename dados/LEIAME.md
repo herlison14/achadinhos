@@ -12,3 +12,9 @@
 5. Commit e push; a Cloudflare Pages publica.
 
 Para incluir ou remover uma oferta, edite `itens.json` e rode o `build`. O texto de `nome`, `ex`, `pre`, `pos` e `cta` é HTML já escapado (use `&amp;` para `&`).
+
+## Calendário de posts
+- `posts.json`: cada post (data, hora, formato, loja, tema, canal, produtos, status). Mostrado na aba "Calendário" do painel (`/painel/`), que cruza com os cliques do dia quando você carrega a aba Cliques.
+- Registrar: `python3 -I tools/vigia.py post --data 2026-11-10 --formato carrossel --tema "5 achadinhos" --loja magalu --ids id1,id2 --status planejado`
+- Mudar status: `python3 -I tools/vigia.py post-status ID_DO_POST publicado`
+- Origem do clique: o link da bio é um só, então a origem é por canal (`?o=ig` bio, `?o=st` stories, `?o=tg` Telegram, `?o=wa` WhatsApp, `?o=bf` Black Friday).

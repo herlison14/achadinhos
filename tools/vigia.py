@@ -11,6 +11,9 @@ Comandos:
   relatorio [--dias N]        mostra quedas/altas, itens sem conferência recente e totais
   importar [--data AAAA-MM-DD]  sincroniza dados/ com o index.html (use se a página foi editada à mão)
   novo --loja L --cat "Categoria" --nome "Nome" --href URL --img URL --preco 12,34 [--ex ".."] [--pre ".."] [--pos ".."] [--data AAAA-MM-DD]
+  post --data AAAA-MM-DD --formato F --tema T [--hora HH:MM] [--loja L] [--canal ig] [--ids id1,id2] [--status planejado] [--nota ..]
+                              registra um post no calendário (dados/posts.json)
+  post-status ID_DO_POST STATUS   muda o status (planejado, agendado, publicado, cancelado)
   remover ID                  tira uma oferta de dados/itens.json (o histórico fica guardado)
 Datas nos arquivos de dados: AAAA-MM-DD. Na tela e nos relatórios: DD/MM/AAAA.
 """
@@ -225,6 +228,30 @@ def cmd_novo(a):
     gravar(ITENS, itens); gravar(HIST, hist)
     print('novo: id=%s' % it['id'])
 
+POSTS = os.path.join(os.path.dirname(ITENS), 'posts.json')
+
+def cmd_post(a):
+    g = lambda k, d=None: a[a.index('--' + k) + 1] if '--' + k in a else d
+    for k in ('data', 'formato', 'tema'):
+        if g(k) is None: sys.exit('faltou --' + k)
+    posts = ler(POSTS, [])
+    ids = [x for x in (g('ids', '') or '').split(',') if x]
+    validos = {i['id'] for i in ler(ITENS, [])}
+    ruins = [x for x in ids if x not in validos]
+    if ruins: sys.exit('ids de produto desconhecidos: ' + ', '.join(ruins))
+    pid = g('id') or '%s-%s' % (g('data'), re.sub(r'[^a-z0-9]+', '-', g('tema').lower()).strip('-')[:24])
+    assert pid not in {p['id'] for p in posts}, 'post já existe'
+    posts.append(dict(id=pid, data=g('data'), hora=g('hora', ''), formato=g('formato'), loja=g('loja', ''), tema=g('tema'),
+                      canal=g('canal', 'ig'), produtos=ids, status=g('status', 'planejado'), nota=g('nota', '')))
+    posts.sort(key=lambda p: (p['data'], p['hora']))
+    gravar(POSTS, posts); print('post:', pid)
+
+def cmd_post_status(pid, st):
+    posts = ler(POSTS, [])
+    alvo = [p for p in posts if p['id'] == pid]
+    if not alvo: sys.exit('post não encontrado')
+    alvo[0]['status'] = st; gravar(POSTS, posts); print(pid, '->', st)
+
 def cmd_remover(i):
     itens = ler(ITENS, [])
     alvo = [x for x in itens if x['id'] == i]
@@ -241,5 +268,7 @@ if __name__ == '__main__':
     elif a[0] == 'importar': cmd_importar(a[a.index('--data') + 1] if '--data' in a else datetime.date.today().isoformat())
     elif a[0] == 'novo': cmd_novo(a)
     elif a[0] == 'remover': cmd_remover(a[1])
+    elif a[0] == 'post': cmd_post(a)
+    elif a[0] == 'post-status': cmd_post_status(a[1], a[2])
     elif a[0] == 'relatorio': cmd_relatorio(int(a[a.index('--dias') + 1]) if '--dias' in a else ALERTA_APOS_DIAS)
     else: print(__doc__); sys.exit(1)
