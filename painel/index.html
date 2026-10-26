@@ -54,6 +54,7 @@ a{color:var(--roxo)}
   <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
   <button role="tab" aria-selected="false" data-aba="calendario">Calendário</button>
   <button role="tab" aria-selected="false" data-aba="cliques">Cliques</button>
+  <button role="tab" aria-selected="false" data-aba="ganhos">Ganhos</button>
 </nav>
 
 <section id="geral">
@@ -89,6 +90,23 @@ a{color:var(--roxo)}
     <div class="ctl"><select id="c-st" aria-label="Status"><option value="">Qualquer status</option><option>publicado</option><option>agendado</option><option>planejado</option><option>cancelado</option></select></div>
     <div class="tw" style="border:0"><table id="tcal"><thead><tr><th>Data</th><th>Hora</th><th>Formato</th><th>Loja</th><th>Tema</th><th class="r">Produtos</th><th>Status</th><th class="r">Cliques no dia</th></tr></thead><tbody></tbody></table></div>
     <div id="c-det" class="msg" hidden></div>
+  </div>
+</section>
+
+<section id="ganhos" hidden>
+  <div class="card">
+    <h2>Ganhos (comissão)</h2>
+    <p class="sub">Os valores ficam só no banco privado do Cloudflare e nunca vão para o repositório. Importe o relatório de comissão de cada programa em CSV, no modelo abaixo (separador ponto e vírgula, datas DD/MM/AAAA). Reimportar o mesmo dia e produto substitui o valor, sem duplicar.</p>
+    <div class="ctl">
+      <input id="kg" type="password" autocomplete="off" placeholder="Chave do relatório (não é guardada)" aria-label="Chave do relatório">
+      <button id="modelo" type="button">Baixar modelo do CSV</button>
+      <input id="arq" type="file" accept=".csv,text/csv" aria-label="Arquivo CSV de comissão">
+    </div>
+    <div id="g-prev" class="msg" hidden></div>
+    <div class="ctl"><button id="g-env" type="button" disabled>Enviar ao banco</button>
+      <select id="g-dias" aria-label="Período"><option value="30">30 dias</option><option value="90">90 dias</option><option value="365">12 meses</option></select>
+      <button id="g-ver" type="button">Ver resultados</button></div>
+    <div id="g-out"></div>
   </div>
 </section>
 
@@ -224,6 +242,72 @@ document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('
 $('#c-st').addEventListener('input',calendario);
 document.querySelectorAll('th[data-o]').forEach(function(t){t.addEventListener('click',function(){var k=t.dataset.o;ord=ord.k===k?{k:k,d:-ord.d}:{k:k,d:1};lista()})});
 $('#ver').addEventListener('click',cliques);
+/* ---- Ganhos ---- */
+var gLinhas=[];
+function numBR(v){v=String(v||'').replace(/R\$|\s/g,'');if(!v)return NaN;return parseFloat(v.replace(/\./g,'').replace(',','.'))}
+function lojaId(v){v=String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
+  if(v==='ml'||v.indexOf('mercado')===0)return 'meli';return LOJA[v]?v:''}
+function lerCSV(txt){
+  var ls=txt.replace(/^\uFEFF/,'').split(/\r?\n/).filter(function(l){return l.trim()});
+  var ok=[],er=[];
+  ls.forEach(function(l,i){
+    var c=l.split(';').map(function(x){return x.trim()});
+    if(i===0&&/data/i.test(c[0]))return;
+    var m=/^(\d{2})\/(\d{2})\/(\d{4})$/.exec(c[0]||'');
+    var loja=lojaId(c[1]),ped=parseInt(c[3],10),com=numBR(c[4]);
+    if(!m)return er.push('linha '+(i+1)+': data deve ser DD/MM/AAAA');
+    if(!loja)return er.push('linha '+(i+1)+': loja desconhecida ('+(c[1]||'vazia')+')');
+    if(!c[2])return er.push('linha '+(i+1)+': produto vazio');
+    if(!(ped>=0))return er.push('linha '+(i+1)+': pedidos inválido');
+    if(!(com>=0))return er.push('linha '+(i+1)+': comissão inválida');
+    ok.push({dia:m[3]+'-'+m[2]+'-'+m[1],loja:loja,produto:c[2],pedidos:ped,comissao:com})});
+  return {ok:ok,er:er}}
+function gChave(){return $('#kg').value.trim()}
+function gPost(url,opt){opt=opt||{};opt.headers=Object.assign({'Authorization':'Bearer '+gChave()},opt.headers||{});opt.cache='no-store';return fetch(WORKER+url,opt)}
+function gMsg(alvo,txt){alvo.textContent='';alvo.appendChild(el('div','msg',txt))}
+function gVer(){
+  var out=$('#g-out');out.textContent='';
+  if(!gChave())return gMsg(out,'Digite a chave do relatório.');
+  gPost('/api/ganhos?dias='+encodeURIComponent($('#g-dias').value)).then(function(r){
+    if(!r.ok)throw new Error(r.status===401?'Chave recusada.':'O Worker respondeu '+r.status+'.');return r.json()}).then(function(d){
+    var cl={};(d.cliquesPorLoja||[]).forEach(function(x){cl[x.nome]=x.n});
+    var tc=Object.keys(cl).reduce(function(s,k){return s+cl[k]},0);
+    var g=el('div','grid');
+    [[brl(d.comissao),'comissão no período'],[String(d.pedidos),'pedidos'],[tc?brl(d.comissao/tc):'—','comissão por clique'],[tc?((d.pedidos/tc)*100).toFixed(1).replace('.',',')+'%':'—','pedidos por clique']].forEach(function(x){
+      var c=el('div','card');c.appendChild(el('div','k',x[0]));c.appendChild(el('div','l',x[1]));g.appendChild(c)});out.appendChild(g);
+    if(!d.pedidos&&!d.comissao){out.appendChild(el('div','msg','Ainda não há ganhos importados neste período.'))}
+    var b=el('div','card');b.style.marginTop='12px';b.appendChild(el('h2',0,'Por loja: comissão, pedidos e cliques'));
+    var t=el('table');var hr=el('tr');['Loja','Comissão','Pedidos','Cliques','R$ por clique'].forEach(function(x,i){var th=el('th',i?'r':'',x);hr.appendChild(th)});var th=el('thead');th.appendChild(hr);t.appendChild(th);
+    var tb=el('tbody');(d.lojas||[]).forEach(function(x){var tr=el('tr');tr.appendChild(el('td',0,LOJA[x.nome]||x.nome));tr.appendChild(el('td','r',brl(x.c)));tr.appendChild(el('td','r',String(x.p)));
+      var n=cl[x.nome]||0;tr.appendChild(el('td','r',String(n)));tr.appendChild(el('td','r',n?brl(x.c/n):'—'));tb.appendChild(tr)});t.appendChild(tb);b.appendChild(t);out.appendChild(b);
+    if((d.produtos||[]).length){var p=el('div','card');p.style.marginTop='12px';p.appendChild(el('h2',0,'Produtos que mais rendem'));var bx=el('div');p.appendChild(bx);out.appendChild(p);
+      var mx=Math.max.apply(0,d.produtos.map(function(x){return x.c}))||1;
+      d.produtos.forEach(function(x){var r=el('div','bar'),n=el('span','n',x.nome);n.title=x.nome;n.style.width='220px';var tt=el('span','t'),i=el('i');i.style.width=(x.c/mx*100)+'%';tt.appendChild(i);r.appendChild(n);r.appendChild(tt);r.appendChild(el('span','v',brl(x.c)));r.lastChild.style.width='86px';bx.appendChild(r)})}
+  }).catch(function(e){gMsg(out,e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')})}
+function gEnviar(){
+  var prev=$('#g-prev');if(!gChave())return gMsg(prev,'Digite a chave do relatório.'),prev.hidden=false;
+  $('#g-env').disabled=true;
+  gPost('/api/ganhos',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({linhas:gLinhas})}).then(function(r){return r.json().then(function(j){return [r.status,j]})}).then(function(x){
+    prev.hidden=false;
+    if(x[0]===200){gMsg(prev,x[1].gravadas+' linhas gravadas. Clique em "Ver resultados".');gLinhas=[]}
+    else if(x[0]===401)gMsg(prev,'Chave recusada.');
+    else gMsg(prev,(x[1].erro||'Erro')+(x[1].detalhes?': '+x[1].detalhes.join('; '):''));
+    $('#g-env').disabled=!gLinhas.length}).catch(function(){prev.hidden=false;gMsg(prev,'Não consegui falar com o Worker.');$('#g-env').disabled=!gLinhas.length})}
+$('#kg').addEventListener('input',function(){$('#k').value=$('#kg').value});
+$('#k').addEventListener('input',function(){$('#kg').value=$('#k').value});
+$('#g-ver').addEventListener('click',gVer);$('#g-env').addEventListener('click',gEnviar);
+$('#modelo').addEventListener('click',function(){
+  var b=new Blob(['\uFEFFdata;loja;produto;pedidos;comissao\r\n'],{type:'text/csv'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='modelo_ganhos.csv';document.body.appendChild(a);a.click();a.remove()});
+$('#arq').addEventListener('change',function(){
+  var f=this.files[0],prev=$('#g-prev');if(!f)return;
+  var rd=new FileReader();rd.onload=function(){
+    var r=lerCSV(String(rd.result));prev.hidden=false;gLinhas=r.er.length?[]:r.ok;
+    if(r.er.length){gMsg(prev,'Nada será enviado. '+r.er.length+' problema(s): '+r.er.slice(0,5).join('; '))}
+    else if(!r.ok.length){gMsg(prev,'O arquivo não tem linhas de dados.')}
+    else{var tot=r.ok.reduce(function(s,x){return s+x.comissao},0),ds=r.ok.map(function(x){return x.dia}).sort();
+      gMsg(prev,r.ok.length+' linhas, de '+dbr(ds[0])+' a '+dbr(ds[ds.length-1])+', comissão total '+brl(tot)+'. Confira e clique em "Enviar ao banco".')}
+    $('#g-env').disabled=!gLinhas.length};rd.readAsText(f,'utf-8')});
+
 })();
 </script>
 </body>
