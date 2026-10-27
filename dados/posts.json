@@ -234,5 +234,65 @@
   ],
   "status": "planejado",
   "nota": ""
+ },
+ {
+  "id": "2026-11-08-antes-do-11-11-5-achadin",
+  "data": "2026-11-08",
+  "hora": "12:00",
+  "formato": "carrossel",
+  "loja": "aliexpress",
+  "tema": "Antes do 11.11: 5 achadinhos tech e o preço de hoje",
+  "canal": "ig",
+  "produtos": [
+   "d5cf73ed",
+   "258d02f2",
+   "28117a47",
+   "1ac9cc28",
+   "5a309fe3"
+  ],
+  "status": "planejado",
+  "nota": "Pré-11.11: registrar o preço de hoje para provar o desconto real no dia. Reconferir preços antes de postar."
+ },
+ {
+  "id": "2026-11-09-contagem-regressiva-11-1",
+  "data": "2026-11-09",
+  "hora": "19:00",
+  "formato": "post",
+  "loja": "shopee",
+  "tema": "Contagem regressiva 11.11: cupons e frete grátis (conferir na Shopee)",
+  "canal": "ig",
+  "produtos": [],
+  "status": "planejado",
+  "nota": "Sem produto: aviso das campanhas. Só publicar regras (cupom/frete) conferidas no app da Shopee."
+ },
+ {
+  "id": "2026-11-10-5-itens-de-casa-para-peg",
+  "data": "2026-11-10",
+  "hora": "12:00",
+  "formato": "carrossel",
+  "loja": "shopee",
+  "tema": "5 itens de casa para pegar no 11.11",
+  "canal": "ig",
+  "produtos": [
+   "e1994255",
+   "33c54483",
+   "4f15da33",
+   "066672ac",
+   "d7bd7941"
+  ],
+  "status": "planejado",
+  "nota": "Conferir preço na Shopee no dia 10 e comparar com o histórico."
+ },
+ {
+  "id": "2026-11-11-11-11-ao-vivo-ofertas-qu",
+  "data": "2026-11-11",
+  "hora": "08:00",
+  "formato": "carrossel",
+  "loja": "shopee",
+  "tema": "11.11 ao vivo: ofertas que conferi hoje",
+  "canal": "ig",
+  "produtos": [],
+  "status": "planejado",
+  "nota": "Montar no dia com preços conferidos de manhã (Shopee e AliExpress). Só marcar 'menor preço' se o histórico confirmar."
  }
 ]
