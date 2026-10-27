@@ -25,3 +25,9 @@ Para incluir ou remover uma oferta, edite `itens.json` e rode o `build`. O texto
 - Travas: preço de cada produto conferido há no máximo 7 dias e escrito na legenda como `R$ 52,82`; atraso de no máximo 6 h; imagens públicas em JPEG; não duplica se o texto já está no perfil. Se algo falha, o post vira `bloqueado` e o Telegram avisa.
 - Segredos do GitHub (nunca no repositório): `IG_TOKEN` e `IG_USER_ID`. O token vale 60 dias e é renovado toda segunda pelo fluxo.
 - Testar sem publicar: Actions > "Instagram (publicador)" > Run workflow > `testar`.
+
+## Sincronia entre site, painel e canais
+- `itens.json` é a fonte única. Painel (`/painel/`), canal do Telegram, textos do WhatsApp e publicador do Instagram leem esses dados na hora de rodar; o site (`index.html`) é gerado por `python3 -I tools/vigia.py build`.
+- `python3 -I tools/sincronia.py` confere página x itens.json (links, preços, contador), histórico, quedas, posts e legendas agendadas. Sai com erro se algo estiver fora de sincronia.
+- `.github/workflows/sincronia.yml` roda sozinho a cada mudança em `dados/itens.json`/`historico.json` e todo dia às 10:30: regenera e publica a página se necessário e roda a conferência.
+- Lojas e metas: ~30 ofertas por loja (Shopee, Amazon, Mercado Livre, Magalu; AliExpress 28). Fotos de Amazon e Mercado Livre novas usam o endereço da própria loja (liberado no `img-src` do `_headers`).

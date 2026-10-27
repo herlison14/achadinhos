@@ -1,0 +1,42 @@
+name: Sincronia (site, painel e canais)
+
+# dados/itens.json é a fonte única. Sempre que ele muda (ou todo dia), este fluxo:
+#  1) regenera o index.html e dados/quedas.json a partir dele (python3 tools/vigia.py build);
+#  2) publica a página regenerada (a Cloudflare Pages publica sozinha a cada commit);
+#  3) confere que página, histórico, calendário e posts do Instagram estão coerentes.
+# Painel, Telegram, textos do WhatsApp e Instagram leem os mesmos dados na hora de rodar.
+on:
+  push:
+    branches: [main]
+    paths: ["dados/itens.json", "dados/historico.json", "tools/vigia.py"]
+  schedule:
+    - cron: "30 13 * * *"   # todo dia, 10:30 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sincronia
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerar a página a partir de dados/itens.json
+        run: python3 -I tools/vigia.py build
+      - name: Publicar a página regenerada, se mudou
+        run: |
+          git config user.name "sincronia"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html dados/quedas.json
+          if git diff --cached --quiet; then
+            echo "Página já estava em dia."
+          else
+            git commit -m "Sincronia: página regenerada a partir de dados/itens.json"
+            git pull --rebase origin main
+            git push origin main
+          fi
+      - name: Conferir a sincronia entre site, histórico, calendário e Instagram
+        run: python3 -I tools/sincronia.py

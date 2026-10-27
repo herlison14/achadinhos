@@ -110,6 +110,8 @@ def foto_do_item(i):
         urls = [img]
         if "aliexpress-media.com" in img:
             urls.insert(0, re.sub(r"_\d+x\d+\.(jpg|png)$", "", img))
+        if "m.media-amazon.com" in img:
+            urls.insert(0, re.sub(r"\._AC_UL\d+_\.", "._AC_UL800_.", img))
         if "/280x210/" in img:
             urls.insert(0, img.replace("/280x210/", "/600x450/"))
         for u in urls:
