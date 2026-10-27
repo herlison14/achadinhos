@@ -62,6 +62,7 @@ svg{display:block}
 .cats .sc::-webkit-scrollbar{display:none}
 .chip{flex:none;border:0;background:rgba(255,255,255,.12);color:#fff;font:inherit;font-weight:800;font-size:.85rem;padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
 .chip small{opacity:.75;font-weight:700;margin-left:4px}
+.cats .sc.sl2{padding-top:0;padding-bottom:8px}.chip.cl{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.28)}.chip.cl[aria-pressed="true"]{border-color:var(--gold)}.sl2 .rot{flex:none;align-self:center;color:#fff;opacity:.7;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding-right:2px}
 .chip[aria-pressed="true"]{background:var(--gold);color:#291258}
 /* hero */
 .hero{margin:0;border-radius:24px;padding:26px 22px 22px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 88% 12%,rgba(255,201,59,.30),transparent 46%),radial-gradient(circle at 5% 110%,rgba(220,60,70,.28),transparent 42%),linear-gradient(135deg,var(--deep) 0%,var(--deep2) 100%)}
@@ -244,7 +245,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <select id="lj" class="sel"><option value="">Lojas</option><option value="shopee">Shopee</option><option value="amazon">Amazon</option><option value="meli">Mercado Livre</option><option value="aliexpress">AliExpress</option><option value="magalu">Magalu</option></select>
 </form>
 </div>
-<nav class="cats" aria-label="Categorias"><div class="sc" id="chips"></div></nav>
+<nav class="cats" aria-label="Categorias e lojas"><div class="sc" id="chips"></div><div class="sc sl2" id="lchips" role="group" aria-label="Filtrar por loja"></div></nav>
 </div>
 <div class="wrap">
 <section class="bnr" aria-roledescription="carousel" aria-label="Destaques da semana">
@@ -532,6 +533,22 @@ if(cheap.length)$('#pics-2').appendChild(tile(bigSrc(srcOf(cheap[0]))));
 pics('#pics-3',escolha(4,1),'q');
 (function(){var b5=$('#pics-5');if(b5){b5.appendChild(tile('img/marca.webp','brand'));escolha(2,3).forEach(function(li){b5.appendChild(tile(bigSrc(srcOf(li))));});}})();
 (function(){var b=$('#pics-4');if(!b)return;b.appendChild(tile('img/marca.webp','brand'));escolha(2,2).forEach(function(li){b.appendChild(tile(bigSrc(srcOf(li))));});})();
+/* faixa de lojas + link direto (?loja=shopee) */
+(function(){var box=$('#lchips');if(!box)return;
+box.appendChild(mk('span','rot','Lojas'));
+function pinta(){$$('#lchips .chip').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-s')||'')===st.loja));});}
+function url(){try{var u=new URL(location.href);if(st.loja)u.searchParams.set('loja',st.loja);else u.searchParams.delete('loja');history.replaceState(null,'',u.pathname+(u.search||'')+u.hash);}catch(e){}}
+var tot=function(k){return items.filter(function(li){return li._s===k;}).length;};
+Object.keys(NAMES).forEach(function(k){var n=tot(k);if(!n)return;
+var b=mk('button','chip cl');b.type='button';b.setAttribute('data-s',k);b.setAttribute('aria-pressed','false');
+b.appendChild(document.createTextNode(NAMES[k]));b.appendChild(mk('small','',String(n)));
+b.addEventListener('click',function(){st.loja=(st.loja===k)?'':k;sel.value=st.loja;run();pinta();url();
+if(lista.getBoundingClientRect().top<0){lista.scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'start'});}});
+box.appendChild(b);});
+sel.addEventListener('change',function(){pinta();url();});
+var p;try{p=new URLSearchParams(location.search).get('loja');}catch(e){}
+if(p&&NAMES[p]){st.loja=p;sel.value=p;run();pinta();setTimeout(function(){lista.scrollIntoView({behavior:'auto',block:'start'});},200);}
+})();
 /* filtro */
 function run(){
 var raw=q.value.trim(),terms=norm(raw).split(/\s+/).filter(Boolean),n=0;
