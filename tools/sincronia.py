@@ -22,6 +22,38 @@ def ler(p, padrao=None):
         return padrao
 
 
+# Padrões de segredo que nunca podem aparecer em arquivos do repositório (público).
+SEGREDOS = [
+    ('token do GitHub', r'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{20,}'),
+    ('token do Telegram', r'\b\d{8,10}:AA[A-Za-z0-9_-]{30,}'),
+    ('token da Meta/Instagram', r'\bEAA[A-Za-z0-9]{40,}'),
+    ('chave privada', r'-----BEGIN [A-Z ]*PRIVATE KEY-----'),
+    ('chave de API', r'\bsk-[A-Za-z0-9]{20,}|\bAKIA[0-9A-Z]{16}'),
+    ('segredo/senha escrito no código',
+     r'(?i)(totp_secret|report_key|ig_token|password|senha)\s*[:=]\s*["\'][A-Za-z0-9+/=_-]{12,}["\']'),
+]
+IGNORAR_DIRS = {'.git', 'fonts', '__pycache__', 'node_modules'}
+
+
+def varrer_segredos():
+    achados = []
+    padroes = [(n, re.compile(r)) for n, r in SEGREDOS]
+    for base, dirs, arqs in os.walk(RAIZ):
+        dirs[:] = [d for d in dirs if d not in IGNORAR_DIRS]
+        for a in arqs:
+            if a == 'sincronia.py' or a.lower().endswith(('.png', '.jpg', '.jpeg', '.woff', '.woff2', '.ico')):
+                continue
+            c = os.path.join(base, a)
+            try:
+                txt = open(c, encoding='utf-8', errors='ignore').read()
+            except OSError:
+                continue
+            for nome, rx in padroes:
+                if rx.search(txt):
+                    achados.append('%s em %s' % (nome, os.path.relpath(c, RAIZ)))
+    return achados
+
+
 def main():
     erros, avisos = [], []
     itens = ler(J('dados', 'itens.json'), [])
@@ -93,6 +125,9 @@ def main():
     velhos = [i for i in itens if (hoje - datetime.date.fromisoformat(i['conferido'])).days > 7]
     if velhos:
         avisos.append('%d item(ns) sem conferência há mais de 7 dias (não vão ao Telegram/Instagram)' % len(velhos))
+
+    for s in varrer_segredos():
+        erros.append('possível segredo no repositório público: ' + s)
 
     por_loja = {}
     for i in itens:

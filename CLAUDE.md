@@ -25,6 +25,7 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 
 ## Segurança (regras firmes)
 - Nunca gravar no repositório ou repetir no chat: `REPORT_KEY`, `TOTP_SECRET`, `IG_TOKEN`, `IG_USER_ID`, senhas. Segredos ficam em GitHub Secrets / Cloudflare.
+- O repositório é público (decisão do Herlison em 26/10/2026, depois de varredura sem segredos no histórico). `tools/sincronia.py` também varre os arquivos atrás de tokens/senhas e falha se achar; rodar antes de todo push.
 - Não digitar login/senha dele em lojas ou portais; pedir que ele entre e seguir daí.
 - Não incluir comissões ou ganhos em mensagens do Telegram. A chave de leitura do painel não vai para tarefas agendadas.
 - `_headers` tem CSP: fotos de domínios novos precisam entrar em `img-src` (hoje liberados: Amazon `m.media-amazon.com` e ML `http2.mlstatic.com`).

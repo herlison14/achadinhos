@@ -31,3 +31,4 @@ Para incluir ou remover uma oferta, edite `itens.json` e rode o `build`. O texto
 - `python3 -I tools/sincronia.py` confere página x itens.json (links, preços, contador), histórico, quedas, posts e legendas agendadas. Sai com erro se algo estiver fora de sincronia.
 - `.github/workflows/sincronia.yml` roda sozinho a cada mudança em `dados/itens.json`/`historico.json` e todo dia às 10:30: regenera e publica a página se necessário e roda a conferência.
 - Lojas e metas: ~30 ofertas por loja (Shopee, Amazon, Mercado Livre, Magalu; AliExpress 28). Fotos de Amazon e Mercado Livre novas usam o endereço da própria loja (liberado no `img-src` do `_headers`).
+- A conferência também varre o repositório (que é público) atrás de tokens, chaves e senhas escritas em arquivos e falha se achar algo.
