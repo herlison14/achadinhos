@@ -37,6 +37,9 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 - Ao mudar preço de item com post agendado no Instagram, ajustar a legenda em `posts.json` (a sincronia avisa).
 - Tarefa diária da Shopee depende do computador/Chrome dele ligado; a semanal roda às segundas 19:43.
 
+## Arquivos no computador dele
+- Tudo que eu gerar para ele baixar/usar (posts, cards, planilhas, CSV) vai para `Downloads\Achadinhos\` na subpasta certa: `01_Identidade`, `02_Posts_Instagram`, `03_Planilhas_e_Historico`, `04_Site_e_Painel` (via ponte do computador). Nada solto em `Downloads`. Só mover, nunca apagar.
+
 ## Campanhas
 - 11.11 (11/11/2026) e Black Friday (27/11/2026). Lojas sobem preço antes e "descontam" no dia: por isso registrar o preço real todos os dias antes da data (`vigia.py atualizar`) e só chamar de "menor preço" o que o `historico.json` confirmar. Posts de 08 a 11/11 já estão no calendário como `planejado`.
 
