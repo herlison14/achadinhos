@@ -204,7 +204,7 @@ def cmd_publicar(testar=False):
         # token inválido ou vencido: não transforma os posts em "erro"; eles ficam agendados e saem quando o token for trocado
         # (até 6 h depois do horário)
         try:
-            api("GET", "/me", {"fields": "user_id"})
+            api("GET", "/" + ig_id, {"fields": "id"})
         except (ErroAPI, urllib.error.URLError) as e:
             print("::error::O Instagram recusou o token (%s). Gere um novo e troque o segredo IG_TOKEN; "
                   "os posts continuam agendados." % (str(e)[:120] if isinstance(e, ErroAPI) else type(e).__name__))
@@ -257,8 +257,11 @@ def cmd_status():
         avisar("IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions).")
         return 3
     try:
-        eu = api("GET", "/me", {"fields": "user_id,username"})
-        print("Conta:", eu.get("username"), "| id:", eu.get("user_id"))
+        eu = api("GET", "/" + os.environ["IG_USER_ID"], {"fields": "id,username"})
+        print("Conta:", eu.get("username"))
+        if GRAPH.startswith("https://graph.facebook.com"):
+            print("::notice::Token do Facebook aceito para a conta @%s (sem renovação automática)." % eu.get("username"))
+            return 0
         r = urllib.request.urlopen(f"{GRAPH}/refresh_access_token?" + urllib.parse.urlencode(
             {"grant_type": "ig_refresh_token", "access_token": os.environ["IG_TOKEN"]}), timeout=30)
         dados = json.loads(r.read())
@@ -279,8 +282,15 @@ if __name__ == "__main__":
     for _k in ("IG_TOKEN", "IG_USER_ID"):
         if os.environ.get(_k):
             os.environ[_k] = "".join(os.environ[_k].split()).strip("\"'")
-    # IG_USER_ID que não é um número (ex.: token colado por engano): usa "me", que a API resolve pela conta do token
-    if os.environ.get("IG_TOKEN") and not os.environ.get("IG_USER_ID", "").isdigit():
+    _tok = os.environ.get("IG_TOKEN", "")
+    if _tok.startswith("EAA"):
+        # token do Facebook (login unificado / Login do Facebook para Empresas): API em graph.facebook.com e ID numérico da conta
+        GRAPH = "https://graph.facebook.com/v21.0"
+        if not os.environ.get("IG_USER_ID", "").isdigit():
+            print("::error::Com token que começa com EAA o IG_USER_ID precisa ser o número da conta do Instagram (começa com 1784).")
+            sys.exit(3)
+    elif _tok and not os.environ.get("IG_USER_ID", "").isdigit():
+        # token do login do Instagram (IGAA/IGQ) e ID que não é número: a API resolve a conta pelo token
         os.environ["IG_USER_ID"] = "me"
         print("IG_USER_ID não é numérico: usando a conta do próprio token.")
     c = sys.argv[1] if len(sys.argv) > 1 else "testar"
