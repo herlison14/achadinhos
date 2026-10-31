@@ -190,15 +190,25 @@ def cmd_publicar(testar=False):
     agora = datetime.now(BRT)
     ig_id = os.environ.get("IG_USER_ID", "")
     if not testar and (not os.environ.get("IG_TOKEN") or not ig_id):
-        # Sem as chaves o robô nunca publica. Antes saía em silêncio; agora avisa e falha (execução vermelha no GitHub).
+        # Sem as chaves o robô nunca publica. Não manda aviso ao Telegram (o canal é público e roda a cada 10 min):
+        # deixa um erro visível no resumo da execução e não mexe na fila.
         vencidos = [p["id"] for p in posts if p.get("canal") == "ig" and p.get("status") == "agendado"
                     and p.get("formato") in ("carrossel", "post") and (agora - horario(p)).total_seconds() >= 0]
         if vencidos:
-            avisar("IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions): "
-                   "nada foi publicado. Pendentes no horário: " + ", ".join(vencidos[:5]))
-            return 3
-        print("IG_TOKEN/IG_USER_ID não configurados e nenhum post no horário: nada a fazer.")
+            print("::error::IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions). "
+                  "Nada foi publicado. Pendentes no horário: " + ", ".join(vencidos[:5]))
+        else:
+            print("IG_TOKEN/IG_USER_ID não configurados e nenhum post no horário: nada a fazer.")
         return 0
+    if not testar:
+        # token inválido ou vencido: não transforma os posts em "erro"; eles ficam agendados e saem quando o token for trocado
+        # (até 6 h depois do horário)
+        try:
+            api("GET", "/me", {"fields": "user_id"})
+        except (ErroAPI, urllib.error.URLError) as e:
+            print("::error::O Instagram recusou o token (%s). Gere um novo e troque o segredo IG_TOKEN; "
+                  "os posts continuam agendados." % (str(e)[:120] if isinstance(e, ErroAPI) else type(e).__name__))
+            return 0
     mudou = False
     for p in posts:
         ativo = p.get("status") == "agendado" or (testar and p.get("status") == "planejado" and p.get("imagens"))
