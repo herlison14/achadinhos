@@ -249,6 +249,28 @@ def cmd_publicar(testar=False):
     return 0
 
 
+def _diagnostico_facebook():
+    """Só contagens e nomes de permissões (nada de IDs, nomes ou tokens) para entender por que o ID da conta foi recusado."""
+    try:
+        perms = api("GET", "/me/permissions", {}).get("data", [])
+        ok = sorted(p["permission"] for p in perms if p.get("status") == "granted")
+        print("::notice::Permissões concedidas ao token: " + (", ".join(ok) or "nenhuma"))
+    except Exception as e:
+        print("::notice::Não consegui ler as permissões do token (%s)." % str(e)[:100])
+    try:
+        pag = api("GET", "/me/accounts", {"fields": "instagram_business_account"}).get("data", [])
+        lig = [x["instagram_business_account"]["id"] for x in pag if x.get("instagram_business_account")]
+        print("::notice::Páginas do Facebook visíveis ao token: %d; com Instagram ligado: %d; ID configurado é um deles: %s"
+              % (len(pag), len(lig), "sim" if os.environ.get("IG_USER_ID") in lig else "não"))
+    except Exception as e:
+        print("::notice::Não consegui listar as páginas do token (%s)." % str(e)[:100])
+    try:
+        eu = api("GET", "/me", {"fields": "id"})
+        print("::notice::O token enxerga um objeto em /me (%s)." % ("mesmo ID configurado" if eu.get("id") == os.environ.get("IG_USER_ID") else "ID diferente do configurado"))
+    except Exception as e:
+        print("::notice::/me falhou (%s)." % str(e)[:100])
+
+
 def cmd_status():
     _t = os.environ.get("IG_TOKEN", "")
     if _t:  # só o tipo (4 primeiros caracteres) e o tamanho, para diagnosticar; o restante nunca aparece
@@ -272,6 +294,8 @@ def cmd_status():
     except (ErroAPI, urllib.error.URLError, urllib.error.HTTPError) as e:
         det = str(e) if isinstance(e, ErroAPI) else type(e).__name__
         print("::error::Instagram recusou o token: " + det[:200].replace("\n", " "))  # ErroAPI já vem sem o token
+        if GRAPH.startswith("https://graph.facebook.com"):
+            _diagnostico_facebook()
         avisar("token do Instagram com problema (%s). Gere um novo e troque o segredo IG_TOKEN." % type(e).__name__)
         return 1
     return 0
