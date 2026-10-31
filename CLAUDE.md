@@ -47,6 +47,8 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 ## Visibilidade (Google e Pinterest)
 - Search Console verificado em 31/10/2026 (tag `google-site-verification` no `<head>` do `index.html`; não remover). Sitemap enviado e indexação da home solicitada.
 - O `vigia.py build` também gera o JSON-LD (schema.org: ItemList de Product com preço conferido e link) entre `<!--ld-inicio-->` e `<!--ld-fim-->` no `<head>`; não apagar os marcadores.
+- `vigia.py build` também gera `ofertas/<categoria>/` e `lojas/<loja>/` (módulo `tools/paginas.py`, só dados reais de `itens.json`/`historico.json`), regrava o `sitemap.xml` e preenche o bloco `<!--paginas-inicio-->` do rodapé da home com links para elas. Não editar essas pastas à mão e não apagar os marcadores.
+- Agendador: `worker/agendador/` (Worker `agendador-binga`, cron da Cloudflare a cada 10 min) dispara o `instagram.yml` quando há post `agendado` vencido, porque o cron do GitHub atrasa horas (31/10/2026: 3 h). Precisa do segredo `GH_TOKEN` (token fine-grained só do repo, Actions leitura/gravação) criado pelo Herlison; até estar no ar, disparo `acao=publicar` à mão.
 - Pinterest: `FONTES=/tmp/f python3 -I tools/pinterest.py` gera `pinterest/<id>.jpg` (sem preço na imagem) e `pinterest/pins.csv` (envio em massa; Media URL aponta para o raw do GitHub, só vale depois do push). Conta/quadros são do Herlison (não crio conta). Pasta no PC: `08_Pinterest` (`07_` reservada ao Telegram).
 
 ## Campanhas
