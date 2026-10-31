@@ -38,7 +38,7 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 - Tarefa diária da Shopee depende do computador/Chrome dele ligado; a semanal roda às segundas 19:43.
 
 ## Arquivos no computador dele
-- Tudo que eu gerar para ele baixar/usar vai para `Downloads\Achadinhos\` (via ponte do computador), na subpasta certa: `01_Imagens_e_Identidade`, `02_Instagram\{Reels,Stories,Posts_e_Carrosseis}`, `03_Planilhas\{Mestre,Historico_Postados,Listas_por_Loja,Ganhos_CSV}`, `04_Site_e_Painel`, `05_Zips_Originais`. Nada solto em `Downloads`. Só mover, nunca apagar. "History" para ele = Stories. Mapa completo no `LEIAME.txt` da pasta.
+- Tudo que eu gerar para ele baixar/usar vai para `Downloads\Achadinhos\` (via ponte do computador), na subpasta certa: `01_Imagens_e_Identidade`, `02_Instagram\{Reels,Stories,Posts_e_Carrosseis}`, `03_Planilhas\{Mestre,Historico_Postados,Listas_por_Loja,Ganhos_CSV}`, `04_Site_e_Painel`, `05_Zips_Originais`, `06_WhatsApp` (cards e textos do canal, uma subpasta por dia). Nada solto em `Downloads`. Só mover, nunca apagar. "History" para ele = Stories. Mapa completo no `LEIAME.txt` da pasta.
 
 ## Campanhas
 - 11.11 (11/11/2026) e Black Friday (27/11/2026). Lojas sobem preço antes e "descontam" no dia: por isso registrar o preço real todos os dias antes da data (`vigia.py atualizar`) e só chamar de "menor preço" o que o `historico.json` confirmar. Posts de 08 a 11/11 já estão no calendário como `planejado`.
