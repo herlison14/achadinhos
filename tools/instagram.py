@@ -254,6 +254,8 @@ def cmd_status():
         if dados.get("access_token") and dados["access_token"] != os.environ["IG_TOKEN"]:
             avisar("a renovação gerou um token DIFERENTE: gere um novo no painel da Meta e troque o segredo IG_TOKEN.")
     except (ErroAPI, urllib.error.URLError, urllib.error.HTTPError) as e:
+        det = str(e) if isinstance(e, ErroAPI) else type(e).__name__
+        print("::error::Instagram recusou o token: " + det[:200].replace("\n", " "))  # ErroAPI já vem sem o token
         avisar("token do Instagram com problema (%s). Gere um novo e troque o segredo IG_TOKEN." % type(e).__name__)
         return 1
     return 0
