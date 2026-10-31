@@ -40,6 +40,10 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 ## Arquivos no computador dele
 - Tudo que eu gerar para ele baixar/usar vai para `Downloads\Achadinhos\` (via ponte do computador), na subpasta certa: `01_Imagens_e_Identidade`, `02_Instagram\{Reels,Stories,Posts_e_Carrosseis}`, `03_Planilhas\{Mestre,Historico_Postados,Listas_por_Loja,Ganhos_CSV}`, `04_Site_e_Painel`, `05_Zips_Originais`, `06_WhatsApp` (cards e textos do canal, uma subpasta por dia). Nada solto em `Downloads`. **Cada canal tem sua própria pasta numerada** (Instagram `02_`, WhatsApp `06_`; Telegram ou outro canal novo ganha `07_`, `08_`...), nunca misturar canais na mesma subpasta (regra do Herlison, 30/10/2026). Só mover, nunca apagar. "History" para ele = Stories. Mapa completo no `LEIAME.txt` da pasta.
 
+## Relatório semanal de vendas
+- `python3 -I tools/vendas.py ganhos.csv --dias 7 --saida <arquivo fora do repo>`: lê o CSV do painel (`data;loja;produto;pedidos;comissao`) e lista o que vendeu e o que repetir. Comissão nunca vai para o repositório nem para o Telegram (o script recusa gravar dentro do repo). Eu não tenho a chave do Worker: ele me passa o CSV (Shopee: relatório de vendas exportado).
+- Painel agora é PWA (`painel/sw.js`); o Telegram é espelhado pelo `tools/telegram_post.py` depois de cada post do Instagram.
+
 ## Campanhas
 - 11.11 (11/11/2026) e Black Friday (27/11/2026). Lojas sobem preço antes e "descontam" no dia: por isso registrar o preço real todos os dias antes da data (`vigia.py atualizar`) e só chamar de "menor preço" o que o `historico.json` confirmar. Posts de 08 a 11/11 já estão no calendário como `planejado`.
 
