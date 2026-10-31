@@ -196,7 +196,7 @@ def cmd_publicar(testar=False):
         if vencidos:
             avisar("IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions): "
                    "nada foi publicado. Pendentes no horário: " + ", ".join(vencidos[:5]))
-            return 1
+            return 3
         print("IG_TOKEN/IG_USER_ID não configurados e nenhum post no horário: nada a fazer.")
         return 0
     mudou = False
@@ -242,7 +242,7 @@ def cmd_publicar(testar=False):
 def cmd_status():
     if not os.environ.get("IG_TOKEN") or not os.environ.get("IG_USER_ID"):
         avisar("IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions).")
-        return 1
+        return 3
     try:
         eu = api("GET", "/me", {"fields": "user_id,username"})
         print("Conta:", eu.get("username"), "| id:", eu.get("user_id"))
