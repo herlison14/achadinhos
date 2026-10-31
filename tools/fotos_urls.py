@@ -31,7 +31,7 @@ def main():
         try:
             im = Image.open(io.BytesIO(baixar(u))).convert('RGB')
             r['tamanho'] = '%dx%d' % im.size
-            if min(im.size) < 300:
+            if min(im.size) < 250:
                 r['erro'] = 'imagem pequena demais'
             else:
                 im.thumbnail((1000, 1000), Image.LANCZOS)
