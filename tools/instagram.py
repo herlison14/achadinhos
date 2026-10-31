@@ -262,5 +262,9 @@ def cmd_status():
 
 
 if __name__ == "__main__":
+    # tira espaços, quebras de linha e aspas que costumam vir junto ao colar o segredo no GitHub
+    for _k in ("IG_TOKEN", "IG_USER_ID"):
+        if os.environ.get(_k):
+            os.environ[_k] = "".join(os.environ[_k].split()).strip("\"'")
     c = sys.argv[1] if len(sys.argv) > 1 else "testar"
     sys.exit({"testar": lambda: cmd_publicar(True), "publicar": cmd_publicar, "status": cmd_status}.get(c, lambda: sys.exit(__doc__))())
