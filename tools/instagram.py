@@ -250,6 +250,9 @@ def cmd_publicar(testar=False):
 
 
 def cmd_status():
+    _t = os.environ.get("IG_TOKEN", "")
+    if _t:  # só o tipo (4 primeiros caracteres) e o tamanho, para diagnosticar; o restante nunca aparece
+        print("::notice::Formato do IG_TOKEN: começa com %s..., %d caracteres." % (_t[:4], len(_t)))
     if not os.environ.get("IG_TOKEN") or not os.environ.get("IG_USER_ID"):
         avisar("IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions).")
         return 3
