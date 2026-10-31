@@ -28,6 +28,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Executar
         run: python3 tools/instagram.py "$ACAO"
+      - name: Espelhar no Telegram o que acabou de ser publicado
+        if: ${{ env.ACAO == 'publicar' }}
+        run: python3 tools/telegram_post.py
       - name: Guardar a fila (status dos posts)
         run: |
           git config user.name "achadinhos-bot"
