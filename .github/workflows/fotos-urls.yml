@@ -1,0 +1,28 @@
+name: Fotos dos cards (por endereço)
+on:
+  workflow_dispatch:
+  push:
+    paths: ['dados/fotos_urls.json', 'tools/fotos_urls.py', '.github/workflows/fotos-urls.yml']
+permissions:
+  contents: write
+concurrency:
+  group: fotos-urls
+  cancel-in-progress: false
+jobs:
+  fotos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar Pillow
+        run: pip install --user pillow
+      - name: Baixar fotos
+        run: python3 tools/fotos_urls.py
+      - name: Guardar
+        run: |
+          git config user.name "achadinhos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add img/cards
+          if git diff --cached --quiet; then echo "nada novo"; exit 0; fi
+          git commit -m "Fotos dos cards (tools/fotos_urls.py)"
+          git pull --rebase
+          git push
