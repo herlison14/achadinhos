@@ -276,5 +276,9 @@ if __name__ == "__main__":
     for _k in ("IG_TOKEN", "IG_USER_ID"):
         if os.environ.get(_k):
             os.environ[_k] = "".join(os.environ[_k].split()).strip("\"'")
+    # IG_USER_ID que não é um número (ex.: token colado por engano): usa "me", que a API resolve pela conta do token
+    if os.environ.get("IG_TOKEN") and not os.environ.get("IG_USER_ID", "").isdigit():
+        os.environ["IG_USER_ID"] = "me"
+        print("IG_USER_ID não é numérico: usando a conta do próprio token.")
     c = sys.argv[1] if len(sys.argv) > 1 else "testar"
     sys.exit({"testar": lambda: cmd_publicar(True), "publicar": cmd_publicar, "status": cmd_status}.get(c, lambda: sys.exit(__doc__))())
