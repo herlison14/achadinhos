@@ -73,6 +73,10 @@ a{color:var(--roxo)}
   .tw:has(table.cart){border:0;background:none;overflow:visible}
 }
 [hidden]{display:none!important}
+.inst{display:none;align-items:center;gap:10px;flex-wrap:wrap;max-width:1100px;margin:8px auto 0;padding:10px 16px;background:var(--card);border:1px solid var(--bd);border-radius:12px;font-size:13px}
+.inst b{color:var(--roxo)}.inst button{border:1px solid var(--bd);background:var(--roxo);color:#fff;padding:6px 12px;border-radius:999px;font:inherit;cursor:pointer}
+.inst button.x{background:transparent;color:var(--mut)}
+@media (prefers-color-scheme:dark){.inst button{color:#16102a}}
 </style>
 </head>
 <body>
@@ -80,6 +84,7 @@ a{color:var(--roxo)}
   <h1>Painel — Achadinhos do Binga</h1>
   <div class="sub" id="fonte">Carregando…</div>
 </header>
+<div class="inst" id="inst" role="region" aria-label="Instalar o painel"><span id="inst-t"></span><button type="button" id="inst-b" hidden>Instalar app</button><button type="button" class="x" id="inst-x">Agora não</button></div>
 <main>
 <nav role="tablist">
   <button role="tab" aria-selected="true" data-aba="geral">Visão geral</button>
@@ -388,6 +393,21 @@ $('#csvtxt').addEventListener('input',function(){var t=this.value.trim();if(t)gC
 function arma(){clearTimeout(t);t=setTimeout(zera,600000)}
 ['input','click','keydown'].forEach(function(ev){document.addEventListener(ev,arma,{passive:true})});
 document.addEventListener('visibilitychange',function(){if(document.hidden)arma()});arma()})();
+
+(function(){
+  if('serviceWorker' in navigator&&window.isSecureContext){navigator.serviceWorker.register('sw.js',{scope:'./'}).catch(function(){})}
+  var box=document.getElementById('inst'),txt=document.getElementById('inst-t'),btn=document.getElementById('inst-b'),nao=document.getElementById('inst-x'),ev=null;
+  function lido(){try{return localStorage.getItem('inst-off')==='1'}catch(e){return false}}
+  var app=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone;
+  if(app||lido())return;
+  var ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  function mostra(){box.style.display='flex'}
+  if(ios){txt.textContent='Para instalar no iPhone: toque em Compartilhar e depois em "Adicionar à Tela de Início".';mostra()}
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();ev=e;txt.textContent='Instale o painel no celular para abrir com um toque.';btn.hidden=false;mostra()});
+  btn.addEventListener('click',function(){if(!ev)return;ev.prompt();ev.userChoice.finally(function(){ev=null;box.style.display='none'})});
+  nao.addEventListener('click',function(){box.style.display='none';try{localStorage.setItem('inst-off','1')}catch(e){}});
+  window.addEventListener('appinstalled',function(){box.style.display='none'});
+})();
 </script>
 </body>
 </html>
