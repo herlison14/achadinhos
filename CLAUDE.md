@@ -14,7 +14,7 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 3. `python3 -I tools/sincronia.py` — tem que terminar em `SINCRONIA: OK`.
 4. `git pull --rebase`, commit, push. O fluxo `sincronia` confere de novo na nuvem.
 - Texto de `nome`, `ex`, `pre`, `pos`, `cta` é HTML já escapado (`&amp;`).
-- Meta: ~30 ofertas por loja (Shopee 32, Amazon 30, Magalu 30, Mercado Livre 30, AliExpress 28).
+- Meta (ampliada em 31/10/2026): crescer em etapas; Amazon 45 e Magalu 43 já feitos (fáceis de conferir em lote pelo Chrome e links montados por mim); Shopee 31, Mercado Livre 30 (2 links com problema: Coleira peitoral e Compressor), AliExpress 28 dependem de links gerados por ele nos portais. Conferir em lote: Amazon e Magalu por fetch no Chrome (same-origin); links ML (meli.la) abrem o perfil social com o produto no topo.
 - Preço só entra com conferência na loja e data. Nunca inventar preço, desconto, estoque ou avaliação. Itens sem conferência há mais de 30 dias saem da página.
 
 ## Links de afiliado
