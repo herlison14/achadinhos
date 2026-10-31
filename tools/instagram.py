@@ -265,6 +265,16 @@ def _diagnostico_facebook():
     except Exception as e:
         print("::notice::Não consegui listar as páginas do token (%s)." % str(e)[:100])
     try:
+        u = api("GET", "/me", {"fields": "username"})
+        print("::notice::/me tem username: %s." % ("sim, é o do perfil" if u.get("username") == "achadinhosdobinga" else "sim, mas outro" if u.get("username") else "não"))
+    except Exception as e:
+        print("::notice::/me?fields=username falhou (%s)." % str(e)[:140])
+    try:
+        api("GET", "/me/media", {"limit": "1"})
+        print("::notice::/me/media funciona com este token.")
+    except Exception as e:
+        print("::notice::/me/media falhou (%s)." % str(e)[:140])
+    try:
         eu = api("GET", "/me", {"fields": "id"})
         print("::notice::O token enxerga um objeto em /me (%s)." % ("mesmo ID configurado" if eu.get("id") == os.environ.get("IG_USER_ID") else "ID diferente do configurado"))
     except Exception as e:
