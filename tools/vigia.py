@@ -162,10 +162,17 @@ def cmd_build():
     h, n1 = re.subn(r'(Preços conferidos em <b>)[^<]+(</b>)[^<]*(</span>)', lambda m: m.group(1) + base + m.group(2) + resto + m.group(3), h)
     h, n2 = re.subn(r'(<b id="n-of">)\d+(</b>.*?com preço conferido em )[^<]*?(\.</p>)',
                     lambda m: m.group(1) + str(len(vis)) + m.group(2) + base + resto + m.group(3), h, flags=re.S)
-    assert n1 == 1 and n2 == 1, (n1, n2)
+    h, n3 = re.subn(r'(Preços e estoque são os conferidos em )[^<]*?( e podem ter mudado\.)', lambda m: m.group(1) + base + resto + m.group(2), h)
+    assert n1 == 1 and n2 == 1 and n3 == 1, (n1, n2, n3)
     open(IDX, 'w', encoding='utf-8', newline='\n').write(h)
     q = quedas(vis, ler(HIST, {}), hoje)
     gravar(os.path.join(RAIZ, 'dados', 'quedas.json'), q)
+    import importlib.util
+    esp = importlib.util.spec_from_file_location('paginas', os.path.join(RAIZ, 'tools', 'paginas.py'))
+    P = importlib.util.module_from_spec(esp); esp.loader.exec_module(P)
+    ultima = max(datetime.date.fromisoformat(i['conferido']) for i in vis)
+    npag = P.gerar(RAIZ, vis, q, datas_texto, render, num, dados_estruturados, ultima)
+    print('build: %d páginas por categoria/loja' % npag)
     print('build: %d itens na página, %d queda(s) de preço' % (len(vis), len(q)))
     for i, d in omitidos: print('  OMITIDO (sem conferência há %d dias): %s' % (d, i['nome']))
 
