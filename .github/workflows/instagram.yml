@@ -1,7 +1,7 @@
 name: Instagram (publicador)
 on:
   schedule:
-    - cron: "*/20 11-23,0-1 * * *"   # a cada 20 min, das 08h à 22h40 (Brasília): publica o que estiver no horário
+    - cron: "*/10 11-23,0-1 * * *"   # a cada 10 min, das 08h às 22h50 (Brasília): publica o que estiver no horário (o GitHub atrasa; atraso até 6 h é aceito)
     - cron: "0 13 * * 1"             # segunda 10h (Brasília): confere e renova o token
   workflow_dispatch:
     inputs:
