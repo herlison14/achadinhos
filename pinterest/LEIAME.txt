@@ -1,0 +1,5 @@
+PINS DO PINTEREST (Achadinhos do Binga)
+- pins.csv: planilha de importacao em massa do Pinterest (Title, Media URL, Pinterest board, Description, Link, Publish date, Keywords).
+- <id>.jpg: imagem de cada pin (1080x1620). Sem preco na imagem de proposito: pin dura meses e o preco muda.
+- Media URL aponta para o GitHub (raw.githubusercontent.com); so funciona depois do push. Confira a data/hora em Publish date.
+- Todos os pins levam "Publicidade: links de afiliado" e mandam confirmar o preco na loja.

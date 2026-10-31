@@ -121,6 +121,24 @@ def quedas(vis, hist, hoje):
     out.sort(key=lambda x: -x['pct'])
     return out
 
+SITE = 'https://achadinhosdobinga.com.br/'
+
+def dados_estruturados(vis):
+    """JSON-LD (schema.org) com os itens visíveis: nome, preço conferido e link. Só dados que já estão na página."""
+    import html as _h
+    lista = []
+    for n, i in enumerate(vis, 1):
+        prod = {'@type': 'Product', 'name': _h.unescape(i['nome']), 'category': i['cat']}
+        if i['img'].startswith('https://'): prod['image'] = i['img']
+        prod['offers'] = {'@type': 'Offer', 'price': '%.2f' % num(i['preco']), 'priceCurrency': 'BRL', 'url': i['href'],
+                          'seller': {'@type': 'Organization', 'name': NOMES[i['loja']]}}
+        lista.append({'@type': 'ListItem', 'position': n, 'item': prod})
+    doc = {'@context': 'https://schema.org', '@graph': [
+        {'@type': 'WebSite', 'name': 'Achadinhos do Binga', 'url': SITE, 'inLanguage': 'pt-BR'},
+        {'@type': 'ItemList', 'name': 'Achadinhos da semana: ofertas conferidas', 'numberOfItems': len(lista), 'itemListElement': lista}]}
+    txt = json.dumps(doc, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    return '<script type="application/ld+json">' + txt + '</script>'
+
 def cmd_build():
     itens = ler(ITENS, [])
     hoje = datetime.date.today()
@@ -138,6 +156,8 @@ def cmd_build():
         corpo = ''.join(render(i) for i in vis if i['cat'] == m.group(2))
         return m.group(1) + corpo + m.group(4)
     h = SEC.sub(troca, h)
+    h, nld = re.subn(r'(<!--ld-inicio-->).*?(<!--ld-fim-->)', lambda m: m.group(1) + dados_estruturados(vis) + m.group(2), h, flags=re.S)
+    assert nld == 1, 'faltam os marcadores <!--ld-inicio--><!--ld-fim--> no <head>'
     base, resto = datas_texto(vis)
     h, n1 = re.subn(r'(Preços conferidos em <b>)[^<]+(</b>)[^<]*(</span>)', lambda m: m.group(1) + base + m.group(2) + resto + m.group(3), h)
     h, n2 = re.subn(r'(<b id="n-of">)\d+(</b>.*?com preço conferido em )[^<]*?(\.</p>)',
