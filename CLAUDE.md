@@ -44,6 +44,11 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 - `python3 -I tools/vendas.py ganhos.csv --dias 7 --saida <arquivo fora do repo>`: lê o CSV do painel (`data;loja;produto;pedidos;comissao`) e lista o que vendeu e o que repetir. Comissão nunca vai para o repositório nem para o Telegram (o script recusa gravar dentro do repo). Eu não tenho a chave do Worker: ele me passa o CSV (Shopee: relatório de vendas exportado).
 - Painel agora é PWA (`painel/sw.js`); o Telegram é espelhado pelo `tools/telegram_post.py` depois de cada post do Instagram.
 
+## Visibilidade (Google e Pinterest)
+- Search Console verificado em 31/10/2026 (tag `google-site-verification` no `<head>` do `index.html`; não remover). Sitemap enviado e indexação da home solicitada.
+- O `vigia.py build` também gera o JSON-LD (schema.org: ItemList de Product com preço conferido e link) entre `<!--ld-inicio-->` e `<!--ld-fim-->` no `<head>`; não apagar os marcadores.
+- Pinterest: `FONTES=/tmp/f python3 -I tools/pinterest.py` gera `pinterest/<id>.jpg` (sem preço na imagem) e `pinterest/pins.csv` (envio em massa; Media URL aponta para o raw do GitHub, só vale depois do push). Conta/quadros são do Herlison (não crio conta). Pasta no PC: `08_Pinterest` (`07_` reservada ao Telegram).
+
 ## Campanhas
 - 11.11 (11/11/2026) e Black Friday (27/11/2026). Lojas sobem preço antes e "descontam" no dia: por isso registrar o preço real todos os dias antes da data (`vigia.py atualizar`) e só chamar de "menor preço" o que o `historico.json` confirmar. Posts de 08 a 11/11 já estão no calendário como `planejado`.
 
