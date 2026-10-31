@@ -94,6 +94,24 @@ def main():
     if m and int(m.group(1)) != len(itens):
         erros.append('contador da página (%s) diferente de itens.json (%d)' % (m.group(1), len(itens)))
 
+    # 1b) link de afiliado em todo item (existente ou novo)
+    for i in itens:
+        h, l = i['href'], i['loja']
+        if l == 'amazon':
+            ok = ('amzn.to/' in h) or ('amazon.com.br/' in h and 'tag=herlisonsanto-20' in h)
+        elif l == 'meli':
+            ok = 'meli.la/' in h
+        elif l == 'shopee':
+            ok = 's.shopee.com.br/' in h
+        elif l == 'aliexpress':
+            ok = 's.click.aliexpress.com/e/' in h
+        elif l == 'magalu':
+            ok = 'magazinevoce.com.br/magazinein_400408/' in h
+        else:
+            ok = False
+        if not ok:
+            erros.append('link sem afiliado/inválido: %s (%s)' % (i['nome'][:40], l))
+
     # 2) histórico
     for i in itens:
         h = hist.get(i['id'])
