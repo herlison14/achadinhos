@@ -28,6 +28,7 @@ import json, os, sys, time, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+_ORIGINAL_TOKEN = ""
 RAIZ = Path(__file__).resolve().parent.parent
 POSTS = RAIZ / "dados" / "posts.json"
 ITENS = RAIZ / "dados" / "itens.json"
@@ -293,6 +294,16 @@ def cmd_status():
         print("Conta:", eu.get("username"))
         if GRAPH.startswith("https://graph.facebook.com"):
             print("::notice::Token do Facebook aceito para a conta @%s (sem renovação automática)." % eu.get("username"))
+            try:  # validade do token do usuário (o de partida); 0 = não vence
+                d = api("GET", "/debug_token", {"input_token": _ORIGINAL_TOKEN}).get("data", {})
+                exp = int(d.get("expires_at") or 0)
+                if exp == 0:
+                    print("::notice::O token configurado não vence.")
+                else:
+                    h = (exp - time.time()) / 3600
+                    print("::notice::O token configurado vence em %.1f horas (%.1f dias)." % (h, h / 24))
+            except Exception as e:
+                print("::notice::Não consegui ler a validade do token (%s)." % str(e)[:100])
             return 0
         r = urllib.request.urlopen(f"{GRAPH}/refresh_access_token?" + urllib.parse.urlencode(
             {"grant_type": "ig_refresh_token", "access_token": os.environ["IG_TOKEN"]}), timeout=30)
@@ -321,6 +332,7 @@ if __name__ == "__main__":
         # token do Facebook (login unificado / Explorer): API em graph.facebook.com. A conta do Instagram é achada pela Página
         # do Facebook ligada a ela; o token da Página (que não vence) substitui o do usuário só durante esta execução.
         GRAPH = "https://graph.facebook.com/v21.0"
+        _ORIGINAL_TOKEN = _tok
         try:
             _pag = api("GET", "/me/accounts", {"fields": "access_token,instagram_business_account"}).get("data", [])
             _lig = [x for x in _pag if x.get("instagram_business_account") and x.get("access_token")]
