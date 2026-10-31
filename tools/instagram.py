@@ -318,10 +318,21 @@ if __name__ == "__main__":
             os.environ[_k] = "".join(os.environ[_k].split()).strip("\"'")
     _tok = os.environ.get("IG_TOKEN", "")
     if _tok.startswith("EAA"):
-        # token do Facebook (login unificado / Login do Facebook para Empresas): API em graph.facebook.com e ID numérico da conta
+        # token do Facebook (login unificado / Explorer): API em graph.facebook.com. A conta do Instagram é achada pela Página
+        # do Facebook ligada a ela; o token da Página (que não vence) substitui o do usuário só durante esta execução.
         GRAPH = "https://graph.facebook.com/v21.0"
-        if not os.environ.get("IG_USER_ID", "").isdigit():
-            print("::error::Com token que começa com EAA o IG_USER_ID precisa ser o número da conta do Instagram (começa com 1784).")
+        try:
+            _pag = api("GET", "/me/accounts", {"fields": "access_token,instagram_business_account"}).get("data", [])
+            _lig = [x for x in _pag if x.get("instagram_business_account") and x.get("access_token")]
+        except ErroAPI as _e:
+            _lig = []
+            print("::warning::Não consegui listar as Páginas do token (%s)." % str(_e)[:120])
+        if _lig:
+            os.environ["IG_TOKEN"] = _lig[0]["access_token"]
+            os.environ["IG_USER_ID"] = _lig[0]["instagram_business_account"]["id"]
+        elif not os.environ.get("IG_USER_ID", "").isdigit():
+            print("::error::Token EAA sem Página do Facebook ligada ao Instagram: gere o token com pages_show_list e "
+                  "pages_read_engagement e escolha a Página e a conta do Instagram na janela de login.")
             sys.exit(3)
     elif _tok and not os.environ.get("IG_USER_ID", "").isdigit():
         # token do login do Instagram (IGAA/IGQ) e ID que não é número: a API resolve a conta pelo token
