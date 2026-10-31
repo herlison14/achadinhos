@@ -148,8 +148,8 @@
  },
  {
   "id": "2026-11-02-shopee-ate20",
-  "data": "2026-11-02",
-  "hora": "12:00",
+  "data": "2026-10-30",
+  "hora": "22:15",
   "formato": "carrossel",
   "loja": "shopee",
   "tema": "4 achadinhos na Shopee por menos de R$ 20 💸",
@@ -160,9 +160,17 @@
    "33c54483",
    "5bd59d62"
   ],
-  "status": "planejado",
-  "nota": "Novo (29/10/2026): rascunho com preços de 29/10/2026. Reconferir na loja, gerar os cards (1080x1350, JPEG) e só então agendar. Cobre o filtro \"barato de verdade\": ótimo para quem chega sem confiança e quer testar.",
-  "legenda": "4 achadinhos na Shopee por menos de R$ 20 💸\n1. Kit Fini Tubes 12 un de 15g: R$ 11,99\n2. Kit 10 Panos de Microfibra: R$ 14,17\n3. Porta Papel-Toalha Triplo 3 em 1: R$ 16,95\n4. Cápsulas Nescau Dolce Gusto, 10 un: R$ 18,90\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Shopee em 29/10/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #achadinhosshopee #shopee #ofertas #achadinhosdobinga"
+  "status": "agendado",
+  "nota": "Antecipado para 30/10/2026 a pedido do Herlison. Preços conferidos na página da loja em 30/10/2026 (batem com o catálogo de 29/10).",
+  "legenda": "4 achadinhos na Shopee por menos de R$ 20 💸\n1. Kit Fini Tubes 12 un de 15g: R$ 11,99\n2. Kit 10 Panos de Microfibra: R$ 14,17\n3. Porta Papel-Toalha Triplo 3 em 1: R$ 16,95\n4. Cápsulas Nescau Dolce Gusto, 10 un: R$ 18,90\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Shopee em 29/10/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #achadinhosshopee #shopee #ofertas #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-02-shopee-ate20/01.jpg",
+   "postagens/2026-11-02-shopee-ate20/02.jpg",
+   "postagens/2026-11-02-shopee-ate20/03.jpg",
+   "postagens/2026-11-02-shopee-ate20/04.jpg",
+   "postagens/2026-11-02-shopee-ate20/05.jpg",
+   "postagens/2026-11-02-shopee-ate20/06.jpg"
+  ]
  },
  {
   "id": "2026-11-03-beleza-ali",
@@ -315,8 +323,8 @@
  },
  {
   "id": "2026-11-12-beleza-shopee",
-  "data": "2026-11-12",
-  "hora": "12:00",
+  "data": "2026-10-30",
+  "hora": "22:35",
   "formato": "carrossel",
   "loja": "shopee",
   "tema": "Beleza que cabe no bolso na Shopee 💄 (5 produtos)",
@@ -328,9 +336,18 @@
    "e8862c30",
    "92897d37"
   ],
-  "status": "planejado",
-  "nota": "Rascunho: preços da conferência de 29/10/2026. Reconferir na loja, ajustar a legenda e gerar os cards (1080x1350, JPEG) antes de agendar.",
-  "legenda": "Beleza que cabe no bolso na Shopee 💄 5 achadinhos, de R$ 27,95 a R$ 58,70\n1. Kit Noiva Franciny Gloss: R$ 27,95\n2. Kit 3 Máscaras SOS Salon Line: Cachos: R$ 58,70\n3. Protetor Solar Facial PS-01 FPS 60 - Principia: R$ 49,00\n4. Máscara de Cílios The Colossal Maybelline NY 8ml: R$ 42,90\n5. Kit Esmalte Risqué 7 Cores: R$ 40,95\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Shopee em 29/10/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #achadinhosshopee #beleza #maquiagem #achadinhosdobinga"
+  "status": "agendado",
+  "nota": "Antecipado para 30/10/2026 a pedido do Herlison. Preços conferidos na página da loja em 30/10/2026 (batem com o catálogo de 29/10).",
+  "legenda": "Beleza que cabe no bolso na Shopee 💄 5 achadinhos, de R$ 27,95 a R$ 58,70\n1. Kit Noiva Franciny Gloss: R$ 27,95\n2. Kit 3 Máscaras SOS Salon Line: Cachos: R$ 58,70\n3. Protetor Solar Facial PS-01 FPS 60 - Principia: R$ 49,00\n4. Máscara de Cílios The Colossal Maybelline NY 8ml: R$ 42,90\n5. Kit Esmalte Risqué 7 Cores: R$ 40,95\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Shopee em 29/10/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #achadinhosshopee #beleza #maquiagem #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-12-beleza-shopee/01.jpg",
+   "postagens/2026-11-12-beleza-shopee/02.jpg",
+   "postagens/2026-11-12-beleza-shopee/03.jpg",
+   "postagens/2026-11-12-beleza-shopee/04.jpg",
+   "postagens/2026-11-12-beleza-shopee/05.jpg",
+   "postagens/2026-11-12-beleza-shopee/06.jpg",
+   "postagens/2026-11-12-beleza-shopee/07.jpg"
+  ]
  },
  {
   "id": "2026-11-13-pet-amazon",
