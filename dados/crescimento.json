@@ -1,0 +1,93 @@
+[
+ {
+  "id": "2026-11-03-site-tudo-num-lugar",
+  "data": "2026-11-03", "hora": "14:30", "objetivo": "visita",
+  "tema": "Todas as ofertas com preço conferido num site só",
+  "slides": [
+   {"tipo": "capa", "titulo": "{ofertas} ofertas com preço conferido num site só", "sub": "{lojas}"},
+   {"tipo": "lista", "kicker": "O que tem lá", "titulo": "Tudo organizado pra você achar rápido", "itens": [
+     "Ofertas de {lojas}",
+     "{n_cat} categorias: casa, beleza, moda, pet, ferramentas e mais",
+     "Campo de busca para achar o produto que você quer"]},
+   {"tipo": "lista", "kicker": "Sem surpresa", "titulo": "Você vê antes de clicar", "itens": [
+     "Cada oferta mostra o preço e a data em que foi conferido",
+     "Caiu de preço? A página mostra o que baixou desde a última conferência",
+     "Preço muda: confirme na loja antes de comprar"]},
+   {"tipo": "final", "titulo": "Salve este post e visite o site", "botao": "LINK NA BIO", "nota": "achadinhosdobinga.com.br"}
+  ],
+  "legenda": "Todas as ofertas do perfil num lugar só 👇\n\nNo site você encontra {ofertas} achadinhos de {lojas}, separados por categoria e por loja, cada um com o preço e a data em que foi conferido.\n\nTem campo de busca e uma seção \"Caiu de preço\" com o que baixou desde a última conferência.\n\nSalva este post e entra pelo link na bio 🔗\n\nOs preços podem mudar: confirme sempre na loja antes de comprar.\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #comprasonline #achadinhosdobinga"
+ },
+ {
+  "id": "2026-11-04-qual-loja-voce-mais-usa",
+  "data": "2026-11-04", "hora": "10:30", "objetivo": "comentar",
+  "tema": "Qual loja você mais usa?",
+  "slides": [
+   {"tipo": "capa", "titulo": "Qual loja você mais usa pra comprar online?", "sub": "Responde nos comentários"},
+   {"tipo": "pergunta", "kicker": "Você escolhe", "titulo": "Onde você mais acha achadinho bom?", "opcoes": ["Shopee", "Amazon", "Mercado Livre", "AliExpress", "Magalu"], "chamada": "Comenta o nome da loja"},
+   {"tipo": "final", "titulo": "Sua resposta ajuda a escolher os próximos posts", "botao": "LINK NA BIO", "nota": "Todas as lojas no site"}
+  ],
+  "legenda": "Qual loja você mais usa pra comprar online? 🛒\n\nShopee, Amazon, Mercado Livre, AliExpress ou Magalu?\n\nConta aqui nos comentários: sua resposta ajuda a escolher de onde vêm os próximos achadinhos.\n\nTodas essas lojas estão no site, com preço e data de conferência. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#achadinhos #comprasonline #shopee #amazon #mercadolivre"
+ },
+ {
+  "id": "2026-11-05-4-jeitos-preco-bom",
+  "data": "2026-11-05", "hora": "14:30", "objetivo": "salvar",
+  "tema": "4 jeitos de saber se o preço é bom de verdade",
+  "slides": [
+   {"tipo": "capa", "titulo": "4 jeitos de saber se o preço é bom de verdade", "sub": "Salve pra consultar antes de comprar"},
+   {"tipo": "lista", "kicker": "Dica 1 e 2", "titulo": "Compare antes de fechar", "itens": [
+     "Procure o mesmo produto em pelo menos duas lojas",
+     "Olhe a data: preço sem data pode ser de semanas atrás"]},
+   {"tipo": "lista", "kicker": "Dica 3 e 4", "titulo": "Olhe além do valor", "itens": [
+     "Veja se o preço é no Pix ou no cartão: em algumas lojas, como o Magalu, o do cartão pode ser maior",
+     "Some frete e prazo: o mais barato nem sempre sai mais em conta"]},
+   {"tipo": "final", "titulo": "Salve e envie pra quem compra online", "botao": "LINK NA BIO", "nota": "Aqui toda oferta mostra a data de conferência"}
+  ],
+  "legenda": "4 jeitos de saber se o preço é bom de verdade 👇\n\n1. Compare o mesmo produto em pelo menos duas lojas.\n2. Veja a data: preço sem data pode ser de semanas atrás.\n3. Confira se é preço no Pix ou no cartão (no Magalu, por exemplo, o do cartão pode ser maior).\n4. Some frete e prazo antes de decidir.\n\nPor aqui toda oferta mostra a data em que o preço foi conferido. Link na bio 🔗\n\nSalva pra consultar quando for comprar e envia pra quem vive comprando online.\n\nPublicidade: links de afiliado.\n\n#dicasdecompra #comprasonline #achadinhos #economizar"
+ },
+ {
+  "id": "2026-11-06-lista-11-11-black-friday",
+  "data": "2026-11-06", "hora": "21:00", "objetivo": "salvar",
+  "tema": "11.11 e Black Friday: monte sua lista agora",
+  "slides": [
+   {"tipo": "capa", "titulo": "11.11 e Black Friday: monte sua lista agora", "sub": "11/11 e 27/11"},
+   {"tipo": "lista", "kicker": "Antes da data", "titulo": "Faça isso desde já", "itens": [
+     "Liste só o que você já ia comprar",
+     "Anote o preço de hoje de cada item",
+     "Defina um limite de quanto quer gastar"]},
+   {"tipo": "lista", "kicker": "No dia", "titulo": "Compare com a sua anotação", "itens": [
+     "Se o preço do dia for menor que o anotado, vale olhar",
+     "Confirme na loja: valor, frete e prazo",
+     "Se não baixou, espere: sempre vai ter outra chance"]},
+   {"tipo": "final", "titulo": "Salve a lista e envie pra quem vai comprar", "botao": "LINK NA BIO", "nota": "Eu registro o preço dos itens do site com data"}
+  ],
+  "legenda": "11.11 (11/11) e Black Friday (27/11) chegando 🛍️\n\nPra não cair em armadilha, monte sua lista agora:\n\n✔️ Liste só o que você já ia comprar\n✔️ Anote o preço de hoje de cada item\n✔️ Defina um limite de gasto\n\nNo dia, compare com a sua anotação. Se o preço baixou de verdade, vale olhar; se não, espera a próxima.\n\nNo site, cada oferta tem a data em que o preço foi conferido. Link na bio 🔗\n\nSalva este post e envia pra quem vai aproveitar as datas.\n\nPublicidade: links de afiliado.\n\n#blackfriday #novembro #dicasdecompra #achadinhos"
+ },
+ {
+  "id": "2026-11-07-como-usar-o-site",
+  "data": "2026-11-07", "hora": "17:30", "objetivo": "visita",
+  "tema": "Como usar o site em 3 passos",
+  "slides": [
+   {"tipo": "capa", "titulo": "Como achar seu achadinho em 3 passos", "sub": "Leva menos de um minuto"},
+   {"tipo": "lista", "kicker": "Passo a passo", "titulo": "É simples", "itens": [
+     "Toque no link da bio e abra o site",
+     "Escolha uma categoria ou uma loja, ou use a busca",
+     "Veja o preço e a data de conferência e abra o link da loja"]},
+   {"tipo": "lista", "kicker": "Bônus", "titulo": "Fique de olho", "itens": [
+     "Na seção \"Caiu de preço\" aparece o que baixou desde a última conferência",
+     "O preço pode mudar: sempre confirme na loja"]},
+   {"tipo": "final", "titulo": "Entra no site pelo link da bio", "botao": "LINK NA BIO", "nota": "Salve para não esquecer"}
+  ],
+  "legenda": "Achar seu achadinho em 3 passos 👇\n\n1. Toque no link da bio\n2. Escolha uma categoria ou uma loja, ou use a busca\n3. Veja o preço e a data de conferência e abra o link da loja\n\nBônus: a seção \"Caiu de preço\" mostra o que baixou desde a última conferência.\n\nSalva este post pra não esquecer 🔗\n\nOs preços podem mudar: confirme na loja antes de comprar.\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #comprasonline #achadinhosdobinga"
+ },
+ {
+  "id": "2026-11-08-o-que-voce-quer-ver",
+  "data": "2026-11-08", "hora": "10:30", "objetivo": "comentar",
+  "tema": "O que você quer ver mais por aqui?",
+  "slides": [
+   {"tipo": "capa", "titulo": "O que você quer ver mais por aqui?", "sub": "Escolhe nos comentários"},
+   {"tipo": "pergunta", "kicker": "Você decide", "titulo": "Qual categoria traz mais achadinhos pra você?", "opcoes": ["Casa e cozinha", "Beleza e cuidados", "Moda, esporte e eletrônicos", "Pet", "Ferramentas e garagem"], "chamada": "Comenta a sua"},
+   {"tipo": "final", "titulo": "Todas as categorias estão no site", "botao": "LINK NA BIO", "nota": "Salve para voltar depois"}
+  ],
+  "legenda": "O que você quer ver mais por aqui? 👀\n\nCasa e cozinha, beleza, moda e eletrônicos, pet ou ferramentas?\n\nComenta a sua categoria favorita: ela ajuda a escolher os próximos achadinhos.\n\nTodas elas estão no site, com preço e data de conferência. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #casa #beleza #pet"
+ }
+]

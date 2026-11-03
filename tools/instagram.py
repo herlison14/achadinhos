@@ -129,7 +129,10 @@ def validar(post, itens, agora, checar_rede):
             erros.append("imagem não existe no repositório: " + i)
     if "Publicidade" not in leg:
         erros.append('legenda sem o aviso "Publicidade: links de afiliado"')
-    if not post.get("produtos"):
+    sem_preco = bool(post.get("sem_preco"))   # posts de crescimento (visita ao site, salvar, enviar): sem produto e sem preço
+    if sem_preco and "R$" in leg:
+        erros.append("post sem preço não pode ter R$ na legenda")
+    if not post.get("produtos") and not sem_preco:
         erros.append("sem produtos para a trava de preço")
     maxd = int(post.get("max_idade_dias", IDADE_MAX_DIAS))
     for pid in post.get("produtos", []):

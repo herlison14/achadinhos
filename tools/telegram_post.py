@@ -83,6 +83,8 @@ def main(seco):
         if pub < DESDE or (agora - quando).total_seconds() > JANELA_H * 3600:
             continue
         texto = texto_produtos(p, itens)
+        if not texto and p.get("sem_preco"):   # post de crescimento: sem produtos, só o convite para o site
+            texto = "Mais ofertas com preço conferido: %s/?o=tg\n\nPublicidade: links de afiliado." % SITE
         if not texto:
             continue
         midias = [{"type": "photo", "media": RAW + im} for im in p["imagens"][:10]]
