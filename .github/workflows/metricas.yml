@@ -1,0 +1,34 @@
+name: Instagram (métricas dos posts)
+on:
+  schedule:
+    - cron: "30 1 * * *"   # todo dia 22:30 (Brasília): só leitura, não publica nada
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: metricas
+  cancel-in-progress: false
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Coletar métricas (só leitura)
+        run: python3 tools/instagram.py metricas | tee resumo.txt
+      - name: Resumo da execução
+        if: always()
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat resumo.txt >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - name: Guardar como artefato (não vai para o repositório público)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: metricas-instagram
+          path: metricas.json
+          retention-days: 90
+          if-no-files-found: ignore

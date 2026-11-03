@@ -325,6 +325,54 @@ def cmd_status():
     return 0
 
 
+def cmd_metricas():
+    """Coleta o desempenho dos posts publicados (curtidas, comentários e, se o token tiver a permissão
+    instagram_manage_insights, alcance, salvamentos, envios e visualizações). Só leitura: não publica nem altera a fila.
+    Grava metricas.json (fora do repositório; o fluxo guarda como artefato) e imprime um resumo."""
+    ig_id = os.environ.get("IG_USER_ID", "")
+    if not os.environ.get("IG_TOKEN") or not ig_id:
+        print("::error::IG_TOKEN/IG_USER_ID não configurados.")
+        return 3
+    posts = [p for p in ler(POSTS, []) if p.get("canal") == "ig" and p.get("status") == "publicado" and p.get("ig_id")]
+    posts.sort(key=lambda p: p.get("publicado_em", ""), reverse=True)
+    conta = {}
+    try:
+        conta = api("GET", "/" + ig_id, {"fields": "username,followers_count,media_count"})
+    except ErroAPI as e:
+        print("::warning::não li a conta:", str(e)[:150])
+    metricas = ["reach", "saved", "shares", "views", "total_interactions"]
+    linhas, sem_permissao = [], False
+    for p in posts[:30]:
+        reg = {"id": p["id"], "ig_id": p["ig_id"], "publicado_em": p.get("publicado_em"), "objetivo": p.get("objetivo", "produto"),
+               "formato": p.get("formato"), "hora": p.get("hora")}
+        try:
+            b = api("GET", "/" + p["ig_id"], {"fields": "like_count,comments_count,permalink"})
+            reg.update(curtidas=b.get("like_count"), comentarios=b.get("comments_count"), link=b.get("permalink"))
+        except ErroAPI as e:
+            reg["erro_basico"] = str(e)[:120]
+        for m in metricas:
+            try:
+                d = api("GET", "/%s/insights" % p["ig_id"], {"metric": m}).get("data", [])
+                reg[m] = d[0]["values"][0]["value"] if d and d[0].get("values") else None
+            except ErroAPI as e:
+                reg[m] = None
+                if "permission" in str(e).lower() or "(#10)" in str(e) or "(#200)" in str(e):
+                    sem_permissao = True
+                reg.setdefault("erros", {})[m] = str(e)[:100]
+        linhas.append(reg)
+    with open("metricas.json", "w", encoding="utf-8") as f:
+        json.dump({"coletado_em": datetime.now(BRT).strftime("%Y-%m-%d %H:%M"), "conta": conta, "posts": linhas}, f, ensure_ascii=False, indent=1)
+    print("Conta: @%s  seguidores: %s  publicações: %s" % (conta.get("username"), conta.get("followers_count"), conta.get("media_count")))
+    print("%-34s %-9s %6s %6s %7s %6s %6s %7s" % ("post", "objetivo", "curt", "coment", "alcance", "salv", "envio", "views"))
+    for r in linhas:
+        v = lambda k: "-" if r.get(k) is None else str(r.get(k))
+        print("%-34s %-9s %6s %6s %7s %6s %6s %7s" % (r["id"][:34], str(r["objetivo"])[:9], v("curtidas"), v("comentarios"), v("reach"), v("saved"), v("shares"), v("views")))
+    if sem_permissao:
+        print("::warning::O token não tem a permissão instagram_manage_insights: alcance, salvamentos e envios ficam vazios. "
+              "Gere o token de novo no Explorador da Graph API incluindo essa permissão e troque o segredo IG_TOKEN.")
+    return 0
+
+
 if __name__ == "__main__":
     # tira espaços, quebras de linha e aspas que costumam vir junto ao colar o segredo no GitHub
     for _k in ("IG_TOKEN", "IG_USER_ID"):
@@ -354,4 +402,4 @@ if __name__ == "__main__":
         os.environ["IG_USER_ID"] = "me"
         print("IG_USER_ID não é numérico: usando a conta do próprio token.")
     c = sys.argv[1] if len(sys.argv) > 1 else "testar"
-    sys.exit({"testar": lambda: cmd_publicar(True), "publicar": cmd_publicar, "status": cmd_status}.get(c, lambda: sys.exit(__doc__))())
+    sys.exit({"testar": lambda: cmd_publicar(True), "publicar": cmd_publicar, "status": cmd_status, "metricas": cmd_metricas}.get(c, lambda: sys.exit(__doc__))())
