@@ -324,7 +324,7 @@ def main():
                       datetime.date.fromisoformat(i['conferido']).strftime('%d/%m/%Y')))
     legenda = ('Caiu de preço 📉 %d achadinhos que baixaram nas últimas conferências\n\n%s\n\n'
                'O preço pode mudar: confirme na loja antes de comprar.\nTodas as ofertas, com preço e data, no site: link na bio 🔗\n'
-               'Salva e manda pra quem compra online.\n\nPublicidade: links de afiliado.\n\n#caiudepreço #achadinhos #ofertas #comprasonline') % (n, '\n'.join(linhas))
+               'Gostou? Curte, salva e manda pra quem compra online.\n\nPublicidade: links de afiliado.\n\n#caiudepreço #achadinhos #ofertas #comprasonline') % (n, '\n'.join(linhas))
     print('Reel: %s (%.1f s, %d itens)\n%s' % (os.path.join(pasta, 'reel.mp4'), dur, n, legenda))
     if not a.sem_registrar:
         pf = os.path.join(RAIZ, 'dados', 'posts.json'); posts = json.load(open(pf, encoding='utf-8'))

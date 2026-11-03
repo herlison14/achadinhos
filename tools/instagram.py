@@ -2,12 +2,14 @@
 """Publicador do Instagram (API oficial "Instagram API with Instagram Login") para o @achadinhosdobinga.
 
 Roda no GitHub Actions. Lê a fila em dados/posts.json: publica os posts com canal "ig", status "agendado",
-formato "carrossel" ou "post" (reel não), cuja data+hora (horário de Brasília) já passou.
+formato "carrossel", "post" ou "reel", cuja data+hora (horário de Brasília) já passou.
 
 Cada post agendado precisa de:
   "imagens": ["postagens/<id>/01.jpg", ...]   JPEG (a API do Instagram não aceita PNG), 2 a 10 para carrossel, 1 para post
   "legenda": "texto completo da legenda"
   "produtos": [ids de dados/itens.json]       usados na trava de preço
+Reel: em vez de "imagens", "video": "postagens/<id>/reel.mp4" (H.264/AAC, até 90 MB). O envio é por upload resumível
+(rupload.facebook.com); se falhar, tenta de novo com video_url apontando para o raw do GitHub. Sai também no feed.
 
 Travas (se falhar, o post vira "bloqueado" e o Telegram avisa; nada é publicado):
   - todo produto existe em itens.json, foi conferido há no máximo 7 dias (campo "max_idade_dias" muda isso)
@@ -114,13 +116,21 @@ def validar(post, itens, agora, checar_rede):
     erros = []
     imgs, leg = post.get("imagens") or [], (post.get("legenda") or "").strip()
     car = post.get("formato") == "carrossel"
+    reel = post.get("formato") == "reel"
     if not leg:
         erros.append("sem legenda")
     if len(leg) > 2200:
         erros.append("legenda com mais de 2200 caracteres")
-    if car and not 2 <= len(imgs) <= 10:
+    if reel:
+        v = RAIZ / (post.get("video") or "")
+        if not post.get("video") or not str(post["video"]).lower().endswith(".mp4") or not v.is_file():
+            erros.append("reel sem vídeo .mp4 no repositório")
+        elif v.stat().st_size > 90 * 1024 * 1024:
+            erros.append("vídeo do reel passa de 90 MB")
+        imgs = []
+    elif car and not 2 <= len(imgs) <= 10:
         erros.append("carrossel precisa de 2 a 10 imagens")
-    if not car and len(imgs) != 1:
+    elif not car and len(imgs) != 1:
         erros.append("post simples precisa de 1 imagem")
     for i in imgs:
         if not i.lower().endswith((".jpg", ".jpeg")):
@@ -172,7 +182,37 @@ def ja_publicado(post, ig_id):
     return None
 
 
+def enviar_video(cont, arq):
+    """Upload resumível do vídeo para o contêiner (rupload.facebook.com); o token só vai no cabeçalho e nunca é impresso."""
+    tok = os.environ.get("IG_TOKEN", "")
+    dados = arq.read_bytes()
+    req = urllib.request.Request("https://rupload.facebook.com/ig-api-upload/v21.0/%s" % cont, data=dados, method="POST",
+                                 headers={"Authorization": "OAuth " + tok, "offset": "0", "file_size": str(len(dados))})
+    try:
+        r = json.loads(urllib.request.urlopen(req, timeout=300).read() or b"{}")
+    except urllib.error.HTTPError as e:
+        raise ErroAPI("upload do vídeo HTTP %d %s" % (e.code, e.read()[:200].decode("utf-8", "replace").replace(tok, "***")))
+    if r.get("success") is False:
+        raise ErroAPI("upload do vídeo não confirmado")
+
+
+def publicar_reel(post, ig_id):
+    leg = post["legenda"].strip()
+    base = {"media_type": "REELS", "caption": leg, "share_to_feed": "true"}
+    try:
+        cont = api("POST", "/%s/media" % ig_id, dict(base, upload_type="resumable"))["id"]
+        enviar_video(cont, RAIZ / post["video"])
+        esperar_pronto(cont, 60)
+    except (ErroAPI, urllib.error.URLError, KeyError) as e:
+        print("upload resumível falhou (%s); tentando video_url" % (str(e)[:150] if isinstance(e, ErroAPI) else type(e).__name__))
+        cont = api("POST", "/%s/media" % ig_id, dict(base, video_url=RAW + post["video"]))["id"]
+        esperar_pronto(cont, 60)
+    return api("POST", "/%s/media_publish" % ig_id, {"creation_id": cont})["id"]
+
+
 def publicar_post(post, ig_id):
+    if post["formato"] == "reel":
+        return publicar_reel(post, ig_id)
     imgs = [RAW + i for i in post["imagens"]]
     leg = post["legenda"].strip()
     if post["formato"] == "carrossel":
@@ -197,7 +237,7 @@ def cmd_publicar(testar=False):
         # Sem as chaves o robô nunca publica. Não manda aviso ao Telegram (o canal é público e roda a cada 10 min):
         # deixa um erro visível no resumo da execução e não mexe na fila.
         vencidos = [p["id"] for p in posts if p.get("canal") == "ig" and p.get("status") == "agendado"
-                    and p.get("formato") in ("carrossel", "post") and (agora - horario(p)).total_seconds() >= 0]
+                    and p.get("formato") in ("carrossel", "post", "reel") and (agora - horario(p)).total_seconds() >= 0]
         if vencidos:
             print("::error::IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions). "
                   "Nada foi publicado. Pendentes no horário: " + ", ".join(vencidos[:5]))
@@ -215,8 +255,8 @@ def cmd_publicar(testar=False):
             return 0
     mudou = False
     for p in posts:
-        ativo = p.get("status") == "agendado" or (testar and p.get("status") == "planejado" and p.get("imagens"))
-        if p.get("canal") != "ig" or not ativo or p.get("formato") not in ("carrossel", "post"):
+        ativo = p.get("status") == "agendado" or (testar and p.get("status") == "planejado" and (p.get("imagens") or p.get("video")))
+        if p.get("canal") != "ig" or not ativo or p.get("formato") not in ("carrossel", "post", "reel"):
             continue
         quando = horario(p)
         atraso_h = (agora - quando).total_seconds() / 3600
