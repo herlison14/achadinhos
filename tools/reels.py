@@ -79,7 +79,7 @@ def fonte_larg(f, txt):
 
 
 def txt(texto, f, cor, sombra=None, desl=6):
-    k = ('t', texto, id(f), cor, sombra)
+    k = ('t', texto, (getattr(f, 'path', None), getattr(f, 'size', 0)), cor, sombra)
     if k in _cache: return _cache[k]
     w = int(fonte_larg(f, texto)) + 60; h = int(f.size * 1.6)
     lay = Image.new('RGBA', (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
@@ -89,7 +89,7 @@ def txt(texto, f, cor, sombra=None, desl=6):
 
 
 def pilula_lay(texto, f, bg, fg, pad=46, alt=None):
-    k = ('p', texto, id(f), bg, fg)
+    k = ('p', texto, (getattr(f, 'path', None), getattr(f, 'size', 0)), bg, fg)
     if k in _cache: return _cache[k]
     w = int(fonte_larg(f, texto)) + 2 * pad; h = alt or int(f.size * 1.75)
     lay = Image.new('RGBA', (w + 20, h + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
