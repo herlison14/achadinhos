@@ -36,6 +36,7 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 - Não usar `pkill -f http.server` no shell (mata a sessão); parar servidores de teste pelo PID.
 - Ao mudar preço de item com post agendado no Instagram, ajustar a legenda em `posts.json` (a sincronia avisa).
 - Tarefa diária da Shopee depende do computador/Chrome dele ligado; a semanal roda às segundas 19:43.
+- Tarefa diária "Relatório diário Shopee e preços" (11:07, exige o computador dele): desde 02/11/2026 a conferência de preços (até 25 itens/dia) prioriza itens de posts agendados/planejados dos próximos 3 dias, depois os mais antigos; corrige legendas e cards de posts de produto afetados. Sem o Chrome dele ligado, nada é reconferido: o robô do Instagram bloqueia post cujo item passou de 7 dias ou cujo preço da legenda mudou.
 
 ## Arquivos no computador dele
 - Tudo que eu gerar para ele baixar/usar vai para `Downloads\Achadinhos\` (via ponte do computador), na subpasta certa: `01_Imagens_e_Identidade`, `02_Instagram\{Reels,Stories,Posts_e_Carrosseis}`, `03_Planilhas\{Mestre,Historico_Postados,Listas_por_Loja,Ganhos_CSV}`, `04_Site_e_Painel`, `05_Zips_Originais`, `06_WhatsApp` (cards e textos do canal, uma subpasta por dia). Nada solto em `Downloads`. **Cada canal tem sua própria pasta numerada** (Instagram `02_`, WhatsApp `06_`; Telegram ou outro canal novo ganha `07_`, `08_`...), nunca misturar canais na mesma subpasta (regra do Herlison, 30/10/2026). Só mover, nunca apagar. "History" para ele = Stories. Mapa completo no `LEIAME.txt` da pasta.
