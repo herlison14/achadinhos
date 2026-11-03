@@ -61,6 +61,9 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 - Tarefa agendada semanal (domingo): escreve os posts dos próximos 7 dias em `crescimento.json` (sem repetir tema), roda a ferramenta, `sincronia.py`, `git pull --rebase`, commit e push. Pode rodar na nuvem sem o Chrome dele, porque não tem preço.
 - Posts de 03 a 08/11/2026 já criados (site-tudo-num-lugar, qual-loja, 4-jeitos-preco-bom, lista-11-11-black-friday, como-usar-o-site, o-que-voce-quer-ver).
 
+- Métricas (03/11/2026): `python3 tools/instagram.py metricas` (fluxo `.github/workflows/metricas.yml`, todo dia 22:30, só leitura) lista curtidas e comentários por post publicado e, se o token tiver `instagram_manage_insights`, alcance, salvamentos, envios e views. Resultado fica no resumo da execução (log público do Actions: só números, sem segredo) e no artefato `metricas-instagram`. Em 03/11: 21 seguidores, posts recentes com 0 curtidas/0 comentários; token ainda SEM `instagram_manage_insights` (precisa refazer o token no Explorador da Graph API com essa permissão).
+- Reels (03/11/2026): `python3 -I tools/reels.py` gera `postagens/<id>/reel.mp4` (1080x1920, ~20 s, sem áudio, ffmpeg) do tipo "Caiu de preço" só com quedas reais de `quedas.json` (itens com foto local, conferidos há no máximo 7 dias) e registra o post como `planejado` (formato `reel`). O robô ainda NÃO publica Reels; falta o caminho `media_type=REELS` no `instagram.py` e um teste real aprovado pelo Herlison.
+
 ## Campanhas
 - 11.11 (11/11/2026) e Black Friday (27/11/2026). Lojas sobem preço antes e "descontam" no dia: por isso registrar o preço real todos os dias antes da data (`vigia.py atualizar`) e só chamar de "menor preço" o que o `historico.json` confirmar. Posts de 08 a 11/11 já estão no calendário como `planejado`.
 
