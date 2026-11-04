@@ -3,7 +3,7 @@
 Chamado por `vigia.py build`. Só usa dados reais: preço e data de conferência dos itens, e quedas do historico.json.
 Nada de preço, desconto ou estoque inventado. Também regrava o sitemap.xml com todas as páginas.
 """
-import datetime, html, os, re, unicodedata
+import datetime, html, json, os, re, unicodedata
 
 SITE = 'https://achadinhosdobinga.com.br/'
 LOJAS = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu'}
@@ -69,6 +69,14 @@ def _pagina(h, estilo, cab, titulo, desc, caminho, h1, intro, corpo, navs, ld, a
     )
 
 
+def _tem_natal(raiz, vis):
+    try:
+        ids = set(json.load(open(os.path.join(raiz, 'dados', 'natal', 'ids.json'), encoding='utf-8'))['ids'])
+    except (OSError, ValueError, KeyError):
+        return False
+    return sum(1 for i in vis if i['id'] in ids) >= 10
+
+
 def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados, hoje):
     h = open(os.path.join(raiz, 'index.html'), encoding='utf-8').read()
     estilo = re.search(r'<style[^>]*>(.*?)</style>', h, re.S).group(1)
@@ -81,6 +89,7 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
     cats = sorted({i['cat'] for i in vis})
     lojas = [l for l in LOJAS if any(i['loja'] == l for i in vis)]
     q_por_id = {q['id']: q for q in quedas_lista}
+    tema_natal = _tem_natal(raiz, vis)
 
     def nav(atual):
         a = ['<ul class="nav2" aria-label="Categorias e lojas">']
@@ -90,6 +99,9 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
         for l in lojas:
             cur = ' aria-current="page"' if atual == ('l', l) else ''
             a.append('<li><a href="/lojas/%s/"%s>%s</a></li>' % (l, cur, LOJAS[l]))
+        if tema_natal:
+            cur = ' aria-current="page"' if atual == ('t', 'natal') else ''
+            a.append('<li><a href="/ofertas/natal/"%s>Natal 2026</a></li>' % cur)
         a.append('</ul>')
         return ''.join(a)
 
@@ -137,6 +149,34 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
             caminho, 'Ofertas da %s' % LOJAS[l], intro, ''.join(partes), nav(('l', l)),
             dados_estruturados(its), aviso).replace('<main id="ofertas">', bloco_quedas(its) + '<main id="ofertas">', 1)))
 
+    # Página temática de Natal (itens reais listados em dados/natal/ids.json; link da lista do Mercado Livre opcional em dados/natal/listas.json)
+    try:
+        ids_n = set(json.load(open(os.path.join(raiz, 'dados', 'natal', 'ids.json'), encoding='utf-8'))['ids'])
+    except (OSError, ValueError, KeyError):
+        ids_n = set()
+    its = [i for i in vis if i['id'] in ids_n]
+    if tema_natal:
+        mn, mx = faixa(its)
+        partes = []
+        try:
+            lst = json.load(open(os.path.join(raiz, 'dados', 'natal', 'listas.json'), encoding='utf-8'))
+        except (OSError, ValueError):
+            lst = {}
+        if lst.get('meli', '').startswith('https://'):
+            partes.append('<p><a class="go" href="%s" rel="sponsored noopener" target="_blank">Ver a lista de Natal completa no Mercado Livre</a></p>' % html.escape(lst['meli'], quote=True))
+        for c in sorted({i['cat'] for i in its}):
+            sub = sorted([i for i in its if i['cat'] == c], key=lambda i: num(i['preco']))
+            partes.append('<h2>%s</h2>\n<ul>%s</ul>\n' % (html.escape(c), ''.join(render(i) for i in sub)))
+        ls = sorted({LOJAS[i['loja']] for i in its})
+        intro = ('%d ideias para o Natal 2026 (decoração, mesa posta, brinquedos, presentes e ceia) com preço conferido, de %s a %s, na %s. '
+                 'O valor pode ter mudado, então confirme na loja antes de comprar. Brinquedos: confira o selo do Inmetro na embalagem.' % (len(its), mn, mx, ', '.join(ls)))
+        caminho = 'ofertas/natal/'
+        paginas.append((caminho, _pagina(
+            h, estilo, cab, 'Natal 2026: decoração, mesa, brinquedos e presentes com preço conferido | Achadinhos do Binga',
+            'Veja %d ideias para o Natal 2026 com preço conferido: árvores, enfeites, mesa posta, brinquedos, presentes e ceia. De %s a %s.' % (len(its), mn, mx),
+            caminho, 'Natal 2026: achadinhos para a casa, a mesa e os presentes', intro, ''.join(partes), nav(('t', 'natal')),
+            dados_estruturados(its), aviso).replace('<main id="ofertas">', bloco_quedas(its) + '<main id="ofertas">', 1)))
+
     for caminho, conteudo in paginas:
         pasta = os.path.join(raiz, caminho)
         os.makedirs(pasta, exist_ok=True)
@@ -146,6 +186,8 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
     # Links da página inicial para as novas páginas (é por eles que o Google descobre e entende o site)
     topo = ''.join('<li><a href="/ofertas/%s/">%s</a></li>' % (slug(c), html.escape(c)) for c in cats)
     topo += ''.join('<li><a href="/lojas/%s/">%s</a></li>' % (l, LOJAS[l]) for l in lojas)
+    if tema_natal:
+        topo += '<li><a href="/ofertas/natal/">Natal 2026</a></li>'
     bloco = '<nav class="pgs" aria-label="Ofertas por categoria e por loja"><h2>Ver por categoria e por loja</h2><ul class="nav2">%s</ul></nav>' % topo
     h2, n = re.subn(r'(<!--paginas-inicio-->).*?(<!--paginas-fim-->)', lambda m: m.group(1) + bloco + m.group(2), h, flags=re.S)
     assert n == 1, 'faltam os marcadores <!--paginas-inicio--><!--paginas-fim--> no index.html'
