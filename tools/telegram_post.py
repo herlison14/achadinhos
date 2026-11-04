@@ -77,7 +77,7 @@ def main(seco):
     mudou = False
     for p in posts:
         pub = p.get("publicado_em")
-        if p.get("canal") != "ig" or p.get("status") != "publicado" or p.get("telegram_em") or not pub or not p.get("imagens"):
+        if p.get("canal") != "ig" or p.get("status") != "publicado" or p.get("telegram_em") or not pub or not p.get("imagens") or p.get("formato") == "story":   # Story não vai para o canal
             continue
         quando = datetime.strptime(pub, "%Y-%m-%d %H:%M").replace(tzinfo=BRT)
         if pub < DESDE or (agora - quando).total_seconds() > JANELA_H * 3600:

@@ -210,9 +210,18 @@ def publicar_reel(post, ig_id):
     return api("POST", "/%s/media_publish" % ig_id, {"creation_id": cont})["id"]
 
 
+def publicar_story(post, ig_id):
+    """Story de imagem (9:16). A API não aceita legenda em Story; o texto está na própria imagem."""
+    cont = api("POST", "/%s/media" % ig_id, {"image_url": RAW + post["imagens"][0], "media_type": "STORIES"})["id"]
+    esperar_pronto(cont)
+    return api("POST", "/%s/media_publish" % ig_id, {"creation_id": cont})["id"]
+
+
 def publicar_post(post, ig_id):
     if post["formato"] == "reel":
         return publicar_reel(post, ig_id)
+    if post["formato"] == "story":
+        return publicar_story(post, ig_id)
     imgs = [RAW + i for i in post["imagens"]]
     leg = post["legenda"].strip()
     if post["formato"] == "carrossel":
@@ -237,7 +246,7 @@ def cmd_publicar(testar=False):
         # Sem as chaves o robô nunca publica. Não manda aviso ao Telegram (o canal é público e roda a cada 10 min):
         # deixa um erro visível no resumo da execução e não mexe na fila.
         vencidos = [p["id"] for p in posts if p.get("canal") == "ig" and p.get("status") == "agendado"
-                    and p.get("formato") in ("carrossel", "post", "reel") and (agora - horario(p)).total_seconds() >= 0]
+                    and p.get("formato") in ("carrossel", "post", "reel", "story") and (agora - horario(p)).total_seconds() >= 0]
         if vencidos:
             print("::error::IG_TOKEN/IG_USER_ID não estão configurados no GitHub (Settings > Secrets > Actions). "
                   "Nada foi publicado. Pendentes no horário: " + ", ".join(vencidos[:5]))
@@ -256,7 +265,7 @@ def cmd_publicar(testar=False):
     mudou = False
     for p in posts:
         ativo = p.get("status") == "agendado" or (testar and p.get("status") == "planejado" and (p.get("imagens") or p.get("video")))
-        if p.get("canal") != "ig" or not ativo or p.get("formato") not in ("carrossel", "post", "reel"):
+        if p.get("canal") != "ig" or not ativo or p.get("formato") not in ("carrossel", "post", "reel", "story"):
             continue
         quando = horario(p)
         atraso_h = (agora - quando).total_seconds() / 3600
@@ -273,7 +282,7 @@ def cmd_publicar(testar=False):
             mudou = True
             avisar("post %s NÃO foi publicado: %s" % (p["id"], p["nota"]))
             continue
-        existente = ja_publicado(p, ig_id)
+        existente = None if p.get("formato") == "story" else ja_publicado(p, ig_id)   # Story não tem legenda nem aparece em /media
         if existente:
             p["status"], p["ig_id"], p["nota"] = "publicado", existente, "já estava no perfil (não duplicou)"
             mudou = True
@@ -392,7 +401,8 @@ def cmd_metricas():
     if not os.environ.get("IG_TOKEN") or not ig_id:
         print("::error::IG_TOKEN/IG_USER_ID não configurados.")
         return 3
-    posts = [p for p in ler(POSTS, []) if p.get("canal") == "ig" and p.get("status") == "publicado" and p.get("ig_id")]
+    posts = [p for p in ler(POSTS, []) if p.get("canal") == "ig" and p.get("status") == "publicado" and p.get("ig_id")
+             and p.get("formato") != "story"]   # insights de Story expiram em 24 h e usam outras métricas
     posts.sort(key=lambda p: p.get("publicado_em", ""), reverse=True)
     conta = {}
     try:
