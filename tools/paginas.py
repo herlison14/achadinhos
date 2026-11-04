@@ -143,6 +143,13 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
         intro = ('%d ofertas da %s com preço conferido, de %s a %s, divididas por categoria. O valor pode ter mudado, '
                  'então confirme na loja antes de comprar.' % (len(its), LOJAS[l], mn, mx))
         caminho = 'lojas/%s/' % l
+        if l == 'meli':
+            try:
+                lg = json.load(open(os.path.join(raiz, 'dados', 'natal', 'listas.json'), encoding='utf-8')).get('meli_geral', '')
+            except (OSError, ValueError):
+                lg = ''
+            if lg.startswith('https://'):
+                partes.insert(0, '<p><a class="go" href="%s" rel="sponsored noopener" target="_blank">Ver minha lista de recomendações no Mercado Livre</a></p>' % html.escape(lg, quote=True))
         paginas.append((caminho, _pagina(
             h, estilo, cab, 'Ofertas da %s com preço conferido | Achadinhos do Binga' % LOJAS[l],
             'Veja %d ofertas da %s com preço conferido, de %s a %s, por categoria.' % (len(its), LOJAS[l], mn, mx),
