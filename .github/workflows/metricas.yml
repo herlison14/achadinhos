@@ -4,7 +4,7 @@ on:
     - cron: "30 1 * * *"   # todo dia 22:30 (Brasília): só leitura, não publica nada
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write   # só para gravar dados/metricas.json (números de desempenho, sem segredo)
 concurrency:
   group: metricas
   cancel-in-progress: false
@@ -16,8 +16,19 @@ jobs:
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
     steps:
       - uses: actions/checkout@v4
-      - name: Coletar métricas (só leitura)
+      - name: Coletar métricas (só leitura no Instagram)
+        env:
+          MET_SALVAR: "1"
         run: python3 tools/instagram.py metricas | tee resumo.txt
+      - name: Guardar o retrato do dia no repositório (alimenta o painel)
+        run: |
+          git config user.name "achadinhos-bot"
+          git config user.email "achadinhos-bot@users.noreply.github.com"
+          git add dados/metricas.json
+          if git diff --cached --quiet; then echo "sem mudança"; exit 0; fi
+          git commit -m "Métricas do Instagram: retrato do dia"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          echo "::warning::não consegui enviar dados/metricas.json"; exit 0
       - name: Resumo da execução
         if: always()
         run: |

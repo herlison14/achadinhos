@@ -91,6 +91,7 @@ a{color:var(--roxo)}
   <button role="tab" aria-selected="false" data-aba="ofertas">Ofertas</button>
   <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
   <button role="tab" aria-selected="false" data-aba="calendario">Calendário</button>
+  <button role="tab" aria-selected="false" data-aba="instagram">Instagram</button>
   <button role="tab" aria-selected="false" data-aba="cliques">Cliques</button>
   <button role="tab" aria-selected="false" data-aba="ganhos">Ganhos</button>
 </nav>
@@ -158,6 +159,23 @@ a{color:var(--roxo)}
       <select id="g-dias" aria-label="Período"><option value="30">30 dias</option><option value="90">90 dias</option><option value="365">12 meses</option></select>
       <button id="g-ver" type="button">Ver resultados</button></div>
     <div id="g-out"></div>
+  </div>
+</section>
+
+<section id="instagram" hidden>
+  <div class="grid" id="ig-kpis"></div>
+  <div class="wide">
+    <div class="card"><h2>Seguidores por dia</h2><div id="ig-seg"></div></div>
+    <div class="card"><h2>Visualizações dos posts (total)</h2><div id="ig-views"></div></div>
+  </div>
+  <div class="wide">
+    <div class="card"><h2>Alcance médio por objetivo</h2><div id="ig-obj"></div></div>
+    <div class="card"><h2>Alcance médio por formato</h2><div id="ig-fmt"></div></div>
+  </div>
+  <div class="card">
+    <h2>Posts publicados</h2>
+    <div class="tw"><table class="cart" id="ig-tab"><thead><tr><th>Post</th><th>Objetivo</th><th>Formato</th><th class="r">Alcance</th><th class="r">Views</th><th class="r">Curtidas</th><th class="r">Coment.</th><th class="r">Salvos</th><th class="r">Envios</th></tr></thead><tbody></tbody></table></div>
+    <div class="sub" id="ig-nota" style="margin-top:8px"></div>
   </div>
 </section>
 
@@ -287,6 +305,52 @@ function aba(n){
   document.querySelectorAll('main > section').forEach(function(s){s.hidden=s.id!==n});
   document.querySelectorAll('nav button').forEach(function(b){b.setAttribute('aria-selected',b.dataset.aba===n)})}
 
+function linhaSvg(alvo,pts,rot){
+  alvo.textContent='';
+  if(!pts.length){alvo.appendChild(el('div','msg','Sem dados ainda.'));return}
+  var ns='http://www.w3.org/2000/svg',W=420,H=150,L=38,R=10,T=10,B=24,s=document.createElementNS(ns,'svg');
+  s.setAttribute('viewBox','0 0 '+W+' '+H);s.setAttribute('width','100%');s.setAttribute('role','img');
+  s.setAttribute('aria-label',rot+': de '+pts[0][1]+' ('+dbr(pts[0][0])+') a '+pts[pts.length-1][1]+' ('+dbr(pts[pts.length-1][0])+')');
+  var v=pts.map(function(p){return p[1]}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v);
+  if(mx===mn){mn=Math.max(0,mn-1);mx=mx+1}
+  var r=mx-mn,x=function(i){return pts.length===1?(L+(W-L-R)/2):L+i*(W-L-R)/(pts.length-1)},y=function(n){return T+(H-T-B)*(1-(n-mn)/r)};
+  function t(tx,ax,ay,anc){var e=document.createElementNS(ns,'text');e.setAttribute('x',ax);e.setAttribute('y',ay);e.setAttribute('font-size','10');e.setAttribute('fill','currentColor');e.setAttribute('opacity','.7');if(anc)e.setAttribute('text-anchor',anc);e.textContent=tx;s.appendChild(e)}
+  [mn,mx].forEach(function(n){var g=document.createElementNS(ns,'line');g.setAttribute('x1',L);g.setAttribute('x2',W-R);g.setAttribute('y1',y(n));g.setAttribute('y2',y(n));g.setAttribute('stroke','currentColor');g.setAttribute('opacity','.15');s.appendChild(g);t(String(n),L-4,y(n)+3,'end')});
+  t(pts[0][0].slice(8)+'/'+pts[0][0].slice(5,7),x(0),H-8,pts.length===1?'middle':'start');
+  if(pts.length>1)t(pts[pts.length-1][0].slice(8)+'/'+pts[pts.length-1][0].slice(5,7),x(pts.length-1),H-8,'end');
+  if(pts.length>1){var d=pts.map(function(p,i){return (i?'L':'M')+x(i).toFixed(1)+' '+y(p[1]).toFixed(1)}).join('');
+    var pa=document.createElementNS(ns,'path');pa.setAttribute('d',d);pa.setAttribute('fill','none');pa.setAttribute('stroke','currentColor');pa.setAttribute('stroke-width','2');s.appendChild(pa)}
+  pts.forEach(function(p,i){var c=document.createElementNS(ns,'circle');c.setAttribute('cx',x(i));c.setAttribute('cy',y(p[1]));c.setAttribute('r',3);c.setAttribute('fill','currentColor');var ti=document.createElementNS(ns,'title');ti.textContent=dbr(p[0])+': '+p[1];c.appendChild(ti);s.appendChild(c)});
+  var box=el('div');box.style.color='var(--roxo)';box.appendChild(s);alvo.appendChild(box)}
+function igMedia(arr,campo,chave){
+  var m={};arr.forEach(function(p){var k=chave(p);if(p[campo]==null)return;(m[k]=m[k]||[]).push(p[campo])});
+  return Object.keys(m).map(function(k){var a=m[k];return [k+' ('+a.length+')',Math.round(a.reduce(function(x,y){return x+y},0)/a.length*10)/10]}).sort(function(a,b){return b[1]-a[1]})}
+function igDesenha(d){
+  var dias_=d.dias||[],ps=d.posts||[],u=dias_[dias_.length-1];
+  if(!u){$('#ig-kpis').appendChild(el('div','msg','Ainda sem retratos. A coleta roda todo dia às 22:30.'));return}
+  var ref=dias_.filter(function(x){return dias(x.data)>=7})[0]||dias_[0];
+  var dif=(u.seguidores!=null&&ref.seguidores!=null)?u.seguidores-ref.seguidores:null;
+  var inter=(u.curtidas||0)+(u.comentarios||0)+(u.salvos||0)+(u.envios||0);
+  var k=$('#ig-kpis');k.textContent='';
+  [[u.seguidores!=null?u.seguidores:'-','Seguidores'+(dif!=null&&dias_.length>1?' ('+(dif>=0?'+':'')+dif+' desde '+dbr(ref.data)+')':'')],
+   [u.alcance,'Alcance somado dos últimos '+u.posts+' posts'],[u.views,'Visualizações somadas'],[inter,'Interações (curtidas, comentários, salvos e envios)'],[u.publicacoes!=null?u.publicacoes:'-','Publicações na conta']
+  ].forEach(function(a){var c=el('div','card');c.appendChild(el('div','k',String(a[0])));c.appendChild(el('div','l',a[1]));k.appendChild(c)});
+  linhaSvg($('#ig-seg'),dias_.filter(function(x){return x.seguidores!=null}).map(function(x){return [x.data,x.seguidores]}),'Seguidores');
+  linhaSvg($('#ig-views'),dias_.map(function(x){return [x.data,x.views||0]}),'Visualizações');
+  barras($('#ig-obj'),igMedia(ps,'reach',function(p){return p.objetivo||'produto'}));
+  barras($('#ig-fmt'),igMedia(ps,'reach',function(p){return p.formato||'carrossel'}));
+  var tb=$('#ig-tab tbody');tb.textContent='';
+  ps.slice().sort(function(a,b){return String(b.publicado_em||'').localeCompare(String(a.publicado_em||''))}).forEach(function(p){
+    var tr=document.createElement('tr'),td=function(x,l,c){var e=el('td',c||'',x==null?'-':String(x));if(l)e.setAttribute('data-l',l);tr.appendChild(e);return e};
+    var c1=el('td');if(p.link){var a=el('a',null,p.id);a.href=p.link;a.target='_blank';a.rel='noopener';c1.appendChild(a)}else c1.textContent=p.id;tr.appendChild(c1);
+    td(p.objetivo||'produto','Objetivo');td(p.formato||'carrossel','Formato');td(p.reach,'Alcance','r');td(p.views,'Views','r');td(p.curtidas,'Curtidas','r');td(p.comentarios,'Coment.','r');td(p.saved,'Salvos','r');td(p.shares,'Envios','r');tb.appendChild(tr)});
+  $('#ig-nota').textContent='Atualizado em '+dbr(d.atualizado.slice(0,10))+' '+d.atualizado.slice(11)+'. Alcance e views são as contagens da Meta para cada post (a Meta pode demorar um pouco para fechar os números). Com poucos dias de histórico os gráficos mostram só alguns pontos.'}
+var igOk=false;
+function igCarrega(){
+  if(igOk)return;
+  fetch('../dados/metricas.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('sem arquivo');return r.json()}).then(function(d){igOk=true;igDesenha(d)})
+   .catch(function(){var k=$('#ig-kpis');k.textContent='';k.appendChild(el('div','msg','As métricas aparecem aqui depois da primeira coleta (todo dia às 22:30).'))})}
+
 function cliques(){
   var k=$('#k').value.trim(),out=$('#cl-out');out.textContent='';
   if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
@@ -311,7 +375,7 @@ Promise.all([fetch('../dados/itens.json',{cache:'no-store'}).then(function(r){re
   geral();tabelaVar();lista();calendario();hojePub();rotular('tab');rotular('tvar');rotular('tcal');
 },function(){$('#fonte').textContent='Não consegui carregar os dados.'}).catch(function(){$('#fonte').textContent='Não consegui carregar os dados.'});
 
-document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba)})});
+document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba);if(b.dataset.aba==='instagram')igCarrega()})});
 ['#f-q','#f-loja','#f-cat','#f-sit'].forEach(function(s){$(s).addEventListener('input',lista)});
 $('#c-st').addEventListener('input',calendario);
 $('#h-ver').addEventListener('click',hojeVer);

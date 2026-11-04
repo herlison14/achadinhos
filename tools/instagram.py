@@ -365,6 +365,25 @@ def cmd_status():
     return 0
 
 
+def _salvar_metricas(conta, linhas):
+    """Acrescenta o retrato do dia em dados/metricas.json (alimenta a aba Instagram do painel).
+    Só números públicos ou de desempenho: nada de token, ID de conta, comissão ou ganho."""
+    arq = RAIZ / "dados" / "metricas.json"
+    d = ler(arq, {})
+    hoje = datetime.now(BRT).strftime("%Y-%m-%d")
+    soma = lambda k: sum(r.get(k) or 0 for r in linhas)
+    dia = {"data": hoje, "seguidores": conta.get("followers_count"), "publicacoes": conta.get("media_count"),
+           "alcance": soma("reach"), "views": soma("views"), "curtidas": soma("curtidas"), "comentarios": soma("comentarios"),
+           "salvos": soma("saved"), "envios": soma("shares"), "posts": len(linhas)}
+    dias = [x for x in d.get("dias", []) if x.get("data") != hoje] + [dia]
+    campos = ("id", "publicado_em", "objetivo", "formato", "hora", "curtidas", "comentarios", "reach", "saved", "shares", "views", "link")
+    d = {"atualizado": datetime.now(BRT).strftime("%Y-%m-%d %H:%M"), "conta": conta.get("username"),
+         "dias": sorted(dias, key=lambda x: x["data"])[-400:],
+         "posts": [{k: r.get(k) for k in campos} for r in linhas]}
+    gravar(arq, d)
+    print("Retrato de %s gravado em dados/metricas.json (%d dias no histórico)." % (hoje, len(d["dias"])))
+
+
 def cmd_metricas():
     """Coleta o desempenho dos posts publicados (curtidas, comentários e, se o token tiver a permissão
     instagram_manage_insights, alcance, salvamentos, envios e visualizações). Só leitura: não publica nem altera a fila.
@@ -407,6 +426,8 @@ def cmd_metricas():
     for r in linhas:
         v = lambda k: "-" if r.get(k) is None else str(r.get(k))
         print("%-34s %-9s %6s %6s %7s %6s %6s %7s" % (r["id"][:34], str(r["objetivo"])[:9], v("curtidas"), v("comentarios"), v("reach"), v("saved"), v("shares"), v("views")))
+    if os.environ.get("MET_SALVAR") == "1":
+        _salvar_metricas(conta, linhas)
     if sem_permissao:
         print("::warning::O token não tem a permissão instagram_manage_insights: alcance, salvamentos e envios ficam vazios. "
               "Gere o token de novo no Explorador da Graph API incluindo essa permissão e troque o segredo IG_TOKEN.")
