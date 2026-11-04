@@ -4,6 +4,8 @@
 // "Publicidade: links de afiliado"; não guarda mensagens nem dados de quem escreve; não fala de comissão.
 // Rotas:  POST /telegram   (webhook do Telegram, cabeçalho X-Telegram-Bot-Api-Secret-Token = TG_SECRET)
 //         GET/POST /instagram (webhook da Meta: verificação por IG_VERIFY, assinatura X-Hub-Signature-256 com META_APP_SECRET)
+//         Campos do webhook: `messages` (DM) e `comments` (comentário nos posts: responde em público e, se a pessoa
+//         pediu o link, manda no direct com as ofertas daquele post, pela resposta privada oficial da Meta).
 // Segredos (Cloudflare > Worker > Configurações > Variáveis, tipo Segredo): TELEGRAM_TOKEN, TG_SECRET,
 //         META_APP_SECRET, IG_VERIFY, IG_PAGE_TOKEN. Nenhum deles vai para o repositório.
 const REPO = 'herlison14/achadinhos';
@@ -12,8 +14,11 @@ const SITE = 'https://achadinhosdobinga.com.br';
 const AVISO = 'Publicidade: links de afiliado.';
 const LOJAS = { amazon: 'Amazon', magalu: 'Magalu', meli: 'Mercado Livre', shopee: 'Shopee', aliexpress: 'AliExpress' };
 const DIAS_PRECO = 7, DIAS_PAGINA = 30, MAX = 3;
+const POSTS = 'https://raw.githubusercontent.com/' + REPO + '/main/dados/posts.json';
 
 let cache = { t: 0, itens: [] };
+let cachePosts = { t: 0, posts: [] };
+const publicas = [];       // horas das respostas públicas (no máximo 30 por hora, para não parecer spam)
 const vistos = new Map();   // id de mensagem -> hora (evita responder duas vezes quando a Meta reenvia)
 const ritmo = new Map();    // remetente -> horas das últimas respostas (no máximo 8 por minuto)
 
@@ -71,6 +76,91 @@ export function responder(texto, itens, agora = new Date(), limiteChars = 3900) 
   const montar = (l) => 'Achei estas opções:\n\n' + l.map((i) => linhaItem(i, agora)).join('\n\n') + '\n\nMais ofertas: ' + SITE + '\nPreço e estoque podem mudar na loja. ' + AVISO;
   while (r.length > 1 && montar(r).length > limiteChars) r = r.slice(0, -1);   // cabe no limite do canal, sem cortar o aviso
   return montar(r);
+}
+
+
+// ---------- Comentários nos posts ----------
+// Pedido de link/preço: "quero", "link", "preço", "onde compra"... (texto já normalizado, sem acento)
+export function gatilho(texto) {
+  const n = ' ' + norm(texto) + ' ';
+  return /\b(quero|queria|link|links|preco|precos|valor|quanto|onde|comprar|compro|manda|mande|passa|passe|cade|disponivel|tem)\b/.test(n);
+}
+// Não responde sozinho: reclamação, golpe, ofensa, link/@ de terceiros, só emoji. Vai para revisão humana.
+export function seguro(texto) {
+  const t = String(texto || '');
+  if (!/[a-zA-ZÀ-ÿ]/.test(t)) return false;
+  if (/https?:|www\.|\.com\b|@\w/i.test(t)) return false;
+  if (/\b(golpe|fake|fraude|procon|reclame|enganacao|lixo|roubo|ladr|processo|denunci)/.test(norm(t))) return false;
+  return true;
+}
+const PUBLICAS_GATILHO = ['Te mandei no direct! 📩', 'Mandei os links no seu direct 📩', 'Enviei no direct, dá uma olhada 📩'];
+const PUBLICAS_GERAL = [
+  'Valeu pelo comentário! 💛 Se quiser o link de algum produto, é só comentar QUERO.',
+  'Obrigado por passar por aqui! 😊 Quer o link? Comenta QUERO que eu mando no direct.',
+  'Que bom ter você aqui! Quer ver mais ofertas conferidas? Tem tudo no link da bio 🔗',
+];
+function escolhe(lista, id) { let h = 0; for (const c of String(id)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return lista[h % lista.length]; }
+
+// Ofertas do post comentado (posts.json: ig_id -> produtos). Cabe nos 1000 caracteres do direct.
+export function respostaDoPost(post, itens, agora = new Date(), limiteChars = 950) {
+  const por = new Map(itens.map((i) => [i.id, i]));
+  let lista = ((post && post.produtos) || []).map((id) => por.get(id)).filter((i) => i && idade(i.conferido, agora) <= DIAS_PAGINA);
+  if (!lista.length) return null;
+  const montar = (l, mais) => 'Oi! Aqui estão os links do post 👇\n\n' + l.map((i) => linhaItem(i, agora)).join('\n\n') + '\n\n' + (mais ? 'Tem mais no site: ' : 'Mais ofertas: ') + SITE + '\nPreço e estoque podem mudar na loja. ' + AVISO;
+  let l = lista.slice();
+  while (l.length > 1 && montar(l, l.length < lista.length).length > limiteChars) l = l.slice(0, -1);
+  return montar(l, l.length < lista.length);
+}
+export function respostaPrivada(textoComentario, post, itens, agora = new Date()) {
+  const doPost = respostaDoPost(post, itens, agora);
+  if (doPost) return doPost;
+  if (buscar(textoComentario, itens, agora).length) return responder(textoComentario, itens, agora, 900);
+  return 'Oi! Aqui estão todas as ofertas conferidas, por categoria e loja: ' + SITE + '\nSe quiser, escreva o nome do produto (ex.: "air fryer") que eu mostro opções com link. ' + AVISO;
+}
+function podeResponderEmPublico() {
+  const agora = Date.now();
+  while (publicas.length && agora - publicas[0] > 3600000) publicas.shift();
+  if (publicas.length >= 30) return false;
+  publicas.push(agora); return true;
+}
+async function carregarPosts() {
+  if (Date.now() - cachePosts.t < 10 * 60 * 1000 && cachePosts.posts.length) return cachePosts.posts;
+  const r = await fetch(POSTS, { cf: { cacheTtl: 300 } });
+  if (!r.ok) throw new Error('posts.json: HTTP ' + r.status);
+  const j = await r.json();
+  cachePosts = { t: Date.now(), posts: (Array.isArray(j) ? j : j.posts || []).filter((p) => p.ig_id).map(({ ig_id, produtos }) => ({ ig_id: String(ig_id), produtos: produtos || [] })) };
+  return cachePosts.posts;
+}
+async function igResponderComentario(env, comentario, texto) {
+  const r = await fetch('https://graph.facebook.com/v21.0/' + comentario + '/replies', {
+    method: 'POST',
+    headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: texto }),
+  });
+  if (!r.ok) console.log('instagram: resposta ao comentário recusada HTTP ' + r.status);
+}
+async function igRespostaPrivada(env, comentario, texto) {
+  const r = await fetch('https://graph.facebook.com/v21.0/me/messages', {
+    method: 'POST',
+    headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ recipient: { comment_id: comentario }, message: { text: texto.slice(0, 1000) } }),
+  });
+  if (!r.ok) console.log('instagram: resposta privada recusada HTTP ' + r.status);
+  return r.ok;
+}
+async function tratarComentario(env, conta, v, itens) {
+  if (!v || !v.id || !v.text || !v.from || v.parent_id) return;          // só comentário novo de primeiro nível
+  if (v.from.id === conta || !novo('igc:' + v.id)) return;                // nunca responde a si mesmo nem repete
+  if (!seguro(v.text)) { console.log('comentário para revisão humana: ' + v.id); return; }
+  if (!limite('igc:' + v.from.id)) return;
+  let enviouPrivada = false;
+  if (gatilho(v.text)) {
+    let posts = []; try { posts = await carregarPosts(); } catch (e) { console.log(String(e)); }
+    const post = posts.find((p) => p.ig_id === String(v.media && v.media.id));
+    enviouPrivada = await igRespostaPrivada(env, v.id, respostaPrivada(v.text, post, itens));
+  }
+  if (podeResponderEmPublico())
+    await igResponderComentario(env, v.id, escolhe(enviouPrivada ? PUBLICAS_GATILHO : PUBLICAS_GERAL, v.id));
 }
 
 async function carregar() {
@@ -135,6 +225,9 @@ export default {
       ctx.waitUntil((async () => {
         let j; try { j = JSON.parse(corpo); } catch { return; }
         const itens = await carregar();
+        for (const e of j.entry || []) for (const c of e.changes || []) {
+          if (c.field === 'comments') await tratarComentario(env, e.id, c.value, itens);
+        }
         for (const e of j.entry || []) for (const m of e.messaging || []) {
           const msg = m.message; if (!msg || msg.is_echo || !msg.text || !m.sender) continue;
           if (m.sender.id === e.id || !novo('ig:' + (msg.mid || m.timestamp))) continue;

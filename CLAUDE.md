@@ -17,7 +17,8 @@ Tudo que gerar visualização e produtividade/lucro eu posso fazer sozinho, só 
 - **Stories** (`tools/stories.py`): 2 por dia; fila completada pela tarefa semanal.
 - **Crescimento + Reels temáticos** (tarefas de domingo): posts sem preço que trazem visita/salvar/enviar.
 - **Métricas + Analista** (`metricas.yml` 22:30): `tools/instagram.py metricas` grava `dados/metricas.json`; `tools/analista.py` grava `dados/estrategia.json` (melhor formato/objetivo/horário, dicas; só números, amostra pequena = pista). A tarefa semanal de crescimento lê o `estrategia.json` para escolher temas.
-- **Respostas** (`worker/bot/`, Worker `bot-binga`): DM no Telegram/Instagram com ofertas reais.
+- **Respostas** (`worker/bot/`, Worker `bot-binga`): DM no Telegram/Instagram com ofertas reais; desde 03/11/2026 também comentários (campo `comments`): resposta privada com as ofertas do post comentado + resposta pública curta; testado com Meta simulada, ainda NÃO no ar (falta colar o worker, segredos, `instagram_manage_comments` no token e webhook `comments`). Só depois de ligado os posts passam a pedir "comenta QUERO".
+- **Tendências** (`tools/tendencias.py`, junto do Analista às 22:30): grava `dados/tendencias.json` com datas comerciais próximas (fase esquenta/contagem/dia), categorias com mais quedas reais e mais ofertas. Sem rede, sem preço. A tarefa semanal usa como pauta e confere o que está em alta com WebSearch (só inspiração, nunca como fato no post).
 
 ## Rotina para qualquer mudança de ofertas
 1. Editar `dados/itens.json` (e `historico.json` via `vigia.py atualizar` quando for preço).
