@@ -1130,9 +1130,11 @@
    "postagens/2026-11-03-story-30f6e7fd/01.jpg"
   ],
   "legenda": "Story: Lanterna Recarregável Vonder 80 a 100 Lúmens: R$ 28,38 (conferido em 04/11/2026) — antes R$ 33,82, queda de 16% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": false
+  "sem_preco": false,
+  "ig_id": "18000950019045370",
+  "publicado_em": "2026-11-03 23:15"
  },
  {
   "id": "2026-11-04-story-96fd14c8",
