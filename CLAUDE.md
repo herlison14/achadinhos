@@ -71,6 +71,8 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 
 - **Vitrines (03/11/2026):** Mercado Livre: listas de afiliado no perfil social (API interna `wishlist/elements/override`; limite de 2 listas de afiliado; "Natal 2026 Achadinhos" com 30 itens, PÚBLICA, link `https://meli.la/2XzAJCX` em `dados/natal/listas.json` → botão em `ofertas/natal/`; "Minhas recomendações" com 59 itens (24 antigos sem ligação com o site + os nossos 40), PÚBLICA desde 03/11/2026, link `https://meli.la/2g9CabF` em `dados/natal/listas.json` chave `meli_geral` → botão em `lojas/meli/`). Magalu: loja do Influenciador Magalu (`in_400408`) sem coleções. Amazon: inscrição no Amazon Influencers recusada em 03/11/2026 (poucos seguidores; tentar de novo com mais audiência); sem Listas de Ideias no portal BR. Shopee e AliExpress: sem vitrine para afiliado. Página `ofertas/natal/` gerada por `tools/paginas.py` a partir de `dados/natal/ids.json`.
 
+- **Vitrines junto com o site (regra de 03/11/2026):** tudo que muda em produto, site ou Instagram vale também para as lojas. Site (`lojas/`, `ofertas/`) é gerado pelo build; listas do ML são atualizadas pela Parte 3 da tarefa diária (Chrome dele), conforme `dados/natal/LEIAME.md`. Itens removidos não saem da lista sozinhos (avisa).
+
 ## Campanhas
 - 11.11 (11/11/2026) e Black Friday (27/11/2026). Lojas sobem preço antes e "descontam" no dia: por isso registrar o preço real todos os dias antes da data (`vigia.py atualizar`) e só chamar de "menor preço" o que o `historico.json` confirmar. Posts de 08 a 11/11 já estão no calendário como `planejado`.
 
