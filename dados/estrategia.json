@@ -153,6 +153,11 @@
    "nota": 6
   }
  ],
+ "seguidores": {
+  "hoje": 26,
+  "ontem": 25,
+  "variacao_dia": 1
+ },
  "dicas": [
   "Melhor formato até agora: carrossel (nota média 5.3 em 9 posts).",
   "Melhor objetivo até agora: produto (nota média 5.6 em 8 posts).",
