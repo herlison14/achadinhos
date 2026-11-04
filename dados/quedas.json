@@ -1,5 +1,29 @@
 [
  {
+  "id": "de9e78e5",
+  "href": "https://www.amazon.com.br/dp/B076X5ZLZQ?tag=herlisonsanto-20",
+  "antes": "30,11",
+  "agora": "18,20",
+  "pct": 40,
+  "data": "2026-11-04"
+ },
+ {
+  "id": "15813dd2",
+  "href": "https://www.amazon.com.br/dp/B076X8798S?tag=herlisonsanto-20",
+  "antes": "24,40",
+  "agora": "15,00",
+  "pct": 39,
+  "data": "2026-11-04"
+ },
+ {
+  "id": "93f49b8a",
+  "href": "https://www.amazon.com.br/dp/B07WRS2V22?tag=herlisonsanto-20",
+  "antes": "31,49",
+  "agora": "19,75",
+  "pct": 37,
+  "data": "2026-11-04"
+ },
+ {
   "id": "4fc063e5",
   "href": "https://www.magazinevoce.com.br/magazinein_400408/cetaphil-creme-hidratante/p/ckfk18jk8f/pf/hdcd/",
   "antes": "113,25",
@@ -8,12 +32,52 @@
   "data": "2026-10-31"
  },
  {
+  "id": "6d226ab0",
+  "href": "https://www.amazon.com.br/dp/B076MJZF3S?tag=herlisonsanto-20",
+  "antes": "26,49",
+  "agora": "20,20",
+  "pct": 24,
+  "data": "2026-11-04"
+ },
+ {
   "id": "bd020d6b",
   "href": "https://meli.la/2X8kwDj",
   "antes": "69,43",
   "agora": "57,99",
   "pct": 16,
   "data": "2026-10-29"
+ },
+ {
+  "id": "30f6e7fd",
+  "href": "https://www.amazon.com.br/dp/B08K3GS882?tag=herlisonsanto-20",
+  "antes": "33,82",
+  "agora": "28,38",
+  "pct": 16,
+  "data": "2026-11-04"
+ },
+ {
+  "id": "6bed8cd4",
+  "href": "https://www.amazon.com.br/dp/B0B7K57T8Z?tag=herlisonsanto-20",
+  "antes": "26,99",
+  "agora": "22,70",
+  "pct": 16,
+  "data": "2026-11-04"
+ },
+ {
+  "id": "7db85efa",
+  "href": "https://www.amazon.com.br/dp/B07FPJY777?tag=herlisonsanto-20",
+  "antes": "16,90",
+  "agora": "14,36",
+  "pct": 15,
+  "data": "2026-11-04"
+ },
+ {
+  "id": "65481239",
+  "href": "https://www.amazon.com.br/dp/B0C4M2SYF8?tag=herlisonsanto-20",
+  "antes": "23,19",
+  "agora": "19,74",
+  "pct": 15,
+  "data": "2026-11-04"
  },
  {
   "id": "a33675d7",
@@ -96,14 +160,6 @@
   "data": "2026-10-29"
  },
  {
-  "id": "b513fdde",
-  "href": "https://www.amazon.com.br/dp/B077Q7GDLN?tag=herlisonsanto-20",
-  "antes": "60,20",
-  "agora": "56,90",
-  "pct": 5,
-  "data": "2026-10-29"
- },
- {
   "id": "ff98e0c7",
   "href": "https://s.shopee.com.br/5AtRRCM1nS",
   "antes": "34,99",
@@ -120,6 +176,14 @@
   "data": "2026-10-29"
  },
  {
+  "id": "2c5f9842",
+  "href": "https://www.amazon.com.br/dp/B0BYKXC74H?tag=herlisonsanto-20",
+  "antes": "29,99",
+  "agora": "28,99",
+  "pct": 3,
+  "data": "2026-11-04"
+ },
+ {
   "id": "77eabcb3",
   "href": "https://s.shopee.com.br/50a1EtMf8R",
   "antes": "44,90",
@@ -128,12 +192,12 @@
   "data": "2026-10-30"
  },
  {
-  "id": "de9e78e5",
-  "href": "https://www.amazon.com.br/dp/B076X5ZLZQ?tag=herlisonsanto-20",
-  "antes": "30,70",
-  "agora": "30,11",
+  "id": "160bc6a8",
+  "href": "https://www.magazinevoce.com.br/magazinein_400408/mochila-masculina-impermeavel-faculdade-alca-reforcada-grande-dazzore/p/be9a7j9j10/in/mpnk/",
+  "antes": "59,12",
+  "agora": "57,81",
   "pct": 2,
-  "data": "2026-10-29"
+  "data": "2026-11-04"
  },
  {
   "id": "470d5163",
@@ -141,14 +205,6 @@
   "antes": "42,65",
   "agora": "41,99",
   "pct": 2,
-  "data": "2026-10-29"
- },
- {
-  "id": "6d226ab0",
-  "href": "https://www.amazon.com.br/dp/B076MJZF3S?tag=herlisonsanto-20",
-  "antes": "26,50",
-  "agora": "26,49",
-  "pct": 0,
   "data": "2026-10-29"
  }
 ]
