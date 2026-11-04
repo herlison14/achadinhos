@@ -92,6 +92,7 @@ a{color:var(--roxo)}
   <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
   <button role="tab" aria-selected="false" data-aba="calendario">Calendário</button>
   <button role="tab" aria-selected="false" data-aba="instagram">Instagram</button>
+  <button role="tab" aria-selected="false" data-aba="destaques">Destaques</button>
   <button role="tab" aria-selected="false" data-aba="cliques">Cliques</button>
   <button role="tab" aria-selected="false" data-aba="ganhos">Ganhos</button>
 </nav>
@@ -177,6 +178,15 @@ a{color:var(--roxo)}
     <div class="tw"><table class="cart" id="ig-tab"><thead><tr><th>Post</th><th>Objetivo</th><th>Formato</th><th class="r">Alcance</th><th class="r">Views</th><th class="r">Curtidas</th><th class="r">Coment.</th><th class="r">Salvos</th><th class="r">Envios</th></tr></thead><tbody></tbody></table></div>
     <div class="sub" id="ig-nota" style="margin-top:8px"></div>
   </div>
+</section>
+
+<section id="destaques" hidden>
+  <div class="card">
+    <h2>Destaques do perfil, por área</h2>
+    <p class="sub" id="ds-como"></p>
+    <p class="sub">O Instagram não deixa nenhum robô criar destaques: eles separam os Stories por área e você só toca em "Destacar" no app. Marque o que já está lá para ver o que falta (a marcação fica só neste aparelho).</p>
+  </div>
+  <div id="ds-areas"></div>
 </section>
 
 <section id="cliques" hidden>
@@ -351,6 +361,36 @@ function igCarrega(){
   fetch('../dados/metricas.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('sem arquivo');return r.json()}).then(function(d){igOk=true;igDesenha(d)})
    .catch(function(){var k=$('#ig-kpis');k.textContent='';k.appendChild(el('div','msg','As métricas aparecem aqui depois da primeira coleta (todo dia às 22:30).'))})}
 
+var dsOk=false;
+function dsChave(id,a){return 'dest:'+a+':'+id}
+function dsLer(k){try{return localStorage.getItem(k)==='1'}catch(e){return false}}
+function dsGravar(k,v){try{if(v)localStorage.setItem(k,'1');else localStorage.removeItem(k)}catch(e){}}
+function dsDesenha(d){
+  $('#ds-como').textContent='Como adicionar: '+d.como;
+  var box=$('#ds-areas');box.textContent='';
+  d.areas.forEach(function(ar){
+    var card=el('div','card');card.style.marginBottom='12px';
+    var pub=ar.stories.filter(function(s){return s.status==='publicado'}),prox=ar.stories.filter(function(s){return s.status!=='publicado'});
+    var h=el('h2',0,ar.nome);var falta=el('span','sub','');h.appendChild(document.createTextNode(' '));h.appendChild(falta);card.appendChild(h);
+    function conta(){var f=pub.filter(function(s){return !dsLer(dsChave(s.id,ar.nome))}).length;falta.textContent=pub.length?('· '+f+' para adicionar, '+(pub.length-f)+' já no destaque'):'· ainda sem Stories publicados'}
+    var row=el('div');row.style.cssText='display:flex;gap:10px;overflow-x:auto;padding-bottom:6px';
+    pub.concat(prox).forEach(function(s){
+      var it=el('label');it.style.cssText='flex:0 0 92px;font-size:11px;text-align:center;opacity:'+(s.status==='publicado'?1:.55);
+      var im=el('img');im.src='../'+s.img;im.alt='Story '+s.tema;im.loading='lazy';im.style.cssText='width:92px;height:163px;object-fit:cover;border-radius:8px;display:block;background:#eee';
+      it.appendChild(im);
+      var t=el('div',0,dbr(s.data)+' '+(s.hora||''));it.appendChild(t);
+      if(s.status==='publicado'){var cb=el('input');cb.type='checkbox';cb.checked=dsLer(dsChave(s.id,ar.nome));cb.setAttribute('aria-label','Já está no destaque '+ar.nome+': '+s.tema);
+        cb.addEventListener('change',function(){dsGravar(dsChave(s.id,ar.nome),cb.checked);conta()});it.appendChild(cb);it.appendChild(document.createTextNode(' no destaque'))}
+      else it.appendChild(el('div','sub','agendado'));
+      row.appendChild(it)});
+    if(!ar.stories.length)row.appendChild(el('div','sub','Nenhum Story nesta área ainda. O gerador passa a priorizar áreas sem Stories quando houver itens conferidos recentemente.'));
+    card.appendChild(row);box.appendChild(card);conta()});
+}
+function dsCarrega(){
+  if(dsOk)return;
+  fetch('../dados/destaques.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('sem arquivo');return r.json()}).then(function(d){dsOk=true;dsDesenha(d)})
+   .catch(function(){$('#ds-areas').appendChild(el('div','msg','Os destaques aparecem aqui depois da primeira coleta do dia (22:30).'))})}
+
 function cliques(){
   var k=$('#k').value.trim(),out=$('#cl-out');out.textContent='';
   if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
@@ -375,7 +415,7 @@ Promise.all([fetch('../dados/itens.json',{cache:'no-store'}).then(function(r){re
   geral();tabelaVar();lista();calendario();hojePub();rotular('tab');rotular('tvar');rotular('tcal');
 },function(){$('#fonte').textContent='Não consegui carregar os dados.'}).catch(function(){$('#fonte').textContent='Não consegui carregar os dados.'});
 
-document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba);if(b.dataset.aba==='instagram')igCarrega()})});
+document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba);if(b.dataset.aba==='instagram')igCarrega();if(b.dataset.aba==='destaques')dsCarrega()})});
 ['#f-q','#f-loja','#f-cat','#f-sit'].forEach(function(s){$(s).addEventListener('input',lista)});
 $('#c-st').addEventListener('input',calendario);
 $('#h-ver').addEventListener('click',hojeVer);

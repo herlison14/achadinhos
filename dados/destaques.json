@@ -1,0 +1,178 @@
+{
+ "atualizado": "2026-11-04 13:14",
+ "areas": [
+  {
+   "nome": "OFERTAS",
+   "stories": [
+    {
+     "id": "2026-11-09-story-site",
+     "data": "2026-11-09",
+     "hora": "18:30",
+     "tema": "preço com data de conferência",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-09-story-site/01.jpg"
+    },
+    {
+     "id": "2026-11-07-story-6d226ab0",
+     "data": "2026-11-07",
+     "hora": "11:30",
+     "tema": "Tramontina Jogo de Chaves de Fenda com Pontas Intercambiávei",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-07-story-6d226ab0/01.jpg"
+    },
+    {
+     "id": "2026-11-06-story-site",
+     "data": "2026-11-06",
+     "hora": "18:30",
+     "tema": "preço com data de conferência",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-06-story-site/01.jpg"
+    },
+    {
+     "id": "2026-11-06-story-7db85efa",
+     "data": "2026-11-06",
+     "hora": "11:30",
+     "tema": "Chalesco Escova Pequena para Cães",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-06-story-7db85efa/01.jpg"
+    },
+    {
+     "id": "2026-11-05-story-15813dd2",
+     "data": "2026-11-05",
+     "hora": "18:30",
+     "tema": "Tramontina Trena com Fita de Aço 5 Metros",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-05-story-15813dd2/01.jpg"
+    },
+    {
+     "id": "2026-11-04-story-93f49b8a",
+     "data": "2026-11-04",
+     "hora": "18:30",
+     "tema": "Brinquedo Macaco Chalesco para Cães",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-04-story-93f49b8a/01.jpg"
+    },
+    {
+     "id": "2026-11-03-story-30f6e7fd",
+     "data": "2026-11-03",
+     "hora": "23:15",
+     "tema": "Lanterna Recarregável Vonder 80 a 100 Lúmens",
+     "status": "publicado",
+     "publicado_em": "2026-11-03 23:15",
+     "img": "postagens/2026-11-03-story-30f6e7fd/01.jpg"
+    }
+   ]
+  },
+  {
+   "nome": "TECH",
+   "stories": [
+    {
+     "id": "2026-11-04-story-96fd14c8",
+     "data": "2026-11-04",
+     "hora": "11:30",
+     "tema": "Mini Compressor de Ar Portátil Digital Sem Fio para Pneus e ",
+     "status": "publicado",
+     "publicado_em": "2026-11-04 11:31",
+     "img": "postagens/2026-11-04-story-96fd14c8/01.jpg"
+    },
+    {
+     "id": "2026-11-03-story-30f6e7fd",
+     "data": "2026-11-03",
+     "hora": "23:15",
+     "tema": "Lanterna Recarregável Vonder 80 a 100 Lúmens",
+     "status": "publicado",
+     "publicado_em": "2026-11-03 23:15",
+     "img": "postagens/2026-11-03-story-30f6e7fd/01.jpg"
+    }
+   ]
+  },
+  {
+   "nome": "MODA",
+   "stories": []
+  },
+  {
+   "nome": "BELEZA",
+   "stories": []
+  },
+  {
+   "nome": "COZINHA",
+   "stories": []
+  },
+  {
+   "nome": "CASA",
+   "stories": [
+    {
+     "id": "2026-11-08-story-a424992e",
+     "data": "2026-11-08",
+     "hora": "11:30",
+     "tema": "Escova Removedora de Pelos para Cães e Gatos",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-08-story-a424992e/01.jpg"
+    },
+    {
+     "id": "2026-11-07-story-73d19834",
+     "data": "2026-11-07",
+     "hora": "18:30",
+     "tema": "Tudo Pet Comedouro e Bebedouro Pesado Filhote Pequeno 300 ml",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-07-story-73d19834/01.jpg"
+    },
+    {
+     "id": "2026-11-07-story-6d226ab0",
+     "data": "2026-11-07",
+     "hora": "11:30",
+     "tema": "Tramontina Jogo de Chaves de Fenda com Pontas Intercambiávei",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-07-story-6d226ab0/01.jpg"
+    },
+    {
+     "id": "2026-11-06-story-7db85efa",
+     "data": "2026-11-06",
+     "hora": "11:30",
+     "tema": "Chalesco Escova Pequena para Cães",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-06-story-7db85efa/01.jpg"
+    },
+    {
+     "id": "2026-11-05-story-15813dd2",
+     "data": "2026-11-05",
+     "hora": "18:30",
+     "tema": "Tramontina Trena com Fita de Aço 5 Metros",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-05-story-15813dd2/01.jpg"
+    },
+    {
+     "id": "2026-11-05-story-c9dab654",
+     "data": "2026-11-05",
+     "hora": "11:30",
+     "tema": "Peitoral para Cães e Gatos Reflexivo com Guia Ajustável",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-05-story-c9dab654/01.jpg"
+    },
+    {
+     "id": "2026-11-04-story-93f49b8a",
+     "data": "2026-11-04",
+     "hora": "18:30",
+     "tema": "Brinquedo Macaco Chalesco para Cães",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-04-story-93f49b8a/01.jpg"
+    }
+   ]
+  }
+ ],
+ "como": "Instagram > Perfil > menu (três linhas) > Arquivo > Arquivo de Stories > abrir o Story > Destacar > escolher a área.",
+ "aviso": "A API do Instagram não cria destaques; este arquivo só organiza os Stories por área."
+}

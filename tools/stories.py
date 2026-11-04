@@ -27,6 +27,7 @@ def _carrega(nome):
 CR = _carrega('crescimento')
 getattr(CR, 'garantir_fontes', lambda: None)()
 CD = _carrega('cards')
+DEST = _carrega('destaques')
 from PIL import Image, ImageDraw
 
 W, H = 1080, 1920
@@ -131,16 +132,24 @@ def escolher(itens, posts, hoje, n, tipos_dia):
         if idade <= MAX_IDADE and tem_foto(i['id']) and usados.get(i['id'], '0') < lim:
             ok.append(i)
     random.Random(hoje.toordinal()).shuffle(ok)
-    ok.sort(key=lambda i: (i['id'] not in quedas, ))      # quedas reais primeiro
-    por_loja, saida, ultima = {}, [], None
+    # equilíbrio entre as áreas dos destaques (OFERTAS, TECH, MODA, BELEZA, COZINHA, CASA): escolhe sempre
+    # a área com menos Stories recentes/agendados; dentro dela, queda real primeiro e loja diferente da anterior
+    por_area, cont, saida, ultima = {}, {}, [], None
     for i in ok:
-        por_loja.setdefault(i['loja'], []).append(i)
-    lojas = sorted(por_loja, key=lambda l: -len(por_loja[l]))
-    while len(saida) < n and any(por_loja.values()):
-        for l in lojas:
-            if por_loja[l] and l != ultima and len(saida) < n:
-                saida.append(por_loja[l].pop(0)); ultima = l
-        ultima = None
+        por_area.setdefault(DEST.area_do_item(i), []).append(i)
+    for a in por_area:
+        por_area[a].sort(key=lambda i: i['id'] not in quedas)
+    todos = {i['id']: i for i in itens}
+    for p in posts:
+        if p.get('formato') == 'story' and p.get('data', '') >= (hoje - datetime.timedelta(days=7)).isoformat() and p.get('produtos'):
+            it = todos.get(p['produtos'][0])
+            if it:
+                a = DEST.area_do_item(it); cont[a] = cont.get(a, 0) + 1
+    while len(saida) < n and any(por_area.values()):
+        areas = sorted((a for a in por_area if por_area[a]), key=lambda a: (cont.get(a, 0), a))
+        a = areas[0]
+        pick = next((i for i in por_area[a] if i['loja'] != ultima), por_area[a][0])
+        por_area[a].remove(pick); saida.append(pick); ultima = pick['loja']; cont[a] = cont.get(a, 0) + 1
     return saida, quedas
 
 
@@ -215,7 +224,8 @@ def main():
         os.makedirs(J('postagens', sid), exist_ok=True)
         ver().save(J('postagens', sid, '01.jpg'), quality=92, optimize=True)
         novos.append(dict(id=sid, data=dia.isoformat(), hora=hora, formato='story', canal='ig', tema=tema, produtos=prods,
-                          imagens=['postagens/%s/01.jpg' % sid], legenda=leg, status='agendado', objetivo='story', sem_preco=not prods))
+                          imagens=['postagens/%s/01.jpg' % sid], legenda=leg, status='agendado', objetivo='story', sem_preco=not prods,
+                          area=(DEST.area_do_item(it) if prods else 'OFERTAS')))
         print('story', sid, dia, hora)
     if novos and not a.sem_registrar:
         posts.extend(novos)
