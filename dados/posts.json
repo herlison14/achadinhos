@@ -1173,9 +1173,11 @@
    "postagens/2026-11-04-story-93f49b8a/01.jpg"
   ],
   "legenda": "Story: Brinquedo Macaco Chalesco para Cães: R$ 19,75 (conferido em 04/11/2026) — antes R$ 31,49, queda de 37% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": false
+  "sem_preco": false,
+  "ig_id": "18157543060570072",
+  "publicado_em": "2026-11-04 18:31"
  },
  {
   "id": "2026-11-05-story-c9dab654",
