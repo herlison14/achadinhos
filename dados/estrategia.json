@@ -1,0 +1,162 @@
+{
+ "atualizado": "2026-11-04",
+ "posts_analisados": 11,
+ "por_formato": [
+  {
+   "nome": "carrossel",
+   "posts": 9,
+   "alcance_medio": 5.3,
+   "views_medio": 19.3,
+   "nota_media": 5.3,
+   "confiavel": true
+  },
+  {
+   "nome": "reel",
+   "posts": 2,
+   "alcance_medio": 5.0,
+   "views_medio": 7.0,
+   "nota_media": 5.0,
+   "confiavel": false
+  }
+ ],
+ "por_objetivo": [
+  {
+   "nome": "produto",
+   "posts": 8,
+   "alcance_medio": 5.6,
+   "views_medio": 20.6,
+   "nota_media": 5.6,
+   "confiavel": true
+  },
+  {
+   "nome": "compartilhar",
+   "posts": 1,
+   "alcance_medio": 6.0,
+   "views_medio": 8.0,
+   "nota_media": 6.0,
+   "confiavel": false
+  },
+  {
+   "nome": "descoberta",
+   "posts": 1,
+   "alcance_medio": 4.0,
+   "views_medio": 6.0,
+   "nota_media": 4.0,
+   "confiavel": false
+  },
+  {
+   "nome": "visita",
+   "posts": 1,
+   "alcance_medio": 3.0,
+   "views_medio": 9.0,
+   "nota_media": 3.0,
+   "confiavel": false
+  }
+ ],
+ "por_hora": [
+  {
+   "nome": "20:00",
+   "posts": 1,
+   "alcance_medio": 6.0,
+   "views_medio": 8.0,
+   "nota_media": 6.0,
+   "confiavel": false
+  },
+  {
+   "nome": "19:30",
+   "posts": 2,
+   "alcance_medio": 6.0,
+   "views_medio": 23.5,
+   "nota_media": 6.0,
+   "confiavel": false
+  },
+  {
+   "nome": "16:00",
+   "posts": 2,
+   "alcance_medio": 6.0,
+   "views_medio": 21.0,
+   "nota_media": 6.0,
+   "confiavel": false
+  },
+  {
+   "nome": "09:00",
+   "posts": 2,
+   "alcance_medio": 5.5,
+   "views_medio": 19.5,
+   "nota_media": 5.5,
+   "confiavel": false
+  },
+  {
+   "nome": "12:30",
+   "posts": 2,
+   "alcance_medio": 5.0,
+   "views_medio": 18.5,
+   "nota_media": 5.0,
+   "confiavel": false
+  },
+  {
+   "nome": "23:00",
+   "posts": 1,
+   "alcance_medio": 4.0,
+   "views_medio": 6.0,
+   "nota_media": 4.0,
+   "confiavel": false
+  },
+  {
+   "nome": "14:30",
+   "posts": 1,
+   "alcance_medio": 3.0,
+   "views_medio": 9.0,
+   "nota_media": 3.0,
+   "confiavel": false
+  }
+ ],
+ "melhores_posts": [
+  {
+   "id": "2026-11-24-casa-shopee",
+   "formato": "carrossel",
+   "objetivo": "produto",
+   "hora": "19:30",
+   "alcance": 7,
+   "nota": 7
+  },
+  {
+   "id": "2026-11-03-reel-faltam-8-dias",
+   "formato": "reel",
+   "objetivo": "compartilhar",
+   "hora": "20:00",
+   "alcance": 6,
+   "nota": 6
+  },
+  {
+   "id": "2026-11-23-despensa-shopee",
+   "formato": "carrossel",
+   "objetivo": "produto",
+   "hora": "16:00",
+   "alcance": 6,
+   "nota": 6
+  },
+  {
+   "id": "2026-11-21-beleza-shopee",
+   "formato": "carrossel",
+   "objetivo": "produto",
+   "hora": "16:00",
+   "alcance": 6,
+   "nota": 6
+  },
+  {
+   "id": "2026-11-14-moda-shopee",
+   "formato": "carrossel",
+   "objetivo": "produto",
+   "hora": "09:00",
+   "alcance": 6,
+   "nota": 6
+  }
+ ],
+ "dicas": [
+  "Melhor formato até agora: carrossel (nota média 5.3 em 9 posts).",
+  "Melhor objetivo até agora: produto (nota média 5.6 em 8 posts).",
+  "Nenhum post teve salvamento ou envio ainda: priorizar conteúdo que vale guardar (listas, comparativos, calendário de datas) e CTA claro de salvar/enviar."
+ ],
+ "aviso": "Amostra pequena: tratar como pista, não como regra. Só números de desempenho, sem comissão."
+}

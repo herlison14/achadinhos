@@ -8,6 +8,17 @@ Dono: Herlison (Instagram @achadinhosdobinga, GitHub herlison14/achadinhos). Res
 - **Backend:** Cloudflare Worker `cliques-binga` (D1) em `worker/` (blocos colados no painel da Cloudflare à mão; não há deploy automático). `/api/cliques` e `/api/ganhos` ficam atrás de chave (`REPORT_KEY`) + código 2FA (`TOTP_SECRET`) + bloqueio após 5 erros/15 min.
 - **Hospedagem:** GitHub Pages + Cloudflare. Workflows em `.github/workflows/` (canal-telegram, fotos, instagram, sincronia).
 
+## Autonomia (regra do Herlison, 03/11/2026)
+Tudo que gerar visualização e produtividade/lucro eu posso fazer sozinho, só comunicando depois; agir como social media sênior e criar robôs para o Instagram. Limites que continuam valendo: segurança (nada de segredos, senhas, compras, contas), nada de preço inventado, e **nada que viole as regras da Meta**: sem seguir/curtir/comentar em massa, sem DM frio, sem isca de engajamento, sem comprar seguidores (arriscam banir a conta). Disciplina de crescimento = conteúdo + dados + constância.
+
+## Time de robôs (o que cada um faz)
+- **Publicador** (`instagram.yml` + Worker `agendador-binga`): posta feed, Reels e Stories no horário.
+- **Preços** (tarefa diária 11:07, precisa do Chrome dele): reconfere preços, corrige legendas/cards/Stories.
+- **Stories** (`tools/stories.py`): 2 por dia; fila completada pela tarefa semanal.
+- **Crescimento + Reels temáticos** (tarefas de domingo): posts sem preço que trazem visita/salvar/enviar.
+- **Métricas + Analista** (`metricas.yml` 22:30): `tools/instagram.py metricas` grava `dados/metricas.json`; `tools/analista.py` grava `dados/estrategia.json` (melhor formato/objetivo/horário, dicas; só números, amostra pequena = pista). A tarefa semanal de crescimento lê o `estrategia.json` para escolher temas.
+- **Respostas** (`worker/bot/`, Worker `bot-binga`): DM no Telegram/Instagram com ofertas reais.
+
 ## Rotina para qualquer mudança de ofertas
 1. Editar `dados/itens.json` (e `historico.json` via `vigia.py atualizar` quando for preço).
 2. `python3 -I tools/vigia.py build`

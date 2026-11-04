@@ -20,11 +20,13 @@ jobs:
         env:
           MET_SALVAR: "1"
         run: python3 tools/instagram.py metricas | tee resumo.txt
+      - name: Robô Analista (o que mais rende, só números)
+        run: python3 -I tools/analista.py
       - name: Guardar o retrato do dia no repositório (alimenta o painel)
         run: |
           git config user.name "achadinhos-bot"
           git config user.email "achadinhos-bot@users.noreply.github.com"
-          git add dados/metricas.json
+          git add dados/metricas.json dados/estrategia.json
           if git diff --cached --quiet; then echo "sem mudança"; exit 0; fi
           git commit -m "Métricas do Instagram: retrato do dia"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
