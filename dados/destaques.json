@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-04 13:14",
+ "atualizado": "2026-11-04 21:43",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -54,8 +54,8 @@
      "data": "2026-11-04",
      "hora": "18:30",
      "tema": "Brinquedo Macaco Chalesco para Cães",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-04 18:31",
      "img": "postagens/2026-11-04-story-93f49b8a/01.jpg"
     },
     {
@@ -166,8 +166,8 @@
      "data": "2026-11-04",
      "hora": "18:30",
      "tema": "Brinquedo Macaco Chalesco para Cães",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-04 18:31",
      "img": "postagens/2026-11-04-story-93f49b8a/01.jpg"
     }
    ]
