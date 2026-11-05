@@ -132,13 +132,16 @@ async function carregarPosts() {
   cachePosts = { t: Date.now(), posts: (Array.isArray(j) ? j : j.posts || []).filter((p) => p.ig_id).map(({ ig_id, produtos }) => ({ ig_id: String(ig_id), produtos: produtos || [] })) };
   return cachePosts.posts;
 }
+async function motivo(r) {
+  try { const j = await r.clone().json(); const e = j.error || {}; return ' [' + (e.type || '') + ' ' + (e.code || '') + (e.error_subcode ? '/' + e.error_subcode : '') + ': ' + String(e.message || '').slice(0, 200) + ']'; } catch (e) { return ''; }
+}
 async function igResponderComentario(env, comentario, texto) {
   const r = await fetch('https://graph.facebook.com/v21.0/' + comentario + '/replies', {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: texto }),
   });
-  if (!r.ok) console.log('instagram: resposta ao comentário recusada HTTP ' + r.status);
+  if (!r.ok) console.log('instagram: resposta ao comentário recusada HTTP ' + r.status + await motivo(r));
 }
 async function igRespostaPrivada(env, comentario, texto) {
   const r = await fetch('https://graph.facebook.com/v21.0/me/messages', {
@@ -146,7 +149,7 @@ async function igRespostaPrivada(env, comentario, texto) {
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ recipient: { comment_id: comentario }, message: { text: texto.slice(0, 1000) } }),
   });
-  if (!r.ok) console.log('instagram: resposta privada recusada HTTP ' + r.status);
+  if (!r.ok) console.log('instagram: resposta privada recusada HTTP ' + r.status + await motivo(r));
   return r.ok;
 }
 async function tratarComentario(env, conta, v, itens) {
@@ -193,14 +196,14 @@ async function igEnviar(env, para, texto) {
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ recipient: { id: para }, messaging_type: 'RESPONSE', message: { text: texto.slice(0, 1000) } }),
   });
-  if (!r.ok) console.log('instagram: envio recusado HTTP ' + r.status);
+  if (!r.ok) console.log('instagram: envio recusado HTTP ' + r.status + await motivo(r));
 }
 async function tgEnviar(env, chat, texto) {
   const r = await fetch('https://api.telegram.org/bot' + env.TELEGRAM_TOKEN + '/sendMessage', {
     method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ chat_id: chat, text: texto.slice(0, 4000), disable_web_page_preview: true }),
   });
-  if (!r.ok) console.log('telegram: envio recusado HTTP ' + r.status);
+  if (!r.ok) console.log('telegram: envio recusado HTTP ' + r.status + await motivo(r));
 }
 
 async function assinaturaOk(env, corpo, cab) {
