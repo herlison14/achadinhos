@@ -91,6 +91,8 @@ Tudo que gerar visualização e produtividade/lucro eu posso fazer sozinho, só 
 
 - **Vitrines junto com o site (regra de 03/11/2026):** tudo que muda em produto, site ou Instagram vale também para as lojas. Site (`lojas/`, `ofertas/`) é gerado pelo build; listas do ML são atualizadas pela Parte 3 da tarefa diária (Chrome dele), conforme `dados/natal/LEIAME.md`. Itens removidos não saem da lista sozinhos (avisa).
 
+- **Conferência manual de 05/11/2026 (como foi feita, para repetir):** a tarefa diária 11:07 rodou em 29 s sem fazer nada porque NÃO está ligada ao computador dele (sem `bound_device`; só ele liga, no app desktop: tarefa > "Exigir este computador"). Pelo Chrome dele: Amazon por `fetch('/dp/ASIN')` same-origin (74 itens); Magalu por `fetch` same-origin em magazinevoce.com.br (preço = "R$ x no Pix"); Mercado Livre abrindo cada `meli.la` (perfil social, produto no topo; regra: se houver "no Pix ... ou R$ X em outros meios" vale X; se houver "NN% OFF" com 2 preços vale o 2º; ignorar "Compra mínima R$ 20" de cupom); Shopee abrindo cada `s.shopee.com.br` (esperar o redirect para /product/; vale o "ou R$ X" sem cupom; preço em faixa "R$ a - R$ b" não entra). Guardar o script em `localStorage` do domínio final e chamar `eval(localStorage.F)` reduz o tamanho das chamadas; lotes de até 5 navegações Shopee por `browser_batch` (10 estoura o tempo). AliExpress não foi reconferido (ambíguo por variação/cupom).
+
 ## Campanhas
 - 11.11 (11/11/2026) e Black Friday (27/11/2026). Lojas sobem preço antes e "descontam" no dia: por isso registrar o preço real todos os dias antes da data (`vigia.py atualizar`) e só chamar de "menor preço" o que o `historico.json` confirmar. Posts de 08 a 11/11 já estão no calendário como `planejado`.
 
