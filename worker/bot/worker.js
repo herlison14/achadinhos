@@ -68,7 +68,8 @@ export function linhaItem(i, agora = new Date()) {
 export function responder(texto, itens, agora = new Date(), limiteChars = 3900) {
   const n = norm(texto);
   if (/^(parar|sair|stop|cancelar)$/.test(n)) return 'Tudo bem, não envio mais nada. Se quiser voltar, é só escrever o nome de um produto. ' + AVISO;
-  if (!n || /^(oi|ola|menu|ajuda|start|help|bom dia|boa tarde|boa noite)$/.test(n))
+  const soParadas = n.split(' ').filter((t) => t.length > 1 && !PARADAS.has(t)).length === 0;   // ex.: só "quero" ou "link": ainda não disse o produto
+  if (!n || soParadas || /^(oi|ola|menu|ajuda|start|help|bom dia|boa tarde|boa noite)$/.test(n))
     return 'Oi! Eu sou o robô do Achadinhos do Binga. Escreva o produto que você procura (ex.: "air fryer", "árvore de natal", "lego") e eu mostro opções conferidas, com link.\nTudo organizado por categoria: ' + SITE + '\n' + AVISO;
   let r = buscar(texto, itens, agora);
   if (!r.length)
