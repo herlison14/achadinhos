@@ -132,11 +132,16 @@ async function carregarPosts() {
   cachePosts = { t: Date.now(), posts: (Array.isArray(j) ? j : j.posts || []).filter((p) => p.ig_id).map(({ ig_id, produtos }) => ({ ig_id: String(ig_id), produtos: produtos || [] })) };
   return cachePosts.posts;
 }
+// Token do login do Instagram (começa com IGAA) fala com graph.instagram.com; token de Página (EAA) com graph.facebook.com.
+function graphIg(env) {
+  return String(env.IG_PAGE_TOKEN || '').startsWith('IGAA') ? 'https://graph.instagram.com/v21.0' : 'https://graph.facebook.com/v21.0';
+}
+
 async function motivo(r) {
   try { const j = await r.clone().json(); const e = j.error || {}; return ' [' + (e.type || '') + ' ' + (e.code || '') + (e.error_subcode ? '/' + e.error_subcode : '') + ': ' + String(e.message || '').slice(0, 200) + ']'; } catch (e) { return ''; }
 }
 async function igResponderComentario(env, comentario, texto) {
-  const r = await fetch('https://graph.facebook.com/v21.0/' + comentario + '/replies', {
+  const r = await fetch(graphIg(env) + '/' + comentario + '/replies', {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ message: texto }),
@@ -144,7 +149,7 @@ async function igResponderComentario(env, comentario, texto) {
   if (!r.ok) console.log('instagram: resposta ao comentário recusada HTTP ' + r.status + await motivo(r));
 }
 async function igRespostaPrivada(env, comentario, texto) {
-  const r = await fetch('https://graph.facebook.com/v21.0/me/messages', {
+  const r = await fetch(graphIg(env) + '/me/messages', {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ recipient: { comment_id: comentario }, message: { text: texto.slice(0, 1000) } }),
@@ -191,7 +196,7 @@ function novo(id) {
 }
 
 async function igEnviar(env, para, texto) {
-  const r = await fetch('https://graph.facebook.com/v21.0/me/messages', {
+  const r = await fetch(graphIg(env) + '/me/messages', {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ recipient: { id: para }, messaging_type: 'RESPONSE', message: { text: texto.slice(0, 1000) } }),
