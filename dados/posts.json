@@ -1215,9 +1215,11 @@
    "postagens/2026-11-05-story-15813dd2/01.jpg"
   ],
   "legenda": "Story: Tramontina Trena com Fita de Aço 5 Metros: R$ 15,00 (conferido em 05/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": false
+  "sem_preco": false,
+  "ig_id": "17981255184152079",
+  "publicado_em": "2026-11-05 18:31"
  },
  {
   "id": "2026-11-06-story-7db85efa",
