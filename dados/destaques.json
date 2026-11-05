@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-05 05:17",
+ "atualizado": "2026-11-05 12:00",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -14,15 +14,6 @@
      "img": "postagens/2026-11-09-story-site/01.jpg"
     },
     {
-     "id": "2026-11-07-story-6d226ab0",
-     "data": "2026-11-07",
-     "hora": "11:30",
-     "tema": "Tramontina Jogo de Chaves de Fenda com Pontas Intercambiávei",
-     "status": "agendado",
-     "publicado_em": null,
-     "img": "postagens/2026-11-07-story-6d226ab0/01.jpg"
-    },
-    {
      "id": "2026-11-06-story-site",
      "data": "2026-11-06",
      "hora": "18:30",
@@ -30,24 +21,6 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-06-story-site/01.jpg"
-    },
-    {
-     "id": "2026-11-06-story-7db85efa",
-     "data": "2026-11-06",
-     "hora": "11:30",
-     "tema": "Chalesco Escova Pequena para Cães",
-     "status": "agendado",
-     "publicado_em": null,
-     "img": "postagens/2026-11-06-story-7db85efa/01.jpg"
-    },
-    {
-     "id": "2026-11-05-story-15813dd2",
-     "data": "2026-11-05",
-     "hora": "18:30",
-     "tema": "Tramontina Trena com Fita de Aço 5 Metros",
-     "status": "agendado",
-     "publicado_em": null,
-     "img": "postagens/2026-11-05-story-15813dd2/01.jpg"
     },
     {
      "id": "2026-11-04-story-93f49b8a",
@@ -98,11 +71,58 @@
   },
   {
    "nome": "BELEZA",
-   "stories": []
+   "stories": [
+    {
+     "id": "2026-11-08-story-aa0401d5",
+     "data": "2026-11-08",
+     "hora": "18:30",
+     "tema": "Pantene Pro-V Science Molecular Bond Repair Shampoo 510 ml",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-08-story-aa0401d5/01.jpg"
+    },
+    {
+     "id": "2026-11-07-story-ab1e61b4",
+     "data": "2026-11-07",
+     "hora": "18:30",
+     "tema": "Pantene Pro-V Condicionador Hidratação Intensa 400 ml",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-07-story-ab1e61b4/01.jpg"
+    },
+    {
+     "id": "2026-11-06-story-16b683b6",
+     "data": "2026-11-06",
+     "hora": "11:30",
+     "tema": "Kit Hidratante Facial L'Oréal Revitalift Hialurônico Dia + N",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-06-story-16b683b6/01.jpg"
+    }
+   ]
   },
   {
    "nome": "COZINHA",
-   "stories": []
+   "stories": [
+    {
+     "id": "2026-11-08-story-5decfec6",
+     "data": "2026-11-08",
+     "hora": "11:30",
+     "tema": "Kit 4 Potes Herméticos Electrolux com Vedação de Silicone",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-08-story-5decfec6/01.jpg"
+    },
+    {
+     "id": "2026-11-07-story-ce46f4cc",
+     "data": "2026-11-07",
+     "hora": "11:30",
+     "tema": "Garrafa Térmica MODUS 1,7 L Aço Inox com Canudo",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-07-story-ce46f4cc/01.jpg"
+    }
+   ]
   },
   {
    "nome": "CASA",
@@ -157,8 +177,8 @@
      "data": "2026-11-05",
      "hora": "11:30",
      "tema": "Peitoral para Cães e Gatos Reflexivo com Guia Ajustável",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-05 11:31",
      "img": "postagens/2026-11-05-story-c9dab654/01.jpg"
     },
     {
