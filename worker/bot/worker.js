@@ -17,6 +17,7 @@ const DIAS_PRECO = 7, DIAS_PAGINA = 30, MAX = 3;
 const POSTS = 'https://raw.githubusercontent.com/' + REPO + '/main/dados/posts.json';
 
 let cache = { t: 0, itens: [] };
+let contaIg = '';           // id da conta do Instagram (vem em cada aviso da Meta); o login do Instagram não aceita /me/messages
 let cachePosts = { t: 0, posts: [] };
 const publicas = [];       // horas das respostas públicas (no máximo 30 por hora, para não parecer spam)
 const vistos = new Map();   // id de mensagem -> hora (evita responder duas vezes quando a Meta reenvia)
@@ -149,7 +150,7 @@ async function igResponderComentario(env, comentario, texto) {
   if (!r.ok) console.log('instagram: resposta ao comentário recusada HTTP ' + r.status + await motivo(r));
 }
 async function igRespostaPrivada(env, comentario, texto) {
-  const r = await fetch(graphIg(env) + '/me/messages', {
+  const r = await fetch(graphIg(env) + '/' + (contaIg || 'me') + '/messages', {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ recipient: { comment_id: comentario }, message: { text: texto.slice(0, 1000) } }),
@@ -196,7 +197,7 @@ function novo(id) {
 }
 
 async function igEnviar(env, para, texto) {
-  const r = await fetch(graphIg(env) + '/me/messages', {
+  const r = await fetch(graphIg(env) + '/' + (contaIg || 'me') + '/messages', {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + env.IG_PAGE_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify({ recipient: { id: para }, messaging_type: 'RESPONSE', message: { text: texto.slice(0, 1000) } }),
@@ -234,6 +235,7 @@ export default {
       ctx.waitUntil((async () => {
         let j; try { j = JSON.parse(corpo); } catch { return; }
         const itens = await carregar();
+        if (j.entry && j.entry[0] && j.entry[0].id) contaIg = String(j.entry[0].id);
         for (const e of j.entry || []) for (const c of e.changes || []) {
           if (c.field === 'comments') await tratarComentario(env, e.id, c.value, itens);
         }
