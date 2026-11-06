@@ -74,3 +74,22 @@ Todas terminam com: "Gostou? Curte, salva e manda pra quem vai comprar. Link na 
 
 ## Montagem (eu faço quando os clipes chegarem)
 `ffmpeg`: recorte 1080x1920, 3 clipes de ~5 s, texto da marca por cima (fontes de `fonts/`), trilha original de `tools/reel_audio.py`, saída `postagens/<id>/reel.mp4` + `capa.jpg`, registro em `dados/posts.json` como `agendado`, `sem_preco: true`, marcação de conteúdo de IA na descrição interna. Depois `instagram.py testar` e `sincronia.py`.
+
+---
+
+## Padrão REALISTA (a partir de 06/11/2026) — usar sempre
+
+Base que vai em todo pedido ao agente do Flow (Veo 3.1 Lite, 9:16, 8 s, 10 créditos cada; aprovar uma vez):
+> Estilo FOTORREALISTA, como filmado num iPhone de verdade: luz natural, câmera na mão com leve tremor, profundidade de campo rasa, texturas reais de pele, tecido e papel, cores naturais, nada de visual 3D ou desenho. Paleta da cena com roxo e amarelo (sacolas, caixas, almofadas). SEM nenhum texto, letra, logo, marca ou número; telas de celular desfocadas; sem rostos (só mãos e corpo).
+
+**Marca:** a IA nunca escreve a marca. Logo (`tools/logo.png`) e o nome "ACHADINHOS DO BINGA" entram SEMPRE na montagem com ffmpeg: gancho no topo, pílula com logo + nome no rodapé e cartão final com logo, nome, "Link na bio", "Publicidade: links de afiliado" e "Vídeo gerado com IA". Assim o nome sai sempre certo.
+
+### Lote 06/11 (gerados)
+- 4 entrega (caixas na porta) e 5 relógio — estilo antigo (mais "3D").
+- 6 unboxing: mãos de uma mulher abrem uma caixa de papel roxa lisa sobre um sofá cinza, tiram um embrulho amarelo, luz da janela de manhã.
+- 7 comparar: mãos seguram o celular na bancada da cozinha ao lado de uma xícara de café, rolam a tela devagar e anotam num bloquinho amarelo.
+- 8 entrega real: na porta de um apartamento, mãos recebem uma caixa de papel roxa lisa (só braços, sem uniforme de marca), fim de tarde.
+
+### Próximos (após renovar créditos às 23:27)
+- 9 lista da Black Friday: à noite, sala com luzinhas amarelas, mãos escrevem uma lista num caderno roxo no colo, celular ao lado com tela desfocada.
+- 10 sacolas na cama: sacolas de papel roxas e amarelas lisas sobre uma cama clara, mão pega uma delas, luz da manhã, câmera aproxima devagar.
