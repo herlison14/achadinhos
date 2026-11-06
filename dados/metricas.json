@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-05 05:17",
+ "atualizado": "2026-11-06 05:20",
  "conta": "achadinhosdobinga",
  "dias": [
   {
@@ -37,21 +37,75 @@
    "salvos": 0,
    "envios": 0,
    "posts": 12
+  },
+  {
+   "data": "2026-11-06",
+   "seguidores": 53,
+   "publicacoes": 26,
+   "alcance": 130,
+   "views": 388,
+   "curtidas": 6,
+   "comentarios": 10,
+   "salvos": 0,
+   "envios": 0,
+   "posts": 15
   }
  ],
  "posts": [
+  {
+   "id": "2026-11-05-reel-3-cuidados-black-friday",
+   "publicado_em": "2026-11-05 20:01",
+   "objetivo": "salvar",
+   "formato": "reel",
+   "hora": "20:00",
+   "curtidas": 1,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 23,
+   "link": "https://www.instagram.com/reel/DfYKesHDpkp/"
+  },
+  {
+   "id": "2026-11-05-4-jeitos-preco-bom",
+   "publicado_em": "2026-11-05 14:31",
+   "objetivo": "salvar",
+   "formato": "carrossel",
+   "hora": "14:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 26,
+   "link": "https://www.instagram.com/p/DfXkvAiiRjR/"
+  },
+  {
+   "id": "2026-11-05-reel-flow-sacola",
+   "publicado_em": "2026-11-05 10:18",
+   "objetivo": "compartilhar",
+   "formato": "reel",
+   "hora": "10:10",
+   "curtidas": 1,
+   "comentarios": 0,
+   "reach": 8,
+   "saved": 0,
+   "shares": 0,
+   "views": 17,
+   "link": "https://www.instagram.com/reel/DfXHyAZCTd_/"
+  },
   {
    "id": "2026-11-04-qual-loja-voce-mais-usa",
    "publicado_em": "2026-11-04 10:31",
    "objetivo": "comentar",
    "formato": "carrossel",
    "hora": "10:30",
-   "curtidas": 2,
+   "curtidas": 3,
    "comentarios": 7,
-   "reach": 5,
+   "reach": 7,
    "saved": 0,
    "shares": 0,
-   "views": 29,
+   "views": 34,
    "link": "https://www.instagram.com/p/DfUkd40mLkq/"
   },
   {
@@ -62,10 +116,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 2,
-   "reach": 10,
+   "reach": 14,
    "saved": 0,
    "shares": 0,
-   "views": 24,
+   "views": 34,
    "link": "https://www.instagram.com/reel/DfTBhlkEskt/"
   },
   {
@@ -76,10 +130,10 @@
    "hora": "14:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 6,
+   "reach": 7,
    "saved": 0,
    "shares": 0,
-   "views": 24,
+   "views": 27,
    "link": "https://www.instagram.com/p/DfSbg0JjW44/"
   },
   {
@@ -90,10 +144,10 @@
    "hora": "23:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 6,
+   "reach": 8,
    "saved": 0,
    "shares": 0,
-   "views": 9,
+   "views": 14,
    "link": "https://www.instagram.com/reel/DfQxJwzk_8y/"
   },
   {
@@ -104,10 +158,10 @@
    "hora": "19:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 5,
+   "reach": 9,
    "saved": 0,
    "shares": 0,
-   "views": 22,
+   "views": 35,
    "link": "https://www.instagram.com/p/DfN0M7UnXxg/"
   },
   {
@@ -118,10 +172,10 @@
    "hora": "16:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 7,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 19,
+   "views": 24,
    "link": "https://www.instagram.com/p/DfNcK9HFy-p/"
   },
   {
@@ -132,10 +186,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 1,
-   "reach": 7,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 22,
+   "views": 27,
    "link": "https://www.instagram.com/p/DfNOSv8GJcV/"
   },
   {
@@ -146,10 +200,10 @@
    "hora": "09:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 7,
+   "reach": 8,
    "saved": 0,
    "shares": 0,
-   "views": 20,
+   "views": 22,
    "link": "https://www.instagram.com/p/DfNOJiAGMHE/"
   },
   {
@@ -160,10 +214,10 @@
    "hora": "19:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 25,
+   "views": 29,
    "link": "https://www.instagram.com/p/DfLPUYSF_dw/"
   },
   {
@@ -174,10 +228,10 @@
    "hora": "16:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 28,
+   "views": 34,
    "link": "https://www.instagram.com/p/DfK4lAEGImx/"
   },
   {
@@ -188,10 +242,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 5,
+   "reach": 7,
    "saved": 0,
    "shares": 0,
-   "views": 17,
+   "views": 20,
    "link": "https://www.instagram.com/p/DfKfQirGCNl/"
   },
   {
@@ -202,10 +256,10 @@
    "hora": "09:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 6,
+   "reach": 7,
    "saved": 0,
    "shares": 0,
-   "views": 21,
+   "views": 22,
    "link": "https://www.instagram.com/p/DfKH6tvFClA/"
   }
  ]

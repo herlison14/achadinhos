@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-05 12:14",
+ "atualizado": "2026-11-06 05:20",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -168,8 +168,8 @@
      "data": "2026-11-05",
      "hora": "18:30",
      "tema": "Tramontina Trena com Fita de Aço 5 Metros",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-05 18:31",
      "img": "postagens/2026-11-05-story-15813dd2/01.jpg"
     },
     {
