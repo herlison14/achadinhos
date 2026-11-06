@@ -1237,9 +1237,11 @@
    "postagens/2026-11-06-story-7db85efa/01.jpg"
   ],
   "legenda": "Story: Chalesco Escova Pequena para Cães: R$ 14,36 (conferido em 05/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": false
+  "sem_preco": false,
+  "ig_id": "18114776420334065",
+  "publicado_em": "2026-11-06 11:31"
  },
  {
   "id": "2026-11-06-story-site",
@@ -1358,10 +1360,12 @@
    "postagens/2026-11-06-story-16b683b6/01.jpg"
   ],
   "legenda": "Story: Kit Hidratante Facial L'Oréal Revitalift Hialurônico Dia + Noite: R$ 73,05 (conferido em 05/11/2026) — antes R$ 76,90, queda de 5% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "BELEZA"
+  "area": "BELEZA",
+  "ig_id": "18120907177974802",
+  "publicado_em": "2026-11-06 11:31"
  },
  {
   "id": "2026-11-07-story-ce46f4cc",
