@@ -23,6 +23,11 @@ LOJAS = {"shopee": "Shopee", "amazon": "Amazon", "meli": "Mercado Livre",
 AVISO = "Publicidade: links de afiliado. Preços e estoque mudam: confira na loja."
 
 
+def _na(loja):
+    nome = LOJAS.get(loja, loja)
+    return ('no ' if loja in ('meli', 'aliexpress') else 'na ') + nome
+
+
 def ler(p, padrao):
     try:
         return json.loads(Path(p).read_text(encoding="utf-8"))
@@ -66,7 +71,7 @@ def texto_ofertas(itens, origem):
     linhas = ["*Achadinhos do Binga* — ofertas conferidas", ""]
     for i in itens:
         nome = i["nome"].replace("&#x27;", "'")
-        linhas.append(f"• {nome}\n  R$ {i['preco']} na {LOJAS.get(i['loja'], i['loja'])} "
+        linhas.append(f"• {nome}\n  R$ {i['preco']} {_na(i['loja'])} "
                       f"(conferido em {br(i['conferido'])})\n  {i['href']}")
     linhas += ["", f"Mais ofertas: {SITE}/?o={origem}", "", AVISO]
     return "\n".join(linhas)
@@ -206,7 +211,7 @@ def cartao(i):
 def legenda(i):
     pre, preco, pos = preco_texto(i)
     p = (pre + " " if pre else "") + preco + (" " + pos if pos else "")
-    return (f"{html.unescape(i['nome'])}\n{p} na {LOJAS.get(i['loja'], i['loja'])}\n"
+    return (f"{html.unescape(i['nome'])}\n{p} {_na(i['loja'])}\n"
             f"Conferido em {br(i['conferido'])}, pode mudar.\n\n{i['href']}")
 
 
@@ -258,7 +263,7 @@ def cartao_boasvindas():
 def legenda_whatsapp(i):
     pre, preco, pos = preco_texto(i)
     p = (pre + " " if pre else "") + preco + (" " + pos if pos else "")
-    return (f"*{html.unescape(i['nome'])}*\n{p} na {LOJAS.get(i['loja'], i['loja'])}\n"
+    return (f"*{html.unescape(i['nome'])}*\n{p} {_na(i['loja'])}\n"
             f"Conferido em {br(i['conferido'])}. Pode mudar.\n\n{i['href']}\n\n"
             f"Mais ofertas: {SITE}/?o=wa\n_{AVISO}_")
 
