@@ -882,7 +882,7 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "visita",
-  "status": "agendado",
+  "status": "publicado",
   "nota": "Post de crescimento (sem preço), criado em 02/11/2026.",
   "imagens": [
    "postagens/2026-11-07-como-usar-o-site/01.jpg",
@@ -890,7 +890,9 @@
    "postagens/2026-11-07-como-usar-o-site/03.jpg",
    "postagens/2026-11-07-como-usar-o-site/04.jpg"
   ],
-  "legenda": "Achar seu achadinho em 3 passos 👇\n\n1. Toque no link da bio\n2. Escolha uma categoria ou uma loja, ou use a busca\n3. Veja o preço e a data de conferência e abra o link da loja\n\nBônus: a seção \"Caiu de preço\" mostra o que baixou desde a última conferência.\n\nSalva este post pra não esquecer 🔗\n\nOs preços podem mudar: confirme na loja antes de comprar.\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #comprasonline #achadinhosdobinga"
+  "legenda": "Achar seu achadinho em 3 passos 👇\n\n1. Toque no link da bio\n2. Escolha uma categoria ou uma loja, ou use a busca\n3. Veja o preço e a data de conferência e abra o link da loja\n\nBônus: a seção \"Caiu de preço\" mostra o que baixou desde a última conferência.\n\nSalva este post pra não esquecer 🔗\n\nOs preços podem mudar: confirme na loja antes de comprar.\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #comprasonline #achadinhosdobinga",
+  "ig_id": "18142393159614924",
+  "publicado_em": "2026-11-07 17:31"
  },
  {
   "id": "2026-11-08-o-que-voce-quer-ver",
