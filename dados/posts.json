@@ -1314,9 +1314,11 @@
    "postagens/2026-11-07-story-6d226ab0/01.jpg"
   ],
   "legenda": "Story: Tramontina Jogo de Chaves de Fenda com Pontas Intercambiáveis: R$ 20,20 (conferido em 05/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": false
+  "sem_preco": false,
+  "ig_id": "18132299362763029",
+  "publicado_em": "2026-11-07 11:31"
  },
  {
   "id": "2026-11-07-story-73d19834",
@@ -1422,10 +1424,12 @@
    "postagens/2026-11-07-story-ce46f4cc/01.jpg"
   ],
   "legenda": "Story: Garrafa Térmica MODUS 1,7 L Aço Inox com Canudo: R$ 81,99 (conferido em 05/11/2026) — antes R$ 95,93, queda de 15% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "COZINHA"
+  "area": "COZINHA",
+  "ig_id": "18147688459589650",
+  "publicado_em": "2026-11-07 11:31"
  },
  {
   "id": "2026-11-07-story-ab1e61b4",
