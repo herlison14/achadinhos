@@ -53,8 +53,8 @@
    "17a617aa",
    "56410dcd"
   ],
-  "status": "planejado",
-  "nota": "A agenda antiga marca \"já postado\"; confirmar."
+  "status": "cancelado",
+  "nota": "A agenda antiga marca \"já postado\"; confirmar. Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-10-28-tenis",
@@ -67,8 +67,8 @@
   "produtos": [
    "cebbce0e"
   ],
-  "status": "planejado",
-  "nota": ""
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-10-29-reel10",
@@ -83,8 +83,8 @@
    "8e4423f6",
    "59d45f0c"
   ],
-  "status": "planejado",
-  "nota": ""
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-10-30-casa-mag",
@@ -101,8 +101,8 @@
    "4dcaa306",
    "9e5741a0"
   ],
-  "status": "planejado",
-  "nota": "",
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido).",
   "imagens": [
    "postagens/2026-10-30-casa-mag/01.jpg",
    "postagens/2026-10-30-casa-mag/02.jpg",
@@ -129,8 +129,8 @@
    "95254577",
    "31d0b9c1"
   ],
-  "status": "planejado",
-  "nota": ""
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-01-mochila",
@@ -143,8 +143,8 @@
   "produtos": [
    "160bc6a8"
   ],
-  "status": "planejado",
-  "nota": ""
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-02-shopee-ate20",
@@ -188,8 +188,8 @@
    "1401ffd1",
    "f870c30d"
   ],
-  "status": "planejado",
-  "nota": ""
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-04-ate130",
@@ -206,8 +206,8 @@
    "cebbce0e",
    "0b2e7141"
   ],
-  "status": "planejado",
-  "nota": "",
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido).",
   "imagens": [
    "postagens/2026-11-04-ate130/01.jpg",
    "postagens/2026-11-04-ate130/02.jpg",
@@ -244,8 +244,8 @@
   "produtos": [
    "0b2e7141"
   ],
-  "status": "planejado",
-  "nota": ""
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-07-reel-beleza",
@@ -259,8 +259,8 @@
    "b905b372",
    "f7e86c39"
   ],
-  "status": "planejado",
-  "nota": ""
+  "status": "cancelado",
+  "nota": "Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-08-antes-do-11-11-5-achadin",
@@ -277,8 +277,8 @@
    "1ac9cc28",
    "5a309fe3"
   ],
-  "status": "planejado",
-  "nota": "Pré-11.11: registrar o preço de hoje para provar o desconto real no dia. Reconferir preços antes de postar."
+  "status": "cancelado",
+  "nota": "Pré-11.11: registrar o preço de hoje para provar o desconto real no dia. Reconferir preços antes de postar. Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-09-contagem-regressiva-11-1",
@@ -289,8 +289,8 @@
   "tema": "Contagem regressiva 11.11: cupons e frete grátis (conferir na Shopee)",
   "canal": "ig",
   "produtos": [],
-  "status": "planejado",
-  "nota": "Sem produto: aviso das campanhas. Só publicar regras (cupom/frete) conferidas no app da Shopee."
+  "status": "cancelado",
+  "nota": "Sem produto: aviso das campanhas. Só publicar regras (cupom/frete) conferidas no app da Shopee. Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-10-5-itens-de-casa-para-peg",
@@ -307,8 +307,8 @@
    "066672ac",
    "d7bd7941"
   ],
-  "status": "planejado",
-  "nota": "Conferir preço na Shopee no dia 10 e comparar com o histórico."
+  "status": "cancelado",
+  "nota": "Conferir preço na Shopee no dia 10 e comparar com o histórico. Cancelado em 06/11/2026: rascunho não publicado (data passou ou preço vencido)."
  },
  {
   "id": "2026-11-11-11-11-ao-vivo-ofertas-qu",
