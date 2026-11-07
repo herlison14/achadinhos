@@ -81,6 +81,31 @@ def main():
             r['erro'] = '%s: %s' % (type(e).__name__, str(e)[:80])
         rel.append(r)
         print(('OK  ' if r['ok'] else 'FALHA'), r['loja'], it['id'], r.get('tamanho', ''), r.get('erro', ''), flush=True)
+    # 2ª passada: itens com foto por URL de CDN (Amazon, Mercado Livre, Magalu, AliExpress) sem cópia local.
+    # Baixa a própria imagem do CDN (não a página, que a Amazon bloqueia com 503), para os cards do Instagram.
+    for it in itens:
+        u = it['img']
+        if not u.startswith('http'): continue
+        dest = os.path.join(PASTA, it['id'] + '.webp')
+        if os.path.exists(dest) and not todos: continue
+        r = {'id': it['id'], 'loja': it['loja'], 'ok': False, 'origem': 'cdn'}
+        try:
+            u = re.sub(r'\._[A-Z]{2}_[A-Z0-9_,]+_\.', '._AC_SL800_.', u)   # Amazon: versão maior
+            dados, _, _ = baixar(u)
+            im = Image.open(io.BytesIO(dados)).convert('RGB')
+            r['tamanho'] = '%dx%d' % im.size
+            if min(im.size) < 150:
+                r['erro'] = 'imagem pequena demais'
+            else:
+                im.thumbnail((600, 600), Image.LANCZOS)
+                im.save(dest, 'WEBP', quality=82, method=6)
+                r['ok'] = True
+        except urllib.error.HTTPError as e:
+            r['erro'] = 'HTTP %d' % e.code
+        except Exception as e:
+            r['erro'] = '%s: %s' % (type(e).__name__, str(e)[:80])
+        rel.append(r)
+        print(('OK  ' if r['ok'] else 'FALHA'), r['loja'], it['id'], 'cdn', r.get('tamanho', ''), r.get('erro', ''), flush=True)
     with open(ITENS, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(itens, f, ensure_ascii=False, indent=1); f.write('\n')
     with open(os.path.join(PASTA, '_relatorio.json'), 'w', encoding='utf-8') as f:
