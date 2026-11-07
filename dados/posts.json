@@ -1338,9 +1338,11 @@
    "postagens/2026-11-07-story-73d19834/01.jpg"
   ],
   "legenda": "Story: Tudo Pet Comedouro e Bebedouro Pesado Filhote Pequeno 300 ml para Cães: R$ 19,90 (conferido em 05/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": false
+  "sem_preco": false,
+  "ig_id": "18035176751887260",
+  "publicado_em": "2026-11-07 18:31"
  },
  {
   "id": "2026-11-08-story-a424992e",
@@ -1449,10 +1451,12 @@
    "postagens/2026-11-07-story-ab1e61b4/01.jpg"
   ],
   "legenda": "Story: Pantene Pro-V Condicionador Hidratação Intensa 400 ml: R$ 25,19 (conferido em 05/11/2026) — antes R$ 29,92, queda de 16% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "BELEZA"
+  "area": "BELEZA",
+  "ig_id": "17943894822382853",
+  "publicado_em": "2026-11-07 18:31"
  },
  {
   "id": "2026-11-08-story-5decfec6",
