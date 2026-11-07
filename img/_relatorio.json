@@ -102,7 +102,8 @@
   "id": "5decfec6",
   "loja": "amazon",
   "ok": false,
-  "erro": "HTTP 503"
+  "pagina": "https://www.amazon.com.br/dp/B07LC6189D?tag=herlisonsanto-20",
+  "erro": "sem imagem na página (1190309 bytes)"
  },
  {
   "id": "ce46f4cc",
@@ -168,7 +169,8 @@
   "id": "e1ac29dd",
   "loja": "amazon",
   "ok": false,
-  "erro": "HTTP 503"
+  "pagina": "https://www.amazon.com.br/dp/B0GHP8GRX3?tag=herlisonsanto-20",
+  "erro": "sem imagem na página (1330692 bytes)"
  },
  {
   "id": "16b683b6",
@@ -307,25 +309,1371 @@
   "loja": "amazon",
   "ok": false,
   "pagina": "https://www.amazon.com.br/dp/B07HJ9RKC6?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (1676430 bytes)"
+  "erro": "sem imagem na página (1674811 bytes)"
  },
  {
   "id": "00feb5c1",
   "loja": "amazon",
   "ok": false,
-  "pagina": "https://www.amazon.com.br/dp/B0BBJPCMQM?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (1251789 bytes)"
+  "erro": "HTTP 503"
  },
  {
   "id": "4e695a48",
   "loja": "amazon",
   "ok": false,
-  "erro": "HTTP 503"
+  "pagina": "https://www.amazon.com.br/dp/B0785X3V3Z?tag=herlisonsanto-20",
+  "erro": "sem imagem na página (1104995 bytes)"
  },
  {
   "id": "1e8701dd",
   "loja": "amazon",
   "ok": false,
   "erro": "HTTP 503"
+ },
+ {
+  "id": "59d45f0c",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "0cb025bc",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x117",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "17a617aa",
+  "loja": "aliexpress",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "687x696"
+ },
+ {
+  "id": "56410dcd",
+  "loja": "aliexpress",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "682x691"
+ },
+ {
+  "id": "4dcaa306",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "17039bc2",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "9e5741a0",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "1bdb46d2",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "9605bf1d",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "0ef7094d",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "86f9cb08",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "a4aa5038",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "1b9dcf7f",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "244eda85",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "670b2f11",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "8d6f44c3",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "279x210"
+ },
+ {
+  "id": "9fdc5812",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "5b89e0f0",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "39e3fd28",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "c921991d",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x450"
+ },
+ {
+  "id": "c93d72e4",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x119",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "ac99308a",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "119x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "8a4f5c2c",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "cc0bde3c",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x115",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "8e4423f6",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "c0cc8464",
+  "loja": "aliexpress",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "4ea5e24a",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "1401ffd1",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "0e0c7215",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "119x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "f870c30d",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x119",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "53d5371f",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "4fc063e5",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "b905b372",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "4e050aca",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "d7b213e0",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "f7e86c39",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x600"
+ },
+ {
+  "id": "3a4eb4da",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "ab308331",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "d5cf73ed",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "258d02f2",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "91d7aded",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x119",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "28117a47",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x115",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "9390d294",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x115",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "95254577",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x119",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "a807d194",
+  "loja": "aliexpress",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "683x638"
+ },
+ {
+  "id": "31d0b9c1",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x117",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "1ac9cc28",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "e4965267",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x453"
+ },
+ {
+  "id": "0b2e7141",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "cebbce0e",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "28eccffc",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "160bc6a8",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "56d5e324",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "201x210"
+ },
+ {
+  "id": "5a309fe3",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "a81532e1",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "4f7710e4",
+  "loja": "aliexpress",
+  "ok": false,
+  "origem": "cdn",
+  "tamanho": "120x120",
+  "erro": "imagem pequena demais"
+ },
+ {
+  "id": "b248fbda",
+  "loja": "aliexpress",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "687x658"
+ },
+ {
+  "id": "dce4ccf5",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "6edc1ba1",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "454edc06",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "780861be",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "87013ec9",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "796x796"
+ },
+ {
+  "id": "413f76ea",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "ea7010e9",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "c9dab654",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "398x500"
+ },
+ {
+  "id": "357d5c72",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "177a0471",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "2f5abe5b",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "36cf1d54",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "fe436927",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "f8d7f4e7",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "1b471999",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "1753c733",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "f8e5bb5b",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "542da9bc",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "fc5f26c3",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "a33675d7",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "47dcf868",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "f101c696",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "e8a1c7a1",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "feb13ddd",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "bd020d6b",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "0ec1e6f6",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "a424992e",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "428x800"
+ },
+ {
+  "id": "73d19834",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x598"
+ },
+ {
+  "id": "93f49b8a",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x603"
+ },
+ {
+  "id": "7db85efa",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "247x800"
+ },
+ {
+  "id": "d5643d5a",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x783"
+ },
+ {
+  "id": "2c5f9842",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x780"
+ },
+ {
+  "id": "b513fdde",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x790"
+ },
+ {
+  "id": "30f6e7fd",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x518"
+ },
+ {
+  "id": "15813dd2",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x448"
+ },
+ {
+  "id": "6d226ab0",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "494x800"
+ },
+ {
+  "id": "5ba61a8e",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "330x800"
+ },
+ {
+  "id": "6bed8cd4",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "528x800"
+ },
+ {
+  "id": "65481239",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "476x800"
+ },
+ {
+  "id": "20217a60",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x593"
+ },
+ {
+  "id": "91f9a802",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x491"
+ },
+ {
+  "id": "de9e78e5",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "571x800"
+ },
+ {
+  "id": "a08e35d3",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x618"
+ },
+ {
+  "id": "470d5163",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "708x800"
+ },
+ {
+  "id": "ab1e61b4",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x800"
+ },
+ {
+  "id": "aa0401d5",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "240x800"
+ },
+ {
+  "id": "f4ff9777",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "708x800"
+ },
+ {
+  "id": "8e001448",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "300x800"
+ },
+ {
+  "id": "11627130",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x450"
+ },
+ {
+  "id": "40eb1842",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x450"
+ },
+ {
+  "id": "6b375449",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "279x210"
+ },
+ {
+  "id": "bbc8d357",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "279x210"
+ },
+ {
+  "id": "66d7f3b4",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "de8e039c",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x600"
+ },
+ {
+  "id": "815cc52a",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "fe4cbcb5",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "d9eda127",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "8dd478f3",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x600"
+ },
+ {
+  "id": "bc3928a0",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x453"
+ },
+ {
+  "id": "0049470d",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "68921b58",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "70b58fc1",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "794x262"
+ },
+ {
+  "id": "3c034722",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "cd234dd0",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x548"
+ },
+ {
+  "id": "6f2b0cf8",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x687"
+ },
+ {
+  "id": "ba4554ba",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x574"
+ },
+ {
+  "id": "df555e5e",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x620"
+ },
+ {
+  "id": "5de24db0",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x661"
+ },
+ {
+  "id": "603f1c0a",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "524x800"
+ },
+ {
+  "id": "85b81b24",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "f3f2946a",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "560x800"
+ },
+ {
+  "id": "59d6e55d",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "463x506"
+ },
+ {
+  "id": "ef5cf06e",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x688"
+ },
+ {
+  "id": "6a9e06f6",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x800"
+ },
+ {
+  "id": "d99a3369",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "711x800"
+ },
+ {
+  "id": "1cf8d49e",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x787"
+ },
+ {
+  "id": "a1856033",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "e2dad64d",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "dd83cbea",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "9f1fcedc",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "5844e646",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "42324fc8",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "8967e63f",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "a77c1d6a",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "dcf4aecd",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "c085c59c",
+  "loja": "meli",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "640x640"
+ },
+ {
+  "id": "a6222bc1",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "2a142148",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "478x800"
+ },
+ {
+  "id": "ca7f4532",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x620"
+ },
+ {
+  "id": "68c6560b",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "772x800"
+ },
+ {
+  "id": "c2cf0de0",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "f1e4c162",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "2065d28b",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x777"
+ },
+ {
+  "id": "6ca76ce1",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x800"
+ },
+ {
+  "id": "f384a963",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "763x800"
+ },
+ {
+  "id": "d17e888a",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "790x800"
+ },
+ {
+  "id": "85458d1f",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "424x800"
+ },
+ {
+  "id": "1618725b",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x606"
+ },
+ {
+  "id": "dfbb64c7",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x764"
+ },
+ {
+  "id": "24f884f4",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "576x800"
+ },
+ {
+  "id": "f07c8496",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x640"
+ },
+ {
+  "id": "b498fab1",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "629x800"
+ },
+ {
+  "id": "ccac0f35",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x702"
+ },
+ {
+  "id": "abe2bd04",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "796x800"
+ },
+ {
+  "id": "f0b76f5c",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "609x800"
+ },
+ {
+  "id": "66df551f",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "768x800"
+ },
+ {
+  "id": "dded9b92",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "788x800"
+ },
+ {
+  "id": "c5a3cf15",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "574x800"
+ },
+ {
+  "id": "7ce0254b",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x785"
+ },
+ {
+  "id": "71d78dd1",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x553"
+ },
+ {
+  "id": "368d61bd",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x608"
+ },
+ {
+  "id": "60c6c3c2",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "745x800"
+ },
+ {
+  "id": "ebf25391",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "793x800"
+ },
+ {
+  "id": "1cb32e34",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "646x800"
+ },
+ {
+  "id": "ea982504",
+  "loja": "amazon",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "800x715"
+ },
+ {
+  "id": "fbd5debb",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "53348138",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "208x210"
+ },
+ {
+  "id": "240e0a56",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "237x210"
+ },
+ {
+  "id": "6e109cb9",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "0b60b4a6",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "dd591e00",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "210x210"
+ },
+ {
+  "id": "e4efde21",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "9b5685f6",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "102dd862",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "60933e5b",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "600x600"
+ },
+ {
+  "id": "310b9baa",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "240x210"
+ },
+ {
+  "id": "353e4156",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "886aa451",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "a5f81fe9",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "a35e5966",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
+ },
+ {
+  "id": "3b0e101f",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "278x210"
+ },
+ {
+  "id": "f14a2b73",
+  "loja": "magalu",
+  "ok": true,
+  "origem": "cdn",
+  "tamanho": "280x210"
  }
 ]
