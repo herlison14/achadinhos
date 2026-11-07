@@ -102,15 +102,13 @@
   "id": "5decfec6",
   "loja": "amazon",
   "ok": false,
-  "pagina": "https://www.amazon.com.br/dp/B07LC6189D?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (1156006 bytes)"
+  "erro": "HTTP 503"
  },
  {
   "id": "ce46f4cc",
   "loja": "amazon",
   "ok": false,
-  "pagina": "https://www.amazon.com.br/dp/B0FVKRQSMF?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (962672 bytes)"
+  "erro": "HTTP 503"
  },
  {
   "id": "a1eb8e1a",
@@ -170,15 +168,13 @@
   "id": "e1ac29dd",
   "loja": "amazon",
   "ok": false,
-  "pagina": "https://www.amazon.com.br/dp/B0GHP8GRX3?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (777229 bytes)"
+  "erro": "HTTP 503"
  },
  {
   "id": "16b683b6",
   "loja": "amazon",
   "ok": false,
-  "pagina": "https://www.amazon.com.br/dp/B09H8P5L6J?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (916169 bytes)"
+  "erro": "HTTP 503"
  },
  {
   "id": "557cc037",
@@ -289,15 +285,6 @@
   "erro": "imagem genérica/repetida (não é do produto)"
  },
  {
-  "id": "238e61c2",
-  "loja": "shopee",
-  "ok": false,
-  "pagina": "https://s.shopee.com.br/4fxAqHNvoL",
-  "imagem": "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
-  "tamanho": "1200x630",
-  "erro": "imagem genérica/repetida (não é do produto)"
- },
- {
   "id": "ff98e0c7",
   "loja": "shopee",
   "ok": false,
@@ -320,27 +307,25 @@
   "loja": "amazon",
   "ok": false,
   "pagina": "https://www.amazon.com.br/dp/B07HJ9RKC6?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (788118 bytes)"
+  "erro": "sem imagem na página (1676430 bytes)"
  },
  {
   "id": "00feb5c1",
   "loja": "amazon",
   "ok": false,
   "pagina": "https://www.amazon.com.br/dp/B0BBJPCMQM?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (833156 bytes)"
+  "erro": "sem imagem na página (1251789 bytes)"
  },
  {
   "id": "4e695a48",
   "loja": "amazon",
   "ok": false,
-  "pagina": "https://www.amazon.com.br/dp/B0785X3V3Z?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (727103 bytes)"
+  "erro": "HTTP 503"
  },
  {
   "id": "1e8701dd",
   "loja": "amazon",
   "ok": false,
-  "pagina": "https://www.amazon.com.br/dp/B075QRWRYP?tag=herlisonsanto-20",
-  "erro": "sem imagem na página (1217345 bytes)"
+  "erro": "HTTP 503"
  }
 ]
