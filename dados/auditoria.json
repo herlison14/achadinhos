@@ -1,7 +1,7 @@
 {
- "gerado": "2026-11-07 23:00",
+ "gerado": "2026-11-07 23:01",
  "contagem": {
-  "ALTO": 4,
+  "ALTO": 5,
   "MEDIO": 3
  },
  "achados": [
@@ -46,6 +46,12 @@
    "area": "calendário",
    "texto": "2026-11-09 sem post de crescimento",
    "acao": "completar a programação"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Canal do Telegram' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
   }
  ]
 }
