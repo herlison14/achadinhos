@@ -129,6 +129,11 @@ main>ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-c
 .vazio{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-top:14px}
 .vazio p{margin:0 0 8px}
 .vazio a{display:inline-block;background:var(--pill);color:var(--pillfg);text-decoration:none;font-weight:800;font-size:.9rem;padding:10px 16px;border-radius:999px}
+.vazio .vbt{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.vazio .vnota{font-size:.8rem;color:var(--mut)}
+.vazio .vpl{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:6px}
+.vazio .vpl a{display:flex;justify-content:space-between;gap:10px;background:transparent;color:inherit;border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-weight:700;font-size:.88rem}
+.vazio .vpl b{color:var(--acc);white-space:nowrap}
 /* rodapé */
 footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .aviso{font-size:.82rem;color:var(--mut);margin:0 0 12px}
@@ -313,6 +318,12 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <p class="bs" id="bs" aria-live="polite"></p>
 <div class="vazio" id="vazio" hidden>
 <p><b id="vmsg">Nenhuma oferta encontrada.</b></p>
+<div id="vlojas" hidden>
+<p>Procure direto nas lojas:</p>
+<div class="vbt"><a id="v-amz" href="https://www.amazon.com.br/" rel="noopener sponsored" target="_blank">Buscar na Amazon</a><a id="v-mag" href="https://www.magazinevoce.com.br/magazinein_400408/" rel="noopener sponsored" target="_blank">Buscar no Magalu</a></div>
+<p class="vnota">A busca abre na loja; preço e estoque são os de lá. Publicidade: links de afiliado.</p>
+</div>
+<div id="vpar" hidden><p><b>Parecidos que já conferimos:</b></p><ul class="vpl" id="vpl"></ul></div>
 <p>Não achou? Peça pra gente e a gente procura o melhor preço.</p>
 <a href="https://ig.me/m/achadinhosdobinga" rel="noopener">Pedir este produto</a>
 </div>
@@ -570,10 +581,35 @@ var h=ul.previousElementSibling;if(h&&h.tagName==='H2')h.hidden=!any;
 $$('.chip').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-c')||'')===st.cat));});
 clr.hidden=!raw;
 promos.hidden=filtering;
-if(!filtering){bs.textContent='';vz.hidden=true;return;}
+if(!filtering){bs.textContent='';vz.hidden=true;clearTimeout(bTimer);return;}
 bs.textContent=n+' de '+items.length+' ofertas';
 vmsg.textContent=raw?('Nenhuma oferta encontrada para “'+raw+'”.'):'Nenhuma oferta com esses filtros.';
 vz.hidden=n>0;
+semResultado(n===0?raw:'',terms);
+}
+/* busca sem resultado: lojas (afiliado), parecidos já conferidos e registro anônimo do termo */
+var vlojas=$('#vlojas'),vamz=$('#v-amz'),vmag=$('#v-mag'),vpar=$('#vpar'),vpl=$('#vpl'),bTimer=0,bFeitos={};
+function semResultado(raw,terms){
+clearTimeout(bTimer);
+var t=raw.replace(/\s+/g,' ').trim().slice(0,60);
+vlojas.hidden=t.length<3;vpar.hidden=true;vpl.textContent='';
+if(t.length<3)return;
+var e=encodeURIComponent(t);
+vamz.href='https://www.amazon.com.br/s?k='+e+'&tag=herlisonsanto-20';
+vmag.href='https://www.magazinevoce.com.br/magazinein_400408/busca/'+e.replace(/%20/g,'+')+'/';
+vamz.setAttribute('data-p','Busca: '+t);vmag.setAttribute('data-p','Busca: '+t);vamz.setAttribute('data-c','Busca sem resultado');vmag.setAttribute('data-c','Busca sem resultado');
+var ps=terms.filter(function(x){return x.length>=3;}),cand=[];
+if(ps.length)items.forEach(function(li){var s=0;ps.forEach(function(x){if(li._t.indexOf(x)>-1)s++;});if(s)cand.push([s,li]);});
+cand.sort(function(a,b){return b[0]-a[0];});
+cand.slice(0,4).forEach(function(c){var a=c[1].querySelector('a'),nm=c[1].querySelector('.nm'),pr=c[1].querySelector('.pr b');if(!a||!nm)return;
+var l=document.createElement('li'),x=document.createElement('a');x.href=a.href;x.rel='noopener sponsored';x.setAttribute('data-p',nm.textContent);x.setAttribute('data-c','Parecidos (busca sem resultado)');
+var s1=document.createElement('span');s1.className='nm';s1.textContent=nm.textContent;x.appendChild(s1);
+if(pr){var s2=document.createElement('b');s2.textContent=pr.textContent;x.appendChild(s2);}
+l.appendChild(x);vpl.appendChild(l);});
+vpar.hidden=!vpl.children.length;
+bTimer=setTimeout(function(){var k=t.toLowerCase();if(bFeitos[k])return;bFeitos[k]=1;
+try{var d=JSON.stringify({t:t});if(!(navigator.sendBeacon&&navigator.sendBeacon('https://cliques-binga.herlison14.workers.dev/b',new Blob([d],{type:'text/plain;charset=UTF-8'}))))fetch('https://cliques-binga.herlison14.workers.dev/b',{method:'POST',body:d,keepalive:true,mode:'no-cors'});}catch(_){}
+},1800);
 }
 q.addEventListener('input',run);
 sel.addEventListener('change',function(){st.loja=sel.value;run();});

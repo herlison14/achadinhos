@@ -58,6 +58,11 @@
         }
       }
     }
+    if (!nm && a.getAttribute('data-p')) {
+      // botões da busca sem resultado (lojas e "parecidos")
+      nm = { textContent: a.getAttribute('data-p').slice(0, 120) };
+      cat = a.getAttribute('data-c') || cat;
+    }
     var dados = JSON.stringify({
       p: nm ? nm.textContent : '',
       l: loja(a.href),

@@ -94,6 +94,7 @@ a{color:var(--roxo)}
   <button role="tab" aria-selected="false" data-aba="instagram">Instagram</button>
   <button role="tab" aria-selected="false" data-aba="destaques">Destaques</button>
   <button role="tab" aria-selected="false" data-aba="cliques">Cliques</button>
+  <button role="tab" aria-selected="false" data-aba="procurados">Procurados</button>
   <button role="tab" aria-selected="false" data-aba="ganhos">Ganhos</button>
 </nav>
 
@@ -189,6 +190,19 @@ a{color:var(--roxo)}
   <div id="ds-areas"></div>
 </section>
 
+<section id="procurados" hidden>
+  <div class="card">
+    <h2>Procurados e não achados</h2>
+    <p class="sub">Termos que visitantes buscaram no site sem encontrar nada (só o texto, sem identificar ninguém). Use para escolher os próximos produtos a conferir e cadastrar. Mesma chave e código 2FA da aba Cliques; nada é guardado.</p>
+    <div class="ctl">
+      <input id="pk" type="password" autocomplete="off" placeholder="Chave do relatório" aria-label="Chave do relatório">
+      <input id="pc2" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Código 2FA" aria-label="Código de 6 dígitos do app autenticador" style="max-width:110px">
+      <select id="pdias" aria-label="Período"><option value="7">7 dias</option><option value="30">30 dias</option><option value="90">90 dias</option></select>
+      <button id="pver" type="button">Carregar</button>
+    </div>
+    <div id="pr-out"></div>
+  </div>
+</section>
 <section id="cliques" hidden>
   <div class="card">
     <h2>Cliques nos botões da página</h2>
@@ -421,6 +435,18 @@ $('#c-st').addEventListener('input',calendario);
 $('#h-ver').addEventListener('click',hojeVer);
 document.querySelectorAll('th[data-o]').forEach(function(t){t.addEventListener('click',function(){var k=t.dataset.o;ord=ord.k===k?{k:k,d:-ord.d}:{k:k,d:1};lista()})});
 $('#ver').addEventListener('click',cliques);
+function procurados(){
+  var k=$('#pk').value.trim(),out=$('#pr-out');out.textContent='';
+  if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
+  fetch(WORKER+'/api/buscas?dias='+encodeURIComponent($('#pdias').value),{headers:{'Authorization':'Bearer '+k+$('#pc2').value.trim()},cache:'no-store'})
+   .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave ou código recusado.':r.status===429?'Muitas tentativas erradas. Aguarde 15 minutos.':r.status===404?'A rota /api/buscas ainda não está no Worker (bloco 4).':'O Worker respondeu '+r.status+'.');return r.json()})
+   .then(function(d){
+     var g=el('div','grid');[[d.total,'buscas sem resultado'],[d.termos,'termos diferentes']].forEach(function(x){var c=el('div','card');c.appendChild(el('div','k',String(x[0])));c.appendChild(el('div','l',x[1]));g.appendChild(c)});out.appendChild(g);
+     if(!d.lista||!d.lista.length){out.appendChild(el('div','msg','Nenhuma busca sem resultado no período.'));return}
+     var b=el('div','card');b.style.marginTop='12px';b.appendChild(el('h2',0,'Mais procurados'));var bx=el('div');b.appendChild(bx);out.appendChild(b);
+     barras(bx,d.lista.map(function(x){return [x.nome,x.n]}))})
+   .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
+$('#pver').addEventListener('click',procurados);
 /* ---- Ganhos ---- */
 var gLinhas=[];
 function numBR(v){v=String(v||'').replace(/R\$|\s/g,'');if(!v)return NaN;return parseFloat(v.replace(/\./g,'').replace(',','.'))}

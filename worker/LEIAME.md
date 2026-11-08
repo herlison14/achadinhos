@@ -5,6 +5,7 @@ O Worker publicado (Cloudflare) tem o contador de cliques (`POST /c`, `GET /rela
 0. `bloco_3_seguranca.js` — `autorizar()`: bloqueia 15 min após 5 chaves erradas (por IP, só hash guardado, tabela `tentativas` no D1). Cole acima dos outros blocos; os blocos 1 e 2 já chamam `autorizar` (substitui `iguais`).
 1. `bloco_1_api_cliques.js` — `GET /api/cliques` (JSON para o painel). Já publicado em 26/10/2026.
 2. `bloco_2_api_ganhos.js` — `GET` e `POST /api/ganhos` (comissão no D1, tabela criada sozinha). Usa `PAINEL`, `iguais`, `hojeBrasilia` e `limpar`, definidos no código original e no bloco 1.
+3. `bloco_4_buscas.js` — buscas sem resultado do site: `POST /b` (público, só o termo, sem IP; tabela `buscas` criada sozinha; até 400 termos novos por dia) e `GET /api/buscas` (aba Procurados do painel, atrás de `protegido`). Rotas: `if (url.pathname === '/b') return buscaRegistrar(req, env);` e `if (url.pathname === '/api/buscas') return protegido(req, env, url, apiBuscas);`. Criado em 07/11/2026.
 
 Rotas dentro do `fetch`, logo depois de `const url = new URL(req.url);`:
 
