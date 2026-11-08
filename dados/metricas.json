@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-07 04:37",
+ "atualizado": "2026-11-08 04:47",
  "conta": "achadinhosdobinga",
  "dias": [
   {
@@ -61,9 +61,63 @@
    "salvos": 0,
    "envios": 0,
    "posts": 17
+  },
+  {
+   "data": "2026-11-08",
+   "seguidores": 100,
+   "publicacoes": 31,
+   "alcance": 207,
+   "views": 625,
+   "curtidas": 7,
+   "comentarios": 10,
+   "salvos": 0,
+   "envios": 0,
+   "posts": 20
   }
  ],
  "posts": [
+  {
+   "id": "2026-11-07-reel-11-11-no-dia",
+   "publicado_em": "2026-11-07 20:01",
+   "objetivo": "salvar",
+   "formato": "reel",
+   "hora": "20:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 23,
+   "link": "https://www.instagram.com/reel/DfdUEjYCj-5/"
+  },
+  {
+   "id": "2026-11-07-como-usar-o-site",
+   "publicado_em": "2026-11-07 17:31",
+   "objetivo": "visita",
+   "formato": "carrossel",
+   "hora": "17:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 13,
+   "saved": 0,
+   "shares": 0,
+   "views": 43,
+   "link": "https://www.instagram.com/p/DfdC9ClAd_F/"
+  },
+  {
+   "id": "2026-11-13-pet-amazon",
+   "publicado_em": "2026-11-07 12:31",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "12:30",
+   "curtidas": 1,
+   "comentarios": 0,
+   "reach": 12,
+   "saved": 0,
+   "shares": 0,
+   "views": 39,
+   "link": "https://www.instagram.com/p/DfcgmzGIY4B/"
+  },
   {
    "id": "2026-11-06-lista-11-11-black-friday",
    "publicado_em": "2026-11-06 21:01",
@@ -72,10 +126,10 @@
    "hora": "21:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 5,
+   "reach": 13,
    "saved": 0,
    "shares": 0,
-   "views": 18,
+   "views": 35,
    "link": "https://www.instagram.com/p/Dfa2LgPFxYA/"
   },
   {
@@ -86,10 +140,10 @@
    "hora": "20:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 5,
+   "reach": 6,
    "saved": 0,
    "shares": 0,
-   "views": 12,
+   "views": 16,
    "link": "https://www.instagram.com/reel/DfavQ6NjIm0/"
   },
   {
@@ -100,10 +154,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 27,
+   "views": 31,
    "link": "https://www.instagram.com/reel/DfYKesHDpkp/"
   },
   {
@@ -114,10 +168,10 @@
    "hora": "14:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 13,
    "saved": 0,
    "shares": 0,
-   "views": 39,
+   "views": 44,
    "link": "https://www.instagram.com/p/DfXkvAiiRjR/"
   },
   {
@@ -142,10 +196,10 @@
    "hora": "10:30",
    "curtidas": 3,
    "comentarios": 7,
-   "reach": 8,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 37,
+   "views": 46,
    "link": "https://www.instagram.com/p/DfUkd40mLkq/"
   },
   {
@@ -170,10 +224,10 @@
    "hora": "14:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 9,
    "saved": 0,
    "shares": 0,
-   "views": 33,
+   "views": 34,
    "link": "https://www.instagram.com/p/DfSbg0JjW44/"
   },
   {
@@ -198,10 +252,10 @@
    "hora": "19:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 9,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 35,
+   "views": 36,
    "link": "https://www.instagram.com/p/DfN0M7UnXxg/"
   },
   {
@@ -254,10 +308,10 @@
    "hora": "19:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 13,
    "saved": 0,
    "shares": 0,
-   "views": 32,
+   "views": 38,
    "link": "https://www.instagram.com/p/DfLPUYSF_dw/"
   },
   {
@@ -282,10 +336,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 9,
    "saved": 0,
    "shares": 0,
-   "views": 24,
+   "views": 28,
    "link": "https://www.instagram.com/p/DfKfQirGCNl/"
   },
   {

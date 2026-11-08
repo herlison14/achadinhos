@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-07 04:37",
+ "atualizado": "2026-11-08 04:47",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -67,7 +67,26 @@
   },
   {
    "nome": "MODA",
-   "stories": []
+   "stories": [
+    {
+     "id": "2026-11-10-story-28eccffc",
+     "data": "2026-11-10",
+     "hora": "18:30",
+     "tema": "Tênis Adidas Lite Racer 4.0",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-10-story-28eccffc/01.jpg"
+    },
+    {
+     "id": "2026-11-10-story-d99a3369",
+     "data": "2026-11-10",
+     "hora": "11:30",
+     "tema": "Duracell pilha recarregável AA 2500 mAh, 4 unidades",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-10-story-d99a3369/01.jpg"
+    }
+   ]
   },
   {
    "nome": "BELEZA",
@@ -86,8 +105,8 @@
      "data": "2026-11-07",
      "hora": "18:30",
      "tema": "Pantene Pro-V Condicionador Hidratação Intensa 400 ml",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-07 18:31",
      "img": "postagens/2026-11-07-story-ab1e61b4/01.jpg"
     },
     {
@@ -106,7 +125,7 @@
    "stories": [
     {
      "id": "2026-11-08-story-5decfec6",
-     "data": "2026-11-08",
+     "data": "2026-11-09",
      "hora": "11:30",
      "tema": "Kit 4 Potes Herméticos Electrolux com Vedação de Silicone",
      "status": "agendado",
@@ -118,8 +137,8 @@
      "data": "2026-11-07",
      "hora": "11:30",
      "tema": "Garrafa Térmica MODUS 1,7 L Aço Inox com Canudo",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-07 11:31",
      "img": "postagens/2026-11-07-story-ce46f4cc/01.jpg"
     }
    ]
@@ -141,8 +160,8 @@
      "data": "2026-11-07",
      "hora": "18:30",
      "tema": "Tudo Pet Comedouro e Bebedouro Pesado Filhote Pequeno 300 ml",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-07 18:31",
      "img": "postagens/2026-11-07-story-73d19834/01.jpg"
     },
     {
@@ -150,8 +169,8 @@
      "data": "2026-11-07",
      "hora": "11:30",
      "tema": "Tramontina Jogo de Chaves de Fenda com Pontas Intercambiávei",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-07 11:31",
      "img": "postagens/2026-11-07-story-6d226ab0/01.jpg"
     },
     {
