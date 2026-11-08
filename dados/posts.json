@@ -905,14 +905,16 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "comentar",
-  "status": "agendado",
+  "status": "publicado",
   "nota": "Post de crescimento (sem preço), criado em 02/11/2026.",
   "imagens": [
    "postagens/2026-11-08-o-que-voce-quer-ver/01.jpg",
    "postagens/2026-11-08-o-que-voce-quer-ver/02.jpg",
    "postagens/2026-11-08-o-que-voce-quer-ver/03.jpg"
   ],
-  "legenda": "O que você quer ver mais por aqui? 👀\n\nCasa e cozinha, beleza, moda e eletrônicos, pet ou ferramentas?\n\nComenta a sua categoria favorita: ela ajuda a escolher os próximos achadinhos.\n\nTodas elas estão no site, com preço e data de conferência. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #casa #beleza #pet"
+  "legenda": "O que você quer ver mais por aqui? 👀\n\nCasa e cozinha, beleza, moda e eletrônicos, pet ou ferramentas?\n\nComenta a sua categoria favorita: ela ajuda a escolher os próximos achadinhos.\n\nTodas elas estão no site, com preço e data de conferência. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #casa #beleza #pet",
+  "ig_id": "17985303632904502",
+  "publicado_em": "2026-11-08 10:31"
  },
  {
   "id": "2026-11-03-queda-do-dia",
