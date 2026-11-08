@@ -1500,10 +1500,12 @@
    "postagens/2026-11-08-story-aa0401d5/01.jpg"
   ],
   "legenda": "Story: Pantene Pro-V Science Molecular Bond Repair Shampoo 510 ml: R$ 23,99 (conferido em 08/11/2026) — antes R$ 32,09, queda de 25% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "BELEZA"
+  "area": "BELEZA",
+  "ig_id": "17912210043576407",
+  "publicado_em": "2026-11-08 18:31"
  },
  {
   "id": "2026-11-09-reel-flow-etiqueta",
