@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-07 23:01",
+ "gerado": "2026-11-08 06:26",
  "contagem": {
   "ALTO": 5,
-  "MEDIO": 3
+  "MEDIO": 4
  },
  "achados": [
   {
@@ -32,7 +32,7 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "31 de 233 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "33 de 233 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -45,6 +45,12 @@
    "nivel": "MEDIO",
    "area": "calendário",
    "texto": "2026-11-09 sem post de crescimento",
+   "acao": "completar a programação"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-10 sem post de crescimento",
    "acao": "completar a programação"
   },
   {
