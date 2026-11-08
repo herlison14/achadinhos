@@ -53,7 +53,9 @@ def gravar(p, obj):
 
 
 def avisar(texto):
-    tok, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_CHAT")
+    # Aviso interno: só vai para um chat PRIVADO (TELEGRAM_AVISO). Nunca para o canal público (TELEGRAM_CHAT),
+    # que é dos seguidores. Sem TELEGRAM_AVISO, o aviso fica só no log da execução.
+    tok, chat = os.environ.get("TELEGRAM_TOKEN"), os.environ.get("TELEGRAM_AVISO")
     print("AVISO:", texto)
     if not tok or not chat:
         return
