@@ -48,6 +48,14 @@
   "data": "2026-11-05"
  },
  {
+  "id": "aa0401d5",
+  "href": "https://www.amazon.com.br/dp/B0FP71XNBN?tag=herlisonsanto-20",
+  "antes": "32,09",
+  "agora": "23,99",
+  "pct": 25,
+  "data": "2026-11-08"
+ },
+ {
   "id": "77f4967b",
   "href": "https://s.shopee.com.br/2qVWerW7ba",
   "antes": "89,90",
@@ -168,6 +176,14 @@
   "data": "2026-11-05"
  },
  {
+  "id": "1e8701dd",
+  "href": "https://www.amazon.com.br/dp/B075QRWRYP?tag=herlisonsanto-20",
+  "antes": "115,99",
+  "agora": "106,32",
+  "pct": 8,
+  "data": "2026-11-08"
+ },
+ {
   "id": "fe436927",
   "href": "https://meli.la/1eEGxMs",
   "antes": "94,50",
@@ -184,26 +200,10 @@
   "data": "2026-11-05"
  },
  {
-  "id": "28eccffc",
-  "href": "https://www.magazinevoce.com.br/magazinein_400408/tenis-adidas-lite-racer-4-0/p/gckg277bg6/es/osnr/",
-  "antes": "179,99",
-  "agora": "169,99",
-  "pct": 6,
-  "data": "2026-11-05"
- },
- {
   "id": "413f76ea",
   "href": "https://meli.la/1niLsny",
   "antes": "71,09",
   "agora": "67,09",
-  "pct": 6,
-  "data": "2026-11-05"
- },
- {
-  "id": "aa0401d5",
-  "href": "https://www.amazon.com.br/dp/B0FP71XNBN?tag=herlisonsanto-20",
-  "antes": "33,99",
-  "agora": "32,09",
   "pct": 6,
   "data": "2026-11-05"
  },
@@ -224,12 +224,12 @@
   "data": "2026-10-29"
  },
  {
-  "id": "d99a3369",
-  "href": "https://www.amazon.com.br/dp/B00007ISWA?tag=herlisonsanto-20",
-  "antes": "89,90",
-  "agora": "85,40",
+  "id": "470d5163",
+  "href": "https://www.amazon.com.br/dp/B079VXP6B6?tag=herlisonsanto-20",
+  "antes": "41,99",
+  "agora": "39,74",
   "pct": 5,
-  "data": "2026-11-05"
+  "data": "2026-11-08"
  },
  {
   "id": "f384a963",
@@ -312,14 +312,6 @@
   "data": "2026-11-05"
  },
  {
-  "id": "470d5163",
-  "href": "https://www.amazon.com.br/dp/B079VXP6B6?tag=herlisonsanto-20",
-  "antes": "42,65",
-  "agora": "41,99",
-  "pct": 2,
-  "data": "2026-10-29"
- },
- {
   "id": "22f38da9",
   "href": "https://s.shopee.com.br/2gC6Sb9kh8",
   "antes": "1.899,00",
@@ -340,22 +332,6 @@
   "href": "https://www.amazon.com.br/dp/B0785X3V3Z?tag=herlisonsanto-20",
   "antes": "149,99",
   "agora": "148,09",
-  "pct": 1,
-  "data": "2026-11-05"
- },
- {
-  "id": "1e8701dd",
-  "href": "https://www.amazon.com.br/dp/B075QRWRYP?tag=herlisonsanto-20",
-  "antes": "116,99",
-  "agora": "115,99",
-  "pct": 1,
-  "data": "2026-11-05"
- },
- {
-  "id": "feb13ddd",
-  "href": "https://meli.la/1QgYnXj",
-  "antes": "35,79",
-  "agora": "35,43",
   "pct": 1,
   "data": "2026-11-05"
  },

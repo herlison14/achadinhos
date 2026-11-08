@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-08 04:47",
+ "atualizado": "2026-11-08 12:14",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -69,6 +69,15 @@
    "nome": "MODA",
    "stories": [
     {
+     "id": "2026-11-11-story-cebbce0e",
+     "data": "2026-11-11",
+     "hora": "18:30",
+     "tema": "Tênis esportivo masculino Olimp para caminhada e academia",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-11-story-cebbce0e/01.jpg"
+    },
+    {
      "id": "2026-11-10-story-28eccffc",
      "data": "2026-11-10",
      "hora": "18:30",
@@ -124,6 +133,15 @@
    "nome": "COZINHA",
    "stories": [
     {
+     "id": "2026-11-11-story-85b81b24",
+     "data": "2026-11-11",
+     "hora": "11:30",
+     "tema": "Escorredor de louças 2 andares em aço com porta-talheres",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-11-story-85b81b24/01.jpg"
+    },
+    {
      "id": "2026-11-08-story-5decfec6",
      "data": "2026-11-09",
      "hora": "11:30",
@@ -151,8 +169,8 @@
      "data": "2026-11-08",
      "hora": "11:30",
      "tema": "Escova Removedora de Pelos para Cães e Gatos",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-08 11:31",
      "img": "postagens/2026-11-08-story-a424992e/01.jpg"
     },
     {
