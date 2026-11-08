@@ -191,11 +191,13 @@ def main():
     itens = ler(('dados', 'itens.json'), []); posts = ler(('dados', 'posts.json'), [])
     existentes = {p['id'] for p in posts}
     slots = []                                      # (data, hora)
+    ocupados = {(p['data'], p.get('hora')) for p in posts if p.get('formato') == 'story' and p.get('status') in ('agendado', 'planejado', 'publicado')}
     if a.agora:
         slots.append((hoje, a.agora))
     for k in range(a.dias):
         d = ini + datetime.timedelta(days=k)
         for h in HORAS[:a.por_dia]:
+            if (d.isoformat(), h) in ocupados: continue      # já tem Story nesse horário: não duplica
             slots.append((d, h))
     novos = []
     prod, quedas = escolher(itens, posts, hoje, sum(1 for s in slots), None)
