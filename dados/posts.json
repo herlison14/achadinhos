@@ -1362,9 +1362,11 @@
    "postagens/2026-11-08-story-a424992e/01.jpg"
   ],
   "legenda": "Story: Escova Removedora de Pelos para Cães e Gatos: R$ 29,90 (conferido em 05/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": false
+  "sem_preco": false,
+  "ig_id": "17963766744250494",
+  "publicado_em": "2026-11-08 11:31"
  },
  {
   "id": "2026-11-09-story-site",
