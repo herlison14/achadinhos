@@ -1,14 +1,20 @@
 {
- "gerado": "2026-11-08 06:26",
+ "gerado": "2026-11-08 17:44",
  "contagem": {
-  "ALTO": 5,
-  "MEDIO": 4
+  "ALTO": 7,
+  "MEDIO": 5
  },
  "achados": [
   {
    "nivel": "ALTO",
    "area": "telegram",
    "texto": "2026-11-13-pet-amazon publicado no Instagram em 2026-11-07 12:31 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-15-casa-meli publicado no Instagram em 2026-11-08 12:32 não chegou ao canal do Telegram",
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
@@ -30,9 +36,21 @@
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-08-o-que-voce-quer-ver publicado no Instagram em 2026-11-08 10:31 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "whatsapp",
+   "texto": "rodada 2026-11-08-wa-manha (2026-11-08 09:05) não foi publicada",
+   "acao": "publicar pelo WhatsApp Web (Chrome ligado) ou marcar como cancelado"
+  },
+  {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "33 de 233 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "29 de 233 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
