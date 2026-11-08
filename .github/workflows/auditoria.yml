@@ -1,0 +1,31 @@
+name: Auditoria (robô de controle)
+on:
+  schedule:
+    - cron: "40 16 * * *"   # 13:40 (Brasília): depois das rodadas da manhã e do meio-dia
+    - cron: "40 2 * * *"    # 23:40 (Brasília): depois de tudo do dia (inclui as métricas das 22:30)
+  workflow_dispatch:
+permissions:
+  contents: write   # grava dados/auditoria.json (só contagens e ids, sem segredo)
+  issues: write     # abre/fecha a issue de alerta "Auditoria"
+  actions: read     # lê o histórico das execuções dos outros robôs
+concurrency:
+  group: auditoria
+  cancel-in-progress: false
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir tudo o que estava programado
+        run: python3 -I tools/auditor.py
+      - name: Guardar o resultado (alimenta o painel)
+        run: |
+          git config user.name "achadinhos-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add dados/auditoria.json
+          if git diff --cached --quiet; then echo "sem mudanças"; exit 0; fi
+          git commit -m "Auditoria: retrato do controle"
+          git pull --rebase
+          git push

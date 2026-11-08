@@ -88,6 +88,7 @@ a{color:var(--roxo)}
 <main>
 <nav role="tablist">
   <button role="tab" aria-selected="true" data-aba="geral">Visão geral</button>
+  <button role="tab" aria-selected="false" data-aba="controle">Controle</button>
   <button role="tab" aria-selected="false" data-aba="ofertas">Ofertas</button>
   <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
   <button role="tab" aria-selected="false" data-aba="calendario">Calendário</button>
@@ -118,6 +119,13 @@ a{color:var(--roxo)}
   </div>
 </section>
 
+<section id="controle" hidden>
+  <div class="card">
+    <h2>Robô de controle</h2>
+    <p class="sub" id="au-sub">Confere 2 vezes por dia (13:40 e 23:40) se cada robô fez o que estava programado e se os próximos posts vão passar. Nível ALTO também abre um alerta no GitHub.</p>
+    <div id="au-out"></div>
+  </div>
+</section>
 <section id="ofertas" hidden>
   <div class="ctl">
     <input id="f-q" type="search" placeholder="Buscar produto…" aria-label="Buscar produto">
@@ -429,7 +437,7 @@ Promise.all([fetch('../dados/itens.json',{cache:'no-store'}).then(function(r){re
   geral();tabelaVar();lista();calendario();hojePub();rotular('tab');rotular('tvar');rotular('tcal');
 },function(){$('#fonte').textContent='Não consegui carregar os dados.'}).catch(function(){$('#fonte').textContent='Não consegui carregar os dados.'});
 
-document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba);if(b.dataset.aba==='instagram')igCarrega();if(b.dataset.aba==='destaques')dsCarrega()})});
+document.querySelectorAll('nav button').forEach(function(b){b.addEventListener('click',function(){aba(b.dataset.aba);if(b.dataset.aba==='instagram')igCarrega();if(b.dataset.aba==='destaques')dsCarrega();if(b.dataset.aba==='controle')controle()})});
 ['#f-q','#f-loja','#f-cat','#f-sit'].forEach(function(s){$(s).addEventListener('input',lista)});
 $('#c-st').addEventListener('input',calendario);
 $('#h-ver').addEventListener('click',hojeVer);
@@ -447,6 +455,18 @@ function procurados(){
      barras(bx,d.lista.map(function(x){return [x.nome,x.n]}))})
    .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
 $('#pver').addEventListener('click',procurados);
+var auOk=false;
+function controle(){
+  if(auOk)return;
+  fetch('../dados/auditoria.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
+    auOk=true;var out=$('#au-out'),c=d.contagem||{};
+    $('#au-sub').textContent='Última conferência: '+(d.gerado||'').replace(/(\d{4})-(\d\d)-(\d\d)/,'$3/$2/$1')+'. Roda 2 vezes por dia (13:40 e 23:40); nível ALTO abre um alerta no GitHub.';
+    var g=el('div','grid');[['ALTO',c.ALTO||0],['MÉDIO',c.MEDIO||0],['INFO',c.INFO||0]].forEach(function(x){var k=el('div','card');k.appendChild(el('div','k',String(x[1])));k.appendChild(el('div','l',x[0]));g.appendChild(k)});out.appendChild(g);
+    if(!d.achados||!d.achados.length){out.appendChild(el('div','msg','Tudo conforme o programado.'));return}
+    var ul=el('ul');ul.style.marginTop='12px';
+    d.achados.forEach(function(a){var li=el('li');var b=el('b',0,(a.nivel==='MEDIO'?'MÉDIO':a.nivel)+' · '+a.area+': ');li.appendChild(b);li.appendChild(document.createTextNode(a.texto+(a.acao?' → '+a.acao:'')));li.style.marginBottom='6px';ul.appendChild(li)});
+    out.appendChild(ul)})
+   .catch(function(){$('#au-out').appendChild(el('div','msg','O retrato aparece aqui depois da primeira auditoria.'))})}
 /* ---- Ganhos ---- */
 var gLinhas=[];
 function numBR(v){v=String(v||'').replace(/R\$|\s/g,'');if(!v)return NaN;return parseFloat(v.replace(/\./g,'').replace(',','.'))}

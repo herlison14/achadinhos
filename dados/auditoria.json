@@ -1,0 +1,51 @@
+{
+ "gerado": "2026-11-07 23:00",
+ "contagem": {
+  "ALTO": 4,
+  "MEDIO": 3
+ },
+ "achados": [
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-13-pet-amazon publicado no Instagram em 2026-11-07 12:31 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-05-4-jeitos-preco-bom publicado no Instagram em 2026-11-05 14:31 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-06-lista-11-11-black-friday publicado no Instagram em 2026-11-06 21:01 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-07-como-usar-o-site publicado no Instagram em 2026-11-07 17:31 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "31 de 233 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-09 sem post de crescimento",
+   "acao": "completar a programação"
+  }
+ ]
+}
