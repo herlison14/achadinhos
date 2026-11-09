@@ -137,6 +137,9 @@ def final(data, lojas):
     d.text((W / 2, 1180), 'Publicidade: links de afiliado', font=NUN8(36), fill=ROXO, anchor='mm')
     rodape(d, LOJAS[list(lojas)[0]][0] if len(lojas) == 1 else 'misto', data); return img
 
+def dt(iso):
+    a, m, d = iso.split('-'); return '%s/%s/%s' % (d, m, a)
+
 def main():
     saida = sys.argv[1]
     posts = {p['id']: p for p in json.load(open(os.path.join(RAIZ, 'dados', 'posts.json'), encoding='utf-8'))}
@@ -144,7 +147,7 @@ def main():
     for pid in sys.argv[2:]:
         post = posts[pid]; titulo, data, prods = ler(post, itens); lojas = {p[4] for p in prods}
         pasta = os.path.join(saida, pid); os.makedirs(pasta, exist_ok=True)
-        cards = [capa(post, titulo, data, prods, lojas)] + [produto(i, p, data) for i, p in enumerate(prods, 1)] + [final(data, lojas)]
+        cards = [capa(post, titulo, data, prods, lojas)] + [produto(i, p, data if len(lojas) == 1 else dt(itens[p[3]]['conferido'])) for i, p in enumerate(prods, 1)] + [final(data, lojas)]
         for k, c in enumerate(cards, 1): c.save(os.path.join(pasta, '%02d.jpg' % k), 'JPEG', quality=92)
         print(pid, len(cards), 'cards')
 if __name__ == '__main__':
