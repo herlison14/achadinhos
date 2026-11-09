@@ -36,6 +36,9 @@ def loja_id(v):
     v = sem_acento(v)
     if v == "ml" or v.startswith("mercado"):
         return "meli"
+    v = re.sub(r"[^a-z]", "", v)          # "KaBuM!", "Kabum BR", "Nike BR" (nomes da Awin)
+    if v not in LOJAS and v.endswith("br"):
+        v = v[:-2]
     return v if v in LOJAS else ""
 
 

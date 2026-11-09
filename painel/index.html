@@ -471,7 +471,7 @@ function controle(){
 var gLinhas=[];
 function numBR(v){v=String(v||'').replace(/R\$|\s/g,'');if(!v)return NaN;return parseFloat(v.replace(/\./g,'').replace(',','.'))}
 function lojaId(v){v=String(v||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();
-  if(v==='ml'||v.indexOf('mercado')===0)return 'meli';return LOJA[v]?v:''}
+  if(v==='ml'||v.indexOf('mercado')===0)return 'meli';v=v.replace(/[^a-z]/g,'');if(!LOJA[v])v=v.replace(/br$/,'');return LOJA[v]?v:''}
 function lerCSV(txt){
   var ls=txt.replace(/^\uFEFF/,'').split(/\r?\n/).filter(function(l){return l.trim()});
   var ok=[],er=[];

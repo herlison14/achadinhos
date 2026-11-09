@@ -23,6 +23,12 @@
 
   function loja(h) {
     h = h || '';
+    if (/awin1\.com\//.test(h)) {
+      var u = '';
+      try { u = decodeURIComponent((h.match(/[?&]ued=([^&]+)/) || [])[1] || ''); } catch (e) {}
+      var a = u.match(/^https?:\/\/(?:[^\/]*\.)?(kabum|nike|dafiti|adidas)\.com\.br(?:[\/?#]|$)/);
+      return a ? a[1] : 'outra';
+    }
     return /magazinevoce/.test(h) ? 'magalu' : /shopee/.test(h) ? 'shopee' : /amazon/.test(h) ? 'amazon' : /meli\.la|mercadolivre/.test(h) ? 'meli' : /aliexpress/.test(h) ? 'aliexpress' : 'outra';
   }
 

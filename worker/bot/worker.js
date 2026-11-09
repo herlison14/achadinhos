@@ -12,7 +12,7 @@ const REPO = 'herlison14/achadinhos';
 const ITENS = 'https://raw.githubusercontent.com/' + REPO + '/main/dados/itens.json';
 const SITE = 'https://achadinhosdobinga.com.br';
 const AVISO = 'Publicidade: links de afiliado.';
-const LOJAS = { amazon: 'Amazon', magalu: 'Magalu', meli: 'Mercado Livre', shopee: 'Shopee', aliexpress: 'AliExpress' };
+const LOJAS = { amazon: 'Amazon', magalu: 'Magalu', meli: 'Mercado Livre', shopee: 'Shopee', aliexpress: 'AliExpress', kabum: 'KaBuM!', nike: 'Nike', dafiti: 'Dafiti', adidas: 'adidas' };
 const DIAS_PRECO = 7, DIAS_PAGINA = 30, MAX = 3;
 const POSTS = 'https://raw.githubusercontent.com/' + REPO + '/main/dados/posts.json';
 
@@ -178,7 +178,8 @@ async function carregar() {
   const r = await fetch(ITENS, { cf: { cacheTtl: 300 } });
   if (!r.ok) throw new Error('itens.json: HTTP ' + r.status);
   const j = await r.json();
-  cache = { t: Date.now(), itens: (Array.isArray(j) ? j : j.itens || []).map(({ id, loja, cat, nome, href, preco, conferido }) => ({ id, loja, cat, nome, href, preco, conferido })) };
+  // adidas (Awin): os termos do programa não autorizam Telegram nem mensagem direta; fica só no site e no feed
+  cache = { t: Date.now(), itens: (Array.isArray(j) ? j : j.itens || []).filter((i) => i.loja !== 'adidas').map(({ id, loja, cat, nome, href, preco, conferido }) => ({ id, loja, cat, nome, href, preco, conferido })) };
   return cache.itens;
 }
 

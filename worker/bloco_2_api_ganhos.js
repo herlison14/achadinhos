@@ -1,7 +1,7 @@
 // ---- Ganhos (comissao) no D1: GET e POST /api/ganhos --------------------------
 // Mesma auth do /api/cliques: Authorization: Bearer <REPORT_KEY>. Os valores ficam
 // so no banco D1 (privado); nada de comissao vai para o repositorio publico.
-const LOJAS_G = ['shopee', 'amazon', 'meli', 'aliexpress', 'magalu'];
+const LOJAS_G = ['shopee', 'amazon', 'meli', 'aliexpress', 'magalu', 'kabum', 'nike', 'dafiti', 'adidas'];
 
 function corsGanhos(origin) {
   const h = {
