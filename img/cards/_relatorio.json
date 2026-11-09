@@ -1,41 +1,22 @@
 [
  {
   "id": "3a34e13c",
-  "ok": false,
-  "tamanho": "200x200",
-  "erro": "imagem pequena demais"
+  "ok": true,
+  "tamanho": "1000x1000"
  },
  {
   "id": "89e2bae9",
-  "ok": false,
-  "tamanho": "200x200",
-  "erro": "imagem pequena demais"
+  "ok": true,
+  "tamanho": "1000x1000"
  },
  {
   "id": "4118cf12",
-  "ok": false,
-  "tamanho": "200x200",
-  "erro": "imagem pequena demais"
+  "ok": true,
+  "tamanho": "1000x1000"
  },
  {
   "id": "ac9888b2",
-  "ok": false,
-  "tamanho": "200x200",
-  "erro": "imagem pequena demais"
- },
- {
-  "id": "ec417f55",
   "ok": true,
-  "tamanho": "1300x1300"
- },
- {
-  "id": "53df7a2c",
-  "ok": true,
-  "tamanho": "1300x1300"
- },
- {
-  "id": "d5b93bb7",
-  "ok": true,
-  "tamanho": "1300x1300"
+  "tamanho": "400x400"
  }
 ]
