@@ -14,7 +14,8 @@ W, H = 1080, 1350
 ROXO, AMARELO, VERM, LAV, ROXO2 = '#291258', '#FFC93B', '#DC3C46', '#F4F0FF', '#5B4B8A'
 LOJAS = {'shopee': ('Shopee', '#EE4D2D', '#FFFFFF'), 'amazon': ('Amazon', '#232F3E', '#FF9900'),
          'meli': ('Mercado Livre', '#FFE600', '#2D3277'), 'magalu': ('Magalu', '#0086FF', '#FFFFFF'),
-         'aliexpress': ('AliExpress', '#E62E04', '#FFFFFF')}
+         'aliexpress': ('AliExpress', '#E62E04', '#FFFFFF'), 'kabum': ('KaBuM!', '#FF6500', '#FFFFFF'),
+         'nike': ('Nike', '#111111', '#FFFFFF'), 'dafiti': ('Dafiti', '#000000', '#FFFFFF'), 'adidas': ('adidas', '#000000', '#FFFFFF')}
 
 def fonte(nome, tam):
     return ImageFont.truetype(os.path.join(FONTES, nome + '.ttf'), tam)

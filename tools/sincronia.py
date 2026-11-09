@@ -9,6 +9,16 @@ O painel (/painel/), o canal do Telegram, os textos do WhatsApp e o Instagram le
 dados/itens.json na hora de rodar; por isso o que importa é a página estar gerada e os
 dados coerentes. Sem dependências."""
 import html, json, os, re, sys
+from urllib.parse import urlsplit, parse_qs
+
+
+def loja_awin(href):
+    """Loja de destino de um deeplink da Awin (parâmetro ued); '?' se não for uma das lojas aprovadas."""
+    host = urlsplit((parse_qs(urlsplit(href).query).get('ued') or [''])[0]).netloc.lower()
+    for dom, l in (('kabum.com.br', 'kabum'), ('nike.com.br', 'nike'), ('dafiti.com.br', 'dafiti'), ('adidas.com.br', 'adidas')):
+        if host == dom or host.endswith('.' + dom):
+            return l
+    return '?'
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 J = lambda *p: os.path.join(RAIZ, *p)
@@ -107,6 +117,10 @@ def main():
             ok = 's.click.aliexpress.com/e/' in h
         elif l == 'magalu':
             ok = 'magazinevoce.com.br/magazinein_400408/' in h
+        elif l in ('kabum', 'nike', 'dafiti', 'adidas'):
+            # Awin: deeplink completo com o nosso ID de afiliado e destino na loja certa
+            ok = ('awin1.com/cread.php' in h and 'awinaffid=3147693' in h
+                  and 'awinmid=' in h and loja_awin(h) == l)
         else:
             ok = False
         if not ok:

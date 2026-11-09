@@ -18,7 +18,8 @@ POSTS = RAIZ / "dados" / "posts.json"
 ITENS = RAIZ / "dados" / "itens.json"
 RAW = "https://raw.githubusercontent.com/herlison14/achadinhos/main/"
 SITE = "https://achadinhosdobinga.com.br"
-LOJAS = {"shopee": "Shopee", "amazon": "Amazon", "meli": "Mercado Livre", "aliexpress": "AliExpress", "magalu": "Magalu"}
+LOJAS = {"shopee": "Shopee", "amazon": "Amazon", "meli": "Mercado Livre", "aliexpress": "AliExpress", "magalu": "Magalu",
+         "kabum": "KaBuM!", "nike": "Nike", "dafiti": "Dafiti", "adidas": "adidas"}
 BRT = timezone(timedelta(hours=-3))
 DESDE = "2026-10-31 00:00"      # não reenvia posts antigos
 JANELA_H = 36                    # só posts publicados nas últimas 36 h
@@ -56,7 +57,7 @@ def texto_produtos(post, itens):
     linhas, datas, amazon = [], [], False
     for pid in post.get("produtos", []):
         i = itens.get(pid)
-        if not i:
+        if not i or i["loja"] == "adidas":   # termos da adidas (Awin) não autorizam Telegram
             continue
         amazon = amazon or i["loja"] == "amazon"
         datas.append(i["conferido"])

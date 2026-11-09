@@ -19,7 +19,11 @@ ITENS = RAIZ / "dados" / "itens.json"
 LOG = RAIZ / "dados" / "canais.json"
 SITE = "https://achadinhosdobinga.com.br"
 LOJAS = {"shopee": "Shopee", "amazon": "Amazon", "meli": "Mercado Livre",
-         "aliexpress": "AliExpress", "magalu": "Magalu"}
+         "aliexpress": "AliExpress", "magalu": "Magalu",
+         "kabum": "KaBuM!", "nike": "Nike", "dafiti": "Dafiti", "adidas": "adidas"}
+# Termos do programa adidas (Awin) só autorizam Facebook, Instagram, TikTok, YouTube e blogs/site:
+# Telegram e WhatsApp ficam de fora até aprovação por escrito da adidas.
+FORA_DOS_CANAIS = {"adidas"}
 AVISO = "Publicidade: links de afiliado. Preços e estoque mudam: confira na loja."
 
 
@@ -48,6 +52,8 @@ def escolher(n, hoje=None):
         try:
             idade = (hoje - datetime.strptime(i["conferido"], "%Y-%m-%d").date()).days
         except Exception:
+            continue
+        if i.get("loja") in FORA_DOS_CANAIS:
             continue
         if idade <= 7 and i["id"] not in ja and i.get("preco") and i.get("href"):
             ok.append(i)

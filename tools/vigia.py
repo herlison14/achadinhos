@@ -23,11 +23,24 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IDX = os.path.join(RAIZ, 'index.html')
 ITENS = os.path.join(RAIZ, 'dados', 'itens.json')
 HIST = os.path.join(RAIZ, 'dados', 'historico.json')
-NOMES = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu'}
+NOMES = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu',
+         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas'}
 OMITIR_APOS_DIAS = 30   # item sem conferência há mais de N dias sai da página (build)
 ALERTA_APOS_DIAS = 7    # relatório avisa itens sem conferência há mais de N dias
 
+# Awin (afiliado 3147693): deeplink completo awin1.com/cread.php?awinmid=..&awinaffid=3147693&ued=<url da loja>
+AWIN = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas'}
+
+def loja_awin(href):
+    from urllib.parse import urlsplit, parse_qs
+    q = parse_qs(urlsplit(href).query)
+    host = urlsplit((q.get('ued') or [''])[0]).netloc.lower()
+    for dom, l in AWIN.items():
+        if host == dom or host.endswith('.' + dom): return l
+    return '?'
+
 def loja_de(href):
+    if 'awin1.com/' in href: return loja_awin(href)
     if 'shopee' in href: return 'shopee'
     if 'amazon' in href: return 'amazon'
     if 'meli.la' in href or 'mercadolivre' in href: return 'meli'
@@ -223,7 +236,8 @@ def cmd_relatorio(dias):
             n += 1; print('  %3d dias  [%s] %s  (%s)  id=%s' % (d, NOMES[i['loja']], i['nome'][:50], br(i['conferido']), i['id']))
     if not n: print('  nenhum')
 
-CTA = {'shopee': 'Ver na Shopee', 'amazon': 'Ver na Amazon', 'meli': 'Ver no Mercado Livre', 'aliexpress': 'Ver no AliExpress', 'magalu': 'Ver no Magalu'}
+CTA = {'shopee': 'Ver na Shopee', 'amazon': 'Ver na Amazon', 'meli': 'Ver no Mercado Livre', 'aliexpress': 'Ver no AliExpress', 'magalu': 'Ver no Magalu',
+       'kabum': 'Ver na KaBuM!', 'nike': 'Ver na Nike', 'dafiti': 'Ver na Dafiti', 'adidas': 'Ver na adidas'}
 
 def cmd_importar(data):
     """Lê o index.html e alinha dados/ com ele: preço novo -> atualiza + histórico; item novo -> entra; item sumido -> sai."""
@@ -233,7 +247,7 @@ def cmd_importar(data):
     novos = []
     for m in SEC.finditer(h):
         for li in LI.findall(m.group(3)):
-            n = parse(li, m.group(2), {'*': data, 'shopee': data, 'amazon': data, 'meli': data, 'aliexpress': data, 'magalu': data})
+            n = parse(li, m.group(2), dict({'*': data}, **{l: data for l in NOMES}))
             a = antigos.get(n['id'])
             if a:
                 if a['preco'] != n['preco']:

@@ -23,7 +23,8 @@ from datetime import date, datetime, timedelta
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOJAS = {"shopee": "Shopee", "amazon": "Amazon", "meli": "Mercado Livre",
-         "aliexpress": "AliExpress", "magalu": "Magalu"}
+         "aliexpress": "AliExpress", "magalu": "Magalu",
+         "kabum": "KaBuM!", "nike": "Nike", "dafiti": "Dafiti", "adidas": "adidas"}
 
 
 def sem_acento(s):

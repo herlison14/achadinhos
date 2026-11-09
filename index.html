@@ -124,6 +124,9 @@ main>ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-c
 .lj-meli{background:#FFE600;color:#2D3277}
 .lj-aliexpress{background:#FFE4E4;color:#C4161C}
 .lj-magalu{background:#0086FF;color:#fff}
+.lj-kabum{background:#FFE8D9;color:#B34700}
+.lj-nike,.lj-adidas{background:#111;color:#fff}
+.lj-dafiti{background:#EDEDED;color:#111}
 /* estados */
 .bs{font-size:.82rem;color:var(--mut);margin:10px 2px 0;min-height:1.2em}
 .vazio{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-top:14px}
@@ -359,11 +362,11 @@ var $$=function(s){return [].slice.call(document.querySelectorAll(s))};
 var q=$('#q');if(!q)return;
 var bs=$('#bs'),vz=$('#vazio'),vmsg=$('#vmsg'),clr=$('#lp'),sel=$('#lj'),chips=$('#chips'),rail=$('#rail'),baratos=$('#baratos'),lista=$('#ofertas'),up=$('#up');
 var items=$$('#ofertas li.it'),heads=$$('#ofertas h2');
-var NAMES={shopee:'Shopee',amazon:'Amazon',meli:'Mercado Livre',aliexpress:'AliExpress',magalu:'Magalu'};
+var NAMES={shopee:'Shopee',amazon:'Amazon',meli:'Mercado Livre',aliexpress:'AliExpress',magalu:'Magalu',kabum:'KaBuM!',nike:'Nike',dafiti:'Dafiti',adidas:'adidas'};
 var st={cat:'',loja:''};
 function norm(t){return t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
 function slug(t){return norm(t).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
-function storeOf(h){h=h||'';return /shopee/.test(h)?'shopee':/amazon/.test(h)?'amazon':/meli\.la|mercadolivre/.test(h)?'meli':/aliexpress/.test(h)?'aliexpress':/magazinevoce/.test(h)?'magalu':'';}
+function storeOf(h){h=h||'';if(/awin1\.com\//.test(h)){var u='';try{u=decodeURIComponent((h.match(/[?&]ued=([^&]+)/)||[])[1]||'')}catch(e){}var a=u.match(/^https?:\/\/(?:[^\/]*\.)?(kabum|nike|dafiti|adidas)\.com\.br(?:[\/?#]|$)/);return a?a[1]:''}return /shopee/.test(h)?'shopee':/amazon/.test(h)?'amazon':/meli\.la|mercadolivre/.test(h)?'meli':/aliexpress/.test(h)?'aliexpress':/magazinevoce/.test(h)?'magalu':'';}
 function priceOf(li){var b=li.querySelector('.pr b');if(!b)return NaN;return parseFloat(b.textContent.replace(/[^\d,]/g,'').replace(',','.'));}
 function mk(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e;}
 var nOf=$('#n-of');if(nOf)nOf.textContent=items.length;

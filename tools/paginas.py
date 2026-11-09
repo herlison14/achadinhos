@@ -6,7 +6,8 @@ Nada de preço, desconto ou estoque inventado. Também regrava o sitemap.xml com
 import datetime, html, json, os, re, unicodedata
 
 SITE = 'https://achadinhosdobinga.com.br/'
-LOJAS = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu'}
+LOJAS = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu',
+         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas'}
 EXTRA_CSS = (
     '.pg h1{font-size:clamp(1.7rem,6.4vw,2.4rem);margin:18px 0 8px}.pg .intro{max-width:62ch;color:var(--mut);margin:0 0 14px}'
     '.pg .nav2{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}'

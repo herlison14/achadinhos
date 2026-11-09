@@ -1,10 +1,16 @@
 {
- "gerado": "2026-11-09 07:14",
+ "gerado": "2026-11-09 18:51",
  "contagem": {
-  "ALTO": 6,
-  "MEDIO": 2
+  "MEDIO": 4,
+  "ALTO": 7
  },
  "achados": [
+  {
+   "nivel": "MEDIO",
+   "area": "publicação",
+   "texto": "2026-11-11-11-11-ao-vivo-ofertas-qu está só 'planejado' para 2026-11-11 08:00 (não vai sair sozinho)",
+   "acao": "aprovar (agendado) ou cancelar"
+  },
   {
    "nivel": "ALTO",
    "area": "telegram",
@@ -15,6 +21,12 @@
    "nivel": "ALTO",
    "area": "telegram",
    "texto": "2026-11-15-casa-meli publicado no Instagram em 2026-11-08 12:32 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-17-ferramentas-amazon publicado no Instagram em 2026-11-09 12:32 não chegou ao canal do Telegram",
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
@@ -40,6 +52,12 @@
    "area": "telegram",
    "texto": "2026-11-08-o-que-voce-quer-ver publicado no Instagram em 2026-11-08 10:31 não chegou ao canal do Telegram",
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "whatsapp",
+   "texto": "rodada 2026-11-09-wa-manha (2026-11-09 09:05) não foi publicada",
+   "acao": "publicar pelo WhatsApp Web (Chrome ligado) ou marcar como cancelado"
   },
   {
    "nivel": "MEDIO",
