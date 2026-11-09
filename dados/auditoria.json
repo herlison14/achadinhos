@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-08 17:44",
+ "gerado": "2026-11-08 23:52",
  "contagem": {
-  "ALTO": 7,
-  "MEDIO": 5
+  "ALTO": 6,
+  "MEDIO": 2
  },
  "achados": [
   {
@@ -43,12 +43,6 @@
   },
   {
    "nivel": "MEDIO",
-   "area": "whatsapp",
-   "texto": "rodada 2026-11-08-wa-manha (2026-11-08 09:05) não foi publicada",
-   "acao": "publicar pelo WhatsApp Web (Chrome ligado) ou marcar como cancelado"
-  },
-  {
-   "nivel": "MEDIO",
    "area": "preços",
    "texto": "29 de 233 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
@@ -58,24 +52,6 @@
    "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
-   "texto": "2026-11-09 sem post de crescimento",
-   "acao": "completar a programação"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
-   "texto": "2026-11-10 sem post de crescimento",
-   "acao": "completar a programação"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "robôs",
-   "texto": "fluxo 'Canal do Telegram' falhou 1 vez(es) nas últimas 26 h",
-   "acao": "abrir o log da execução"
   }
  ]
 }
