@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#291258">
-<meta name="description" content="Ofertas conferidas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu. @achadinhosdobinga">
-<meta property="og:title" content="Achadinhos do Binga: ofertas conferidas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu">
-<meta property="og:description" content="Ofertas conferidas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu.">
+<meta name="description" content="Ofertas conferidas da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress. @achadinhosdobinga">
+<meta property="og:title" content="Achadinhos do Binga: ofertas conferidas da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress">
+<meta property="og:description" content="Ofertas conferidas da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Achadinhos do Binga">
 <meta property="og:locale" content="pt_BR">
@@ -14,7 +14,7 @@
 <meta property="og:image" content="https://achadinhosdobinga.com.br/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Achadinhos do Binga: ofertas conferidas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu">
+<meta property="og:image:alt" content="Achadinhos do Binga: ofertas conferidas da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://achadinhosdobinga.com.br/">
 <meta name="google-site-verification" content="jP5ZRS7zJw4AGv4pD7YZourRuagVkFAcPlPiMXSYo_o">
@@ -22,7 +22,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<title>Achadinhos do Binga: ofertas conferidas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu</title>
+<title>Achadinhos do Binga: ofertas conferidas da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress</title>
 <link rel="preload" href="fonts/nunito-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fontes.css">
 <style>
@@ -206,6 +206,32 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .rc .p{min-height:2.2em}
 @media (prefers-reduced-motion:reduce){.dot{transition:none}}
 
+/* slide de destaque (11.11 / lojas novas): fotos reais, preço e loja de cada item */
+.s6{background:radial-gradient(circle at 92% 8%,rgba(255,201,59,.40),transparent 42%),radial-gradient(circle at 0% 100%,rgba(255,101,0,.35),transparent 45%),linear-gradient(140deg,#120A2A 0%,#2A1557 55%,#3B1A6E 100%)}
+.s6 .ey{justify-self:start;display:inline-flex;align-items:center;gap:8px;background:#FFC93B;color:#291258;padding:5px 12px;border-radius:999px;opacity:1}
+.s6 .big2{max-width:16ch}
+.s6 .big2 em{font-style:normal;color:var(--gold)}
+.s6 .sn{opacity:.92}
+.vit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%;margin-top:6px;position:relative;z-index:1}
+.vc{display:flex;flex-direction:column;background:#fff;color:#291258;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .2s}
+.vc:hover{transform:translateY(-4px)}
+.vc .fo{position:relative;aspect-ratio:1/1;background:#fff;display:grid;place-items:center}
+.vc .fo img{width:88%;height:88%;object-fit:contain}
+.vc .lj{position:absolute;left:8px;top:8px}
+.vc .in{padding:8px 10px 10px;border-top:1px solid #EEE8FA}
+.vc .nm{font-weight:800;font-size:.78rem;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.4em}
+.vc .pr{margin-top:4px;font-family:var(--disp);font-size:1.15rem;color:#DC3C46;line-height:1}
+.vc .pr small{font-family:var(--body);font-size:.68rem;color:#5B4B8A;font-weight:700;margin-left:3px}
+.s6 .ft{margin:2px 0 0;font-size:.72rem;opacity:.8;position:relative;z-index:1}
+@media (min-width:720px){
+.s6{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);column-gap:26px;align-items:center}
+.s6>*{grid-column:1}
+.s6 .vit{grid-column:2;grid-row:1 / span 6;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;max-width:none!important}
+.vc:nth-child(odd){transform:translateY(10px) rotate(-1.5deg)}
+.vc:nth-child(even){transform:translateY(-10px) rotate(1.5deg)}
+.vc:hover{transform:translateY(-14px) rotate(0)}
+}
+@media (prefers-reduced-motion:reduce){.vc{transition:none}}
 /* fotos no banner */
 .pics{display:flex;gap:10px;margin-top:12px;position:relative;z-index:1;align-items:center}
 .pics:empty{display:none}
@@ -237,7 +263,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <div class="ann"><div class="in">
 <span class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Preços conferidos em <b>29/10/2026</b> (Shopee: 30/10/2026; Amazon: 04/11/2026; Magalu e Mercado Livre: 05/11/2026; KaBuM! e Nike: 09/11/2026)</span>
 <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>Novas ofertas toda semana</span>
-<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5 10a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 9Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg>Shopee · Amazon · Mercado Livre · AliExpress · Magalu</span>
+<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5 10a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 9Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg>Shopee · Amazon · Mercado Livre · Magalu · KaBuM! · Nike · AliExpress</span>
 </div></div>
 <div class="wrap brand">
 <a class="lg" href="./" aria-label="achadinhos do binga"><img src="data:image/webp;base64,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" alt="" width="48" height="48"><span>achadinhos<b>do binga</b></span></a>
@@ -261,9 +287,16 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <div class="wrap">
 <section class="bnr" aria-roledescription="carousel" aria-label="Destaques da semana">
 <div class="bnr-t" id="bnr-t" tabindex="0">
+<article class="sl s6" id="sl-novas" aria-roledescription="slide" aria-label="Destaque">
+<p class="ey" id="s6-e">Novidade no site</p>
+<div class="big2" id="s6-t">Chegaram <em>KaBuM!</em> e <em>Nike</em></div>
+<p class="sn">Fone, mouse, teclado e tênis com preço conferido na loja. Toque no produto e confira antes de pagar.</p>
+<div class="vit" id="s6-v"></div>
+<p class="ft" id="s6-f"></p>
+</article>
 <article class="sl hero" aria-roledescription="slide" aria-label="1 de 4">
 <h1>Achadinhos da <em>semana</em></h1>
-<p><b id="n-of">240</b> ofertas da Shopee, Amazon, Mercado Livre, AliExpress e Magalu, com preço conferido em 29/10/2026 (Shopee: 30/10/2026; Amazon: 04/11/2026; Magalu e Mercado Livre: 05/11/2026; KaBuM! e Nike: 09/11/2026).</p>
+<p><b id="n-of">240</b> ofertas da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress, com preço conferido em 29/10/2026 (Shopee: 30/10/2026; Amazon: 04/11/2026; Magalu e Mercado Livre: 05/11/2026; KaBuM! e Nike: 09/11/2026).</p>
 <div class="btns">
 <a class="btn p" href="#ofertas">Ver as ofertas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
 <a class="btn s" href="https://instagram.com/achadinhosdobinga" rel="noopener">Seguir no Instagram</a>
@@ -349,7 +382,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 </main>
 <footer>
 <!--paginas-inicio--><nav class="pgs" aria-label="Ofertas por categoria e por loja"><h2>Ver por categoria e por loja</h2><ul class="nav2"><li><a href="/ofertas/beleza-e-cuidados/">Beleza e cuidados</a></li><li><a href="/ofertas/casa-e-cozinha/">Casa e cozinha</a></li><li><a href="/ofertas/ferramentas-e-garagem/">Ferramentas e garagem</a></li><li><a href="/ofertas/infantil-e-brinquedos/">Infantil e brinquedos</a></li><li><a href="/ofertas/mercado-e-guloseimas/">Mercado e guloseimas</a></li><li><a href="/ofertas/moda-esporte-e-eletronicos/">Moda, esporte e eletrônicos</a></li><li><a href="/ofertas/pet/">Pet</a></li><li><a href="/lojas/shopee/">Shopee</a></li><li><a href="/lojas/amazon/">Amazon</a></li><li><a href="/lojas/meli/">Mercado Livre</a></li><li><a href="/lojas/aliexpress/">AliExpress</a></li><li><a href="/lojas/magalu/">Magalu</a></li><li><a href="/lojas/kabum/">KaBuM!</a></li><li><a href="/lojas/nike/">Nike</a></li><li><a href="/ofertas/natal/">Natal 2026</a></li></ul></nav><!--paginas-fim-->
-<p class="aviso">Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, AliExpress e Magalu e eu posso receber comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em 29/10/2026 (Shopee: 30/10/2026; Amazon: 04/11/2026; Magalu e Mercado Livre: 05/11/2026; KaBuM! e Nike: 09/11/2026) e podem ter mudado. No Magalu, o preço mostrado é o do Pix; no cartão pode ser maior. Como Associado da Amazon, eu ganho com compras qualificadas.</p>
+<p class="aviso">Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress e eu posso receber comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em 29/10/2026 (Shopee: 30/10/2026; Amazon: 04/11/2026; Magalu e Mercado Livre: 05/11/2026; KaBuM! e Nike: 09/11/2026) e podem ter mudado. No Magalu, o preço mostrado é o do Pix; no cartão pode ser maior. Como Associado da Amazon, eu ganho com compras qualificadas.</p>
 <p class="fl"><a href="https://instagram.com/achadinhosdobinga" rel="noopener">Instagram @achadinhosdobinga</a><a href="https://t.me/achadinhosdobinga" rel="noopener">Telegram</a><a href="https://whatsapp.com/channel/0029VbDhqE4FSAt3fXMI7f1S" rel="noopener">WhatsApp</a><a href="privacidade.html">Privacidade</a><a href="#topo">Voltar ao topo</a><span>&copy; 2026 Achadinhos do Binga</span></p>
 </footer>
 </div>
@@ -475,6 +508,29 @@ box.appendChild(c);n++;if(x.data>ult)ult=x.data;
 if(n){qs.hidden=false;var s=$('#qd-s');if(s&&ult){var d=ult.split('-');s.textContent='Preço menor que na conferência anterior (última queda: '+d[2]+'/'+d[1]+'/'+d[0]+').';}upd();}
 }).catch(function(){});
 })();
+/* slide de destaque: produtos reais da KaBuM! e da Nike (preço e link vêm da própria lista) */
+(function(){
+var sl=$('#sl-novas'),box=$('#s6-v');if(!sl||!box)return;
+if(!items.length){sl.parentNode.removeChild(sl);return;}
+var LJ=['kabum','nike'],esc=[];
+LJ.forEach(function(k){var a=items.filter(function(li){return li._s===k;});a.sort(function(x,y){return (/fone|tênis/i.test(y.textContent)?1:0)-(/fone|tênis/i.test(x.textContent)?1:0);});a.slice(0,2).forEach(function(li){esc.push(li);});});
+if(esc.length<2){sl.parentNode.removeChild(sl);return;}
+esc=[esc[0],esc[2],esc[1],esc[3]].filter(Boolean);
+esc.forEach(function(li){
+var a=li.querySelector('a'),nm=li.querySelector('.nm'),pb=li.querySelector('.pr b'),ps=li.querySelector('.pr small');
+var c=mk('a','vc');c.href=a.href;c.rel='noopener sponsored';
+var fo=mk('span','fo'),im=document.createElement('img');im.alt='';im.decoding='async';im.loading='lazy';
+im.src=bigSrc(srcOf(li));im.onerror=function(){if(c.parentNode)c.parentNode.removeChild(c);};fo.appendChild(im);
+fo.appendChild(mk('span','lj lj-'+li._s,NAMES[li._s]));c.appendChild(fo);
+var tx=mk('span','in');tx.appendChild(mk('span','nm',nm?nm.textContent:''));
+var pr=mk('span','pr',pb?pb.textContent:'');if(ps)pr.appendChild(mk('small','',ps.textContent));tx.appendChild(pr);c.appendChild(tx);
+box.appendChild(c);
+});
+var hoje=new Date(),h0=new Date(hoje.getFullYear(),hoje.getMonth(),hoje.getDate()),d=Math.round((new Date(2026,10,11)-h0)/864e5);
+var e=$('#s6-e');
+if(d===0)e.textContent='Hoje é 11.11';else if(d===1)e.textContent='Amanhã é 11.11';else if(d>1&&d<=10)e.textContent='Faltam '+d+' dias para o 11.11';
+$('#s6-f').textContent='Publicidade: links de afiliado. Preço no Pix, conferido na loja; pode mudar.';
+})();
 /* banner */
 var bt=$('#bnr-t'),dots=$('#dots'),sls=$$('#bnr-t .sl'),cur=0,timer=0,parou=false;
 if(cheap.length){
@@ -521,6 +577,7 @@ function bigSrc(s){
 if(/aliexpress-media\.com/.test(s))return s.replace(/_\d+x\d+(\.(?:jpg|png))$/,'_350x350$1');
 if(s.indexOf('/280x210/')>-1)return s.replace('/280x210/','/600x450/');
 if(/m\.media-amazon\.com/.test(s))return s.replace(/\._AC_UL\d+_\./,'._AC_UL600_.');
+if(/images\.kabum\.com\.br/.test(s))return s.replace(/_m\.jpg$/,'_gg.jpg').replace('/medium/','/large/');
 return s;}
 function tile(s,cls){
 var sp=mk('span','pic'+(cls?' '+cls:'')),im=document.createElement('img');

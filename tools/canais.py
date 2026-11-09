@@ -85,7 +85,7 @@ def texto_ofertas(itens, origem):
 
 def texto_boasvindas(origem):
     return (f"*Achadinhos do Binga*\n\n"
-            "Aqui eu separo achadinhos e ofertas de Shopee, Amazon, Mercado Livre, AliExpress e Magalu, "
+            "Aqui eu separo achadinhos e ofertas de Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress, "
             "sempre com a data em que o preço foi conferido. Sem preço inventado: se mudar, o preço da loja vale.\n\n"
             f"Todas as ofertas organizadas por categoria: {SITE}/?o={origem}\n\n{AVISO}")
 

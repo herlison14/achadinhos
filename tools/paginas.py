@@ -83,7 +83,7 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
     estilo = re.search(r'<style[^>]*>(.*?)</style>', h, re.S).group(1)
     cab = _cabecalho(h)
     base, resto = datas_texto(vis)
-    aviso = ('Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, AliExpress e Magalu e eu posso receber '
+    aviso = ('Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress e eu posso receber '
              'comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em %s%s e podem '
              'ter mudado. Confirme o valor na loja antes de comprar. No Magalu, o preço mostrado é o do Pix; no cartão pode ser maior. '
              'Como Associado da Amazon, eu ganho com compras qualificadas.' % (base, resto))
@@ -131,7 +131,7 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
         caminho = 'ofertas/%s/' % slug(c)
         paginas.append((caminho, _pagina(
             h, estilo, cab, '%s: ofertas com preço conferido | Achadinhos do Binga' % c,
-            'Veja %d ofertas de %s com preço conferido na Shopee, Amazon, Mercado Livre, AliExpress e Magalu. De %s a %s.' % (len(its), c.lower(), mn, mx),
+            'Veja %d ofertas de %s com preço conferido na Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress. De %s a %s.' % (len(its), c.lower(), mn, mx),
             caminho, 'Ofertas de %s' % html.escape(c), intro, corpo, nav(('c', c)),
             dados_estruturados(its), aviso).replace('<main id="ofertas">', bloco_quedas(its) + '<main id="ofertas">', 1)))
     for l in lojas:

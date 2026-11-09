@@ -191,6 +191,32 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .rc .p{min-height:2.2em}
 @media (prefers-reduced-motion:reduce){.dot{transition:none}}
 
+/* slide de destaque (11.11 / lojas novas): fotos reais, preço e loja de cada item */
+.s6{background:radial-gradient(circle at 92% 8%,rgba(255,201,59,.40),transparent 42%),radial-gradient(circle at 0% 100%,rgba(255,101,0,.35),transparent 45%),linear-gradient(140deg,#120A2A 0%,#2A1557 55%,#3B1A6E 100%)}
+.s6 .ey{justify-self:start;display:inline-flex;align-items:center;gap:8px;background:#FFC93B;color:#291258;padding:5px 12px;border-radius:999px;opacity:1}
+.s6 .big2{max-width:16ch}
+.s6 .big2 em{font-style:normal;color:var(--gold)}
+.s6 .sn{opacity:.92}
+.vit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%;margin-top:6px;position:relative;z-index:1}
+.vc{display:flex;flex-direction:column;background:#fff;color:#291258;border-radius:18px;overflow:hidden;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .2s}
+.vc:hover{transform:translateY(-4px)}
+.vc .fo{position:relative;aspect-ratio:1/1;background:#fff;display:grid;place-items:center}
+.vc .fo img{width:88%;height:88%;object-fit:contain}
+.vc .lj{position:absolute;left:8px;top:8px}
+.vc .in{padding:8px 10px 10px;border-top:1px solid #EEE8FA}
+.vc .nm{font-weight:800;font-size:.78rem;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.4em}
+.vc .pr{margin-top:4px;font-family:var(--disp);font-size:1.15rem;color:#DC3C46;line-height:1}
+.vc .pr small{font-family:var(--body);font-size:.68rem;color:#5B4B8A;font-weight:700;margin-left:3px}
+.s6 .ft{margin:2px 0 0;font-size:.72rem;opacity:.8;position:relative;z-index:1}
+@media (min-width:720px){
+.s6{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);column-gap:26px;align-items:center}
+.s6>*{grid-column:1}
+.s6 .vit{grid-column:2;grid-row:1 / span 6;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;max-width:none!important}
+.vc:nth-child(odd){transform:translateY(10px) rotate(-1.5deg)}
+.vc:nth-child(even){transform:translateY(-10px) rotate(1.5deg)}
+.vc:hover{transform:translateY(-14px) rotate(0)}
+}
+@media (prefers-reduced-motion:reduce){.vc{transition:none}}
 /* fotos no banner */
 .pics{display:flex;gap:10px;margin-top:12px;position:relative;z-index:1;align-items:center}
 .pics:empty{display:none}
@@ -245,7 +271,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <ul><li class="it"><a href="https://www.amazon.com.br/dp/B07FPJY777?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="https://m.media-amazon.com/images/I/51GhZ4PzztL._AC_UL320_.jpg"><span class="tx"><span class="nm">Chalesco Escova Pequena para Cães</span><span class="pr"><b>R$ 14,36</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B0CVNHN6LT?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="https://m.media-amazon.com/images/I/51niHtS7auL._AC_UL320_.jpg"><span class="tx"><span class="nm">Coleira para cachorros com pingente de identificação, tamanho ajustável</span><span class="pr"><b>R$ 15,99</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B07WRS2V22?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="https://m.media-amazon.com/images/I/61PKYONBoaL._AC_UL320_.jpg"><span class="tx"><span class="nm">Brinquedo Macaco Chalesco para Cães</span><span class="pr"><b>R$ 19,75</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B07XL26PFV?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="https://m.media-amazon.com/images/I/81942l5poIL._AC_UL320_.jpg"><span class="tx"><span class="nm">Tudo Pet Comedouro e Bebedouro Pesado Filhote Pequeno 300 ml para Cães</span><span class="pr"><b>R$ 19,90</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B0FFJQJ3SX?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="https://m.media-amazon.com/images/I/51haghcocFL._AC_UL320_.jpg"><span class="tx"><span class="nm">Escova Removedora de Pelos para Cães e Gatos</span><span class="pr"><b>R$ 29,90</b></span></span><span class="go">Ver na Amazon</span></a></li><li class="it"><a href="https://www.amazon.com.br/dp/B07HJ9RKC6?tag=herlisonsanto-20" rel="noopener sponsored"><img class="ph" alt="" width="64" height="64" loading="lazy" src="data:image/webp;base64,UklGRhIEAABXRUJQVlA4IAYEAABQFQCdASpQAFAAPtlaoU0oJSMiMzzMAQAbCWwA0Tw5h5yWbq15Aw1i71e7eXnlvPoh736n6QaI3U53Kw3wX/OziV6RbbqEt15BA4B71ywZh4u8n6c39rM/remhNgSJT47wkuo/ft98nZrTS7S5NOiRgS1h4D03ia5kKt7G8Ytfqz9wKsvPqfdKp0u2jQt1XT9mKu4rRdp0M4/+I0hhNTKmZQ7pJkFDMPqIe52BU3o1i+PFkAD++4K2pbkAiYamgy/TRFJziHtFx1bRj//Co18UC6X9aRkG764cT9VLUjPlZjOhnnpr78aYPddDaLLMZtDzjmjGgd5jgepB4hsWcRAI0Ln8R3Q/tPt3AU9HrdzAdhlqUEoJuGsijCnTHZQEW6v/Ja2BmhzDQz47xyMogxfcQMejXl4l3hLOViEIAdq3WJGzve+v1VLWBFwg3vJXMtBXVzSrTB89lPTvzNX+2PVeBCoS7Z1Jmiau29V6WofoVAZLPB+ARDhtoPDkZc9DbR8/DhhAl+14PuVsub8OMGiMWTkw1CzGBXXspaWBHDw7TmEmx8/ggB/01w6s5u9Z8zMYY+G0lG8N2/GLXCJhl//Bf9421bXsaDJBSliWF0UqQBGWy1k1cw1QlN9xRD18+gwdpjwW14kPGBtZ//8/tQ/nJmlwZ+lTjJp2Am/cseDtf2q3RrDR3POzi2BEXdqipTfqy5EPtnlwSUEuDTtwpYwvfs6D7VAmwIzFYvkbR7nFzKbnOm5Ga83AREb5YtLByJXbD0Re5nns1qROne6fRNknBEa0uGT3p3aSJqDQpadd03zrdg0zjQGPJEcEJ0T2/LzoG8Slpjl+NRB+54D4KEHZNXyx7+SLT4513SJ71lWq01fnOJdmaeQSmLwh8BfAbmODfyzDu9J+Pxf5JvXgpOvKqyYy3G6+0Xky/zOwHPSoIH5gKx4TUreuW+O2F4ASa3DmooYjfer09QWuHIpMk0YTk5NIUvE0j9imM+uOO8W7H7IV0mrRwMfeZDXSnqL8q5j64N6HtM5/eRIMkUzkJ/rIpaUflVl0NZju7I+kFCtf1UYmsPFsf0aObRph3SsmPNA9TaftjUmZE9J/W22hpUgPOyQT1zbZ6lZ4l0uhJCnq/eJnLiF3nUqCVueHK99Av08PhCyZWsWeu1LOD5QS0XvkfF4JTv4f9ZzKoCSawclnwUcH7F2ui8N4XDNXGb98pzhhRFjsnYnMJB1xwI9ztoI4XIzn61jMsOmNDpzFU4cdvNliJwLtYb+frW7AftTcNjxa36akOrAVpc5d5feP0hXMinCHD1N2FyjWMzjVzgbb2ru4TAHRb9OK8tfkGEtIH1WA5o29/k88GG8cU4zFtIsVZrLMAAAA"><span class="tx"><span class="nm">Tapete Higiênico Premium Chalesco 60x90 cm (30 un.)</span><span class="pr"><b>R$ 49,94</b></span></span><span class="go">Ver na Amazon</span></a></li></ul>
 </main>
 <footer>
-<p class="aviso">Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, AliExpress e Magalu e eu posso receber comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em 29/10/2026 (Shopee: 30/10/2026; Amazon: 04/11/2026; Magalu e Mercado Livre: 05/11/2026; KaBuM! e Nike: 09/11/2026) e podem ter mudado. Confirme o valor na loja antes de comprar. No Magalu, o preço mostrado é o do Pix; no cartão pode ser maior. Como Associado da Amazon, eu ganho com compras qualificadas.</p>
+<p class="aviso">Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress e eu posso receber comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em 29/10/2026 (Shopee: 30/10/2026; Amazon: 04/11/2026; Magalu e Mercado Livre: 05/11/2026; KaBuM! e Nike: 09/11/2026) e podem ter mudado. Confirme o valor na loja antes de comprar. No Magalu, o preço mostrado é o do Pix; no cartão pode ser maior. Como Associado da Amazon, eu ganho com compras qualificadas.</p>
 <p class="fl"><a href="https://instagram.com/achadinhosdobinga" rel="noopener">Instagram @achadinhosdobinga</a><a href="https://t.me/achadinhosdobinga" rel="noopener">Telegram</a><a href="https://whatsapp.com/channel/0029VbDhqE4FSAt3fXMI7f1S" rel="noopener">WhatsApp</a><a href="/privacidade.html">Privacidade</a><span>&copy; 2026 Achadinhos do Binga</span></p>
 </footer>
 </div>
