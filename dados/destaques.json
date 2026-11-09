@@ -1,9 +1,27 @@
 {
- "atualizado": "2026-11-08 12:14",
+ "atualizado": "2026-11-09 05:29",
  "areas": [
   {
    "nome": "OFERTAS",
    "stories": [
+    {
+     "id": "2026-11-15-story-site",
+     "data": "2026-11-15",
+     "hora": "18:30",
+     "tema": "preço com data de conferência",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-15-story-site/01.jpg"
+    },
+    {
+     "id": "2026-11-12-story-site",
+     "data": "2026-11-12",
+     "hora": "18:30",
+     "tema": "preço com data de conferência",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-12-story-site/01.jpg"
+    },
     {
      "id": "2026-11-09-story-site",
      "data": "2026-11-09",
@@ -46,6 +64,24 @@
    "nome": "TECH",
    "stories": [
     {
+     "id": "2026-11-14-story-e4965267",
+     "data": "2026-11-14",
+     "hora": "18:30",
+     "tema": "Fone Bluetooth Samsung Galaxy Buds Core",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-14-story-e4965267/01.jpg"
+    },
+    {
+     "id": "2026-11-12-story-22f38da9",
+     "data": "2026-11-12",
+     "hora": "11:30",
+     "tema": "Celular Xiaomi Poco M8 5G 256GB 8GB RAM com NFC",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-12-story-22f38da9/01.jpg"
+    },
+    {
      "id": "2026-11-04-story-96fd14c8",
      "data": "2026-11-04",
      "hora": "11:30",
@@ -68,6 +104,15 @@
   {
    "nome": "MODA",
    "stories": [
+    {
+     "id": "2026-11-14-story-f0b76f5c",
+     "data": "2026-11-14",
+     "hora": "11:30",
+     "tema": "Meias de Natal com Iniciais (Monograma)",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-14-story-f0b76f5c/01.jpg"
+    },
     {
      "id": "2026-11-11-story-cebbce0e",
      "data": "2026-11-11",
@@ -101,12 +146,30 @@
    "nome": "BELEZA",
    "stories": [
     {
+     "id": "2026-11-15-story-ba4554ba",
+     "data": "2026-11-15",
+     "hora": "11:30",
+     "tema": "Oral-B Pasta de Dente 3D White Brilliant Fresh, 3 unidades d",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-15-story-ba4554ba/01.jpg"
+    },
+    {
+     "id": "2026-11-13-story-df555e5e",
+     "data": "2026-11-13",
+     "hora": "11:30",
+     "tema": "Creme Dental Colgate Sensitive Pro Alívio Imediato",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-13-story-df555e5e/01.jpg"
+    },
+    {
      "id": "2026-11-08-story-aa0401d5",
      "data": "2026-11-08",
      "hora": "18:30",
      "tema": "Pantene Pro-V Science Molecular Bond Repair Shampoo 510 ml",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-08 18:31",
      "img": "postagens/2026-11-08-story-aa0401d5/01.jpg"
     },
     {
@@ -132,6 +195,15 @@
   {
    "nome": "COZINHA",
    "stories": [
+    {
+     "id": "2026-11-13-story-6b375449",
+     "data": "2026-11-13",
+     "hora": "18:30",
+     "tema": "Sanduicheira e Grill Elgin Brunch Time 800 W",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-13-story-6b375449/01.jpg"
+    },
     {
      "id": "2026-11-11-story-85b81b24",
      "data": "2026-11-11",

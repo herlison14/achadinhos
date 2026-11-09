@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-08 04:47",
+ "atualizado": "2026-11-09 05:29",
  "conta": "achadinhosdobinga",
  "dias": [
   {
@@ -73,9 +73,63 @@
    "salvos": 0,
    "envios": 0,
    "posts": 20
+  },
+  {
+   "data": "2026-11-09",
+   "seguidores": 123,
+   "publicacoes": 34,
+   "alcance": 256,
+   "views": 745,
+   "curtidas": 7,
+   "comentarios": 10,
+   "salvos": 0,
+   "envios": 0,
+   "posts": 23
   }
  ],
  "posts": [
+  {
+   "id": "2026-11-08-reel-faltam-3-dias",
+   "publicado_em": "2026-11-08 20:01",
+   "objetivo": "visita",
+   "formato": "reel",
+   "hora": "20:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 10,
+   "saved": 0,
+   "shares": 0,
+   "views": 15,
+   "link": "https://www.instagram.com/reel/Dff43KriTc8/"
+  },
+  {
+   "id": "2026-11-15-casa-meli",
+   "publicado_em": "2026-11-08 12:32",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "12:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 9,
+   "saved": 0,
+   "shares": 0,
+   "views": 34,
+   "link": "https://www.instagram.com/p/DffFeSHk4jx/"
+  },
+  {
+   "id": "2026-11-08-o-que-voce-quer-ver",
+   "publicado_em": "2026-11-08 10:31",
+   "objetivo": "comentar",
+   "formato": "carrossel",
+   "hora": "10:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 23,
+   "link": "https://www.instagram.com/p/Dfe3rOBGHUh/"
+  },
   {
    "id": "2026-11-07-reel-11-11-no-dia",
    "publicado_em": "2026-11-07 20:01",
@@ -84,10 +138,10 @@
    "hora": "20:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 7,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 23,
+   "views": 27,
    "link": "https://www.instagram.com/reel/DfdUEjYCj-5/"
   },
   {
@@ -98,10 +152,10 @@
    "hora": "17:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 13,
+   "reach": 14,
    "saved": 0,
    "shares": 0,
-   "views": 43,
+   "views": 45,
    "link": "https://www.instagram.com/p/DfdC9ClAd_F/"
   },
   {
@@ -112,10 +166,10 @@
    "hora": "12:30",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 12,
+   "reach": 14,
    "saved": 0,
    "shares": 0,
-   "views": 39,
+   "views": 43,
    "link": "https://www.instagram.com/p/DfcgmzGIY4B/"
   },
   {
@@ -126,10 +180,10 @@
    "hora": "21:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 13,
+   "reach": 15,
    "saved": 0,
    "shares": 0,
-   "views": 35,
+   "views": 42,
    "link": "https://www.instagram.com/p/Dfa2LgPFxYA/"
   },
   {
@@ -154,10 +208,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 31,
+   "views": 32,
    "link": "https://www.instagram.com/reel/DfYKesHDpkp/"
   },
   {
@@ -171,7 +225,7 @@
    "reach": 13,
    "saved": 0,
    "shares": 0,
-   "views": 44,
+   "views": 45,
    "link": "https://www.instagram.com/p/DfXkvAiiRjR/"
   },
   {
@@ -182,10 +236,10 @@
    "hora": "10:10",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 18,
+   "views": 24,
    "link": "https://www.instagram.com/reel/DfXHyAZCTd_/"
   },
   {
@@ -196,10 +250,10 @@
    "hora": "10:30",
    "curtidas": 3,
    "comentarios": 7,
-   "reach": 10,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 46,
+   "views": 48,
    "link": "https://www.instagram.com/p/DfUkd40mLkq/"
   },
   {
@@ -210,10 +264,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 2,
-   "reach": 14,
+   "reach": 15,
    "saved": 0,
    "shares": 0,
-   "views": 34,
+   "views": 35,
    "link": "https://www.instagram.com/reel/DfTBhlkEskt/"
   },
   {
@@ -238,10 +292,10 @@
    "hora": "23:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 9,
    "saved": 0,
    "shares": 0,
-   "views": 14,
+   "views": 15,
    "link": "https://www.instagram.com/reel/DfQxJwzk_8y/"
   },
   {
@@ -252,10 +306,10 @@
    "hora": "19:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 36,
+   "views": 38,
    "link": "https://www.instagram.com/p/DfN0M7UnXxg/"
   },
   {
@@ -266,10 +320,10 @@
    "hora": "16:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 26,
+   "views": 28,
    "link": "https://www.instagram.com/p/DfNcK9HFy-p/"
   },
   {
@@ -280,10 +334,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 1,
-   "reach": 10,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 28,
+   "views": 30,
    "link": "https://www.instagram.com/p/DfNOSv8GJcV/"
   },
   {
@@ -294,10 +348,10 @@
    "hora": "09:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 30,
+   "views": 33,
    "link": "https://www.instagram.com/p/DfNOJiAGMHE/"
   },
   {
@@ -308,10 +362,10 @@
    "hora": "19:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 13,
+   "reach": 14,
    "saved": 0,
    "shares": 0,
-   "views": 38,
+   "views": 43,
    "link": "https://www.instagram.com/p/DfLPUYSF_dw/"
   },
   {
@@ -322,10 +376,10 @@
    "hora": "16:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 13,
    "saved": 0,
    "shares": 0,
-   "views": 38,
+   "views": 41,
    "link": "https://www.instagram.com/p/DfK4lAEGImx/"
   },
   {
@@ -350,10 +404,10 @@
    "hora": "09:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 9,
    "saved": 0,
    "shares": 0,
-   "views": 24,
+   "views": 26,
    "link": "https://www.instagram.com/p/DfKH6tvFClA/"
   }
  ]
