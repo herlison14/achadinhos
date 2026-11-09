@@ -1386,9 +1386,11 @@
    "postagens/2026-11-09-story-site/01.jpg"
   ],
   "legenda": "Story sem preço: o que o site faz (busca, quedas de preço, 5 lojas). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
-  "sem_preco": true
+  "sem_preco": true,
+  "ig_id": "18103199978343467",
+  "publicado_em": "2026-11-09 18:31"
  },
  {
   "id": "2026-11-05-reel-flow-sacola",
