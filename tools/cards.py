@@ -92,7 +92,8 @@ def ler(post, itens):
     return titulo, data, prods
 
 def rodape(d, loja_txt, data):
-    pre = {'Shopee': 'na Shopee', 'Amazon': 'na Amazon', 'Mercado Livre': 'no Mercado Livre', 'Magalu': 'no Magalu', 'AliExpress': 'na AliExpress'}.get(loja_txt, 'nas lojas')
+    pre = {'Shopee': 'na Shopee', 'Amazon': 'na Amazon', 'Mercado Livre': 'no Mercado Livre', 'Magalu': 'no Magalu', 'AliExpress': 'na AliExpress',
+           'KaBuM!': 'na KaBuM!', 'Nike': 'na Nike', 'Dafiti': 'na Dafiti', 'adidas': 'na adidas'}.get(loja_txt, 'nas lojas')
     d.text((W / 2, 1320), 'Preço conferido %s em %s • pode mudar' % (pre, data), font=NUN7(26), fill=ROXO2, anchor='mm')
 
 def capa(post, titulo, data, prods, lojas):

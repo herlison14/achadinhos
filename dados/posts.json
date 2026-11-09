@@ -2334,5 +2334,55 @@
   "objetivo": "story",
   "sem_preco": true,
   "area": "OFERTAS"
+ },
+ {
+  "id": "2026-11-13-perifericos-kabum",
+  "data": "2026-11-13",
+  "hora": "12:30",
+  "formato": "carrossel",
+  "loja": "kabum",
+  "tema": "4 achados de tecnologia na KaBuM! 🖱️ (4 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "89e2bae9",
+   "3a34e13c",
+   "ac9888b2",
+   "4118cf12"
+  ],
+  "status": "agendado",
+  "nota": "Primeiro post da loja (Awin). Preços conferidos na loja em 09/11/2026; cards gerados e agendado em 09/11/2026.",
+  "legenda": "4 achados de tecnologia na KaBuM! 🖱️ Mouse, fone e teclado para o dia a dia, de R$ 57,90 a R$ 279,99\n1. Mouse sem fio Logitech M170, compacto: R$ 57,90\n2. Mouse gamer sem fio Logitech G305 Lightspeed: R$ 189,99\n3. Fone de ouvido JBL Tune 520BT Bluetooth: R$ 207,92\n4. Combo teclado e mouse sem fio Logitech MK470: R$ 279,99\nLink na bio. Salve pra comprar depois.\nPreços no Pix, conferidos na KaBuM! em 09/11/2026. No cartão o valor pode ser maior e tudo pode mudar.\nPublicidade: links de afiliado\n#achadinhos #kabum #tecnologia #setup #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-13-perifericos-kabum/01.jpg",
+   "postagens/2026-11-13-perifericos-kabum/02.jpg",
+   "postagens/2026-11-13-perifericos-kabum/03.jpg",
+   "postagens/2026-11-13-perifericos-kabum/04.jpg",
+   "postagens/2026-11-13-perifericos-kabum/05.jpg",
+   "postagens/2026-11-13-perifericos-kabum/06.jpg"
+  ]
+ },
+ {
+  "id": "2026-11-14-revolution-nike",
+  "data": "2026-11-14",
+  "hora": "12:30",
+  "formato": "carrossel",
+  "loja": "nike",
+  "tema": "Nike Revolution para a família toda 👟 (3 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "d5b93bb7",
+   "ec417f55",
+   "53df7a2c"
+  ],
+  "status": "agendado",
+  "nota": "Primeiro post da loja (Awin). Preços conferidos na loja em 09/11/2026; cards gerados e agendado em 09/11/2026.",
+  "legenda": "Nike Revolution para a família toda 👟 Masculino, feminino e infantil, de R$ 208,99 a R$ 249,99\n1. Tênis Nike Revolution 6 Infantil, preto: R$ 208,99\n2. Tênis Nike Revolution 8 Masculino, verde: R$ 249,99\n3. Tênis Nike Revolution 8 Feminino, rosa: R$ 249,99\nLink na bio. Salve pra comprar depois.\nPreços no Pix, conferidos na Nike em 09/11/2026. No cartão o valor pode ser maior e tudo pode mudar.\nPublicidade: links de afiliado\n#achadinhos #nike #tenis #corrida #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-14-revolution-nike/01.jpg",
+   "postagens/2026-11-14-revolution-nike/02.jpg",
+   "postagens/2026-11-14-revolution-nike/03.jpg",
+   "postagens/2026-11-14-revolution-nike/04.jpg",
+   "postagens/2026-11-14-revolution-nike/05.jpg"
+  ]
  }
 ]
