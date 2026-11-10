@@ -2099,7 +2099,7 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "enviar",
-  "status": "agendado",
+  "status": "publicado",
   "nota": "Post de crescimento (sem preço), criado em 08/11/2026.",
   "imagens": [
    "postagens/2026-11-10-vespera-11-11/01.jpg",
@@ -2107,7 +2107,9 @@
    "postagens/2026-11-10-vespera-11-11/03.jpg",
    "postagens/2026-11-10-vespera-11-11/04.jpg"
   ],
-  "legenda": "Amanhã é 11.11 🛍️\n\nHoje dá pra se preparar com calma:\n\n✔️ Escolha o que você já queria comprar\n✔️ Anote o preço de hoje de cada item\n✔️ Defina quanto pode gastar\n\nNo dia, compare com a sua anotação e confirme valor, frete e prazo na loja. Se o preço não baixou, não precisa comprar.\n\nEnvia pra quem vai aproveitar a data e salva pra conferir amanhã. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#blackfriday #novembro #dicasdecompra #achadinhos"
+  "legenda": "Amanhã é 11.11 🛍️\n\nHoje dá pra se preparar com calma:\n\n✔️ Escolha o que você já queria comprar\n✔️ Anote o preço de hoje de cada item\n✔️ Defina quanto pode gastar\n\nNo dia, compare com a sua anotação e confirme valor, frete e prazo na loja. Se o preço não baixou, não precisa comprar.\n\nEnvia pra quem vai aproveitar a data e salva pra conferir amanhã. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#blackfriday #novembro #dicasdecompra #achadinhos",
+  "ig_id": "18102260423078015",
+  "publicado_em": "2026-11-10 14:32"
  },
  {
   "id": "2026-11-11-hoje-e-11-11-confere",
