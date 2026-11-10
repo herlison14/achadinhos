@@ -1999,10 +1999,12 @@
    "postagens/2026-11-10-story-d99a3369/01.jpg"
   ],
   "legenda": "Story: Duracell pilha recarregável AA 2500 mAh, 4 unidades: R$ 85,40 (conferido em 09/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "MODA"
+  "area": "MODA",
+  "ig_id": "17949279306357117",
+  "publicado_em": "2026-11-10 11:31"
  },
  {
   "id": "2026-11-10-story-28eccffc",
