@@ -2022,10 +2022,12 @@
    "postagens/2026-11-10-story-28eccffc/01.jpg"
   ],
   "legenda": "Story: Tênis Adidas Lite Racer 4.0: R$ 169,99 (conferido em 08/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "MODA"
+  "area": "MODA",
+  "ig_id": "17936994339410558",
+  "publicado_em": "2026-11-10 18:31"
  },
  {
   "id": "2026-11-11-story-85b81b24",
