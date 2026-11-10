@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-10 07:19",
+ "gerado": "2026-11-10 18:55",
  "contagem": {
-  "ALTO": 11,
-  "MEDIO": 2
+  "ALTO": 17,
+  "MEDIO": 3
  },
  "achados": [
   {
@@ -21,6 +21,12 @@
    "nivel": "ALTO",
    "area": "telegram",
    "texto": "2026-11-17-ferramentas-amazon publicado no Instagram em 2026-11-09 12:32 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-20-pet-meli publicado no Instagram em 2026-11-10 12:32 não chegou ao canal do Telegram",
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
@@ -56,6 +62,18 @@
   {
    "nivel": "ALTO",
    "area": "telegram",
+   "texto": "2026-11-10-vespera-11-11 publicado no Instagram em 2026-11-10 14:32 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-13-perifericos-kabum publicado no Instagram em 2026-11-10 16:02 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
    "texto": "2026-11-09-setup-kabum publicado no Instagram em 2026-11-09 22:02 não chegou ao canal do Telegram",
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
@@ -72,6 +90,18 @@
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-10-moda-dafiti-manha publicado no Instagram em 2026-11-10 08:01 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "whatsapp",
+   "texto": "rodada 2026-11-10-wa-manha (2026-11-10 09:05) não foi publicada",
+   "acao": "publicar pelo WhatsApp Web (Chrome ligado) ou marcar como cancelado"
+  },
+  {
    "nivel": "MEDIO",
    "area": "preços",
    "texto": "29 de 286 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
@@ -82,6 +112,18 @@
    "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Canal do Telegram' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'pages build and deployment' falhou 2 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
   }
  ]
 }
