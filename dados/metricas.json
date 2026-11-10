@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-09 05:29",
+ "atualizado": "2026-11-10 05:43",
  "conta": "achadinhosdobinga",
  "dias": [
   {
@@ -85,9 +85,105 @@
    "salvos": 0,
    "envios": 0,
    "posts": 23
+  },
+  {
+   "data": "2026-11-10",
+   "seguidores": 131,
+   "publicacoes": 40,
+   "alcance": 295,
+   "views": 843,
+   "curtidas": 8,
+   "comentarios": 10,
+   "salvos": 0,
+   "envios": 0,
+   "posts": 29
   }
  ],
  "posts": [
+  {
+   "id": "2026-11-10-moda-dafiti",
+   "publicado_em": "2026-11-10 00:02",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "00:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 0,
+   "saved": 0,
+   "shares": 0,
+   "views": 0,
+   "link": "https://www.instagram.com/p/Dfi5PfHiQbu/"
+  },
+  {
+   "id": "2026-11-09-nike-dia-a-dia",
+   "publicado_em": "2026-11-09 23:02",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "23:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 2,
+   "saved": 0,
+   "shares": 0,
+   "views": 8,
+   "link": "https://www.instagram.com/p/DfiyZVrGsV3/"
+  },
+  {
+   "id": "2026-11-09-setup-kabum",
+   "publicado_em": "2026-11-09 22:02",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "22:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 4,
+   "saved": 0,
+   "shares": 0,
+   "views": 11,
+   "link": "https://www.instagram.com/p/DfirhYAiaQ4/"
+  },
+  {
+   "id": "2026-11-09-5-coisas-antes-de-pagar",
+   "publicado_em": "2026-11-09 21:01",
+   "objetivo": "salvar",
+   "formato": "carrossel",
+   "hora": "21:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 4,
+   "saved": 0,
+   "shares": 0,
+   "views": 10,
+   "link": "https://www.instagram.com/p/DfiklTAGIbE/"
+  },
+  {
+   "id": "2026-11-09-reel-flow-etiqueta",
+   "publicado_em": "2026-11-09 20:01",
+   "objetivo": "compartilhar",
+   "formato": "reel",
+   "hora": "20:00",
+   "curtidas": 1,
+   "comentarios": 0,
+   "reach": 4,
+   "saved": 0,
+   "shares": 0,
+   "views": 8,
+   "link": "https://www.instagram.com/reel/DfidqJHji4p/"
+  },
+  {
+   "id": "2026-11-17-ferramentas-amazon",
+   "publicado_em": "2026-11-09 12:32",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "12:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 9,
+   "saved": 0,
+   "shares": 0,
+   "views": 33,
+   "link": "https://www.instagram.com/p/DfhqRs9GAH7/"
+  },
   {
    "id": "2026-11-08-reel-faltam-3-dias",
    "publicado_em": "2026-11-08 20:01",
@@ -96,10 +192,10 @@
    "hora": "20:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 15,
+   "views": 16,
    "link": "https://www.instagram.com/reel/Dff43KriTc8/"
   },
   {
@@ -110,10 +206,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 9,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 34,
+   "views": 35,
    "link": "https://www.instagram.com/p/DffFeSHk4jx/"
   },
   {
@@ -124,10 +220,10 @@
    "hora": "10:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 7,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 23,
+   "views": 39,
    "link": "https://www.instagram.com/p/Dfe3rOBGHUh/"
   },
   {
@@ -138,7 +234,7 @@
    "hora": "20:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
    "views": 27,
@@ -166,10 +262,10 @@
    "hora": "12:30",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 14,
+   "reach": 15,
    "saved": 0,
    "shares": 0,
-   "views": 43,
+   "views": 44,
    "link": "https://www.instagram.com/p/DfcgmzGIY4B/"
   },
   {
@@ -180,10 +276,10 @@
    "hora": "21:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 15,
+   "reach": 17,
    "saved": 0,
    "shares": 0,
-   "views": 42,
+   "views": 45,
    "link": "https://www.instagram.com/p/Dfa2LgPFxYA/"
   },
   {
@@ -264,10 +360,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 2,
-   "reach": 15,
+   "reach": 17,
    "saved": 0,
    "shares": 0,
-   "views": 35,
+   "views": 36,
    "link": "https://www.instagram.com/reel/DfTBhlkEskt/"
   },
   {
@@ -292,10 +388,10 @@
    "hora": "23:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 9,
+   "reach": 10,
    "saved": 0,
    "shares": 0,
-   "views": 15,
+   "views": 16,
    "link": "https://www.instagram.com/reel/DfQxJwzk_8y/"
   },
   {
@@ -320,10 +416,10 @@
    "hora": "16:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 12,
+   "reach": 13,
    "saved": 0,
    "shares": 0,
-   "views": 28,
+   "views": 31,
    "link": "https://www.instagram.com/p/DfNcK9HFy-p/"
   },
   {
@@ -334,10 +430,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 1,
-   "reach": 11,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 30,
+   "views": 31,
    "link": "https://www.instagram.com/p/DfNOSv8GJcV/"
   },
   {

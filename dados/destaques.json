@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-09 05:29",
+ "atualizado": "2026-11-10 05:43",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -27,8 +27,8 @@
      "data": "2026-11-09",
      "hora": "18:30",
      "tema": "preço com data de conferência",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-09 18:31",
      "img": "postagens/2026-11-09-story-site/01.jpg"
     },
     {
@@ -218,8 +218,8 @@
      "data": "2026-11-09",
      "hora": "11:30",
      "tema": "Kit 4 Potes Herméticos Electrolux com Vedação de Silicone",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-09 11:31",
      "img": "postagens/2026-11-08-story-5decfec6/01.jpg"
     },
     {
