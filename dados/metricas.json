@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-10 05:43",
+ "atualizado": "2026-11-11 05:06",
  "conta": "achadinhosdobinga",
  "dias": [
   {
@@ -97,21 +97,103 @@
    "salvos": 0,
    "envios": 0,
    "posts": 29
+  },
+  {
+   "data": "2026-11-11",
+   "seguidores": 147,
+   "publicacoes": 45,
+   "alcance": 322,
+   "views": 899,
+   "curtidas": 11,
+   "comentarios": 10,
+   "salvos": 1,
+   "envios": 0,
+   "posts": 30
   }
  ],
  "posts": [
+  {
+   "id": "2026-11-10-reel-flow-relogio",
+   "publicado_em": "2026-11-10 20:01",
+   "objetivo": "salvar",
+   "formato": "reel",
+   "hora": "20:00",
+   "curtidas": 1,
+   "comentarios": 0,
+   "reach": 4,
+   "saved": 0,
+   "shares": 0,
+   "views": 9,
+   "link": "https://www.instagram.com/reel/DflCcQsjR6i/"
+  },
+  {
+   "id": "2026-11-13-perifericos-kabum",
+   "publicado_em": "2026-11-10 16:02",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "16:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 8,
+   "saved": 0,
+   "shares": 0,
+   "views": 21,
+   "link": "https://www.instagram.com/p/DfknEf6l4xa/"
+  },
+  {
+   "id": "2026-11-10-vespera-11-11",
+   "publicado_em": "2026-11-10 14:32",
+   "objetivo": "enviar",
+   "formato": "carrossel",
+   "hora": "14:30",
+   "curtidas": 1,
+   "comentarios": 0,
+   "reach": 10,
+   "saved": 0,
+   "shares": 0,
+   "views": 30,
+   "link": "https://www.instagram.com/p/DfkcwFSDyR8/"
+  },
+  {
+   "id": "2026-11-20-pet-meli",
+   "publicado_em": "2026-11-10 12:32",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "12:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 10,
+   "saved": 1,
+   "shares": 0,
+   "views": 27,
+   "link": "https://www.instagram.com/p/DfkPDTmlxsv/"
+  },
+  {
+   "id": "2026-11-10-moda-dafiti-manha",
+   "publicado_em": "2026-11-10 08:01",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "08:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 11,
+   "saved": 0,
+   "shares": 0,
+   "views": 36,
+   "link": "https://www.instagram.com/p/DfjwHreDz3n/"
+  },
   {
    "id": "2026-11-10-moda-dafiti",
    "publicado_em": "2026-11-10 00:02",
    "objetivo": "produto",
    "formato": "carrossel",
    "hora": "00:00",
-   "curtidas": 0,
+   "curtidas": 1,
    "comentarios": 0,
-   "reach": 0,
+   "reach": 8,
    "saved": 0,
    "shares": 0,
-   "views": 0,
+   "views": 23,
    "link": "https://www.instagram.com/p/Dfi5PfHiQbu/"
   },
   {
@@ -122,10 +204,10 @@
    "hora": "23:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 2,
+   "reach": 7,
    "saved": 0,
    "shares": 0,
-   "views": 8,
+   "views": 23,
    "link": "https://www.instagram.com/p/DfiyZVrGsV3/"
   },
   {
@@ -136,10 +218,10 @@
    "hora": "22:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 4,
+   "reach": 8,
    "saved": 0,
    "shares": 0,
-   "views": 11,
+   "views": 23,
    "link": "https://www.instagram.com/p/DfirhYAiaQ4/"
   },
   {
@@ -150,10 +232,10 @@
    "hora": "21:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 4,
+   "reach": 6,
    "saved": 0,
    "shares": 0,
-   "views": 10,
+   "views": 18,
    "link": "https://www.instagram.com/p/DfiklTAGIbE/"
   },
   {
@@ -164,10 +246,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 4,
+   "reach": 7,
    "saved": 0,
    "shares": 0,
-   "views": 8,
+   "views": 11,
    "link": "https://www.instagram.com/reel/DfidqJHji4p/"
   },
   {
@@ -178,10 +260,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 9,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 33,
+   "views": 37,
    "link": "https://www.instagram.com/p/DfhqRs9GAH7/"
   },
   {
@@ -192,7 +274,7 @@
    "hora": "20:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
    "views": 16,
@@ -234,10 +316,10 @@
    "hora": "20:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 27,
+   "views": 29,
    "link": "https://www.instagram.com/reel/DfdUEjYCj-5/"
   },
   {
@@ -248,10 +330,10 @@
    "hora": "17:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 14,
+   "reach": 15,
    "saved": 0,
    "shares": 0,
-   "views": 45,
+   "views": 46,
    "link": "https://www.instagram.com/p/DfdC9ClAd_F/"
   },
   {
@@ -262,10 +344,10 @@
    "hora": "12:30",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 15,
+   "reach": 16,
    "saved": 0,
    "shares": 0,
-   "views": 44,
+   "views": 46,
    "link": "https://www.instagram.com/p/DfcgmzGIY4B/"
   },
   {
@@ -304,10 +386,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 32,
+   "views": 33,
    "link": "https://www.instagram.com/reel/DfYKesHDpkp/"
   },
   {
@@ -449,62 +531,6 @@
    "shares": 0,
    "views": 33,
    "link": "https://www.instagram.com/p/DfNOJiAGMHE/"
-  },
-  {
-   "id": "2026-11-24-casa-shopee",
-   "publicado_em": "2026-10-31 19:33",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "19:30",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 14,
-   "saved": 0,
-   "shares": 0,
-   "views": 43,
-   "link": "https://www.instagram.com/p/DfLPUYSF_dw/"
-  },
-  {
-   "id": "2026-11-21-beleza-shopee",
-   "publicado_em": "2026-10-31 16:14",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "16:00",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 13,
-   "saved": 0,
-   "shares": 0,
-   "views": 41,
-   "link": "https://www.instagram.com/p/DfK4lAEGImx/"
-  },
-  {
-   "id": "2026-11-16-cozinha-mista",
-   "publicado_em": "2026-10-31 12:33",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "12:30",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 9,
-   "saved": 0,
-   "shares": 0,
-   "views": 28,
-   "link": "https://www.instagram.com/p/DfKfQirGCNl/"
-  },
-  {
-   "id": "2026-11-14-moda-shopee",
-   "publicado_em": "2026-10-31 09:09",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "09:00",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 9,
-   "saved": 0,
-   "shares": 0,
-   "views": 26,
-   "link": "https://www.instagram.com/p/DfKH6tvFClA/"
   }
  ]
 }
