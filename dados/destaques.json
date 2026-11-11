@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-10 05:43",
+ "atualizado": "2026-11-10 21:34",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -127,8 +127,8 @@
      "data": "2026-11-10",
      "hora": "18:30",
      "tema": "Tênis Adidas Lite Racer 4.0",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-10 18:31",
      "img": "postagens/2026-11-10-story-28eccffc/01.jpg"
     },
     {
@@ -136,8 +136,8 @@
      "data": "2026-11-10",
      "hora": "11:30",
      "tema": "Duracell pilha recarregável AA 2500 mAh, 4 unidades",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-10 11:31",
      "img": "postagens/2026-11-10-story-d99a3369/01.jpg"
     }
    ]

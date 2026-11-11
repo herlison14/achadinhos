@@ -16,14 +16,6 @@
   "data": "2026-11-09"
  },
  {
-  "id": "603f1c0a",
-  "href": "https://www.amazon.com.br/dp/B074L9L5KZ?tag=herlisonsanto-20",
-  "antes": "55,90",
-  "agora": "40,41",
-  "pct": 28,
-  "data": "2026-11-09"
- },
- {
   "id": "77f4967b",
   "href": "https://s.shopee.com.br/2qVWerW7ba",
   "antes": "89,90",
@@ -38,6 +30,14 @@
   "agora": "17,90",
   "pct": 21,
   "data": "2026-11-09"
+ },
+ {
+  "id": "d5643d5a",
+  "href": "https://www.amazon.com.br/dp/B0CQTNQ58F?tag=herlisonsanto-20",
+  "antes": "44,90",
+  "agora": "35,98",
+  "pct": 20,
+  "data": "2026-11-11"
  },
  {
   "id": "310b9baa",
@@ -72,14 +72,6 @@
   "data": "2026-11-09"
  },
  {
-  "id": "9fdc5812",
-  "href": "https://www.magazinevoce.com.br/magazinein_400408/liquidificador-mondial-turbo-power-l-99-fb-preto-com-filtro-3-velocidades-550w/p/021756600/ep/liqu/",
-  "antes": "99,89",
-  "agora": "89,90",
-  "pct": 10,
-  "data": "2026-11-09"
- },
- {
   "id": "8e001448",
   "href": "https://www.amazon.com.br/dp/B0F6DWP22Z?tag=herlisonsanto-20",
   "antes": "17,50",
@@ -110,6 +102,14 @@
   "agora": "88,00",
   "pct": 7,
   "data": "2026-11-05"
+ },
+ {
+  "id": "e8a1c7a1",
+  "href": "https://meli.la/1ESnEJ4",
+  "antes": "94,90",
+  "agora": "87,90",
+  "pct": 7,
+  "data": "2026-11-11"
  },
  {
   "id": "9e5741a0",
@@ -160,14 +160,6 @@
   "data": "2026-10-29"
  },
  {
-  "id": "ef5cf06e",
-  "href": "https://www.amazon.com.br/dp/B086CB6BXW?tag=herlisonsanto-20",
-  "antes": "14,80",
-  "agora": "14,00",
-  "pct": 5,
-  "data": "2026-11-09"
- },
- {
   "id": "fbd5debb",
   "href": "https://www.magazinevoce.com.br/magazinein_400408/arvore-de-natal-grande-pinheiro/p/jb69568c08/na/narv/",
   "antes": "210,17",
@@ -198,6 +190,14 @@
   "agora": "93,90",
   "pct": 4,
   "data": "2026-11-05"
+ },
+ {
+  "id": "6b375449",
+  "href": "https://www.magazinevoce.com.br/magazinein_400408/sanduicheira-e-grill-elgin-brunch-time-800w/p/de96daad9f/ep/gset/",
+  "antes": "64,99",
+  "agora": "62,69",
+  "pct": 4,
+  "data": "2026-11-11"
  },
  {
   "id": "85458d1f",
@@ -294,5 +294,13 @@
   "agora": "24,99",
   "pct": 1,
   "data": "2026-11-09"
+ },
+ {
+  "id": "1e8701dd",
+  "href": "https://www.amazon.com.br/dp/B075QRWRYP?tag=herlisonsanto-20",
+  "antes": "106,32",
+  "agora": "105,99",
+  "pct": 0,
+  "data": "2026-11-11"
  }
 ]
