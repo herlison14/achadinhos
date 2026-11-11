@@ -2556,32 +2556,6 @@
   "publicado_em": "2026-11-10 08:01"
  },
  {
-  "id": "2026-11-13-cabelo-docebeleza",
-  "data": "2026-11-13",
-  "hora": "19:00",
-  "formato": "carrossel",
-  "loja": "docebeleza",
-  "tema": "4 achados para o cabelo na Doce Beleza 💇‍♀️ (4 produtos)",
-  "canal": "ig",
-  "produtos": [
-   "a82261f8",
-   "6e9dbadd",
-   "30262d7f",
-   "4e17af78"
-  ],
-  "status": "agendado",
-  "nota": "Primeiro post da Doce Beleza (Awin, aprovada 10/11/2026). Preços conferidos em 11/11/2026; cards ainda por gerar (fotos via fotos-urls).",
-  "legenda": "4 achados para o cabelo na Doce Beleza 💇‍♀️ Máscaras, condicionador e botox capilar, de R$ 22,41 a R$ 36,90\n1. Máscara Madamelis We Love Hair Love Hydra Hidratação 200 ml: R$ 24,21\n2. Condicionador Madamelis We Love Hair Love Hydra Maciez 200 ml: R$ 22,41\n3. Botox Capilar G.Hair Máscara B-Tox Japonês 300 g: R$ 27,90\n4. Máscara Condicionante Évallos com Etox 950 g: R$ 36,90\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Doce Beleza em 11/11/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #cabelo #cuidadoscomocabelo #beleza #achadinhosdobinga",
-  "imagens": [
-   "postagens/2026-11-13-cabelo-docebeleza/01.jpg",
-   "postagens/2026-11-13-cabelo-docebeleza/02.jpg",
-   "postagens/2026-11-13-cabelo-docebeleza/03.jpg",
-   "postagens/2026-11-13-cabelo-docebeleza/04.jpg",
-   "postagens/2026-11-13-cabelo-docebeleza/05.jpg",
-   "postagens/2026-11-13-cabelo-docebeleza/06.jpg"
-  ]
- },
- {
   "id": "2026-11-14-tenis-dafiti",
   "data": "2026-11-14",
   "hora": "12:30",
@@ -2718,5 +2692,185 @@
   "objetivo": "story",
   "sem_preco": true,
   "area": "OFERTAS"
+ },
+ {
+  "id": "2026-11-12-docebeleza-cabelo-1",
+  "data": "2026-11-12",
+  "hora": "07:00",
+  "formato": "carrossel",
+  "loja": "docebeleza",
+  "tema": "6 achados de cabelo na Doce Beleza 💇‍♀️ (6 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "64968c63",
+   "29705102",
+   "f96ff36b",
+   "6bf62f85",
+   "e8dbcace",
+   "c6de74f4"
+  ],
+  "status": "agendado",
+  "nota": "Lote de 12/11/2026 pedido pelo Herlison: 2 carrosséis de 6 por loja Awin nova, 1 por hora (07:00 a 12:00). Preços conferidos na loja em 11/11/2026.",
+  "legenda": "6 achados de cabelo na Doce Beleza 💇‍♀️ Condicionadores, creme e máscara, tudo com preço conferido, de R$ 21,90 a R$ 44,90\n1. Kit Turma da Mônica Shampoo e Condicionador 2 x 260 ml: R$ 27,90\n2. Condicionador Madamelis We Love Hair Nutre Night Nutrição 200 ml: R$ 22,41\n3. Condicionador Madamelis We Love Hair Shine Day Brilho 200 ml: R$ 22,41\n4. Évallos Etox Fluid Sem Limite 400 ml: R$ 21,90\n5. Creme Salon Line Hidra Multy 3 em 1 Multifuncional 1 kg: R$ 26,90\n6. Máscara G Hair Progressiva Alemã Passo 3 1000 ml: R$ 44,90\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Doce Beleza em 11/11/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #cabelo #beleza #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-12-docebeleza-cabelo-1/01.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-1/02.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-1/03.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-1/04.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-1/05.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-1/06.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-1/07.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-1/08.jpg"
+  ]
+ },
+ {
+  "id": "2026-11-12-puma-tenis",
+  "data": "2026-11-12",
+  "hora": "08:00",
+  "formato": "carrossel",
+  "loja": "puma",
+  "tema": "6 tênis PUMA 👟 (6 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "04cfb0f8",
+   "da0a4476",
+   "c2b1db19",
+   "1054a2ad",
+   "925b7484",
+   "385f2af4"
+  ],
+  "status": "agendado",
+  "nota": "Lote de 12/11/2026 pedido pelo Herlison: 2 carrosséis de 6 por loja Awin nova, 1 por hora (07:00 a 12:00). Preços conferidos na loja em 11/11/2026.",
+  "legenda": "6 tênis PUMA 👟 com preço conferido na loja, de R$ 249,99 a R$ 379,99\n1. Tênis PUMA Shuffle: R$ 269,99\n2. Tênis Court Classic Vulcanised Formstrip Unissex: R$ 269,99\n3. Tênis Court Lally BDP: R$ 249,99\n4. Tênis RBD Game Low: R$ 299,99\n5. Tênis Park Lifestyle Easy SD BDP: R$ 379,99\n6. Tênis Shuffle Downtown Unissex: R$ 349,99\nLink na bio. Salve pra comprar depois.\nPreços conferidos na PUMA em 11/11/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #puma #tenis #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-12-puma-tenis/01.jpg",
+   "postagens/2026-11-12-puma-tenis/02.jpg",
+   "postagens/2026-11-12-puma-tenis/03.jpg",
+   "postagens/2026-11-12-puma-tenis/04.jpg",
+   "postagens/2026-11-12-puma-tenis/05.jpg",
+   "postagens/2026-11-12-puma-tenis/06.jpg",
+   "postagens/2026-11-12-puma-tenis/07.jpg",
+   "postagens/2026-11-12-puma-tenis/08.jpg"
+  ]
+ },
+ {
+  "id": "2026-11-12-hope-pijamas",
+  "data": "2026-11-12",
+  "hora": "09:00",
+  "formato": "carrossel",
+  "loja": "hope",
+  "tema": "6 pijamas e camisolas na Hope 🌙 (6 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "34e268a5",
+   "545d7048",
+   "dec66b1b",
+   "e1eecac3",
+   "17fdaeca",
+   "cd8f8e88"
+  ],
+  "status": "agendado",
+  "nota": "Lote de 12/11/2026 pedido pelo Herlison: 2 carrosséis de 6 por loja Awin nova, 1 por hora (07:00 a 12:00). Preços conferidos na loja em 11/11/2026.",
+  "legenda": "6 pijamas e camisolas na Hope 🌙 para a noite, com preço conferido na loja, de R$ 98,90 a R$ 298,90\n1. Pijama Longo Alças Finas Viscose e Renda Love Stories Risca de Giz: R$ 144,90\n2. Pijama Longo Decote V Viscose e Renda Moon Vinho do Porto: R$ 198,90\n3. Pijama Longo em Viscose Dreams Preto com Poá: R$ 298,90\n4. Camisola Alças Finas Microfibra e Renda Love Stories Verde Refresco: R$ 98,90\n5. Camisola Alças Finas Microfibra e Renda Love Stories Pink Volúpia: R$ 179,90\n6. Camisola Alças Finas em Cetim Grace Cinza Estanho: R$ 174,90\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Hope em 11/11/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #hope #pijama #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-12-hope-pijamas/01.jpg",
+   "postagens/2026-11-12-hope-pijamas/02.jpg",
+   "postagens/2026-11-12-hope-pijamas/03.jpg",
+   "postagens/2026-11-12-hope-pijamas/04.jpg",
+   "postagens/2026-11-12-hope-pijamas/05.jpg",
+   "postagens/2026-11-12-hope-pijamas/06.jpg",
+   "postagens/2026-11-12-hope-pijamas/07.jpg",
+   "postagens/2026-11-12-hope-pijamas/08.jpg"
+  ]
+ },
+ {
+  "id": "2026-11-12-docebeleza-cabelo-2",
+  "data": "2026-11-12",
+  "hora": "10:00",
+  "formato": "carrossel",
+  "loja": "docebeleza",
+  "tema": "6 achados para tratar o cabelo na Doce Beleza ✨ (6 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "a82261f8",
+   "6e9dbadd",
+   "30262d7f",
+   "4e17af78",
+   "0620458e",
+   "c5ddaeaa"
+  ],
+  "status": "agendado",
+  "nota": "Lote de 12/11/2026 pedido pelo Herlison: 2 carrosséis de 6 por loja Awin nova, 1 por hora (07:00 a 12:00). Preços conferidos na loja em 11/11/2026.",
+  "legenda": "6 achados para tratar o cabelo na Doce Beleza ✨ Máscaras, botox capilar e cuidado em casa, de R$ 22,41 a R$ 154,80\n1. Máscara Madamelis We Love Hair Love Hydra Hidratação 200 ml: R$ 24,21\n2. Condicionador Madamelis We Love Hair Love Hydra Maciez 200 ml: R$ 22,41\n3. Botox Capilar G.Hair Máscara B-Tox Japonês 300 g: R$ 27,90\n4. Máscara Condicionante Évallos com Etox 950 g: R$ 36,90\n5. Aneethun Restore Repositor Restaurador 1 litro: R$ 154,80\n6. Condicionador Tec Italy HI-Moisturizing 300 ml: R$ 73,90\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Doce Beleza em 11/11/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #cabelo #cuidadoscomocabelo #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-12-docebeleza-cabelo-2/01.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-2/02.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-2/03.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-2/04.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-2/05.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-2/06.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-2/07.jpg",
+   "postagens/2026-11-12-docebeleza-cabelo-2/08.jpg"
+  ]
+ },
+ {
+  "id": "2026-11-12-puma-camisetas",
+  "data": "2026-11-12",
+  "hora": "11:00",
+  "formato": "carrossel",
+  "loja": "puma",
+  "tema": "6 camisetas e regatas PUMA 👕 (6 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "0acf6970",
+   "ceb12f71",
+   "b176f984",
+   "962f2b18",
+   "d81ce373",
+   "81ca0ec9"
+  ],
+  "status": "agendado",
+  "nota": "Lote de 12/11/2026 pedido pelo Herlison: 2 carrosséis de 6 por loja Awin nova, 1 por hora (07:00 a 12:00). Preços conferidos na loja em 11/11/2026.",
+  "legenda": "6 camisetas e regatas PUMA 👕 femininas, com preço conferido na loja, de R$ 99,99 a R$ 159,99\n1. Camiseta Graphics \"Forever. Faster.\" Feminina: R$ 119,99\n2. Camiseta Graphic Kitten Baby Feminina: R$ 109,99\n3. Camiseta Essentials Relaxed Football Feminina: R$ 159,99\n4. Camiseta Baby Look Wardrobe Essentials Ribbed Feminina: R$ 99,99\n5. Regata Wardrobe Ess Ribbed Top Feminina: R$ 119,99\n6. Camiseta Cropped PUMA Fit Mesh Feminina: R$ 129,99\nLink na bio. Salve pra comprar depois.\nPreços conferidos na PUMA em 11/11/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #puma #moda #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-12-puma-camisetas/01.jpg",
+   "postagens/2026-11-12-puma-camisetas/02.jpg",
+   "postagens/2026-11-12-puma-camisetas/03.jpg",
+   "postagens/2026-11-12-puma-camisetas/04.jpg",
+   "postagens/2026-11-12-puma-camisetas/05.jpg",
+   "postagens/2026-11-12-puma-camisetas/06.jpg",
+   "postagens/2026-11-12-puma-camisetas/07.jpg",
+   "postagens/2026-11-12-puma-camisetas/08.jpg"
+  ]
+ },
+ {
+  "id": "2026-11-12-hope-basicos",
+  "data": "2026-11-12",
+  "hora": "12:00",
+  "formato": "carrossel",
+  "loja": "hope",
+  "tema": "6 básicos na Hope 🩷 (6 produtos)",
+  "canal": "ig",
+  "produtos": [
+   "29500613",
+   "e9a5bd36",
+   "1ccb77be",
+   "490c896b",
+   "27293f58",
+   "414a0660"
+  ],
+  "status": "agendado",
+  "nota": "Lote de 12/11/2026 pedido pelo Herlison: 2 carrosséis de 6 por loja Awin nova, 1 por hora (07:00 a 12:00). Preços conferidos na loja em 11/11/2026.",
+  "legenda": "6 básicos na Hope 🩷 sutiãs, calcinhas e tops, com preço conferido na loja, de R$ 46,90 a R$ 179,90\n1. Sutiã Meia-taça com Bojo em Renda Bege Ballet: R$ 84,90\n2. Sutiã Invisível Aderente Nude: R$ 149,90\n3. Calcinha Biquíni Lacinho Ripple Lilás Dália: R$ 46,90\n4. Calcinha Biquíni em Renda Preto: R$ 59,90\n5. Top Bojo Duna Preto: R$ 98,90\n6. Top Alças Finas Branco: R$ 179,90\nLink na bio. Salve pra comprar depois.\nPreços conferidos na Hope em 11/11/2026. Podem mudar.\nPublicidade: links de afiliado\n#achadinhos #hope #modafeminina #achadinhosdobinga",
+  "imagens": [
+   "postagens/2026-11-12-hope-basicos/01.jpg",
+   "postagens/2026-11-12-hope-basicos/02.jpg",
+   "postagens/2026-11-12-hope-basicos/03.jpg",
+   "postagens/2026-11-12-hope-basicos/04.jpg",
+   "postagens/2026-11-12-hope-basicos/05.jpg",
+   "postagens/2026-11-12-hope-basicos/06.jpg",
+   "postagens/2026-11-12-hope-basicos/07.jpg",
+   "postagens/2026-11-12-hope-basicos/08.jpg"
+  ]
  }
 ]
