@@ -1,77 +1,42 @@
 [
  {
-  "id": "f5ca0774",
+  "id": "a82261f8",
   "ok": true,
-  "tamanho": "1000x1000"
+  "tamanho": "600x600"
  },
  {
-  "id": "3428bdb1",
+  "id": "6e9dbadd",
   "ok": true,
-  "tamanho": "1000x1000"
+  "tamanho": "600x600"
  },
  {
-  "id": "0d89731a",
+  "id": "30262d7f",
   "ok": true,
-  "tamanho": "1000x1000"
+  "tamanho": "600x600"
  },
  {
-  "id": "c504dae6",
+  "id": "4e17af78",
   "ok": true,
-  "tamanho": "1000x1000"
+  "tamanho": "600x600"
  },
  {
-  "id": "dd188422",
-  "ok": true,
-  "tamanho": "1000x1000"
- },
- {
-  "id": "74a920ef",
-  "ok": true,
-  "tamanho": "768x768"
- },
- {
-  "id": "1f66c199",
-  "ok": true,
-  "tamanho": "768x768"
- },
- {
-  "id": "eb71a499",
-  "ok": true,
-  "tamanho": "768x768"
- },
- {
-  "id": "38c4ede0",
-  "ok": true,
-  "tamanho": "768x768"
- },
- {
-  "id": "87758664",
-  "ok": true,
-  "tamanho": "768x768"
- },
- {
-  "id": "130f3195",
+  "id": "4ad989b4",
   "ok": true,
   "tamanho": "276x400"
  },
  {
-  "id": "5d1fcbae",
+  "id": "8d3486fe",
   "ok": true,
   "tamanho": "276x400"
  },
  {
-  "id": "7c7efad4",
+  "id": "8ee04112",
   "ok": true,
-  "tamanho": "400x400"
+  "tamanho": "276x400"
  },
  {
-  "id": "dcde7e59",
+  "id": "e1f6e471",
   "ok": true,
-  "tamanho": "293x400"
- },
- {
-  "id": "f79da7b3",
-  "ok": true,
-  "tamanho": "400x400"
+  "tamanho": "276x400"
  }
 ]
