@@ -2072,10 +2072,12 @@
    "postagens/2026-11-11-story-cebbce0e/01.jpg"
   ],
   "legenda": "Story: Tênis esportivo masculino Olimp para caminhada e academia: R$ 119,90 (conferido em 11/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "MODA"
+  "area": "MODA",
+  "ig_id": "18439806001178486",
+  "publicado_em": "2026-11-11 18:31"
  },
  {
   "id": "2026-11-09-5-coisas-antes-de-pagar",
