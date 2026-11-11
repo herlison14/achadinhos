@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-11 05:06",
+ "atualizado": "2026-11-11 20:20",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -145,8 +145,8 @@
      "data": "2026-11-11",
      "hora": "18:30",
      "tema": "Tênis esportivo masculino Olimp para caminhada e academia",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-11 18:31",
      "img": "postagens/2026-11-11-story-cebbce0e/01.jpg"
     },
     {
@@ -263,8 +263,8 @@
      "data": "2026-11-11",
      "hora": "11:30",
      "tema": "Escorredor de louças 2 andares em aço com porta-talheres",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-11 11:31",
      "img": "postagens/2026-11-11-story-85b81b24/01.jpg"
     },
     {
