@@ -41,7 +41,7 @@ FONTE = os.path.join(RAIZ, 'dados', 'crescimento.json')
 POSTS = os.path.join(RAIZ, 'dados', 'posts.json')
 ITENS = os.path.join(RAIZ, 'dados', 'itens.json')
 LOJAS = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu',
-         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas'}
+         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza'}
 PROIBIDO = [r'curta se', r'curta e', r'curte se', r'marque \d', r'marca \d', r'compartilhe para (ganhar|concorrer)', r'sorteio',
             r'ganhe ', r'de gra[cç]a', r'comente (sim|eu)']
 OBJETIVOS = ('visita', 'salvar', 'enviar', 'comentar')

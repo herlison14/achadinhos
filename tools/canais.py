@@ -20,7 +20,7 @@ LOG = RAIZ / "dados" / "canais.json"
 SITE = "https://achadinhosdobinga.com.br"
 LOJAS = {"shopee": "Shopee", "amazon": "Amazon", "meli": "Mercado Livre",
          "aliexpress": "AliExpress", "magalu": "Magalu",
-         "kabum": "KaBuM!", "nike": "Nike", "dafiti": "Dafiti", "adidas": "adidas"}
+         "kabum": "KaBuM!", "nike": "Nike", "dafiti": "Dafiti", "adidas": "adidas", "docebeleza": "Doce Beleza"}
 # Termos do programa adidas (Awin) só autorizam Facebook, Instagram, TikTok, YouTube e blogs/site:
 # Telegram e WhatsApp ficam de fora até aprovação por escrito da adidas.
 FORA_DOS_CANAIS = {"adidas"}

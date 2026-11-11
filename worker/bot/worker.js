@@ -12,7 +12,7 @@ const REPO = 'herlison14/achadinhos';
 const ITENS = 'https://raw.githubusercontent.com/' + REPO + '/main/dados/itens.json';
 const SITE = 'https://achadinhosdobinga.com.br';
 const AVISO = 'Publicidade: links de afiliado.';
-const LOJAS = { amazon: 'Amazon', magalu: 'Magalu', meli: 'Mercado Livre', shopee: 'Shopee', aliexpress: 'AliExpress', kabum: 'KaBuM!', nike: 'Nike', dafiti: 'Dafiti', adidas: 'adidas' };
+const LOJAS = { amazon: 'Amazon', magalu: 'Magalu', meli: 'Mercado Livre', shopee: 'Shopee', aliexpress: 'AliExpress', kabum: 'KaBuM!', nike: 'Nike', dafiti: 'Dafiti', adidas: 'adidas', docebeleza: 'Doce Beleza' };
 const DIAS_PRECO = 7, DIAS_PAGINA = 30, MAX = 3;
 const POSTS = 'https://raw.githubusercontent.com/' + REPO + '/main/dados/posts.json';
 

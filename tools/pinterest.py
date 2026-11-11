@@ -54,7 +54,7 @@ def main():
     hoje = datetime.date.today()
     saida = os.path.join(RAIZ, 'pinterest'); os.makedirs(saida, exist_ok=True)
     lojas = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'magalu': 'Magalu', 'aliexpress': 'AliExpress',
-             'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas'}
+             'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza'}
     linhas = []; pulados = 0
     for pid in usados:
         it = por_id.get(pid)

@@ -1,6 +1,6 @@
 # Awin — Achadinhos do Binga (afiliado 3147693, pessoa física)
 
-Atualizado em 09/11/2026. Comissão e ganhos NUNCA entram neste arquivo (repositório público).
+Atualizado em 11/11/2026. Comissão e ganhos NUNCA entram neste arquivo (repositório público).
 
 ## Programas
 
@@ -8,10 +8,14 @@ Atualizado em 09/11/2026. Comissão e ganhos NUNCA entram neste arquivo (reposit
 |---|---|---|---|---|
 | KaBuM! | 17729 | aprovado 09/11/2026 | sim (4 itens) | site, Instagram, Telegram, WhatsApp |
 | Nike | 17652 | aprovado 09/11/2026 | sim (3 itens) | site, Instagram, Telegram, WhatsApp |
-| Dafiti | 17697 | aprovado 09/11/2026 | ainda não (conferir pelo Chrome) | site, Instagram, Telegram, WhatsApp |
+| Dafiti | 17697 | aprovado 09/11/2026 | sim (4 itens, 11/11/2026) | site, Instagram, Telegram, WhatsApp |
 | adidas | 79926 | aprovado 09/11/2026 | ainda não | só site e Instagram (termos: sem Telegram/WhatsApp/DM) |
+| Doce Beleza | 76888 | aprovado 10/11/2026 (domínio docebeleza.com.br) | sim (4 itens, 11/11/2026) | site, Instagram, Telegram, WhatsApp |
 | Avon | 23993 | recusado (não aceita pessoa física) | não | — |
-| Havaianas, Olympikus, Electrolux, Beleza na Web, O Boticário, Eudora, L'Occitane au Brésil, Jequiti | — | pendentes | — | — |
+| Eudora, Natura, O Boticário, JBL (10/11/2026) | — | recusados (não aceitam pessoa física) | — | — |
+| Havaianas, Olympikus, Electrolux, Beleza na Web, L'Occitane au Brésil, Jequiti | — | pendentes (sem e-mail até 11/11/2026) | — | — |
+
+Comissão da Nike e da adidas mudou em 10/11/2026 (valores só no painel da Awin). Doce Beleza: preço exibido na loja (sem desconto Pix informado); fotos em `www.docebeleza.com.br/cdn/shop/files/` (CSP liberado).
 
 ## Link de afiliado (deeplink)
 `https://www.awin1.com/cread.php?awinmid=<programa>&awinaffid=3147693&ued=<URL do produto codificada>`

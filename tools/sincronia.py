@@ -15,7 +15,7 @@ from urllib.parse import urlsplit, parse_qs
 def loja_awin(href):
     """Loja de destino de um deeplink da Awin (parâmetro ued); '?' se não for uma das lojas aprovadas."""
     host = urlsplit((parse_qs(urlsplit(href).query).get('ued') or [''])[0]).netloc.lower()
-    for dom, l in (('kabum.com.br', 'kabum'), ('nike.com.br', 'nike'), ('dafiti.com.br', 'dafiti'), ('adidas.com.br', 'adidas')):
+    for dom, l in (('kabum.com.br', 'kabum'), ('nike.com.br', 'nike'), ('dafiti.com.br', 'dafiti'), ('adidas.com.br', 'adidas'), ('docebeleza.com.br', 'docebeleza')):
         if host == dom or host.endswith('.' + dom):
             return l
     return '?'
@@ -117,7 +117,7 @@ def main():
             ok = 's.click.aliexpress.com/e/' in h
         elif l == 'magalu':
             ok = 'magazinevoce.com.br/magazinein_400408/' in h
-        elif l in ('kabum', 'nike', 'dafiti', 'adidas'):
+        elif l in ('kabum', 'nike', 'dafiti', 'adidas', 'docebeleza'):
             # Awin: deeplink completo com o nosso ID de afiliado e destino na loja certa
             ok = ('awin1.com/cread.php' in h and 'awinaffid=3147693' in h
                   and 'awinmid=' in h and loja_awin(h) == l)
