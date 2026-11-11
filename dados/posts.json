@@ -2590,5 +2590,117 @@
    "postagens/2026-11-14-tenis-dafiti/05.jpg",
    "postagens/2026-11-14-tenis-dafiti/06.jpg"
   ]
+ },
+ {
+  "id": "2026-11-16-story-353e4156",
+  "data": "2026-11-16",
+  "hora": "11:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Fritadeira Elétrica Mondial AFN-40-FB 4 Litros",
+  "produtos": [
+   "353e4156"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-353e4156/01.jpg"
+  ],
+  "legenda": "Story: Fritadeira Elétrica Mondial AFN-40-FB 4 Litros: R$ 249,90 (conferido em 09/11/2026) — antes R$ 265,99, queda de 6% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-16-story-8e001448",
+  "data": "2026-11-16",
+  "hora": "18:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Garrafa Squeeze TIBA Infinity 1000 ml Preta",
+  "produtos": [
+   "8e001448"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-8e001448/01.jpg"
+  ],
+  "legenda": "Story: Garrafa Squeeze TIBA Infinity 1000 ml Preta: R$ 15,74 (conferido em 09/11/2026) — antes R$ 17,50, queda de 10% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-17-story-e8a1c7a1",
+  "data": "2026-11-17",
+  "hora": "11:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Fone Bluetooth Lenovo Gm2 Pro Baixa Latência",
+  "produtos": [
+   "e8a1c7a1"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-e8a1c7a1/01.jpg"
+  ],
+  "legenda": "Story: Fone Bluetooth Lenovo Gm2 Pro Baixa Latência: R$ 87,90 (conferido em 11/11/2026) — antes R$ 94,90, queda de 7% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "TECH"
+ },
+ {
+  "id": "2026-11-17-story-68921b58",
+  "data": "2026-11-17",
+  "hora": "18:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C",
+  "produtos": [
+   "68921b58"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-68921b58/01.jpg"
+  ],
+  "legenda": "Story: Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C: R$ 79,90 (conferido em 09/11/2026) — antes R$ 94,90, queda de 16% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-18-story-6bed8cd4",
+  "data": "2026-11-18",
+  "hora": "11:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: 3 Corações Café Torrado e Moído Gourmet Portinari 250 g",
+  "produtos": [
+   "6bed8cd4"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-6bed8cd4/01.jpg"
+  ],
+  "legenda": "Story: 3 Corações Café Torrado e Moído Gourmet Portinari 250 g: R$ 17,90 (conferido em 09/11/2026) — antes R$ 22,70, queda de 21% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-18-story-site",
+  "data": "2026-11-18",
+  "hora": "18:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: preço com data de conferência",
+  "produtos": [],
+  "imagens": [
+   "postagens/2026-11-18-story-site/01.jpg"
+  ],
+  "legenda": "Story sem preço: o que o site faz (busca, quedas de preço, 5 lojas). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": true,
+  "area": "OFERTAS"
  }
 ]
