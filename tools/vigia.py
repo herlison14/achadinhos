@@ -172,7 +172,8 @@ def cmd_build():
     h, nld = re.subn(r'(<!--ld-inicio-->).*?(<!--ld-fim-->)', lambda m: m.group(1) + dados_estruturados(vis) + m.group(2), h, flags=re.S)
     assert nld == 1, 'faltam os marcadores <!--ld-inicio--><!--ld-fim--> no <head>'
     base, resto = datas_texto(vis)
-    h, n1 = re.subn(r'(Preços conferidos em <b>)[^<]+(</b>)[^<]*(</span>)', lambda m: m.group(1) + base + m.group(2) + resto + m.group(3), h)
+    nlojas = len({i['loja'] for i in vis})
+    h, n1 = re.subn(r'(<b id="n-of2">)\d+(</b> ofertas em <b id="n-lj">)\d+(</b>)', lambda m: m.group(1) + str(len(vis)) + m.group(2) + str(nlojas) + m.group(3), h)
     h, n2 = re.subn(r'(<b id="n-of">)\d+(</b>.*?com preço conferido em )[^<]*?(\.</p>)',
                     lambda m: m.group(1) + str(len(vis)) + m.group(2) + base + resto + m.group(3), h, flags=re.S)
     h, n3 = re.subn(r'(Preços e estoque são os conferidos em )[^<]*?( e podem ter mudado\.)', lambda m: m.group(1) + base + resto + m.group(2), h)
