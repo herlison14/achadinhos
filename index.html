@@ -260,8 +260,110 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .pgs h2{font-family:var(--disp);font-size:1.15rem;margin:0 0 10px}.nav2{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}.nav2 a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-weight:800;font-size:.85rem;text-decoration:none}
 /* busca-css-fim */
 </style>
+<style id="repaginada">
+/* Repaginada 12/11/2026: estética editorial, regra 60-30-10.
+   60% fundo claro | 30% grafite (texto) + cinza (linhas) | 10% amarelo da marca (ação) e vermelho (preço). */
+:root{--bg:#F9FAFB;--card:#FFFFFF;--fg:#111827;--mut:#6B7280;--line:#E5E7EB;--acc:#DC3C46;--pill:#291258;--pillfg:#FFC93B;
+--body:"Plus Jakarta Sans","Nunito",system-ui,sans-serif;--tit:"Plus Jakarta Sans","Nunito",system-ui,sans-serif;--r:20px;--sh:0 14px 34px -14px rgba(17,24,39,.28)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--body:"Plus Jakarta Sans","Nunito",system-ui,sans-serif;--tit:"Plus Jakarta Sans","Nunito",system-ui,sans-serif;--r:20px}}
+body{font-size:16px;line-height:1.5;letter-spacing:-.005em}
+.wrap,.ann .in,.cats .sc{max-width:1200px}
+.wrap{padding:0 20px}
+/* faixa e cabeçalho */
+.ann{font-weight:600;font-size:.76rem;letter-spacing:.01em}
+.ann b{font-weight:800}
+.ann a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+.brand{padding:18px 20px 12px}
+.ig{border-color:var(--line);font-weight:600;transition:border-color .2s,background .2s}
+.ig:hover{border-color:var(--fg)}
+.bar{background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(10px);backdrop-filter:saturate(1.4) blur(10px)}
+.sbox,.sel{border-width:1px;height:46px}
+.sbox:focus-within{border-color:var(--fg)}
+.sel{font-weight:600}
+.chip{font-weight:600;transition:background .2s,color .2s}
+.chip:hover{background:rgba(255,255,255,.2)}
+/* destaques (carrossel) */
+.bnr{margin-top:14px}
+.hero h1,.big,.big2{font-family:var(--tit);font-weight:800;letter-spacing:-.035em}
+.hero h1{font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.02}
+.btn{font-weight:800;transition:transform .15s,filter .2s}
+.btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+.btn:active{transform:scale(.98)}
+.btn.p{box-shadow:0 10px 24px -10px rgba(255,201,59,.8)}
+/* vantagens */
+.trust{margin:22px 0 8px;gap:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.trust li{border:0;border-radius:0;background:transparent;padding:18px 16px;gap:12px}
+.trust li+li{box-shadow:inset 1px 0 0 var(--line)}
+@media (max-width:719px){.trust li:nth-child(3){box-shadow:inset 0 1px 0 var(--line)}.trust li:nth-child(4){box-shadow:inset 1px 0 0 var(--line),inset 0 1px 0 var(--line)}}
+.trust .ic{background:transparent;color:var(--fg);width:auto;height:auto}
+.trust .ic svg{width:22px;height:22px}
+.trust b{font-size:.9rem;font-weight:800}
+.trust span{font-size:.78rem}
+/* títulos de seção: editoriais, com respiro */
+.sec-h h2,main h2{font-family:var(--tit);font-weight:800;font-size:clamp(1.5rem,3.2vw,2.1rem);letter-spacing:-.03em;margin:56px 0 18px;scroll-margin-top:130px}
+.sec-h h2::before,main h2::before{display:none}
+.sec-h p{margin:-10px 0 18px;font-size:.92rem}
+.ct{font-weight:600}
+.pm+.pm .sec-h h2{margin-top:44px}
+/* cards dos trilhos */
+.rail{gap:14px}
+.rc{width:172px;border-radius:var(--r);padding:14px 12px 12px;gap:7px}
+.rc:hover{border-color:var(--line);box-shadow:var(--sh);transform:translateY(-3px)}
+.rc img{width:120px;height:120px;border-radius:14px}
+.rc .n{font-weight:600}
+.rc .p{font-family:var(--tit);font-weight:800;font-size:1.3rem;letter-spacing:-.02em}
+/* grade de ofertas */
+main>ul{gap:16px}
+@media (min-width:1000px){main>ul{grid-template-columns:repeat(4,1fr)}}
+.it a{grid-template-columns:1fr;grid-template-rows:auto 1fr auto;gap:12px;padding:14px;border-radius:var(--r);align-items:start}
+.it a:hover{border-color:var(--line);box-shadow:var(--sh);transform:translateY(-3px)}
+.ph{width:100%;height:auto;aspect-ratio:1;border-radius:14px;padding:10px;transition:transform .4s}
+.it a:hover .ph{transform:scale(1.03)}
+.nm{font-weight:600;font-size:.93rem;line-height:1.3}
+.pr b{font-family:var(--tit);font-weight:800;font-size:1.45rem;letter-spacing:-.025em}
+.pr small,.ex{font-weight:600}
+@media (max-width:719px){.it a{grid-template-columns:96px 1fr;grid-template-rows:1fr auto}.ph{width:96px}}
+/* botão "Ver na loja": discreto até o hover (10% de cor de ação) */
+.go{background:transparent;color:var(--fg);border:1px solid var(--line);font-weight:800;border-radius:999px;padding:10px;transition:background .2s,color .2s,border-color .2s}
+.it a:hover .go,.it a:focus-visible .go{background:var(--pillfg);color:#291258;border-color:var(--pillfg)}
+@media (hover:none){.go{background:var(--pillfg);color:#291258;border-color:var(--pillfg)}}
+/* rodapé */
+footer{margin-top:72px;padding:36px 0 110px}
+.aviso{line-height:1.6}
+.vazio,.vazio .vpl a{border-radius:var(--r)}
+/* trilhos laterais (telas >= 1536px): preenchem as laterais com dados reais do site */
+.lat{display:none}
+@media (min-width:1536px){
+.lat{display:block;position:fixed;top:150px;width:min(190px,calc((100vw - 1260px)/2));z-index:20}
+.lat.e{left:calc((100vw - 1200px)/4 - min(190px,calc((100vw - 1260px)/2))/2)}
+.lat.d{right:calc((100vw - 1200px)/4 - min(190px,calc((100vw - 1260px)/2))/2)}
+}
+.lat .bx{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:12px}
+.lat .bx.esc{background:#291258;border-color:#291258;color:#fff}
+.lat .ey{margin:0 0 10px;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.lat .esc .ey{color:#FFC93B}
+.lat .q{display:grid;grid-template-columns:44px 1fr;gap:4px 10px;align-items:center;text-decoration:none;color:inherit;padding:8px 0;border-top:1px solid var(--line)}
+.lat .q:first-of-type{border-top:0;padding-top:0}
+.lat .q img{width:44px;height:44px;border-radius:10px;object-fit:contain;background:#fff;grid-row:span 2}
+.lat .q .n{font-size:.76rem;font-weight:600;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.lat .q .p{font-weight:800;font-size:.9rem;color:var(--acc)}
+.lat .q:hover .n{text-decoration:underline}
+.lat .big3{font-weight:800;font-size:2.4rem;line-height:1;letter-spacing:-.04em;margin:0}
+.lat .sub{margin:4px 0 14px;font-size:.8rem;color:#D8CCF5}
+.lat .cb{display:block;text-align:center;text-decoration:none;font-weight:800;font-size:.82rem;border-radius:999px;padding:9px;margin-top:8px;transition:filter .2s}
+.lat .cb:hover{filter:brightness(1.08)}
+.lat .cb.p{background:#FFC93B;color:#291258}
+.lat .cb.s{border:1px solid rgba(255,255,255,.35);color:#fff}
+.lat .nt{font-size:.68rem;color:var(--mut);margin:10px 0 0;line-height:1.35}
+@media (max-width:479px){.ig{font-size:0;gap:0;padding:10px}.ig svg{width:20px;height:20px}.brand{padding:14px 20px 8px}}
+@media (prefers-reduced-motion:reduce){.it a:hover .ph{transform:none}}
+</style>
 </head>
 <body id="topo">
+<!--laterais-inicio-->
+<aside class="lat e" aria-label="Caiu de preço"><div class="bx"><p class="ey" id="lat-t">Caiu de preço</p><div id="lat-q"></div><p class="nt">Preço conferido na loja. Publicidade: links de afiliado.</p></div></aside>
+<aside class="lat d" aria-label="Black Friday e canais"><div class="bx esc"><p class="ey">Black Friday · 27/11</p><p class="big3" id="lat-bf">--</p><p class="sub" id="lat-bfs">para a Black Friday</p><a class="cb p" href="https://t.me/achadinhosdobinga" rel="noopener">Receber no Telegram</a><a class="cb s" href="https://whatsapp.com/channel/0029VbDhqE4FSAt3fXMI7f1S" rel="noopener">Canal no WhatsApp</a><a class="cb s" href="https://instagram.com/achadinhosdobinga" rel="noopener">Instagram</a></div></aside>
+<!--laterais-fim-->
 <!--busca-inicio-->
 <div class="ann"><div class="in">
 <span class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><a href="#datas" style="color:inherit">Preço conferido na loja, com data</a></span>
@@ -282,7 +384,7 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 <button type="button" id="lp" aria-label="Limpar busca" hidden>&times;</button>
 </div>
 <label for="lj" class="vh">Filtrar por loja</label>
-<select id="lj" class="sel"><option value="">Lojas</option><option value="shopee">Shopee</option><option value="amazon">Amazon</option><option value="meli">Mercado Livre</option><option value="aliexpress">AliExpress</option><option value="magalu">Magalu</option><option value="kabum">KaBuM!</option><option value="nike">Nike</option></select>
+<select id="lj" class="sel"><option value="">Lojas</option><option value="shopee">Shopee</option><option value="amazon">Amazon</option><option value="meli">Mercado Livre</option><option value="aliexpress">AliExpress</option><option value="magalu">Magalu</option><option value="kabum">KaBuM!</option><option value="nike">Nike</option><option value="dafiti">Dafiti</option><option value="docebeleza">Doce Beleza</option><option value="puma">PUMA</option><option value="hope">Hope Lingerie</option></select>
 </form>
 </div>
 <nav class="cats" aria-label="Categorias e lojas"><div class="sc" id="chips"></div><div class="sc sl2" id="lchips" role="group" aria-label="Filtrar por loja"></div></nav>
@@ -690,5 +792,36 @@ var k=0;setInterval(function(){msgs[k].classList.remove('on');k=(k+1)%msgs.lengt
 /* busca-js-fim */
 </script>
 <script src="cliques.js" defer></script>
+<script id="laterais-js">
+/* Trilhos laterais: só dados que já estão na página (quedas reais ou menores preços) e a contagem até a Black Friday. */
+(function(){
+if(!window.matchMedia||!matchMedia('(min-width:1536px)').matches)return;
+var box=document.getElementById('lat-q'),tit=document.getElementById('lat-t');
+function preenche(){
+  var src=[].slice.call(document.querySelectorAll('#rail-quedas .rc'));
+  var q=document.getElementById('quedas');
+  if(!src.length||(q&&q.hidden)){src=[].slice.call(document.querySelectorAll('#rail .rc'));tit.textContent='Menores preços';}
+  else tit.textContent='Caiu de preço';
+  if(!src.length)return false;
+  box.textContent='';
+  src.slice(0,4).forEach(function(c){
+    var a=document.createElement('a');a.className='q';a.href=c.href;a.rel='noopener sponsored';
+    var im=c.querySelector('img');if(im){var i=im.cloneNode();i.removeAttribute('width');i.removeAttribute('height');a.appendChild(i);}
+    var n=document.createElement('span');n.className='n';n.textContent=(c.querySelector('.n')||{}).textContent||'';a.appendChild(n);
+    var p=document.createElement('span');p.className='p';p.textContent=((c.querySelector('.p')||{}).firstChild||{}).textContent||'';a.appendChild(p);
+    box.appendChild(a);
+  });
+  return true;
+}
+var t=0,iv=setInterval(function(){if(preenche()&&document.querySelectorAll('#rail-quedas .rc').length||++t>20)clearInterval(iv);},500);
+var bar=document.querySelector('.bar'),lats=[].slice.call(document.querySelectorAll('.lat'));
+function pos(){var y=Math.max(16,(bar?bar.getBoundingClientRect().bottom:0)+20);lats.forEach(function(l){l.style.top=y+'px';});}
+pos();addEventListener('scroll',pos,{passive:true});addEventListener('resize',pos);
+var bf=new Date(2026,10,27),hoje=new Date();hoje.setHours(0,0,0,0);
+var d=Math.round((bf-hoje)/864e5),el=document.getElementById('lat-bf'),s=document.getElementById('lat-bfs');
+if(d>1){el.textContent=d+' dias';}else if(d===1){el.textContent='Amanhã';s.textContent='é Black Friday';}
+else if(d===0){el.textContent='Hoje';s.textContent='é Black Friday';}else{el.parentNode.parentNode.hidden=true;}
+})();
+</script>
 </body>
 </html>
