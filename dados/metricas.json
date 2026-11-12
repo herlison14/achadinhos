@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-11 05:06",
+ "atualizado": "2026-11-12 05:43",
  "conta": "achadinhosdobinga",
  "dias": [
   {
@@ -109,9 +109,105 @@
    "salvos": 1,
    "envios": 0,
    "posts": 30
+  },
+  {
+   "data": "2026-11-12",
+   "seguidores": 179,
+   "publicacoes": 51,
+   "alcance": 351,
+   "views": 1001,
+   "curtidas": 13,
+   "comentarios": 9,
+   "salvos": 1,
+   "envios": 1,
+   "posts": 30
   }
  ],
  "posts": [
+  {
+   "id": "2026-11-11-reel-flow-lista",
+   "publicado_em": "2026-11-11 20:01",
+   "objetivo": "visita",
+   "formato": "reel",
+   "hora": "20:00",
+   "curtidas": 1,
+   "comentarios": 0,
+   "reach": 10,
+   "saved": 0,
+   "shares": 0,
+   "views": 20,
+   "link": "https://www.instagram.com/reel/DfnnPixkvhP/"
+  },
+  {
+   "id": "2026-11-11-eletronicos-meli",
+   "publicado_em": "2026-11-11 16:02",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "16:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 31,
+   "link": "https://www.instagram.com/p/DfnL4VBje1W/"
+  },
+  {
+   "id": "2026-11-11-brinquedos-amazon",
+   "publicado_em": "2026-11-11 12:31",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "12:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 29,
+   "link": "https://www.instagram.com/p/Dfmz0BAHfFo/"
+  },
+  {
+   "id": "2026-11-14-revolution-nike",
+   "publicado_em": "2026-11-11 12:02",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "12:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 29,
+   "link": "https://www.instagram.com/p/DfmwY8sjbml/"
+  },
+  {
+   "id": "2026-11-11-hoje-e-11-11-confere",
+   "publicado_em": "2026-11-11 10:31",
+   "objetivo": "visita",
+   "formato": "carrossel",
+   "hora": "10:30",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 7,
+   "saved": 0,
+   "shares": 0,
+   "views": 24,
+   "link": "https://www.instagram.com/p/DfmmEgmDZpb/"
+  },
+  {
+   "id": "2026-11-11-11-11-ao-vivo-ofertas-qu",
+   "publicado_em": "2026-11-11 08:02",
+   "objetivo": "produto",
+   "formato": "carrossel",
+   "hora": "08:00",
+   "curtidas": 0,
+   "comentarios": 0,
+   "reach": 12,
+   "saved": 0,
+   "shares": 0,
+   "views": 40,
+   "link": "https://www.instagram.com/p/DfmU9D0F5P5/"
+  },
   {
    "id": "2026-11-10-reel-flow-relogio",
    "publicado_em": "2026-11-10 20:01",
@@ -120,10 +216,10 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 4,
+   "reach": 7,
    "saved": 0,
    "shares": 0,
-   "views": 9,
+   "views": 14,
    "link": "https://www.instagram.com/reel/DflCcQsjR6i/"
   },
   {
@@ -134,10 +230,10 @@
    "hora": "16:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 8,
+   "reach": 9,
    "saved": 0,
    "shares": 0,
-   "views": 21,
+   "views": 28,
    "link": "https://www.instagram.com/p/DfknEf6l4xa/"
   },
   {
@@ -148,10 +244,10 @@
    "hora": "14:30",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 13,
    "saved": 0,
    "shares": 0,
-   "views": 30,
+   "views": 39,
    "link": "https://www.instagram.com/p/DfkcwFSDyR8/"
   },
   {
@@ -162,10 +258,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 12,
    "saved": 1,
    "shares": 0,
-   "views": 27,
+   "views": 32,
    "link": "https://www.instagram.com/p/DfkPDTmlxsv/"
   },
   {
@@ -179,7 +275,7 @@
    "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 36,
+   "views": 39,
    "link": "https://www.instagram.com/p/DfjwHreDz3n/"
   },
   {
@@ -193,7 +289,7 @@
    "reach": 8,
    "saved": 0,
    "shares": 0,
-   "views": 23,
+   "views": 31,
    "link": "https://www.instagram.com/p/Dfi5PfHiQbu/"
   },
   {
@@ -204,10 +300,10 @@
    "hora": "23:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 7,
+   "reach": 9,
    "saved": 0,
    "shares": 0,
-   "views": 23,
+   "views": 32,
    "link": "https://www.instagram.com/p/DfiyZVrGsV3/"
   },
   {
@@ -232,10 +328,10 @@
    "hora": "21:00",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 6,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 18,
+   "views": 34,
    "link": "https://www.instagram.com/p/DfiklTAGIbE/"
   },
   {
@@ -244,12 +340,12 @@
    "objetivo": "compartilhar",
    "formato": "reel",
    "hora": "20:00",
-   "curtidas": 1,
+   "curtidas": 2,
    "comentarios": 0,
-   "reach": 7,
+   "reach": 32,
    "saved": 0,
-   "shares": 0,
-   "views": 11,
+   "shares": 1,
+   "views": 51,
    "link": "https://www.instagram.com/reel/DfidqJHji4p/"
   },
   {
@@ -260,10 +356,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 11,
+   "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 37,
+   "views": 38,
    "link": "https://www.instagram.com/p/DfhqRs9GAH7/"
   },
   {
@@ -277,7 +373,7 @@
    "reach": 12,
    "saved": 0,
    "shares": 0,
-   "views": 16,
+   "views": 17,
    "link": "https://www.instagram.com/reel/Dff43KriTc8/"
   },
   {
@@ -288,10 +384,10 @@
    "hora": "12:30",
    "curtidas": 0,
    "comentarios": 0,
-   "reach": 10,
+   "reach": 11,
    "saved": 0,
    "shares": 0,
-   "views": 35,
+   "views": 38,
    "link": "https://www.instagram.com/p/DffFeSHk4jx/"
   },
   {
@@ -344,10 +440,10 @@
    "hora": "12:30",
    "curtidas": 1,
    "comentarios": 0,
-   "reach": 16,
+   "reach": 18,
    "saved": 0,
    "shares": 0,
-   "views": 46,
+   "views": 48,
    "link": "https://www.instagram.com/p/DfcgmzGIY4B/"
   },
   {
@@ -442,95 +538,11 @@
    "hora": "20:00",
    "curtidas": 1,
    "comentarios": 2,
-   "reach": 17,
+   "reach": 18,
    "saved": 0,
    "shares": 0,
-   "views": 36,
+   "views": 39,
    "link": "https://www.instagram.com/reel/DfTBhlkEskt/"
-  },
-  {
-   "id": "2026-11-03-site-tudo-num-lugar",
-   "publicado_em": "2026-11-03 14:34",
-   "objetivo": "visita",
-   "formato": "carrossel",
-   "hora": "14:30",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 9,
-   "saved": 0,
-   "shares": 0,
-   "views": 34,
-   "link": "https://www.instagram.com/p/DfSbg0JjW44/"
-  },
-  {
-   "id": "2026-11-03-queda-do-dia",
-   "publicado_em": "2026-11-02 23:05",
-   "objetivo": "descoberta",
-   "formato": "reel",
-   "hora": "23:00",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 10,
-   "saved": 0,
-   "shares": 0,
-   "views": 16,
-   "link": "https://www.instagram.com/reel/DfQxJwzk_8y/"
-  },
-  {
-   "id": "2026-11-29-natal-shopee",
-   "publicado_em": "2026-11-01 19:34",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "19:30",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 11,
-   "saved": 0,
-   "shares": 0,
-   "views": 38,
-   "link": "https://www.instagram.com/p/DfN0M7UnXxg/"
-  },
-  {
-   "id": "2026-11-23-despensa-shopee",
-   "publicado_em": "2026-11-01 16:04",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "16:00",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 13,
-   "saved": 0,
-   "shares": 0,
-   "views": 31,
-   "link": "https://www.instagram.com/p/DfNcK9HFy-p/"
-  },
-  {
-   "id": "2026-11-19-despensa-shopee",
-   "publicado_em": "2026-11-01 14:03",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "12:30",
-   "curtidas": 0,
-   "comentarios": 1,
-   "reach": 12,
-   "saved": 0,
-   "shares": 0,
-   "views": 31,
-   "link": "https://www.instagram.com/p/DfNOSv8GJcV/"
-  },
-  {
-   "id": "2026-11-18-amazon-66-96",
-   "publicado_em": "2026-11-01 14:01",
-   "objetivo": "produto",
-   "formato": "carrossel",
-   "hora": "09:00",
-   "curtidas": 0,
-   "comentarios": 0,
-   "reach": 12,
-   "saved": 0,
-   "shares": 0,
-   "views": 33,
-   "link": "https://www.instagram.com/p/DfNOJiAGMHE/"
   }
  ]
 }
