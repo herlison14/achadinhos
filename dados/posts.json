@@ -2247,10 +2247,12 @@
    "postagens/2026-11-12-story-22f38da9/01.jpg"
   ],
   "legenda": "Story: Celular Xiaomi Poco M8 5G 256GB 8GB RAM com NFC: R$ 1.889,00 (conferido em 05/11/2026) — antes R$ 1.899,00, queda de 1% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "TECH"
+  "area": "TECH",
+  "ig_id": "18119216600320449",
+  "publicado_em": "2026-11-12 11:31"
  },
  {
   "id": "2026-11-12-story-site",
