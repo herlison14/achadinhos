@@ -2272,10 +2272,12 @@
    "postagens/2026-11-12-story-site/01.jpg"
   ],
   "legenda": "Story sem preço: o que o site faz (busca, quedas de preço, 5 lojas). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": true,
-  "area": "OFERTAS"
+  "area": "OFERTAS",
+  "ig_id": "18097456304660349",
+  "publicado_em": "2026-11-12 18:31"
  },
  {
   "id": "2026-11-13-story-df555e5e",
