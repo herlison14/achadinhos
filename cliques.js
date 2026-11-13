@@ -10,7 +10,8 @@
   function origem() {
     var o = '';
     try {
-      var q = new URLSearchParams(location.search).get('o');
+      var ps = new URLSearchParams(location.search);
+      var q = ps.get('o') || ps.get('utm_source');
       if (q && NOME.test(q)) {
         o = q.toLowerCase();
         sessionStorage.setItem('o', o);
@@ -83,6 +84,30 @@
       fetch(ENDPOINT, { method: 'POST', body: dados, keepalive: true, mode: 'no-cors' });
     } catch (e) {}
   }
+
+  // Visita real (aba Funil do painel): so navegador de verdade, pagina visivel, 1 aviso por pagina.
+  // Sem IP, cookie ou identificacao: origem, tipo de pagina e se e a 1a pagina da sessao.
+  function avisarVisita() {
+    try {
+      if (navigator.webdriver) return;
+      var VIS = ENDPOINT.replace(/\/c$/, '/v');
+      var pth = location.pathname;
+      var pg = /^\/(index\.html)?$/.test(pth) ? 'home' : /^\/ofertas\/natal/.test(pth) ? 'natal' : /^\/ofertas\//.test(pth) ? 'oferta' : /^\/lojas\//.test(pth) ? 'loja' : 'outra';
+      var nova = 0;
+      try { if (!sessionStorage.getItem('vs')) { sessionStorage.setItem('vs', '1'); nova = 1; } } catch (e) { nova = 1; }
+      var d = JSON.stringify({ o: origem(), p: pg, s: nova });
+      if (navigator.sendBeacon && navigator.sendBeacon(VIS, new Blob([d], { type: 'text/plain;charset=UTF-8' }))) return;
+      fetch(VIS, { method: 'POST', body: d, keepalive: true, mode: 'no-cors' });
+    } catch (e) {}
+  }
+  var avisou = false;
+  function talvezVisita() {
+    if (avisou || document.visibilityState !== 'visible') return;
+    avisou = true;
+    setTimeout(avisarVisita, 1500);
+  }
+  talvezVisita();
+  document.addEventListener('visibilitychange', talvezVisita);
 
   document.addEventListener('click', aoClicar, true);
   document.addEventListener('auxclick', aoClicar, true);

@@ -88,6 +88,7 @@ a{color:var(--roxo)}
 <main>
 <nav role="tablist">
   <button role="tab" aria-selected="true" data-aba="geral">Visão geral</button>
+  <button role="tab" aria-selected="false" data-aba="funil">Funil</button>
   <button role="tab" aria-selected="false" data-aba="controle">Controle</button>
   <button role="tab" aria-selected="false" data-aba="ofertas">Ofertas</button>
   <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
@@ -198,6 +199,20 @@ a{color:var(--roxo)}
   <div id="ds-areas"></div>
 </section>
 
+<section id="funil" hidden>
+  <div class="card">
+    <h2>Funil: visitas reais → cliques nas lojas → pedidos</h2>
+    <p class="sub">Só gente de verdade: o site avisa a visita quando um navegador abre a página (robôs que só procuram falhas não contam, ao contrário do Analytics do Cloudflare). Pedidos vêm do CSV importado na aba Ganhos. Mesma chave e código 2FA das outras abas; nada é guardado.</p>
+    <p class="sub">Ponto de partida (Cloudflare, 13/10 a 12/11/2026): ~340 visitas do Brasil, 33 cliques nas lojas (~10%), 1 venda. Meta: taxa de clique acima de 8% e visitas crescendo semana a semana.</p>
+    <div class="ctl">
+      <input id="fk" type="password" autocomplete="off" placeholder="Chave do relatório" aria-label="Chave do relatório">
+      <input id="fc2" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Código 2FA" aria-label="Código de 6 dígitos do app autenticador" style="max-width:110px">
+      <select id="fdias" aria-label="Período"><option value="30">30 dias</option><option value="7">7 dias</option><option value="90">90 dias</option></select>
+      <button id="fver" type="button">Carregar</button>
+    </div>
+    <div id="fn-out"></div>
+  </div>
+</section>
 <section id="procurados" hidden>
   <div class="card">
     <h2>Procurados e não achados</h2>
@@ -455,6 +470,52 @@ function procurados(){
      barras(bx,d.lista.map(function(x){return [x.nome,x.n]}))})
    .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
 $('#pver').addEventListener('click',procurados);
+function funil(){
+  var k=$('#fk').value.trim(),out=$('#fn-out');out.textContent='';
+  if(!k){out.appendChild(el('div','msg','Digite a chave do relatório.'));return}
+  fetch(WORKER+'/api/funil?dias='+encodeURIComponent($('#fdias').value),{headers:{'Authorization':'Bearer '+k+$('#fc2').value.trim()},cache:'no-store'})
+   .then(function(r){if(!r.ok)throw new Error(r.status===401?'Chave ou código recusado.':r.status===429?'Muitas tentativas erradas. Aguarde 15 minutos.':r.status===404?'A rota /api/funil ainda não está no Worker (bloco 5).':'O Worker respondeu '+r.status+'.');return r.json()})
+   .then(function(d){
+     var ini=d.inicioVisitas;
+     if(!ini){out.appendChild(el('div','msg','Ainda não há visitas registradas. Elas começam a contar assim que o bloco 5 estiver no Worker.'));return}
+     /* taxa só conta do 1º dia com visitas, para não misturar cliques antigos */
+     var V={},C={},P={};
+     d.visitasDia.forEach(function(x){V[x.dia]=x.visitas});
+     d.cliquesDia.forEach(function(x){if(x.dia>=ini)C[x.dia]=x.cliques});
+     (d.pedidos||[]).forEach(function(x){if(x.dia>=ini)P[x.dia]=(P[x.dia]||0)+x.pedidos});
+     function soma(o){var t=0;for(var q in o)t+=o[q];return t}
+     var tv=soma(V),tc=soma(C),tp=soma(P);
+     function pct(a,b){return b?(100*a/b).toFixed(1).replace('.',',')+'%':'—'}
+     var g=el('div','grid');
+     [[tv,'visitas reais'],[tc,'cliques nas lojas'],[pct(tc,tv),'visitas que clicam'],[tp,'pedidos (CSV)'],[pct(tp,tc),'cliques que viram pedido']].forEach(function(x){var c=el('div','card');c.appendChild(el('div','k',String(x[0])));c.appendChild(el('div','l',x[1]));g.appendChild(c)});
+     out.appendChild(g);
+     out.appendChild(el('div','sub','Contando desde '+dbr(ini)+'. Referência de mercado: 2% a 5% dos cliques viram pedido; para ~30 pedidos/mês são precisos ~1.000 cliques.'));
+     /* semanas (segunda a domingo) */
+     function seg(iso){var t=new Date(iso+'T12:00:00Z'),w=(t.getUTCDay()+6)%7;t.setUTCDate(t.getUTCDate()-w);return t.toISOString().slice(0,10)}
+     var S={};
+     [[V,'v'],[C,'c'],[P,'p']].forEach(function(z){for(var dia in z[0]){var s=seg(dia);S[s]=S[s]||{v:0,c:0,p:0};S[s][z[1]]+=z[0][dia]}});
+     var b=el('div','card');b.style.marginTop='12px';b.appendChild(el('h2',0,'Por semana'));
+     var tw=el('div','tw');tw.style.border='0';var tb=el('table');var th=el('thead');var tr=el('tr');
+     ['Semana de','Visitas','Cliques','Taxa de clique','Pedidos'].forEach(function(n,i){var c=el('th',i?'r':0,n);tr.appendChild(c)});th.appendChild(tr);tb.appendChild(th);
+     var bd=el('tbody');Object.keys(S).sort().reverse().forEach(function(s){var x=S[s],r=el('tr');[dbr(s),x.v,x.c,pct(x.c,x.v),x.p].forEach(function(v,i){r.appendChild(el('td',i?'r':0,String(v)))});bd.appendChild(r)});
+     tb.appendChild(bd);tw.appendChild(tb);b.appendChild(tw);out.appendChild(b);
+     /* por origem */
+     var O={};
+     d.visitasOrigem.forEach(function(x){O[x.nome]=O[x.nome]||{v:0,c:0};O[x.nome].v=x.visitas});
+     d.cliquesOrigem.forEach(function(x){O[x.nome]=O[x.nome]||{v:0,c:0};O[x.nome].c=x.cliques});
+     var b2=el('div','card');b2.style.marginTop='12px';b2.appendChild(el('h2',0,'De onde vem quem compra (origem)'));
+     b2.appendChild(el('div','sub','Links com ?o=ig, ?o=wa, ?o=tg ou ?o=anuncio separam cada canal. Os cliques desta tabela incluem os anteriores ao início da contagem de visitas.'));
+     var tw2=el('div','tw');tw2.style.border='0';var t2=el('table');var h2=el('thead'),r2=el('tr');
+     ['Origem','Visitas','Cliques','Taxa'].forEach(function(n,i){r2.appendChild(el('th',i?'r':0,n))});h2.appendChild(r2);t2.appendChild(h2);
+     var b3=el('tbody');Object.keys(O).sort(function(a,z){return O[z].v-O[a].v}).forEach(function(n){var x=O[n],r=el('tr');[n,x.v,x.c,pct(x.c,x.v)].forEach(function(v,i){r.appendChild(el('td',i?'r':0,String(v)))});b3.appendChild(r)});
+     t2.appendChild(b3);tw2.appendChild(t2);b2.appendChild(tw2);out.appendChild(b2);
+     if(d.paginas&&d.paginas.length){var b4=el('div','card');b4.style.marginTop='12px';b4.appendChild(el('h2',0,'Páginas mais vistas'));var bx=el('div');b4.appendChild(bx);out.appendChild(b4);
+       var NM={home:'Página inicial',oferta:'Categorias (ofertas/)',loja:'Lojas (lojas/)',natal:'Natal',outra:'Outras'};
+       barras(bx,d.paginas.map(function(x){return [NM[x.nome]||x.nome,x.views]}))}
+   })
+   .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
+$('#fver').addEventListener('click',funil);
+
 var auOk=false;
 function controle(){
   if(auOk)return;

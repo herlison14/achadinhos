@@ -7,6 +7,8 @@ O Worker publicado (Cloudflare) tem o contador de cliques (`POST /c`, `GET /rela
 2. `bloco_2_api_ganhos.js` — `GET` e `POST /api/ganhos` (comissão no D1, tabela criada sozinha). Usa `PAINEL`, `iguais`, `hojeBrasilia` e `limpar`, definidos no código original e no bloco 1.
 3. `bloco_4_buscas.js` — buscas sem resultado do site: `POST /b` (público, só o termo, sem IP; tabela `buscas` criada sozinha; até 400 termos novos por dia) e `GET /api/buscas` (aba Procurados do painel, atrás de `protegido`). Rotas: `if (url.pathname === '/b') return buscaRegistrar(req, env);` e `if (url.pathname === '/api/buscas') return protegido(req, env, url, apiBuscas);`. Criado em 07/11/2026.
 
+4. `bloco_5_visitas.js` — visitas reais e funil: `POST /v` (público, aviso do `cliques.js` quando um navegador de verdade abre a página; só dia, origem, tipo de página e se é a 1ª da sessão; tabela `visitas` criada sozinha) e `GET /api/funil` (aba **Funil** do painel: visitas → cliques → pedidos do CSV, só contagens, atrás de `protegido`). Rotas: `if (url.pathname === '/v') return visitaRegistrar(req, env);` e `if (url.pathname === '/api/funil') return protegido(req, env, url, apiFunil);`. Criado em 12/11/2026.
+
 Rotas dentro do `fetch`, logo depois de `const url = new URL(req.url);`:
 
 ```js
