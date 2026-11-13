@@ -1,0 +1,24 @@
+{
+  "_comentario": "Copie este arquivo, preencha e passe para tools/nova_marca.py. Nenhum segredo aqui (tokens, senhas e chaves ficam só no GitHub Secrets e no Cloudflare).",
+
+  "nome": "Garimpo do Zeca",
+  "nome_curto": "Garimpo",
+  "linha2_logo": "do zeca",
+  "prefixo": "garimpo",
+
+  "dominio": "garimpodozeca.com.br",
+  "instagram": "garimpodozeca",
+  "telegram_canal": "garimpodozeca",
+  "telegram_bot": "garimpodozeca_bot",
+
+  "github_usuario": "SEU_USUARIO_GITHUB",
+  "github_repo": "garimpo-do-zeca",
+  "cloudflare_subdominio": "SEUNOME",
+  "painel_pages": "garimpo-painel.pages.dev",
+
+  "amazon_tag": "SEUTAGAMAZON-20",
+  "awin_publisher": "(preencher quando tiver conta na Awin)",
+  "shopee_afiliado": "(preencher quando tiver conta de afiliado Shopee)",
+
+  "dono": "Zeca"
+}

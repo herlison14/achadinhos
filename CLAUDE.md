@@ -28,6 +28,24 @@ Tudo que gerar visualização e produtividade/lucro eu posso fazer sozinho, só 
 
 - **Funil e visitas reais (12/11/2026):** diagnóstico com o Cloudflare (13/10 a 12/11): 11,4 mil "visitas" no Analytics são quase todas robôs (EUA, Holanda, Polônia, Singapura procurando `/.env`); Brasil = ~340 visitas, 33 cliques nas lojas (~10%), 1 venda. Conclusão: o funil funciona, falta volume (meta ~1.000 cliques/mês). O `cliques.js` agora avisa `cliques-binga/v` uma vez por página quando um navegador real abre o site (sem IP/cookie; aceita `?o=` e `utm_source`) e a aba **Funil** do painel mostra visitas → cliques → pedidos por semana e por origem. Bloco `worker/bloco_5_visitas.js` colado e implantado por ele em 12/11/2026 22:50; testado (visita de teste gravada na tabela `visitas` e apagada). O `<script>` usa `cliques.js?v=AAAAMMDD` (troque a versão em `index.html` e `tools/paginas.py` sempre que mudar o `cliques.js`, porque o Cloudflare guarda o arquivo por 4 h). Em links de anúncio usar `?o=anuncio`. Consultas de leitura no D1 dá para fazer pelo Console do D1 no Chrome dele (`SELECT` só).
 
+## Kit de nova marca (12/11/2026, pedido do Herlison)
+Para abrir outro site com a MESMA estrutura (site, painel, robôs, Workers, fluxos), mas marca
+diferente (outro domínio, Instagram, Telegram, contas de afiliado):
+1. Copiar `modelo/marca.exemplo.json`, preencher (sem segredo nenhum nele).
+2. `python3 -I tools/nova_marca.py SEU_ARQUIVO.json /caminho/fora-deste-repo` — copia o código,
+   troca tudo (nome, domínio, Instagram, Telegram, repositório, Workers, tags de afiliado), zera os
+   dados e **esvazia o catálogo de produtos do index.html copiado** (sem isso, o site novo
+   mostraria os 364 produtos do Achadinhos com preço "conferido" por outra marca). Confere sozinho
+   que não sobrou vestígio do Achadinhos no código.
+3. Documentação que vai junto na pasta nova: `ESTRUTURA.md` (como o sistema funciona, genérico),
+   `REPLICAR.md` (checklist do que só um humano faz: contas, segredos, logo, cores, primeiros
+   produtos) e um `CLAUDE.md` próprio da marca nova (gerado a partir de `modelo/CLAUDE.modelo.md`).
+4. O `tools/nova_loja.py` (cadastrar um afiliado novo) vai junto com o código copiado.
+Testado em 12/11/2026 com uma marca fictícia ("Garimpo do Zeca"): Python e JS do resultado checados
+(sintaxe válida), `sincronia.py` falha com a mensagem certa (`itens.json vazio`, esperado até o
+primeiro produto entrar) e não sobra nenhum vestígio do Achadinhos fora de ESTRUTURA/REPLICAR/
+CLAUDE.md (que citam a origem de propósito).
+
 ## Loja nova aprovada (regra do Herlison, 12/11/2026)
 Sempre que um afiliado novo for aprovado (Awin ou outro), a loja entra no **site, Instagram e Telegram** sem ele pedir:
 1. `python3 -I tools/nova_loja.py SLUG "Nome" PROGRAMA dominio.com.br dominio-das-fotos --cor "#fundo,#texto" --etiqueta "#fundo,#texto" [--prep no] [--fora-dos-canais]` cadastra a loja nos ~16 arquivos (nomes, CTA, mapa de domínios do site/cliques, cores, CSP do `_headers`, sincronia, auditor, painel, workers) e grava `dados/lojas_awin.json`. Pode rodar de novo sem duplicar.
