@@ -133,7 +133,7 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
         caminho = 'ofertas/%s/' % slug(c)
         paginas.append((caminho, _pagina(
             h, estilo, cab, '%s: ofertas com preço conferido | Achadinhos do Binga' % c,
-            'Veja %d ofertas de %s com preço conferido na Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress. De %s a %s.' % (len(its), c.lower(), mn, mx),
+            'Veja %d ofertas de %s com preço conferido em %s. De %s a %s.' % (len(its), c.lower(), ', '.join(ls[:-1]) + ' e ' + ls[-1] if len(ls) > 1 else ls[0], mn, mx),
             caminho, 'Ofertas de %s' % html.escape(c), intro, corpo, nav(('c', c)),
             dados_estruturados(its), aviso).replace('<main id="ofertas">', bloco_quedas(its) + '<main id="ofertas">', 1)))
     for l in lojas:

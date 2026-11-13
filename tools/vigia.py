@@ -181,6 +181,7 @@ def cmd_build():
     _lj = ', '.join(_ls[:-1]) + ' e ' + _ls[-1] if len(_ls) > 1 else ''.join(_ls)
     h, n4 = re.subn(r'(<p class="aviso"[^>]*>Publicidade: estes são links de afiliado da )[^<]*?( e eu posso receber)', lambda m: m.group(1) + _lj + m.group(2), h)
     assert n1 == 1 and n2 == 1 and n3 == 1 and n4 == 1, (n1, n2, n3, n4)
+    h = re.sub(r'(em |de )\d+( lojas)', lambda m: m.group(1) + str(nlojas) + m.group(2), h)
     open(IDX, 'w', encoding='utf-8', newline='\n').write(h)
     q = quedas(vis, ler(HIST, {}), hoje)
     gravar(os.path.join(RAIZ, 'dados', 'quedas.json'), q)
