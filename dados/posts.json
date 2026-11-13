@@ -1983,8 +1983,8 @@
    "a35e5966",
    "77f4967b"
   ],
-  "status": "agendado",
-  "nota": "Texto em Downloads\\Achadinhos\\06_WhatsApp\\whatsapp_12-11-2026; publicado pelo WhatsApp Web (Chrome do Herlison) com autorização de 06/11/2026."
+  "status": "cancelado",
+  "nota": "Não publicada (Chrome desligado de manhã)."
  },
  {
   "id": "2026-11-12-wa-noite",
@@ -2000,8 +2000,9 @@
    "9fdc5812",
    "77eabcb3"
   ],
-  "status": "agendado",
-  "nota": "Texto em Downloads\\Achadinhos\\06_WhatsApp\\whatsapp_12-11-2026; publicado pelo WhatsApp Web (Chrome do Herlison) com autorização de 06/11/2026."
+  "status": "publicado",
+  "nota": "Publicada pelo WhatsApp Web às 21:33 (atrasada): texto com 4 ofertas (Polishop, Mizuno, Amazon, Doce Beleza) + 4 cards com foto + linha final com o site.",
+  "publicado_em": "2026-11-12 21:33"
  },
  {
   "id": "2026-11-10-story-d99a3369",

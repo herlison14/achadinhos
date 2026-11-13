@@ -110,6 +110,13 @@ def foto_do_item(i):
     from PIL import Image
     img = i.get("img", "")
     foto = i.get("foto")
+    raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    for local in ("img/cards/%s.jpg" % i.get("id"), "img/%s.webp" % i.get("id")):   # foto já no repositório
+        if os.path.exists(os.path.join(raiz, local)):
+            try:
+                return Image.open(os.path.join(raiz, local)).convert("RGB")
+            except Exception:
+                pass
     if foto:
         try:
             return Image.open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), foto)).convert("RGB")
