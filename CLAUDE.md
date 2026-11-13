@@ -23,8 +23,18 @@ Tudo que gerar visualização e produtividade/lucro eu posso fazer sozinho, só 
 
 - **Robô de controle (07/11/2026, pedido do Herlison):** `tools/auditor.py` (fluxo `auditoria.yml`, 13:40 e 23:40) confere publicação vencida/erro, pré-voo dos próximos 72 h (mesma trava do publicador), espelho do Telegram, rodadas do WhatsApp, falhas de qualquer fluxo nas últimas 26 h, itens sem conferência, métricas e buracos no calendário. Grava `dados/auditoria.json` (aba **Controle** do painel) e abre/fecha sozinho a issue "Auditoria" (label `auditoria`) quando há nível ALTO. Tarefa agendada "Controle diário (auditoria dos robôs)" (23:52, nuvem) corrige o que é seguro e manda push com o resto.
 - **Avisos internos do publicador** só vão para `TELEGRAM_AVISO` (chat privado; não configurado = só no log). Nunca para o canal público (até 07/11/2026 iam para o canal por engano).
-- **Telegram parado desde 04/11/2026 à noite:** `TELEGRAM_TOKEN` do GitHub dá HTTP 401 (o token foi trocado ao configurar o bot-binga; o Cloudflare tem o novo). Ele precisa copiar o token no @BotFather (sem Revoke) e colar no segredo do GitHub. Depois o publicador manda os carrosséis pendentes sozinho.
+- **Telegram parado desde 04/11/2026 à noite (continuava em 12/11/2026, 4 execuções seguidas com 401):** `TELEGRAM_TOKEN` do GitHub dá HTTP 401 (o token foi trocado ao configurar o bot-binga; o Cloudflare tem o novo). Ele precisa copiar o token no @BotFather (sem Revoke) e colar no segredo do GitHub. Depois o publicador manda os carrosséis pendentes sozinho.
 - **Busca sem resultado (Etapa 1, 07/11/2026):** o site mostra "Buscar na Amazon/no Magalu" com afiliado, até 4 parecidos conferidos e manda só o termo para `cliques-binga/b` (bloco `worker/bloco_4_buscas.js`, **falta ele colar no Worker**). Aba **Procurados** no painel. Etapa 2 (APIs Shopee/AliExpress) só se a lista mostrar procura.
+
+## Loja nova aprovada (regra do Herlison, 12/11/2026)
+Sempre que um afiliado novo for aprovado (Awin ou outro), a loja entra no **site, Instagram e Telegram** sem ele pedir:
+1. `python3 -I tools/nova_loja.py SLUG "Nome" PROGRAMA dominio.com.br dominio-das-fotos --cor "#fundo,#texto" --etiqueta "#fundo,#texto" [--prep no] [--fora-dos-canais]` cadastra a loja nos ~16 arquivos (nomes, CTA, mapa de domínios do site/cliques, cores, CSP do `_headers`, sincronia, auditor, painel, workers) e grava `dados/lojas_awin.json`. Pode rodar de novo sem duplicar.
+2. ~20 produtos com preço e estoque conferidos na loja (lojas VTEX como Polishop e Mizuno: `fetch('/api/catalog_system/pub/products/search?_from=0&_to=49&O=OrderByTopSaleDESC')` same-origin no Chrome dele; foto `.../arquivos/ids/<id>-600-600/<arquivo>`), link `https://www.awin1.com/cread.php?awinmid=<programa>&awinaffid=3147693&ued=<url codificada>`, id = sha1(href)[:8], histórico com a data, foto em `dados/fotos_urls.json`.
+3. `vigia.py build`, `sincronia.py`, push; esperar o fluxo de fotos; 2 carrosséis por loja em horários de produto livres (`cards.py`), Stories (`stories.py`), `instagram.py testar`.
+4. Ler os termos do anunciante na Awin (canais proibidos → `--fora-dos-canais`; cupom só oficial).
+5. Avisar o Herlison para colar `worker/bot/worker.js` e `worker/bloco_2_api_ganhos.js` no Cloudflare.
+Tarefa agendada "Novos afiliados Awin" (diária, Gmail + Chrome dele) faz isso sozinha.
+- Lojas integradas em 12/11/2026: Polishop (`polishop`, 26113) e Mizuno (`mizuno`, 51271), 20 itens cada; carrosséis 13/11 12:30 e 14/11 19:00 (Polishop), 13/11 19:00 e 15/11 12:30 (Mizuno).
 
 ## Rotina para qualquer mudança de ofertas
 1. Editar `dados/itens.json` (e `historico.json` via `vigia.py atualizar` quando for preço).
