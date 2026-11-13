@@ -61,6 +61,22 @@ ninguém cria por você — é o roteiro do que falta, na ordem mais rápida.
 - [ ] Mandar uma mensagem de teste no bot do Telegram.
 - [ ] Rodar `tools/sincronia.py` uma última vez.
 
+## 8. Agentes (tarefas agendadas) — não vem no código, recriar à mão
+O `tools/nova_marca.py` só gera arquivo; as tarefas agendadas do Claude (os "robôs" que rodam sem
+ninguém pedir) ficam fora do repositório, presas a esta conta/sessão, e não são recriadas
+automaticamente. Depois que a marca nova estiver publicada e com produto de verdade, recriar (uma
+a uma, pedindo pro Claude) o conjunto equivalente ao do Achadinhos:
+- [ ] Diária de preços (exige o computador com Chrome ligado): reconfere preço/estoque e corrige
+      legendas/cards dos posts agendados dos próximos dias.
+- [ ] Semanal de crescimento: escreve os posts sem preço dos próximos 7 dias (visita/salvar/
+      enviar), roda a ferramenta, sincroniza e publica.
+- [ ] Diária de novos afiliados (se usar Awin ou outro programa com aprovação por e-mail):
+      confere e-mails de aprovação e já integra a loja nova.
+- [ ] Diária/noturna de controle (auditoria): confere publicação vencida, pré-voo das próximas
+      72h, falhas de fluxo, buracos no calendário; abre/fecha issue sozinha.
+- Cada tarefa precisa saber o que é específico desta marca (prefixo, lojas que ela usa, horários
+  dela) — não é cópia 1:1 do texto das tarefas do Achadinhos.
+
 ## O que NÃO copiar da marca original (mesmo sem querer)
 Conteúdo é da outra marca: posts, Reels, Stories, fotos de produto, canal de WhatsApp,
 listas de afiliado (Mercado Livre), plano de Natal, Storefront da Awin. O `nova_marca.py` já não
