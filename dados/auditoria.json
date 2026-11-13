@@ -1,7 +1,7 @@
 {
- "gerado": "2026-11-12 23:53",
+ "gerado": "2026-11-13 06:55",
  "contagem": {
-  "ALTO": 29,
+  "ALTO": 20,
   "MEDIO": 2
  },
  "achados": [
@@ -68,24 +68,6 @@
   {
    "nivel": "ALTO",
    "area": "telegram",
-   "texto": "2026-11-11-eletronicos-meli publicado no Instagram em 2026-11-11 16:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-eletronicos-amazon publicado no Instagram em 2026-11-12 12:32 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-brinquedos-meli publicado no Instagram em 2026-11-12 16:01 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
    "texto": "2026-11-09-5-coisas-antes-de-pagar publicado no Instagram em 2026-11-09 21:01 não chegou ao canal do Telegram",
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
@@ -99,12 +81,6 @@
    "nivel": "ALTO",
    "area": "telegram",
    "texto": "2026-11-11-hoje-e-11-11-confere publicado no Instagram em 2026-11-11 10:31 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-evite-site-falso publicado no Instagram em 2026-11-12 17:32 não chegou ao canal do Telegram",
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
@@ -144,45 +120,9 @@
    "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-docebeleza-cabelo-1 publicado no Instagram em 2026-11-12 07:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-puma-tenis publicado no Instagram em 2026-11-12 08:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-hope-pijamas publicado no Instagram em 2026-11-12 09:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-docebeleza-cabelo-2 publicado no Instagram em 2026-11-12 10:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-puma-camisetas publicado no Instagram em 2026-11-12 11:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-12-hope-basicos publicado no Instagram em 2026-11-12 12:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "29 de 364 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "88 de 364 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -190,6 +130,12 @@
    "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Canal do Telegram' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
   }
  ]
 }
