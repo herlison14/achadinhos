@@ -2324,10 +2324,12 @@
    "postagens/2026-11-13-story-6b375449/01.jpg"
   ],
   "legenda": "Story: Sanduicheira e Grill Elgin Brunch Time 800 W: R$ 62,69 (conferido em 11/11/2026) — antes R$ 64,99, queda de 4% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "COZINHA"
+  "area": "COZINHA",
+  "ig_id": "17952822861054094",
+  "publicado_em": "2026-11-13 18:31"
  },
  {
   "id": "2026-11-14-story-f0b76f5c",
