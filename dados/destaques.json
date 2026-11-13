@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-12 15:54",
+ "atualizado": "2026-11-13 05:33",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -27,8 +27,8 @@
      "data": "2026-11-12",
      "hora": "18:30",
      "tema": "preço com data de conferência",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-12 18:31",
      "img": "postagens/2026-11-12-story-site/01.jpg"
     },
     {
@@ -72,6 +72,24 @@
   {
    "nome": "TECH",
    "stories": [
+    {
+     "id": "2026-11-19-story-feb13ddd",
+     "data": "2026-11-19",
+     "hora": "18:30",
+     "tema": "Carregador 20W Turbo PD Tipo C para iPhone",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-feb13ddd/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-6a9e06f6",
+     "data": "2026-11-19",
+     "hora": "11:30",
+     "tema": "Caixa de som portátil Bluetooth GO 5 W com USB e cartão",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-6a9e06f6/01.jpg"
+    },
     {
      "id": "2026-11-17-story-e8a1c7a1",
      "data": "2026-11-17",
