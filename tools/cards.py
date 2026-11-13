@@ -15,7 +15,7 @@ ROXO, AMARELO, VERM, LAV, ROXO2 = '#291258', '#FFC93B', '#DC3C46', '#F4F0FF', '#
 LOJAS = {'shopee': ('Shopee', '#EE4D2D', '#FFFFFF'), 'amazon': ('Amazon', '#232F3E', '#FF9900'),
          'meli': ('Mercado Livre', '#FFE600', '#2D3277'), 'magalu': ('Magalu', '#0086FF', '#FFFFFF'),
          'aliexpress': ('AliExpress', '#E62E04', '#FFFFFF'), 'kabum': ('KaBuM!', '#FF6500', '#FFFFFF'),
-         'nike': ('Nike', '#111111', '#FFFFFF'), 'dafiti': ('Dafiti', '#000000', '#FFFFFF'), 'adidas': ('adidas', '#000000', '#FFFFFF'), 'docebeleza': ('Doce Beleza', '#E91E8C', '#FFFFFF'), 'puma': ('PUMA', '#111111', '#FFFFFF'), 'hope': ('Hope', '#C2185B', '#FFFFFF')}
+         'nike': ('Nike', '#111111', '#FFFFFF'), 'dafiti': ('Dafiti', '#000000', '#FFFFFF'), 'adidas': ('adidas', '#000000', '#FFFFFF'), 'docebeleza': ('Doce Beleza', '#E91E8C', '#FFFFFF'), 'puma': ('PUMA', '#111111', '#FFFFFF'), 'hope': ('Hope', '#C2185B', '#FFFFFF'), 'mizuno': ('Mizuno', '#001E62', '#FFFFFF'), 'polishop': ('Polishop', '#111111', '#FFFFFF')}
 
 def fonte(nome, tam):
     return ImageFont.truetype(os.path.join(FONTES, nome + '.ttf'), tam)
@@ -93,7 +93,7 @@ def ler(post, itens):
 
 def rodape(d, loja_txt, data):
     pre = {'Shopee': 'na Shopee', 'Amazon': 'na Amazon', 'Mercado Livre': 'no Mercado Livre', 'Magalu': 'no Magalu', 'AliExpress': 'na AliExpress',
-           'KaBuM!': 'na KaBuM!', 'Nike': 'na Nike', 'Dafiti': 'na Dafiti', 'adidas': 'na adidas', 'Doce Beleza': 'na Doce Beleza', 'PUMA': 'na PUMA', 'Hope Lingerie': 'na Hope', 'Hope': 'na Hope'}.get(loja_txt, 'nas lojas')
+           'KaBuM!': 'na KaBuM!', 'Nike': 'na Nike', 'Dafiti': 'na Dafiti', 'adidas': 'na adidas', 'Doce Beleza': 'na Doce Beleza', 'PUMA': 'na PUMA', 'Hope Lingerie': 'na Hope', 'Hope': 'na Hope', 'Mizuno': 'na Mizuno', 'Polishop': 'na Polishop'}.get(loja_txt, 'nas lojas')
     d.text((W / 2, 1320), 'Preço conferido %s em %s • pode mudar' % (pre, data), font=NUN7(26), fill=ROXO2, anchor='mm')
 
 def capa(post, titulo, data, prods, lojas):

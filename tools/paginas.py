@@ -7,7 +7,7 @@ import datetime, html, json, os, re, unicodedata
 
 SITE = 'https://achadinhosdobinga.com.br/'
 LOJAS = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu',
-         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza', 'puma': 'PUMA', 'hope': 'Hope Lingerie'}
+         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza', 'puma': 'PUMA', 'hope': 'Hope Lingerie', 'mizuno': 'Mizuno', 'polishop': 'Polishop'}
 EXTRA_CSS = (
     '.pg h1{font-size:clamp(1.7rem,6.4vw,2.4rem);margin:18px 0 8px}.pg .intro{max-width:62ch;color:var(--mut);margin:0 0 14px}'
     '.pg .nav2{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}'
@@ -83,7 +83,9 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
     estilo = re.search(r'<style[^>]*>(.*?)</style>', h, re.S).group(1)
     cab = _cabecalho(h)
     base, resto = datas_texto(vis)
-    aviso = ('Publicidade: estes são links de afiliado da Shopee, Amazon, Mercado Livre, Magalu, KaBuM!, Nike e AliExpress e eu posso receber '
+    _ls = [LOJAS[l] for l in LOJAS if any(i['loja'] == l for i in vis)]
+    _lj = ', '.join(_ls[:-1]) + ' e ' + _ls[-1] if len(_ls) > 1 else ''.join(_ls)
+    aviso = ('Publicidade: estes são links de afiliado da ' + _lj + ' e eu posso receber '
              'comissão pelas compras feitas por eles, sem custo extra para você. Preços e estoque são os conferidos em %s%s e podem '
              'ter mudado. Confirme o valor na loja antes de comprar. No Magalu, o preço mostrado é o do Pix; no cartão pode ser maior. '
              'Como Associado da Amazon, eu ganho com compras qualificadas.' % (base, resto))

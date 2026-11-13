@@ -1,0 +1,42 @@
+{
+ "polishop": {
+  "nome": "Polishop",
+  "programa": "26113",
+  "dominios": [
+   "polishop.com.br"
+  ],
+  "fotos": [
+   "polishop.vteximg.com.br"
+  ],
+  "cta": "Ver na Polishop",
+  "cor_card": [
+   "#111111",
+   "#FFFFFF"
+  ],
+  "etiqueta": [
+   "#FFF1E0",
+   "#9A3D00"
+  ],
+  "fora_dos_canais": false
+ },
+ "mizuno": {
+  "nome": "Mizuno",
+  "programa": "51271",
+  "dominios": [
+   "mizuno.com.br"
+  ],
+  "fotos": [
+   "mizunobr.vteximg.com.br"
+  ],
+  "cta": "Ver na Mizuno",
+  "cor_card": [
+   "#001E62",
+   "#FFFFFF"
+  ],
+  "etiqueta": [
+   "#E6ECF7",
+   "#001E62"
+  ],
+  "fora_dos_canais": false
+ }
+}

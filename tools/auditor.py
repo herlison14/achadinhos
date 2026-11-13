@@ -148,7 +148,7 @@ def auditar(agora, usar_github):
         add("INFO", "preços", "%d itens já fora do site (mais de 30 dias)" % len(fora))
     lojas = Counter(i["loja"] for i in itens_l if idade(i) <= 7)
     tem = {i["loja"] for i in itens_l}
-    for lj in ("shopee", "amazon", "meli", "magalu", "aliexpress", "kabum", "nike", "dafiti", "adidas", "docebeleza", "puma", "hope"):
+    for lj in ("shopee", "amazon", "meli", "magalu", "aliexpress", "kabum", "nike", "dafiti", "adidas", "docebeleza", "puma", "hope", "mizuno", "polishop"):
         if lj in tem and not lojas.get(lj):
             add("MEDIO", "preços", "nenhum item da loja %s conferido nos últimos 7 dias" % lj, "incluir na próxima conferência")
 

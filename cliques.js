@@ -21,13 +21,15 @@
     return o || 'direto';
   }
 
+  var AWD = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas', 'docebeleza.com.br': 'docebeleza', 'br.puma.com': 'puma', 'hopelingerie.com.br': 'hope', 'hopeoficial.com.br': 'hope', 'mizuno.com.br': 'mizuno', 'polishop.com.br': 'polishop'};
   function loja(h) {
     h = h || '';
     if (/awin1\.com\//.test(h)) {
       var u = '';
       try { u = decodeURIComponent((h.match(/[?&]ued=([^&]+)/) || [])[1] || ''); } catch (e) {}
-      var a = u.match(/^https?:\/\/(?:[^\/]*\.)?(kabum|nike|dafiti|adidas|docebeleza)\.com\.br(?:[\/?#]|$)/);
-      return a ? a[1] : 'outra';
+      var hs = ((u.match(/^https?:\/\/([^\/?#]+)/) || [])[1] || '').replace(/^www\./, '');
+      for (var d in AWD) { if (hs === d || hs.slice(-d.length - 1) === '.' + d) return AWD[d]; }
+      return 'outra';
     }
     return /magazinevoce/.test(h) ? 'magalu' : /shopee/.test(h) ? 'shopee' : /amazon/.test(h) ? 'amazon' : /meli\.la|mercadolivre/.test(h) ? 'meli' : /aliexpress/.test(h) ? 'aliexpress' : 'outra';
   }

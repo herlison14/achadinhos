@@ -24,12 +24,12 @@ IDX = os.path.join(RAIZ, 'index.html')
 ITENS = os.path.join(RAIZ, 'dados', 'itens.json')
 HIST = os.path.join(RAIZ, 'dados', 'historico.json')
 NOMES = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu',
-         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza', 'puma': 'PUMA', 'hope': 'Hope Lingerie'}
+         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza', 'puma': 'PUMA', 'hope': 'Hope Lingerie', 'mizuno': 'Mizuno', 'polishop': 'Polishop'}
 OMITIR_APOS_DIAS = 30   # item sem conferência há mais de N dias sai da página (build)
 ALERTA_APOS_DIAS = 7    # relatório avisa itens sem conferência há mais de N dias
 
 # Awin (afiliado 3147693): deeplink completo awin1.com/cread.php?awinmid=..&awinaffid=3147693&ued=<url da loja>
-AWIN = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas', 'docebeleza.com.br': 'docebeleza', 'br.puma.com': 'puma', 'hopelingerie.com.br': 'hope', 'hopeoficial.com.br': 'hope'}
+AWIN = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas', 'docebeleza.com.br': 'docebeleza', 'br.puma.com': 'puma', 'hopelingerie.com.br': 'hope', 'hopeoficial.com.br': 'hope', 'mizuno.com.br': 'mizuno', 'polishop.com.br': 'polishop'}
 
 def loja_awin(href):
     from urllib.parse import urlsplit, parse_qs
@@ -177,7 +177,10 @@ def cmd_build():
     h, n2 = re.subn(r'(<b id="n-of">)\d+(</b>.*?com preço conferido em )[^<]*?(\.</p>)',
                     lambda m: m.group(1) + str(len(vis)) + m.group(2) + base + resto + m.group(3), h, flags=re.S)
     h, n3 = re.subn(r'(Preços e estoque são os conferidos em )[^<]*?( e podem ter mudado\.)', lambda m: m.group(1) + base + resto + m.group(2), h)
-    assert n1 == 1 and n2 == 1 and n3 == 1, (n1, n2, n3)
+    _ls = [NOMES[l] for l in NOMES if any(i['loja'] == l for i in vis)]
+    _lj = ', '.join(_ls[:-1]) + ' e ' + _ls[-1] if len(_ls) > 1 else ''.join(_ls)
+    h, n4 = re.subn(r'(<p class="aviso"[^>]*>Publicidade: estes são links de afiliado da )[^<]*?( e eu posso receber)', lambda m: m.group(1) + _lj + m.group(2), h)
+    assert n1 == 1 and n2 == 1 and n3 == 1 and n4 == 1, (n1, n2, n3, n4)
     open(IDX, 'w', encoding='utf-8', newline='\n').write(h)
     q = quedas(vis, ler(HIST, {}), hoje)
     gravar(os.path.join(RAIZ, 'dados', 'quedas.json'), q)
@@ -238,7 +241,7 @@ def cmd_relatorio(dias):
     if not n: print('  nenhum')
 
 CTA = {'shopee': 'Ver na Shopee', 'amazon': 'Ver na Amazon', 'meli': 'Ver no Mercado Livre', 'aliexpress': 'Ver no AliExpress', 'magalu': 'Ver no Magalu',
-       'kabum': 'Ver na KaBuM!', 'nike': 'Ver na Nike', 'dafiti': 'Ver na Dafiti', 'adidas': 'Ver na adidas', 'docebeleza': 'Ver na Doce Beleza', 'puma': 'Ver na PUMA', 'hope': 'Ver na Hope'}
+       'kabum': 'Ver na KaBuM!', 'nike': 'Ver na Nike', 'dafiti': 'Ver na Dafiti', 'adidas': 'Ver na adidas', 'docebeleza': 'Ver na Doce Beleza', 'puma': 'Ver na PUMA', 'hope': 'Ver na Hope', 'mizuno': 'Ver na Mizuno', 'polishop': 'Ver na Polishop'}
 
 def cmd_importar(data):
     """Lê o index.html e alinha dados/ com ele: preço novo -> atualiza + histórico; item novo -> entra; item sumido -> sai."""

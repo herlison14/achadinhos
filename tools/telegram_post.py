@@ -19,7 +19,7 @@ ITENS = RAIZ / "dados" / "itens.json"
 RAW = "https://raw.githubusercontent.com/herlison14/achadinhos/main/"
 SITE = "https://achadinhosdobinga.com.br"
 LOJAS = {"shopee": "Shopee", "amazon": "Amazon", "meli": "Mercado Livre", "aliexpress": "AliExpress", "magalu": "Magalu",
-         "kabum": "KaBuM!", "nike": "Nike", "dafiti": "Dafiti", "adidas": "adidas", "docebeleza": "Doce Beleza", "puma": "PUMA", "hope": "Hope Lingerie"}
+         "kabum": "KaBuM!", "nike": "Nike", "dafiti": "Dafiti", "adidas": "adidas", "docebeleza": "Doce Beleza", "puma": "PUMA", "hope": "Hope Lingerie", "mizuno": "Mizuno", "polishop": "Polishop"}
 BRT = timezone(timedelta(hours=-3))
 DESDE = "2026-10-31 00:00"      # não reenvia posts antigos
 JANELA_H = 36                    # só posts publicados nas últimas 36 h
