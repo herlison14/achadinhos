@@ -2300,10 +2300,12 @@
    "postagens/2026-11-13-story-df555e5e/01.jpg"
   ],
   "legenda": "Story: Creme Dental Colgate Sensitive Pro Alívio Imediato: R$ 24,20 (conferido em 11/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "BELEZA"
+  "area": "BELEZA",
+  "ig_id": "18120927527327307",
+  "publicado_em": "2026-11-13 11:31"
  },
  {
   "id": "2026-11-13-story-6b375449",
