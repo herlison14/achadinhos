@@ -65,7 +65,7 @@ def _pagina(h, estilo, cab, titulo, desc, caminho, h1, intro, corpo, navs, ld, a
         '<a href="https://t.me/achadinhosdobinga" rel="noopener">Telegram</a>'
         '<a href="https://whatsapp.com/channel/0029VbDhqE4FSAt3fXMI7f1S" rel="noopener">WhatsApp</a>'
         '<a href="/privacidade.html">Privacidade</a><span>&copy; 2026 Achadinhos do Binga</span></p>\n</footer>\n</div>\n'
-        '<script src="/cliques.js" defer></script>\n</body>\n</html>\n'
+        '<script src="/cliques.js?v=20261112" defer></script>\n</body>\n</html>\n'
         % (t, html.escape(desc), url, t, html.escape(desc), url, estilo, EXTRA_CSS, ld, cab, h1, intro, navs, corpo, aviso)
     )
 
