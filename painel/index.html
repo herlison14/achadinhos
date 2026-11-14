@@ -512,6 +512,13 @@ function funil(){
      if(d.paginas&&d.paginas.length){var b4=el('div','card');b4.style.marginTop='12px';b4.appendChild(el('h2',0,'Páginas mais vistas'));var bx=el('div');b4.appendChild(bx);out.appendChild(b4);
        var NM={home:'Página inicial',oferta:'Categorias (ofertas/)',loja:'Lojas (lojas/)',natal:'Natal',outra:'Outras'};
        barras(bx,d.paginas.map(function(x){return [NM[x.nome]||x.nome,x.views]}))}
+     if(d.interacoesRobo&&d.interacoesRobo.length){
+       var R={};d.interacoesRobo.forEach(function(x){var k=x.canal+':'+x.tipo;R[k]=(R[k]||0)+x.n});
+       var NMR={'telegram:dm':'Telegram — mensagem direta','instagram:dm':'Instagram — mensagem direta','instagram:comentario_gatilho':'Instagram — comentário pedindo link','instagram:comentario_geral':'Instagram — comentário (sem pedido)','instagram:revisao':'Instagram — comentário p/ revisão humana'};
+       var b5=el('div','card');b5.style.marginTop='12px';b5.appendChild(el('h2',0,'Interesse no robô de respostas'));
+       b5.appendChild(el('div','sub','Contagem anônima (por dia/canal/tipo): quantas vezes o robô respondeu. Nunca identifica quem escreveu.'));
+       var bx2=el('div');b5.appendChild(bx2);out.appendChild(b5);
+       barras(bx2,Object.keys(R).sort(function(a,z){return R[z]-R[a]}).map(function(k){return [NMR[k]||k,R[k]]}))}
    })
    .catch(function(e){out.appendChild(el('div','msg',(e&&e.message&&e.message.indexOf('Failed')<0?e.message:'Não consegui falar com o Worker.')))})}
 $('#fver').addEventListener('click',funil);

@@ -1,7 +1,9 @@
 // Worker `bot-binga`: responde mensagens diretas do Telegram e do Instagram com ofertas REAIS de dados/itens.json.
 // Regras: só mostra preço quando o item foi conferido há no máximo 7 dias (e diz a data); itens sem conferência
 // há mais de 30 dias não aparecem; nunca inventa desconto, estoque ou avaliação; toda resposta leva
-// "Publicidade: links de afiliado"; não guarda mensagens nem dados de quem escreve; não fala de comissão.
+// "Publicidade: links de afiliado"; não guarda mensagens nem identifica quem escreve; não fala de comissão.
+// Única exceção (14/11/2026): conta, por dia/canal/tipo, QUANTAS interações aconteceram (ex.: "3 comentários
+// pedindo link no Instagram"), sem nenhum identificador de pessoa — ver registrarInteracao() mais abaixo.
 // Rotas:  POST /telegram   (webhook do Telegram, cabeçalho X-Telegram-Bot-Api-Secret-Token = TG_SECRET)
 //         GET/POST /instagram (webhook da Meta: verificação por IG_VERIFY, assinatura X-Hub-Signature-256 com META_APP_SECRET)
 //         Campos do webhook: `messages` (DM) e `comments` (comentário nos posts: responde em público e, se a pessoa
@@ -161,7 +163,7 @@ async function igRespostaPrivada(env, comentario, texto) {
 async function tratarComentario(env, conta, v, itens) {
   if (!v || !v.id || !v.text || !v.from || v.parent_id) return;          // só comentário novo de primeiro nível
   if (v.from.id === conta || !novo('igc:' + v.id)) return;                // nunca responde a si mesmo nem repete
-  if (!seguro(v.text)) { console.log('comentário para revisão humana: ' + v.id); return; }
+  if (!seguro(v.text)) { console.log('comentário para revisão humana: ' + v.id); await registrarInteracao(env, 'instagram', 'revisao'); return; }
   if (!limite('igc:' + v.from.id)) return;
   let enviouPrivada = false;
   if (gatilho(v.text)) {
@@ -169,6 +171,7 @@ async function tratarComentario(env, conta, v, itens) {
     const post = posts.find((p) => p.ig_id === String(v.media && v.media.id));
     enviouPrivada = await igRespostaPrivada(env, v.id, respostaPrivada(v.text, post, itens));
   }
+  await registrarInteracao(env, 'instagram', enviouPrivada ? 'comentario_gatilho' : 'comentario_geral');
   if (podeResponderEmPublico())
     await igResponderComentario(env, v.id, escolhe(enviouPrivada ? PUBLICAS_GATILHO : PUBLICAS_GERAL, v.id));
 }
@@ -213,6 +216,30 @@ async function tgEnviar(env, chat, texto) {
   if (!r.ok) console.log('telegram: envio recusado HTTP ' + r.status + await motivo(r));
 }
 
+// ---- Interesse no robô (anônimo, sem identificar ninguém) -----------------------------
+// Conta só "aconteceu uma interação" por dia/canal/tipo: nunca quem, nunca o texto. Mesmo
+// espírito do contador de cliques do site (bloco_1_api_cliques.js): serve para saber se o
+// interesse está crescendo, não para montar perfil ou ranking de ninguém. Precisa de uma
+// vinculação D1 na Cloudflare (Configurações > Vinculações > Banco de dados D1 > nome da
+// variável "DB") apontando para o MESMO banco do Worker cliques-binga. Sem essa vinculação
+// a função não falha nem avisa nada ao remetente: só não conta (o robô responde normal).
+function hojeBR() {
+  return new Date(Date.now() - 3 * 3600000).toISOString().slice(0, 10); // America/Sao_Paulo
+}
+async function registrarInteracao(env, canal, tipo) {
+  if (!env.DB) return;
+  try {
+    await env.DB.prepare(
+      'CREATE TABLE IF NOT EXISTS interacoes_robo (dia TEXT NOT NULL, canal TEXT NOT NULL, tipo TEXT NOT NULL, ' +
+        'n INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (dia, canal, tipo))'
+    ).run();
+    await env.DB.prepare(
+      'INSERT INTO interacoes_robo (dia, canal, tipo, n) VALUES (?, ?, ?, 1) ' +
+        'ON CONFLICT (dia, canal, tipo) DO UPDATE SET n = n + 1'
+    ).bind(hojeBR(), canal, tipo).run();
+  } catch (e) { console.log('interacoes_robo: ' + String(e)); }
+}
+
 async function assinaturaOk(env, corpo, cab) {
   if (!env.META_APP_SECRET || !cab || !cab.startsWith('sha256=')) return false;
   const k = await crypto.subtle.importKey('raw', new TextEncoder().encode(env.META_APP_SECRET), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
@@ -245,6 +272,7 @@ export default {
           if (m.sender.id === e.id || !novo('ig:' + (msg.mid || m.timestamp))) continue;
           if (!limite('ig:' + m.sender.id)) continue;
           await igEnviar(env, m.sender.id, responder(msg.text, itens, new Date(), 900));
+          await registrarInteracao(env, 'instagram', 'dm');
         }
       })());
       return new Response('ok');
@@ -257,6 +285,7 @@ export default {
         ctx.waitUntil((async () => {
           const texto = m.text.replace(/^\/(start|ajuda|help)(@\w+)?/i, 'ajuda').replace(/^\/natal(@\w+)?/i, 'natal');
           await tgEnviar(env, m.chat.id, responder(texto, await carregar()));
+          await registrarInteracao(env, 'telegram', 'dm');
         })());
       }
       return new Response('ok');

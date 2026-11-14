@@ -1,12 +1,22 @@
 # Worker `bot-binga` (respostas automáticas no Telegram e no Instagram)
 
 Responde mensagem direta com até 3 ofertas de `dados/itens.json` (lido do GitHub, cache de 10 min), no máximo 1 por loja nas primeiras posições.
-Regras embutidas: preço só se conferido há ≤ 7 dias (com a data); item com mais de 30 dias sem conferência não aparece; sem desconto/estoque/avaliação inventados; toda resposta tem "Publicidade: links de afiliado"; sem comissão; não guarda mensagens (só dedup e limite de 8 respostas/min por pessoa, em memória). "parar" encerra.
+Regras embutidas: preço só se conferido há ≤ 7 dias (com a data); item com mais de 30 dias sem conferência não aparece; sem desconto/estoque/avaliação inventados; toda resposta tem "Publicidade: links de afiliado"; sem comissão; não guarda mensagens nem identifica quem escreve (só dedup e limite de 8 respostas/min por pessoa, em memória, que some sozinho). "parar" encerra.
 Teste local: `node` importando `worker.js` e chamando `responder("air fryer", itens)`.
+
+## Interesse no robô — contagem anônima (14/11/2026)
+`registrarInteracao()` soma, por dia/canal/tipo (`telegram:dm`, `instagram:dm`, `instagram:comentario_gatilho`,
+`instagram:comentario_geral`, `instagram:revisao`), quantas interações o robô respondeu — nunca quem, nunca o
+texto. Aparece no painel (aba Funil, bloco "Interesse no robô de respostas") através do `/api/funil` do Worker
+`cliques-binga`. Pra funcionar, vincular este Worker (`bot-binga`) ao MESMO banco D1 do `cliques-binga`:
+Cloudflare > Worker `bot-binga` > Configurações > Vinculações > Adicionar > Banco de dados D1 > nome da
+variável `DB` > escolher o banco já usado pelo `cliques-binga`. Sem essa vinculação o robô funciona normal,
+só não conta nada (a função sai sozinha sem erro).
 
 ## Publicar (colado à mão no painel da Cloudflare, como os outros)
 1. Cloudflare > Workers e Pages > Criar > "Hello World" com o nome `bot-binga` > Implantar > Editar código: cole `worker.js` inteiro > Implantar.
 2. Configurações > Variáveis e segredos (tipo **Segredo**): `TELEGRAM_TOKEN`, `TG_SECRET` (frase longa inventada por você), `META_APP_SECRET`, `IG_VERIFY` (outra frase inventada), `IG_PAGE_TOKEN`. Nada disso vai para o repositório nem para o chat.
+3. Vinculação D1 (`DB`) apontando pro banco do `cliques-binga`, conforme a seção "Interesse no robô" acima.
 
 ## Telegram (5 minutos)
 Abra no navegador (troque os dois valores pelos seus; a página mostra `"ok":true`):

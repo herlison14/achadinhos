@@ -89,6 +89,14 @@ async function apiFunil(req, env, url) {
     pedidos = g.results || [];
   } catch (e) {} // tabela ganhos ainda nao existe
 
+  // Interesse no robo de respostas (anonimo, por dia/canal/tipo) — so existe depois que o
+  // Worker bot-binga for vinculado ao mesmo banco D1 (ver worker/bot/LEIAME.md).
+  let interacoesRobo = [];
+  try {
+    const ir = await env.DB.prepare('SELECT dia, canal, tipo, SUM(n) AS n FROM interacoes_robo WHERE dia >= ? GROUP BY dia, canal, tipo').bind(desde).all();
+    interacoesRobo = ir.results || [];
+  } catch (e) {} // tabela ainda nao existe
+
   const corpo = {
     desde,
     dias,
@@ -99,6 +107,7 @@ async function apiFunil(req, env, url) {
     cliquesOrigem: r[3].results,
     paginas: r[4].results,
     pedidos,
+    interacoesRobo,
   };
   return new Response(JSON.stringify(corpo), { headers: { ...h, 'Content-Type': 'application/json; charset=utf-8' } });
 }
