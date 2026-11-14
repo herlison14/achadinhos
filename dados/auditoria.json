@@ -1,7 +1,7 @@
 {
- "gerado": "2026-11-13 19:06",
+ "gerado": "2026-11-13 23:53",
  "contagem": {
-  "ALTO": 20,
+  "ALTO": 19,
   "MEDIO": 2
  },
  "achados": [
@@ -130,12 +130,6 @@
    "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "robôs",
-   "texto": "fluxo 'Canal do Telegram' falhou 1 vez(es) nas últimas 26 h",
-   "acao": "abrir o log da execução"
   }
  ]
 }
