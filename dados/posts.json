@@ -2347,10 +2347,12 @@
    "postagens/2026-11-14-story-f0b76f5c/01.jpg"
   ],
   "legenda": "Story: Meias de Natal com Iniciais (Monograma): R$ 69,98 (conferido em 11/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "MODA"
+  "area": "MODA",
+  "ig_id": "18132966527487782",
+  "publicado_em": "2026-11-14 11:31"
  },
  {
   "id": "2026-11-14-story-e4965267",
