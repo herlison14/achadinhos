@@ -2222,7 +2222,7 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "enviar",
-  "status": "agendado",
+  "status": "publicado",
   "nota": "Post de crescimento (sem preço), criado em 08/11/2026.",
   "imagens": [
    "postagens/2026-11-14-amigo-secreto-4-perguntas/01.jpg",
@@ -2230,7 +2230,10 @@
    "postagens/2026-11-14-amigo-secreto-4-perguntas/03.jpg",
    "postagens/2026-11-14-amigo-secreto-4-perguntas/04.jpg"
   ],
-  "legenda": "Amigo secreto: 4 perguntas pra acertar o presente 🎁\n\n1. Qual é o valor combinado do grupo?\n2. O que a pessoa usa no dia a dia?\n3. Dá tempo de chegar antes da data?\n4. Tem troca fácil, caso não sirva?\n\nEnvia pra quem organiza o grupo e salva pra usar quando chegar dezembro. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#amigosecreto #natal #presentes #dicasdecompra #achadinhos"
+  "legenda": "Amigo secreto: 4 perguntas pra acertar o presente 🎁\n\n1. Qual é o valor combinado do grupo?\n2. O que a pessoa usa no dia a dia?\n3. Dá tempo de chegar antes da data?\n4. Tem troca fácil, caso não sirva?\n\nEnvia pra quem organiza o grupo e salva pra usar quando chegar dezembro. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#amigosecreto #natal #presentes #dicasdecompra #achadinhos",
+  "ig_id": "17971810331966155",
+  "publicado_em": "2026-11-14 21:01",
+  "telegram_em": "2026-11-14 21:01"
  },
  {
   "id": "2026-11-15-onde-ver-caiu-de-preco",
