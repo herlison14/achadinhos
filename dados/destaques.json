@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-14 10:10",
+ "atualizado": "2026-11-15 05:15",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -104,8 +104,8 @@
      "data": "2026-11-14",
      "hora": "18:30",
      "tema": "Fone Bluetooth Samsung Galaxy Buds Core",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-14 18:31",
      "img": "postagens/2026-11-14-story-e4965267/01.jpg"
     },
     {
@@ -154,8 +154,8 @@
      "data": "2026-11-14",
      "hora": "11:30",
      "tema": "Meias de Natal com Iniciais (Monograma)",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-14 11:31",
      "img": "postagens/2026-11-14-story-f0b76f5c/01.jpg"
     },
     {
