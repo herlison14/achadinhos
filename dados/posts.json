@@ -2397,10 +2397,12 @@
    "postagens/2026-11-15-story-ba4554ba/01.jpg"
   ],
   "legenda": "Story: Oral-B Pasta de Dente 3D White Brilliant Fresh, 3 unidades de 70 g: R$ 13,99 (conferido em 14/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "BELEZA"
+  "area": "BELEZA",
+  "ig_id": "18089885057310104",
+  "publicado_em": "2026-11-15 11:31"
  },
  {
   "id": "2026-11-15-story-site",
