@@ -1,10 +1,16 @@
 {
- "gerado": "2026-11-15 06:50",
+ "gerado": "2026-11-15 18:11",
  "contagem": {
-  "ALTO": 19,
+  "ALTO": 20,
   "MEDIO": 4
  },
  "achados": [
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-18-story-6bed8cd4 (2026-11-18 11:30) vai ser BLOQUEADO: preço de 6bed8cd4 conferido há 9 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
   {
    "nivel": "ALTO",
    "area": "telegram",
