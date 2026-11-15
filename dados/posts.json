@@ -2416,10 +2416,12 @@
    "postagens/2026-11-15-story-site/01.jpg"
   ],
   "legenda": "Story sem preço: o que o site faz (busca, quedas de preço, 5 lojas). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": true,
-  "area": "OFERTAS"
+  "area": "OFERTAS",
+  "ig_id": "17928410166204425",
+  "publicado_em": "2026-11-15 18:31"
  },
  {
   "id": "2026-11-13-perifericos-kabum",
