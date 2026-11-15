@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-14 23:53",
+ "gerado": "2026-11-15 06:50",
  "contagem": {
   "ALTO": 19,
-  "MEDIO": 3
+  "MEDIO": 4
  },
  "achados": [
   {
@@ -135,6 +135,12 @@
    "nivel": "MEDIO",
    "area": "calendário",
    "texto": "2026-11-16 sem post de produto, crescimento",
+   "acao": "completar a programação"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-17 sem post de produto, crescimento",
    "acao": "completar a programação"
   }
  ]
