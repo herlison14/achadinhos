@@ -3507,10 +3507,12 @@
    "postagens/2026-11-16-story-c01e0170/01.jpg"
   ],
   "legenda": "Story: Aspirador de Mão HandVac Polishop: R$ 999,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "CASA"
+  "area": "CASA",
+  "ig_id": "18073483421790449",
+  "publicado_em": "2026-11-16 16:51"
  },
  {
   "id": "2026-11-16-story-fbd1614c",
