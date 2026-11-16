@@ -3386,5 +3386,727 @@
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA"
+ },
+ {
+  "id": "2026-11-16-story-24ea25ae",
+  "data": "2026-11-16",
+  "hora": "07:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Prancha de Cabelo Shine Nutrah Be Emotion",
+  "produtos": [
+   "24ea25ae"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-24ea25ae/01.jpg"
+  ],
+  "legenda": "Story: Prancha de Cabelo Shine Nutrah Be Emotion: R$ 299,88 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-16-story-36c18bfb",
+  "data": "2026-11-16",
+  "hora": "08:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Ferro de Passar Easy & Care Polishop",
+  "produtos": [
+   "36c18bfb"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-36c18bfb/01.jpg"
+  ],
+  "legenda": "Story: Ferro de Passar Easy & Care Polishop: R$ 799,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "CASA"
+ },
+ {
+  "id": "2026-11-16-story-670b2f11",
+  "data": "2026-11-16",
+  "hora": "10:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Air Fryer Mondial New Pratic 3,5 L com timer",
+  "produtos": [
+   "670b2f11"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-670b2f11/01.jpg"
+  ],
+  "legenda": "Story: Air Fryer Mondial New Pratic 3,5 L com timer: R$ 256,49 (conferido em 14/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-16-story-e0410e14",
+  "data": "2026-11-16",
+  "hora": "13:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Wave Invictus 4",
+  "produtos": [
+   "e0410e14"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-e0410e14/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Wave Invictus 4: R$ 549,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-16-story-222d986d",
+  "data": "2026-11-16",
+  "hora": "15:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Escova Hot Brush 4 em 1 be emotion Polishop",
+  "produtos": [
+   "222d986d"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-222d986d/01.jpg"
+  ],
+  "legenda": "Story: Escova Hot Brush 4 em 1 be emotion Polishop: R$ 999,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-16-story-c01e0170",
+  "data": "2026-11-16",
+  "hora": "16:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Aspirador de Mão HandVac Polishop",
+  "produtos": [
+   "c01e0170"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-c01e0170/01.jpg"
+  ],
+  "legenda": "Story: Aspirador de Mão HandVac Polishop: R$ 999,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "CASA"
+ },
+ {
+  "id": "2026-11-16-story-fbd1614c",
+  "data": "2026-11-16",
+  "hora": "20:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Fritadeira Elétrica Airfryer Ichef Dualzone",
+  "produtos": [
+   "fbd1614c"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-fbd1614c/01.jpg"
+  ],
+  "legenda": "Story: Fritadeira Elétrica Airfryer Ichef Dualzone: R$ 1.199,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-16-story-169636e6",
+  "data": "2026-11-16",
+  "hora": "22:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis Mizuno Wave Prophecy 15",
+  "produtos": [
+   "169636e6"
+  ],
+  "imagens": [
+   "postagens/2026-11-16-story-169636e6/01.jpg"
+  ],
+  "legenda": "Story: Tênis Mizuno Wave Prophecy 15: R$ 1.499,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-17-story-f75099cd",
+  "data": "2026-11-17",
+  "hora": "07:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Aparador de Pelos Smart Blade be emotion MEN",
+  "produtos": [
+   "f75099cd"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-f75099cd/01.jpg"
+  ],
+  "legenda": "Story: Aparador de Pelos Smart Blade be emotion MEN: R$ 299,88 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-17-story-b7a0d75f",
+  "data": "2026-11-17",
+  "hora": "08:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Processador de Alimentos Power Nutri Machine Ichef Polishop",
+  "produtos": [
+   "b7a0d75f"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-b7a0d75f/01.jpg"
+  ],
+  "legenda": "Story: Processador de Alimentos Power Nutri Machine Ichef Polishop: R$ 777,60 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "CASA"
+ },
+ {
+  "id": "2026-11-17-story-b88fea4b",
+  "data": "2026-11-17",
+  "hora": "10:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Panela First Sauté Petit Vermelha 20 cm Ichef Polishop",
+  "produtos": [
+   "b88fea4b"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-b88fea4b/01.jpg"
+  ],
+  "legenda": "Story: Panela First Sauté Petit Vermelha 20 cm Ichef Polishop: R$ 133,20 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-17-story-129c4767",
+  "data": "2026-11-17",
+  "hora": "13:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Wave Vitality 5",
+  "produtos": [
+   "129c4767"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-129c4767/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Wave Vitality 5: R$ 309,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-17-story-d87ea5f7",
+  "data": "2026-11-17",
+  "hora": "15:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Secador Ultralite Ionic be emotion",
+  "produtos": [
+   "d87ea5f7"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-d87ea5f7/01.jpg"
+  ],
+  "legenda": "Story: Secador Ultralite Ionic be emotion: R$ 555,50 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-17-story-d5df7291",
+  "data": "2026-11-17",
+  "hora": "16:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Conjunto de Facas Ichef Polishop Professional Cut Inox Duo",
+  "produtos": [
+   "d5df7291"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-d5df7291/01.jpg"
+  ],
+  "legenda": "Story: Conjunto de Facas Ichef Polishop Professional Cut Inox Duo: R$ 199,95 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-17-story-b1d50d31",
+  "data": "2026-11-17",
+  "hora": "20:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Action 4",
+  "produtos": [
+   "b1d50d31"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-b1d50d31/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Action 4: R$ 269,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-17-story-f71998f5",
+  "data": "2026-11-17",
+  "hora": "22:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Mini Barbeador Elétrico Mini Shaver be emotion MEN",
+  "produtos": [
+   "f71998f5"
+  ],
+  "imagens": [
+   "postagens/2026-11-17-story-f71998f5/01.jpg"
+  ],
+  "legenda": "Story: Mini Barbeador Elétrico Mini Shaver be emotion MEN: R$ 499,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-18-story-7a403845",
+  "data": "2026-11-18",
+  "hora": "07:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Fritadeira Elétrica Airfryer Max Space 8 L",
+  "produtos": [
+   "7a403845"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-7a403845/01.jpg"
+  ],
+  "legenda": "Story: Fritadeira Elétrica Airfryer Max Space 8 L: R$ 777,50 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-18-story-b7e9115e",
+  "data": "2026-11-18",
+  "hora": "08:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis Mizuno Wave Drive 9",
+  "produtos": [
+   "b7e9115e"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-b7e9115e/01.jpg"
+  ],
+  "legenda": "Story: Tênis Mizuno Wave Drive 9: R$ 699,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-18-story-80abd32e",
+  "data": "2026-11-18",
+  "hora": "10:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Aparador de Pelos MaxGroom be emotion Men",
+  "produtos": [
+   "80abd32e"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-80abd32e/01.jpg"
+  ],
+  "legenda": "Story: Aparador de Pelos MaxGroom be emotion Men: R$ 359,92 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-18-story-a49a8512",
+  "data": "2026-11-18",
+  "hora": "13:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Panela Ichef Polishop Ultra Sauté Grand Red 24 cm",
+  "produtos": [
+   "a49a8512"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-a49a8512/01.jpg"
+  ],
+  "legenda": "Story: Panela Ichef Polishop Ultra Sauté Grand Red 24 cm: R$ 349,92 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-18-story-cd96e77b",
+  "data": "2026-11-18",
+  "hora": "15:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Wave Stratos 3",
+  "produtos": [
+   "cd96e77b"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-cd96e77b/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Wave Stratos 3: R$ 549,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-18-story-b468b927",
+  "data": "2026-11-18",
+  "hora": "16:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Escova Rotating Nutrah be emotion Special Edition",
+  "produtos": [
+   "b468b927"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-b468b927/01.jpg"
+  ],
+  "legenda": "Story: Escova Rotating Nutrah be emotion Special Edition: R$ 599,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-18-story-ba3ebae1",
+  "data": "2026-11-18",
+  "hora": "20:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Panela First Sauté Grand Vermelha 24 cm Ichef Polishop",
+  "produtos": [
+   "ba3ebae1"
+  ],
+  "imagens": [
+   "postagens/2026-11-18-story-ba3ebae1/01.jpg"
+  ],
+  "legenda": "Story: Panela First Sauté Grand Vermelha 24 cm Ichef Polishop: R$ 179,96 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA"
+ },
+ {
+  "id": "2026-11-19-story-63afc79e",
+  "data": "2026-11-19",
+  "hora": "07:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis Casual Mizuno Street Wind",
+  "produtos": [
+   "63afc79e"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-63afc79e/01.jpg"
+  ],
+  "legenda": "Story: Tênis Casual Mizuno Street Wind: R$ 279,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-19-story-c72c7976",
+  "data": "2026-11-19",
+  "hora": "08:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Escova Alisadora e Modeladora Infraliss be emotion",
+  "produtos": [
+   "c72c7976"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-c72c7976/01.jpg"
+  ],
+  "legenda": "Story: Escova Alisadora e Modeladora Infraliss be emotion: R$ 399,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA"
+ },
+ {
+  "id": "2026-11-19-story-86d11d02",
+  "data": "2026-11-19",
+  "hora": "10:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Wave Rebellion Flash 3",
+  "produtos": [
+   "86d11d02"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-86d11d02/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Wave Rebellion Flash 3: R$ 769,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-19-story-511ee732",
+  "data": "2026-11-19",
+  "hora": "13:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Oracle",
+  "produtos": [
+   "511ee732"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-511ee732/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Oracle: R$ 349,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-19-story-c7a62a9b",
+  "data": "2026-11-19",
+  "hora": "15:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis Casual Mizuno Edo Cross",
+  "produtos": [
+   "c7a62a9b"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-c7a62a9b/01.jpg"
+  ],
+  "legenda": "Story: Tênis Casual Mizuno Edo Cross: R$ 449,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-19-story-be2d8515",
+  "data": "2026-11-19",
+  "hora": "16:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Atlantis 2",
+  "produtos": [
+   "be2d8515"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-be2d8515/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Atlantis 2: R$ 239,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-19-story-8ae2e532",
+  "data": "2026-11-19",
+  "hora": "20:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Wave Titan 3",
+  "produtos": [
+   "8ae2e532"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-8ae2e532/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Wave Titan 3: R$ 299,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-19-story-52cd9c79",
+  "data": "2026-11-19",
+  "hora": "22:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Chinelo Mizuno Enerzy",
+  "produtos": [
+   "52cd9c79"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-52cd9c79/01.jpg"
+  ],
+  "legenda": "Story: Chinelo Mizuno Enerzy: R$ 179,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-20-story-d3cc439f",
+  "data": "2026-11-20",
+  "hora": "07:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Wave Stratos 4",
+  "produtos": [
+   "d3cc439f"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-d3cc439f/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Wave Stratos 4: R$ 799,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-20-story-91e11706",
+  "data": "2026-11-20",
+  "hora": "08:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Neo Vista 2",
+  "produtos": [
+   "91e11706"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-91e11706/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Neo Vista 2: R$ 899,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-20-story-c234bf1b",
+  "data": "2026-11-20",
+  "hora": "10:00",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Boné Mizuno Prime",
+  "produtos": [
+   "c234bf1b"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-c234bf1b/01.jpg"
+  ],
+  "legenda": "Story: Boné Mizuno Prime: R$ 129,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-20-story-bd237ca8",
+  "data": "2026-11-20",
+  "hora": "13:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Camiseta de Corrida Mizuno Focus Stamp Masculina",
+  "produtos": [
+   "bd237ca8"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-bd237ca8/01.jpg"
+  ],
+  "legenda": "Story: Camiseta de Corrida Mizuno Focus Stamp Masculina: R$ 179,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-20-story-371a592a",
+  "data": "2026-11-20",
+  "hora": "15:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Pacote Meia Cano Médio Mizuno Basic 39-44 com 3 Pares",
+  "produtos": [
+   "371a592a"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-371a592a/01.jpg"
+  ],
+  "legenda": "Story: Pacote Meia Cano Médio Mizuno Basic 39-44 com 3 Pares: R$ 49,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-20-story-da358dda",
+  "data": "2026-11-20",
+  "hora": "16:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Goya",
+  "produtos": [
+   "da358dda"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-da358dda/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Goya: R$ 219,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
+ },
+ {
+  "id": "2026-11-20-story-a4ba488f",
+  "data": "2026-11-20",
+  "hora": "20:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Tênis de Corrida Mizuno Neo Aura Knit",
+  "produtos": [
+   "a4ba488f"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-a4ba488f/01.jpg"
+  ],
+  "legenda": "Story: Tênis de Corrida Mizuno Neo Aura Knit: R$ 599,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA"
  }
 ]

@@ -32,7 +32,9 @@ from PIL import Image, ImageDraw
 
 W, H = 1080, 1920
 ROXO, AMARELO, VERM, LAV, ROXO2 = CD.ROXO, CD.AMARELO, CD.VERM, CD.LAV, CD.ROXO2
-HORAS = ['11:30', '18:30']          # slots próprios de Story (não colidem com feed/Reels)
+HORAS = ['07:30', '08:45', '10:00', '11:30', '13:15', '15:15', '16:45', '18:30', '20:15', '22:00']
+# slots próprios de Story (não colidem com feed/Reels/crescimento); teste do Herlison (15/11/2026):
+# até 10/dia nessa lista, --por-dia controla quantos usar (2 é o padrão anterior, pra reverter o teste).
 BRT = datetime.timezone(datetime.timedelta(hours=-3))
 MAX_IDADE = 3
 J = lambda *p: os.path.join(RAIZ, *p)

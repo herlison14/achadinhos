@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-15 21:32",
+ "atualizado": "2026-11-15 21:36",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -150,6 +150,177 @@
    "nome": "MODA",
    "stories": [
     {
+     "id": "2026-11-20-story-a4ba488f",
+     "data": "2026-11-20",
+     "hora": "20:15",
+     "tema": "Tênis de Corrida Mizuno Neo Aura Knit",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-a4ba488f/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-da358dda",
+     "data": "2026-11-20",
+     "hora": "16:45",
+     "tema": "Tênis de Corrida Mizuno Goya",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-da358dda/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-371a592a",
+     "data": "2026-11-20",
+     "hora": "15:15",
+     "tema": "Pacote Meia Cano Médio Mizuno Basic 39-44 com 3 Pares",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-371a592a/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-bd237ca8",
+     "data": "2026-11-20",
+     "hora": "13:15",
+     "tema": "Camiseta de Corrida Mizuno Focus Stamp Masculina",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-bd237ca8/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-c234bf1b",
+     "data": "2026-11-20",
+     "hora": "10:00",
+     "tema": "Boné Mizuno Prime",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-c234bf1b/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-91e11706",
+     "data": "2026-11-20",
+     "hora": "08:45",
+     "tema": "Tênis de Corrida Mizuno Neo Vista 2",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-91e11706/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-d3cc439f",
+     "data": "2026-11-20",
+     "hora": "07:30",
+     "tema": "Tênis de Corrida Mizuno Wave Stratos 4",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-d3cc439f/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-52cd9c79",
+     "data": "2026-11-19",
+     "hora": "22:00",
+     "tema": "Chinelo Mizuno Enerzy",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-52cd9c79/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-8ae2e532",
+     "data": "2026-11-19",
+     "hora": "20:15",
+     "tema": "Tênis de Corrida Mizuno Wave Titan 3",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-8ae2e532/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-be2d8515",
+     "data": "2026-11-19",
+     "hora": "16:45",
+     "tema": "Tênis de Corrida Mizuno Atlantis 2",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-be2d8515/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-c7a62a9b",
+     "data": "2026-11-19",
+     "hora": "15:15",
+     "tema": "Tênis Casual Mizuno Edo Cross",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-c7a62a9b/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-511ee732",
+     "data": "2026-11-19",
+     "hora": "13:15",
+     "tema": "Tênis de Corrida Mizuno Oracle",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-511ee732/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-86d11d02",
+     "data": "2026-11-19",
+     "hora": "10:00",
+     "tema": "Tênis de Corrida Mizuno Wave Rebellion Flash 3",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-86d11d02/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-63afc79e",
+     "data": "2026-11-19",
+     "hora": "07:30",
+     "tema": "Tênis Casual Mizuno Street Wind",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-63afc79e/01.jpg"
+    },
+    {
+     "id": "2026-11-18-story-cd96e77b",
+     "data": "2026-11-18",
+     "hora": "15:15",
+     "tema": "Tênis de Corrida Mizuno Wave Stratos 3",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-18-story-cd96e77b/01.jpg"
+    },
+    {
+     "id": "2026-11-18-story-b7e9115e",
+     "data": "2026-11-18",
+     "hora": "08:45",
+     "tema": "Tênis Mizuno Wave Drive 9",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-18-story-b7e9115e/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-b1d50d31",
+     "data": "2026-11-17",
+     "hora": "20:15",
+     "tema": "Tênis de Corrida Mizuno Action 4",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-b1d50d31/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-129c4767",
+     "data": "2026-11-17",
+     "hora": "13:15",
+     "tema": "Tênis de Corrida Mizuno Wave Vitality 5",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-129c4767/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-169636e6",
+     "data": "2026-11-16",
+     "hora": "22:00",
+     "tema": "Tênis Mizuno Wave Prophecy 15",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-169636e6/01.jpg"
+    },
+    {
      "id": "2026-11-16-story-8e001448",
      "data": "2026-11-16",
      "hora": "18:30",
@@ -157,6 +328,15 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-16-story-8e001448/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-e0410e14",
+     "data": "2026-11-16",
+     "hora": "13:15",
+     "tema": "Tênis de Corrida Mizuno Wave Invictus 4",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-e0410e14/01.jpg"
     },
     {
      "id": "2026-11-14-story-f0b76f5c",
@@ -209,6 +389,42 @@
      "img": "postagens/2026-11-22-story-a0a0c7b8/01.jpg"
     },
     {
+     "id": "2026-11-19-story-c72c7976",
+     "data": "2026-11-19",
+     "hora": "08:45",
+     "tema": "Escova Alisadora e Modeladora Infraliss be emotion",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-c72c7976/01.jpg"
+    },
+    {
+     "id": "2026-11-18-story-b468b927",
+     "data": "2026-11-18",
+     "hora": "16:45",
+     "tema": "Escova Rotating Nutrah be emotion Special Edition",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-18-story-b468b927/01.jpg"
+    },
+    {
+     "id": "2026-11-18-story-80abd32e",
+     "data": "2026-11-18",
+     "hora": "10:00",
+     "tema": "Aparador de Pelos MaxGroom be emotion Men",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-18-story-80abd32e/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-f71998f5",
+     "data": "2026-11-17",
+     "hora": "22:00",
+     "tema": "Mini Barbeador Elétrico Mini Shaver be emotion MEN",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-f71998f5/01.jpg"
+    },
+    {
      "id": "2026-11-17-story-68921b58",
      "data": "2026-11-17",
      "hora": "18:30",
@@ -216,6 +432,42 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-17-story-68921b58/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-d87ea5f7",
+     "data": "2026-11-17",
+     "hora": "15:15",
+     "tema": "Secador Ultralite Ionic be emotion",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-d87ea5f7/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-f75099cd",
+     "data": "2026-11-17",
+     "hora": "07:30",
+     "tema": "Aparador de Pelos Smart Blade be emotion MEN",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-f75099cd/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-222d986d",
+     "data": "2026-11-16",
+     "hora": "15:15",
+     "tema": "Escova Hot Brush 4 em 1 be emotion Polishop",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-222d986d/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-24ea25ae",
+     "data": "2026-11-16",
+     "hora": "07:30",
+     "tema": "Prancha de Cabelo Shine Nutrah Be Emotion",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-24ea25ae/01.jpg"
     },
     {
      "id": "2026-11-15-story-ba4554ba",
@@ -268,6 +520,24 @@
    "nome": "COZINHA",
    "stories": [
     {
+     "id": "2026-11-18-story-ba3ebae1",
+     "data": "2026-11-18",
+     "hora": "20:15",
+     "tema": "Panela First Sauté Grand Vermelha 24 cm Ichef Polishop",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-18-story-ba3ebae1/01.jpg"
+    },
+    {
+     "id": "2026-11-18-story-a49a8512",
+     "data": "2026-11-18",
+     "hora": "13:15",
+     "tema": "Panela Ichef Polishop Ultra Sauté Grand Red 24 cm",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-18-story-a49a8512/01.jpg"
+    },
+    {
      "id": "2026-11-18-story-6bed8cd4",
      "data": "2026-11-18",
      "hora": "11:30",
@@ -277,6 +547,42 @@
      "img": "postagens/2026-11-18-story-6bed8cd4/01.jpg"
     },
     {
+     "id": "2026-11-18-story-7a403845",
+     "data": "2026-11-18",
+     "hora": "07:30",
+     "tema": "Fritadeira Elétrica Airfryer Max Space 8 L",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-18-story-7a403845/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-d5df7291",
+     "data": "2026-11-17",
+     "hora": "16:45",
+     "tema": "Conjunto de Facas Ichef Polishop Professional Cut Inox Duo",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-d5df7291/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-b88fea4b",
+     "data": "2026-11-17",
+     "hora": "10:00",
+     "tema": "Panela First Sauté Petit Vermelha 20 cm Ichef Polishop",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-b88fea4b/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-fbd1614c",
+     "data": "2026-11-16",
+     "hora": "20:15",
+     "tema": "Fritadeira Elétrica Airfryer Ichef Dualzone",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-fbd1614c/01.jpg"
+    },
+    {
      "id": "2026-11-16-story-353e4156",
      "data": "2026-11-16",
      "hora": "11:30",
@@ -284,6 +590,15 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-16-story-353e4156/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-670b2f11",
+     "data": "2026-11-16",
+     "hora": "10:00",
+     "tema": "Air Fryer Mondial New Pratic 3,5 L com timer",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-670b2f11/01.jpg"
     },
     {
      "id": "2026-11-13-story-6b375449",
@@ -361,6 +676,33 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-20-story-6ca76ce1/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-b7a0d75f",
+     "data": "2026-11-17",
+     "hora": "08:45",
+     "tema": "Processador de Alimentos Power Nutri Machine Ichef Polishop",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-b7a0d75f/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-c01e0170",
+     "data": "2026-11-16",
+     "hora": "16:45",
+     "tema": "Aspirador de Mão HandVac Polishop",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-c01e0170/01.jpg"
+    },
+    {
+     "id": "2026-11-16-story-36c18bfb",
+     "data": "2026-11-16",
+     "hora": "08:45",
+     "tema": "Ferro de Passar Easy & Care Polishop",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-36c18bfb/01.jpg"
     },
     {
      "id": "2026-11-08-story-a424992e",
