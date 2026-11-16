@@ -3532,10 +3532,12 @@
    "postagens/2026-11-16-story-fbd1614c/01.jpg"
   ],
   "legenda": "Story: Fritadeira Elétrica Airfryer Ichef Dualzone: R$ 1.199,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "COZINHA"
+  "area": "COZINHA",
+  "ig_id": "18108117863351806",
+  "publicado_em": "2026-11-16 20:21"
  },
  {
   "id": "2026-11-16-story-169636e6",
