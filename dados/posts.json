@@ -4108,5 +4108,37 @@
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA"
+ },
+ {
+  "id": "2026-11-16-story-mascote-gratidao",
+  "data": "2026-11-16",
+  "hora": "09:30",
+  "formato": "story",
+  "loja": "todas",
+  "tema": "Story: agradecimento ao crescimento real de seguidores (mascote Binguinho)",
+  "canal": "ig",
+  "produtos": [],
+  "sem_preco": true,
+  "objetivo": "story",
+  "status": "agendado",
+  "video": "postagens/2026-11-16-story-mascote-gratidao/reel.mp4",
+  "legenda": "Story: Binguinho agradece o crescimento real de seguidores, sem número na tela (muda todo dia). Publicidade: links de afiliado.",
+  "area": "OFERTAS"
+ },
+ {
+  "id": "2026-11-17-story-mascote-black-friday",
+  "data": "2026-11-17",
+  "hora": "09:30",
+  "formato": "story",
+  "loja": "todas",
+  "tema": "Story: Black Friday chegando (27/11), mascote Binguinho comemorando",
+  "canal": "ig",
+  "produtos": [],
+  "sem_preco": true,
+  "objetivo": "story",
+  "status": "agendado",
+  "video": "postagens/2026-11-17-story-mascote-black-friday/reel.mp4",
+  "legenda": "Story: Binguinho comemora com confete, aviso de que a Black Friday (27/11) está chegando. Publicidade: links de afiliado.",
+  "area": "OFERTAS"
  }
 ]
