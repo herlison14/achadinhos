@@ -1,9 +1,18 @@
 {
- "atualizado": "2026-11-15 05:15",
+ "atualizado": "2026-11-15 21:26",
  "areas": [
   {
    "nome": "OFERTAS",
    "stories": [
+    {
+     "id": "2026-11-21-story-site",
+     "data": "2026-11-21",
+     "hora": "18:30",
+     "tema": "preço com data de conferência",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-site/01.jpg"
+    },
     {
      "id": "2026-11-18-story-site",
      "data": "2026-11-18",
@@ -18,8 +27,8 @@
      "data": "2026-11-15",
      "hora": "18:30",
      "tema": "preço com data de conferência",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-15 18:31",
      "img": "postagens/2026-11-15-story-site/01.jpg"
     },
     {
@@ -191,6 +200,15 @@
    "nome": "BELEZA",
    "stories": [
     {
+     "id": "2026-11-22-story-a0a0c7b8",
+     "data": "2026-11-22",
+     "hora": "11:30",
+     "tema": "Kit Secador Nutrah be emotion e Prancha Shine Nutrah",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-a0a0c7b8/01.jpg"
+    },
+    {
      "id": "2026-11-17-story-68921b58",
      "data": "2026-11-17",
      "hora": "18:30",
@@ -204,8 +222,8 @@
      "data": "2026-11-15",
      "hora": "11:30",
      "tema": "Oral-B Pasta de Dente 3D White Brilliant Fresh, 3 unidades d",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-15 11:31",
      "img": "postagens/2026-11-15-story-ba4554ba/01.jpg"
     },
     {
@@ -308,6 +326,42 @@
   {
    "nome": "CASA",
    "stories": [
+    {
+     "id": "2026-11-22-story-d61d1607",
+     "data": "2026-11-22",
+     "hora": "18:30",
+     "tema": "Polishop Ultra Hand Steamer",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-d61d1607/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-e4efde21",
+     "data": "2026-11-21",
+     "hora": "11:30",
+     "tema": "Boneca Gi Neto que Fala 14 Frases 27 cm",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-e4efde21/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-dbfedfe4",
+     "data": "2026-11-20",
+     "hora": "18:30",
+     "tema": "Multiprocessador Power Nutri Revolution Ichef",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-dbfedfe4/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-6ca76ce1",
+     "data": "2026-11-20",
+     "hora": "11:30",
+     "tema": "Pisca-Pisca de Natal 100 LEDs 10 m USB com Bluetooth",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-6ca76ce1/01.jpg"
+    },
     {
      "id": "2026-11-08-story-a424992e",
      "data": "2026-11-08",
