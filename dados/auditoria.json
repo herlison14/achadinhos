@@ -1,8 +1,9 @@
 {
- "gerado": "2026-11-15 23:53",
+ "gerado": "2026-11-16 07:07",
  "contagem": {
   "ALTO": 20,
-  "MEDIO": 4
+  "MEDIO": 4,
+  "INFO": 1
  },
  "achados": [
   {
@@ -138,7 +139,7 @@
    "acao": "incluir na próxima conferência"
   },
   {
-   "nivel": "MEDIO",
+   "nivel": "INFO",
    "area": "calendário",
    "texto": "2026-11-16 sem post de produto",
    "acao": "completar a programação"
@@ -147,6 +148,12 @@
    "nivel": "MEDIO",
    "area": "calendário",
    "texto": "2026-11-17 sem post de produto",
+   "acao": "completar a programação"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-18 sem post de produto, Reel",
    "acao": "completar a programação"
   }
  ]
