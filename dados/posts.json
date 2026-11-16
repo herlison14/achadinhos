@@ -3422,10 +3422,11 @@
    "postagens/2026-11-16-story-36c18bfb/01.jpg"
   ],
   "legenda": "Story: Ferro de Passar Easy & Care Polishop: R$ 799,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "erro",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "CASA"
+  "area": "CASA",
+  "nota": "HTTP 400 The requested resource does not exist"
  },
  {
   "id": "2026-11-16-story-670b2f11",
