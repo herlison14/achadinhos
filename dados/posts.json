@@ -3442,10 +3442,12 @@
    "postagens/2026-11-16-story-670b2f11/01.jpg"
   ],
   "legenda": "Story: Air Fryer Mondial New Pratic 3,5 L com timer: R$ 350,46 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "COZINHA"
+  "area": "COZINHA",
+  "ig_id": "18134654785789142",
+  "publicado_em": "2026-11-16 10:01"
  },
  {
   "id": "2026-11-16-story-e0410e14",
