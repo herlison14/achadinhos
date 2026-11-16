@@ -2663,10 +2663,12 @@
    "postagens/2026-11-16-story-8e001448/01.jpg"
   ],
   "legenda": "Story: Garrafa Squeeze TIBA Infinity 1000 ml Preta: R$ 15,74 (conferido em 14/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "MODA"
+  "area": "MODA",
+  "ig_id": "18133248190757280",
+  "publicado_em": "2026-11-16 18:31"
  },
  {
   "id": "2026-11-17-story-e8a1c7a1",
