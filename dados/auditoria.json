@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-15 18:11",
+ "gerado": "2026-11-15 23:53",
  "contagem": {
   "ALTO": 20,
   "MEDIO": 4
@@ -140,13 +140,13 @@
   {
    "nivel": "MEDIO",
    "area": "calendário",
-   "texto": "2026-11-16 sem post de produto, crescimento",
+   "texto": "2026-11-16 sem post de produto",
    "acao": "completar a programação"
   },
   {
    "nivel": "MEDIO",
    "area": "calendário",
-   "texto": "2026-11-17 sem post de produto, crescimento",
+   "texto": "2026-11-17 sem post de produto",
    "acao": "completar a programação"
   }
  ]
