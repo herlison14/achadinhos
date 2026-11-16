@@ -4123,10 +4123,12 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "story",
-  "status": "agendado",
+  "status": "publicado",
   "video": "postagens/2026-11-16-story-mascote-gratidao/reel.mp4",
   "legenda": "Story: Binguinho agradece o crescimento real de seguidores, sem número na tela (muda todo dia). Publicidade: links de afiliado.",
-  "area": "OFERTAS"
+  "area": "OFERTAS",
+  "ig_id": "17901032304394025",
+  "publicado_em": "2026-11-16 09:31"
  },
  {
   "id": "2026-11-17-story-mascote-black-friday",
