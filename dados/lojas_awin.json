@@ -38,5 +38,65 @@
    "#001E62"
   ],
   "fora_dos_canais": false
+ },
+ "lauri": {
+  "nome": "Lauri Esporte",
+  "programa": "118977",
+  "dominios": [
+   "lauriesporte.com.br"
+  ],
+  "fotos": [
+   "images.yampi.me"
+  ],
+  "cta": "Ver na Lauri Esporte",
+  "cor_card": [
+   "#1a1a1a",
+   "#ffffff"
+  ],
+  "etiqueta": [
+   "#1a1a1a",
+   "#ffffff"
+  ],
+  "fora_dos_canais": false
+ },
+ "reserva": {
+  "nome": "Reserva",
+  "programa": "61287",
+  "dominios": [
+   "usereserva.com"
+  ],
+  "fotos": [
+   "lojausereserva.vteximg.com.br"
+  ],
+  "cta": "Ver na Reserva",
+  "cor_card": [
+   "#000000",
+   "#ffffff"
+  ],
+  "etiqueta": [
+   "#000000",
+   "#ffffff"
+  ],
+  "fora_dos_canais": false
+ },
+ "cea": {
+  "nome": "C&A",
+  "programa": "17648",
+  "dominios": [
+   "cea.com.br"
+  ],
+  "fotos": [
+   "cea.vteximg.com.br"
+  ],
+  "cta": "Ver na C&A",
+  "cor_card": [
+   "#1a1a1a",
+   "#ffffff"
+  ],
+  "etiqueta": [
+   "#1a1a1a",
+   "#ffffff"
+  ],
+  "fora_dos_canais": false
  }
 }
