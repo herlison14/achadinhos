@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-15 21:36",
+ "atualizado": "2026-11-16 05:22",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -21,6 +21,24 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-18-story-site/01.jpg"
+    },
+    {
+     "id": "2026-11-17-story-mascote-black-friday",
+     "data": "2026-11-17",
+     "hora": "09:30",
+     "tema": "Black Friday chegando (27/11), mascote Binguinho comemorando",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": ""
+    },
+    {
+     "id": "2026-11-16-story-mascote-gratidao",
+     "data": "2026-11-16",
+     "hora": "09:30",
+     "tema": "agradecimento ao crescimento real de seguidores (mascote Binguinho)",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": ""
     },
     {
      "id": "2026-11-15-story-site",
