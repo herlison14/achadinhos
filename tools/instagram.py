@@ -119,16 +119,17 @@ def validar(post, itens, agora, checar_rede):
     imgs, leg = post.get("imagens") or [], (post.get("legenda") or "").strip()
     car = post.get("formato") == "carrossel"
     reel = post.get("formato") == "reel"
+    story_video = post.get("formato") == "story" and bool(post.get("video"))
     if not leg:
         erros.append("sem legenda")
     if len(leg) > 2200:
         erros.append("legenda com mais de 2200 caracteres")
-    if reel:
+    if reel or story_video:
         v = RAIZ / (post.get("video") or "")
         if not post.get("video") or not str(post["video"]).lower().endswith(".mp4") or not v.is_file():
-            erros.append("reel sem vídeo .mp4 no repositório")
+            erros.append("%s sem vídeo .mp4 no repositório" % ("reel" if reel else "story"))
         elif v.stat().st_size > 90 * 1024 * 1024:
-            erros.append("vídeo do reel passa de 90 MB")
+            erros.append("vídeo do %s passa de 90 MB" % ("reel" if reel else "story"))
         imgs = []
     elif car and not 2 <= len(imgs) <= 10:
         erros.append("carrossel precisa de 2 a 10 imagens")
@@ -213,9 +214,20 @@ def publicar_reel(post, ig_id):
 
 
 def publicar_story(post, ig_id):
-    """Story de imagem (9:16). A API não aceita legenda em Story; o texto está na própria imagem."""
-    cont = api("POST", "/%s/media" % ig_id, {"image_url": RAW + post["imagens"][0], "media_type": "STORIES"})["id"]
-    esperar_pronto(cont)
+    """Story de imagem OU vídeo (9:16, até 60s). A API não aceita legenda em Story; o texto está na própria mídia."""
+    if post.get("video"):
+        base = {"media_type": "STORIES"}
+        try:
+            cont = api("POST", "/%s/media" % ig_id, dict(base, upload_type="resumable"))["id"]
+            enviar_video(cont, RAIZ / post["video"])
+            esperar_pronto(cont, 60)
+        except (ErroAPI, urllib.error.URLError, KeyError) as e:
+            print("upload resumível falhou (%s); tentando video_url" % (str(e)[:150] if isinstance(e, ErroAPI) else type(e).__name__))
+            cont = api("POST", "/%s/media" % ig_id, dict(base, video_url=RAW + post["video"]))["id"]
+            esperar_pronto(cont, 60)
+    else:
+        cont = api("POST", "/%s/media" % ig_id, {"image_url": RAW + post["imagens"][0], "media_type": "STORIES"})["id"]
+        esperar_pronto(cont)
     return api("POST", "/%s/media_publish" % ig_id, {"creation_id": cont})["id"]
 
 
