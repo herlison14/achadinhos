@@ -52,19 +52,38 @@ to Video no Flow/Veo — ver seção abaixo), nunca só do nome ou de uma descri
   `2026-11-25-reel-bf-corre`) e 2 Stories em vídeo (`2026-11-16-story-mascote-gratidao`,
   `2026-11-17-story-mascote-black-friday`).
 
-## Google Flow (Veo 3.1) — pesquisado em 15/11/2026, ainda não usado com o Binguinho
-Confirmado por pesquisa (não só memória, regra do Herlison de 14/11): o Veo 3.1 tem o recurso
-**"Ingredients to Video"**, disponível dentro do Flow — permite enviar até 3 imagens de referência
-(rosto/personagem, traje, cenário) e o modelo mantém o personagem consistente nas cenas geradas, em
-vez de recriar do zero a partir só de texto. É o recurso que faltava pra incluir o Binguinho nos
-Reels do Flow (até aqui, `dados/flow/PROMPTS.md` só gerava cenas genéricas sem personagem, de
-propósito, por não ter como travar a identidade).
-- Como usar: no Flow, clicar no nome do modelo na caixa de prompt > escolher **Video > Ingredients**,
-  subir `binguinho_referencia.jpg` (e opcionalmente `binguinho_comemorando.jpg` pra variar a pose) e
-  escrever o prompt da cena normalmente, descrevendo a AÇÃO (não a aparência, que já vem da
-  imagem).
-- Ainda não confirmado: se o plano gratuito do Herlison no Flow já libera o modo Ingredients (o
-  recurso é do Veo 3.1; o plano dele hoje gera com **Veo 3.1 Lite**) — testar na prática antes de
-  prometer o resultado.
-- Regra de uso continua a mesma do `PROMPTS.md`: sem texto/logo/preço na imagem gerada pela IA (eu
-  sobreponho depois), 9:16, aprovar a geração uma vez no agente do projeto (nunca "Sempre aprovar").
+## Google Flow (Veo 3.1) — testado e funcionando em 15/11/2026
+Confirmado na prática (depois de pesquisa de mercado, regra do Herlison de 14/11): o plano dele no
+Flow **já libera personagem consistente**, mesmo gerando com **Veo 3.1 Lite** (não precisou de
+upgrade). O caminho real na interface não é "Ingredients to Video" direto na caixa de prompt — é a
+aba **Personagens** (menu lateral esquerdo do projeto):
+1. Personagens > "Novo personagem" > subir `binguinho_referencia.jpg` (e opcionalmente
+   `binguinho_comemorando.jpg`) > o Flow gera um retrato com o modelo "Nano Banana 2.1" > renomear
+   para "Binguinho" > Concluir. Fica salvo na mídia do projeto, reaproveitável em qualquer cena nova.
+2. Em qualquer prompt de vídeo, digitar `@Bingu` (ou `@Binguinho`) na caixa de comando > o buscador
+   de recursos mostra o personagem "Binguinho" (ícone de personagem, não confundir com os vídeos
+   gerados que aparecem na mesma lista) > clicar nele > escrever o resto do prompt descrevendo só a
+   AÇÃO da cena (a aparência já vem do personagem).
+3. O agente sempre pede confirmação antes de gerar (10 créditos por cena de 8s no Veo 3.1 Lite) —
+   aprovar uma vez, nunca "Sempre aprovar" (regra já valia pro Kairogen, vale igual aqui).
+Resultado: 3 cenas testadas (corredor de lasers, desarmando bomba, caixa revela presente de Black
+Friday) saíram com o Binguinho visualmente idêntico ao personagem salvo em todas — identidade
+mantida sem repetir a imagem de referência a cada prompt (o `@menção` já resolve isso).
+
+**Áudio nativo do Veo 3.1 (confirmado por pesquisa de mercado em 15/11/2026):** o modelo gera
+música, efeitos sonoros e até narração/fala JUNTO com o vídeo, descritos em texto no mesmo prompt
+("música de suspense tocando no fundo", "uma voz narra: ...") — não é um prompt separado nem uma
+ferramenta à parte. Ressalva importante: o suporte oficial a fala do Veo 3.1 lista só inglês,
+chinês, japonês, coreano e espanhol — **português não está na lista oficial**. Testei mesmo assim
+pedindo narração em PT-BR numa cena (CTA de Black Friday) e o rosto do personagem mostrou
+movimento de boca condizente com fala (sinal visual de que tentou gerar a voz), mas eu não tenho
+como ouvir o áudio pra confirmar se saiu inteligível — **isso precisa de confirmação do Herlison
+ouvindo o resultado**. Se a narração em português sair ruim, o plano B é manter música/efeitos só
+(que funcionam bem, línguas à parte) e levar o texto da chamada pra tela via overlay de ffmpeg, no
+padrão dos outros Reels, em vez de voz.
+
+**Texto na tela gerado pelo próprio Veo:** pedi uma etiqueta escrita "BLACK FRIDAY" no presente da
+cena final e saiu legível e bem posicionada — melhor do que a experiência anterior com o Flow
+"agente" de primeiro/último frame (05/11/2026, que cortava letras em close). Mesmo assim, por
+segurança, textos de marca importantes (nome da loja, preço) continuam sendo sobrepostos depois
+via ffmpeg, não gerados pela IA.
