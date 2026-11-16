@@ -3465,10 +3465,12 @@
    "postagens/2026-11-16-story-e0410e14/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Wave Invictus 4: R$ 549,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "MODA"
+  "area": "MODA",
+  "ig_id": "18121550759053430",
+  "publicado_em": "2026-11-16 13:21"
  },
  {
   "id": "2026-11-16-story-222d986d",
