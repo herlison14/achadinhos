@@ -3401,10 +3401,12 @@
    "postagens/2026-11-16-story-24ea25ae/01.jpg"
   ],
   "legenda": "Story: Prancha de Cabelo Shine Nutrah Be Emotion: R$ 299,88 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "BELEZA"
+  "area": "BELEZA",
+  "ig_id": "17956806273314259",
+  "publicado_em": "2026-11-16 07:31"
  },
  {
   "id": "2026-11-16-story-36c18bfb",
