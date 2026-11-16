@@ -145,6 +145,16 @@ Pedido do Herlison: Reels de Black Friday com a marca animada "como um personage
 - **Créditos Kairogen zerados em 15/11/2026** (plano PRO trial, 150 créditos, usados em 1 imagem + 7 vídeos + 2 narrações que descartamos). **Pacotes de crédito ficam bloqueados enquanto o trial roda** (só liberam depois de 17/11/2026 17:12 UTC); a única forma de ter mais crédito antes disso seria assinar um plano acima (Precision, R$249/mês), o que não foi pedido. **Trial vira assinatura PRO (R$149/mês) sozinho em 17/11/2026 se o Herlison não cancelar antes em app.kairogen.ai/settings/billing** — avisar ele se chegar perto da data sem decisão.
 - 2 Reels do Binguinho agendados: `2026-11-20-reel-bf-pesquisa` (abertura→pesquisa→lista, 20:00) e `2026-11-25-reel-bf-corre` (corrida→comemora→fechamento/CTA, 20:00).
 - Sobrou 1 clipe não usado: "idle" (aceno parado, gerado com `animate_from_generation`/Wan 2.6, 25 créditos, 5s, resolução um pouco diferente 716x1284). Ainda não decidido com o Herlison pra que serve (Story? loop de perfil?) — perguntar antes de descartar ou usar.
+- **Ficha e imagens de referência do mascote (15/11/2026, pedido do Herlison):** não basta salvar o
+  nome "Binguinho" — a estrutura visual completa (forma, cores, rosto, proporções) está documentada
+  em `dados/mascote/LEIAME.md`, com 2 imagens de referência (`binguinho_referencia.jpg` pose neutra,
+  `binguinho_comemorando.jpg` pose animada) extraídas dos próprios clipes do Kairogen. **Regra:
+  todo vídeo novo do mascote, em qualquer ferramenta, tem que partir de uma dessas imagens como
+  referência** — nunca recriar só pelo nome ou por descrição em texto, pra não sair um "Binguinho"
+  diferente a cada vídeo. Pesquisado (não só memória): Veo 3.1/Flow tem o recurso "Ingredients to
+  Video" (até 3 imagens de referência travam o personagem), que é o caminho pra incluir o Binguinho
+  também nos Reels do Flow (até aqui `dados/flow/PROMPTS.md` só gerava cenas sem personagem, de
+  propósito). Detalhes e status em `dados/mascote/LEIAME.md`.
 - **Story em vídeo (15/11/2026):** `tools/instagram.py` ganhou suporte a Story de VÍDEO (`publicar_story` manda `media_type=STORIES` + upload resumível do vídeo, igual ao Reel; `validar()` tem o caso `story_video`). Até aqui Story só aceitava imagem. Primeiro uso: 2 clipes novos do Binguinho que o Herlison mandou (acena→corações e acena→confete) legendados com texto real (sem inventar número de seguidor; Black Friday com a data real 27/11) e trilha de `reel_audio.py` (sem narração, lição já registrada acima). Agendados como Story em vídeo: `2026-11-16-story-mascote-gratidao` (09:30) e `2026-11-17-story-mascote-black-friday` (09:30), em horários livres daqueles dias (não são slots da lista `HORAS` do teste de 10 Stories/dia).
 
 ## Em aberto
