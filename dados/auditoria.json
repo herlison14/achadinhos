@@ -1,11 +1,17 @@
 {
- "gerado": "2026-11-16 07:07",
+ "gerado": "2026-11-16 20:23",
  "contagem": {
-  "ALTO": 20,
-  "MEDIO": 4,
-  "INFO": 1
+  "ALTO": 4,
+  "INFO": 2,
+  "MEDIO": 4
  },
  "achados": [
+  {
+   "nivel": "ALTO",
+   "area": "publicação",
+   "texto": "2026-11-16-story-36c18bfb está com erro: HTTP 400 The requested resource does not exist",
+   "acao": "corrigir o motivo e voltar o status para agendado"
+  },
   {
    "nivel": "ALTO",
    "area": "pré-voo",
@@ -14,117 +20,21 @@
   },
   {
    "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-11-11-11-ao-vivo-ofertas-qu publicado no Instagram em 2026-11-11 08:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+   "area": "pré-voo",
+   "texto": "2026-11-19-story-6a9e06f6 (2026-11-19 11:30) vai ser BLOQUEADO: preço de 6a9e06f6 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
    "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-13-pet-amazon publicado no Instagram em 2026-11-07 12:31 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+   "area": "pré-voo",
+   "texto": "2026-11-19-story-feb13ddd (2026-11-19 18:30) vai ser BLOQUEADO: preço de feb13ddd conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
-   "nivel": "ALTO",
+   "nivel": "INFO",
    "area": "telegram",
-   "texto": "2026-11-15-casa-meli publicado no Instagram em 2026-11-08 12:32 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-17-ferramentas-amazon publicado no Instagram em 2026-11-09 12:32 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-20-pet-meli publicado no Instagram em 2026-11-10 12:32 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-05-4-jeitos-preco-bom publicado no Instagram em 2026-11-05 14:31 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-06-lista-11-11-black-friday publicado no Instagram em 2026-11-06 21:01 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-07-como-usar-o-site publicado no Instagram em 2026-11-07 17:31 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-08-o-que-voce-quer-ver publicado no Instagram em 2026-11-08 10:31 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-11-brinquedos-amazon publicado no Instagram em 2026-11-11 12:31 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-09-5-coisas-antes-de-pagar publicado no Instagram em 2026-11-09 21:01 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-10-vespera-11-11 publicado no Instagram em 2026-11-10 14:32 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-11-hoje-e-11-11-confere publicado no Instagram em 2026-11-11 10:31 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-13-perifericos-kabum publicado no Instagram em 2026-11-10 16:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-14-revolution-nike publicado no Instagram em 2026-11-11 12:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-09-setup-kabum publicado no Instagram em 2026-11-09 22:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-09-nike-dia-a-dia publicado no Instagram em 2026-11-09 23:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-10-moda-dafiti publicado no Instagram em 2026-11-10 00:02 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-10-moda-dafiti-manha publicado no Instagram em 2026-11-10 08:01 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+   "texto": "19 posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram",
+   "acao": "já resolvido em 12/11/2026; nada a fazer"
   },
   {
    "nivel": "MEDIO",

@@ -115,6 +115,11 @@ def auditar(agora, usar_github):
         add("MEDIO", "pré-voo", "não consegui rodar a trava do publicador: %s" % type(e).__name__)
 
     # ---- Telegram (espelho dos carrosséis)
+    # Posts publicados antes do conserto do TELEGRAM_TOKEN (HTTP 401 de 05 a 12/11/2026, resolvido
+    # em 12/11/2026 21:50) ficaram sem espelho de propósito: o problema já foi resolvido e reenviar
+    # oferta velha no canal não faz sentido. Contam só como INFO, sem abrir a issue "Auditoria".
+    TELEGRAM_RESOLVIDO = "2026-11-12 21:50"
+    antigos_tg = 0
     for p in posts:
         pub = p.get("publicado_em") or ""
         if (p.get("canal", "ig") == "ig" and p["status"] == "publicado" and p.get("formato") != "story" and p.get("imagens")
@@ -123,9 +128,14 @@ def auditar(agora, usar_github):
                 quando = datetime.fromisoformat(pub.replace(" ", "T") + ":00").replace(tzinfo=BRT)
             except ValueError:
                 continue
-            if (agora - quando).total_seconds() > 3600:
+            if pub < TELEGRAM_RESOLVIDO:
+                antigos_tg += 1
+            elif (agora - quando).total_seconds() > 3600:
                 add("ALTO", "telegram", "%s publicado no Instagram em %s não chegou ao canal do Telegram" % (p["id"], pub),
                     "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)")
+    if antigos_tg:
+        add("INFO", "telegram", "%d posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram" % antigos_tg,
+            "já resolvido em 12/11/2026; nada a fazer")
 
     # ---- WhatsApp (rodadas manuais pelo Chrome)
     for p in posts:
