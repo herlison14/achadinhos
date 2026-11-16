@@ -2642,10 +2642,12 @@
    "postagens/2026-11-16-story-353e4156/01.jpg"
   ],
   "legenda": "Story: Fritadeira Elétrica Mondial AFN-40-FB 4 Litros: R$ 249,90 (conferido em 14/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "COZINHA"
+  "area": "COZINHA",
+  "ig_id": "17931958686425988",
+  "publicado_em": "2026-11-16 11:31"
  },
  {
   "id": "2026-11-16-story-8e001448",
