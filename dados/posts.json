@@ -3731,11 +3731,13 @@
    "postagens/2026-11-17-story-129c4767/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Wave Vitality 5: R$ 309,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 77
+  "num": 77,
+  "ig_id": "17965243085998823",
+  "publicado_em": "2026-11-17 13:39"
  },
  {
   "id": "2026-11-17-story-d87ea5f7",
