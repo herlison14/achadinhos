@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-17 06:37",
+ "atualizado": "2026-11-17 20:14",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -27,8 +27,8 @@
      "data": "2026-11-17",
      "hora": "09:30",
      "tema": "Black Friday chegando (27/11), mascote Binguinho comemorando",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 09:32",
      "img": ""
     },
     {
@@ -122,8 +122,8 @@
      "data": "2026-11-17",
      "hora": "11:30",
      "tema": "Fone Bluetooth Lenovo Gm2 Pro Baixa Latência",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 11:31",
      "img": "postagens/2026-11-17-story-e8a1c7a1/01.jpg"
     },
     {
@@ -784,8 +784,8 @@
      "data": "2026-11-17",
      "hora": "13:15",
      "tema": "Tênis de Corrida Mizuno Wave Vitality 5",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 13:39",
      "img": "postagens/2026-11-17-story-129c4767/01.jpg"
     },
     {
@@ -906,7 +906,7 @@
      "data": "2026-11-17",
      "hora": "18:30",
      "tema": "Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C",
-     "status": "agendado",
+     "status": "erro",
      "publicado_em": null,
      "img": "postagens/2026-11-17-story-68921b58/01.jpg"
     },
@@ -915,8 +915,8 @@
      "data": "2026-11-17",
      "hora": "15:15",
      "tema": "Secador Ultralite Ionic be emotion",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 15:21",
      "img": "postagens/2026-11-17-story-d87ea5f7/01.jpg"
     },
     {
@@ -924,8 +924,8 @@
      "data": "2026-11-17",
      "hora": "07:30",
      "tema": "Aparador de Pelos Smart Blade be emotion MEN",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 07:31",
      "img": "postagens/2026-11-17-story-f75099cd/01.jpg"
     },
     {
@@ -1118,8 +1118,8 @@
      "data": "2026-11-17",
      "hora": "16:45",
      "tema": "Conjunto de Facas Ichef Polishop Professional Cut Inox Duo",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 16:51",
      "img": "postagens/2026-11-17-story-d5df7291/01.jpg"
     },
     {
@@ -1127,8 +1127,8 @@
      "data": "2026-11-17",
      "hora": "10:00",
      "tema": "Panela First Sauté Petit Vermelha 20 cm Ichef Polishop",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 10:01",
      "img": "postagens/2026-11-17-story-b88fea4b/01.jpg"
     },
     {
@@ -1276,8 +1276,8 @@
      "data": "2026-11-17",
      "hora": "08:45",
      "tema": "Processador de Alimentos Power Nutri Machine Ichef Polishop",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 08:51",
      "img": "postagens/2026-11-17-story-b7a0d75f/01.jpg"
     },
     {
