@@ -14,1060 +14,186 @@
   "erro": "não é maior que a atual"
  },
  {
-  "id": "74a920ef",
-  "ok": true,
-  "antes": 768,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/028349IM.jpg"
- },
- {
-  "id": "1f66c199",
-  "ok": true,
-  "antes": 768,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/029489ID.jpg"
- },
- {
-  "id": "eb71a499",
-  "ok": true,
-  "antes": 768,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/01370252.jpg"
- },
- {
-  "id": "38c4ede0",
-  "ok": true,
-  "antes": 768,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/02732251.jpg"
- },
- {
-  "id": "87758664",
-  "ok": true,
-  "antes": 768,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/0293085B.jpg"
- },
- {
-  "id": "130f3195",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Hurley-Mochila-Hurley-Feminina-Casual-Reforcada-Rosa-0276-08297741-1-zoom.jpg"
- },
- {
-  "id": "5d1fcbae",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Vizzano-Tenis-Feminino-Vizzano-Casual-Branco-2406-13074251-1-zoom.jpg"
- },
- {
-  "id": "7c7efad4",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1600x1600",
-  "url": "https://static.dafiti.com.br/p/Olympikus-Tenis-Olympikus-Delta-33-Cinza-3374-26061151-1-zoom.jpg"
- },
- {
-  "id": "dcde7e59",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1173x1600",
-  "url": "https://static.dafiti.com.br/p/Levis-Camiseta-Masculina-Levis-Housemark-Preto-8517-79059351-1-zoom.jpg"
- },
- {
-  "id": "f79da7b3",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1600x1600",
-  "url": "https://static.dafiti.com.br/p/Mizuno-Tenis-de-Corrida-Mizuno-Goya-8919-76506641-1-zoom.jpg"
- },
- {
-  "id": "a82261f8",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/a049f870364bf43740fd83796cec9378.jpg?width=1200"
- },
- {
-  "id": "6e9dbadd",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/045f79c8e9793948b1b77a9067491a36.jpg?width=1200"
- },
- {
-  "id": "30262d7f",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/a2599ffc9f50a821fc4dec69f2780f35.jpg?width=1200"
- },
- {
-  "id": "4e17af78",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/41c3881c14b54a7f4bbbbca4d6674cf1.jpg?width=1200"
- },
- {
-  "id": "4ad989b4",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/John-John-Tenis-Masculino-John-John-Chunky-Preto-6723-93889251-1-zoom.jpg"
- },
- {
-  "id": "8d3486fe",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Colcci-Tenis-Colcci-Textil-Preto-3320-55979341-1-zoom.jpg"
- },
- {
-  "id": "8ee04112",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Fila-Tenis-Masculino-Fila-Skywind-Marrom-4627-75903051-1-zoom.jpg"
- },
- {
-  "id": "e1f6e471",
-  "ok": true,
-  "antes": 400,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/New-Balance-Tenis--New-Balance-480-Low-Preto-2877-44240141-1-zoom.jpg"
- },
- {
-  "id": "64968c63",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/5cfee1591bbb60db0d5ab7c95df85ab8.jpg?width=1200"
- },
- {
-  "id": "0620458e",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/aa72bb1b22eaf1778fc4f4cdcb91008a.jpg?width=1200"
- },
- {
-  "id": "29705102",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/b5b4960b9b1715b54e2b39adf73dede3.jpg?width=1200"
- },
- {
-  "id": "f96ff36b",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/1cccce6045f25899e27e0be6591c0e6f.jpg?width=1200"
- },
- {
-  "id": "c5ddaeaa",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/de38dc0e6d0296ff2056fd44a3cc67a5.jpg?width=1200"
- },
- {
-  "id": "e8dbcace",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/53e04c07ebfb2f97ac44c7f8b1bb986d.png?width=1200"
- },
- {
-  "id": "6bf62f85",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/eec1f312c15348711a93cf1628bde557.jpg?width=1200"
- },
- {
-  "id": "c6de74f4",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://www.docebeleza.com.br/cdn/shop/files/c61cde766c58deffb578626f4e8b416c.jpg?width=1200"
- },
- {
-  "id": "04cfb0f8",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/382141/51/sv01/fnd/BRA/fmt/png"
- },
- {
-  "id": "da0a4476",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/396353/03/sv01/fnd/BRA/fmt/png"
- },
- {
-  "id": "c2b1db19",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/404439/02/sv01/fnd/BRA/fmt/png"
- },
- {
-  "id": "1054a2ad",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/391759/07/sv01/fnd/BRA/fmt/png"
- },
- {
-  "id": "925b7484",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/404228/51/sv01/fnd/BRA/fmt/png"
- },
- {
-  "id": "385f2af4",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/402596/01/sv01/fnd/BRA/fmt/png"
- },
- {
-  "id": "0acf6970",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/526554/02/fnd/BRA/fmt/png"
- },
- {
-  "id": "ceb12f71",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/633290/87/fnd/BRA/fmt/png"
- },
- {
-  "id": "b176f984",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/688114/01/mod01/fnd/BRA/fmt/png"
- },
- {
-  "id": "962f2b18",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/629768/30/fnd/BRA/fmt/png"
- },
- {
-  "id": "d81ce373",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/629771/01/mod01/fnd/BRA/fmt/png"
- },
- {
-  "id": "81ca0ec9",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://images.puma.com/image/upload/f_auto,q_auto,w_1200,b_rgb:FAFAFA/global/524814/02/fnd/BRA/fmt/png"
- },
- {
-  "id": "24ea25ae",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2750453-1200-1200/01_3000pxx3000px-ShineNOVAS.jpg"
- },
- {
-  "id": "b468b927",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2786131-1200-1200/Rotating-Nutrah-3000x3000-02.jpg"
- },
- {
-  "id": "c72c7976",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2784470-1200-1200/01_3000x3000px_Infraliss.jpg"
- },
- {
-  "id": "ba3ebae1",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2488656-1200-1200/Panela-Firts-Red-3000x3000-1.jpg"
- },
- {
-  "id": "f75099cd",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2778919-1200-1200/01-FRENTE-SMART.jpg"
- },
- {
-  "id": "b88fea4b",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2488797-1200-1200/Panela-Firts-Red-3000x3000-1.jpg"
- },
- {
-  "id": "80abd32e",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2780247-1200-1200/MaxGroom-3000x3000-03.jpg"
- },
- {
-  "id": "d61d1607",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2775875-1200-1200/01_3000x3000px-FerroUltraSteamer.jpg"
- },
- {
-  "id": "fbd1614c",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2786482-1200-1200/01_3000pxx3000px-Dualzone.jpg.jpg"
- },
- {
-  "id": "a49a8512",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2786374-1200-1200/SAUTE-GRAND-24CM-VERMELHO-02.png"
- },
- {
-  "id": "d5df7291",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/672483-1200-1200/professional-cut-Inox-duo-ichef-04.jpg"
- },
- {
-  "id": "c01e0170",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2787449-1200-1200/02_3000x3000px-HANDVAC.jpg"
- },
- {
-  "id": "f71998f5",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2786963-1200-1200/Prancheta-1Mini-Shaver_3000x3000_01.jpg"
- },
- {
-  "id": "36c18bfb",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2780265-1200-1200/01_3000x3000px-FerroEasyCare.jpg"
- },
- {
-  "id": "7a403845",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2779693-1200-1200/01_3000x3000px-Airfryer_Slim_8L.jpg"
- },
- {
-  "id": "d87ea5f7",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2759545-1200-1200/secador_ultralite_2025_01.jpg.jpg"
- },
- {
-  "id": "b7a0d75f",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2785105-1200-1200/ImagemSite_PowerNutriMachine_3000x3000px_01.jpg"
- },
- {
-  "id": "a0a0c7b8",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2788286-1200-1200/30152AB.jpg"
- },
- {
-  "id": "222d986d",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2785006-1200-1200/HotBrush-3000x3000-01.jpg"
- },
- {
-  "id": "dbfedfe4",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://polishop.vteximg.com.br/arquivos/ids/2754031-1200-1200/01_3000pxx3000px-PowerNutriNOVAS.jpg"
- },
- {
-  "id": "511ee732",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/245281-1200-1200/101126126_3-009-01.jpg"
- },
- {
-  "id": "da358dda",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/241180-1200-1200/101099099_1-004-01.jpg"
- },
- {
-  "id": "129c4767",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/237954-1200-1200/101057057_1-296-01.jpg"
- },
- {
-  "id": "d3cc439f",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/383601-1200-1200/101149149-004-01.jpg"
- },
- {
-  "id": "cd96e77b",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/333637-1200-1200/101006006_PT_LJA.jpg"
- },
- {
-  "id": "169636e6",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/313234-1200-1200/102364003-030-01.jpg"
- },
- {
-  "id": "be2d8515",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/317549-1200-1200/101038038_2-014-01.jpg"
- },
- {
-  "id": "91e11706",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/302987-1200-1200/102328001-012-01.jpg"
- },
- {
-  "id": "63afc79e",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/260556-1200-1200/101102102_1-030-01.jpg"
- },
- {
-  "id": "52cd9c79",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/225401-1200-1200/106049049_3-456-01.jpg"
- },
- {
-  "id": "8ae2e532",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/365683-1200-1200/101090090PRET90.jpg"
- },
- {
-  "id": "c234bf1b",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/332015-1200-1200/MIUAA5172_PTCZCL.jpg"
- },
- {
-  "id": "a4ba488f",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/314400-1200-1200/101114114-030-01.jpg"
- },
- {
-  "id": "86d11d02",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/304622-1200-1200/102327001-021-01.jpg"
- },
- {
-  "id": "c7a62a9b",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/268088-1200-1200/101053053_1-014-01.jpg"
- },
- {
-  "id": "b1d50d31",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/244981-1200-1200/101118118_1-030-01.jpg"
- },
- {
-  "id": "e0410e14",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/233815-1200-1200/101065065_3-012-01.jpg"
- },
- {
-  "id": "b7e9115e",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/384632-1200-1200/102355003-926-01.jpg"
- },
- {
-  "id": "bd237ca8",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/371715-1200-1200/MIMSR66014_PRET90.jpg"
- },
- {
-  "id": "371a592a",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x1200",
-  "url": "https://mizunobr.vteximg.com.br/arquivos/ids/252386-1200-1200/MIMTA5198_1-030-01.jpg"
- },
- {
-  "id": "59d45f0c",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "1200x1200",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S491cdf67381c4f73bd2f876cb8561380D.jpg"
- },
- {
   "id": "0cb025bc",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 687,
   "tamanho": "687x668",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/A04baff486be44b8d8665223461b40e25y.png"
- },
- {
-  "id": "4dcaa306",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1124",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/jogo-de-potes-de-vidro-hermetico-brinox-com-tampa-redondo-ekko-7-pecas/magazineluiza/238409400/308151cc5415014839e8ca55908728b3.jpg"
- },
- {
-  "id": "17039bc2",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/jogo-de-potes-de-plastico-hermeticos-electrolux-com-tampa-a23122901-12-pecas/magazineluiza/234782800/72ffd50dfd0fb628c7f7d1cc5f8806ea.jpg"
- },
- {
-  "id": "9e5741a0",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "992x744",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/jogo-de-potes-de-plastico-hermetico-electrolux-com-tampa-41029853-10-pecas/magazineluiza/212738100/8a89d0aa0ac484bb43cf2e68ab3d6e85.jpg"
- },
- {
-  "id": "1bdb46d2",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1200x1200",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/jogo-4-potes-de-vidro-hermetico-marmita-tampa-4-travas-640ml-dona-laura/donalaurautilidadesdomesticas/9905580976/5adbe18ec10260315cd25924c405b180.jpeg"
- },
- {
-  "id": "9605bf1d",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1500x1500",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/carrinho-organizador-multiuso-3-andares-prateleiras-com-rodinhas-laterais-em-aco-kontuz/nawebutilidade/carmu-pt/48bb0b37d1085a706fc989d0b7bc23c7.jpeg"
- },
- {
-  "id": "0ef7094d",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/garrafa-termica-1l-termolar-magic-pump/magazineluiza/145615200/8004de60079fd09cddf2c667bdcaaaed.jpg"
- },
- {
-  "id": "86f9cb08",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1200x1200",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/garrafa-termica-parede-dupla-aco-inox-1l-cafe-suco-agua-academia-passeio-caminhada-modus/massivemultivendas/xb650z/d72fec3e975e14d2ea5e2ebd94aeadac.jpeg"
- },
- {
-  "id": "a4aa5038",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/garrafa-termica-tramontina-1l-exata/magazineluiza/234987400/5ab227b3a664a57d09c1cb308b8be1bd.jpg"
- },
- {
-  "id": "1b9dcf7f",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1200x1200",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/jogo-de-lencol-casal-queen-malha-100-algodao-03-pecas-com-elastico-malucasim/camariadistribuidora/jle0335a-cinza/acbfcdfd9cce9a829856faab66a28c14.jpeg"
- },
- {
-  "id": "244eda85",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1034x776",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/air-fryer-mondial-family-afn-40-bi-preto-4l-com-timer/magazineluiza/228887100/9f098f13262ee3dbefe5817ae85c179c.jpg"
- },
- {
-  "id": "670b2f11",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1120x840",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/air-fryer-mondial-new-pratic-af-31-preta-35l-com-timer/magazineluiza/236479500/b5ac0f2473e68e5e0efe09aeffa9a744.jpg"
- },
- {
-  "id": "8d6f44c3",
-  "ok": true,
-  "antes": 279,
-  "tamanho": "1500x1130",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/air-fryer-ultra-af-ut-01-preta-com-timer-32l/magazineluiza/238533800/be6520d6c286babd7bf919a19f9bab17.jpg"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "9fdc5812",
-  "ok": false,
+  "ok": true,
   "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1500x1125",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/liquidificador-mondial-turbo-power-l-99-fb-preto-com-filtro-3-velocidades-550w/magazineluiza/021756600/a1725515b0c609f66de9ba4f3d2be5b3.jpg"
  },
  {
   "id": "5b89e0f0",
-  "ok": false,
+  "ok": true,
   "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1500x1125",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/liquidificador-mondial-easy-power-l550-branco-2-velocidades-550w/magazineluiza/021723800/8c317e63161f8d60cd30084eb8e1318f.jpg"
  },
  {
   "id": "39e3fd28",
-  "ok": false,
+  "ok": true,
   "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1186x890",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/ventilador-de-mesa-40cm-6-pas-preto-mondial-vsp40-127v/casa-e-video/70017/ab6e90496a4d9f602916d4ce7283772a.jpg"
  },
  {
   "id": "c921991d",
-  "ok": false,
+  "ok": true,
   "antes": 600,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1500x1124",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/jogo-de-panelas-tramontina-antiaderente-de-aluminio-vermelho-10-pecas-turim/magazineluiza/234049200/969218f4228c4999c58249575902900d.jpg"
  },
  {
   "id": "c93d72e4",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 690,
   "tamanho": "690x682",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Aa14ba1bc2a7c4cf7bb74d4d274bdd129Z.png"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "ac99308a",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 686,
   "tamanho": "682x686",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/A75540e1e45a04b84ae4786548c5a3d53N.png"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "8a4f5c2c",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 683,
   "tamanho": "683x682",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Afec09ad96c104c54aa3e879e777c3645b.png"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "cc0bde3c",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 686,
   "tamanho": "686x660",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Acf010f525422495fb86aa917ea9911caj.png"
- },
- {
-  "id": "8e4423f6",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "800x800",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S03376c2e3d6f4c30abe5574beaf53a412.jpg"
- },
- {
-  "id": "4ea5e24a",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "800x800",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Sfd3278c1e6c84d07adccf055406a4b7f1.jpg"
- },
- {
-  "id": "1401ffd1",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "800x800",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Sd0b886f43b1b485b880a6e90da207c68s.jpg"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "0e0c7215",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 687,
   "tamanho": "681x687",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Ad285df0e965741169680ddd0194075da2.png"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "f870c30d",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 685,
   "tamanho": "685x682",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/A9eeb38fe65c64b5ca3b17538e8f39750a.png"
- },
- {
-  "id": "4fc063e5",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "800x800",
-  "url": "https://a-static.mlcdn.com.br/800x800/cetaphil-creme-hidratante/epocacosmeticos-integra/15347/2753fe076081fc0e95ba2f632f3066fd.jpeg"
- },
- {
-  "id": "b905b372",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1000x1000",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/creme-facial-lata-56g-nivea/efacil/143310/7236b39c5cbf44c51bac163e4386f8b9.jpeg"
- },
- {
-  "id": "4e050aca",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/escova-secadora-mondial-es-02-bi-1200w-3-niveis-de-temperatura-tourmaline-ion/magazineluiza/237252900/7903f76ed357412870a429dbdd75780c.jpg"
- },
- {
-  "id": "d7b213e0",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/escova-secadora-britania-bes24p-compact-bivolt-1300w-2-velocidades-turmalina-com-ions/magazineluiza/231260400/0835680432b3899409ee7f861060eae0.jpg"
- },
- {
-  "id": "f7e86c39",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1500x1500",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/perfume-cebolinha-25ml-edicao-limitada-frasco-de-vidro-jequiti/fzzstore/perf-cebolinha-vidro/4df91f18017141287db08e7909c83f65.jpeg"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "3a4eb4da",
-  "ok": false,
+  "ok": true,
   "antes": 210,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "ab308331",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "1000x1000",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S21e86a6844e74756854ec5a4d2ffb39dO.jpg"
- },
- {
-  "id": "d5cf73ed",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "960x960",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Sa67c2331a7554c178f16eaa952cf45a0x.jpg"
- },
- {
-  "id": "258d02f2",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "800x800",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S493477297984405ba3953aa48dbddea7D.jpg"
- },
- {
-  "id": "91d7aded",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "900x894",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S6cb4b0a4e1b64d909021cd0f4b69bc0dn.png"
+  "tamanho": "1080x1080",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/perfume-arabe-sabah-al-ward-al-wataniah-edp-100ml/gbgimportados/sabah/dbfa8d472de765792bd795696b960c17.jpeg"
  },
  {
   "id": "28117a47",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 651,
   "tamanho": "651x622",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/A665774da077143b4ae168cb22331da0fb.png"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "9390d294",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 687,
   "tamanho": "687x657",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Aa10b4fdd515d46399a8277130cd4fd4f4.png"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "95254577",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 685,
   "tamanho": "685x682",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/A706f06a405db4c57938c0ce26ae6daday.png"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "31d0b9c1",
-  "ok": true,
-  "antes": 0,
+  "ok": false,
+  "antes": 686,
   "tamanho": "686x667",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Aade43780bdc44ecd9a6293d1e1aada200.png"
- },
- {
-  "id": "1ac9cc28",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "800x800",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S6a9aee7edac049279e7b94608b1afe145.jpg"
- },
- {
-  "id": "e4965267",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "800x604",
-  "url": "https://a-static.mlcdn.com.br/800x800/fone-de-ouvido-bluetooth-samsung-buds-core-com-microfone-cancelamento-de-ruido-esportivo-intra-auricular-true-wireless-preto/magazineluiza/240580100/a4cdf4b39bb9bc19d9e7b9efa89b8a19.jpg"
- },
- {
-  "id": "0b2e7141",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1200x1200",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/fone-qcy-buds-t43-tws-5-3-com-microfone-ipx4-ate-35h-de-bateria/baseusbrasiloficial/qcyt43-01/ba968f55fe43b8361b95231a438bbbe5.jpeg"
- },
- {
-  "id": "cebbce0e",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1500x1500",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/tenis-esportivo-masculino-olimp-caminhada-academia-original-olimpak/vili/maveli38/3b9bfd637b643a847730ac074992a3c4.jpeg"
- },
- {
-  "id": "28eccffc",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1200x1200",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/tenis-adidas-lite-racer-4-0/netshoes/fb9-8532-172-40/ff23567e58509a162d01c60c63e76c3e.jpeg"
- },
- {
-  "id": "160bc6a8",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "1500x1500",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/mochila-masculina-impermeavel-faculdade-alca-reforcada-grande-dazzore/ifast/a800/8bb12dff24470a4af2d627e1cd85a69b.jpeg"
- },
- {
-  "id": "56d5e324",
-  "ok": true,
-  "antes": 210,
-  "tamanho": "973x1019",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/mochila-reforcada-executiva-escolar-preta-masculino-feminino-impermeavel-bezzter/bexxbrasil/mochila-x/27fe5358b693ec562f8096c89dc24d5a.jpeg"
- },
- {
-  "id": "5a309fe3",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "800x800",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S7b3301f42369441aa90ac715691c0b6aK.png"
- },
- {
-  "id": "a81532e1",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "800x800",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/S20e5242a1d9f46baae783a883b1ed146j.jpg"
- },
- {
-  "id": "4f7710e4",
-  "ok": true,
-  "antes": 0,
-  "tamanho": "1200x1200",
-  "url": "https://ae-pic-a1.aliexpress-media.com/kf/Se140b44b69a54542b2c1214515ac358bB.jpg"
+  "erro": "não é maior que a atual"
  },
  {
   "id": "dce4ccf5",
-  "ok": false,
-  "antes": 210,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "11627130",
-  "ok": false,
-  "antes": 600,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "40eb1842",
-  "ok": false,
-  "antes": 600,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "6b375449",
-  "ok": false,
-  "antes": 279,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "bbc8d357",
-  "ok": false,
-  "antes": 279,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "66d7f3b4",
-  "ok": false,
-  "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "de8e039c",
-  "ok": false,
-  "antes": 600,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "815cc52a",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "800x600",
-  "url": "https://a-static.mlcdn.com.br/800x800/aspirador-de-po-2-em-1-mondial-1100w-turbo-cycle-ap-36-vermelho-e-preto/magazineluiza/237623300/5c7ec9b2822a4f8024715ed197d6f191.jpg"
- },
- {
-  "id": "fe4cbcb5",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/aspirador-de-po-vertical-philco-filtro-ciclone-1450w-pas1600p-preto/magazineluiza/237333900/f2eb6f87489884799ebaf5a8b35297de.jpg"
- },
- {
-  "id": "d9eda127",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "800x600",
-  "url": "https://a-static.mlcdn.com.br/800x800/ferro-de-passar-roupa-a-vapor-e-a-seco-black-decker-fx1050-branco-e-roxo/magazineluiza/240139000/a8418788606287b8b5da6a92dbe87307.jpg"
- },
- {
-  "id": "8dd478f3",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1300x1300",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/ferro-de-passar-roupa-a-vapor-e-a-seco-electrolux-efficient-esi10-azul/magazineluiza/235627600/4a4ab827ab4222079c6ef83a78e6fe70.jpg"
- },
- {
-  "id": "bc3928a0",
-  "ok": true,
-  "antes": 600,
-  "tamanho": "1200x906",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/ferro-de-passar-britania-bfv07-azul-63601096/magazineluiza/240438600/f54a4ea1047c28861293b237442f8c20.jpg"
- },
- {
-  "id": "0049470d",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1491x1118",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/chapinha-prancha-de-cabelo-taiff-ceramica-180deg/magazineluiza/108499800/0514ab794d42f4a0bc6f79d465bb892a.jpg"
- },
- {
-  "id": "68921b58",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/chapinha-prancha-de-cabelo-ceramica-com-ions-210oc-ga-ma-italy-eleganza-plus/magazineluiza/108522100/8d90dbb5814899d7980dd927cc7af9d2.jpg"
- },
- {
-  "id": "fbd5debb",
   "ok": true,
   "antes": 210,
   "tamanho": "1200x1200",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/arvore-de-natal-grande-pinheiro/magazinemgp/5279/82859628f14cf6aea5bf8f2fefafd7f4.jpeg"
+  "url": "https://a-static.mlcdn.com.br/1500x1500/kit-chaves-jogo-catraca-reversivel-soquetes-46-pecas-maleta-new/magaprimer/191082001bd711ec883e4201ac185013/0d0a9aa53132db058b644d5c2cdcbab9.jpeg"
  },
  {
-  "id": "53348138",
+  "id": "11627130",
   "ok": true,
-  "antes": 210,
-  "tamanho": "1488x1500",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/arvore-de-natal-pinheiro-neve/storevm/d63457c65d8d11efb6444201ac18501b/370b47d8e5c2a10f6a2099e1c2280538.jpeg"
+  "antes": 600,
+  "tamanho": "1500x1125",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/ventilador-de-mesa-britania-bvt301-30cm-6-pas-3-velocidades-preto/magazineluiza/237756400/a7d745fb58d9f82101897170fdaa135f.jpg"
  },
  {
-  "id": "240e0a56",
+  "id": "40eb1842",
   "ok": true,
-  "antes": 237,
-  "tamanho": "1500x1329",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/presepio-natal-08-pecas-resina/bazarloggosltdame/eaa5c52e4c0d11eeb82e4201ac185056/aaf6840404c12e12e49e172dec2ddcd9.jpeg"
+  "antes": 600,
+  "tamanho": "1500x1125",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/ventilador-de-mesa-britania-bvt400-40cm-6-pas-3-velocidades-preto/magazineluiza/237756600/f4b86e192846f5ab594a836b5f7318fc.jpg"
  },
  {
-  "id": "6e109cb9",
+  "id": "6b375449",
+  "ok": true,
+  "antes": 279,
+  "tamanho": "1500x1130",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/sanduicheira-e-grill-elgin-brunch-time-800w/gazinshop/15424/7dfdb8b9541d2344cba91d04167f4b8a.jpg"
+ },
+ {
+  "id": "bbc8d357",
+  "ok": true,
+  "antes": 279,
+  "tamanho": "1361x1026",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/sanduicheira-grill-itatiaia-essencial-750w-preto-sdess1003/magazineluiza/240936200/749434bb6e530fd8f8489935e3b4253d.jpg"
+ },
+ {
+  "id": "66d7f3b4",
   "ok": true,
   "antes": 280,
   "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/guirlandas-natal-atelie/ateliepontinhode/7776881cc63311ea9d9d4201ac18501e/b48bb2dc7b1967f23ba74fb029d46d4f.jpeg"
+  "url": "https://a-static.mlcdn.com.br/1500x1500/sanduicheira-grill-ultra-s-ut-01-750w-preta/magazineluiza/238534000/c122f88fe4e7602f9d7fa9008e824d9d.jpg"
  },
  {
-  "id": "dd591e00",
+  "id": "de8e039c",
   "ok": true,
-  "antes": 210,
-  "tamanho": "1500x1500",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/kit-jogo-americano-natal/milleniadecor/762ad55e8cbc11ef86774201ac18501b/e5cf23aa9485661c263c8baa930718c5.jpeg"
- },
- {
-  "id": "e4efde21",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/boneca-gi-neto-que-fala/magazineluiza/185169900/9b39cdacfa2664e9b2ad5cf7a348efd5.jpg"
- },
- {
-  "id": "9b5685f6",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "1500x1125",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/lego-classic-caixa-media/magazineluiza/212941700/06e109fb77dce228ccc16b35280bd17d.jpg"
+  "antes": 600,
+  "tamanho": "1300x1300",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/aspirador-de-po-vertical-e-portatil-electrolux-filtro-hepa-1450w-plus-stk14-denim-blue/magazineluiza/230023900/305cf42a3aacb694863fa646e78f2c3f.jpg"
  },
  {
   "id": "102dd862",
-  "ok": false,
+  "ok": true,
   "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1500x1125",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/lego-classic-maleta/magazineluiza/221724600/3da7c5263c25bd118044b8d8d2a86c0e.jpg"
  },
  {
   "id": "60933e5b",
-  "ok": false,
+  "ok": true,
   "antes": 600,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "800x800",
+  "url": "https://a-static.mlcdn.com.br/800x800/jogo-de-tabuleiro-banco/lojatoyminishowmix/7896027539936/0e898db78647f3763577914b7f9b0498.jpeg"
  },
  {
   "id": "310b9baa",
-  "ok": false,
+  "ok": true,
   "antes": 240,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1073x937",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/jogo-de-tabuleiro-war/brinkantostore/gw-2000/08887b952c37d53ee119fa09499384b4.jpeg"
  },
  {
   "id": "353e4156",
@@ -1106,143 +232,255 @@
   "erro": "HTTP Error 403: Forbidden"
  },
  {
-  "id": "7b4f9b4b",
+  "id": "74cb6b09",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/014592IE.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59365339/Foto-0.jpg"
  },
  {
-  "id": "2c12c651",
+  "id": "d74c105e",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/01113751.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/58455195/Foto-1.jpg"
  },
  {
-  "id": "7c4142ce",
+  "id": "d560aa1e",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/05768451.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59220611/Foto-0.jpg"
  },
  {
-  "id": "a6ff04c1",
+  "id": "c83b7e64",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/024583ID.jpg"
+  "tamanho": "1333x1600",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59320658/Foto-0.jpg"
  },
  {
-  "id": "5b0cb3bb",
+  "id": "ef1a7536",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/10951351.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/14694583/Cueca-Masculina-Mash-Boxer-Preta-9610149-Preto_1.jpg"
  },
  {
-  "id": "94355d62",
+  "id": "470439ba",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/09755459.jpg"
+  "tamanho": "1333x1600",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59410794/Foto-0.jpg"
  },
  {
-  "id": "ad228b0a",
+  "id": "8665f270",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/09835852.jpg"
+  "tamanho": "2000x2400",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59281996/Foto-0.jpg"
  },
  {
-  "id": "c7a302a1",
+  "id": "e8d1b283",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/02784151.jpg"
+  "tamanho": "1333x1600",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59401855/Foto-0.jpg"
  },
  {
-  "id": "fed085bb",
+  "id": "247d459d",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/007676IE.jpg"
+  "tamanho": "1333x1600",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59401789/Foto-0.jpg"
  },
  {
-  "id": "ac821e85",
+  "id": "936e771c",
   "ok": true,
   "antes": 0,
-  "tamanho": "1300x1300",
-  "url": "https://imgnike-a.akamaihd.net/1300x1300/0266095C.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59293616/Foto-0.jpg"
  },
  {
-  "id": "9dfcb469",
+  "id": "843ee78a",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Aramis-Tenis-Masculino-Aramis-Easy-Wood-Cinza-9614-88345351-1-zoom.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59282191/Foto-0.jpg"
  },
  {
-  "id": "d8117605",
+  "id": "6277768d",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Calvin-Klein-Jeans-Regata-Masculina-Calvin-Klein-Jeans-Ribana-Branca-1642-95907251-1-zoom.jpg"
+  "tamanho": "1333x1600",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59384614/Foto-0.jpg"
  },
  {
-  "id": "ef697f97",
+  "id": "1fb8dc60",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Aramis-Tenis-Masculino-Aramis-Slip-On-Azul-Marinho-1257-25890331-1-zoom.jpg"
+  "tamanho": "1333x1600",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59346946/Foto-0.jpg"
  },
  {
-  "id": "ba4ac1f9",
+  "id": "28b9a809",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Santa-Lolla-Tenis-Slip-On-Santa-Lolla-New-Preto-3634-8620513-1-zoom.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59193470/Foto-0.jpg"
  },
  {
-  "id": "5f05ad44",
+  "id": "ebe21e2e",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Santa-Lolla-Tenis-Feminino-Santa-Lolla-Cadarco-Branco-1704-75489941-1-zoom.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59261183/Foto-0.jpg"
  },
  {
-  "id": "2249cbdc",
+  "id": "617eeddf",
   "ok": true,
   "antes": 0,
-  "tamanho": "1231x1600",
-  "url": "https://static.dafiti.com.br/p/Aeropostale-Camiseta-Manga-Curta-Masculino-A87-Aeropostale-87140101-2-Preto-7259-93526351-1-zoom.jpg"
+  "tamanho": "1000x1200",
+  "url": "https://cea.vteximg.com.br/arquivos/ids/59356851/Foto-0.jpg"
  },
  {
-  "id": "c85d0e03",
+  "id": "cb19390b",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Dudalina-Kit-2-Camisetas-Masculinas-Dudalina-Gola-Redonda-Cinza-e-Branca-1216-01117051-1-zoom.jpg"
+  "tamanho": "1843x4096",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13642832/0061290040_01.jpg"
  },
  {
-  "id": "0e87fc22",
+  "id": "1bfc73dd",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Dudalina-Kit-Camiseta-Masculina-Dudalina-Decote-Redondo-Verde-2567-11117051-1-zoom.jpg"
+  "tamanho": "1843x4096",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13642808/0061290824_01.jpg"
  },
  {
-  "id": "11e5ee8c",
+  "id": "88b10f4a",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Maria-Milao-Bolsa-Feminina-Maria-Milao-Baguete-Croco-Esferas-Preta-9568-04308351-1-zoom.jpg"
+  "tamanho": "1200x1262",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12170041/0088076014_01.jpg"
  },
  {
-  "id": "03c96771",
+  "id": "b55039d4",
   "ok": true,
   "antes": 0,
-  "tamanho": "1104x1600",
-  "url": "https://static.dafiti.com.br/p/Santa-Lolla-Bolsa-Feminina-Santa-Lolla-Corrente-Preta-2104-84458741-1-zoom.jpg"
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12170014/0088077040_01.jpg"
+ },
+ {
+  "id": "dd065f32",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12170025/0088077014_01.jpg"
+ },
+ {
+  "id": "647cfd69",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1200x1262",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12170064/0088076040_01.jpg"
+ },
+ {
+  "id": "a1cda672",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "853x1280",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12522696/kit0000119101_01.jpg"
+ },
+ {
+  "id": "47a6dcd5",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12524166/kit0000750312_01.jpg"
+ },
+ {
+  "id": "5b7c3bd8",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13577418/0107172330_01.jpg"
+ },
+ {
+  "id": "52318df4",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13566200/0026247014_01.jpg"
+ },
+ {
+  "id": "9452bed0",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13577470/0107173330_01.jpg"
+ },
+ {
+  "id": "a923059c",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1000x1500",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13006607/0101606264_01.jpg"
+ },
+ {
+  "id": "2bd2dfaf",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12524819/kit0003574096_01.jpg"
+ },
+ {
+  "id": "3a3b0a44",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x3000",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/12525706/kit0000754312_01.jpg"
+ },
+ {
+  "id": "56c04883",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x2996",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13569587/0095995040_01.jpg"
+ },
+ {
+  "id": "1baf9abc",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1843x4096",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13651295/0105170040_01.jpg"
+ },
+ {
+  "id": "ef0d9d55",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "2000x2996",
+  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13297249/0085109040_01.jpg"
+ },
+ {
+  "id": "8d4b2481",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1000x1000",
+  "url": "https://images.yampi.me/assets/stores/lauri-esporte/uploads/images/tenis-on-running-cloudmonster-3-feminino-bege-39-6ad78c7614e39-large.jpg"
+ },
+ {
+  "id": "56d44a85",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1000x1000",
+  "url": "https://images.yampi.me/assets/stores/lauri-esporte/uploads/images/tenis-on-running-cloudrunner-3-feminino-preto-34-69866a0bb040d-large.jpg"
+ },
+ {
+  "id": "5788bf35",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1000x1000",
+  "url": "https://images.yampi.me/assets/stores/lauri-esporte/uploads/images/tenis-on-running-cloudrunner-3-masculino-azul-43-6ad78db2cb356-large.jpeg"
  }
 ]
