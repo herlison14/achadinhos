@@ -3707,11 +3707,13 @@
    "postagens/2026-11-17-story-b88fea4b/01.jpg"
   ],
   "legenda": "Story: Panela First Sauté Petit Vermelha 20 cm Ichef Polishop: R$ 133,20 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 74
+  "num": 74,
+  "ig_id": "18469961917138417",
+  "publicado_em": "2026-11-17 10:01"
  },
  {
   "id": "2026-11-17-story-129c4767",
