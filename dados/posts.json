@@ -2744,11 +2744,13 @@
    "postagens/2026-11-17-story-e8a1c7a1/01.jpg"
   ],
   "legenda": "Story: Fone Bluetooth Lenovo Gm2 Pro Baixa Latência: R$ 87,90 (conferido em 11/11/2026) — antes R$ 94,90, queda de 7% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "TECH",
-  "num": 75
+  "num": 75,
+  "ig_id": "18222926665347071",
+  "publicado_em": "2026-11-17 11:31"
  },
  {
   "id": "2026-11-17-story-68921b58",
