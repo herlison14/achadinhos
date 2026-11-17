@@ -4282,10 +4282,12 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "story",
-  "status": "agendado",
+  "status": "publicado",
   "video": "postagens/2026-11-17-story-mascote-black-friday/reel.mp4",
   "legenda": "Story: Binguinho comemora com confete, aviso de que a Black Friday (27/11) está chegando. Publicidade: links de afiliado.",
-  "area": "OFERTAS"
+  "area": "OFERTAS",
+  "ig_id": "17999029029019764",
+  "publicado_em": "2026-11-17 09:32"
  },
  {
   "id": "2026-11-17-tenis-lauri",
