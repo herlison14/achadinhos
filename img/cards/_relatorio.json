@@ -92,9 +92,10 @@
  },
  {
   "id": "353e4156",
-  "ok": false,
+  "ok": true,
   "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1200x901",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/fritadeira-eletrica-mondial/gazinshop/12214/6f556382df40e3b3939a5b17c620517b.jpg"
  },
  {
   "id": "886aa451",
@@ -110,21 +111,24 @@
  },
  {
   "id": "a35e5966",
-  "ok": false,
+  "ok": true,
   "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1304x978",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/caixa-de-som-torre-aiwa/magazineluiza/238676000/fe9c3f60c8cda3006c1dfba1747af7f6.jpg"
  },
  {
   "id": "3b0e101f",
-  "ok": false,
+  "ok": true,
   "antes": 278,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1175x887",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/fone-de-ouvido-bluetooth/magazineluiza/240580100/a4cdf4b39bb9bc19d9e7b9efa89b8a19.jpg"
  },
  {
   "id": "f14a2b73",
-  "ok": false,
+  "ok": true,
   "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "800x600",
+  "url": "https://a-static.mlcdn.com.br/800x800/cafeteira-eletrica-electrolux/magazineluiza/231236700/9e59b33a5cb9e801e46e4ea52b966642.jpg"
  },
  {
   "id": "30cce829",
