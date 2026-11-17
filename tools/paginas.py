@@ -187,6 +187,13 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
             caminho, 'Natal 2026: achadinhos para a casa, a mesa e os presentes', intro, ''.join(partes), nav(('t', 'natal')),
             dados_estruturados(its), aviso).replace('<main id="ofertas">', bloco_quedas(its) + '<main id="ofertas">', 1)))
 
+    # Página "Vi no Insta" (/ig/): produtos de cada post/Story do Instagram, do mais novo para o mais antigo, com o Nº do card.
+    # Entra o que sai nos próximos 10 dias também: um script na própria página esconde o que ainda não foi publicado,
+    # então ela continua certa entre um build e outro. Fora do sitemap e com noindex (repete itens das outras páginas).
+    ig_html = _pagina_ig(raiz, h, estilo, cab, vis, render, aviso)
+    if ig_html:
+        paginas.append(('ig/', ig_html))
+
     for caminho, conteudo in paginas:
         pasta = os.path.join(raiz, caminho)
         os.makedirs(pasta, exist_ok=True)
@@ -204,7 +211,7 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
     with open(os.path.join(raiz, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(h2)
 
-    urls = [('', '1.0', 'weekly'), ('privacidade.html', '0.3', 'yearly')] + [(c, '0.8', 'weekly') for c, _ in paginas]
+    urls = [('', '1.0', 'weekly'), ('privacidade.html', '0.3', 'yearly')] + [(c, '0.8', 'weekly') for c, _ in paginas if c != 'ig/']
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u, p, f in urls:
         sm.append('<url><loc>%s%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority></url>' % (SITE, u, hoje.isoformat(), f, p))
@@ -212,3 +219,79 @@ def gerar(raiz, vis, quedas_lista, datas_texto, render, num, dados_estruturados,
     with open(os.path.join(raiz, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(sm) + '\n')
     return len(paginas)
+
+
+IG_CSS = (
+    '.igbusca{display:flex;gap:8px;margin:0 0 14px}.igbusca input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line);'
+    'border-radius:12px;background:var(--card);color:var(--fg);font:inherit;font-size:16px}'
+    '.igp h2{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}.igp .nr{background:var(--pill);color:var(--pillfg);'
+    'border-radius:999px;padding:2px 12px;font-size:.9em}.igp .qd2{font-size:.8rem;color:var(--mut);font-weight:600}'
+    '.igp>ul{list-style:none;margin:0 0 10px;padding:0;display:grid;gap:10px;grid-template-columns:1fr}'
+    '@media (min-width:720px){.igp>ul{grid-template-columns:1fr 1fr}}@media (min-width:1000px){.igp>ul{grid-template-columns:repeat(3,1fr)}}'
+    '.igvazio{padding:14px;border:1px dashed var(--line);border-radius:12px;color:var(--mut)}'
+)
+
+IG_JS = r'''<script>
+(function(){
+  function agoraBRT(){var d=new Date();return new Date(d.getTime()+d.getTimezoneOffset()*60000-3*3600000)}
+  function iso(d){function z(n){return(n<10?'0':'')+n}return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate())+'T'+z(d.getHours())+':'+z(d.getMinutes())}
+  var agora=iso(agoraBRT()),limite=iso(new Date(agoraBRT().getTime()-14*86400000));
+  var secs=[].slice.call(document.querySelectorAll('.igp'));
+  secs.forEach(function(s){var q=s.getAttribute('data-quando');s.dataset.ok=(q<=agora&&q>=limite)?'1':'';s.hidden=!s.dataset.ok});
+  var vis=secs.filter(function(s){return s.dataset.ok});
+  var vz=document.getElementById('igvazio');if(vz)vz.hidden=vis.length>0;
+  var c=document.getElementById('ignum');if(!c)return;
+  var p=new URLSearchParams(location.search).get('n');if(p&&/^\d{1,5}$/.test(p))c.value=p;
+  function filtra(){var v=c.value.replace(/\D/g,'');var achou=0;
+    vis.forEach(function(s){var ok=!v||s.getAttribute('data-num')===v;s.hidden=!ok;if(ok)achou++});
+    if(vz){vz.hidden=achou>0;vz.textContent=v?'Não achei o Nº '+v+' entre os posts dos últimos 14 dias. Veja todas as ofertas na página inicial.':'Os produtos dos próximos posts aparecem aqui assim que eles forem publicados.'}}
+  c.addEventListener('input',filtra);filtra();
+})();
+</script>'''
+
+
+def _pagina_ig(raiz, h, estilo, cab, vis, render, aviso):
+    import datetime
+    try:
+        posts = json.load(open(os.path.join(raiz, 'dados', 'posts.json'), encoding='utf-8'))
+    except (OSError, ValueError):
+        return ''
+    try:   # post de produto criado por outra rotina sem número ganha o seu aqui (o build roda depois de toda mudança)
+        import importlib.util
+        esp = importlib.util.spec_from_file_location('numeros', os.path.join(raiz, 'tools', 'numeros.py'))
+        NU = importlib.util.module_from_spec(esp); esp.loader.exec_module(NU)
+        if NU.numerar(posts):
+            NU.gravar_posts(posts)
+    except Exception as e:
+        print('aviso: numeração dos posts falhou (%s)' % type(e).__name__)
+    por_id = {i['id']: i for i in vis}
+    hoje = datetime.datetime.utcnow() - datetime.timedelta(hours=3)
+    ini, fim = (hoje - datetime.timedelta(days=15)).date().isoformat(), (hoje + datetime.timedelta(days=10)).date().isoformat()
+    sel = [p for p in posts if p.get('num') and p.get('produtos') and p.get('status') in ('publicado', 'agendado', 'planejado')
+           and ini <= p.get('data', '') <= fim]
+    sel.sort(key=lambda p: (p['data'], p.get('hora') or '00:00', p['num']), reverse=True)
+    partes = []
+    for p in sel:
+        its = [por_id[i] for i in p['produtos'] if i in por_id]
+        if not its:
+            continue
+        quando = '%sT%s' % (p['data'], p.get('hora') or '00:00')
+        tipo = 'Story' if p.get('formato') == 'story' else ('Reel' if p.get('formato') == 'reel' else 'Post')
+        tit = re.sub(r'\s*\(\d+ produtos?\)$', '', re.sub(r'^Story:\s*', '', html.unescape(p.get('tema') or '')))
+        partes.append('<section class="igp" data-num="%d" data-quando="%s"><h2><span class="nr">Nº %d</span> %s '
+                      '<span class="qd2">%s de %s às %s</span></h2>\n<ul>%s</ul></section>\n'
+                      % (p['num'], quando, p['num'], html.escape(tit[:80]), tipo, _data_br(p['data'])[:5], p.get('hora') or '',
+                         ''.join(render(i) for i in its)))
+    corpo = ('<form class="igbusca" role="search" onsubmit="return false"><label class="vh" for="ignum">Número do post</label>'
+             '<input id="ignum" inputmode="numeric" autocomplete="off" placeholder="Digite o Nº que aparece no post (ex.: 128)"></form>'
+             '<p class="igvazio" id="igvazio" hidden>Os produtos dos próximos posts aparecem aqui assim que eles forem publicados.</p>'
+             + ''.join(partes))
+    intro = ('Os produtos de cada post e Story do @achadinhosdobinga, do mais novo para o mais antigo. Digite o número que aparece '
+             'no card para ir direto ao produto. Os preços são os conferidos na loja (a data está no fim da página) e podem ter mudado.')
+    pg = _pagina(h, estilo, cab, 'Vi no Insta: os produtos dos posts | Achadinhos do Binga',
+                 'Os produtos de cada post e Story do @achadinhosdobinga, com preço conferido e o número do post.',
+                 'ig/', 'Vi no Insta', intro, corpo, '', '', aviso)
+    pg = pg.replace('<meta name="viewport"', '<meta name="robots" content="noindex,follow">\n<meta name="viewport"', 1)
+    pg = pg.replace('</style>', IG_CSS + '</style>', 1)
+    pg = pg.replace('<script src="/cliques.js', IG_JS + '\n<script src="/cliques.js', 1)
+    return pg

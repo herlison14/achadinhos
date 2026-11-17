@@ -112,7 +112,7 @@ def rodape(d, loja_txt, data):
            'KaBuM!': 'na KaBuM!', 'Nike': 'na Nike', 'Dafiti': 'na Dafiti', 'adidas': 'na adidas', 'Doce Beleza': 'na Doce Beleza', 'PUMA': 'na PUMA', 'Hope Lingerie': 'na Hope', 'Hope': 'na Hope', 'C&A': 'na C&A', 'Reserva': 'na Reserva', 'Lauri Esporte': 'na Lauri Esporte', 'Mizuno': 'na Mizuno', 'Polishop': 'na Polishop'}.get(loja_txt, 'nas lojas')
     d.text((W / 2, 1320), 'Preço conferido %s em %s • pode mudar' % (pre, data), font=NUN7(26), fill=ROXO2, anchor='mm')
 
-def capa(post, titulo, data, prods, lojas):
+def capa(post, titulo, data, prods, lojas, num=None):
     img, d = novo(); logo(img, d)
     if len(lojas) == 1: etiqueta(d, list(lojas)[0])
     for tam in range(116, 60, -4):
@@ -120,7 +120,7 @@ def capa(post, titulo, data, prods, lojas):
         if len(ls) <= 3 and '…' not in ls[-1]: break
     y = 150
     for l in ls: d.text((80, y), l, font=f, fill=ROXO); y += int(tam * 1.12)
-    d.text((80, y + 4), 'achadinhos com preço conferido', font=NUN8(38), fill=ROXO2)
+    d.text((80, y + 4), 'achadinhos com preço conferido' + (' • Nº %d' % num if num else ''), font=NUN8(38), fill=ROXO2)
     n = len(prods); linhas = [prods[i:i + 3] for i in range(0, n, 3)] if n != 4 else [prods[:2], prods[2:]]
     lado, gap, y0 = 290, 18, y + 80
     if y0 + len(linhas) * (lado + gap) > 1190: lado = max(190, (1190 - y0) // len(linhas) - gap)
@@ -131,7 +131,7 @@ def capa(post, titulo, data, prods, lojas):
     pilula(d, (W - 60 - (larg(d, 'DESLIZE PARA VER', NUN8(40)) + 76), 1205), 'DESLIZE PARA VER', NUN8(40), ROXO, AMARELO)
     rodape(d, LOJAS[list(lojas)[0]][0] if len(lojas) == 1 else 'misto', data); return img
 
-def produto(n, p, data):
+def produto(n, p, data, num=None):
     nome, preco, loja_txt, pid, loja = p
     img, d = novo(); logo(img, d); etiqueta(d, loja)
     fr = arred(encaixar(foto(pid), 920, 40), 50); img.paste(fr, (80, 150), fr)
@@ -140,16 +140,19 @@ def produto(n, p, data):
     ls = quebrar(d, nome, NUN8(40), 920, 2); y = 1092
     for l in ls: d.text((80, y), l, font=NUN8(40), fill=ROXO); y += 46
     d.text((80, 1190), 'R$ ' + preco, font=BALOO(78), fill=VERM)
-    pilula(d, (710, 1190), 'LINK NA BIO', NUN8(40), ROXO, AMARELO)
+    tx = ('BIO • Nº %d' % num) if num else 'LINK NA BIO'
+    pilula(d, (W - 80 - (larg(d, tx, NUN8(40)) + 76), 1190), tx, NUN8(40), ROXO, AMARELO)
     rodape(d, LOJAS[loja][0], data); return img
 
-def final(data, lojas):
+def final(data, lojas, num=None):
     img, d = novo(); logo(img, d)
     d.text((W / 2, 520), 'Salve para', font=BALOO(124), fill=ROXO, anchor='mm')
     d.text((W / 2, 650), 'comprar depois', font=BALOO(124), fill=ROXO, anchor='mm')
     f = NUN8(46); w = larg(d, 'LINK NA BIO', f) + 76
     pilula(d, ((W - w) / 2, 780), 'LINK NA BIO', f, ROXO, AMARELO)
-    d.text((W / 2, 930), 'Confira o valor na loja antes de comprar.', font=NUN7(34), fill=ROXO2, anchor='mm')
+    if num:
+        d.text((W / 2, 880), 'No link da bio, procure o produto Nº %d' % num, font=NUN8(36), fill=ROXO, anchor='mm')
+    d.text((W / 2, 950 if num else 930), 'Confira o valor na loja antes de comprar.', font=NUN7(34), fill=ROXO2, anchor='mm')
     d.text((W / 2, 1180), 'Publicidade: links de afiliado', font=NUN8(36), fill=ROXO, anchor='mm')
     rodape(d, LOJAS[list(lojas)[0]][0] if len(lojas) == 1 else 'misto', data); return img
 
@@ -158,12 +161,16 @@ def dt(iso):
 
 def main():
     saida = sys.argv[1]
-    posts = {p['id']: p for p in json.load(open(os.path.join(RAIZ, 'dados', 'posts.json'), encoding='utf-8'))}
+    sys.path.insert(0, os.path.join(RAIZ, 'tools')); import numeros as NU
+    lista = NU.ler_posts()
+    if NU.numerar(lista): NU.gravar_posts(lista)      # número fixo do post para a página /ig/ ("Vi no Insta")
+    posts = {p['id']: p for p in lista}
     itens = {x['id']: x for x in json.load(open(os.path.join(RAIZ, 'dados', 'itens.json'), encoding='utf-8'))}
     for pid in sys.argv[2:]:
         post = posts[pid]; titulo, data, prods = ler(post, itens); lojas = {p[4] for p in prods}
         pasta = os.path.join(saida, pid); os.makedirs(pasta, exist_ok=True)
-        cards = [capa(post, titulo, data, prods, lojas)] + [produto(i, p, data if len(lojas) == 1 else dt(itens[p[3]]['conferido'])) for i, p in enumerate(prods, 1)] + [final(data, lojas)]
+        nm = post.get('num')
+        cards = [capa(post, titulo, data, prods, lojas, nm)] + [produto(i, p, data if len(lojas) == 1 else dt(itens[p[3]]['conferido']), nm) for i, p in enumerate(prods, 1)] + [final(data, lojas, nm)]
         for k, c in enumerate(cards, 1): c.save(os.path.join(pasta, '%02d.jpg' % k), 'JPEG', quality=92)
         print(pid, len(cards), 'cards')
 if __name__ == '__main__':

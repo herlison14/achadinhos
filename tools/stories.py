@@ -28,6 +28,7 @@ CR = _carrega('crescimento')
 getattr(CR, 'garantir_fontes', lambda: None)()
 CD = _carrega('cards')
 DEST = _carrega('destaques')
+NU = _carrega('numeros')
 from PIL import Image, ImageDraw
 
 W, H = 1080, 1920
@@ -82,7 +83,7 @@ def cta(d, y, txt='LINK NA BIO'):
     CD.pilula(d, ((W - w) / 2, y), txt, f, ROXO, AMARELO)
 
 
-def card_produto(it, antes=None, pct=None):
+def card_produto(it, antes=None, pct=None, num=None):
     img, d = base(); etiqueta(d, it['loja'])
     lado = 860
     fr = CD.arred(CD.encaixar(CD.foto(it['id']), lado, 40), 50); img.paste(fr, ((W - lado) // 2, 400), fr)
@@ -96,7 +97,7 @@ def card_produto(it, antes=None, pct=None):
         t = 'R$ ' + antes; ft = CD.NUN7(40); tw = CD.larg(d, t, ft)
         d.text((W / 2, 1418), t, font=ft, fill=ROXO2, anchor='mm'); d.line((W / 2 - tw / 2, 1418, W / 2 + tw / 2, 1418), fill=ROXO2, width=4)
     d.text((W / 2, 1500 if antes else 1470), 'R$ ' + it['preco'], font=CD.BALOO(110), fill=VERM, anchor='mm')
-    cta(d, 1570)
+    cta(d, 1570, ('LINK NA BIO • Nº %d' % num) if num else 'LINK NA BIO')
     rodape(d, 1690 if False else 1700, 'Preço conferido em %s • pode mudar' % dbr(it['conferido']))
     return img
 
@@ -158,6 +159,7 @@ def escolher(itens, posts, hoje, n, tipos_dia):
 def refazer(forcar=False):
     """Atualiza imagem e descrição dos Stories pendentes (agendado/planejado) com o preço atual; roda depois de vigia.py atualizar."""
     posts = ler(('dados', 'posts.json'), []); itens = {i['id']: i for i in ler(('dados', 'itens.json'), [])}
+    mudou = NU.numerar(posts) > 0
     quedas = {q['id']: q for q in ler(('dados', 'quedas.json'), [])}
     n = 0
     for p in posts:
@@ -171,12 +173,11 @@ def refazer(forcar=False):
             limpa(it['nome']), it['preco'], dbr(it['conferido']), (' — antes R$ %s, queda de %d%% no histórico' % (q['antes'], q['pct'])) if queda else '')
         if leg == p.get('legenda') and not forcar:
             continue
-        (card_produto(it, q['antes'], q['pct']) if queda else card_produto(it)).save(J(p['imagens'][0]), quality=92, optimize=True)
+        (card_produto(it, q['antes'], q['pct'], p.get('num')) if queda else card_produto(it, num=p.get('num'))).save(J(p['imagens'][0]), quality=92, optimize=True)
         p['legenda'] = leg; n += 1
         print('refeito', p['id'])
-    if n:
-        json.dump(posts, open(J('dados', 'posts.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-        open(J('dados', 'posts.json'), 'a').write('\n')
+    if n or mudou:
+        NU.gravar_posts(posts)
     print('%d story(s) atualizados.' % n)
 
 
@@ -201,7 +202,7 @@ def main():
         for h in HORAS[:a.por_dia]:
             if (d.isoformat(), h) in ocupados: continue      # já tem Story nesse horário: não duplica
             slots.append((d, h))
-    novos = []
+    novos = []; prox = max([p.get('num') or 0 for p in posts] + [0]) + 1
     prod, quedas = escolher(itens, posts, hoje, sum(1 for s in slots), None)
     pi = iter(prod)
     for n, (dia, hora) in enumerate(slots):
@@ -218,7 +219,8 @@ def main():
             queda = bool(q and q.get('agora') == it['preco'] and q.get('pct', 0) > 0)
             sid = '%s-story-%s%s' % (dia.isoformat(), it['id'], '-%s' % hora.replace(':', '') if False else '')
             tema = 'Story: %s' % limpa(it['nome'])[:60]; prods = [it['id']]
-            ver = (lambda it=it, q=q, queda=queda: card_produto(it, q['antes'], q['pct']) if queda else card_produto(it))
+            nst = prox
+            ver = (lambda it=it, q=q, queda=queda, nst=nst: card_produto(it, q['antes'], q['pct'], nst) if queda else card_produto(it, num=nst))
             leg = 'Story: %s: R$ %s (conferido em %s)%s. Publicidade: links de afiliado.' % (
                 limpa(it['nome']), it['preco'], dbr(it['conferido']), (' — antes R$ %s, queda de %d%% no histórico' % (q['antes'], q['pct'])) if queda else '')
         if sid in existentes:
@@ -229,12 +231,12 @@ def main():
         ver().save(J('postagens', sid, '01.jpg'), quality=92, optimize=True)
         novos.append(dict(id=sid, data=dia.isoformat(), hora=hora, formato='story', canal='ig', tema=tema, produtos=prods,
                           imagens=['postagens/%s/01.jpg' % sid], legenda=leg, status='agendado', objetivo='story', sem_preco=not prods,
-                          area=(DEST.area_do_item(it) if prods else 'OFERTAS')))
+                          area=(DEST.area_do_item(it) if prods else 'OFERTAS'), **({'num': prox} if prods else {})))
+        if prods: prox += 1
         print('story', sid, dia, hora)
     if novos and not a.sem_registrar:
         posts.extend(novos)
-        json.dump(posts, open(J('dados', 'posts.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-        open(J('dados', 'posts.json'), 'a').write('\n')
+        NU.gravar_posts(posts)
     print('%d story(s) %s.' % (len(novos), 'criados' if not a.sem_registrar else 'gerados (sem registrar)'))
 
 
