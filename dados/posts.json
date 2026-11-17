@@ -3803,11 +3803,13 @@
    "postagens/2026-11-17-story-b1d50d31/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Action 4: R$ 269,99 (conferido em 17/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 82
+  "num": 82,
+  "ig_id": "17959634352260265",
+  "publicado_em": "2026-11-17 20:21"
  },
  {
   "id": "2026-11-17-story-f71998f5",
