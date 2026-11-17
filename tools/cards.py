@@ -67,7 +67,20 @@ def foto(pid):
     raise SystemExit('sem foto para ' + pid)
 
 def encaixar(im, lado, pad):
-    im = im.copy(); im.thumbnail((lado - 2 * pad, lado - 2 * pad), Image.LANCZOS)
+    # Ocupa todo o quadro: reduz foto grande e AMPLIA foto pequena (antes ela ficava miúda no meio do branco).
+    # Foto muito pequena (ampliada mais de 1,5x) ganha um realce leve para não parecer borrada.
+    from PIL import ImageFilter
+    alvo = lado - 2 * pad
+    # corta a margem branca da própria foto (muitas lojas mandam o produto pequeno no meio de um quadro branco)
+    from PIL import ImageOps
+    cinza = ImageOps.invert(im.convert('L')).point(lambda v: 255 if v > 18 else 0)
+    caixa = cinza.getbbox()
+    if caixa and (caixa[2] - caixa[0]) * (caixa[3] - caixa[1]) < 0.85 * im.width * im.height:
+        m = int(0.04 * max(caixa[2] - caixa[0], caixa[3] - caixa[1]))
+        im = im.crop((max(0, caixa[0] - m), max(0, caixa[1] - m), min(im.width, caixa[2] + m), min(im.height, caixa[3] + m)))
+    f = min(alvo / im.width, alvo / im.height)
+    im = im.resize((max(1, round(im.width * f)), max(1, round(im.height * f))), Image.LANCZOS)
+    if f > 1.5: im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
     q = Image.new('RGB', (lado, lado), 'white')
     q.paste(im, ((lado - im.width) // 2, (lado - im.height) // 2)); return q
 

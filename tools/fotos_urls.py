@@ -19,26 +19,47 @@ def baixar(url):
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read(8_000_000)
 
+MIN_BOM = 800   # foto com lado maior >= 800 px já está boa; abaixo disso tenta trocar por uma maior
+
+
 def main():
+    """Para cada id: se ainda não há foto, baixa; se a foto atual é pequena (< MIN_BOM), tenta de novo e só troca se
+    a nova for MAIOR. O valor em fotos_urls.json pode ser um endereço ou uma lista de candidatos (o primeiro que der
+    certo vale; use para tentar primeiro a versão grande da foto e depois a normal)."""
     from PIL import Image
     urls = json.load(open(LISTA, encoding='utf-8'))
     os.makedirs(PASTA, exist_ok=True)
     rel = []
-    for i, u in urls.items():
+    for i, cand in urls.items():
         dest = os.path.join(PASTA, i + '.jpg')
-        if os.path.exists(dest): continue
-        r = {'id': i, 'ok': False}
-        try:
-            im = Image.open(io.BytesIO(baixar(u))).convert('RGB')
+        atual = 0
+        for velho in (dest, os.path.join(RAIZ, 'img', i + '.webp')):
+            if os.path.exists(velho):
+                try:
+                    atual = max(atual, max(Image.open(velho).size))
+                except Exception:
+                    pass
+        if os.path.exists(dest) and atual >= MIN_BOM:
+            continue
+        r = {'id': i, 'ok': False, 'antes': atual}
+        for u in ([cand] if isinstance(cand, str) else cand):
+            try:
+                im = Image.open(io.BytesIO(baixar(u))).convert('RGB')
+            except Exception as e:
+                r['erro'] = str(e)[:90]
+                continue
             r['tamanho'] = '%dx%d' % im.size
             if min(im.size) < 250:
                 r['erro'] = 'imagem pequena demais'
-            else:
-                im.thumbnail((1000, 1000), Image.LANCZOS)
-                im.save(dest, 'JPEG', quality=90)
-                r['ok'] = True
-        except Exception as e:
-            r['erro'] = str(e)[:90]
+                continue
+            if max(im.size) <= atual:
+                r['erro'] = 'não é maior que a atual'
+                continue
+            im.thumbnail((1200, 1200), Image.LANCZOS)
+            im.save(dest, 'JPEG', quality=90)
+            r.update(ok=True, url=u)
+            r.pop('erro', None)
+            break
         rel.append(r)
         print(r)
     json.dump(rel, open(os.path.join(PASTA, '_relatorio.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
