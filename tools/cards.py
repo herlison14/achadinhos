@@ -73,8 +73,11 @@ def encaixar(im, lado, pad):
     alvo = lado - 2 * pad
     # corta a margem branca da própria foto (muitas lojas mandam o produto pequeno no meio de um quadro branco)
     from PIL import ImageOps
-    cinza = ImageOps.invert(im.convert('L')).point(lambda v: 255 if v > 18 else 0)
-    caixa = cinza.getbbox()
+    g = im.convert('L')
+    cantos = [g.getpixel((x, y)) for x in (0, im.width - 1) for y in (0, im.height - 1)]
+    caixa = None
+    if min(cantos) >= 246:   # só corta fundo branco de verdade (fundo cinza de estúdio fica como está)
+        caixa = ImageOps.invert(g).point(lambda v: 255 if v > 10 else 0).getbbox()
     if caixa and (caixa[2] - caixa[0]) * (caixa[3] - caixa[1]) < 0.85 * im.width * im.height:
         m = int(0.04 * max(caixa[2] - caixa[0], caixa[3] - caixa[1]))
         im = im.crop((max(0, caixa[0] - m), max(0, caixa[1] - m), min(im.width, caixa[2] + m), min(im.height, caixa[3] + m)))

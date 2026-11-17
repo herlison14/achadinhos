@@ -155,7 +155,7 @@ def escolher(itens, posts, hoje, n, tipos_dia):
     return saida, quedas
 
 
-def refazer():
+def refazer(forcar=False):
     """Atualiza imagem e descrição dos Stories pendentes (agendado/planejado) com o preço atual; roda depois de vigia.py atualizar."""
     posts = ler(('dados', 'posts.json'), []); itens = {i['id']: i for i in ler(('dados', 'itens.json'), [])}
     quedas = {q['id']: q for q in ler(('dados', 'quedas.json'), [])}
@@ -169,7 +169,7 @@ def refazer():
         q = quedas.get(it['id']); queda = bool(q and q.get('agora') == it['preco'] and q.get('pct', 0) > 0)
         leg = 'Story: %s: R$ %s (conferido em %s)%s. Publicidade: links de afiliado.' % (
             limpa(it['nome']), it['preco'], dbr(it['conferido']), (' — antes R$ %s, queda de %d%% no histórico' % (q['antes'], q['pct'])) if queda else '')
-        if leg == p.get('legenda'):
+        if leg == p.get('legenda') and not forcar:
             continue
         (card_produto(it, q['antes'], q['pct']) if queda else card_produto(it)).save(J(p['imagens'][0]), quality=92, optimize=True)
         p['legenda'] = leg; n += 1
@@ -184,11 +184,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dias', type=int, default=7); ap.add_argument('--por-dia', type=int, default=2)
     ap.add_argument('--inicio'); ap.add_argument('--agora'); ap.add_argument('--sem-registrar', action='store_true')
-    ap.add_argument('--amostra'); ap.add_argument('--refazer', action='store_true', help='redesenha os cards dos Stories ainda não publicados com o preço atual de itens.json')
+    ap.add_argument('--amostra'); ap.add_argument('--refazer', action='store_true', help='redesenha os cards dos Stories ainda não publicados com o preço atual de itens.json'); ap.add_argument('--todos', action='store_true', help='com --refazer: redesenha mesmo sem mudança de preço (ex.: foto nova)')
     a = ap.parse_args()
     agora = datetime.datetime.now(BRT); hoje = agora.date()
     if a.refazer:
-        return refazer()
+        return refazer(a.todos)
     ini = datetime.date.fromisoformat(a.inicio) if a.inicio else hoje + datetime.timedelta(days=1)
     itens = ler(('dados', 'itens.json'), []); posts = ler(('dados', 'posts.json'), [])
     existentes = {p['id'] for p in posts}
