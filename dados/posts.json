@@ -2766,11 +2766,12 @@
    "postagens/2026-11-17-story-68921b58/01.jpg"
   ],
   "legenda": "Story: Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C: R$ 89,90 (conferido em 14/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "erro",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
-  "num": 80
+  "num": 80,
+  "nota": "HTTP 400 The requested resource does not exist"
  },
  {
   "id": "2026-11-18-story-6bed8cd4",
