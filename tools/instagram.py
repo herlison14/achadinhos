@@ -388,6 +388,78 @@ def cmd_status():
     return 0
 
 
+def _total(x):
+    """Lê total_value (com ou sem breakdown) de uma linha de insights da conta."""
+    tv = x.get("total_value") or {}
+    bds = tv.get("breakdowns") or []
+    if bds:
+        return {"/".join(r.get("dimension_values", [])).lower(): r.get("value") for r in bds[0].get("results", [])}
+    return tv.get("value")
+
+
+def _ins_conta(ig_id, metricas, extra):
+    """Uma chamada por métrica (se uma não existir para a conta, as outras continuam). Devolve {métrica: valor}."""
+    out = {}
+    for m in metricas:
+        try:
+            for x in api("GET", "/%s/insights" % ig_id, dict(extra, metric=m)).get("data", []):
+                out[x["name"] if "breakdown" not in extra else m] = _total(x)
+        except ErroAPI as e:
+            print("insights da conta: %s sem dado (%s)" % (m, str(e)[:90]))
+    return out
+
+
+def _conta_dia(ig_id):
+    """Números da CONTA do dia anterior inteiro (horário de Brasília): alcance (seguidores x não seguidores),
+    visualizações, contas com interação, curtidas, comentários, salvos, envios, respostas, toques no link da bio,
+    seguidores ganhos e perdidos. Só números de desempenho, nunca token ou ID."""
+    ontem = (datetime.now(BRT) - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    base = {"period": "day", "metric_type": "total_value", "since": int(ontem.timestamp()),
+            "until": int((ontem + timedelta(days=1)).timestamp())}
+    v = _ins_conta(ig_id, ["reach", "views", "accounts_engaged", "total_interactions", "likes", "comments", "saves",
+                           "shares", "replies", "profile_links_taps"], base)
+    if not v:
+        return None
+    r = {"data": ontem.strftime("%Y-%m-%d"), "alcance": v.get("reach"), "views": v.get("views"),
+         "contas_engajadas": v.get("accounts_engaged"), "interacoes": v.get("total_interactions"), "curtidas": v.get("likes"),
+         "comentarios": v.get("comments"), "salvos": v.get("saves"), "envios": v.get("shares"), "respostas": v.get("replies"),
+         "toques_link_bio": v.get("profile_links_taps")}
+    fu = _ins_conta(ig_id, ["follows_and_unfollows"], dict(base, breakdown="follow_type")).get("follows_and_unfollows")
+    if isinstance(fu, dict):
+        r["ganhos"] = fu.get("follower"); r["perdidos"] = fu.get("non_follower")
+    al = _ins_conta(ig_id, ["reach"], dict(base, breakdown="follow_type")).get("reach")
+    if isinstance(al, dict):
+        r["alcance_seguidores"] = al.get("follower"); r["alcance_nao_seguidores"] = al.get("non_follower")
+    tipo = _ins_conta(ig_id, ["views"], dict(base, breakdown="media_product_type")).get("views")
+    if isinstance(tipo, dict):
+        r["views_por_tipo"] = tipo
+    return r
+
+
+def _conta_publico(ig_id):
+    """Quem segue (cidades, idade, gênero) e em que hora os seguidores estão online. A Meta só entrega com 100+ seguidores."""
+    pub = {}
+    for b in ("city", "age", "gender"):
+        x = _ins_conta(ig_id, ["follower_demographics"], {"period": "lifetime", "metric_type": "total_value",
+                                                           "timeframe": "this_month", "breakdown": b}).get("follower_demographics")
+        if isinstance(x, dict):
+            pub[{"city": "cidades", "age": "idades", "gender": "generos"}[b]] = dict(sorted(x.items(), key=lambda kv: -(kv[1] or 0))[:10])
+    try:
+        on = api("GET", "/%s/insights" % ig_id, {"metric": "online_followers", "period": "lifetime"}).get("data", [])
+        horas = {}
+        for dia in (on[0].get("values", []) if on else []):
+            for h, n in (dia.get("value") or {}).items():
+                horas[int(h)] = horas.get(int(h), 0) + (n or 0)
+        if horas:
+            # a Meta entrega a hora no fuso do Pacífico (PT); Brasília = PT + 5 (horário de verão dos EUA ignorado)
+            pub["online_por_hora_brt"] = {"%02d" % ((h + 5) % 24): n for h, n in sorted(horas.items())}
+    except ErroAPI as e:
+        print("online_followers sem dado (%s)" % str(e)[:90])
+    if pub:
+        pub["atualizado"] = datetime.now(BRT).strftime("%Y-%m-%d")
+    return pub
+
+
 def _salvar_metricas(conta, linhas):
     """Acrescenta o retrato do dia em dados/metricas.json (alimenta a aba Instagram do painel).
     Só números públicos ou de desempenho: nada de token, ID de conta, comissão ou ganho."""
@@ -397,11 +469,24 @@ def _salvar_metricas(conta, linhas):
     soma = lambda k: sum(r.get(k) or 0 for r in linhas)
     dia = {"data": hoje, "seguidores": conta.get("followers_count"), "publicacoes": conta.get("media_count"),
            "alcance": soma("reach"), "views": soma("views"), "curtidas": soma("curtidas"), "comentarios": soma("comentarios"),
-           "salvos": soma("saved"), "envios": soma("shares"), "posts": len(linhas)}
+           "salvos": soma("saved"), "envios": soma("shares"), "seguidores_por_post": soma("follows"),
+           "visitas_perfil_posts": soma("profile_visits"), "posts": len(linhas)}
     dias = [x for x in d.get("dias", []) if x.get("data") != hoje] + [dia]
-    campos = ("id", "publicado_em", "objetivo", "formato", "hora", "curtidas", "comentarios", "reach", "saved", "shares", "views", "link")
+    campos = ("id", "publicado_em", "objetivo", "formato", "hora", "curtidas", "comentarios", "reach", "saved", "shares", "views",
+              "follows", "profile_visits", "ig_reels_avg_watch_time", "reels_skip_rate", "link")
+    conta_dias = d.get("conta_dias", [])
+    publico = d.get("publico", {})
+    ig_id = os.environ.get("IG_USER_ID", "")
+    if ig_id:
+        cd = _conta_dia(ig_id)
+        if cd:
+            conta_dias = [x for x in conta_dias if x.get("data") != cd["data"]] + [cd]
+        pub = _conta_publico(ig_id)
+        if pub:
+            publico = pub
     d = {"atualizado": datetime.now(BRT).strftime("%Y-%m-%d %H:%M"), "conta": conta.get("username"),
          "dias": sorted(dias, key=lambda x: x["data"])[-400:],
+         "conta_dias": sorted(conta_dias, key=lambda x: x["data"])[-400:], "publico": publico,
          "posts": [{k: r.get(k) for k in campos} for r in linhas]}
     gravar(arq, d)
     print("Retrato de %s gravado em dados/metricas.json (%d dias no histórico)." % (hoje, len(d["dias"])))
@@ -423,7 +508,8 @@ def cmd_metricas():
         conta = api("GET", "/" + ig_id, {"fields": "username,followers_count,media_count"})
     except ErroAPI as e:
         print("::warning::não li a conta:", str(e)[:150])
-    metricas = ["reach", "saved", "shares", "views", "total_interactions"]
+    comuns = ["reach", "saved", "shares", "views", "total_interactions"]
+    por_formato = {"reel": comuns + ["ig_reels_avg_watch_time", "reels_skip_rate"]}
     linhas, sem_permissao = [], False
     for p in posts[:30]:
         reg = {"id": p["id"], "ig_id": p["ig_id"], "publicado_em": p.get("publicado_em"), "objetivo": p.get("objetivo", "produto"),
@@ -433,13 +519,13 @@ def cmd_metricas():
             reg.update(curtidas=b.get("like_count"), comentarios=b.get("comments_count"), link=b.get("permalink"))
         except ErroAPI as e:
             reg["erro_basico"] = str(e)[:120]
-        for m in metricas:
+        for m in por_formato.get(p.get("formato"), comuns + ["follows", "profile_visits"]):
             try:
                 d = api("GET", "/%s/insights" % p["ig_id"], {"metric": m}).get("data", [])
                 reg[m] = d[0]["values"][0]["value"] if d and d[0].get("values") else None
             except ErroAPI as e:
                 reg[m] = None
-                if "permission" in str(e).lower() or "(#10)" in str(e) or "(#200)" in str(e):
+                if "permission" in str(e).lower() or "(#200)" in str(e):
                     sem_permissao = True
                 reg.setdefault("erros", {})[m] = str(e)[:100]
         linhas.append(reg)
