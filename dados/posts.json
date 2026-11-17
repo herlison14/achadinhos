@@ -3685,11 +3685,13 @@
    "postagens/2026-11-17-story-b7a0d75f/01.jpg"
   ],
   "legenda": "Story: Processador de Alimentos Power Nutri Machine Ichef Polishop: R$ 777,60 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 73
+  "num": 73,
+  "ig_id": "18121133560953880",
+  "publicado_em": "2026-11-17 08:51"
  },
  {
   "id": "2026-11-17-story-b88fea4b",
