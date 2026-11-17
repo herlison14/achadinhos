@@ -1,7 +1,7 @@
 {
- "gerado": "2026-11-17 08:04",
+ "gerado": "2026-11-17 13:58",
  "contagem": {
-  "ALTO": 5,
+  "ALTO": 7,
   "INFO": 1,
   "MEDIO": 3
  },
@@ -31,6 +31,24 @@
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-91e11706 (2026-11-20 08:45) vai ser BLOQUEADO: preço de 91e11706 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-c234bf1b (2026-11-20 10:00) vai ser BLOQUEADO: preço de c234bf1b conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-bd237ca8 (2026-11-20 13:15) vai ser BLOQUEADO: preço de bd237ca8 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
    "nivel": "INFO",
    "area": "telegram",
    "texto": "19 posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram",
@@ -39,7 +57,7 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "177 de 463 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "177 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -53,12 +71,6 @@
    "area": "calendário",
    "texto": "2026-11-18 sem post de Reel",
    "acao": "completar a programação"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "robôs",
-   "texto": "fluxo 'Fotos dos cards (por endereço)' falhou 1 vez(es) nas últimas 26 h",
-   "acao": "abrir o log da execução"
   }
  ]
 }
