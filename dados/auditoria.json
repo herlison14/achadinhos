@@ -1,17 +1,11 @@
 {
- "gerado": "2026-11-16 20:23",
+ "gerado": "2026-11-16 21:10",
  "contagem": {
-  "ALTO": 4,
+  "ALTO": 3,
   "INFO": 2,
-  "MEDIO": 4
+  "MEDIO": 3
  },
  "achados": [
-  {
-   "nivel": "ALTO",
-   "area": "publicação",
-   "texto": "2026-11-16-story-36c18bfb está com erro: HTTP 400 The requested resource does not exist",
-   "acao": "corrigir o motivo e voltar o status para agendado"
-  },
   {
    "nivel": "ALTO",
    "area": "pré-voo",
@@ -39,7 +33,7 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "84 de 364 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "84 de 412 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -57,13 +51,7 @@
   {
    "nivel": "MEDIO",
    "area": "calendário",
-   "texto": "2026-11-17 sem post de produto",
-   "acao": "completar a programação"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
-   "texto": "2026-11-18 sem post de produto, Reel",
+   "texto": "2026-11-18 sem post de Reel",
    "acao": "completar a programação"
   }
  ]

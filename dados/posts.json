@@ -3419,8 +3419,8 @@
  },
  {
   "id": "2026-11-16-story-36c18bfb",
-  "data": "2026-11-16",
-  "hora": "08:45",
+  "data": "2026-11-18",
+  "hora": "22:00",
   "formato": "story",
   "canal": "ig",
   "tema": "Story: Ferro de Passar Easy & Care Polishop",
@@ -3431,11 +3431,11 @@
    "postagens/2026-11-16-story-36c18bfb/01.jpg"
   ],
   "legenda": "Story: Ferro de Passar Easy & Care Polishop: R$ 799,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "erro",
+  "status": "agendado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "nota": "HTTP 400 The requested resource does not exist"
+  "nota": "Remarcado de 16/11 08:45 após erro HTTP 400 da Meta (falha passageira; imagem e preço ok)."
  },
  {
   "id": "2026-11-16-story-670b2f11",
