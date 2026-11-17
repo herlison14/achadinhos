@@ -34,19 +34,19 @@
     "8e001448"
    ],
    "tema": "Story: Garrafa Squeeze TIBA Infinity 1000 ml Preta",
-   "lido_em": "2026-11-17 05:11",
-   "horas_no_ar": 10.7,
-   "views": 15,
-   "reach": 11,
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 19.4,
+   "views": 29,
+   "reach": 15,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 12,
+    "tap_back": 3,
     "tap_exit": 1,
-    "tap_back": 1
+    "tap_forward": 24
    }
   },
   "2026-11-16-story-24ea25ae": {
@@ -107,8 +107,8 @@
     "e0410e14"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Wave Invictus 4",
-   "lido_em": "2026-11-17 05:11",
-   "horas_no_ar": 15.8,
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 24,
    "views": 27,
    "reach": 20,
    "replies": 0,
@@ -132,19 +132,19 @@
     "222d986d"
    ],
    "tema": "Story: Escova Hot Brush 4 em 1 be emotion Polishop",
-   "lido_em": "2026-11-17 05:11",
-   "horas_no_ar": 13.8,
-   "views": 22,
-   "reach": 17,
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 22.6,
+   "views": 34,
+   "reach": 20,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 17,
+    "tap_back": 4,
     "tap_exit": 2,
-    "tap_back": 2
+    "tap_forward": 27
    }
   },
   "2026-11-16-story-c01e0170": {
@@ -156,19 +156,19 @@
     "c01e0170"
    ],
    "tema": "Story: Aspirador de Mão HandVac Polishop",
-   "lido_em": "2026-11-17 05:11",
-   "horas_no_ar": 12.3,
-   "views": 20,
-   "reach": 14,
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 21.1,
+   "views": 33,
+   "reach": 18,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_back": 1,
+    "tap_back": 3,
     "tap_exit": 2,
-    "tap_forward": 15,
+    "tap_forward": 26,
     "swipe_forward": 2
    }
   },
@@ -181,18 +181,19 @@
     "fbd1614c"
    ],
    "tema": "Story: Fritadeira Elétrica Airfryer Ichef Dualzone",
-   "lido_em": "2026-11-17 05:11",
-   "horas_no_ar": 8.8,
-   "views": 14,
-   "reach": 11,
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 17.6,
+   "views": 29,
+   "reach": 15,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 1,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 10,
-    "tap_exit": 3
+    "tap_forward": 21,
+    "tap_exit": 3,
+    "tap_back": 3
    }
   },
   "2026-11-16-story-mascote-gratidao": {
@@ -227,34 +228,174 @@
     "169636e6"
    ],
    "tema": "Story: Tênis Mizuno Wave Prophecy 15",
-   "lido_em": "2026-11-17 05:11",
-   "horas_no_ar": 7.2,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 15.9,
+   "views": 26,
+   "reach": 16,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "swipe_forward": 2,
+    "tap_exit": 1,
+    "tap_forward": 21,
+    "tap_back": 2
+   }
+  },
+  "2026-11-17-story-e8a1c7a1": {
+   "publicado_em": "2026-11-17 11:31",
+   "hora": "11:30",
+   "area": "TECH",
+   "tipo": "oferta",
+   "produtos": [
+    "e8a1c7a1"
+   ],
+   "tema": "Story: Fone Bluetooth Lenovo Gm2 Pro Baixa Latência",
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 2.4,
+   "views": 13,
+   "reach": 7,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 0,
    "navegacao": {
-    "tap_forward": 5,
+    "tap_forward": 9,
+    "tap_back": 4,
     "tap_exit": 1
+   }
+  },
+  "2026-11-17-story-f75099cd": {
+   "publicado_em": "2026-11-17 07:31",
+   "hora": "07:30",
+   "area": "BELEZA",
+   "tipo": "oferta",
+   "produtos": [
+    "f75099cd"
+   ],
+   "tema": "Story: Aparador de Pelos Smart Blade be emotion MEN",
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 6.4,
+   "views": 20,
+   "reach": 12,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_forward": 17,
+    "swipe_forward": 1,
+    "tap_exit": 1,
+    "tap_back": 2
+   }
+  },
+  "2026-11-17-story-b7a0d75f": {
+   "publicado_em": "2026-11-17 08:51",
+   "hora": "08:45",
+   "area": "CASA",
+   "tipo": "oferta",
+   "produtos": [
+    "b7a0d75f"
+   ],
+   "tema": "Story: Processador de Alimentos Power Nutri Machine Ichef Polishop",
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 5.1,
+   "views": 21,
+   "reach": 10,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_back": 1,
+    "tap_forward": 18
+   }
+  },
+  "2026-11-17-story-b88fea4b": {
+   "publicado_em": "2026-11-17 10:01",
+   "hora": "10:00",
+   "area": "COZINHA",
+   "tipo": "oferta",
+   "produtos": [
+    "b88fea4b"
+   ],
+   "tema": "Story: Panela First Sauté Petit Vermelha 20 cm Ichef Polishop",
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 3.9,
+   "views": 24,
+   "reach": 9,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_exit": 4,
+    "tap_back": 10,
+    "tap_forward": 10
+   }
+  },
+  "2026-11-17-story-129c4767": {
+   "publicado_em": "2026-11-17 13:39",
+   "hora": "13:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "129c4767"
+   ],
+   "tema": "Story: Tênis de Corrida Mizuno Wave Vitality 5",
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 0.3,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-17-story-mascote-black-friday": {
+   "publicado_em": "2026-11-17 09:32",
+   "hora": "09:30",
+   "area": "OFERTAS",
+   "tipo": "video",
+   "produtos": [],
+   "tema": "Story: Black Friday chegando (27/11), mascote Binguinho comemorando",
+   "lido_em": "2026-11-17 13:54",
+   "horas_no_ar": 4.4,
+   "views": 73,
+   "reach": 35,
+   "replies": 0,
+   "shares": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 16,
+    "tap_back": 4,
+    "tap_exit": 9
    }
   }
  },
- "atualizado": "2026-11-17 05:11",
+ "atualizado": "2026-11-17 13:54",
  "resumo": {
-  "stories_com_leitura_final": 3,
+  "stories_com_leitura_final": 7,
   "por_dia": [
    {
     "nome": "2026-11-16",
-    "stories": 3,
-    "views_medio": 57.3,
-    "alcance_medio": 38.0,
-    "views_total": 172,
+    "stories": 7,
+    "views_medio": 42.1,
+    "alcance_medio": 26.7,
+    "views_total": 295,
     "respostas": 0,
     "visitas_perfil": 2,
-    "saidas_pct": 9.2
+    "saidas_pct": 7.5
    }
   ],
   "por_hora": [
@@ -287,6 +428,46 @@
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": null
+   },
+   {
+    "nome": "13:15",
+    "stories": 1,
+    "views_medio": 27.0,
+    "alcance_medio": 20.0,
+    "views_total": 27,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 7.4
+   },
+   {
+    "nome": "15:15",
+    "stories": 1,
+    "views_medio": 34.0,
+    "alcance_medio": 20.0,
+    "views_total": 34,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 5.9
+   },
+   {
+    "nome": "16:45",
+    "stories": 1,
+    "views_medio": 33.0,
+    "alcance_medio": 18.0,
+    "views_total": 33,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 6.1
+   },
+   {
+    "nome": "18:30",
+    "stories": 1,
+    "views_medio": 29.0,
+    "alcance_medio": 15.0,
+    "views_total": 29,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 3.4
    }
   ],
   "por_area": [
@@ -301,16 +482,6 @@
     "saidas_pct": 7.1
    },
    {
-    "nome": "BELEZA",
-    "stories": 1,
-    "views_medio": 46.0,
-    "alcance_medio": 33.0,
-    "views_total": 46,
-    "respostas": 0,
-    "visitas_perfil": 1,
-    "saidas_pct": 13.0
-   },
-   {
     "nome": "COZINHA",
     "stories": 1,
     "views_medio": 41.0,
@@ -319,6 +490,36 @@
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": null
+   },
+   {
+    "nome": "BELEZA",
+    "stories": 2,
+    "views_medio": 40.0,
+    "alcance_medio": 26.5,
+    "views_total": 80,
+    "respostas": 0,
+    "visitas_perfil": 1,
+    "saidas_pct": 10.0
+   },
+   {
+    "nome": "CASA",
+    "stories": 1,
+    "views_medio": 33.0,
+    "alcance_medio": 18.0,
+    "views_total": 33,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 6.1
+   },
+   {
+    "nome": "MODA",
+    "stories": 2,
+    "views_medio": 28.0,
+    "alcance_medio": 17.5,
+    "views_total": 56,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 5.4
    }
   ],
   "por_tipo": [
@@ -334,13 +535,13 @@
    },
    {
     "nome": "oferta",
-    "stories": 2,
-    "views_medio": 43.5,
-    "alcance_medio": 29.0,
-    "views_total": 87,
+    "stories": 6,
+    "views_medio": 35.0,
+    "alcance_medio": 21.8,
+    "views_total": 210,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 13.0
+    "saidas_pct": 7.7
    }
   ],
   "menos_de_5": 0
