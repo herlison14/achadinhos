@@ -458,6 +458,64 @@ def cmd_metricas():
     return 0
 
 
+STORIES_MET = RAIZ / "dados" / "stories_metricas.json"
+METRICAS_STORY = ["views", "reach", "replies", "shares", "follows", "profile_visits", "total_interactions"]
+
+
+def cmd_stories():
+    """Métricas dos Stories (só leitura). A Meta só entrega os números enquanto o Story está no ar (24 h), então este
+    comando roda várias vezes ao dia e guarda em dados/stories_metricas.json a ÚLTIMA leitura de cada Story publicado nas
+    últimas 26 h (a leitura mais perto das 24 h vale como resultado final). Abaixo de 5 visualizações a Meta não informa
+    (erro #10): fica registrado como "menos de 5". Só números de desempenho, nunca token ou ID de conta."""
+    if not os.environ.get("IG_TOKEN"):
+        print("::error::IG_TOKEN não configurado.")
+        return 3
+    agora = datetime.now(BRT)
+    d = ler(STORIES_MET, {"stories": {}})
+    regs = d.setdefault("stories", {})
+    posts = [p for p in ler(POSTS, []) if p.get("formato") == "story" and p.get("status") == "publicado" and p.get("ig_id")]
+    lidos = 0
+    for p in posts:
+        try:
+            pub = datetime.fromisoformat(p["publicado_em"].replace(" ", "T") + ":00").replace(tzinfo=BRT)
+        except (KeyError, ValueError):
+            continue
+        idade_h = (agora - pub).total_seconds() / 3600
+        if idade_h > 26:
+            continue
+        r = {"publicado_em": p["publicado_em"], "hora": p.get("hora"), "area": p.get("area"),
+             "tipo": "video" if p.get("video") else ("sem_preco" if p.get("sem_preco") else "oferta"),
+             "produtos": p.get("produtos", []), "tema": (p.get("tema") or "")[:90],
+             "lido_em": agora.strftime("%Y-%m-%d %H:%M"), "horas_no_ar": round(min(idade_h, 24), 1)}
+        for m in METRICAS_STORY:
+            try:
+                x = api("GET", "/%s/insights" % p["ig_id"], {"metric": m}).get("data", [])
+                r[m] = x[0]["values"][0]["value"] if x and x[0].get("values") else None
+            except ErroAPI as e:
+                r[m] = "menos de 5" if "(#10)" in str(e) else None
+        try:   # toques: avançar, voltar, sair, deslizar para o próximo perfil
+            x = api("GET", "/%s/insights" % p["ig_id"], {"metric": "navigation", "breakdown": "story_navigation_action_type"}).get("data", [])
+            nav = {}
+            for res in (x[0].get("total_value", {}).get("breakdowns", [{}])[0].get("results", []) if x else []):
+                nav[res["dimension_values"][0].lower()] = res["value"]
+            r["navegacao"] = nav or None
+        except (ErroAPI, KeyError, IndexError):
+            r["navegacao"] = None
+        anterior = regs.get(p["id"], {})
+        # nunca troca um número por um vazio (a Meta às vezes devolve vazio perto do fim das 24 h)
+        for k, v in anterior.items():
+            if r.get(k) in (None, "menos de 5") and v not in (None, "menos de 5"):
+                r[k] = v
+        regs[p["id"]] = r
+        lidos += 1
+        print("%-34s %5s h  views %-10s alcance %-10s respostas %s" % (p["id"][:34], r["horas_no_ar"], r["views"], r["reach"], r["replies"]))
+    d["atualizado"] = agora.strftime("%Y-%m-%d %H:%M")
+    if os.environ.get("MET_SALVAR") == "1":
+        gravar(STORIES_MET, d)
+    print("%d Stories no ar lidos; %d no histórico." % (lidos, len(regs)))
+    return 0
+
+
 if __name__ == "__main__":
     # tira espaços, quebras de linha e aspas que costumam vir junto ao colar o segredo no GitHub
     for _k in ("IG_TOKEN", "IG_USER_ID"):
@@ -487,4 +545,4 @@ if __name__ == "__main__":
         os.environ["IG_USER_ID"] = "me"
         print("IG_USER_ID não é numérico: usando a conta do próprio token.")
     c = sys.argv[1] if len(sys.argv) > 1 else "testar"
-    sys.exit({"testar": lambda: cmd_publicar(True), "publicar": cmd_publicar, "status": cmd_status, "metricas": cmd_metricas}.get(c, lambda: sys.exit(__doc__))())
+    sys.exit({"testar": lambda: cmd_publicar(True), "publicar": cmd_publicar, "status": cmd_status, "metricas": cmd_metricas, "stories": cmd_stories}.get(c, lambda: sys.exit(__doc__))())

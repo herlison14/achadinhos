@@ -196,6 +196,7 @@ a{color:var(--roxo)}
     <p class="sub" id="ds-como"></p>
     <p class="sub">O Instagram não deixa nenhum robô criar destaques: eles separam os Stories por área e você só toca em "Destacar" no app. Marque o que já está lá para ver o que falta (a marcação fica só neste aparelho).</p>
   </div>
+  <div class="card" id="st-met"><h2>Como o Instagram reage aos Stories</h2><p class="sub">Visualizações, alcance e quantos saem no meio, lidos a cada 2 h enquanto o Story está no ar (a Meta apaga os números depois de 24 h). Conta só a leitura final (18 h ou mais no ar). Abaixo de 5 visualizações a Meta não informa. Amostra pequena = pista.</p></div>
   <div id="ds-areas"></div>
 </section>
 
@@ -423,8 +424,25 @@ function dsDesenha(d){
     if(!ar.stories.length)row.appendChild(el('div','sub','Nenhum Story nesta área ainda. O gerador passa a priorizar áreas sem Stories quando houver itens conferidos recentemente.'));
     card.appendChild(row);box.appendChild(card);conta()});
 }
+function stTabela(titulo,linhas,rotulo){
+  var box=$('#st-met');box.appendChild(el('h3','',titulo));
+  if(!linhas||!linhas.length){box.appendChild(el('div','sub','Ainda sem Stories com leitura final.'));return}
+  var t=document.createElement('table'),tr=document.createElement('tr');
+  [rotulo,'Stories','Views/Story','Alcance/Story','Views total','Respostas','Visitas ao perfil','Saíram (%)'].forEach(function(c){tr.appendChild(el('th','',c))});t.appendChild(tr);
+  linhas.forEach(function(x){var r=document.createElement('tr');
+    [rotulo==='Dia'&&/^\d{4}-\d\d-\d\d$/.test(x.nome)?x.nome.slice(8)+'/'+x.nome.slice(5,7):x.nome,x.stories,x.views_medio,x.alcance_medio,x.views_total,x.respostas,x.visitas_perfil,x.saidas_pct].forEach(function(v){r.appendChild(el('td','',v==null?'-':String(v)))});t.appendChild(r)});
+  var w=el('div','');w.style.overflowX='auto';w.appendChild(t);box.appendChild(w)}
+function stDesenha(d){
+  var r=d.resumo||{};
+  $('#st-met').appendChild(el('div','sub','Atualizado em '+(d.atualizado||'-')+' · '+(r.stories_com_leitura_final||0)+' Stories com leitura final · '+(r.menos_de_5||0)+' com menos de 5 views'));
+  stTabela('Por dia (teste de 10/dia: 16 a 22/11)',r.por_dia,'Dia');
+  stTabela('Por horário',r.por_hora,'Horário');
+  stTabela('Por área',r.por_area,'Área');
+  stTabela('Por tipo',r.por_tipo,'Tipo')}
 function dsCarrega(){
   if(dsOk)return;
+  fetch('../dados/stories_metricas.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(stDesenha)
+   .catch(function(){$('#st-met').appendChild(el('div','msg','Os números aparecem aqui depois da primeira leitura (a cada 2 h).'))});
   fetch('../dados/destaques.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('sem arquivo');return r.json()}).then(function(d){dsOk=true;dsDesenha(d)})
    .catch(function(){$('#ds-areas').appendChild(el('div','msg','Os destaques aparecem aqui depois da primeira coleta do dia (22:30).'))})}
 

@@ -1,0 +1,39 @@
+name: Instagram (métricas dos Stories)
+on:
+  schedule:
+    - cron: "20 */2 * * *"   # a cada 2 h: a Meta só mostra os números do Story enquanto ele está no ar (24 h)
+  workflow_dispatch:
+permissions:
+  contents: write   # só para gravar dados/stories_metricas.json (números de desempenho, sem segredo)
+concurrency:
+  group: stories-metricas
+  cancel-in-progress: false
+jobs:
+  stories:
+    runs-on: ubuntu-latest
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ler visualizações dos Stories no ar (só leitura)
+        env:
+          MET_SALVAR: "1"
+        run: python3 tools/instagram.py stories | tee resumo.txt
+      - name: Resumo dos Stories (só números)
+        run: python3 -I tools/stories_resumo.py | tee -a resumo.txt
+      - name: Guardar no repositório (alimenta o painel)
+        run: |
+          git config user.name "achadinhos-bot"
+          git config user.email "achadinhos-bot@users.noreply.github.com"
+          git add dados/stories_metricas.json
+          if git diff --cached --quiet; then echo "sem mudança"; exit 0; fi
+          git commit -m "Métricas dos Stories"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          echo "::warning::não consegui enviar dados/stories_metricas.json"; exit 0
+      - name: Resumo da execução
+        if: always()
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat resumo.txt >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
