@@ -3556,10 +3556,12 @@
    "postagens/2026-11-16-story-169636e6/01.jpg"
   ],
   "legenda": "Story: Tênis Mizuno Wave Prophecy 15: R$ 1.499,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
-  "area": "MODA"
+  "area": "MODA",
+  "ig_id": "17919617592466808",
+  "publicado_em": "2026-11-16 22:01"
  },
  {
   "id": "2026-11-17-story-f75099cd",
