@@ -77,6 +77,11 @@ a{color:var(--roxo)}
 .inst b{color:var(--roxo)}.inst button{border:1px solid var(--bd);background:var(--roxo);color:#fff;padding:6px 12px;border-radius:999px;font:inherit;cursor:pointer}
 .inst button.x{background:transparent;color:var(--mut)}
 @media (prefers-color-scheme:dark){.inst button{color:#16102a}}
+:root{--s1:#5b3fb5;--s2:#d98e04}
+@media (prefers-color-scheme:dark){:root{--s1:#8a6cf0;--s2:#b87c06}}
+.leg{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--mut);margin:0 0 6px}.leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.dk .d{font-size:12px;margin-top:2px}.dk .d.pos{color:var(--verde)}.dk .d.neg{color:var(--verm)}
+.sec{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--mut);margin:18px 0 8px}
 </style>
 </head>
 <body>
@@ -93,7 +98,7 @@ a{color:var(--roxo)}
   <button role="tab" aria-selected="false" data-aba="ofertas">Ofertas</button>
   <button role="tab" aria-selected="false" data-aba="precos">Quedas e altas</button>
   <button role="tab" aria-selected="false" data-aba="calendario">Calendário</button>
-  <button role="tab" aria-selected="false" data-aba="instagram">Instagram</button>
+  <button role="tab" aria-selected="false" data-aba="instagram">Instagram (dashboard)</button>
   <button role="tab" aria-selected="false" data-aba="destaques">Destaques</button>
   <button role="tab" aria-selected="false" data-aba="cliques">Cliques</button>
   <button role="tab" aria-selected="false" data-aba="procurados">Procurados</button>
@@ -174,6 +179,31 @@ a{color:var(--roxo)}
 </section>
 
 <section id="instagram" hidden>
+  <div class="sec">Conta (dia anterior)</div>
+  <div class="grid dk" id="ig-conta"></div>
+  <div class="wide">
+    <div class="card"><h2>Seguidores ganhos e perdidos por dia</h2><div id="ig-gp"></div></div>
+    <div class="card"><h2>Alcance: quem já segue x quem ainda não segue</h2><div id="ig-alc"></div></div>
+  </div>
+  <div class="wide">
+    <div class="card"><h2>Toques no link da bio por dia</h2><div id="ig-bio"></div></div>
+    <div class="card"><h2>Visualizações por tipo (dia anterior)</h2><div id="ig-tipo"></div></div>
+  </div>
+  <div class="sec">Conteúdo</div>
+  <div class="wide">
+    <div class="card"><h2>Posts que mais trouxeram seguidores</h2><div id="ig-segpost"></div></div>
+    <div class="card"><h2>Stories (último dia com leitura final)</h2><div id="ig-st"></div></div>
+  </div>
+  <div class="sec">Público</div>
+  <div class="wide">
+    <div class="card"><h2>Horário em que os seguidores estão online</h2><div class="sub">Horário de Brasília, aproximado (a Meta informa em outro fuso).</div><div id="ig-online"></div></div>
+    <div class="card"><h2>Cidades dos seguidores</h2><div id="ig-cid"></div></div>
+  </div>
+  <div class="wide">
+    <div class="card"><h2>Idade</h2><div id="ig-idade"></div></div>
+    <div class="card"><h2>Gênero</h2><div id="ig-gen"></div></div>
+  </div>
+  <div class="sec">Histórico dos posts</div>
   <div class="grid" id="ig-kpis"></div>
   <div class="wide">
     <div class="card"><h2>Seguidores por dia</h2><div id="ig-seg"></div></div>
@@ -185,7 +215,7 @@ a{color:var(--roxo)}
   </div>
   <div class="card">
     <h2>Posts publicados</h2>
-    <div class="tw"><table class="cart" id="ig-tab"><thead><tr><th>Post</th><th>Objetivo</th><th>Formato</th><th class="r">Alcance</th><th class="r">Views</th><th class="r">Curtidas</th><th class="r">Coment.</th><th class="r">Salvos</th><th class="r">Envios</th></tr></thead><tbody></tbody></table></div>
+    <div class="tw"><table class="cart" id="ig-tab"><thead><tr><th>Post</th><th>Objetivo</th><th>Formato</th><th class="r">Alcance</th><th class="r">Views</th><th class="r">Curtidas</th><th class="r">Coment.</th><th class="r">Salvos</th><th class="r">Envios</th><th class="r">Seguidores</th><th class="r">Visitas perfil</th><th class="r">Tempo médio (Reel)</th></tr></thead><tbody></tbody></table></div>
     <div class="sub" id="ig-nota" style="margin-top:8px"></div>
   </div>
 </section>
@@ -391,8 +421,76 @@ function igDesenha(d){
   ps.slice().sort(function(a,b){return String(b.publicado_em||'').localeCompare(String(a.publicado_em||''))}).forEach(function(p){
     var tr=document.createElement('tr'),td=function(x,l,c){var e=el('td',c||'',x==null?'-':String(x));if(l)e.setAttribute('data-l',l);tr.appendChild(e);return e};
     var c1=el('td');if(p.link){var a=el('a',null,p.id);a.href=p.link;a.target='_blank';a.rel='noopener';c1.appendChild(a)}else c1.textContent=p.id;tr.appendChild(c1);
-    td(p.objetivo||'produto','Objetivo');td(p.formato||'carrossel','Formato');td(p.reach,'Alcance','r');td(p.views,'Views','r');td(p.curtidas,'Curtidas','r');td(p.comentarios,'Coment.','r');td(p.saved,'Salvos','r');td(p.shares,'Envios','r');tb.appendChild(tr)});
+    td(p.objetivo||'produto','Objetivo');td(p.formato||'carrossel','Formato');td(p.reach,'Alcance','r');td(p.views,'Views','r');td(p.curtidas,'Curtidas','r');td(p.comentarios,'Coment.','r');td(p.saved,'Salvos','r');td(p.shares,'Envios','r');td(p.follows,'Seguidores','r');td(p.profile_visits,'Visitas perfil','r');td(p.ig_reels_avg_watch_time!=null?(Math.round(p.ig_reels_avg_watch_time/100)/10)+' s':null,'Tempo médio','r');tb.appendChild(tr)});
+  igPainel(d);
   $('#ig-nota').textContent='Atualizado em '+dbr(d.atualizado.slice(0,10))+' '+d.atualizado.slice(11)+'. Alcance e views são as contagens da Meta para cada post (a Meta pode demorar um pouco para fechar os números). Com poucos dias de histórico os gráficos mostram só alguns pontos.'}
+
+function colunas(alvo,dados,series,opt){
+  // dados: [{rot, valores:[n,...], dica}], series: [{nome, cor}]; barras verticais (empilhadas se opt.pilha), negativos abaixo do zero
+  alvo.textContent='';opt=opt||{};
+  if(!dados.length){alvo.appendChild(el('div','msg',opt.vazio||'Sem dados ainda: aparece depois da próxima coleta (22:30).'));return}
+  if(series.length>1){var lg=el('div','leg');series.forEach(function(se){var sp=el('span');var i=el('i');i.style.background=se.cor;sp.appendChild(i);sp.appendChild(document.createTextNode(se.nome));lg.appendChild(sp)});alvo.appendChild(lg)}
+  var ns='http://www.w3.org/2000/svg',W=420,H=160,L=34,R=8,T=8,B=22,s=document.createElementNS(ns,'svg');
+  s.setAttribute('viewBox','0 0 '+W+' '+H);s.setAttribute('width','100%');s.setAttribute('role','img');s.setAttribute('aria-label',opt.rot||'gráfico');
+  var mx=0,mn=0;dados.forEach(function(d){var pos=0,neg=0;d.valores.forEach(function(v){v=v||0;if(opt.pilha){if(v>=0)pos+=v;else neg+=v}else{pos=Math.max(pos,v);neg=Math.min(neg,v)}});mx=Math.max(mx,pos);mn=Math.min(mn,neg)});
+  if(mx===mn)mx=1;var y=function(v){return T+(H-T-B)*(mx-v)/(mx-mn)};
+  function tx(t,x,yy,a){var e=document.createElementNS(ns,'text');e.setAttribute('x',x);e.setAttribute('y',yy);e.setAttribute('font-size','10');e.setAttribute('fill','currentColor');e.setAttribute('opacity','.7');if(a)e.setAttribute('text-anchor',a);e.textContent=t;s.appendChild(e)}
+  [mx,0].concat(mn<0?[mn]:[]).forEach(function(v){var g=document.createElementNS(ns,'line');g.setAttribute('x1',L);g.setAttribute('x2',W-R);g.setAttribute('y1',y(v));g.setAttribute('y2',y(v));g.setAttribute('stroke','currentColor');g.setAttribute('opacity',v===0?'.35':'.12');s.appendChild(g);tx(String(Math.round(v)),L-4,y(v)+3,'end')});
+  var n=dados.length,slot=(W-L-R)/n,bw=Math.max(3,Math.min(26,slot*(opt.pilha||series.length===1?0.7:0.8)/(opt.pilha?1:series.length)));
+  dados.forEach(function(d,i){
+    var x0=L+i*slot+(slot-(opt.pilha?bw:bw*series.length))/2,acP=0,acN=0;
+    d.valores.forEach(function(v,j){v=v||0;if(!v)return;var a,b;
+      if(opt.pilha){if(v>0){a=acP;b=acP+v;acP=b}else{a=acN+v;b=acN;acN=a}}else{a=Math.min(0,v);b=Math.max(0,v)}
+      var r=document.createElementNS(ns,'rect'),xx=opt.pilha?x0:x0+j*bw;
+      r.setAttribute('x',(xx+1).toFixed(1));r.setAttribute('width',Math.max(1,bw-2).toFixed(1));r.setAttribute('y',y(b).toFixed(1));r.setAttribute('height',Math.max(1,y(a)-y(b)-(opt.pilha?2:0)).toFixed(1));
+      r.setAttribute('rx','3');r.setAttribute('fill',series[j].cor);
+      var ti=document.createElementNS(ns,'title');ti.textContent=(d.dica||d.rot)+' · '+series[j].nome+': '+v;r.appendChild(ti);s.appendChild(r)})});
+  var passo=Math.ceil(n/7);dados.forEach(function(d,i){if(i%passo===0||i===n-1)tx(d.rot,L+i*slot+slot/2,H-6,'middle')});
+  alvo.appendChild(s)}
+function kpi(box,valor,rotulo,delta,bomSeSobe){
+  var c=el('div','card');c.appendChild(el('div','k',valor==null?'-':String(valor)));c.appendChild(el('div','l',rotulo));
+  if(delta!=null&&isFinite(delta)){var sobe=delta>=0,t=(sobe?'▲ +':'▼ ')+(Math.round(delta*10)/10)+'% vs média de 7 dias';c.appendChild(el('div','d '+((sobe===(bomSeSobe!==false))?'pos':'neg'),t))}
+  box.appendChild(c)}
+function ddmm(iso){return iso.slice(8,10)+'/'+iso.slice(5,7)}
+function igPainel(d){
+  var cd=d.conta_dias||[],u=cd[cd.length-1],box=$('#ig-conta');box.textContent='';
+  var cs=getComputedStyle(document.documentElement),S1=cs.getPropertyValue('--s1').trim()||'#5b3fb5',S2=cs.getPropertyValue('--s2').trim()||'#d98e04';
+  var dias_=d.dias||[],seg=dias_.length?dias_[dias_.length-1].seguidores:null;
+  if(!u){box.appendChild(el('div','msg','Os números diários da conta começam a aparecer depois da próxima coleta (22:30).'))}
+  else{
+    var ant=cd.slice(-8,-1),med=function(k){var a=ant.map(function(x){return x[k]}).filter(function(v){return v!=null});return a.length?a.reduce(function(p,q){return p+q},0)/a.length:null},
+        dl=function(k){var m=med(k);return (m&&u[k]!=null)?(u[k]-m)/m*100:null};
+    $('#ig-conta').previousElementSibling.textContent='Conta: '+ddmm(u.data);
+    kpi(box,seg,'Seguidores agora');
+    kpi(box,(u.ganhos!=null?'+'+u.ganhos:'-')+(u.perdidos!=null?' / −'+u.perdidos:''),'Ganhos / perdidos no dia');
+    kpi(box,u.alcance,'Contas alcançadas',dl('alcance'));
+    kpi(box,u.views,'Visualizações',dl('views'));
+    kpi(box,u.contas_engajadas,'Contas que interagiram',dl('contas_engajadas'));
+    kpi(box,u.toques_link_bio,'Toques no link da bio',dl('toques_link_bio'));
+    kpi(box,u.alcance_nao_seguidores!=null&&u.alcance?Math.round(u.alcance_nao_seguidores/u.alcance*100)+'%':null,'Alcance de quem não segue');
+  }
+  var ult=cd.slice(-30);
+  colunas($('#ig-gp'),ult.filter(function(x){return x.ganhos!=null||x.perdidos!=null}).map(function(x){return {rot:ddmm(x.data),valores:[x.ganhos||0,-(x.perdidos||0)]}}),[{nome:'Ganhos',cor:S1},{nome:'Perdidos',cor:S2}],{pilha:true,rot:'Seguidores ganhos e perdidos por dia'});
+  colunas($('#ig-alc'),ult.filter(function(x){return x.alcance_seguidores!=null}).map(function(x){return {rot:ddmm(x.data),valores:[x.alcance_seguidores||0,x.alcance_nao_seguidores||0]}}),[{nome:'Já seguem',cor:S1},{nome:'Ainda não seguem',cor:S2}],{pilha:true,rot:'Alcance por tipo de conta'});
+  colunas($('#ig-bio'),ult.filter(function(x){return x.toques_link_bio!=null}).map(function(x){return {rot:ddmm(x.data),valores:[x.toques_link_bio]}}),[{nome:'Toques',cor:S1}],{rot:'Toques no link da bio'});
+  var vt=(u&&u.views_por_tipo)||{},nomes={feed:'Feed',post:'Post',carousel_container:'Carrossel',reels:'Reels',reel:'Reels',story:'Stories',ad:'Anúncio'};
+  barras($('#ig-tipo'),Object.keys(vt).map(function(k){return [nomes[k]||k,vt[k]||0]}).sort(function(a,b){return b[1]-a[1]}));
+  if(!Object.keys(vt).length)$('#ig-tipo').appendChild(el('div','msg','Aparece depois da próxima coleta.'));
+  var ps=(d.posts||[]).filter(function(p){return p.follows}).sort(function(a,b){return b.follows-a.follows}).slice(0,8);
+  barras($('#ig-segpost'),ps.map(function(p){return [p.id.slice(5),p.follows]}));
+  if(!ps.length)$('#ig-segpost').appendChild(el('div','msg','Nenhum post trouxe seguidor direto ainda (quem seguiu veio pelo perfil, Stories ou Reels). Reels não informam esse número.'));
+  var pub=d.publico||{};
+  var on=pub.online_por_hora_brt||{};
+  colunas($('#ig-online'),Object.keys(on).sort().map(function(h){return {rot:h+'h',dica:h+':00',valores:[on[h]]}}),[{nome:'Seguidores online',cor:S1}],{rot:'Seguidores online por hora',vazio:'A Meta ainda não liberou este dado (precisa de 100+ seguidores e alguns dias).'});
+  [['ig-cid','cidades'],['ig-idade','idades'],['ig-gen','generos']].forEach(function(a){var o=pub[a[1]]||{},gn={f:'Feminino',m:'Masculino',u:'Não informado'};
+    barras($('#'+a[0]),Object.keys(o).map(function(k){var n=a[1]==='generos'?(gn[k]||k):a[1]==='cidades'?k.split(',')[0].replace(/(^|\s)\S/g,function(c){return c.toUpperCase()}):k;return [n,o[k]]}));
+    if(!Object.keys(o).length)$('#'+a[0]).appendChild(el('div','msg','Aparece depois da próxima coleta (a Meta só mostra com 100+ seguidores).'))});
+  fetch('../dados/stories_metricas.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(sm){
+    var pd=((sm.resumo||{}).por_dia||[]),x=pd[pd.length-1],b=$('#ig-st');b.textContent='';
+    if(!x){b.appendChild(el('div','msg','Primeira leitura final sai 24 h depois do primeiro Story medido.'));return}
+    var g=el('div','grid');g.style.marginBottom='0';
+    [[x.stories,'Stories em '+ddmm(x.nome)],[x.views_medio,'Views por Story'],[x.views_total,'Views no dia'],[x.saidas_pct!=null?x.saidas_pct+'%':'-','Saíram no meio']].forEach(function(a){var c=el('div');c.appendChild(el('div','k',String(a[0])));c.appendChild(el('div','l',a[1]));g.appendChild(c)});
+    b.appendChild(g);b.appendChild(el('div','sub','Detalhe por horário e área na aba Destaques.'))}).catch(function(){$('#ig-st').appendChild(el('div','msg','Sem leitura de Stories ainda.'))})}
 var igOk=false;
 function igCarrega(){
   if(igOk)return;
