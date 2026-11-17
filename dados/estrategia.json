@@ -5,17 +5,17 @@
   {
    "nome": "reel",
    "posts": 7,
-   "alcance_medio": 17.6,
-   "views_medio": 32.7,
-   "nota_media": 20.9,
+   "alcance_medio": 17.7,
+   "views_medio": 33.1,
+   "nota_media": 21.1,
    "confiavel": true
   },
   {
    "nome": "carrossel",
    "posts": 23,
-   "alcance_medio": 16.2,
-   "views_medio": 50.6,
-   "nota_media": 18.8,
+   "alcance_medio": 16.6,
+   "views_medio": 51.2,
+   "nota_media": 19.2,
    "confiavel": true
   }
  ],
@@ -23,25 +23,25 @@
   {
    "nome": "produto",
    "posts": 17,
-   "alcance_medio": 16.8,
-   "views_medio": 53.0,
-   "nota_media": 19.4,
+   "alcance_medio": 16.9,
+   "views_medio": 53.3,
+   "nota_media": 19.5,
    "confiavel": true
   },
   {
    "nome": "salvar",
    "posts": 5,
-   "alcance_medio": 14.8,
-   "views_medio": 31.2,
-   "nota_media": 17.6,
+   "alcance_medio": 15.8,
+   "views_medio": 32.8,
+   "nota_media": 18.6,
    "confiavel": true
   },
   {
    "nome": "visita",
    "posts": 4,
-   "alcance_medio": 13.8,
-   "views_medio": 32.5,
-   "nota_media": 16.2,
+   "alcance_medio": 14.2,
+   "views_medio": 33.5,
+   "nota_media": 17.0,
    "confiavel": true
   },
   {
@@ -55,9 +55,9 @@
   {
    "nome": "enviar",
    "posts": 1,
-   "alcance_medio": 20.0,
-   "views_medio": 70.0,
-   "nota_media": 24.0,
+   "alcance_medio": 21.0,
+   "views_medio": 71.0,
+   "nota_media": 25.0,
    "confiavel": false
   },
   {
@@ -73,17 +73,17 @@
   {
    "nome": "20:00",
    "posts": 7,
-   "alcance_medio": 17.6,
-   "views_medio": 32.7,
-   "nota_media": 20.9,
+   "alcance_medio": 17.7,
+   "views_medio": 33.1,
+   "nota_media": 21.1,
    "confiavel": true
   },
   {
    "nome": "12:30",
    "posts": 5,
-   "alcance_medio": 15.6,
-   "views_medio": 46.6,
-   "nota_media": 19.0,
+   "alcance_medio": 15.8,
+   "views_medio": 47.4,
+   "nota_media": 19.2,
    "confiavel": true
   },
   {
@@ -97,9 +97,9 @@
   {
    "nome": "16:00",
    "posts": 2,
-   "alcance_medio": 20.0,
-   "views_medio": 67.5,
-   "nota_media": 22.0,
+   "alcance_medio": 20.5,
+   "views_medio": 68.0,
+   "nota_media": 22.5,
    "confiavel": false
   },
   {
@@ -137,9 +137,9 @@
   {
    "nome": "10:30",
    "posts": 2,
-   "alcance_medio": 15.5,
-   "views_medio": 39.5,
-   "nota_media": 18.0,
+   "alcance_medio": 16.0,
+   "views_medio": 40.0,
+   "nota_media": 18.5,
    "confiavel": false
   },
   {
@@ -159,6 +159,14 @@
    "confiavel": false
   },
   {
+   "nome": "21:00",
+   "posts": 2,
+   "alcance_medio": 14.0,
+   "views_medio": 46.0,
+   "nota_media": 16.0,
+   "confiavel": false
+  },
+  {
    "nome": "11:00",
    "posts": 1,
    "alcance_medio": 14.0,
@@ -173,14 +181,6 @@
    "views_medio": 42.0,
    "nota_media": 16.0,
    "confiavel": false
-  },
-  {
-   "nome": "21:00",
-   "posts": 2,
-   "alcance_medio": 11.0,
-   "views_medio": 41.5,
-   "nota_media": 13.0,
-   "confiavel": false
   }
  ],
  "melhores_posts": [
@@ -193,6 +193,14 @@
    "nota": 32
   },
   {
+   "id": "2026-11-12-brinquedos-meli",
+   "formato": "carrossel",
+   "objetivo": "produto",
+   "hora": "16:00",
+   "alcance": 26,
+   "nota": 29
+  },
+  {
    "id": "2026-11-13-reel-flow-presentes",
    "formato": "reel",
    "objetivo": "compartilhar",
@@ -201,12 +209,12 @@
    "nota": 28
   },
   {
-   "id": "2026-11-12-brinquedos-meli",
+   "id": "2026-11-14-amigo-secreto-4-perguntas",
    "formato": "carrossel",
-   "objetivo": "produto",
-   "hora": "16:00",
-   "alcance": 25,
-   "nota": 28
+   "objetivo": "enviar",
+   "hora": "21:00",
+   "alcance": 21,
+   "nota": 25
   },
   {
    "id": "2026-11-14-cabelo-barba-polishop",
@@ -215,26 +223,18 @@
    "hora": "19:00",
    "alcance": 20,
    "nota": 25
-  },
-  {
-   "id": "2026-11-14-tenis-dafiti",
-   "formato": "carrossel",
-   "objetivo": "produto",
-   "hora": "12:30",
-   "alcance": 20,
-   "nota": 25
   }
  ],
  "seguidores": {
-  "hoje": 319,
-  "ontem": 276,
-  "variacao_dia": 43,
-  "variacao_7_dias": 196
+  "hoje": 321,
+  "ontem": 319,
+  "variacao_dia": 2,
+  "variacao_7_dias": 190
  },
  "dicas": [
-  "Melhor formato até agora: reel (nota média 20.9 em 7 posts).",
-  "Melhor objetivo até agora: produto (nota média 19.4 em 17 posts).",
-  "Melhor horário até agora: 20:00 (nota média 20.9 em 7 posts).",
+  "Melhor formato até agora: reel (nota média 21.1 em 7 posts).",
+  "Melhor objetivo até agora: produto (nota média 19.5 em 17 posts).",
+  "Melhor horário até agora: 20:00 (nota média 21.1 em 7 posts).",
   "Nenhum post teve salvamento ou envio ainda: priorizar conteúdo que vale guardar (listas, comparativos, calendário de datas) e CTA claro de salvar/enviar."
  ],
  "aviso": "Amostra pequena: tratar como pista, não como regra. Só números de desempenho, sem comissão."

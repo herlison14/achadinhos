@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-16 21:48",
+ "atualizado": "2026-11-17 06:37",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -168,6 +168,465 @@
    "nome": "MODA",
    "stories": [
     {
+     "id": "2026-11-27-story-12906c2c",
+     "data": "2026-11-27",
+     "hora": "15:15",
+     "tema": "Acessórios Rsv Caneca Mug, preto e natural",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-27-story-12906c2c/01.jpg"
+    },
+    {
+     "id": "2026-11-27-story-ef0d9d55",
+     "data": "2026-11-27",
+     "hora": "13:15",
+     "tema": "Acessórios Rsv To Go, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-27-story-ef0d9d55/01.jpg"
+    },
+    {
+     "id": "2026-11-27-story-617eeddf",
+     "data": "2026-11-27",
+     "hora": "11:30",
+     "tema": "Kit Brisa Cítrica com Difusor de Ambiente e Sabonete Líquido",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-27-story-617eeddf/01.jpg"
+    },
+    {
+     "id": "2026-11-27-story-1baf9abc",
+     "data": "2026-11-27",
+     "hora": "10:00",
+     "tema": "Acessórios Rsv Porta-Cartão Minimal, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-27-story-1baf9abc/01.jpg"
+    },
+    {
+     "id": "2026-11-27-story-ebe21e2e",
+     "data": "2026-11-27",
+     "hora": "08:45",
+     "tema": "Copo de Viagem 450ml, bege",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-27-story-ebe21e2e/01.jpg"
+    },
+    {
+     "id": "2026-11-27-story-71623c4d",
+     "data": "2026-11-27",
+     "hora": "07:30",
+     "tema": "Acessórios Rsv Kit Lancheira Office, preta",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-27-story-71623c4d/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-28b9a809",
+     "data": "2026-11-26",
+     "hora": "22:00",
+     "tema": "Garrafa de Metal Limão, branca",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-28b9a809/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-56c04883",
+     "data": "2026-11-26",
+     "hora": "20:15",
+     "tema": "Acessórios Rsv Sketchbook Office, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-56c04883/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-e1a04228",
+     "data": "2026-11-26",
+     "hora": "18:30",
+     "tema": "Caderno Capa Dura Pautado Mindset, off white",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-e1a04228/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-3585d070",
+     "data": "2026-11-26",
+     "hora": "16:45",
+     "tema": "Acessórios Rsv Necessaire Mitaka, preta",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-3585d070/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-a2936a75",
+     "data": "2026-11-26",
+     "hora": "15:15",
+     "tema": "Kit de 3 Velas Aromáticas Beleza C&A",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-a2936a75/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-32987bff",
+     "data": "2026-11-26",
+     "hora": "13:15",
+     "tema": "Acessórios Rsv Copo Minimal, verde",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-32987bff/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-3537cc1d",
+     "data": "2026-11-26",
+     "hora": "11:30",
+     "tema": "Bolsa para Vinho Estampada, vermelha",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-3537cc1d/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-24cc9e6a",
+     "data": "2026-11-26",
+     "hora": "10:00",
+     "tema": "Acessórios Rsv Porta-Cartão Basic, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-24cc9e6a/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-c030e2cd",
+     "data": "2026-11-25",
+     "hora": "22:00",
+     "tema": "Garrafa de Metal Sports Club Mindset, prateada",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-c030e2cd/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-3a3b0a44",
+     "data": "2026-11-25",
+     "hora": "20:15",
+     "tema": "Kit 2 Camisas ML Oxford Color, marinho",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-3a3b0a44/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-c70cc5d5",
+     "data": "2026-11-25",
+     "hora": "18:30",
+     "tema": "Caneca de Porcelana Coração, sortida colorido",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-c70cc5d5/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-2bd2dfaf",
+     "data": "2026-11-25",
+     "hora": "16:45",
+     "tema": "Kit 2 Camisas Oxford Sport, branco e azul",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-2bd2dfaf/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-1fb8dc60",
+     "data": "2026-11-25",
+     "hora": "15:15",
+     "tema": "Camiseta Box Fit Masculina com Algodão e Recorte Manga Curta",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-1fb8dc60/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-a923059c",
+     "data": "2026-11-25",
+     "hora": "13:15",
+     "tema": "Calça Indaia Clean, cinza mescla",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-a923059c/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-6277768d",
+     "data": "2026-11-25",
+     "hora": "11:30",
+     "tema": "Camiseta Masculina Comfort de Malha Interlock Lisa, azul",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-6277768d/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-9452bed0",
+     "data": "2026-11-25",
+     "hora": "10:00",
+     "tema": "Calça Jeans Slim Kasper Summer, indigo",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-9452bed0/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-843ee78a",
+     "data": "2026-11-24",
+     "hora": "22:00",
+     "tema": "Camiseta Masculina Manga Curta Texturizada, off white",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-843ee78a/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-52318df4",
+     "data": "2026-11-24",
+     "hora": "20:15",
+     "tema": "Calça Surpresa Cores Variadas Reserva, branca",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-52318df4/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-936e771c",
+     "data": "2026-11-24",
+     "hora": "18:30",
+     "tema": "Calça Slim Masculina Xadrez com Bolsos, azul",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-936e771c/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-5b7c3bd8",
+     "data": "2026-11-24",
+     "hora": "16:45",
+     "tema": "Calça Jeans Slim Blue Summer, indigo",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-5b7c3bd8/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-247d459d",
+     "data": "2026-11-24",
+     "hora": "15:15",
+     "tema": "Bermuda Masculina Reta Chino, preta",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-247d459d/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-5788bf35",
+     "data": "2026-11-24",
+     "hora": "13:15",
+     "tema": "Tênis On Running Cloudrunner 3 Masculino, azul",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-5788bf35/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-47a6dcd5",
+     "data": "2026-11-24",
+     "hora": "11:30",
+     "tema": "Kit 2 Polos Pima Piquet, marinho",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-47a6dcd5/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-e8d1b283",
+     "data": "2026-11-24",
+     "hora": "10:00",
+     "tema": "Bermuda Masculina Reta Chino, bege",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-e8d1b283/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-e44f6b53",
+     "data": "2026-11-23",
+     "hora": "22:00",
+     "tema": "Tênis On Running Cloudmonster 3 Feminino, rosa",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-e44f6b53/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-a1cda672",
+     "data": "2026-11-23",
+     "hora": "20:15",
+     "tema": "Kit 2 Polos Pima, branco e preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-a1cda672/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-8665f270",
+     "data": "2026-11-23",
+     "hora": "18:30",
+     "tema": "Papete com Fivelas Cartago, marrom",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-8665f270/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-dbe5116a",
+     "data": "2026-11-23",
+     "hora": "16:45",
+     "tema": "Tênis On Running Cloudvista 2 Waterproof Masculino, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-dbe5116a/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-647cfd69",
+     "data": "2026-11-23",
+     "hora": "15:15",
+     "tema": "Suéter Moletom Masculino, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-647cfd69/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-470439ba",
+     "data": "2026-11-23",
+     "hora": "13:15",
+     "tema": "Chinelo Havaianas Essential, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-470439ba/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-47970ae5",
+     "data": "2026-11-23",
+     "hora": "11:30",
+     "tema": "Tênis On Running Cloudsurfer Max Masculino, laranja",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-47970ae5/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-dd065f32",
+     "data": "2026-11-23",
+     "hora": "10:00",
+     "tema": "Hoodie Moletom Masculino, branco",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-dd065f32/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-ef1a7536",
+     "data": "2026-11-22",
+     "hora": "22:00",
+     "tema": "Cueca Masculina Mash Boxer, preta",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-ef1a7536/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-56d44a85",
+     "data": "2026-11-22",
+     "hora": "20:15",
+     "tema": "Tênis On Running Cloudrunner 3 Feminino, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-56d44a85/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-b55039d4",
+     "data": "2026-11-22",
+     "hora": "16:45",
+     "tema": "Hoodie Moletom Masculino, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-b55039d4/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-c83b7e64",
+     "data": "2026-11-22",
+     "hora": "15:15",
+     "tema": "Calça Chino Carrot de Alfaiataria Masculina, preta",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-c83b7e64/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-a397b5f8",
+     "data": "2026-11-22",
+     "hora": "13:15",
+     "tema": "Tênis On Running Cloudsurfer 2 Masculino, branco",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-a397b5f8/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-88b10f4a",
+     "data": "2026-11-22",
+     "hora": "10:00",
+     "tema": "Suéter Moletom Masculino, branco",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-88b10f4a/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-d560aa1e",
+     "data": "2026-11-21",
+     "hora": "22:00",
+     "tema": "Camiseta Masculina de Algodão Básica Manga Curta, branca",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-d560aa1e/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-8d4b2481",
+     "data": "2026-11-21",
+     "hora": "20:15",
+     "tema": "Tênis On Running Cloudmonster 3 Feminino, bege",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-8d4b2481/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-1bfc73dd",
+     "data": "2026-11-21",
+     "hora": "16:45",
+     "tema": "Tênis Masculino Reserva Hunter, avelã",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-1bfc73dd/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-d74c105e",
+     "data": "2026-11-21",
+     "hora": "15:15",
+     "tema": "Short Praia com Bolsos, verde",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-d74c105e/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-2ef0e1eb",
+     "data": "2026-11-21",
+     "hora": "13:15",
+     "tema": "Tênis On Running Cloudrunner 3 Masculino, branco",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-2ef0e1eb/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-cb19390b",
+     "data": "2026-11-21",
+     "hora": "10:00",
+     "tema": "Tênis Masculino Reserva Hunter, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-cb19390b/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-74cb6b09",
+     "data": "2026-11-20",
+     "hora": "22:00",
+     "tema": "Kit de 7 Cuecas Boxer Masculina de Algodão, colorido",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-74cb6b09/01.jpg"
+    },
+    {
      "id": "2026-11-20-story-a4ba488f",
      "data": "2026-11-20",
      "hora": "20:15",
@@ -334,8 +793,8 @@
      "data": "2026-11-16",
      "hora": "22:00",
      "tema": "Tênis Mizuno Wave Prophecy 15",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 22:01",
      "img": "postagens/2026-11-16-story-169636e6/01.jpg"
     },
     {
@@ -537,6 +996,60 @@
   {
    "nome": "COZINHA",
    "stories": [
+    {
+     "id": "2026-11-26-story-0ef7094d",
+     "data": "2026-11-26",
+     "hora": "08:45",
+     "tema": "Garrafa térmica 1 L Termolar Magic Pump",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-0ef7094d/01.jpg"
+    },
+    {
+     "id": "2026-11-26-story-244eda85",
+     "data": "2026-11-26",
+     "hora": "07:30",
+     "tema": "Air Fryer Mondial Family 4 L com timer",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-244eda85/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-17039bc2",
+     "data": "2026-11-25",
+     "hora": "08:45",
+     "tema": "Jogo de potes de plástico herméticos Electrolux, 12 peças",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-17039bc2/01.jpg"
+    },
+    {
+     "id": "2026-11-25-story-8d6f44c3",
+     "data": "2026-11-25",
+     "hora": "07:30",
+     "tema": "Air Fryer Ultra 3,2 L com timer",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-25-story-8d6f44c3/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-5b89e0f0",
+     "data": "2026-11-24",
+     "hora": "08:45",
+     "tema": "Liquidificador Mondial Easy Power 550 W",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-5b89e0f0/01.jpg"
+    },
+    {
+     "id": "2026-11-24-story-4dcaa306",
+     "data": "2026-11-24",
+     "hora": "07:30",
+     "tema": "Jogo de potes de vidro hermético Brinox Ekko, 7 peças",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-24-story-4dcaa306/01.jpg"
+    },
     {
      "id": "2026-11-23-story-a4aa5038",
      "data": "2026-11-23",
