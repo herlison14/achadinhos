@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-16 05:22",
+ "atualizado": "2026-11-16 21:48",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -36,8 +36,8 @@
      "data": "2026-11-16",
      "hora": "09:30",
      "tema": "agradecimento ao crescimento real de seguidores (mascote Binguinho)",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 09:31",
      "img": ""
     },
     {
@@ -343,8 +343,8 @@
      "data": "2026-11-16",
      "hora": "18:30",
      "tema": "Garrafa Squeeze TIBA Infinity 1000 ml Preta",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 18:31",
      "img": "postagens/2026-11-16-story-8e001448/01.jpg"
     },
     {
@@ -352,8 +352,8 @@
      "data": "2026-11-16",
      "hora": "13:15",
      "tema": "Tênis de Corrida Mizuno Wave Invictus 4",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 13:21",
      "img": "postagens/2026-11-16-story-e0410e14/01.jpg"
     },
     {
@@ -474,8 +474,8 @@
      "data": "2026-11-16",
      "hora": "15:15",
      "tema": "Escova Hot Brush 4 em 1 be emotion Polishop",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 15:21",
      "img": "postagens/2026-11-16-story-222d986d/01.jpg"
     },
     {
@@ -483,8 +483,8 @@
      "data": "2026-11-16",
      "hora": "07:30",
      "tema": "Prancha de Cabelo Shine Nutrah Be Emotion",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 07:31",
      "img": "postagens/2026-11-16-story-24ea25ae/01.jpg"
     },
     {
@@ -537,6 +537,33 @@
   {
    "nome": "COZINHA",
    "stories": [
+    {
+     "id": "2026-11-23-story-a4aa5038",
+     "data": "2026-11-23",
+     "hora": "08:45",
+     "tema": "Garrafa térmica Tramontina Exata 1 L",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-a4aa5038/01.jpg"
+    },
+    {
+     "id": "2026-11-23-story-c921991d",
+     "data": "2026-11-23",
+     "hora": "07:30",
+     "tema": "Jogo de panelas Tramontina Turim antiaderente, 10 peças",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-23-story-c921991d/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-1bdb46d2",
+     "data": "2026-11-22",
+     "hora": "08:45",
+     "tema": "4 potes de vidro herméticos para marmita 640 ml, 4 travas",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-1bdb46d2/01.jpg"
+    },
     {
      "id": "2026-11-18-story-ba3ebae1",
      "data": "2026-11-18",
@@ -596,8 +623,8 @@
      "data": "2026-11-16",
      "hora": "20:15",
      "tema": "Fritadeira Elétrica Airfryer Ichef Dualzone",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 20:21",
      "img": "postagens/2026-11-16-story-fbd1614c/01.jpg"
     },
     {
@@ -605,8 +632,8 @@
      "data": "2026-11-16",
      "hora": "11:30",
      "tema": "Fritadeira Elétrica Mondial AFN-40-FB 4 Litros",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 11:31",
      "img": "postagens/2026-11-16-story-353e4156/01.jpg"
     },
     {
@@ -614,8 +641,8 @@
      "data": "2026-11-16",
      "hora": "10:00",
      "tema": "Air Fryer Mondial New Pratic 3,5 L com timer",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 10:01",
      "img": "postagens/2026-11-16-story-670b2f11/01.jpg"
     },
     {
@@ -669,6 +696,15 @@
      "img": "postagens/2026-11-22-story-d61d1607/01.jpg"
     },
     {
+     "id": "2026-11-22-story-9605bf1d",
+     "data": "2026-11-22",
+     "hora": "07:30",
+     "tema": "Carrinho organizador multiuso 3 andares com rodinhas",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-9605bf1d/01.jpg"
+    },
+    {
      "id": "2026-11-21-story-e4efde21",
      "data": "2026-11-21",
      "hora": "11:30",
@@ -676,6 +712,24 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-21-story-e4efde21/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-1b9dcf7f",
+     "data": "2026-11-21",
+     "hora": "08:45",
+     "tema": "Jogo de lençol casal queen em malha 100% algodão, 3 peças",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-1b9dcf7f/01.jpg"
+    },
+    {
+     "id": "2026-11-21-story-2c5f9842",
+     "data": "2026-11-21",
+     "hora": "07:30",
+     "tema": "Toyster Quebra-Cabeça Animais da Selva de Madeira",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-21-story-2c5f9842/01.jpg"
     },
     {
      "id": "2026-11-20-story-dbfedfe4",
@@ -696,6 +750,15 @@
      "img": "postagens/2026-11-20-story-6ca76ce1/01.jpg"
     },
     {
+     "id": "2026-11-16-story-36c18bfb",
+     "data": "2026-11-18",
+     "hora": "22:00",
+     "tema": "Ferro de Passar Easy & Care Polishop",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-16-story-36c18bfb/01.jpg"
+    },
+    {
      "id": "2026-11-17-story-b7a0d75f",
      "data": "2026-11-17",
      "hora": "08:45",
@@ -709,18 +772,9 @@
      "data": "2026-11-16",
      "hora": "16:45",
      "tema": "Aspirador de Mão HandVac Polishop",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-16 16:51",
      "img": "postagens/2026-11-16-story-c01e0170/01.jpg"
-    },
-    {
-     "id": "2026-11-16-story-36c18bfb",
-     "data": "2026-11-16",
-     "hora": "08:45",
-     "tema": "Ferro de Passar Easy & Care Polishop",
-     "status": "agendado",
-     "publicado_em": null,
-     "img": "postagens/2026-11-16-story-36c18bfb/01.jpg"
     },
     {
      "id": "2026-11-08-story-a424992e",
