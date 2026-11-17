@@ -3778,11 +3778,13 @@
    "postagens/2026-11-17-story-d5df7291/01.jpg"
   ],
   "legenda": "Story: Conjunto de Facas Ichef Polishop Professional Cut Inox Duo: R$ 199,95 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 79
+  "num": 79,
+  "ig_id": "17944300014391829",
+  "publicado_em": "2026-11-17 16:51"
  },
  {
   "id": "2026-11-17-story-b1d50d31",
