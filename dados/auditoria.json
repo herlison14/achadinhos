@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-16 21:26",
+ "gerado": "2026-11-17 08:04",
  "contagem": {
-  "ALTO": 3,
-  "INFO": 2,
+  "ALTO": 5,
+  "INFO": 1,
   "MEDIO": 3
  },
  "achados": [
@@ -25,6 +25,12 @@
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-d3cc439f (2026-11-20 07:30) vai ser BLOQUEADO: preço de d3cc439f conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
    "nivel": "INFO",
    "area": "telegram",
    "texto": "19 posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram",
@@ -33,7 +39,7 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "84 de 463 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "177 de 463 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -43,16 +49,16 @@
    "acao": "incluir na próxima conferência"
   },
   {
-   "nivel": "INFO",
-   "area": "calendário",
-   "texto": "2026-11-16 sem post de produto",
-   "acao": "completar a programação"
-  },
-  {
    "nivel": "MEDIO",
    "area": "calendário",
    "texto": "2026-11-18 sem post de Reel",
    "acao": "completar a programação"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Fotos dos cards (por endereço)' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
   }
  ]
 }
