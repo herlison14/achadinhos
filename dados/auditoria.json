@@ -1,11 +1,17 @@
 {
- "gerado": "2026-11-17 13:58",
+ "gerado": "2026-11-17 20:37",
  "contagem": {
-  "ALTO": 7,
+  "ALTO": 14,
   "INFO": 1,
   "MEDIO": 3
  },
  "achados": [
+  {
+   "nivel": "ALTO",
+   "area": "publicação",
+   "texto": "2026-11-17-story-68921b58 está com erro: HTTP 400 The requested resource does not exist",
+   "acao": "corrigir o motivo e voltar o status para agendado"
+  },
   {
    "nivel": "ALTO",
    "area": "pré-voo",
@@ -22,6 +28,12 @@
    "nivel": "ALTO",
    "area": "pré-voo",
    "texto": "2026-11-19-story-feb13ddd (2026-11-19 18:30) vai ser BLOQUEADO: preço de feb13ddd conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-dbfedfe4 (2026-11-20 18:30) vai ser BLOQUEADO: preço de dbfedfe4 conferido há 8 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
@@ -49,6 +61,24 @@
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-371a592a (2026-11-20 15:15) vai ser BLOQUEADO: preço de 371a592a conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-da358dda (2026-11-20 16:45) vai ser BLOQUEADO: preço de da358dda conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-20-story-a4ba488f (2026-11-20 20:15) vai ser BLOQUEADO: preço de a4ba488f conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
    "nivel": "INFO",
    "area": "telegram",
    "texto": "19 posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram",
@@ -71,6 +101,18 @@
    "area": "calendário",
    "texto": "2026-11-18 sem post de Reel",
    "acao": "completar a programação"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Instagram (publicador)' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Fotos dos cards (por endereço)' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
   }
  ]
 }
