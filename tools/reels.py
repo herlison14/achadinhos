@@ -19,6 +19,8 @@ sys.path.insert(0, os.path.join(RAIZ, 'tools'))
 spec = importlib.util.spec_from_file_location('cresc', os.path.join(RAIZ, 'tools', 'crescimento.py'))
 CR = importlib.util.module_from_spec(spec); spec.loader.exec_module(CR)
 C = CR.C
+spec_nu = importlib.util.spec_from_file_location('numeros', os.path.join(RAIZ, 'tools', 'numeros.py'))
+NU = importlib.util.module_from_spec(spec_nu); spec_nu.loader.exec_module(NU)
 getattr(CR, 'garantir_fontes', lambda: None)()
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageChops
@@ -224,14 +226,16 @@ def confete(n=70):
 CONFETE = confete()
 
 
-def cena_fim(u):
+def cena_fim(u, num=None):
     img = fundo(u + 20); logo(img, u)
     colar(img, txt('Quer ver', C.BALOO(130), BRANCO), 540, 620, esc=0.4 + 0.6 * out_back(prog(u, 0.1, 0.4)), alp=prog(u, 0.1, 0.1))
     colar(img, txt('todas as ofertas?', C.BALOO(130), C.AMARELO, sombra=C.VERM, desl=7), 540, 780, esc=0.4 + 0.6 * out_back(prog(u, 0.4, 0.4)), alp=prog(u, 0.4, 0.1))
     pulso = 1 + 0.045 * math.sin(u * 2 * math.pi * 2) if u > 1.0 else 1
     colar(img, pilula_lay('LINK NA BIO', C.NUN8(66), C.AMARELO, C.ROXO, pad=70), 540, 1040, esc=(0.3 + 0.7 * out_back(prog(u, 0.9, 0.45))) * pulso, alp=prog(u, 0.9, 0.1))
-    colar(img, txt('achadinhosdobinga.com.br', C.NUN8(48), BRANCO), 540, 1230, alp=prog(u, 1.3, 0.3))
-    colar(img, txt('Salva e manda pra quem compra online', C.NUN7(40), LAV), 540, 1310, alp=prog(u, 1.5, 0.3))
+    if num:
+        colar(img, txt('Procure o produto Nº %d' % num, C.NUN7(40), BRANCO), 540, 1145, alp=prog(u, 1.05, 0.3))
+    colar(img, txt('achadinhosdobinga.com.br', C.NUN8(48), BRANCO), 540, 1250, alp=prog(u, 1.3, 0.3))
+    colar(img, txt('Salva e manda pra quem compra online', C.NUN7(40), LAV), 540, 1330, alp=prog(u, 1.5, 0.3))
     colar(img, txt('Publicidade: links de afiliado', C.NUN8(30), '#A99BD6'), 540, 1490)
     d = ImageDraw.Draw(img)
     for x, y0, vx, vy, ang, rot, cor, s in CONFETE:
@@ -243,12 +247,12 @@ def cena_fim(u):
 
 
 # ---------- linha do tempo ----------
-def quadro(t, esc, n, data):
+def quadro(t, esc, n, data, num=None):
     if t < T_INTRO: return cena_intro(n, data, t)
     t2 = t - T_INTRO
     if t2 < n * T_ITEM:
         k = int(t2 // T_ITEM); i, q = esc[k]; return cena_item(i, q, k + 1, n, t2 - k * T_ITEM)
-    return cena_fim(t2 - n * T_ITEM)
+    return cena_fim(t2 - n * T_ITEM, num=num)
 
 
 def sfx_lista(n):
@@ -261,7 +265,7 @@ def sfx_lista(n):
     return s
 
 
-def gerar_video(esc, n, data, saida):
+def gerar_video(esc, n, data, saida, num=None):
     total = T_INTRO + n * T_ITEM + T_FIM
     with tempfile.TemporaryDirectory() as tmp:
         wav = os.path.join(tmp, 'trilha.wav'); reel_audio.salvar(wav, reel_audio.sintetizar(total, BPM, sfx_lista(n)))
@@ -270,7 +274,7 @@ def gerar_video(esc, n, data, saida):
                '-af', 'alimiter=limit=0.7:level=0', '-c:a', 'aac', '-b:a', '160k', '-t', '%.2f' % total, '-movflags', '+faststart', saida]
         p = subprocess.Popen(cmd, stdin=subprocess.PIPE)
         for f in range(int(total * FPS)):
-            p.stdin.write(quadro(f / FPS, esc, n, data).tobytes())
+            p.stdin.write(quadro(f / FPS, esc, n, data, num=num).tobytes())
         p.stdin.close()
         if p.wait(): raise SystemExit('ffmpeg falhou')
     return total
@@ -310,6 +314,12 @@ def main():
     esc = escolher(a.max)
     if len(esc) < 2: print('poucas quedas reais e atuais (%d): nada gerado' % len(esc)); return 1
     n = len(esc); data = max(datetime.date.fromisoformat(i['conferido']) for i, _ in esc).strftime('%d/%m/%Y')
+    num = None
+    if not a.amostra and not a.sem_registrar:
+        posts_pre = NU.ler_posts()
+        if not any(p['id'] == a.id for p in posts_pre):
+            # reserva o Nº já aqui (não só ao registrar) pra poder desenhar no próprio vídeo do Reel
+            num = max([p.get('num') or 0 for p in posts_pre] + [0]) + 1
     if a.amostra:
         os.makedirs(a.amostra, exist_ok=True)
         for t in (0.25, 0.7, 1.9, T_INTRO + 0.3, T_INTRO + 1.2, T_INTRO + 1.7, T_INTRO + 2.6, T_INTRO + n * T_ITEM + 0.5, T_INTRO + n * T_ITEM + 2.0):
@@ -317,7 +327,7 @@ def main():
         print('amostras em', a.amostra); return 0
     pasta = os.path.join(RAIZ, 'postagens', a.id); os.makedirs(pasta, exist_ok=True)
     quadro(1.9, esc, n, data).crop((0, 285, W, 1635)).save(os.path.join(pasta, 'capa.jpg'), 'JPEG', quality=90)
-    dur = gerar_video(esc, n, data, os.path.join(pasta, 'reel.mp4'))
+    dur = gerar_video(esc, n, data, os.path.join(pasta, 'reel.mp4'), num=num)
     linhas = []
     for k, (i, q) in enumerate(esc, 1):
         linhas.append('%d. %s: de R$ %s para R$ %s (conferido em %s)' % (k, html.unescape(i['nome']), q['antes'], q['agora'],
@@ -327,13 +337,16 @@ def main():
                'Gostou? Curte, salva e manda pra quem compra online.\n\nPublicidade: links de afiliado.\n\n#caiudepreço #achadinhos #ofertas #comprasonline') % (n, '\n'.join(linhas))
     print('Reel: %s (%.1f s, %d itens)\n%s' % (os.path.join(pasta, 'reel.mp4'), dur, n, legenda))
     if not a.sem_registrar:
-        pf = os.path.join(RAIZ, 'dados', 'posts.json'); posts = json.load(open(pf, encoding='utf-8'))
+        posts = NU.ler_posts()
         if not any(p['id'] == a.id for p in posts):
-            posts.append({'id': a.id, 'data': datetime.date.today().isoformat(), 'hora': '12:30', 'formato': 'reel', 'loja': 'misto',
-                          'tema': 'Caiu de preço: %d achadinhos' % n, 'canal': 'ig', 'produtos': [i['id'] for i, _ in esc],
-                          'status': 'planejado', 'video': 'postagens/%s/reel.mp4' % a.id, 'objetivo': 'descoberta',
-                          'nota': 'Reel gerado de dados reais (quedas.json); revisar antes de agendar.', 'legenda': legenda})
-            with open(pf, 'w', encoding='utf-8', newline='\n') as f: f.write(json.dumps(posts, ensure_ascii=False, indent=1) + '\n')
+            novo = {'id': a.id, 'data': datetime.date.today().isoformat(), 'hora': '12:30', 'formato': 'reel', 'loja': 'misto',
+                    'tema': 'Caiu de preço: %d achadinhos' % n, 'canal': 'ig', 'produtos': [i['id'] for i, _ in esc],
+                    'status': 'planejado', 'video': 'postagens/%s/reel.mp4' % a.id, 'objetivo': 'descoberta',
+                    'nota': 'Reel gerado de dados reais (quedas.json); revisar antes de agendar.', 'legenda': legenda}
+            if num: novo['num'] = num
+            posts.append(novo)
+            NU.numerar(posts)   # dá número a este (se ainda não tiver) e a qualquer outro pendente, e já insere a linha "Link na bio" na legenda
+            NU.gravar_posts(posts)
     return 0
 
 
