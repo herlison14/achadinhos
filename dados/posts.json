@@ -3848,11 +3848,13 @@
    "postagens/2026-11-18-story-7a403845/01.jpg"
   ],
   "legenda": "Story: Fritadeira Elétrica Airfryer Max Space 8 L: R$ 777,50 (conferido em 17/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 84
+  "num": 84,
+  "ig_id": "17945546055382324",
+  "publicado_em": "2026-11-18 07:31"
  },
  {
   "id": "2026-11-18-story-b7e9115e",
