@@ -3273,7 +3273,7 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "enviar",
-  "status": "agendado",
+  "status": "publicado",
   "nota": "Post de crescimento (sem preço), criado em 15/11/2026.",
   "imagens": [
    "postagens/2026-11-18-lista-de-desejos-bf/01.jpg",
@@ -3281,7 +3281,10 @@
    "postagens/2026-11-18-lista-de-desejos-bf/03.jpg",
    "postagens/2026-11-18-lista-de-desejos-bf/04.jpg"
   ],
-  "legenda": "Lista de desejos pronta = menos compra por impulso 📝\n\n1. Escreva o produto que você quer\n2. Anote para quem ou para quê\n3. Defina quanto cabe no orçamento\n4. Veja o preço de hoje e anote a data\n5. Volte nos dias seguintes e compare\n\nManda pra quem compra com você e salva pra usar até a Black Friday, dia 27/11. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#listadedesejos #blackfriday #dicasdecompra #achadinhos #comprasonline"
+  "legenda": "Lista de desejos pronta = menos compra por impulso 📝\n\n1. Escreva o produto que você quer\n2. Anote para quem ou para quê\n3. Defina quanto cabe no orçamento\n4. Veja o preço de hoje e anote a data\n5. Volte nos dias seguintes e compare\n\nManda pra quem compra com você e salva pra usar até a Black Friday, dia 27/11. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#listadedesejos #blackfriday #dicasdecompra #achadinhos #comprasonline",
+  "ig_id": "18029480852869033",
+  "publicado_em": "2026-11-18 10:32",
+  "telegram_em": "2026-11-18 10:32"
  },
  {
   "id": "2026-11-19-busca-por-produto",
