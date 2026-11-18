@@ -3892,11 +3892,13 @@
    "postagens/2026-11-18-story-80abd32e/01.jpg"
   ],
   "legenda": "Story: Aparador de Pelos MaxGroom be emotion Men: R$ 359,92 (conferido em 17/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
-  "num": 87
+  "num": 87,
+  "ig_id": "18132439774699095",
+  "publicado_em": "2026-11-18 10:01"
  },
  {
   "id": "2026-11-18-story-a49a8512",
