@@ -3963,11 +3963,13 @@
    "postagens/2026-11-18-story-b468b927/01.jpg"
   ],
   "legenda": "Story: Escova Rotating Nutrah be emotion Special Edition: R$ 699,90 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
-  "num": 92
+  "num": 92,
+  "ig_id": "18110946272191952",
+  "publicado_em": "2026-11-18 16:51"
  },
  {
   "id": "2026-11-18-story-ba3ebae1",
