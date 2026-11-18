@@ -3941,11 +3941,13 @@
    "postagens/2026-11-18-story-cd96e77b/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Wave Stratos 3: R$ 549,99 (conferido em 17/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 91
+  "num": 91,
+  "ig_id": "18138874738636231",
+  "publicado_em": "2026-11-18 15:21"
  },
  {
   "id": "2026-11-18-story-b468b927",
