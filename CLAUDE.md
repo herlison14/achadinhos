@@ -15,6 +15,7 @@ Tudo que gerar visualização e produtividade/lucro eu posso fazer sozinho, só 
 ## Time de robôs (o que cada um faz)
 - **Publicador** (`instagram.yml` + Worker `agendador-binga`): posta feed, Reels e Stories no horário.
 - **Preços** (tarefa diária 11:07, precisa do Chrome dele): reconfere preços, corrige legendas/cards/Stories.
+- **Conferidor do celular** (`tools/conferidor_celular.py`, S20 FE antigo com Termux, em implantação desde 18/11/2026; guia em `dados/CELULAR.md`): lê preços com o IP de casa (Amazon, Magalu, Mercado Livre e lojas Awin; fora: Shopee, AliExpress e adidas), grava via `vigia.py atualizar`, roda `sincronia.py` e dá push só se passar. Começa em modo teste; só liga o `--aplicar` depois que o Herlison mandar o resumo por loja e eu validar. Não corrige legendas de posts agendados.
 - **Stories** (`tools/stories.py`): padrão 2 por dia; **em teste 10/dia de 16 a 22/11/2026** (pedido do Herlison, ver seção "Stories" abaixo); fila completada pela tarefa semanal.
 - **Crescimento + Reels temáticos** (tarefas de domingo): posts sem preço que trazem visita/salvar/enviar.
 - **Métricas + Analista** (`metricas.yml` 22:30): `tools/instagram.py metricas` grava `dados/metricas.json`; `tools/analista.py` grava `dados/estrategia.json` (melhor formato/objetivo/horário, dicas; só números, amostra pequena = pista). A tarefa semanal de crescimento lê o `estrategia.json` para escolher temas.
