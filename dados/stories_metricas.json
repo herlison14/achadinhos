@@ -351,8 +351,8 @@
     "129c4767"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Wave Vitality 5",
-   "lido_em": "2026-11-18 07:21",
-   "horas_no_ar": 17.7,
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 24,
    "views": 15,
    "reach": 13,
    "replies": 0,
@@ -396,17 +396,18 @@
     "d87ea5f7"
    ],
    "tema": "Story: Secador Ultralite Ionic be emotion",
-   "lido_em": "2026-11-18 07:21",
-   "horas_no_ar": 16.0,
-   "views": 14,
-   "reach": 12,
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 22.6,
+   "views": 22,
+   "reach": 17,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 1,
+   "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 13,
+    "tap_back": 1,
+    "tap_forward": 20,
     "tap_exit": 1
    }
   },
@@ -419,18 +420,19 @@
     "d5df7291"
    ],
    "tema": "Story: Conjunto de Facas Ichef Polishop Professional Cut Inox Duo",
-   "lido_em": "2026-11-18 07:21",
-   "horas_no_ar": 14.5,
-   "views": 12,
-   "reach": 10,
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 21.1,
+   "views": 23,
+   "reach": 16,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 1,
+   "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 11,
-    "tap_back": 1
+    "tap_exit": 1,
+    "tap_back": 2,
+    "tap_forward": 20
    }
   },
   "2026-11-17-story-b1d50d31": {
@@ -442,19 +444,20 @@
     "b1d50d31"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Action 4",
-   "lido_em": "2026-11-18 07:21",
-   "horas_no_ar": 11.0,
-   "views": 12,
-   "reach": 10,
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 17.6,
+   "views": 23,
+   "reach": 15,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 1,
+   "total_interactions": 2,
    "navegacao": {
-    "tap_exit": 2,
+    "tap_forward": 15,
     "swipe_forward": 2,
-    "tap_forward": 7
+    "tap_exit": 2,
+    "tap_back": 3
    }
   },
   "2026-11-17-story-f71998f5": {
@@ -466,9 +469,104 @@
     "f71998f5"
    ],
    "tema": "Story: Mini Barbeador Elétrico Mini Shaver be emotion MEN",
-   "lido_em": "2026-11-18 07:21",
-   "horas_no_ar": 9.3,
-   "views": 7,
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 15.9,
+   "views": 16,
+   "reach": 13,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_forward": 14,
+    "tap_back": 1
+   }
+  },
+  "2026-11-17-story-68921b58": {
+   "publicado_em": "2026-11-18 11:31",
+   "hora": "11:30",
+   "area": "BELEZA",
+   "tipo": "oferta",
+   "produtos": [
+    "68921b58"
+   ],
+   "tema": "Story: Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C",
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 2.4,
+   "views": 9,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "swipe_forward": 1,
+    "tap_forward": 7,
+    "tap_exit": 1
+   }
+  },
+  "2026-11-18-story-7a403845": {
+   "publicado_em": "2026-11-18 07:31",
+   "hora": "07:30",
+   "area": "COZINHA",
+   "tipo": "oferta",
+   "produtos": [
+    "7a403845"
+   ],
+   "tema": "Story: Fritadeira Elétrica Airfryer Max Space 8 L",
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 6.4,
+   "views": 16,
+   "reach": 12,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_forward": 14,
+    "tap_back": 1
+   }
+  },
+  "2026-11-18-story-b7e9115e": {
+   "publicado_em": "2026-11-18 08:51",
+   "hora": "08:45",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "b7e9115e"
+   ],
+   "tema": "Story: Tênis Mizuno Wave Drive 9",
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 5.1,
+   "views": 16,
+   "reach": 12,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "swipe_forward": 1,
+    "tap_exit": 2,
+    "tap_back": 1,
+    "tap_forward": 11
+   }
+  },
+  "2026-11-18-story-80abd32e": {
+   "publicado_em": "2026-11-18 10:01",
+   "hora": "10:00",
+   "area": "BELEZA",
+   "tipo": "oferta",
+   "produtos": [
+    "80abd32e"
+   ],
+   "tema": "Story: Aparador de Pelos MaxGroom be emotion Men",
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 3.9,
+   "views": 8,
    "reach": 7,
    "replies": 0,
    "shares": 0,
@@ -476,13 +574,34 @@
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 6
+    "tap_forward": 5,
+    "tap_exit": 2
    }
+  },
+  "2026-11-18-story-a49a8512": {
+   "publicado_em": "2026-11-18 13:21",
+   "hora": "13:15",
+   "area": "COZINHA",
+   "tipo": "oferta",
+   "produtos": [
+    "a49a8512"
+   ],
+   "tema": "Story: Panela Ichef Polishop Ultra Sauté Grand Red 24 cm",
+   "lido_em": "2026-11-18 13:54",
+   "horas_no_ar": 0.6,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
   }
  },
- "atualizado": "2026-11-18 07:21",
+ "atualizado": "2026-11-18 13:54",
  "resumo": {
-  "stories_com_leitura_final": 14,
+  "stories_com_leitura_final": 17,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -496,13 +615,13 @@
    },
    {
     "nome": "2026-11-17",
-    "stories": 5,
-    "views_medio": 43.2,
-    "alcance_medio": 24.4,
-    "views_total": 216,
+    "stories": 8,
+    "views_medio": 34.5,
+    "alcance_medio": 21.0,
+    "views_total": 276,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 7.4
+    "saidas_pct": 6.9
    }
   ],
   "por_hora": [
@@ -558,33 +677,33 @@
    },
    {
     "nome": "13:15",
-    "stories": 1,
-    "views_medio": 27.0,
-    "alcance_medio": 20.0,
-    "views_total": 27,
+    "stories": 2,
+    "views_medio": 21.0,
+    "alcance_medio": 16.5,
+    "views_total": 42,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 7.4
+    "saidas_pct": 7.1
    },
    {
     "nome": "15:15",
-    "stories": 1,
-    "views_medio": 34.0,
-    "alcance_medio": 20.0,
-    "views_total": 34,
+    "stories": 2,
+    "views_medio": 28.0,
+    "alcance_medio": 18.5,
+    "views_total": 56,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 5.9
+    "saidas_pct": 5.4
    },
    {
     "nome": "16:45",
-    "stories": 1,
-    "views_medio": 33.0,
-    "alcance_medio": 18.0,
-    "views_total": 33,
+    "stories": 2,
+    "views_medio": 28.0,
+    "alcance_medio": 17.0,
+    "views_total": 56,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 6.1
+    "saidas_pct": 5.4
    },
    {
     "nome": "18:30",
@@ -630,23 +749,23 @@
    },
    {
     "nome": "BELEZA",
-    "stories": 3,
-    "views_medio": 35.0,
-    "alcance_medio": 23.0,
-    "views_total": 105,
+    "stories": 4,
+    "views_medio": 31.8,
+    "alcance_medio": 21.5,
+    "views_total": 127,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 8.6
+    "saidas_pct": 7.9
    },
    {
     "nome": "COZINHA",
-    "stories": 3,
-    "views_medio": 33.3,
-    "alcance_medio": 18.0,
-    "views_total": 100,
+    "stories": 4,
+    "views_medio": 30.8,
+    "alcance_medio": 17.5,
+    "views_total": 123,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 11.9
+    "saidas_pct": 9.8
    },
    {
     "nome": "CASA",
@@ -660,13 +779,13 @@
    },
    {
     "nome": "MODA",
-    "stories": 3,
-    "views_medio": 27.3,
-    "alcance_medio": 17.0,
-    "views_total": 82,
+    "stories": 4,
+    "views_medio": 24.2,
+    "alcance_medio": 16.0,
+    "views_total": 97,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 4.9
+    "saidas_pct": 5.2
    },
    {
     "nome": "TECH",
@@ -692,13 +811,13 @@
    },
    {
     "nome": "oferta",
-    "stories": 12,
-    "views_medio": 30.8,
-    "alcance_medio": 18.3,
-    "views_total": 369,
+    "stories": 15,
+    "views_medio": 28.6,
+    "alcance_medio": 17.7,
+    "views_total": 429,
     "respostas": 0,
     "visitas_perfil": 2,
-    "saidas_pct": 7.3
+    "saidas_pct": 7.0
    }
   ],
   "menos_de_5": 0
