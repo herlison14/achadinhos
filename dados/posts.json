@@ -3987,11 +3987,13 @@
    "postagens/2026-11-18-story-ba3ebae1/01.jpg"
   ],
   "legenda": "Story: Panela First Sauté Grand Vermelha 24 cm Ichef Polishop: R$ 179,96 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 93
+  "num": 93,
+  "ig_id": "17896786788439864",
+  "publicado_em": "2026-11-18 20:21"
  },
  {
   "id": "2026-11-19-story-63afc79e",
