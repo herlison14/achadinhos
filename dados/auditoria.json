@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-18 07:39",
+ "gerado": "2026-11-18 13:53",
  "contagem": {
   "ALTO": 11,
   "INFO": 2,
@@ -67,6 +67,12 @@
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-18-look-cea publicado no Instagram em 2026-11-18 12:01 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+  },
+  {
    "nivel": "INFO",
    "area": "telegram",
    "texto": "19 posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram",
@@ -89,12 +95,6 @@
    "area": "calendário",
    "texto": "2026-11-18 sem post de Reel",
    "acao": "completar a programação"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "robôs",
-   "texto": "fluxo 'Instagram (publicador)' falhou 1 vez(es) nas últimas 26 h",
-   "acao": "abrir o log da execução"
   }
  ]
 }
