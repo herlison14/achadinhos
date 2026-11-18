@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-17 20:14",
+ "atualizado": "2026-11-18 05:56",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -775,8 +775,8 @@
      "data": "2026-11-17",
      "hora": "20:15",
      "tema": "Tênis de Corrida Mizuno Action 4",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 20:21",
      "img": "postagens/2026-11-17-story-b1d50d31/01.jpg"
     },
     {
@@ -884,6 +884,15 @@
      "img": "postagens/2026-11-18-story-b468b927/01.jpg"
     },
     {
+     "id": "2026-11-17-story-68921b58",
+     "data": "2026-11-18",
+     "hora": "11:30",
+     "tema": "Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-17-story-68921b58/01.jpg"
+    },
+    {
      "id": "2026-11-18-story-80abd32e",
      "data": "2026-11-18",
      "hora": "10:00",
@@ -897,18 +906,9 @@
      "data": "2026-11-17",
      "hora": "22:00",
      "tema": "Mini Barbeador Elétrico Mini Shaver be emotion MEN",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-17 22:01",
      "img": "postagens/2026-11-17-story-f71998f5/01.jpg"
-    },
-    {
-     "id": "2026-11-17-story-68921b58",
-     "data": "2026-11-17",
-     "hora": "18:30",
-     "tema": "Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C",
-     "status": "erro",
-     "publicado_em": null,
-     "img": "postagens/2026-11-17-story-68921b58/01.jpg"
     },
     {
      "id": "2026-11-17-story-d87ea5f7",
@@ -1100,7 +1100,7 @@
      "data": "2026-11-18",
      "hora": "11:30",
      "tema": "3 Corações Café Torrado e Moído Gourmet Portinari 250 g",
-     "status": "agendado",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-18-story-6bed8cd4/01.jpg"
     },
