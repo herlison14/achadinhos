@@ -24,5 +24,5 @@ else
   echo "Não agendado (modo teste). Para ligar depois: bash ~/achadinhos/tools/instalar_celular.sh --agendar"
 fi
 echo "== 5/5 Teste (não grava nada)"
-[ "$1" = "--agendar" ] || python3 -I tools/conferidor_celular.py --limite 30
-echo; echo "Pronto. Mande o 'Resumo por loja' acima para o Claude."
+[ "$1" = "--agendar" ] || python3 -I tools/conferidor_celular.py --limite 150
+echo; echo "Pronto. Mande o 'Resumo por loja' acima para o Claude. O teste salva a CALIBRAÇÃO: sem ele o --aplicar se recusa a rodar."
