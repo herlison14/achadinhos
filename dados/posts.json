@@ -3870,11 +3870,13 @@
    "postagens/2026-11-18-story-b7e9115e/01.jpg"
   ],
   "legenda": "Story: Tênis Mizuno Wave Drive 9: R$ 699,99 (conferido em 17/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 85
+  "num": 85,
+  "ig_id": "18058746539816384",
+  "publicado_em": "2026-11-18 08:51"
  },
  {
   "id": "2026-11-18-story-80abd32e",
