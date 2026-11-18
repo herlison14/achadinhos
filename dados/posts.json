@@ -2756,8 +2756,8 @@
  },
  {
   "id": "2026-11-17-story-68921b58",
-  "data": "2026-11-17",
-  "hora": "18:30",
+  "data": "2026-11-18",
+  "hora": "11:30",
   "formato": "story",
   "canal": "ig",
   "tema": "Story: Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C",
@@ -2768,12 +2768,12 @@
    "postagens/2026-11-17-story-68921b58/01.jpg"
   ],
   "legenda": "Story: Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C: R$ 89,90 (conferido em 14/11/2026). Publicidade: links de afiliado.",
-  "status": "erro",
+  "status": "agendado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
   "num": 80,
-  "nota": "HTTP 400 The requested resource does not exist"
+  "nota": "Remarcado de 17/11 18:30 após erro HTTP 400 The requested resource does not exist (falha passageira)."
  },
  {
   "id": "2026-11-18-story-6bed8cd4",
@@ -2789,11 +2789,12 @@
    "postagens/2026-11-18-story-6bed8cd4/01.jpg"
   ],
   "legenda": "Story: 3 Corações Café Torrado e Moído Gourmet Portinari 250 g: R$ 17,90 (conferido em 09/11/2026) — antes R$ 22,70, queda de 21% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "cancelado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 88
+  "num": 88,
+  "nota": "Preço vencido (conferido em 09/11); trocado por item conferido (Story 68921b58 remarcado para este horário)."
  },
  {
   "id": "2026-11-18-story-site",

@@ -1,23 +1,11 @@
 {
- "gerado": "2026-11-17 20:37",
+ "gerado": "2026-11-17 23:54",
  "contagem": {
-  "ALTO": 14,
+  "ALTO": 10,
   "INFO": 1,
   "MEDIO": 3
  },
  "achados": [
-  {
-   "nivel": "ALTO",
-   "area": "publicação",
-   "texto": "2026-11-17-story-68921b58 está com erro: HTTP 400 The requested resource does not exist",
-   "acao": "corrigir o motivo e voltar o status para agendado"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-18-story-6bed8cd4 (2026-11-18 11:30) vai ser BLOQUEADO: preço de 6bed8cd4 conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
   {
    "nivel": "ALTO",
    "area": "pré-voo",
@@ -101,18 +89,6 @@
    "area": "calendário",
    "texto": "2026-11-18 sem post de Reel",
    "acao": "completar a programação"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "robôs",
-   "texto": "fluxo 'Instagram (publicador)' falhou 1 vez(es) nas últimas 26 h",
-   "acao": "abrir o log da execução"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "robôs",
-   "texto": "fluxo 'Fotos dos cards (por endereço)' falhou 1 vez(es) nas últimas 26 h",
-   "acao": "abrir o log da execução"
   }
  ]
 }
