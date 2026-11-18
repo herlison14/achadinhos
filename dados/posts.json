@@ -3919,11 +3919,13 @@
    "postagens/2026-11-18-story-a49a8512/01.jpg"
   ],
   "legenda": "Story: Panela Ichef Polishop Ultra Sauté Grand Red 24 cm: R$ 349,92 (conferido em 17/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 90
+  "num": 90,
+  "ig_id": "18121947074320443",
+  "publicado_em": "2026-11-18 13:21"
  },
  {
   "id": "2026-11-18-story-cd96e77b",
