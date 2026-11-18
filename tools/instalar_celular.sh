@@ -13,11 +13,16 @@ gh auth status >/dev/null 2>&1 || gh auth login -p https -h github.com -w
 gh auth setup-git
 git config user.name  "Achadinhos (celular)"
 git config user.email "herlison14@users.noreply.github.com"
-echo "== 4/5 Agenda diária (10h)"
+echo "== 4/5 Agenda diária (10h): só liga com --agendar, depois que o teste for validado"
 termux-wake-lock || true
-sv-enable crond 2>/dev/null || true
-LINHA="0 10 * * * cd $REPO && termux-wake-lock && python3 -I tools/conferidor_celular.py --aplicar --limite 120 >> $HOME/conferidor.log 2>&1"
-( crontab -l 2>/dev/null | grep -v conferidor_celular; echo "$LINHA" ) | crontab -
+if [ "$1" = "--agendar" ]; then
+  sv-enable crond 2>/dev/null || true
+  LINHA="0 10 * * * cd $REPO && termux-wake-lock && python3 -I tools/conferidor_celular.py --aplicar --limite 120 >> $HOME/conferidor.log 2>&1"
+  ( crontab -l 2>/dev/null | grep -v conferidor_celular; echo "$LINHA" ) | crontab -
+  echo "Agendado: todo dia às 10h."
+else
+  echo "Não agendado (modo teste). Para ligar depois: bash ~/achadinhos/tools/instalar_celular.sh --agendar"
+fi
 echo "== 5/5 Teste (não grava nada)"
-python3 -I tools/conferidor_celular.py --limite 30
+[ "$1" = "--agendar" ] || python3 -I tools/conferidor_celular.py --limite 30
 echo; echo "Pronto. Mande o 'Resumo por loja' acima para o Claude."

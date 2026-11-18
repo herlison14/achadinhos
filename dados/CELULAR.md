@@ -8,7 +8,7 @@ Script: `tools/conferidor_celular.py`. Instalação: `tools/instalar_celular.sh`
 pkg update -y && pkg install -y git
 git clone https://github.com/herlison14/achadinhos ~/achadinhos && bash ~/achadinhos/tools/instalar_celular.sh
 ```
-O instalador abre o login do GitHub (código no navegador), agenda a rodada diária das 10h e faz um teste que não grava nada.
+O instalador abre o login do GitHub (código no navegador) e faz um teste que não grava nada. A rodada diária das 10h só é ligada depois da validação: `bash ~/achadinhos/tools/instalar_celular.sh --agendar`.
 
 ## Uso
 - Teste: `python3 -I tools/conferidor_celular.py --limite 30`
