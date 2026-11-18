@@ -1,7 +1,7 @@
 {
- "gerado": "2026-11-18 13:53",
+ "gerado": "2026-11-18 20:04",
  "contagem": {
-  "ALTO": 11,
+  "ALTO": 4,
   "INFO": 2,
   "MEDIO": 2
  },
@@ -21,49 +21,7 @@
   {
    "nivel": "ALTO",
    "area": "pré-voo",
-   "texto": "2026-11-20-story-dbfedfe4 (2026-11-20 18:30) vai ser BLOQUEADO: preço de dbfedfe4 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-20-story-d3cc439f (2026-11-20 07:30) vai ser BLOQUEADO: preço de d3cc439f conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-20-story-91e11706 (2026-11-20 08:45) vai ser BLOQUEADO: preço de 91e11706 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-20-story-c234bf1b (2026-11-20 10:00) vai ser BLOQUEADO: preço de c234bf1b conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-20-story-bd237ca8 (2026-11-20 13:15) vai ser BLOQUEADO: preço de bd237ca8 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
    "texto": "2026-11-20-story-371a592a (2026-11-20 15:15) vai ser BLOQUEADO: preço de 371a592a conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-20-story-da358dda (2026-11-20 16:45) vai ser BLOQUEADO: preço de da358dda conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-20-story-a4ba488f (2026-11-20 20:15) vai ser BLOQUEADO: preço de a4ba488f conferido há 8 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
