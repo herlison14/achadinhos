@@ -4101,11 +4101,13 @@
    "postagens/2026-11-19-story-c7a62a9b/01.jpg"
   ],
   "legenda": "Story: Tênis Casual Mizuno Edo Cross: R$ 449,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 102
+  "num": 102,
+  "ig_id": "17949566883359489",
+  "publicado_em": "2026-11-19 15:21"
  },
  {
   "id": "2026-11-19-story-be2d8515",
