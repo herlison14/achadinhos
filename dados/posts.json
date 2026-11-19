@@ -3163,11 +3163,12 @@
    "postagens/2026-11-19-story-6a9e06f6/01.jpg"
   ],
   "legenda": "Story: Caixa de som portátil Bluetooth GO 5 W com USB e cartão: R$ 32,90 (conferido em 11/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "cancelado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "TECH",
-  "num": 99
+  "num": 99,
+  "nota": "Preço vencido (conferido em 11/11); trocado por item conferido"
  },
  {
   "id": "2026-11-19-story-feb13ddd",
@@ -5893,5 +5894,25 @@
   "area": "OFERTAS",
   "ig_id": "18132332995862950",
   "publicado_em": "2026-11-18 22:02"
+ },
+ {
+  "id": "2026-11-19-story-9e5741a0",
+  "data": "2026-11-19",
+  "hora": "11:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Jogo de potes herméticos Electrolux, 10 peças",
+  "produtos": [
+   "9e5741a0"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-9e5741a0/01.jpg"
+  ],
+  "legenda": "Story: Jogo de potes herméticos Electrolux, 10 peças: R$ 80,41 (conferido em 16/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA",
+  "num": 189
  }
 ]

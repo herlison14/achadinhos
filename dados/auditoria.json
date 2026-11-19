@@ -1,17 +1,11 @@
 {
- "gerado": "2026-11-18 20:04",
+ "gerado": "2026-11-18 23:54",
  "contagem": {
-  "ALTO": 4,
-  "INFO": 2,
+  "ALTO": 3,
+  "INFO": 1,
   "MEDIO": 2
  },
  "achados": [
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-19-story-6a9e06f6 (2026-11-19 11:30) vai ser BLOQUEADO: preço de 6a9e06f6 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
   {
    "nivel": "ALTO",
    "area": "pré-voo",
@@ -47,12 +41,6 @@
    "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "INFO",
-   "area": "calendário",
-   "texto": "2026-11-18 sem post de Reel",
-   "acao": "completar a programação"
   }
  ]
 }
