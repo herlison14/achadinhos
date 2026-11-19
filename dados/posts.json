@@ -4123,11 +4123,13 @@
    "postagens/2026-11-19-story-be2d8515/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Atlantis 2: R$ 239,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 104
+  "num": 104,
+  "ig_id": "18026610767947698",
+  "publicado_em": "2026-11-19 16:51"
  },
  {
   "id": "2026-11-19-story-8ae2e532",
