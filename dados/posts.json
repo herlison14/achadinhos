@@ -4056,11 +4056,13 @@
    "postagens/2026-11-19-story-86d11d02/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Wave Rebellion Flash 3: R$ 769,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 98
+  "num": 98,
+  "ig_id": "18245410090315841",
+  "publicado_em": "2026-11-19 10:01"
  },
  {
   "id": "2026-11-19-story-511ee732",
