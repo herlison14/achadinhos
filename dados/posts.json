@@ -4012,11 +4012,13 @@
    "postagens/2026-11-19-story-63afc79e/01.jpg"
   ],
   "legenda": "Story: Tênis Casual Mizuno Street Wind: R$ 279,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 95
+  "num": 95,
+  "ig_id": "18086516207738646",
+  "publicado_em": "2026-11-19 07:31"
  },
  {
   "id": "2026-11-19-story-c72c7976",
