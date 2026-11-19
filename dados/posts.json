@@ -4150,11 +4150,13 @@
    "postagens/2026-11-19-story-8ae2e532/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Wave Titan 3: R$ 299,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 107
+  "num": 107,
+  "ig_id": "18110295889953176",
+  "publicado_em": "2026-11-19 20:21"
  },
  {
   "id": "2026-11-19-story-52cd9c79",
