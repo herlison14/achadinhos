@@ -4078,11 +4078,13 @@
    "postagens/2026-11-19-story-511ee732/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Oracle: R$ 349,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 101
+  "num": 101,
+  "ig_id": "17918177211495513",
+  "publicado_em": "2026-11-19 13:21"
  },
  {
   "id": "2026-11-19-story-c7a62a9b",
