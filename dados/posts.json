@@ -3184,11 +3184,12 @@
    "postagens/2026-11-19-story-feb13ddd/01.jpg"
   ],
   "legenda": "Story: Carregador 20W Turbo PD Tipo C para iPhone: R$ 38,70 (conferido em 11/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "cancelado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "TECH",
-  "num": 105
+  "num": 105,
+  "nota": "Preço vencido (conferido em 11/11); trocado por item conferido"
  },
  {
   "id": "2026-11-20-reel-bf-pesquisa",
@@ -5930,5 +5931,25 @@
   "num": 189,
   "ig_id": "17991394965092749",
   "publicado_em": "2026-11-19 11:31"
+ },
+ {
+  "id": "2026-11-19-story-93f49b8a",
+  "data": "2026-11-19",
+  "hora": "18:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Brinquedo Macaco Chalesco para Cães",
+  "produtos": [
+   "93f49b8a"
+  ],
+  "imagens": [
+   "postagens/2026-11-19-story-93f49b8a/01.jpg"
+  ],
+  "legenda": "Story: Brinquedo Macaco Chalesco para Cães: R$ 19,75 (conferido em 16/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "CASA",
+  "num": 190
  }
 ]
