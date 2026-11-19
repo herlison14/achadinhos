@@ -656,8 +656,8 @@
    "tipo": "sem_preco",
    "produtos": [],
    "tema": "Story: preço com data de conferência",
-   "lido_em": "2026-11-19 10:30",
-   "horas_no_ar": 16.0,
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 24,
    "views": 7,
    "reach": 7,
    "replies": 0,
@@ -678,16 +678,18 @@
     "36c18bfb"
    ],
    "tema": "Story: Ferro de Passar Easy & Care Polishop",
-   "lido_em": "2026-11-19 10:30",
-   "horas_no_ar": 12.5,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 21.3,
+   "views": 9,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 9
+   }
   },
   "2026-11-18-story-ba3ebae1": {
    "publicado_em": "2026-11-18 20:21",
@@ -698,17 +700,17 @@
     "ba3ebae1"
    ],
    "tema": "Story: Panela First Sauté Grand Vermelha 24 cm Ichef Polishop",
-   "lido_em": "2026-11-19 10:30",
-   "horas_no_ar": 14.2,
-   "views": 6,
-   "reach": 5,
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 22.9,
+   "views": 10,
+   "reach": 8,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 6
+    "tap_forward": 9
    }
   },
   "2026-11-18-story-mascote-linknabio": {
@@ -718,16 +720,19 @@
    "tipo": "video",
    "produtos": [],
    "tema": "Story: como usar o link na bio (vídeo Dreamina, mascote Binguinho)",
-   "lido_em": "2026-11-19 10:30",
-   "horas_no_ar": 12.5,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 21.3,
+   "views": 10,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_back": 1,
+    "tap_forward": 8
+   }
   },
   "2026-11-19-story-63afc79e": {
    "publicado_em": "2026-11-19 07:31",
@@ -738,16 +743,19 @@
     "63afc79e"
    ],
    "tema": "Story: Tênis Casual Mizuno Street Wind",
-   "lido_em": "2026-11-19 10:30",
-   "horas_no_ar": 3.0,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 11.8,
+   "views": 10,
+   "reach": 7,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 2,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_exit": 2,
+    "tap_forward": 7
+   }
   },
   "2026-11-19-story-c72c7976": {
    "publicado_em": "2026-11-19 08:51",
@@ -758,16 +766,19 @@
     "c72c7976"
    ],
    "tema": "Story: Escova Alisadora e Modeladora Infraliss be emotion",
-   "lido_em": "2026-11-19 10:30",
-   "horas_no_ar": 1.7,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 10.4,
+   "views": 9,
+   "reach": 7,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 7,
+    "swipe_forward": 1
+   }
   },
   "2026-11-19-story-86d11d02": {
    "publicado_em": "2026-11-19 10:01",
@@ -778,8 +789,118 @@
     "86d11d02"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Wave Rebellion Flash 3",
-   "lido_em": "2026-11-19 10:30",
-   "horas_no_ar": 0.5,
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 9.3,
+   "views": 8,
+   "reach": 7,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_exit": 1,
+    "tap_forward": 6
+   }
+  },
+  "2026-11-19-story-511ee732": {
+   "publicado_em": "2026-11-19 13:21",
+   "hora": "13:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "511ee732"
+   ],
+   "tema": "Story: Tênis de Corrida Mizuno Oracle",
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 5.9,
+   "views": 7,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 6
+   }
+  },
+  "2026-11-19-story-c7a62a9b": {
+   "publicado_em": "2026-11-19 15:21",
+   "hora": "15:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "c7a62a9b"
+   ],
+   "tema": "Story: Tênis Casual Mizuno Edo Cross",
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 3.9,
+   "views": 6,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 5
+   }
+  },
+  "2026-11-19-story-be2d8515": {
+   "publicado_em": "2026-11-19 16:51",
+   "hora": "16:45",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "be2d8515"
+   ],
+   "tema": "Story: Tênis de Corrida Mizuno Atlantis 2",
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 2.4,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-19-story-9e5741a0": {
+   "publicado_em": "2026-11-19 11:31",
+   "hora": "11:30",
+   "area": "COZINHA",
+   "tipo": "oferta",
+   "produtos": [
+    "9e5741a0"
+   ],
+   "tema": "Story: Jogo de potes herméticos Electrolux, 10 peças",
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 7.8,
+   "views": 7,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_exit": 1,
+    "tap_forward": 5
+   }
+  },
+  "2026-11-19-story-93f49b8a": {
+   "publicado_em": "2026-11-19 18:31",
+   "hora": "18:30",
+   "area": "CASA",
+   "tipo": "oferta",
+   "produtos": [
+    "93f49b8a"
+   ],
+   "tema": "Story: Brinquedo Macaco Chalesco para Cães",
+   "lido_em": "2026-11-19 19:17",
+   "horas_no_ar": 0.8,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -790,9 +911,9 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-19 10:30",
+ "atualizado": "2026-11-19 19:17",
  "resumo": {
-  "stories_com_leitura_final": 24,
+  "stories_com_leitura_final": 28,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -816,10 +937,10 @@
    },
    {
     "nome": "2026-11-18",
-    "stories": 5,
-    "views_medio": 11.6,
-    "alcance_medio": 9.4,
-    "views_total": 58,
+    "stories": 9,
+    "views_medio": 10.4,
+    "alcance_medio": 8.7,
+    "views_total": 94,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 13.8
@@ -908,30 +1029,40 @@
    },
    {
     "nome": "18:30",
-    "stories": 1,
-    "views_medio": 29.0,
-    "alcance_medio": 15.0,
-    "views_total": 29,
+    "stories": 2,
+    "views_medio": 18.0,
+    "alcance_medio": 11.0,
+    "views_total": 36,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 3.4
    },
    {
     "nome": "20:15",
-    "stories": 2,
-    "views_medio": 26.5,
-    "alcance_medio": 15.5,
-    "views_total": 53,
+    "stories": 3,
+    "views_medio": 21.0,
+    "alcance_medio": 13.0,
+    "views_total": 63,
     "respostas": 0,
     "visitas_perfil": 1,
     "saidas_pct": 9.4
    },
    {
+    "nome": "21:58",
+    "stories": 1,
+    "views_medio": 10.0,
+    "alcance_medio": 8.0,
+    "views_total": 10,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": null
+   },
+   {
     "nome": "22:00",
-    "stories": 2,
-    "views_medio": 21.5,
-    "alcance_medio": 15.0,
-    "views_total": 43,
+    "stories": 3,
+    "views_medio": 17.3,
+    "alcance_medio": 12.7,
+    "views_total": 52,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 3.8
@@ -940,33 +1071,13 @@
   "por_area": [
    {
     "nome": "OFERTAS",
-    "stories": 2,
-    "views_medio": 98.5,
-    "alcance_medio": 60.0,
-    "views_total": 197,
+    "stories": 4,
+    "views_medio": 53.5,
+    "alcance_medio": 33.8,
+    "views_total": 214,
     "respostas": 0,
     "visitas_perfil": 1,
     "saidas_pct": 7.6
-   },
-   {
-    "nome": "CASA",
-    "stories": 2,
-    "views_medio": 30.5,
-    "alcance_medio": 16.5,
-    "views_total": 61,
-    "respostas": 0,
-    "visitas_perfil": 0,
-    "saidas_pct": 4.9
-   },
-   {
-    "nome": "COZINHA",
-    "stories": 5,
-    "views_medio": 26.2,
-    "alcance_medio": 15.4,
-    "views_total": 131,
-    "respostas": 0,
-    "visitas_perfil": 1,
-    "saidas_pct": 10.0
    },
    {
     "nome": "BELEZA",
@@ -977,6 +1088,26 @@
     "respostas": 0,
     "visitas_perfil": 1,
     "saidas_pct": 9.3
+   },
+   {
+    "nome": "COZINHA",
+    "stories": 6,
+    "views_medio": 23.5,
+    "alcance_medio": 14.2,
+    "views_total": 141,
+    "respostas": 0,
+    "visitas_perfil": 1,
+    "saidas_pct": 10.0
+   },
+   {
+    "nome": "CASA",
+    "stories": 3,
+    "views_medio": 23.3,
+    "alcance_medio": 13.7,
+    "views_total": 70,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 4.9
    },
    {
     "nome": "MODA",
@@ -1002,23 +1133,33 @@
   "por_tipo": [
    {
     "nome": "video",
-    "stories": 2,
-    "views_medio": 98.5,
-    "alcance_medio": 60.0,
-    "views_total": 197,
+    "stories": 3,
+    "views_medio": 69.0,
+    "alcance_medio": 42.7,
+    "views_total": 207,
     "respostas": 0,
     "visitas_perfil": 1,
     "saidas_pct": 7.6
    },
    {
     "nome": "oferta",
-    "stories": 22,
-    "views_medio": 24.0,
-    "alcance_medio": 15.6,
-    "views_total": 528,
+    "stories": 24,
+    "views_medio": 22.8,
+    "alcance_medio": 15.0,
+    "views_total": 547,
     "respostas": 0,
     "visitas_perfil": 2,
     "saidas_pct": 7.9
+   },
+   {
+    "nome": "sem_preco",
+    "stories": 1,
+    "views_medio": 7.0,
+    "alcance_medio": 7.0,
+    "views_total": 7,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": null
    }
   ],
   "menos_de_5": 0
