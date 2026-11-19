@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-18 15:50",
+ "atualizado": "2026-11-19 06:14",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -14,12 +14,21 @@
      "img": "postagens/2026-11-21-story-site/01.jpg"
     },
     {
+     "id": "2026-11-18-story-mascote-linknabio",
+     "data": "2026-11-18",
+     "hora": "21:58",
+     "tema": "como usar o link na bio (vídeo Dreamina, mascote Binguinho)",
+     "status": "publicado",
+     "publicado_em": "2026-11-18 22:02",
+     "img": ""
+    },
+    {
      "id": "2026-11-18-story-site",
      "data": "2026-11-18",
      "hora": "18:30",
      "tema": "preço com data de conferência",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-18 18:31",
      "img": "postagens/2026-11-18-story-site/01.jpg"
     },
     {
@@ -113,7 +122,7 @@
      "data": "2026-11-19",
      "hora": "11:30",
      "tema": "Caixa de som portátil Bluetooth GO 5 W com USB e cartão",
-     "status": "agendado",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-19-story-6a9e06f6/01.jpg"
     },
@@ -879,8 +888,8 @@
      "data": "2026-11-18",
      "hora": "16:45",
      "tema": "Escova Rotating Nutrah be emotion Special Edition",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-18 16:51",
      "img": "postagens/2026-11-18-story-b468b927/01.jpg"
     },
     {
@@ -1078,12 +1087,21 @@
      "img": "postagens/2026-11-22-story-1bdb46d2/01.jpg"
     },
     {
+     "id": "2026-11-19-story-9e5741a0",
+     "data": "2026-11-19",
+     "hora": "11:30",
+     "tema": "Jogo de potes herméticos Electrolux, 10 peças",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-19-story-9e5741a0/01.jpg"
+    },
+    {
      "id": "2026-11-18-story-ba3ebae1",
      "data": "2026-11-18",
      "hora": "20:15",
      "tema": "Panela First Sauté Grand Vermelha 24 cm Ichef Polishop",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-18 20:21",
      "img": "postagens/2026-11-18-story-ba3ebae1/01.jpg"
     },
     {
@@ -1267,8 +1285,8 @@
      "data": "2026-11-18",
      "hora": "22:00",
      "tema": "Ferro de Passar Easy & Care Polishop",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-18 22:00",
      "img": "postagens/2026-11-16-story-36c18bfb/01.jpg"
     },
     {
