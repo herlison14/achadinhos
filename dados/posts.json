@@ -3303,7 +3303,7 @@
   "produtos": [],
   "sem_preco": true,
   "objetivo": "visita",
-  "status": "agendado",
+  "status": "publicado",
   "nota": "Post de crescimento (sem preço), criado em 15/11/2026.",
   "imagens": [
    "postagens/2026-11-19-busca-por-produto/01.jpg",
@@ -3311,7 +3311,10 @@
    "postagens/2026-11-19-busca-por-produto/03.jpg",
    "postagens/2026-11-19-busca-por-produto/04.jpg"
   ],
-  "legenda": "Já sabe o que quer comprar? Procure pelo nome 🔎\n\n1. Abra o link da bio\n2. Digite o nome do produto na busca\n3. Veja as lojas, o preço e a data da conferência\n\nAntes de fechar, confirme o preço na loja e compare com outra se tiver dúvida.\n\nSalva pra lembrar na hora da compra. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #comprasonline #dicasdecompra #precobaixo"
+  "legenda": "Já sabe o que quer comprar? Procure pelo nome 🔎\n\n1. Abra o link da bio\n2. Digite o nome do produto na busca\n3. Veja as lojas, o preço e a data da conferência\n\nAntes de fechar, confirme o preço na loja e compare com outra se tiver dúvida.\n\nSalva pra lembrar na hora da compra. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#achadinhos #ofertas #comprasonline #dicasdecompra #precobaixo",
+  "ig_id": "18130488850669566",
+  "publicado_em": "2026-11-19 17:31",
+  "telegram_em": "2026-11-19 17:32"
  },
  {
   "id": "2026-11-20-calendario-datas-de-compras",
