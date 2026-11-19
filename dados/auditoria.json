@@ -1,7 +1,7 @@
 {
- "gerado": "2026-11-19 13:54",
+ "gerado": "2026-11-19 20:11",
  "contagem": {
-  "ALTO": 4,
+  "ALTO": 6,
   "INFO": 1,
   "MEDIO": 10
  },
@@ -10,6 +10,12 @@
    "nivel": "ALTO",
    "area": "pré-voo",
    "texto": "2026-11-22-story-a0a0c7b8 (2026-11-22 11:30) vai ser BLOQUEADO: preço de a0a0c7b8 conferido há 10 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-22-story-d61d1607 (2026-11-22 18:30) vai ser BLOQUEADO: preço de d61d1607 conferido há 10 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
@@ -95,6 +101,12 @@
    "area": "calendário",
    "texto": "2026-11-21 sem post de produto",
    "acao": "completar a programação"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Instagram (publicador)' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
   }
  ]
 }
