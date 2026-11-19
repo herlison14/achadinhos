@@ -1,9 +1,9 @@
 {
- "gerado": "2026-11-18 23:54",
+ "gerado": "2026-11-19 07:43",
  "contagem": {
-  "ALTO": 3,
+  "ALTO": 5,
   "INFO": 1,
-  "MEDIO": 2
+  "MEDIO": 10
  },
  "achados": [
   {
@@ -31,16 +31,76 @@
    "acao": "já resolvido em 12/11/2026; nada a fazer"
   },
   {
+   "nivel": "ALTO",
+   "area": "preços",
+   "texto": "297 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
+  },
+  {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "222 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
-   "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
+   "texto": "nenhum item da loja shopee conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja meli conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
   },
   {
    "nivel": "MEDIO",
    "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja kabum conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja nike conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja dafiti conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja docebeleza conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja puma conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
+   "texto": "nenhum item da loja hope conferido nos últimos 7 dias",
+   "acao": "incluir na próxima conferência"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-21 sem post de produto",
+   "acao": "completar a programação"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "robôs",
+   "texto": "fluxo 'Instagram (publicador)' falhou 1 vez(es) nas últimas 26 h",
+   "acao": "abrir o log da execução"
   }
  ]
 }
