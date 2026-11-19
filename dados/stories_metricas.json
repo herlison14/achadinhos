@@ -492,19 +492,19 @@
     "68921b58"
    ],
    "tema": "Story: Chapinha GA.MA Italy Eleganza Plus cerâmica com íons 210 C",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 13.2,
-   "views": 12,
-   "reach": 9,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 23.0,
+   "views": 13,
+   "reach": 10,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
-    "tap_exit": 2,
-    "tap_forward": 9,
-    "swipe_forward": 1
+    "swipe_forward": 1,
+    "tap_forward": 10,
+    "tap_exit": 2
    }
   },
   "2026-11-18-story-7a403845": {
@@ -540,8 +540,8 @@
     "b7e9115e"
    ],
    "tema": "Story: Tênis Mizuno Wave Drive 9",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 15.8,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 24,
    "views": 18,
    "reach": 14,
    "replies": 0,
@@ -565,8 +565,8 @@
     "80abd32e"
    ],
    "tema": "Story: Aparador de Pelos MaxGroom be emotion Men",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 14.7,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 24,
    "views": 11,
    "reach": 10,
    "replies": 0,
@@ -588,18 +588,18 @@
     "a49a8512"
    ],
    "tema": "Story: Panela Ichef Polishop Ultra Sauté Grand Red 24 cm",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 11.3,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 21.2,
+   "views": 8,
+   "reach": 7,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
-    "tap_exit": 1,
-    "tap_forward": 5
+    "tap_forward": 7,
+    "tap_exit": 1
    }
   },
   "2026-11-18-story-cd96e77b": {
@@ -611,18 +611,19 @@
     "cd96e77b"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Wave Stratos 3",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 9.3,
-   "views": 5,
-   "reach": 5,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 19.2,
+   "views": 8,
+   "reach": 6,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 4,
-    "tap_exit": 1
+    "tap_back": 1,
+    "tap_exit": 1,
+    "tap_forward": 6
    }
   },
   "2026-11-18-story-b468b927": {
@@ -634,17 +635,18 @@
     "b468b927"
    ],
    "tema": "Story: Escova Rotating Nutrah be emotion Special Edition",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 7.8,
-   "views": 7,
-   "reach": 6,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 17.7,
+   "views": 9,
+   "reach": 7,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 7
+    "tap_back": 1,
+    "tap_forward": 8
    }
   },
   "2026-11-18-story-site": {
@@ -654,17 +656,17 @@
    "tipo": "sem_preco",
    "produtos": [],
    "tema": "Story: preço com data de conferência",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 6.2,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 16.0,
+   "views": 7,
+   "reach": 7,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 6
+    "tap_forward": 7
    }
   },
   "2026-11-16-story-36c18bfb": {
@@ -676,8 +678,8 @@
     "36c18bfb"
    ],
    "tema": "Story: Ferro de Passar Easy & Care Polishop",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 2.7,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 12.5,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -696,8 +698,28 @@
     "ba3ebae1"
    ],
    "tema": "Story: Panela First Sauté Grand Vermelha 24 cm Ichef Polishop",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 4.3,
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 14.2,
+   "views": 6,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_forward": 6
+   }
+  },
+  "2026-11-18-story-mascote-linknabio": {
+   "publicado_em": "2026-11-18 22:02",
+   "hora": "21:58",
+   "area": "OFERTAS",
+   "tipo": "video",
+   "produtos": [],
+   "tema": "Story: como usar o link na bio (vídeo Dreamina, mascote Binguinho)",
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 12.5,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -707,15 +729,57 @@
    "total_interactions": "menos de 5",
    "navegacao": null
   },
-  "2026-11-18-story-mascote-linknabio": {
-   "publicado_em": "2026-11-18 22:02",
-   "hora": "21:58",
-   "area": "OFERTAS",
-   "tipo": "video",
-   "produtos": [],
-   "tema": "Story: como usar o link na bio (vídeo Dreamina, mascote Binguinho)",
-   "lido_em": "2026-11-19 00:40",
-   "horas_no_ar": 2.6,
+  "2026-11-19-story-63afc79e": {
+   "publicado_em": "2026-11-19 07:31",
+   "hora": "07:30",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "63afc79e"
+   ],
+   "tema": "Story: Tênis Casual Mizuno Street Wind",
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 3.0,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-19-story-c72c7976": {
+   "publicado_em": "2026-11-19 08:51",
+   "hora": "08:45",
+   "area": "BELEZA",
+   "tipo": "oferta",
+   "produtos": [
+    "c72c7976"
+   ],
+   "tema": "Story: Escova Alisadora e Modeladora Infraliss be emotion",
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 1.7,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-19-story-86d11d02": {
+   "publicado_em": "2026-11-19 10:01",
+   "hora": "10:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "86d11d02"
+   ],
+   "tema": "Story: Tênis de Corrida Mizuno Wave Rebellion Flash 3",
+   "lido_em": "2026-11-19 10:30",
+   "horas_no_ar": 0.5,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -726,9 +790,9 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-19 00:40",
+ "atualizado": "2026-11-19 10:30",
  "resumo": {
-  "stories_com_leitura_final": 19,
+  "stories_com_leitura_final": 24,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -749,6 +813,16 @@
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 7.0
+   },
+   {
+    "nome": "2026-11-18",
+    "stories": 5,
+    "views_medio": 11.6,
+    "alcance_medio": 9.4,
+    "views_total": 58,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 13.8
    }
   ],
   "por_hora": [
@@ -764,13 +838,13 @@
    },
    {
     "nome": "08:45",
-    "stories": 1,
-    "views_medio": 28.0,
-    "alcance_medio": 15.0,
-    "views_total": 28,
+    "stories": 2,
+    "views_medio": 23.0,
+    "alcance_medio": 14.5,
+    "views_total": 46,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 3.6
+    "saidas_pct": 6.5
    },
    {
     "nome": "09:30",
@@ -784,43 +858,43 @@
    },
    {
     "nome": "10:00",
-    "stories": 2,
-    "views_medio": 35.5,
-    "alcance_medio": 19.5,
-    "views_total": 71,
+    "stories": 3,
+    "views_medio": 27.3,
+    "alcance_medio": 16.3,
+    "views_total": 82,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 13.3
+    "saidas_pct": 14.6
    },
    {
     "nome": "11:30",
-    "stories": 1,
-    "views_medio": 21.0,
-    "alcance_medio": 13.0,
-    "views_total": 21,
+    "stories": 2,
+    "views_medio": 17.0,
+    "alcance_medio": 11.5,
+    "views_total": 34,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 4.8
+    "saidas_pct": 8.8
    },
    {
     "nome": "13:15",
-    "stories": 2,
-    "views_medio": 21.0,
-    "alcance_medio": 16.5,
-    "views_total": 42,
+    "stories": 3,
+    "views_medio": 16.7,
+    "alcance_medio": 13.3,
+    "views_total": 50,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 7.1
+    "saidas_pct": 8.0
    },
    {
     "nome": "15:15",
-    "stories": 2,
-    "views_medio": 28.0,
-    "alcance_medio": 18.5,
-    "views_total": 56,
+    "stories": 3,
+    "views_medio": 21.3,
+    "alcance_medio": 14.3,
+    "views_total": 64,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 5.4
+    "saidas_pct": 6.2
    },
    {
     "nome": "16:45",
@@ -875,16 +949,6 @@
     "saidas_pct": 7.6
    },
    {
-    "nome": "COZINHA",
-    "stories": 4,
-    "views_medio": 30.8,
-    "alcance_medio": 17.5,
-    "views_total": 123,
-    "respostas": 0,
-    "visitas_perfil": 1,
-    "saidas_pct": 9.8
-   },
-   {
     "nome": "CASA",
     "stories": 2,
     "views_medio": 30.5,
@@ -895,24 +959,34 @@
     "saidas_pct": 4.9
    },
    {
-    "nome": "BELEZA",
+    "nome": "COZINHA",
     "stories": 5,
-    "views_medio": 28.8,
-    "alcance_medio": 20.0,
-    "views_total": 144,
+    "views_medio": 26.2,
+    "alcance_medio": 15.4,
+    "views_total": 131,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 7.9
+    "saidas_pct": 10.0
+   },
+   {
+    "nome": "BELEZA",
+    "stories": 7,
+    "views_medio": 24.0,
+    "alcance_medio": 17.1,
+    "views_total": 168,
+    "respostas": 0,
+    "visitas_perfil": 1,
+    "saidas_pct": 9.3
    },
    {
     "nome": "MODA",
-    "stories": 5,
-    "views_medio": 24.2,
-    "alcance_medio": 16.0,
-    "views_total": 121,
+    "stories": 7,
+    "views_medio": 21.0,
+    "alcance_medio": 14.3,
+    "views_total": 147,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 5.8
+    "saidas_pct": 6.8
    },
    {
     "nome": "TECH",
@@ -938,13 +1012,13 @@
    },
    {
     "nome": "oferta",
-    "stories": 17,
-    "views_medio": 27.6,
-    "alcance_medio": 17.4,
-    "views_total": 470,
+    "stories": 22,
+    "views_medio": 24.0,
+    "alcance_medio": 15.6,
+    "views_total": 528,
     "respostas": 0,
     "visitas_perfil": 2,
-    "saidas_pct": 7.0
+    "saidas_pct": 7.9
    }
   ],
   "menos_de_5": 0
