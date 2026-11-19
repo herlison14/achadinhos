@@ -5918,10 +5918,12 @@
    "postagens/2026-11-19-story-9e5741a0/01.jpg"
   ],
   "legenda": "Story: Jogo de potes herméticos Electrolux, 10 peças: R$ 80,41 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 189
+  "num": 189,
+  "ig_id": "17991394965092749",
+  "publicado_em": "2026-11-19 11:31"
  }
 ]
