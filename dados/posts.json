@@ -4172,11 +4172,13 @@
    "postagens/2026-11-19-story-52cd9c79/01.jpg"
   ],
   "legenda": "Story: Chinelo Mizuno Enerzy: R$ 179,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 108
+  "num": 108,
+  "ig_id": "18358996066169736",
+  "publicado_em": "2026-11-19 22:01"
  },
  {
   "id": "2026-11-20-story-d3cc439f",
