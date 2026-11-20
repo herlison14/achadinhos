@@ -4284,11 +4284,12 @@
    "postagens/2026-11-20-story-371a592a/01.jpg"
   ],
   "legenda": "Story: Pacote Meia Cano Médio Mizuno Basic 39-44 com 3 Pares: R$ 49,99 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "cancelado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 115
+  "num": 115,
+  "nota": "Preço vencido (conferido em 12/11); trocado por item conferido"
  },
  {
   "id": "2026-11-20-story-da358dda",
@@ -5985,5 +5986,46 @@
   "num": 190,
   "ig_id": "18180205954453306",
   "publicado_em": "2026-11-19 18:31"
+ },
+ {
+  "id": "2026-11-20-story-bab1a77b",
+  "data": "2026-11-20",
+  "hora": "13:55",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Camiseta Reserva Mini Brasa Pica-pau Bordado",
+  "produtos": [
+   "bab1a77b"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-bab1a77b/01.jpg"
+  ],
+  "legenda": "Story: Camiseta Reserva Mini Brasa Pica-pau Bordado: R$ 75,65 (conferido em 17/11/2026). Publicidade: links de afiliado.",
+  "status": "cancelado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA",
+  "num": 191,
+  "nota": "Criado fora da lista HORAS (13:55) pelo controle por engano; cancelado antes de sair"
+ },
+ {
+  "id": "2026-11-20-story-43ad2e36",
+  "data": "2026-11-20",
+  "hora": "15:15",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Regata Feminina Listrada Canelada, bege",
+  "produtos": [
+   "43ad2e36"
+  ],
+  "imagens": [
+   "postagens/2026-11-20-story-43ad2e36/01.jpg"
+  ],
+  "legenda": "Story: Regata Feminina Listrada Canelada, bege: R$ 39,99 (conferido em 17/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "MODA",
+  "num": 192
  }
 ]

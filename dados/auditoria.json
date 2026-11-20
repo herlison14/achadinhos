@@ -1,11 +1,17 @@
 {
- "gerado": "2026-11-20 07:24",
+ "gerado": "2026-11-20 13:54",
  "contagem": {
-  "ALTO": 5,
-  "INFO": 1,
-  "MEDIO": 11
+  "MEDIO": 12,
+  "ALTO": 4,
+  "INFO": 1
  },
  "achados": [
+  {
+   "nivel": "MEDIO",
+   "area": "publicação",
+   "texto": "2026-11-22-beleza-amazon está só 'planejado' para 2026-11-22 12:00 (não vai sair sozinho)",
+   "acao": "aprovar (agendado) ou cancelar"
+  },
   {
    "nivel": "ALTO",
    "area": "pré-voo",
@@ -16,12 +22,6 @@
    "nivel": "ALTO",
    "area": "pré-voo",
    "texto": "2026-11-22-story-d61d1607 (2026-11-22 18:30) vai ser BLOQUEADO: preço de d61d1607 conferido há 10 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-20-story-371a592a (2026-11-20 15:15) vai ser BLOQUEADO: preço de 371a592a conferido há 8 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
