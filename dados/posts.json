@@ -4216,11 +4216,13 @@
    "postagens/2026-11-20-story-91e11706/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Neo Vista 2: R$ 899,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 110
+  "num": 110,
+  "ig_id": "18149474413600657",
+  "publicado_em": "2026-11-20 08:51"
  },
  {
   "id": "2026-11-20-story-c234bf1b",
