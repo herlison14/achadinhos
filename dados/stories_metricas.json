@@ -743,10 +743,10 @@
     "63afc79e"
    ],
    "tema": "Story: Tênis Casual Mizuno Street Wind",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 11.8,
-   "views": 10,
-   "reach": 7,
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 17.1,
+   "views": 13,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -754,7 +754,7 @@
    "total_interactions": 1,
    "navegacao": {
     "tap_exit": 2,
-    "tap_forward": 7
+    "tap_forward": 10
    }
   },
   "2026-11-19-story-c72c7976": {
@@ -766,17 +766,18 @@
     "c72c7976"
    ],
    "tema": "Story: Escova Alisadora e Modeladora Infraliss be emotion",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 10.4,
-   "views": 9,
-   "reach": 7,
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 15.7,
+   "views": 13,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 7,
+    "tap_back": 1,
+    "tap_forward": 10,
     "swipe_forward": 1
    }
   },
@@ -789,18 +790,19 @@
     "86d11d02"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Wave Rebellion Flash 3",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 9.3,
-   "views": 8,
-   "reach": 7,
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 14.6,
+   "views": 11,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
+    "tap_back": 1,
     "tap_exit": 1,
-    "tap_forward": 6
+    "tap_forward": 8
    }
   },
   "2026-11-19-story-511ee732": {
@@ -812,17 +814,18 @@
     "511ee732"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Oracle",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 5.9,
-   "views": 7,
-   "reach": 6,
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 11.2,
+   "views": 10,
+   "reach": 8,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 6
+    "tap_back": 1,
+    "tap_forward": 8
    }
   },
   "2026-11-19-story-c7a62a9b": {
@@ -834,17 +837,18 @@
     "c7a62a9b"
    ],
    "tema": "Story: Tênis Casual Mizuno Edo Cross",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 3.9,
-   "views": 6,
-   "reach": 5,
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 9.2,
+   "views": 9,
+   "reach": 8,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 5
+    "tap_exit": 1,
+    "tap_forward": 7
    }
   },
   "2026-11-19-story-be2d8515": {
@@ -856,16 +860,18 @@
     "be2d8515"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Atlantis 2",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 2.4,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 7.7,
+   "views": 9,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 9
+   }
   },
   "2026-11-19-story-9e5741a0": {
    "publicado_em": "2026-11-19 11:31",
@@ -876,10 +882,10 @@
     "9e5741a0"
    ],
    "tema": "Story: Jogo de potes herméticos Electrolux, 10 peças",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 7.8,
-   "views": 7,
-   "reach": 6,
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 13.1,
+   "views": 10,
+   "reach": 8,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -887,7 +893,7 @@
    "total_interactions": 1,
    "navegacao": {
     "tap_exit": 1,
-    "tap_forward": 5
+    "tap_forward": 8
    }
   },
   "2026-11-19-story-93f49b8a": {
@@ -899,8 +905,50 @@
     "93f49b8a"
    ],
    "tema": "Story: Brinquedo Macaco Chalesco para Cães",
-   "lido_em": "2026-11-19 19:17",
-   "horas_no_ar": 0.8,
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 6.1,
+   "views": 8,
+   "reach": 7,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 6
+   }
+  },
+  "2026-11-19-story-8ae2e532": {
+   "publicado_em": "2026-11-19 20:21",
+   "hora": "20:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "8ae2e532"
+   ],
+   "tema": "Story: Tênis de Corrida Mizuno Wave Titan 3",
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 4.2,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-19-story-52cd9c79": {
+   "publicado_em": "2026-11-19 22:01",
+   "hora": "22:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "52cd9c79"
+   ],
+   "tema": "Story: Chinelo Mizuno Enerzy",
+   "lido_em": "2026-11-20 00:34",
+   "horas_no_ar": 2.6,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -911,7 +959,7 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-19 19:17",
+ "atualizado": "2026-11-20 00:34",
  "resumo": {
   "stories_com_leitura_final": 28,
   "por_dia": [
