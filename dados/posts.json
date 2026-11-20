@@ -4305,11 +4305,13 @@
    "postagens/2026-11-20-story-da358dda/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Goya: R$ 219,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 116
+  "num": 116,
+  "ig_id": "18081140597427033",
+  "publicado_em": "2026-11-20 16:51"
  },
  {
   "id": "2026-11-20-story-a4ba488f",
