@@ -4262,11 +4262,13 @@
    "postagens/2026-11-20-story-bd237ca8/01.jpg"
   ],
   "legenda": "Story: Camiseta de Corrida Mizuno Focus Stamp Masculina: R$ 179,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 114
+  "num": 114,
+  "ig_id": "17930747286430320",
+  "publicado_em": "2026-11-20 13:21"
  },
  {
   "id": "2026-11-20-story-371a592a",
