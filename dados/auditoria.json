@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-20 13:54",
+ "gerado": "2026-11-20 19:47",
  "contagem": {
   "MEDIO": 12,
   "ALTO": 4,
@@ -39,7 +39,7 @@
   {
    "nivel": "ALTO",
    "area": "preços",
-   "texto": "312 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "308 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -105,7 +105,7 @@
   {
    "nivel": "MEDIO",
    "area": "calendário",
-   "texto": "2026-11-22 sem post de produto, Reel",
+   "texto": "2026-11-22 sem post de produto",
    "acao": "completar a programação"
   }
  ]
