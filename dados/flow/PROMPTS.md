@@ -93,3 +93,62 @@ Base que vai em todo pedido ao agente do Flow (Veo 3.1 Lite, 9:16, 8 s, 10 créd
 ### Próximos (após renovar créditos às 23:27)
 - 9 lista da Black Friday: à noite, sala com luzinhas amarelas, mãos escrevem uma lista num caderno roxo no colo, celular ao lado com tela desfocada.
 - 10 sacolas na cama: sacolas de papel roxas e amarelas lisas sobre uma cama clara, mão pega uma delas, luz da manhã, câmera aproxima devagar.
+
+---
+
+## Lote mascote 3D — Black Friday + Natal, 15s cada, voz de criança (pedido do Herlison, 20/11/2026)
+
+Pipeline: igual ao de 15/11/2026 (`dados/mascote/LEIAME.md`) — aba **Personagens** do projeto Flow,
+digitar `@Bingu` no prompt (nunca descrever o personagem do zero), modelo **Veo 3.1 Lite**, 8s/cena,
+aprovar 1x por geração (nunca "Sempre aprovar"). 2 cenas por vídeo (~16s, arredonda pra "15s").
+Estilo 3D expressivo (não o fotorrealista dos outros Reels) — igual às cenas já testadas em 15/11.
+Áudio nativo do Veo: pedir explicitamente **voz de criança, aguda e animada** pro Binguinho falar a
+fala entre aspas. Ressalva já registrada: português não está na lista oficial de idiomas de fala do
+Veo 3.1 — confirmar com o Herlison se a narração saiu inteligível depois de baixar.
+Nada de preço, número, texto, logo ou nome de loja dentro da cena (entra depois via ffmpeg, igual
+aos outros Reels do mascote).
+
+### Vídeo BF-1 — "Contagem regressiva" (Black Friday 27/11/2026, faltam 7 dias)
+**Cena 1A:** `@Bingu pulando de alegria, segurando um calendário com uma página voando, fundo roxo
+escuro brilhante com confete dourado flutuando ao redor, expressão animada e surpresa. @Bingu fala
+com voz de criança, aguda e animada, em português: "Gente, a Black Friday já tá quase chegando!"`
+**Cena 1B:** `@Bingu com os dois polegares para cima, sacolas de compras genéricas lisas (roxas e
+amarelas, sem logo nenhum) flutuando ao redor, fundo roxo escuro com brilho. @Bingu fala com voz de
+criança, aguda e animada, em português: "Eu vou ficar de olho nos preços pra vocês, corre lá no
+link da bio!"`
+
+### Vídeo BF-2 — "Corre, mas confere"
+**Cena 2A:** `@Bingu correndo animado de um lado da cena, sacolas e caixas de presente lisas (sem
+logo) voando ao redor, fundo roxo escuro com brilho dourado, expressão de empolgação. @Bingu fala
+com voz de criança, aguda e animada, em português: "Corre, corre, a Black Friday chegou!"`
+**Cena 2B:** `@Bingu freando de repente, segurando uma lupa grande e olhando para uma etiqueta de
+preço em branco (sem nenhum número ou texto), expressão de atenção e cuidado, fundo roxo escuro.
+@Bingu fala com voz de criança, aguda e animada, em português: "Mas antes de comprar, espia se o
+preço é de verdade, hein!"`
+
+### Vídeo Natal-1 — "O Natal tá chegando"
+**Cena 3A:** `@Bingu usando um gorro de Papai Noel vermelho e branco, fundo roxo escuro decorado com
+luzes de Natal roxas e douradas penduradas e neve estilizada leve caindo, expressão alegre e doce.
+@Bingu fala com voz de criança, doce e animada, em português: "Ho ho ho, o Natal tá chegando!"`
+**Cena 3B:** `@Bingu embrulhando um presente com papel liso dourado e laço roxo, fundo com as mesmas
+luzes de Natal, expressão concentrada e feliz. @Bingu fala com voz de criança, doce e animada, em
+português: "Eu já separei uma surpresinha de oferta pra você, corre lá no link da bio!"`
+
+### Vídeo Natal-2 — "Presente surpresa"
+**Cena 4A:** `@Bingu sacudindo uma caixa de presente grande e lisa (dourada com laço roxo) perto do
+ouvido, curioso, fundo roxo escuro com uma árvore de Natal estilizada ao fundo (bolas roxas e
+douradas, sem estrela com texto). @Bingu fala com voz de criança, curiosa e animada, em português:
+"Será que tem uma surpresa boa aqui dentro?"`
+**Cena 4B:** `@Bingu abrindo a caixa, luz brilhante dourada saindo de dentro, expressão de surpresa e
+alegria, confete dourado caindo ao redor. @Bingu fala com voz de criança, animada e feliz, em
+português: "Oba! Essa aqui é pra você, feliz Natal!"`
+
+### Montagem (quando os 8 clipes chegarem)
+Igual ao Reel `2026-11-18-reel-mascote-linknabio`: concatenar as 2 cenas de cada vídeo (fade curto
+entre elas, `setsar=1` antes do concat pra evitar erro de SAR), pílula de marca no rodapé (overlay
+fixo), cartão final (logo, "ACHADINHOS DO BINGA", "Link na bio", "Publicidade: links de afiliado",
+"Vídeo gerado com IA"), 1 trilha contínua de `tools/reel_audio.py` só se a narração não sair boa (se
+sair boa, deixar só o áudio nativo do Veo, sem trilha por cima pra não embolar a fala). Registrar em
+`dados/posts.json` como `formato: "reel"`, `sem_preco: true`, 1 por dia em horários livres de Reel
+(ver `tools/reels_tema.py`, meta de 5/semana, slot 20:00 — escolher outros horários livres pra não
+empilhar 4 no mesmo dia).
