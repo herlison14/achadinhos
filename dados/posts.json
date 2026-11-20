@@ -4238,11 +4238,13 @@
    "postagens/2026-11-20-story-c234bf1b/01.jpg"
   ],
   "legenda": "Story: Boné Mizuno Prime: R$ 129,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 112
+  "num": 112,
+  "ig_id": "17918683467501076",
+  "publicado_em": "2026-11-20 10:01"
  },
  {
   "id": "2026-11-20-story-bd237ca8",
