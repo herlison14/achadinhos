@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-20 05:57",
+ "atualizado": "2026-11-20 15:02",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -658,17 +658,35 @@
      "data": "2026-11-20",
      "hora": "15:15",
      "tema": "Pacote Meia Cano Médio Mizuno Basic 39-44 com 3 Pares",
-     "status": "agendado",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-20-story-371a592a/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-43ad2e36",
+     "data": "2026-11-20",
+     "hora": "15:15",
+     "tema": "Regata Feminina Listrada Canelada, bege",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-43ad2e36/01.jpg"
+    },
+    {
+     "id": "2026-11-20-story-bab1a77b",
+     "data": "2026-11-20",
+     "hora": "13:55",
+     "tema": "Camiseta Reserva Mini Brasa Pica-pau Bordado",
+     "status": "cancelado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-20-story-bab1a77b/01.jpg"
     },
     {
      "id": "2026-11-20-story-bd237ca8",
      "data": "2026-11-20",
      "hora": "13:15",
      "tema": "Camiseta de Corrida Mizuno Focus Stamp Masculina",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 13:21",
      "img": "postagens/2026-11-20-story-bd237ca8/01.jpg"
     },
     {
@@ -676,8 +694,8 @@
      "data": "2026-11-20",
      "hora": "10:00",
      "tema": "Boné Mizuno Prime",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 10:01",
      "img": "postagens/2026-11-20-story-c234bf1b/01.jpg"
     },
     {
@@ -685,8 +703,8 @@
      "data": "2026-11-20",
      "hora": "08:45",
      "tema": "Tênis de Corrida Mizuno Neo Vista 2",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 08:51",
      "img": "postagens/2026-11-20-story-91e11706/01.jpg"
     },
     {
@@ -694,8 +712,8 @@
      "data": "2026-11-20",
      "hora": "07:30",
      "tema": "Tênis de Corrida Mizuno Wave Stratos 4",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 07:31",
      "img": "postagens/2026-11-20-story-d3cc439f/01.jpg"
     },
     {
@@ -1276,8 +1294,8 @@
      "data": "2026-11-20",
      "hora": "11:30",
      "tema": "Pisca-Pisca de Natal 100 LEDs 10 m USB com Bluetooth",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 11:31",
      "img": "postagens/2026-11-20-story-6ca76ce1/01.jpg"
     },
     {
