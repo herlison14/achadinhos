@@ -1,9 +1,9 @@
 {
- "gerado": "2026-11-19 20:11",
+ "gerado": "2026-11-20 07:24",
  "contagem": {
-  "ALTO": 6,
+  "ALTO": 5,
   "INFO": 1,
-  "MEDIO": 10
+  "MEDIO": 11
  },
  "achados": [
   {
@@ -39,7 +39,7 @@
   {
    "nivel": "ALTO",
    "area": "preços",
-   "texto": "297 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "312 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -103,10 +103,10 @@
    "acao": "completar a programação"
   },
   {
-   "nivel": "ALTO",
-   "area": "robôs",
-   "texto": "fluxo 'Instagram (publicador)' falhou 1 vez(es) nas últimas 26 h",
-   "acao": "abrir o log da execução"
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-22 sem post de produto, Reel",
+   "acao": "completar a programação"
   }
  ]
 }
