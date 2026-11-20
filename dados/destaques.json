@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-19 06:14",
+ "atualizado": "2026-11-20 05:57",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -113,7 +113,7 @@
      "data": "2026-11-19",
      "hora": "18:30",
      "tema": "Carregador 20W Turbo PD Tipo C para iPhone",
-     "status": "agendado",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-19-story-feb13ddd/01.jpg"
     },
@@ -703,8 +703,8 @@
      "data": "2026-11-19",
      "hora": "22:00",
      "tema": "Chinelo Mizuno Enerzy",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 22:01",
      "img": "postagens/2026-11-19-story-52cd9c79/01.jpg"
     },
     {
@@ -712,8 +712,8 @@
      "data": "2026-11-19",
      "hora": "20:15",
      "tema": "Tênis de Corrida Mizuno Wave Titan 3",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 20:21",
      "img": "postagens/2026-11-19-story-8ae2e532/01.jpg"
     },
     {
@@ -721,8 +721,8 @@
      "data": "2026-11-19",
      "hora": "16:45",
      "tema": "Tênis de Corrida Mizuno Atlantis 2",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 16:51",
      "img": "postagens/2026-11-19-story-be2d8515/01.jpg"
     },
     {
@@ -730,8 +730,8 @@
      "data": "2026-11-19",
      "hora": "15:15",
      "tema": "Tênis Casual Mizuno Edo Cross",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 15:21",
      "img": "postagens/2026-11-19-story-c7a62a9b/01.jpg"
     },
     {
@@ -739,8 +739,8 @@
      "data": "2026-11-19",
      "hora": "13:15",
      "tema": "Tênis de Corrida Mizuno Oracle",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 13:21",
      "img": "postagens/2026-11-19-story-511ee732/01.jpg"
     },
     {
@@ -748,8 +748,8 @@
      "data": "2026-11-19",
      "hora": "10:00",
      "tema": "Tênis de Corrida Mizuno Wave Rebellion Flash 3",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 10:01",
      "img": "postagens/2026-11-19-story-86d11d02/01.jpg"
     },
     {
@@ -757,8 +757,8 @@
      "data": "2026-11-19",
      "hora": "07:30",
      "tema": "Tênis Casual Mizuno Street Wind",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 07:31",
      "img": "postagens/2026-11-19-story-63afc79e/01.jpg"
     },
     {
@@ -879,8 +879,8 @@
      "data": "2026-11-19",
      "hora": "08:45",
      "tema": "Escova Alisadora e Modeladora Infraliss be emotion",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 08:51",
      "img": "postagens/2026-11-19-story-c72c7976/01.jpg"
     },
     {
@@ -1091,8 +1091,8 @@
      "data": "2026-11-19",
      "hora": "11:30",
      "tema": "Jogo de potes herméticos Electrolux, 10 peças",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-19 11:31",
      "img": "postagens/2026-11-19-story-9e5741a0/01.jpg"
     },
     {
@@ -1279,6 +1279,15 @@
      "status": "agendado",
      "publicado_em": null,
      "img": "postagens/2026-11-20-story-6ca76ce1/01.jpg"
+    },
+    {
+     "id": "2026-11-19-story-93f49b8a",
+     "data": "2026-11-19",
+     "hora": "18:30",
+     "tema": "Brinquedo Macaco Chalesco para Cães",
+     "status": "publicado",
+     "publicado_em": "2026-11-19 18:31",
+     "img": "postagens/2026-11-19-story-93f49b8a/01.jpg"
     },
     {
      "id": "2026-11-16-story-36c18bfb",
