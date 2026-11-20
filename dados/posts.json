@@ -4194,11 +4194,13 @@
    "postagens/2026-11-20-story-d3cc439f/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Wave Stratos 4: R$ 799,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 109
+  "num": 109,
+  "ig_id": "18349835611250585",
+  "publicado_em": "2026-11-20 07:31"
  },
  {
   "id": "2026-11-20-story-91e11706",
