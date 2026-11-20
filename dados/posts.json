@@ -4331,11 +4331,13 @@
    "postagens/2026-11-20-story-a4ba488f/01.jpg"
   ],
   "legenda": "Story: Tênis de Corrida Mizuno Neo Aura Knit: R$ 599,99 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 118
+  "num": 118,
+  "ig_id": "18143040484617982",
+  "publicado_em": "2026-11-20 20:21"
  },
  {
   "id": "2026-11-16-story-mascote-gratidao",
