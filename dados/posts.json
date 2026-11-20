@@ -3394,11 +3394,13 @@
    "postagens/2026-11-20-story-6ca76ce1/01.jpg"
   ],
   "legenda": "Story: Pisca-Pisca de Natal 100 LEDs 10 m USB com Bluetooth: R$ 39,90 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 113
+  "num": 113,
+  "ig_id": "18135324910788883",
+  "publicado_em": "2026-11-20 11:31"
  },
  {
   "id": "2026-11-20-story-dbfedfe4",
