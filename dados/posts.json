@@ -3416,11 +3416,13 @@
    "postagens/2026-11-20-story-dbfedfe4/01.jpg"
   ],
   "legenda": "Story: Multiprocessador Power Nutri Revolution Ichef: R$ 1.199,90 (conferido em 18/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 117
+  "num": 117,
+  "ig_id": "18137410297825725",
+  "publicado_em": "2026-11-20 18:31"
  },
  {
   "id": "2026-11-21-story-e4efde21",
