@@ -997,8 +997,8 @@
     "91e11706"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Neo Vista 2",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 15.4,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 24,
    "views": 16,
    "reach": 11,
    "replies": 0,
@@ -1021,19 +1021,20 @@
     "c234bf1b"
    ],
    "tema": "Story: Boné Mizuno Prime",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 14.3,
-   "views": 13,
-   "reach": 11,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 23.8,
+   "views": 18,
+   "reach": 15,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
+    "tap_back": 2,
+    "tap_forward": 14,
     "tap_exit": 1,
-    "tap_forward": 11,
-    "tap_back": 1
+    "swipe_forward": 1
    }
   },
   "2026-11-20-story-6ca76ce1": {
@@ -1045,19 +1046,19 @@
     "6ca76ce1"
    ],
    "tema": "Story: Pisca-Pisca de Natal 100 LEDs 10 m USB com Bluetooth",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 12.8,
-   "views": 12,
-   "reach": 10,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 22.3,
+   "views": 16,
+   "reach": 13,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 9,
+    "tap_forward": 12,
     "tap_exit": 1,
-    "tap_back": 1
+    "tap_back": 2
    }
   },
   "2026-11-20-story-dbfedfe4": {
@@ -1069,17 +1070,18 @@
     "dbfedfe4"
    ],
    "tema": "Story: Multiprocessador Power Nutri Revolution Ichef",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 5.8,
-   "views": 8,
-   "reach": 8,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 15.3,
+   "views": 11,
+   "reach": 11,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 0,
    "navegacao": {
-    "tap_forward": 8
+    "tap_back": 1,
+    "tap_forward": 10
    }
   },
   "2026-11-20-story-bd237ca8": {
@@ -1091,18 +1093,20 @@
     "bd237ca8"
    ],
    "tema": "Story: Camiseta de Corrida Mizuno Focus Stamp Masculina",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 10.9,
-   "views": 11,
-   "reach": 10,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 20.5,
+   "views": 15,
+   "reach": 13,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 2,
    "navegacao": {
+    "swipe_forward": 1,
     "tap_exit": 1,
-    "tap_forward": 9
+    "tap_forward": 11,
+    "tap_back": 1
    }
   },
   "2026-11-20-story-da358dda": {
@@ -1114,19 +1118,19 @@
     "da358dda"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Goya",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 7.4,
-   "views": 9,
-   "reach": 7,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 17.0,
+   "views": 12,
+   "reach": 10,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_exit": 1,
-    "tap_back": 1,
-    "tap_forward": 7
+    "tap_forward": 9,
+    "tap_back": 2,
+    "tap_exit": 1
    }
   },
   "2026-11-20-story-43ad2e36": {
@@ -1138,18 +1142,20 @@
     "43ad2e36"
    ],
    "tema": "Story: Regata Feminina Listrada Canelada, bege",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 8.9,
-   "views": 11,
-   "reach": 8,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 18.5,
+   "views": 15,
+   "reach": 11,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 9,
-    "swipe_forward": 1
+    "tap_exit": 1,
+    "tap_back": 1,
+    "swipe_forward": 1,
+    "tap_forward": 11
    }
   },
   "2026-11-20-story-a4ba488f": {
@@ -1161,19 +1167,20 @@
     "a4ba488f"
    ],
    "tema": "Story: Tênis de Corrida Mizuno Neo Aura Knit",
-   "lido_em": "2026-11-21 00:17",
-   "horas_no_ar": 3.9,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 13.5,
+   "views": 10,
+   "reach": 10,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 0,
+   "total_interactions": 1,
    "navegacao": {
     "tap_exit": 1,
     "swipe_forward": 1,
-    "tap_forward": 4
+    "tap_forward": 7,
+    "tap_back": 1
    }
   },
   "2026-11-20-story-74cb6b09": {
@@ -1185,8 +1192,56 @@
     "74cb6b09"
    ],
    "tema": "Story: Kit de 7 Cuecas Boxer Masculina de Algodão, colorido",
-   "lido_em": "2026-11-21 00:17",
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 11.8,
+   "views": 9,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 7,
+    "tap_exit": 1,
+    "tap_back": 1
+   }
+  },
+  "2026-11-21-story-2c5f9842": {
+   "publicado_em": "2026-11-21 07:31",
+   "hora": "07:30",
+   "area": "CASA",
+   "tipo": "oferta",
+   "produtos": [
+    "2c5f9842"
+   ],
+   "tema": "Story: Toyster Quebra-Cabeça Animais da Selva de Madeira",
+   "lido_em": "2026-11-21 09:48",
    "horas_no_ar": 2.3,
+   "views": 6,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_back": 1,
+    "tap_forward": 3,
+    "tap_exit": 2
+   }
+  },
+  "2026-11-21-story-1b9dcf7f": {
+   "publicado_em": "2026-11-21 08:51",
+   "hora": "08:45",
+   "area": "CASA",
+   "tipo": "oferta",
+   "produtos": [
+    "1b9dcf7f"
+   ],
+   "tema": "Story: Jogo de lençol casal queen em malha 100% algodão, 3 peças",
+   "lido_em": "2026-11-21 09:48",
+   "horas_no_ar": 1.0,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -1197,9 +1252,9 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-21 00:17",
+ "atualizado": "2026-11-21 09:48",
  "resumo": {
-  "stories_com_leitura_final": 36,
+  "stories_com_leitura_final": 41,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -1240,6 +1295,16 @@
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 9.4
+   },
+   {
+    "nome": "2026-11-20",
+    "stories": 5,
+    "views_medio": 16.0,
+    "alcance_medio": 12.6,
+    "views_total": 80,
+    "respostas": 0,
+    "visitas_perfil": 1,
+    "saidas_pct": 6.2
    }
   ],
   "por_hora": [
@@ -1255,12 +1320,12 @@
    },
    {
     "nome": "08:45",
-    "stories": 3,
-    "views_medio": 19.7,
-    "alcance_medio": 12.7,
-    "views_total": 59,
+    "stories": 4,
+    "views_medio": 18.8,
+    "alcance_medio": 12.2,
+    "views_total": 75,
     "respostas": 0,
-    "visitas_perfil": 0,
+    "visitas_perfil": 1,
     "saidas_pct": 6.5
    },
    {
@@ -1275,43 +1340,43 @@
    },
    {
     "nome": "10:00",
-    "stories": 4,
-    "views_medio": 23.2,
-    "alcance_medio": 14.5,
-    "views_total": 93,
+    "stories": 5,
+    "views_medio": 22.2,
+    "alcance_medio": 14.6,
+    "views_total": 111,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 13.5
+    "saidas_pct": 11.4
    },
    {
     "nome": "11:30",
-    "stories": 3,
-    "views_medio": 15.0,
-    "alcance_medio": 11.0,
-    "views_total": 45,
-    "respostas": 0,
-    "visitas_perfil": 0,
-    "saidas_pct": 8.9
-   },
-   {
-    "nome": "13:15",
     "stories": 4,
     "views_medio": 15.2,
-    "alcance_medio": 12.2,
+    "alcance_medio": 11.5,
     "views_total": 61,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 8.0
+    "saidas_pct": 8.2
+   },
+   {
+    "nome": "13:15",
+    "stories": 5,
+    "views_medio": 15.2,
+    "alcance_medio": 12.4,
+    "views_total": 76,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 7.7
    },
    {
     "nome": "15:15",
-    "stories": 4,
-    "views_medio": 18.5,
-    "alcance_medio": 13.2,
-    "views_total": 74,
+    "stories": 5,
+    "views_medio": 17.8,
+    "alcance_medio": 12.8,
+    "views_total": 89,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 6.8
+    "saidas_pct": 6.7
    },
    {
     "nome": "16:45",
@@ -1407,23 +1472,23 @@
    },
    {
     "nome": "CASA",
-    "stories": 4,
-    "views_medio": 19.8,
-    "alcance_medio": 12.2,
-    "views_total": 79,
+    "stories": 5,
+    "views_medio": 19.0,
+    "alcance_medio": 12.4,
+    "views_total": 95,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 4.9
+    "saidas_pct": 5.2
    },
    {
     "nome": "MODA",
-    "stories": 12,
-    "views_medio": 16.9,
-    "alcance_medio": 12.2,
-    "views_total": 203,
+    "stories": 16,
+    "views_medio": 16.7,
+    "alcance_medio": 12.3,
+    "views_total": 267,
     "respostas": 0,
-    "visitas_perfil": 0,
-    "saidas_pct": 7.1
+    "visitas_perfil": 1,
+    "saidas_pct": 6.9
    }
   ],
   "por_tipo": [
@@ -1439,13 +1504,13 @@
    },
    {
     "nome": "oferta",
-    "stories": 32,
-    "views_medio": 19.9,
-    "alcance_medio": 13.5,
-    "views_total": 636,
+    "stories": 37,
+    "views_medio": 19.4,
+    "alcance_medio": 13.4,
+    "views_total": 716,
     "respostas": 0,
-    "visitas_perfil": 2,
-    "saidas_pct": 8.0
+    "visitas_perfil": 3,
+    "saidas_pct": 7.8
    },
    {
     "nome": "sem_preco",
