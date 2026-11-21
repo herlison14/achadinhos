@@ -5009,11 +5009,13 @@
    "postagens/2026-11-21-story-8d4b2481/01.jpg"
   ],
   "legenda": "Story: Tênis On Running Cloudmonster 3 Feminino, bege: R$ 1.079,10 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 127
+  "num": 127,
+  "ig_id": "18123608374746204",
+  "publicado_em": "2026-11-21 20:21"
  },
  {
   "id": "2026-11-21-story-d560aa1e",
