@@ -1,9 +1,18 @@
 {
- "atualizado": "2026-11-20 15:02",
+ "atualizado": "2026-11-21 05:38",
  "areas": [
   {
    "nome": "OFERTAS",
    "stories": [
+    {
+     "id": "2026-11-23-story-mascote-bf-confere-v2",
+     "data": "2026-11-23",
+     "hora": "12:15",
+     "tema": "corre mas confere o preço (variação 2, mascote Binguinho, Black Friday)",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": ""
+    },
     {
      "id": "2026-11-21-story-site",
      "data": "2026-11-21",
@@ -631,8 +640,8 @@
      "data": "2026-11-20",
      "hora": "22:00",
      "tema": "Kit de 7 Cuecas Boxer Masculina de Algodão, colorido",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 22:01",
      "img": "postagens/2026-11-20-story-74cb6b09/01.jpg"
     },
     {
@@ -640,8 +649,8 @@
      "data": "2026-11-20",
      "hora": "20:15",
      "tema": "Tênis de Corrida Mizuno Neo Aura Knit",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 20:21",
      "img": "postagens/2026-11-20-story-a4ba488f/01.jpg"
     },
     {
@@ -649,8 +658,8 @@
      "data": "2026-11-20",
      "hora": "16:45",
      "tema": "Tênis de Corrida Mizuno Goya",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 16:51",
      "img": "postagens/2026-11-20-story-da358dda/01.jpg"
     },
     {
@@ -667,8 +676,8 @@
      "data": "2026-11-20",
      "hora": "15:15",
      "tema": "Regata Feminina Listrada Canelada, bege",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 15:21",
      "img": "postagens/2026-11-20-story-43ad2e36/01.jpg"
     },
     {
@@ -1285,8 +1294,8 @@
      "data": "2026-11-20",
      "hora": "18:30",
      "tema": "Multiprocessador Power Nutri Revolution Ichef",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-20 18:31",
      "img": "postagens/2026-11-20-story-dbfedfe4/01.jpg"
     },
     {

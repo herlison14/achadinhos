@@ -1,71 +1,71 @@
 {
- "atualizado": "2026-11-20",
+ "atualizado": "2026-11-21",
  "posts_analisados": 30,
  "por_formato": [
   {
    "nome": "reel",
    "posts": 8,
-   "alcance_medio": 36.6,
-   "views_medio": 60.6,
-   "nota_media": 42.1,
+   "alcance_medio": 41.9,
+   "views_medio": 68.9,
+   "nota_media": 49.0,
    "confiavel": true
   },
   {
    "nome": "carrossel",
    "posts": 22,
-   "alcance_medio": 17.5,
-   "views_medio": 57.0,
-   "nota_media": 19.4,
+   "alcance_medio": 17.6,
+   "views_medio": 57.4,
+   "nota_media": 19.3,
    "confiavel": true
   }
  ],
  "por_objetivo": [
   {
    "nome": "compartilhar",
-   "posts": 4,
-   "alcance_medio": 48.8,
-   "views_medio": 75.8,
-   "nota_media": 56.0,
+   "posts": 5,
+   "alcance_medio": 51.0,
+   "views_medio": 82.2,
+   "nota_media": 60.2,
    "confiavel": true
   },
   {
    "nome": "visita",
    "posts": 3,
-   "alcance_medio": 21.3,
-   "views_medio": 52.0,
-   "nota_media": 24.3,
+   "alcance_medio": 23.0,
+   "views_medio": 54.3,
+   "nota_media": 26.0,
    "confiavel": true
   },
   {
    "nome": "salvar",
-   "posts": 5,
-   "alcance_medio": 21.2,
-   "views_medio": 50.0,
-   "nota_media": 23.8,
+   "posts": 4,
+   "alcance_medio": 19.0,
+   "views_medio": 46.2,
+   "nota_media": 20.5,
    "confiavel": true
   },
   {
    "nome": "produto",
    "posts": 14,
-   "alcance_medio": 17.3,
-   "views_medio": 57.1,
-   "nota_media": 19.3,
+   "alcance_medio": 17.6,
+   "views_medio": 58.1,
+   "nota_media": 19.5,
    "confiavel": true
   },
   {
    "nome": "enviar",
    "posts": 2,
-   "alcance_medio": 18.0,
-   "views_medio": 62.0,
-   "nota_media": 20.0,
+   "alcance_medio": 19.0,
+   "views_medio": 63.0,
+   "nota_media": 21.0,
    "confiavel": false
   },
   {
    "nome": "comentar",
    "posts": 2,
-   "alcance_medio": 17.5,
-   "views_medio": 52.5,
-   "nota_media": 19.0,
+   "alcance_medio": 18.5,
+   "views_medio": 58.0,
+   "nota_media": 20.0,
    "confiavel": false
   }
  ],
@@ -73,97 +73,97 @@
   {
    "nome": "20:00",
    "posts": 7,
-   "alcance_medio": 22.6,
-   "views_medio": 42.0,
-   "nota_media": 25.7,
+   "alcance_medio": 26.3,
+   "views_medio": 45.9,
+   "nota_media": 30.1,
    "confiavel": true
   },
   {
    "nome": "19:00",
    "posts": 4,
-   "alcance_medio": 18.2,
-   "views_medio": 60.0,
-   "nota_media": 20.8,
+   "alcance_medio": 19.8,
+   "views_medio": 63.2,
+   "nota_media": 22.2,
    "confiavel": true
   },
   {
    "nome": "12:30",
    "posts": 5,
-   "alcance_medio": 17.8,
-   "views_medio": 56.0,
-   "nota_media": 20.4,
+   "alcance_medio": 19.2,
+   "views_medio": 57.8,
+   "nota_media": 21.8,
+   "confiavel": true
+  },
+  {
+   "nome": "21:00",
+   "posts": 3,
+   "alcance_medio": 17.3,
+   "views_medio": 60.0,
+   "nota_media": 18.7,
    "confiavel": true
   },
   {
    "nome": "21:57",
    "posts": 1,
-   "alcance_medio": 135.0,
-   "views_medio": 191.0,
-   "nota_media": 157.0,
-   "confiavel": false
-  },
-  {
-   "nome": "21:00",
-   "posts": 2,
-   "alcance_medio": 21.5,
-   "views_medio": 75.5,
-   "nota_media": 23.5,
-   "confiavel": false
-  },
-  {
-   "nome": "16:00",
-   "posts": 2,
-   "alcance_medio": 19.5,
-   "views_medio": 64.0,
-   "nota_media": 21.0,
+   "alcance_medio": 151.0,
+   "views_medio": 230.0,
+   "nota_media": 181.0,
    "confiavel": false
   },
   {
    "nome": "10:30",
    "posts": 2,
-   "alcance_medio": 17.5,
-   "views_medio": 52.5,
-   "nota_media": 19.5,
+   "alcance_medio": 18.5,
+   "views_medio": 54.5,
+   "nota_media": 20.5,
    "confiavel": false
   },
   {
    "nome": "14:30",
    "posts": 2,
-   "alcance_medio": 17.5,
-   "views_medio": 52.5,
-   "nota_media": 19.0,
-   "confiavel": false
-  },
-  {
-   "nome": "09:00",
-   "posts": 1,
-   "alcance_medio": 17.0,
-   "views_medio": 60.0,
-   "nota_media": 18.0,
-   "confiavel": false
-  },
-  {
-   "nome": "17:30",
-   "posts": 2,
-   "alcance_medio": 15.0,
-   "views_medio": 46.0,
-   "nota_media": 16.5,
+   "alcance_medio": 18.5,
+   "views_medio": 58.0,
+   "nota_media": 20.0,
    "confiavel": false
   },
   {
    "nome": "12:00",
    "posts": 1,
+   "alcance_medio": 16.0,
+   "views_medio": 52.0,
+   "nota_media": 17.0,
+   "confiavel": false
+  },
+  {
+   "nome": "09:00",
+   "posts": 2,
+   "alcance_medio": 15.5,
+   "views_medio": 56.0,
+   "nota_media": 16.5,
+   "confiavel": false
+  },
+  {
+   "nome": "17:30",
+   "posts": 1,
    "alcance_medio": 14.0,
-   "views_medio": 50.0,
-   "nota_media": 15.0,
+   "views_medio": 45.0,
+   "nota_media": 14.0,
+   "confiavel": false
+  },
+  {
+   "nome": "16:00",
+   "posts": 1,
+   "alcance_medio": 14.0,
+   "views_medio": 63.0,
+   "nota_media": 14.0,
    "confiavel": false
   },
   {
    "nome": "08:00",
    "posts": 1,
-   "alcance_medio": 10.0,
-   "views_medio": 42.0,
-   "nota_media": 10.0,
+   "alcance_medio": 11.0,
+   "views_medio": 44.0,
+   "nota_media": 11.0,
    "confiavel": false
   }
  ],
@@ -173,24 +173,32 @@
    "formato": "reel",
    "objetivo": "compartilhar",
    "hora": "21:57",
-   "alcance": 135,
-   "nota": 157
+   "alcance": 151,
+   "nota": 181
+  },
+  {
+   "id": "2026-11-20-reel-bf-pesquisa",
+   "formato": "reel",
+   "objetivo": "compartilhar",
+   "hora": "20:00",
+   "alcance": 39,
+   "nota": 48
   },
   {
    "id": "2026-11-16-reel-flow-entrega",
    "formato": "reel",
    "objetivo": "visita",
    "hora": "20:00",
-   "alcance": 31,
-   "nota": 36
+   "alcance": 32,
+   "nota": 37
   },
   {
    "id": "2026-11-14-reel-flow-comparar",
    "formato": "reel",
    "objetivo": "salvar",
    "hora": "20:00",
-   "alcance": 31,
-   "nota": 36
+   "alcance": 32,
+   "nota": 37
   },
   {
    "id": "2026-11-14-cabelo-barba-polishop",
@@ -199,26 +207,18 @@
    "hora": "19:00",
    "alcance": 26,
    "nota": 31
-  },
-  {
-   "id": "2026-11-12-brinquedos-meli",
-   "formato": "carrossel",
-   "objetivo": "produto",
-   "hora": "16:00",
-   "alcance": 28,
-   "nota": 31
   }
  ],
  "seguidores": {
-  "hoje": 367,
-  "ontem": 364,
-  "variacao_dia": 3,
-  "variacao_7_dias": 179
+  "hoje": 369,
+  "ontem": 367,
+  "variacao_dia": 2,
+  "variacao_7_dias": 176
  },
  "dicas": [
-  "Melhor formato até agora: reel (nota média 42.1 em 8 posts).",
-  "Melhor objetivo até agora: compartilhar (nota média 56.0 em 4 posts).",
-  "Melhor horário até agora: 20:00 (nota média 25.7 em 7 posts)."
+  "Melhor formato até agora: reel (nota média 49.0 em 8 posts).",
+  "Melhor objetivo até agora: compartilhar (nota média 60.2 em 5 posts).",
+  "Melhor horário até agora: 20:00 (nota média 30.1 em 7 posts)."
  ],
  "aviso": "Amostra pequena: tratar como pista, não como regra. Só números de desempenho, sem comissão."
 }
