@@ -4983,11 +4983,13 @@
    "postagens/2026-11-21-story-1bfc73dd/01.jpg"
   ],
   "legenda": "Story: Tênis Masculino Reserva Hunter, avelã: R$ 749,00 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 126
+  "num": 126,
+  "ig_id": "18110646329629986",
+  "publicado_em": "2026-11-21 16:51"
  },
  {
   "id": "2026-11-21-story-8d4b2481",
