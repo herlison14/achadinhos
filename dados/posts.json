@@ -4939,11 +4939,13 @@
    "postagens/2026-11-21-story-cb19390b/01.jpg"
   ],
   "legenda": "Story: Tênis Masculino Reserva Hunter, preto: R$ 749,00 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 122
+  "num": 122,
+  "ig_id": "18114984104616550",
+  "publicado_em": "2026-11-21 10:01"
  },
  {
   "id": "2026-11-21-story-2ef0e1eb",
