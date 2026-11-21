@@ -4961,11 +4961,13 @@
    "postagens/2026-11-21-story-d74c105e/01.jpg"
   ],
   "legenda": "Story: Short Praia com Bolsos, verde: R$ 89,99 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 125
+  "num": 125,
+  "ig_id": "18115192913172153",
+  "publicado_em": "2026-11-21 15:21"
  },
  {
   "id": "2026-11-21-story-1bfc73dd",
