@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-21 07:08",
+ "gerado": "2026-11-21 13:52",
  "contagem": {
   "MEDIO": 12,
-  "ALTO": 4,
+  "ALTO": 9,
   "INFO": 2
  },
  "achados": [
@@ -22,6 +22,36 @@
    "nivel": "ALTO",
    "area": "pré-voo",
    "texto": "2026-11-22-story-d61d1607 (2026-11-22 18:30) vai ser BLOQUEADO: preço de d61d1607 conferido há 10 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-4dcaa306 (2026-11-24 07:30) vai ser BLOQUEADO: preço de 4dcaa306 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-5b89e0f0 (2026-11-24 08:45) vai ser BLOQUEADO: preço de 5b89e0f0 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-e8d1b283 (2026-11-24 10:00) vai ser BLOQUEADO: preço de e8d1b283 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-47a6dcd5 (2026-11-24 11:30) vai ser BLOQUEADO: preço de 47a6dcd5 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-5788bf35 (2026-11-24 13:15) vai ser BLOQUEADO: preço de 5788bf35 conferido há 8 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
