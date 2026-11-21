@@ -4599,11 +4599,13 @@
    "postagens/2026-11-21-story-1b9dcf7f/01.jpg"
   ],
   "legenda": "Story: Jogo de lençol casal queen em malha 100% algodão, 3 peças: R$ 45,52 (conferido em 16/11/2026) — antes R$ 51,21, queda de 11% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 121
+  "num": 121,
+  "ig_id": "18128642917925077",
+  "publicado_em": "2026-11-21 08:51"
  },
  {
   "id": "2026-11-22-story-9605bf1d",
