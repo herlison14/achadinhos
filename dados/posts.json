@@ -4966,11 +4966,13 @@
    "postagens/2026-11-21-story-2ef0e1eb/01.jpg"
   ],
   "legenda": "Story: Tênis On Running Cloudrunner 3 Masculino, branco: R$ 899,10 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 124
+  "num": 124,
+  "ig_id": "17999388704926093",
+  "publicado_em": "2026-11-21 13:21"
  },
  {
   "id": "2026-11-21-story-d74c105e",
