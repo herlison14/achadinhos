@@ -3446,11 +3446,13 @@
    "postagens/2026-11-21-story-e4efde21/01.jpg"
   ],
   "legenda": "Story: Boneca Gi Neto que Fala 14 Frases 27 cm: R$ 155,19 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 123
+  "num": 123,
+  "ig_id": "17902372044680843",
+  "publicado_em": "2026-11-21 11:31"
  },
  {
   "id": "2026-11-21-story-site",
