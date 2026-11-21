@@ -8,8 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       tipo:
-        description: "ofertas, boasvindas ou whatsapp (gera cartões e textos em canal/whatsapp)"
+        description: "ofertas, boasvindas, whatsapp (gera cartões e textos em canal/whatsapp) ou espelho (reenvia ao canal um post do Instagram que não chegou)"
         default: "ofertas"
+      id:
+        description: "só para tipo espelho: id do post em dados/posts.json (ex.: 2026-11-18-look-cea)"
+        default: ""
 
 permissions:
   contents: write
@@ -30,12 +33,17 @@ jobs:
       - name: Gerar cartões para o canal do WhatsApp
         if: ${{ github.event.inputs.tipo == 'whatsapp' }}
         run: python3 tools/canais.py whatsapp-cartoes -n 4 --saida canal/whatsapp
+      - name: Espelhar um post do Instagram que não chegou ao canal
+        if: ${{ github.event.inputs.tipo == 'espelho' }}
+        env:
+          POST_ID: ${{ github.event.inputs.id }}
+        run: python3 tools/telegram_post.py --id "$POST_ID"
       - name: Enviar
-        if: ${{ github.event.inputs.tipo != 'whatsapp' }}
+        if: ${{ github.event.inputs.tipo != 'whatsapp' && github.event.inputs.tipo != 'espelho' }}
         run: python3 tools/canais.py enviar-telegram "${{ github.event.inputs.tipo || 'ofertas' }}" -n 3
       - name: Guardar o registro do que foi enviado
         run: |
           git config user.name "canal-telegram"
           git config user.email "actions@users.noreply.github.com"
-          git add dados/canais.json canal || true
+          git add dados/canais.json dados/posts.json canal || true
           git diff --cached --quiet || (git commit -m "Registro de envios ao canal" && git pull --rebase -q && git push -q)

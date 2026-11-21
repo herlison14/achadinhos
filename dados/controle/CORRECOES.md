@@ -53,6 +53,8 @@ correção nova, escreva aqui: a tarefa lê o arquivo inteiro antes de agir.
 | Sintoma | Correção automática |
 |---|---|
 | Post publicado depois de 12/11/2026 21:50 sem espelho no Telegram | Ler o passo "Espelhar no Telegram" do log. 401 = avisar (trocar `TELEGRAM_TOKEN`). Erro passageiro = reexecutar o job falho uma vez (tabela 4). |
+| Espelho falhou com `WEBPAGE_CURL_FAILED` (ou "failed to get HTTP URL content"): o Telegram não baixou uma imagem pelo link do GitHub e guarda essa falha em cache (repete em toda tentativa; não é token) | Desde 21/11/2026 o `telegram_post.py` reenvia sozinho com as imagens anexadas. Se mesmo assim o post ficou sem espelho (ou passou das 36 h da janela automática), disparar **uma vez** o reenvio só desse post: `gh api -X POST repos/herlison14/achadinhos/actions/workflows/canal-telegram.yml/dispatches -f ref=main -f 'inputs[tipo]=espelho' -f 'inputs[id]=ID'` e conferir após 2 min (grava `telegram_em`). O script recusa sozinho se algum preço tiver mais de 7 dias ou não bater com a legenda: nesse caso só avisar. |
+| Post sem espelho por erro passageiro há mais de 36 h (a janela automática do publicador já fechou) | Mesmo disparo `tipo=espelho` acima, uma vez por id. |
 | Rodada do WhatsApp vencida há mais de 3 h | Marcar `cancelado` com `nota` "Não publicada (Chrome desligado)". Nunca publicar no WhatsApp. |
 
 ### 6. Calendário e catálogo
