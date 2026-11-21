@@ -4913,11 +4913,13 @@
    "postagens/2026-11-20-story-74cb6b09/01.jpg"
   ],
   "legenda": "Story: Kit de 7 Cuecas Boxer Masculina de Algodão, colorido: R$ 119,99 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 119
+  "num": 119,
+  "ig_id": "18132747544845848",
+  "publicado_em": "2026-11-20 22:01"
  },
  {
   "id": "2026-11-21-story-cb19390b",
