@@ -1,8 +1,8 @@
 {
- "gerado": "2026-11-21 14:45",
+ "gerado": "2026-11-21 18:50",
  "contagem": {
   "MEDIO": 12,
-  "ALTO": 8,
+  "ALTO": 12,
   "INFO": 2
  },
  "achados": [
@@ -53,6 +53,30 @@
    "area": "pré-voo",
    "texto": "2026-11-24-story-5788bf35 (2026-11-24 13:15) vai ser BLOQUEADO: preço de 5788bf35 conferido há 8 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-247d459d (2026-11-24 15:15) vai ser BLOQUEADO: preço de 247d459d conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-5b7c3bd8 (2026-11-24 16:45) vai ser BLOQUEADO: preço de 5b7c3bd8 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-936e771c (2026-11-24 18:30) vai ser BLOQUEADO: preço de 936e771c conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "telegram",
+   "texto": "2026-11-18-look-cea publicado no Instagram em 2026-11-18 12:01 não chegou ao canal do Telegram",
+   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
   },
   {
    "nivel": "INFO",
