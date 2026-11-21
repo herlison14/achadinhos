@@ -1,0 +1,32 @@
+{
+ "atualizado": "2026-11-21 18:30",
+ "conta": "1454195468070817",
+ "periodo": "últimos 30 dias",
+ "total_gasto": 47.9,
+ "campanhas": [
+  {
+   "campanha": "Instagram post: Qual loja você mais usa pra...",
+   "status": "ACTIVE",
+   "objetivo": "LINK_CLICKS",
+   "gasto": 46.8,
+   "impressoes": 6462,
+   "cliques": 212,
+   "cliques_saida": 207,
+   "alcance": 5641,
+   "ctr": 3.28,
+   "cpc": 0.22
+  },
+  {
+   "campanha": "Instagram post: Amanhã é 11.11 ⏰ Não compra no...",
+   "status": "ACTIVE",
+   "objetivo": "LINK_CLICKS",
+   "gasto": 1.1,
+   "impressoes": 169,
+   "cliques": 5,
+   "cliques_saida": 5,
+   "alcance": 167,
+   "ctr": 2.96,
+   "cpc": 0.22
+  }
+ ]
+}
