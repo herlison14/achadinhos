@@ -16,8 +16,19 @@ Variável de ambiente: IG_TOKEN (mesma do publicador do Instagram). Opcional: AD
 o prefixo "act_"); sem ela, descobre sozinho a(s) conta(s) de anúncio ligada(s) ao token.
 
 Comandos:
-  python3 tools/anuncios.py status      confere o token e lista as contas de anúncio que ele alcança
-  python3 tools/anuncios.py coletar     lê o desempenho dos últimos 30 dias e grava dados/anuncios.json
+  python3 tools/anuncios.py status        confere o token e lista as contas de anúncio que ele alcança
+  python3 tools/anuncios.py coletar       lê o desempenho dos últimos 30 dias e grava dados/anuncios.json
+  python3 tools/anuncios.py concorrentes  lê a Biblioteca de Anúncios (pública) da Meta por termo e grava
+                                           dados/concorrentes.json — equivalente caseiro ao "competitor_ads_research"
+                                           do Adspirer (que exige plano pago), sem gastar nada.
+
+Biblioteca de Anúncios (endpoint oficial /ads_archive, dado público de transparência — qualquer anúncio ativo
+no Brasil, de qualquer página, pode ser consultado por termo; não precisa ser conta nossa nem concorrente
+"amigo"). Usa o MESMO IG_TOKEN (confirmado em 21/11/2026 que já tem `ads_read`, suficiente pra esse endpoint
+também). Variável de ambiente opcional: TERMOS_CONCORRENTES (separados por vírgula; padrão: "Promobit,Pelando",
+os 2 concorrentes reais com domínio próprio achados em pesquisa — ver CLAUDE.md). Fora do Brasil ou de anúncio
+político, a Meta não devolve gasto/impressão por esse endpoint (só texto do criativo, página anunciante e desde
+quando o anúncio está no ar) — é a mesma limitação que o Adspirer tinha prometido entregar (criativo, não gasto).
 """
 import json, os, sys, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timezone, timedelta
@@ -25,8 +36,10 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "dados" / "anuncios.json"
+SAIDA_CONCORRENTES = RAIZ / "dados" / "concorrentes.json"
 GRAPH = "https://graph.facebook.com/v21.0"
 BRT = timezone(timedelta(hours=-3))
+TERMOS_PADRAO = ["Promobit", "Pelando"]
 
 
 class ErroAPI(Exception):
@@ -145,9 +158,83 @@ def cmd_coletar():
     return 0
 
 
+def anuncios_do_termo(termo):
+    """Consulta a Biblioteca de Anúncios pública (/ads_archive) por um termo (nome de página/marca ou
+    palavra no criativo). Dado de transparência da Meta: não precisa de permissão especial além de
+    `ads_read`, e não gasta nada do limite de anúncios da própria conta."""
+    r = api("/ads_archive", {
+        "search_terms": termo,
+        "ad_reached_countries": "['BR']",
+        "ad_active_status": "ACTIVE",
+        "ad_type": "ALL",
+        "fields": "page_name,ad_snapshot_url,ad_creative_bodies,ad_creative_link_titles,"
+                  "ad_delivery_start_time,publisher_platforms",
+        "limit": 25,
+    })
+    return r.get("data", [])
+
+
+def cmd_concorrentes():
+    if not os.environ.get("IG_TOKEN"):
+        print("::error::IG_TOKEN não configurado (Settings > Secrets > Actions).")
+        return 3
+    termos_arg = sys.argv[2] if len(sys.argv) > 2 else os.environ.get("TERMOS_CONCORRENTES", "")
+    termos = [t.strip() for t in termos_arg.split(",") if t.strip()] or TERMOS_PADRAO
+    hoje = datetime.now(BRT).date()
+    por_termo = {}
+    vistos = set()
+    total = 0
+    for termo in termos:
+        try:
+            anuncios = anuncios_do_termo(termo)
+        except ErroAPI as e:
+            print("::warning::termo '%s' falhou (%s) — pulando." % (termo, e))
+            por_termo[termo] = {"erro": str(e), "anuncios": []}
+            continue
+        linhas = []
+        for a in anuncios:
+            aid = a.get("id")
+            if aid in vistos:
+                continue
+            vistos.add(aid)
+            inicio = a.get("ad_delivery_start_time", "")
+            dias_no_ar = None
+            if inicio:
+                try:
+                    dias_no_ar = (hoje - datetime.strptime(inicio, "%Y-%m-%d").date()).days
+                except ValueError:
+                    pass
+            corpo = (a.get("ad_creative_bodies") or [""])[0]
+            titulo = (a.get("ad_creative_link_titles") or [""])[0]
+            linhas.append({
+                "pagina": a.get("page_name", ""),
+                "titulo": titulo,
+                "texto": corpo[:200],
+                "no_ar_desde": inicio,
+                "dias_no_ar": dias_no_ar,
+                "plataformas": a.get("publisher_platforms", []),
+                "link_biblioteca": a.get("ad_snapshot_url", ""),
+            })
+        linhas.sort(key=lambda x: x.get("dias_no_ar") or 0, reverse=True)
+        por_termo[termo] = {"anuncios": linhas}
+        total += len(linhas)
+    dados = {
+        "atualizado": datetime.now(BRT).strftime("%Y-%m-%d %H:%M"),
+        "pais": "BR",
+        "fonte": "Biblioteca de Anúncios da Meta (/ads_archive, dado público de transparência)",
+        "aviso": "gasto e impressão não são devolvidos pela Meta pra anúncio comercial fora de "
+                 "contexto político/eleitoral ou UE — só criativo, página e tempo no ar.",
+        "termos": por_termo,
+    }
+    gravar(SAIDA_CONCORRENTES, dados)
+    print("%d termo(s) consultado(s), %d anúncio(s) ativo(s) encontrado(s) no total." % (len(termos), total))
+    return 0
+
+
 if __name__ == "__main__":
     if os.environ.get("IG_TOKEN"):
         # tira espaços/quebras/aspas que costumam vir junto ao colar o segredo no GitHub
         os.environ["IG_TOKEN"] = "".join(os.environ["IG_TOKEN"].split()).strip("\"'")
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
-    sys.exit({"status": cmd_status, "coletar": cmd_coletar}.get(cmd, lambda: sys.exit(__doc__))())
+    sys.exit({"status": cmd_status, "coletar": cmd_coletar,
+              "concorrentes": cmd_concorrentes}.get(cmd, lambda: sys.exit(__doc__))())
