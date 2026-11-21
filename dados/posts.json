@@ -4577,11 +4577,13 @@
    "postagens/2026-11-21-story-2c5f9842/01.jpg"
   ],
   "legenda": "Story: Toyster Quebra-Cabeça Animais da Selva de Madeira: R$ 27,46 (conferido em 20/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 120
+  "num": 120,
+  "ig_id": "18102353345415989",
+  "publicado_em": "2026-11-21 07:31"
  },
  {
   "id": "2026-11-21-story-1b9dcf7f",
