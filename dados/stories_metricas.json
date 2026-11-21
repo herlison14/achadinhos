@@ -1250,9 +1250,119 @@
    "profile_visits": "menos de 5",
    "total_interactions": "menos de 5",
    "navegacao": null
+  },
+  "2026-11-21-story-e4efde21": {
+   "publicado_em": "2026-11-21 15:11",
+   "hora": "11:30",
+   "area": "CASA",
+   "tipo": "oferta",
+   "produtos": [
+    "e4efde21"
+   ],
+   "tema": "Story: Boneca Gi Neto que Fala 14 Frases 27 cm",
+   "lido_em": "2026-11-21 17:36",
+   "horas_no_ar": 2.4,
+   "views": 9,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_back": 3,
+    "tap_forward": 6
+   }
+  },
+  "2026-11-21-story-cb19390b": {
+   "publicado_em": "2026-11-21 15:11",
+   "hora": "10:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "cb19390b"
+   ],
+   "tema": "Story: Tênis Masculino Reserva Hunter, preto",
+   "lido_em": "2026-11-21 17:36",
+   "horas_no_ar": 2.4,
+   "views": 8,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_back": 2,
+    "tap_forward": 5,
+    "tap_exit": 1
+   }
+  },
+  "2026-11-21-story-2ef0e1eb": {
+   "publicado_em": "2026-11-21 15:11",
+   "hora": "13:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "2ef0e1eb"
+   ],
+   "tema": "Story: Tênis On Running Cloudrunner 3 Masculino, branco",
+   "lido_em": "2026-11-21 17:36",
+   "horas_no_ar": 2.4,
+   "views": 8,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_forward": 5,
+    "tap_back": 2
+   }
+  },
+  "2026-11-21-story-d74c105e": {
+   "publicado_em": "2026-11-21 15:21",
+   "hora": "15:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "d74c105e"
+   ],
+   "tema": "Story: Short Praia com Bolsos, verde",
+   "lido_em": "2026-11-21 17:36",
+   "horas_no_ar": 2.3,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-21-story-1bfc73dd": {
+   "publicado_em": "2026-11-21 16:51",
+   "hora": "16:45",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "1bfc73dd"
+   ],
+   "tema": "Story: Tênis Masculino Reserva Hunter, avelã",
+   "lido_em": "2026-11-21 17:36",
+   "horas_no_ar": 0.8,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
   }
  },
- "atualizado": "2026-11-21 09:48",
+ "atualizado": "2026-11-21 17:36",
  "resumo": {
   "stories_com_leitura_final": 41,
   "por_dia": [
