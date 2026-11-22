@@ -5081,11 +5081,13 @@
    "postagens/2026-11-22-story-a397b5f8/01.jpg"
   ],
   "legenda": "Story: Tênis On Running Cloudsurfer 2 Masculino, branco: R$ 809,10 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 134
+  "num": 134,
+  "ig_id": "18019067705992628",
+  "publicado_em": "2026-11-22 13:21"
  },
  {
   "id": "2026-11-22-story-c83b7e64",
