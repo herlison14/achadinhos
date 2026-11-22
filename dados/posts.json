@@ -5128,11 +5128,13 @@
    "postagens/2026-11-22-story-b55039d4/01.jpg"
   ],
   "legenda": "Story: Hoodie Moletom Masculino, preto: R$ 369,00 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 136
+  "num": 136,
+  "ig_id": "17914024461574799",
+  "publicado_em": "2026-11-22 16:51"
  },
  {
   "id": "2026-11-22-story-56d44a85",
