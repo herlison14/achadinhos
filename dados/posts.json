@@ -5032,11 +5032,13 @@
    "postagens/2026-11-21-story-d560aa1e/01.jpg"
   ],
   "legenda": "Story: Camiseta Masculina de Algodão Básica Manga Curta, branca: R$ 49,99 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 128
+  "num": 128,
+  "ig_id": "18120024689089832",
+  "publicado_em": "2026-11-21 22:01"
  },
  {
   "id": "2026-11-22-story-88b10f4a",
