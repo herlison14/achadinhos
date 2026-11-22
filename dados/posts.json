@@ -6167,10 +6167,12 @@
    "postagens/2026-11-22-story-e1ac29dd/01.jpg"
   ],
   "legenda": "Story: Principia Kit Dupla Diária: Creme Hidratante + Protetor Solar FPS 60: R$ 70,40 (conferido em 20/11/2026) — antes R$ 74,80, queda de 6% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
-  "num": 193
+  "num": 193,
+  "ig_id": "18166267519433825",
+  "publicado_em": "2026-11-22 11:31"
  }
 ]
