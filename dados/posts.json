@@ -4628,11 +4628,13 @@
    "postagens/2026-11-22-story-1bdb46d2/01.jpg"
   ],
   "legenda": "Story: 4 potes de vidro herméticos para marmita 640 ml, 4 travas: R$ 59,28 (conferido em 16/11/2026) — antes R$ 62,43, queda de 5% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 130
+  "num": 130,
+  "ig_id": "18116629055122561",
+  "publicado_em": "2026-11-22 08:51"
  },
  {
   "id": "2026-11-23-story-c921991d",
