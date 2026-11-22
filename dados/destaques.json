@@ -1,25 +1,16 @@
 {
- "atualizado": "2026-11-21 05:38",
+ "atualizado": "2026-11-22 05:35",
  "areas": [
   {
    "nome": "OFERTAS",
    "stories": [
     {
-     "id": "2026-11-23-story-mascote-bf-confere-v2",
-     "data": "2026-11-23",
-     "hora": "12:15",
-     "tema": "corre mas confere o preço (variação 2, mascote Binguinho, Black Friday)",
-     "status": "agendado",
-     "publicado_em": null,
-     "img": ""
-    },
-    {
      "id": "2026-11-21-story-site",
      "data": "2026-11-21",
      "hora": "18:30",
      "tema": "preço com data de conferência",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 18:31",
      "img": "postagens/2026-11-21-story-site/01.jpg"
     },
     {
@@ -586,8 +577,8 @@
      "data": "2026-11-21",
      "hora": "22:00",
      "tema": "Camiseta Masculina de Algodão Básica Manga Curta, branca",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 22:01",
      "img": "postagens/2026-11-21-story-d560aa1e/01.jpg"
     },
     {
@@ -595,8 +586,8 @@
      "data": "2026-11-21",
      "hora": "20:15",
      "tema": "Tênis On Running Cloudmonster 3 Feminino, bege",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 20:21",
      "img": "postagens/2026-11-21-story-8d4b2481/01.jpg"
     },
     {
@@ -604,8 +595,8 @@
      "data": "2026-11-21",
      "hora": "16:45",
      "tema": "Tênis Masculino Reserva Hunter, avelã",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 16:51",
      "img": "postagens/2026-11-21-story-1bfc73dd/01.jpg"
     },
     {
@@ -613,8 +604,8 @@
      "data": "2026-11-21",
      "hora": "15:15",
      "tema": "Short Praia com Bolsos, verde",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 15:21",
      "img": "postagens/2026-11-21-story-d74c105e/01.jpg"
     },
     {
@@ -622,8 +613,8 @@
      "data": "2026-11-21",
      "hora": "13:15",
      "tema": "Tênis On Running Cloudrunner 3 Masculino, branco",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 15:11",
      "img": "postagens/2026-11-21-story-2ef0e1eb/01.jpg"
     },
     {
@@ -631,8 +622,8 @@
      "data": "2026-11-21",
      "hora": "10:00",
      "tema": "Tênis Masculino Reserva Hunter, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 15:11",
      "img": "postagens/2026-11-21-story-cb19390b/01.jpg"
     },
     {
@@ -640,8 +631,8 @@
      "data": "2026-11-20",
      "hora": "22:00",
      "tema": "Kit de 7 Cuecas Boxer Masculina de Algodão, colorido",
-     "status": "publicado",
-     "publicado_em": "2026-11-20 22:01",
+     "status": "bloqueado",
+     "publicado_em": null,
      "img": "postagens/2026-11-20-story-74cb6b09/01.jpg"
     },
     {
@@ -649,8 +640,8 @@
      "data": "2026-11-20",
      "hora": "20:15",
      "tema": "Tênis de Corrida Mizuno Neo Aura Knit",
-     "status": "publicado",
-     "publicado_em": "2026-11-20 20:21",
+     "status": "bloqueado",
+     "publicado_em": null,
      "img": "postagens/2026-11-20-story-a4ba488f/01.jpg"
     },
     {
@@ -658,8 +649,8 @@
      "data": "2026-11-20",
      "hora": "16:45",
      "tema": "Tênis de Corrida Mizuno Goya",
-     "status": "publicado",
-     "publicado_em": "2026-11-20 16:51",
+     "status": "bloqueado",
+     "publicado_em": null,
      "img": "postagens/2026-11-20-story-da358dda/01.jpg"
     },
     {
@@ -676,8 +667,8 @@
      "data": "2026-11-20",
      "hora": "15:15",
      "tema": "Regata Feminina Listrada Canelada, bege",
-     "status": "publicado",
-     "publicado_em": "2026-11-20 15:21",
+     "status": "bloqueado",
+     "publicado_em": null,
      "img": "postagens/2026-11-20-story-43ad2e36/01.jpg"
     },
     {
@@ -897,9 +888,18 @@
      "data": "2026-11-22",
      "hora": "11:30",
      "tema": "Kit Secador Nutrah be emotion e Prancha Shine Nutrah",
-     "status": "agendado",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-22-story-a0a0c7b8/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-e1ac29dd",
+     "data": "2026-11-22",
+     "hora": "11:30",
+     "tema": "Principia Kit Dupla Diária: Creme Hidratante + Protetor Sola",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-22-story-e1ac29dd/01.jpg"
     },
     {
      "id": "2026-11-19-story-c72c7976",
@@ -1267,8 +1267,8 @@
      "data": "2026-11-21",
      "hora": "11:30",
      "tema": "Boneca Gi Neto que Fala 14 Frases 27 cm",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-21 15:11",
      "img": "postagens/2026-11-21-story-e4efde21/01.jpg"
     },
     {
@@ -1276,7 +1276,7 @@
      "data": "2026-11-21",
      "hora": "08:45",
      "tema": "Jogo de lençol casal queen em malha 100% algodão, 3 peças",
-     "status": "agendado",
+     "status": "bloqueado",
      "publicado_em": null,
      "img": "postagens/2026-11-21-story-1b9dcf7f/01.jpg"
     },
@@ -1285,7 +1285,7 @@
      "data": "2026-11-21",
      "hora": "07:30",
      "tema": "Toyster Quebra-Cabeça Animais da Selva de Madeira",
-     "status": "agendado",
+     "status": "bloqueado",
      "publicado_em": null,
      "img": "postagens/2026-11-21-story-2c5f9842/01.jpg"
     },
@@ -1294,8 +1294,8 @@
      "data": "2026-11-20",
      "hora": "18:30",
      "tema": "Multiprocessador Power Nutri Revolution Ichef",
-     "status": "publicado",
-     "publicado_em": "2026-11-20 18:31",
+     "status": "bloqueado",
+     "publicado_em": null,
      "img": "postagens/2026-11-20-story-dbfedfe4/01.jpg"
     },
     {

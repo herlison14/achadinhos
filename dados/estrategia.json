@@ -1,21 +1,21 @@
 {
- "atualizado": "2026-11-21",
+ "atualizado": "2026-11-22",
  "posts_analisados": 30,
  "por_formato": [
   {
    "nome": "reel",
-   "posts": 8,
-   "alcance_medio": 41.9,
-   "views_medio": 68.9,
-   "nota_media": 49.0,
+   "posts": 9,
+   "alcance_medio": 37.2,
+   "views_medio": 63.7,
+   "nota_media": 43.2,
    "confiavel": true
   },
   {
    "nome": "carrossel",
-   "posts": 22,
-   "alcance_medio": 17.6,
-   "views_medio": 57.4,
-   "nota_media": 19.3,
+   "posts": 21,
+   "alcance_medio": 18.2,
+   "views_medio": 59.9,
+   "nota_media": 20.0,
    "confiavel": true
   }
  ],
@@ -23,40 +23,40 @@
   {
    "nome": "compartilhar",
    "posts": 5,
-   "alcance_medio": 51.0,
-   "views_medio": 82.2,
-   "nota_media": 60.2,
+   "alcance_medio": 46.2,
+   "views_medio": 76.2,
+   "nota_media": 54.0,
    "confiavel": true
   },
   {
    "nome": "visita",
    "posts": 3,
-   "alcance_medio": 23.0,
-   "views_medio": 54.3,
-   "nota_media": 26.0,
+   "alcance_medio": 23.3,
+   "views_medio": 54.7,
+   "nota_media": 26.3,
    "confiavel": true
   },
   {
    "nome": "salvar",
    "posts": 4,
-   "alcance_medio": 19.0,
-   "views_medio": 46.2,
-   "nota_media": 20.5,
+   "alcance_medio": 22.8,
+   "views_medio": 52.2,
+   "nota_media": 25.2,
    "confiavel": true
   },
   {
    "nome": "produto",
    "posts": 14,
-   "alcance_medio": 17.6,
-   "views_medio": 58.1,
-   "nota_media": 19.5,
+   "alcance_medio": 17.9,
+   "views_medio": 59.5,
+   "nota_media": 19.8,
    "confiavel": true
   },
   {
    "nome": "enviar",
    "posts": 2,
    "alcance_medio": 19.0,
-   "views_medio": 63.0,
+   "views_medio": 63.5,
    "nota_media": 21.0,
    "confiavel": false
   },
@@ -72,49 +72,49 @@
  "por_hora": [
   {
    "nome": "20:00",
-   "posts": 7,
-   "alcance_medio": 26.3,
-   "views_medio": 45.9,
-   "nota_media": 30.1,
+   "posts": 8,
+   "alcance_medio": 22.9,
+   "views_medio": 42.8,
+   "nota_media": 25.9,
    "confiavel": true
   },
   {
    "nome": "19:00",
    "posts": 4,
    "alcance_medio": 19.8,
-   "views_medio": 63.2,
+   "views_medio": 63.8,
    "nota_media": 22.2,
    "confiavel": true
   },
   {
    "nome": "12:30",
    "posts": 5,
-   "alcance_medio": 19.2,
-   "views_medio": 57.8,
-   "nota_media": 21.8,
-   "confiavel": true
-  },
-  {
-   "nome": "21:00",
-   "posts": 3,
-   "alcance_medio": 17.3,
-   "views_medio": 60.0,
-   "nota_media": 18.7,
+   "alcance_medio": 19.6,
+   "views_medio": 59.2,
+   "nota_media": 22.2,
    "confiavel": true
   },
   {
    "nome": "21:57",
    "posts": 1,
-   "alcance_medio": 151.0,
-   "views_medio": 230.0,
-   "nota_media": 181.0,
+   "alcance_medio": 152.0,
+   "views_medio": 231.0,
+   "nota_media": 182.0,
+   "confiavel": false
+  },
+  {
+   "nome": "21:00",
+   "posts": 2,
+   "alcance_medio": 22.0,
+   "views_medio": 76.5,
+   "nota_media": 24.0,
    "confiavel": false
   },
   {
    "nome": "10:30",
    "posts": 2,
    "alcance_medio": 18.5,
-   "views_medio": 54.5,
+   "views_medio": 55.0,
    "nota_media": 20.5,
    "confiavel": false
   },
@@ -130,7 +130,7 @@
    "nome": "12:00",
    "posts": 1,
    "alcance_medio": 16.0,
-   "views_medio": 52.0,
+   "views_medio": 55.0,
    "nota_media": 17.0,
    "confiavel": false
   },
@@ -138,8 +138,16 @@
    "nome": "09:00",
    "posts": 2,
    "alcance_medio": 15.5,
-   "views_medio": 56.0,
+   "views_medio": 56.5,
    "nota_media": 16.5,
+   "confiavel": false
+  },
+  {
+   "nome": "16:00",
+   "posts": 1,
+   "alcance_medio": 16.0,
+   "views_medio": 70.0,
+   "nota_media": 16.0,
    "confiavel": false
   },
   {
@@ -147,14 +155,6 @@
    "posts": 1,
    "alcance_medio": 14.0,
    "views_medio": 45.0,
-   "nota_media": 14.0,
-   "confiavel": false
-  },
-  {
-   "nome": "16:00",
-   "posts": 1,
-   "alcance_medio": 14.0,
-   "views_medio": 63.0,
    "nota_media": 14.0,
    "confiavel": false
   },
@@ -173,32 +173,32 @@
    "formato": "reel",
    "objetivo": "compartilhar",
    "hora": "21:57",
-   "alcance": 151,
-   "nota": 181
-  },
-  {
-   "id": "2026-11-20-reel-bf-pesquisa",
-   "formato": "reel",
-   "objetivo": "compartilhar",
-   "hora": "20:00",
-   "alcance": 39,
-   "nota": 48
+   "alcance": 152,
+   "nota": 182
   },
   {
    "id": "2026-11-16-reel-flow-entrega",
    "formato": "reel",
    "objetivo": "visita",
    "hora": "20:00",
-   "alcance": 32,
-   "nota": 37
+   "alcance": 33,
+   "nota": 38
   },
   {
    "id": "2026-11-14-reel-flow-comparar",
    "formato": "reel",
    "objetivo": "salvar",
    "hora": "20:00",
-   "alcance": 32,
-   "nota": 37
+   "alcance": 33,
+   "nota": 38
+  },
+  {
+   "id": "2026-11-13-reel-flow-presentes",
+   "formato": "reel",
+   "objetivo": "compartilhar",
+   "hora": "20:00",
+   "alcance": 29,
+   "nota": 33
   },
   {
    "id": "2026-11-14-cabelo-barba-polishop",
@@ -210,15 +210,15 @@
   }
  ],
  "seguidores": {
-  "hoje": 369,
-  "ontem": 367,
-  "variacao_dia": 2,
-  "variacao_7_dias": 176
+  "hoje": 417,
+  "ontem": 369,
+  "variacao_dia": 48,
+  "variacao_7_dias": 141
  },
  "dicas": [
-  "Melhor formato até agora: reel (nota média 49.0 em 8 posts).",
-  "Melhor objetivo até agora: compartilhar (nota média 60.2 em 5 posts).",
-  "Melhor horário até agora: 20:00 (nota média 30.1 em 7 posts)."
+  "Melhor formato até agora: reel (nota média 43.2 em 9 posts).",
+  "Melhor objetivo até agora: compartilhar (nota média 54.0 em 5 posts).",
+  "Melhor horário até agora: 20:00 (nota média 25.9 em 8 posts)."
  ],
  "aviso": "Amostra pequena: tratar como pista, não como regra. Só números de desempenho, sem comissão."
 }
