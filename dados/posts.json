@@ -4606,11 +4606,13 @@
    "postagens/2026-11-22-story-9605bf1d/01.jpg"
   ],
   "legenda": "Story: Carrinho organizador multiuso 3 andares com rodinhas: R$ 87,97 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 129
+  "num": 129,
+  "ig_id": "18123841573971069",
+  "publicado_em": "2026-11-22 07:31"
  },
  {
   "id": "2026-11-22-story-1bdb46d2",
