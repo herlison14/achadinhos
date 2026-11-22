@@ -5059,11 +5059,13 @@
    "postagens/2026-11-22-story-88b10f4a/01.jpg"
   ],
   "legenda": "Story: Suéter Moletom Masculino, branco: R$ 349,00 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 131
+  "num": 131,
+  "ig_id": "18275894914306522",
+  "publicado_em": "2026-11-22 10:01"
  },
  {
   "id": "2026-11-22-story-a397b5f8",
