@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-21 23:53",
+ "gerado": "2026-11-22 07:13",
  "contagem": {
   "MEDIO": 12,
   "ALTO": 12,
@@ -87,7 +87,7 @@
   {
    "nivel": "ALTO",
    "area": "preços",
-   "texto": "308 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "312 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -147,12 +147,6 @@
   {
    "nivel": "INFO",
    "area": "calendário",
-   "texto": "2026-11-21 sem post de produto",
-   "acao": "completar a programação"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
    "texto": "2026-11-22 sem post de produto",
    "acao": "completar a programação"
   },
@@ -160,6 +154,12 @@
    "nivel": "MEDIO",
    "area": "calendário",
    "texto": "2026-11-23 sem post de produto, crescimento",
+   "acao": "completar a programação"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-24 sem post de produto, crescimento",
    "acao": "completar a programação"
   }
  ]
