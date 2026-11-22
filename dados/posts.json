@@ -5107,11 +5107,12 @@
    "postagens/2026-11-22-story-c83b7e64/01.jpg"
   ],
   "legenda": "Story: Calça Chino Carrot de Alfaiataria Masculina, preta: R$ 179,99 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "erro",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 135
+  "num": 135,
+  "nota": "HTTP 400 Media ID is not available"
  },
  {
   "id": "2026-11-22-story-b55039d4",
