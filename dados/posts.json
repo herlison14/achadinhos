@@ -3488,11 +3488,12 @@
    "postagens/2026-11-22-story-d61d1607/01.jpg"
   ],
   "legenda": "Story: Polishop Ultra Hand Steamer: R$ 499,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "cancelado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "CASA",
-  "num": 137
+  "num": 137,
+  "nota": "Preço vencido (conferido em 12/11); trocado por item conferido"
  },
  {
   "id": "2026-11-16-story-24ea25ae",
@@ -6176,5 +6177,25 @@
   "num": 193,
   "ig_id": "18166267519433825",
   "publicado_em": "2026-11-22 11:31"
+ },
+ {
+  "id": "2026-11-22-story-16b683b6",
+  "data": "2026-11-22",
+  "hora": "18:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Kit Hidratante Facial L'Oréal Revitalift Hialurônico Dia + N",
+  "produtos": [
+   "16b683b6"
+  ],
+  "imagens": [
+   "postagens/2026-11-22-story-16b683b6/01.jpg"
+  ],
+  "legenda": "Story: Kit Hidratante Facial L'Oréal Revitalift Hialurônico Dia + Noite: R$ 73,05 (conferido em 20/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA",
+  "num": 194
  }
 ]
