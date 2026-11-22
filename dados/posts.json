@@ -3467,11 +3467,12 @@
    "postagens/2026-11-22-story-a0a0c7b8/01.jpg"
   ],
   "legenda": "Story: Kit Secador Nutrah be emotion e Prancha Shine Nutrah: R$ 799,90 (conferido em 12/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "cancelado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
-  "num": 132
+  "num": 132,
+  "nota": "Preço vencido (conferido em 12/11); trocado por item conferido"
  },
  {
   "id": "2026-11-22-story-d61d1607",
@@ -6145,5 +6146,25 @@
   "status": "agendado",
   "video": "postagens/2026-11-29-reel-mascote-natal-gorro/reel.mp4",
   "legenda": "Já tem presente separado pra você! 🎅🎁\n\nAcesse o link na bio e confere as ofertas de Natal com preço certinho.\n\nVídeo gerado com IA.\n\nPublicidade: links de afiliado.\n\n#achadinhos #natal #linknabio #presentedenatal"
+ },
+ {
+  "id": "2026-11-22-story-e1ac29dd",
+  "data": "2026-11-22",
+  "hora": "11:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Principia Kit Dupla Diária: Creme Hidratante + Protetor Sola",
+  "produtos": [
+   "e1ac29dd"
+  ],
+  "imagens": [
+   "postagens/2026-11-22-story-e1ac29dd/01.jpg"
+  ],
+  "legenda": "Story: Principia Kit Dupla Diária: Creme Hidratante + Protetor Solar FPS 60: R$ 70,40 (conferido em 20/11/2026) — antes R$ 74,80, queda de 6% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA",
+  "num": 193
  }
 ]

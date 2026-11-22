@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-21 18:50",
+ "gerado": "2026-11-21 23:53",
  "contagem": {
   "MEDIO": 12,
   "ALTO": 12,
@@ -11,12 +11,6 @@
    "area": "publicação",
    "texto": "2026-11-22-beleza-amazon está só 'planejado' para 2026-11-22 12:00 (não vai sair sozinho)",
    "acao": "aprovar (agendado) ou cancelar"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-22-story-a0a0c7b8 (2026-11-22 11:30) vai ser BLOQUEADO: preço de a0a0c7b8 conferido há 10 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
    "nivel": "ALTO",
@@ -74,9 +68,15 @@
   },
   {
    "nivel": "ALTO",
-   "area": "telegram",
-   "texto": "2026-11-18-look-cea publicado no Instagram em 2026-11-18 12:01 não chegou ao canal do Telegram",
-   "acao": "ver o passo 'Espelhar no Telegram' do publicador (HTTP 401 = TELEGRAM_TOKEN do GitHub inválido)"
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-52318df4 (2026-11-24 20:15) vai ser BLOQUEADO: preço de 52318df4 conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-24-story-843ee78a (2026-11-24 22:00) vai ser BLOQUEADO: preço de 843ee78a conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
    "nivel": "INFO",
