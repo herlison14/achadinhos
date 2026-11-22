@@ -1353,8 +1353,8 @@
     "1bfc73dd"
    ],
    "tema": "Story: Tênis Masculino Reserva Hunter, avelã",
-   "lido_em": "2026-11-22 09:42",
-   "horas_no_ar": 16.9,
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 24,
    "views": 8,
    "reach": 8,
    "replies": 0,
@@ -1374,17 +1374,18 @@
    "tipo": "sem_preco",
    "produtos": [],
    "tema": "Story: preço com data de conferência",
-   "lido_em": "2026-11-22 09:42",
-   "horas_no_ar": 15.2,
-   "views": 8,
-   "reach": 8,
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 23.2,
+   "views": 13,
+   "reach": 12,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 8
+    "tap_forward": 12,
+    "tap_back": 1
    }
   },
   "2026-11-21-story-8d4b2481": {
@@ -1396,10 +1397,10 @@
     "8d4b2481"
    ],
    "tema": "Story: Tênis On Running Cloudmonster 3 Feminino, bege",
-   "lido_em": "2026-11-22 09:42",
-   "horas_no_ar": 13.4,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 21.4,
+   "views": 10,
+   "reach": 10,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -1407,7 +1408,7 @@
    "total_interactions": 1,
    "navegacao": {
     "swipe_forward": 1,
-    "tap_forward": 4,
+    "tap_forward": 8,
     "tap_exit": 1
    }
   },
@@ -1420,17 +1421,17 @@
     "d560aa1e"
    ],
    "tema": "Story: Camiseta Masculina de Algodão Básica Manga Curta, branca",
-   "lido_em": "2026-11-22 09:42",
-   "horas_no_ar": 11.7,
-   "views": 8,
-   "reach": 6,
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 19.7,
+   "views": 12,
+   "reach": 10,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 7
+    "tap_forward": 11
    }
   },
   "2026-11-22-story-9605bf1d": {
@@ -1442,16 +1443,20 @@
     "9605bf1d"
    ],
    "tema": "Story: Carrinho organizador multiuso 3 andares com rodinhas",
-   "lido_em": "2026-11-22 09:42",
-   "horas_no_ar": 2.2,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 10.2,
+   "views": 11,
+   "reach": 10,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_exit": 1,
+    "tap_forward": 9,
+    "swipe_forward": 1
+   }
   },
   "2026-11-22-story-1bdb46d2": {
    "publicado_em": "2026-11-22 08:51",
@@ -1462,7 +1467,76 @@
     "1bdb46d2"
    ],
    "tema": "Story: 4 potes de vidro herméticos para marmita 640 ml, 4 travas",
-   "lido_em": "2026-11-22 09:42",
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 8.9,
+   "views": 11,
+   "reach": 7,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_back": 1,
+    "tap_exit": 2,
+    "tap_forward": 7
+   }
+  },
+  "2026-11-22-story-88b10f4a": {
+   "publicado_em": "2026-11-22 10:01",
+   "hora": "10:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "88b10f4a"
+   ],
+   "tema": "Story: Suéter Moletom Masculino, branco",
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 7.7,
+   "views": 8,
+   "reach": 7,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_back": 1,
+    "tap_forward": 7
+   }
+  },
+  "2026-11-22-story-a397b5f8": {
+   "publicado_em": "2026-11-22 13:21",
+   "hora": "13:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "a397b5f8"
+   ],
+   "tema": "Story: Tênis On Running Cloudsurfer 2 Masculino, branco",
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 4.4,
+   "views": 6,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 6
+   }
+  },
+  "2026-11-22-story-b55039d4": {
+   "publicado_em": "2026-11-22 16:51",
+   "hora": "16:45",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "b55039d4"
+   ],
+   "tema": "Story: Hoodie Moletom Masculino, preto",
+   "lido_em": "2026-11-22 17:45",
    "horas_no_ar": 0.9,
    "views": "menos de 5",
    "reach": "menos de 5",
@@ -1472,11 +1546,33 @@
    "profile_visits": "menos de 5",
    "total_interactions": "menos de 5",
    "navegacao": null
+  },
+  "2026-11-22-story-e1ac29dd": {
+   "publicado_em": "2026-11-22 11:31",
+   "hora": "11:30",
+   "area": "BELEZA",
+   "tipo": "oferta",
+   "produtos": [
+    "e1ac29dd"
+   ],
+   "tema": "Story: Principia Kit Dupla Diária: Creme Hidratante + Protetor Sola",
+   "lido_em": "2026-11-22 17:45",
+   "horas_no_ar": 6.2,
+   "views": 7,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 7
+   }
   }
  },
- "atualizado": "2026-11-22 09:42",
+ "atualizado": "2026-11-22 17:45",
  "resumo": {
-  "stories_com_leitura_final": 45,
+  "stories_com_leitura_final": 49,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -1530,13 +1626,13 @@
    },
    {
     "nome": "2026-11-21",
-    "stories": 4,
-    "views_medio": 13.0,
-    "alcance_medio": 9.8,
-    "views_total": 52,
+    "stories": 8,
+    "views_medio": 11.9,
+    "alcance_medio": 9.9,
+    "views_total": 95,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 8.0
+    "saidas_pct": 9.3
    }
   ],
   "por_hora": [
@@ -1612,33 +1708,33 @@
    },
    {
     "nome": "16:45",
-    "stories": 2,
-    "views_medio": 28.0,
-    "alcance_medio": 17.0,
-    "views_total": 56,
+    "stories": 3,
+    "views_medio": 21.3,
+    "alcance_medio": 14.0,
+    "views_total": 64,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 5.4
+    "saidas_pct": 6.2
    },
    {
     "nome": "18:30",
-    "stories": 3,
-    "views_medio": 15.0,
-    "alcance_medio": 10.0,
-    "views_total": 45,
+    "stories": 4,
+    "views_medio": 14.5,
+    "alcance_medio": 10.5,
+    "views_total": 58,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 3.4
    },
    {
     "nome": "20:15",
-    "stories": 4,
-    "views_medio": 18.8,
-    "alcance_medio": 12.2,
-    "views_total": 75,
+    "stories": 5,
+    "views_medio": 17.0,
+    "alcance_medio": 11.8,
+    "views_total": 85,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 9.4
+    "saidas_pct": 9.5
    },
    {
     "nome": "21:58",
@@ -1652,10 +1748,10 @@
    },
    {
     "nome": "22:00",
-    "stories": 4,
-    "views_medio": 16.0,
-    "alcance_medio": 11.8,
-    "views_total": 64,
+    "stories": 5,
+    "views_medio": 15.2,
+    "alcance_medio": 11.4,
+    "views_total": 76,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 3.8
@@ -1664,10 +1760,10 @@
   "por_area": [
    {
     "nome": "OFERTAS",
-    "stories": 4,
-    "views_medio": 53.5,
-    "alcance_medio": 33.8,
-    "views_total": 214,
+    "stories": 5,
+    "views_medio": 45.4,
+    "alcance_medio": 29.4,
+    "views_total": 227,
     "respostas": 0,
     "visitas_perfil": 1,
     "saidas_pct": 7.6
@@ -1714,13 +1810,13 @@
    },
    {
     "nome": "MODA",
-    "stories": 19,
-    "views_medio": 16.1,
-    "alcance_medio": 11.9,
-    "views_total": 305,
+    "stories": 22,
+    "views_medio": 15.2,
+    "alcance_medio": 11.5,
+    "views_total": 335,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 7.1
+    "saidas_pct": 7.3
    }
   ],
   "por_tipo": [
@@ -1736,20 +1832,20 @@
    },
    {
     "nome": "oferta",
-    "stories": 41,
-    "views_medio": 18.7,
-    "alcance_medio": 13.0,
-    "views_total": 768,
+    "stories": 44,
+    "views_medio": 18.1,
+    "alcance_medio": 12.8,
+    "views_total": 798,
     "respostas": 0,
     "visitas_perfil": 3,
-    "saidas_pct": 7.8
+    "saidas_pct": 7.9
    },
    {
     "nome": "sem_preco",
-    "stories": 1,
-    "views_medio": 7.0,
-    "alcance_medio": 7.0,
-    "views_total": 7,
+    "stories": 2,
+    "views_medio": 10.0,
+    "alcance_medio": 9.5,
+    "views_total": 20,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": null
