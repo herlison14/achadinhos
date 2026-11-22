@@ -1,11 +1,17 @@
 {
- "gerado": "2026-11-22 13:54",
+ "gerado": "2026-11-22 18:58",
  "contagem": {
-  "ALTO": 16,
+  "ALTO": 19,
   "INFO": 2,
   "MEDIO": 11
  },
  "achados": [
+  {
+   "nivel": "ALTO",
+   "area": "publicação",
+   "texto": "2026-11-22-story-c83b7e64 está com erro: HTTP 400 Media ID is not available",
+   "acao": "corrigir o motivo e voltar o status para agendado"
+  },
   {
    "nivel": "ALTO",
    "area": "pré-voo",
@@ -97,6 +103,18 @@
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-25-story-1fb8dc60 (2026-11-25 15:15) vai ser BLOQUEADO: preço de 1fb8dc60 conferido há 9 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-25-story-2bd2dfaf (2026-11-25 16:45) vai ser BLOQUEADO: preço de 2bd2dfaf conferido há 9 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
    "nivel": "INFO",
    "area": "telegram",
    "texto": "19 posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram",
@@ -171,13 +189,13 @@
   {
    "nivel": "MEDIO",
    "area": "calendário",
-   "texto": "2026-11-23 sem post de produto, crescimento",
+   "texto": "2026-11-23 sem post de produto",
    "acao": "completar a programação"
   },
   {
    "nivel": "MEDIO",
    "area": "calendário",
-   "texto": "2026-11-24 sem post de produto, crescimento",
+   "texto": "2026-11-24 sem post de produto",
    "acao": "completar a programação"
   }
  ]
