@@ -1,9 +1,9 @@
 {
- "gerado": "2026-11-22 23:55",
+ "gerado": "2026-11-23 08:10",
  "contagem": {
-  "ALTO": 20,
+  "ALTO": 21,
   "INFO": 2,
-  "MEDIO": 11
+  "MEDIO": 12
  },
  "achados": [
   {
@@ -34,6 +34,12 @@
    "nivel": "ALTO",
    "area": "pré-voo",
    "texto": "2026-11-25-story-17039bc2 (2026-11-25 08:45) vai ser BLOQUEADO: preço de 17039bc2 conferido há 9 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-26-story-244eda85 (2026-11-26 07:30) vai ser BLOQUEADO: preço de 244eda85 conferido há 10 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
@@ -135,6 +141,12 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
+   "texto": "28 itens saem do site nos próximos dias (25 a 30 dias sem conferência)",
+   "acao": "reconferir"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "preços",
    "texto": "nenhum item da loja shopee conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
   },
@@ -189,12 +201,6 @@
   {
    "nivel": "INFO",
    "area": "calendário",
-   "texto": "2026-11-22 sem post de produto",
-   "acao": "completar a programação"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
    "texto": "2026-11-23 sem post de produto",
    "acao": "completar a programação"
   },
@@ -202,6 +208,12 @@
    "nivel": "MEDIO",
    "area": "calendário",
    "texto": "2026-11-24 sem post de produto",
+   "acao": "completar a programação"
+  },
+  {
+   "nivel": "MEDIO",
+   "area": "calendário",
+   "texto": "2026-11-25 sem post de produto",
    "acao": "completar a programação"
   }
  ]
