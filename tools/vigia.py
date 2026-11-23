@@ -230,7 +230,7 @@ def cmd_relatorio(dias):
         if len(h) >= 2 and h[-1][1] != h[-2][1]:
             quedas.append((num(h[-1][1]) / num(h[-2][1]) - 1, i, h[-2], h[-1]))
     print('\nVariações recentes (última mudança de preço):')
-    for v, i, a, b in sorted(quedas)[:20]:
+    for v, i, a, b in sorted(quedas, key=lambda q: q[0])[:20]:
         print('  %+.1f%%  %s: R$ %s (%s) -> R$ %s (%s) [%s]' % (v * 100, i['nome'][:45], a[1], br(a[0]), b[1], br(b[0]), NOMES[i['loja']]))
     if not quedas: print('  nenhuma ainda (histórico começa em', br(min(p[0] for h in hist.values() for p in h)) + ')')
     velhos = [(hoje - datetime.date.fromisoformat(i['conferido'])).days for i in itens]
