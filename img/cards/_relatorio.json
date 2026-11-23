@@ -91,50 +91,157 @@
   "erro": "não é maior que a atual"
  },
  {
-  "id": "353e4156",
+  "id": "886aa451",
   "ok": true,
   "antes": 280,
-  "tamanho": "1200x901",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/fritadeira-eletrica-mondial/gazinshop/12214/6f556382df40e3b3939a5b17c620517b.jpg"
- },
- {
-  "id": "886aa451",
-  "ok": false,
-  "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
+  "tamanho": "1120x840",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/fritadeira-eletrica-sem-oleo/hjmagazine/skuhj00000368/b5ac0f2473e68e5e0efe09aeffa9a744.jpg"
  },
  {
   "id": "a5f81fe9",
-  "ok": false,
-  "antes": 280,
-  "erro": "HTTP Error 403: Forbidden"
- },
- {
-  "id": "a35e5966",
   "ok": true,
   "antes": 280,
-  "tamanho": "1304x978",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/caixa-de-som-torre-aiwa/magazineluiza/238676000/fe9c3f60c8cda3006c1dfba1747af7f6.jpg"
+  "tamanho": "1500x1125",
+  "url": "https://a-static.mlcdn.com.br/1500x1500/cafeteira-espresso-3-coracoes/magazineluiza/236950400/fa1d350f7b7c2c3a1aa055a920267b3d.jpg"
  },
  {
-  "id": "3b0e101f",
-  "ok": true,
-  "antes": 278,
-  "tamanho": "1175x887",
-  "url": "https://a-static.mlcdn.com.br/1500x1500/fone-de-ouvido-bluetooth/magazineluiza/240580100/a4cdf4b39bb9bc19d9e7b9efa89b8a19.jpg"
- },
- {
-  "id": "f14a2b73",
-  "ok": true,
-  "antes": 280,
-  "tamanho": "800x600",
-  "url": "https://a-static.mlcdn.com.br/800x800/cafeteira-eletrica-electrolux/magazineluiza/231236700/9e59b33a5cb9e801e46e4ea52b966642.jpg"
- },
- {
-  "id": "30cce829",
+  "id": "bc7149b5",
   "ok": true,
   "antes": 0,
-  "tamanho": "2000x3000",
-  "url": "https://lojausereserva.vteximg.com.br/arquivos/ids/13501736/0104151037_01.jpg"
+  "tamanho": "1080x1080",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149417-slim-square-glitter-party-9021-0.jpg?v=1734117762"
+ },
+ {
+  "id": "1129b2bc",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1080x1080",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4148238-top-one-piece-6790-0_23fc6ac9-c703-4b01-a487-388d99fb0b91.jpg?v=1734125935"
+ },
+ {
+  "id": "2eda582f",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1000x1000",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149417_0121_SLIM-SQUARE-GLITTER-PARTY_A.png?v=1734126326"
+ },
+ {
+  "id": "d1cdce28",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1000x1000",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4150032_0090_FARM-NANICA_A.png?v=1734127511"
+ },
+ {
+  "id": "09ad6948",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1080x1080",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149549-farm-siri-23-2703-0_4233e956-a719-474c-acf8-4cf07a69f367.jpg?v=1734127903"
+ },
+ {
+  "id": "4de553e2",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4150168-0727-slim-glow-0.png?v=1755890785"
+ },
+ {
+  "id": "f6fbe1d2",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/tbd-1056-top-glitter-neon-mp-fl-0.png?v=1752777767"
+ },
+ {
+  "id": "663eacc3",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4150294-0089-slim-glitter-glam-mp-fl-0.png?v=1747768904"
+ },
+ {
+  "id": "3498831d",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149734-1143-track-waves-0.png?v=1747765485"
+ },
+ {
+  "id": "f494cae1",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1080x1080",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4147955-origine-havaianas-iv-1360-0_eff7afc5-e57b-4597-b24d-8c54a53e541a.jpg?v=1734128869"
+ },
+ {
+  "id": "acceec30",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/Kit_Havaianas_para_Presente_Chinelo_Slim_Square_Palette_Glow_Presilha_Estrela_do_Mar.png?v=1788891892"
+ },
+ {
+  "id": "8333da19",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/kit-slim-daydream-amarelo-presilha-conhcha-amarelo.jpg?v=1794424001"
+ },
+ {
+  "id": "fd2490f0",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/kit-aloha-verde-olive-organizador-verde-olive.jpg?v=1794424001"
+ },
+ {
+  "id": "98083185",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149926_0154_e_4149846-4896.png?v=1784296205"
+ },
+ {
+  "id": "1e0393b0",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4150265-9256-aqua-glow-0.png?v=1755887870"
+ },
+ {
+  "id": "9873cd22",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1400x1400",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4150300-9260-aqua-jelly-0.png?v=1770300238"
+ },
+ {
+  "id": "16c85057",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1080x1080",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149470-camiseta-masc-havaianas-vamos-a-la-playa-0090-0_2abe6112-8254-4130-afb3-7ed0a08f24e8.jpg?v=1734122873"
+ },
+ {
+  "id": "bb1c4725",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1080x1080",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149434-biquini-top-havaianas-meia-taca-textura-0021-0_5c572248-5d93-4b6e-a234-063fc385c82d.jpg?v=1734122808"
+ },
+ {
+  "id": "42c8881c",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1799x1800",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4149296_0046_BIQUINI-BOTTOM-HAVAIANAS-ARGOLA-LUREX_K.png?v=1734122747"
+ },
+ {
+  "id": "3977d306",
+  "ok": true,
+  "antes": 0,
+  "tamanho": "1080x1080",
+  "url": "https://cdn.shopify.com/s/files/1/0719/0354/3553/files/4103405-kids-fantasy-9307-0_5ce1cfcb-8a6e-4aba-81c9-3783a70f6034.jpg?v=1734128036"
  }
 ]
