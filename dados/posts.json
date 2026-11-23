@@ -5271,11 +5271,13 @@
    "postagens/2026-11-23-story-a1cda672/01.jpg"
   ],
   "legenda": "Story: Kit 2 Polos Pima, branco e preto: R$ 899,90 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 148
+  "num": 148,
+  "ig_id": "18128989658297415",
+  "publicado_em": "2026-11-23 20:21"
  },
  {
   "id": "2026-11-23-story-e44f6b53",
