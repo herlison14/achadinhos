@@ -5242,11 +5242,13 @@
    "postagens/2026-11-23-story-470439ba/01.jpg"
   ],
   "legenda": "Story: Chinelo Havaianas Essential, preto: R$ 39,99 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 144
+  "num": 144,
+  "ig_id": "18023297837766512",
+  "publicado_em": "2026-11-23 13:21"
  },
  {
   "id": "2026-11-23-story-647cfd69",
