@@ -4676,11 +4676,13 @@
    "postagens/2026-11-23-story-a4aa5038/01.jpg"
   ],
   "legenda": "Story: Garrafa térmica Tramontina Exata 1 L: R$ 50,34 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 141
+  "num": 141,
+  "ig_id": "18146259673606596",
+  "publicado_em": "2026-11-23 08:51"
  },
  {
   "id": "2026-11-19-tenis-novos-lauri",
