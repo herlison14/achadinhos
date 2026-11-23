@@ -5220,11 +5220,13 @@
    "postagens/2026-11-23-story-47970ae5/01.jpg"
   ],
   "legenda": "Story: Tênis On Running Cloudsurfer Max Masculino, laranja: R$ 881,10 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 143
+  "num": 143,
+  "ig_id": "18134408122805373",
+  "publicado_em": "2026-11-23 11:31"
  },
  {
   "id": "2026-11-23-story-470439ba",
