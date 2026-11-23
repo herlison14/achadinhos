@@ -4905,12 +4905,12 @@
    "postagens/2026-11-22-story-c83b7e64/01.jpg"
   ],
   "legenda": "Story: Calça Chino Carrot de Alfaiataria Masculina, preta: R$ 179,99 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "erro",
+  "status": "cancelado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
   "num": 135,
-  "nota": "HTTP 400 Media ID is not available"
+  "nota": "Falhou com HTTP 400 (Media ID is not available) e passou de 24h; cancelado em vez de reagendar (trava de atraso máximo de 6h não deixaria sair mesmo retentando)."
  },
  {
   "id": "2026-11-22-story-b55039d4",
@@ -5186,12 +5186,12 @@
    "postagens/2026-11-23-story-647cfd69/01.jpg"
   ],
   "legenda": "Story: Suéter Moletom Masculino, preto: R$ 349,00 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "erro",
+  "status": "agendado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
   "num": 145,
-  "nota": "HTTP 400 Timeout"
+  "nota": "Erro de Timeout (passageiro da Meta); reagendado pra tentar de novo ainda dentro da janela de atraso de 6h."
  },
  {
   "id": "2026-11-23-story-dbe5116a",
