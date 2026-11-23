@@ -1421,8 +1421,8 @@
     "d560aa1e"
    ],
    "tema": "Story: Camiseta Masculina de Algodão Básica Manga Curta, branca",
-   "lido_em": "2026-11-22 17:45",
-   "horas_no_ar": 19.7,
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 24,
    "views": 12,
    "reach": 10,
    "replies": 0,
@@ -1443,10 +1443,10 @@
     "9605bf1d"
    ],
    "tema": "Story: Carrinho organizador multiuso 3 andares com rodinhas",
-   "lido_em": "2026-11-22 17:45",
-   "horas_no_ar": 10.2,
-   "views": 11,
-   "reach": 10,
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 16.4,
+   "views": 13,
+   "reach": 12,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -1454,7 +1454,7 @@
    "total_interactions": 1,
    "navegacao": {
     "tap_exit": 1,
-    "tap_forward": 9,
+    "tap_forward": 11,
     "swipe_forward": 1
    }
   },
@@ -1467,10 +1467,10 @@
     "1bdb46d2"
    ],
    "tema": "Story: 4 potes de vidro herméticos para marmita 640 ml, 4 travas",
-   "lido_em": "2026-11-22 17:45",
-   "horas_no_ar": 8.9,
-   "views": 11,
-   "reach": 7,
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 15.1,
+   "views": 13,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -1479,7 +1479,7 @@
    "navegacao": {
     "tap_back": 1,
     "tap_exit": 2,
-    "tap_forward": 7
+    "tap_forward": 9
    }
   },
   "2026-11-22-story-88b10f4a": {
@@ -1491,10 +1491,10 @@
     "88b10f4a"
    ],
    "tema": "Story: Suéter Moletom Masculino, branco",
-   "lido_em": "2026-11-22 17:45",
-   "horas_no_ar": 7.7,
-   "views": 8,
-   "reach": 7,
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 13.9,
+   "views": 10,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -1502,7 +1502,8 @@
    "total_interactions": 1,
    "navegacao": {
     "tap_back": 1,
-    "tap_forward": 7
+    "tap_forward": 8,
+    "swipe_forward": 1
    }
   },
   "2026-11-22-story-a397b5f8": {
@@ -1514,17 +1515,17 @@
     "a397b5f8"
    ],
    "tema": "Story: Tênis On Running Cloudsurfer 2 Masculino, branco",
-   "lido_em": "2026-11-22 17:45",
-   "horas_no_ar": 4.4,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 10.6,
+   "views": 7,
+   "reach": 7,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 6
+    "tap_forward": 7
    }
   },
   "2026-11-22-story-b55039d4": {
@@ -1536,16 +1537,19 @@
     "b55039d4"
    ],
    "tema": "Story: Hoodie Moletom Masculino, preto",
-   "lido_em": "2026-11-22 17:45",
-   "horas_no_ar": 0.9,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 7.1,
+   "views": 6,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "swipe_forward": 1,
+    "tap_forward": 5
+   }
   },
   "2026-11-22-story-e1ac29dd": {
    "publicado_em": "2026-11-22 11:31",
@@ -1556,21 +1560,84 @@
     "e1ac29dd"
    ],
    "tema": "Story: Principia Kit Dupla Diária: Creme Hidratante + Protetor Sola",
-   "lido_em": "2026-11-22 17:45",
-   "horas_no_ar": 6.2,
-   "views": 7,
-   "reach": 6,
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 12.4,
+   "views": 8,
+   "reach": 7,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 7
+    "tap_forward": 8
+   }
+  },
+  "2026-11-22-story-56d44a85": {
+   "publicado_em": "2026-11-22 20:21",
+   "hora": "20:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "56d44a85"
+   ],
+   "tema": "Story: Tênis On Running Cloudrunner 3 Feminino, preto",
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 3.6,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-22-story-ef1a7536": {
+   "publicado_em": "2026-11-22 22:01",
+   "hora": "22:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "ef1a7536"
+   ],
+   "tema": "Story: Cueca Masculina Mash Boxer, preta",
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 1.9,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-22-story-16b683b6": {
+   "publicado_em": "2026-11-22 18:31",
+   "hora": "18:30",
+   "area": "BELEZA",
+   "tipo": "oferta",
+   "produtos": [
+    "16b683b6"
+   ],
+   "tema": "Story: Kit Hidratante Facial L'Oréal Revitalift Hialurônico Dia + N",
+   "lido_em": "2026-11-22 23:54",
+   "horas_no_ar": 5.4,
+   "views": 7,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "swipe_forward": 1,
+    "tap_forward": 6
    }
   }
  },
- "atualizado": "2026-11-22 17:45",
+ "atualizado": "2026-11-22 23:54",
  "resumo": {
   "stories_com_leitura_final": 49,
   "por_dia": [
