@@ -22,7 +22,7 @@
     return o || 'direto';
   }
 
-  var AWD = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas', 'docebeleza.com.br': 'docebeleza', 'br.puma.com': 'puma', 'hopelingerie.com.br': 'hope', 'hopeoficial.com.br': 'hope', 'cea.com.br': 'cea', 'usereserva.com': 'reserva', 'lauriesporte.com.br': 'lauri', 'mizuno.com.br': 'mizuno', 'polishop.com.br': 'polishop'};
+  var AWD = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas', 'docebeleza.com.br': 'docebeleza', 'br.puma.com': 'puma', 'hopelingerie.com.br': 'hope', 'hopeoficial.com.br': 'hope', 'havaianas.com.br': 'havaianas', 'cea.com.br': 'cea', 'usereserva.com': 'reserva', 'lauriesporte.com.br': 'lauri', 'mizuno.com.br': 'mizuno', 'polishop.com.br': 'polishop'};
   function loja(h) {
     h = h || '';
     if (/awin1\.com\//.test(h)) {

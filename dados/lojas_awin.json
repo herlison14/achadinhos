@@ -98,5 +98,25 @@
    "#ffffff"
   ],
   "fora_dos_canais": false
+ },
+ "havaianas": {
+  "nome": "Havaianas",
+  "programa": "119883",
+  "dominios": [
+   "havaianas.com.br"
+  ],
+  "fotos": [
+   "cdn.shopify.com"
+  ],
+  "cta": "Ver na Havaianas",
+  "cor_card": [
+   "#eef6fb",
+   "#003d7a"
+  ],
+  "etiqueta": [
+   "#003d7a",
+   "#ffffff"
+  ],
+  "fora_dos_canais": false
  }
 }

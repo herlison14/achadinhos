@@ -24,12 +24,12 @@ IDX = os.path.join(RAIZ, 'index.html')
 ITENS = os.path.join(RAIZ, 'dados', 'itens.json')
 HIST = os.path.join(RAIZ, 'dados', 'historico.json')
 NOMES = {'shopee': 'Shopee', 'amazon': 'Amazon', 'meli': 'Mercado Livre', 'aliexpress': 'AliExpress', 'magalu': 'Magalu',
-         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza', 'puma': 'PUMA', 'hope': 'Hope Lingerie', 'cea': 'C&A', 'reserva': 'Reserva', 'lauri': 'Lauri Esporte', 'mizuno': 'Mizuno', 'polishop': 'Polishop'}
+         'kabum': 'KaBuM!', 'nike': 'Nike', 'dafiti': 'Dafiti', 'adidas': 'adidas', 'docebeleza': 'Doce Beleza', 'puma': 'PUMA', 'hope': 'Hope Lingerie', 'havaianas': 'Havaianas', 'cea': 'C&A', 'reserva': 'Reserva', 'lauri': 'Lauri Esporte', 'mizuno': 'Mizuno', 'polishop': 'Polishop'}
 OMITIR_APOS_DIAS = 30   # item sem conferência há mais de N dias sai da página (build)
 ALERTA_APOS_DIAS = 7    # relatório avisa itens sem conferência há mais de N dias
 
 # Awin (afiliado 3147693): deeplink completo awin1.com/cread.php?awinmid=..&awinaffid=3147693&ued=<url da loja>
-AWIN = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas', 'docebeleza.com.br': 'docebeleza', 'br.puma.com': 'puma', 'hopelingerie.com.br': 'hope', 'hopeoficial.com.br': 'hope', 'cea.com.br': 'cea', 'usereserva.com': 'reserva', 'lauriesporte.com.br': 'lauri', 'mizuno.com.br': 'mizuno', 'polishop.com.br': 'polishop'}
+AWIN = {'kabum.com.br': 'kabum', 'nike.com.br': 'nike', 'dafiti.com.br': 'dafiti', 'adidas.com.br': 'adidas', 'docebeleza.com.br': 'docebeleza', 'br.puma.com': 'puma', 'hopelingerie.com.br': 'hope', 'hopeoficial.com.br': 'hope', 'havaianas.com.br': 'havaianas', 'cea.com.br': 'cea', 'usereserva.com': 'reserva', 'lauriesporte.com.br': 'lauri', 'mizuno.com.br': 'mizuno', 'polishop.com.br': 'polishop'}
 
 def loja_awin(href):
     from urllib.parse import urlsplit, parse_qs
@@ -242,7 +242,7 @@ def cmd_relatorio(dias):
     if not n: print('  nenhum')
 
 CTA = {'shopee': 'Ver na Shopee', 'amazon': 'Ver na Amazon', 'meli': 'Ver no Mercado Livre', 'aliexpress': 'Ver no AliExpress', 'magalu': 'Ver no Magalu',
-       'kabum': 'Ver na KaBuM!', 'nike': 'Ver na Nike', 'dafiti': 'Ver na Dafiti', 'adidas': 'Ver na adidas', 'docebeleza': 'Ver na Doce Beleza', 'puma': 'Ver na PUMA', 'hope': 'Ver na Hope', 'cea': 'Ver na C&A', 'reserva': 'Ver na Reserva', 'lauri': 'Ver na Lauri Esporte', 'mizuno': 'Ver na Mizuno', 'polishop': 'Ver na Polishop'}
+       'kabum': 'Ver na KaBuM!', 'nike': 'Ver na Nike', 'dafiti': 'Ver na Dafiti', 'adidas': 'Ver na adidas', 'docebeleza': 'Ver na Doce Beleza', 'puma': 'Ver na PUMA', 'hope': 'Ver na Hope', 'havaianas': 'Ver na Havaianas', 'cea': 'Ver na C&A', 'reserva': 'Ver na Reserva', 'lauri': 'Ver na Lauri Esporte', 'mizuno': 'Ver na Mizuno', 'polishop': 'Ver na Polishop'}
 
 def cmd_importar(data):
     """Lê o index.html e alinha dados/ com ele: preço novo -> atualiza + histórico; item novo -> entra; item sumido -> sai."""
