@@ -5264,11 +5264,12 @@
    "postagens/2026-11-23-story-647cfd69/01.jpg"
   ],
   "legenda": "Story: Suéter Moletom Masculino, preto: R$ 349,00 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "erro",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 145
+  "num": 145,
+  "nota": "HTTP 400 Timeout"
  },
  {
   "id": "2026-11-23-story-dbe5116a",
