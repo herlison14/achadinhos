@@ -5285,11 +5285,13 @@
    "postagens/2026-11-23-story-dbe5116a/01.jpg"
   ],
   "legenda": "Story: Tênis On Running Cloudvista 2 Waterproof Masculino, preto: R$ 1.169,10 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 146
+  "num": 146,
+  "ig_id": "18152021110575816",
+  "publicado_em": "2026-11-23 16:51"
  },
  {
   "id": "2026-11-23-story-8665f270",
