@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23 06:34",
+ "atualizado": "2026-11-23 20:03",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -325,7 +325,7 @@
      "data": "2026-11-25",
      "hora": "18:30",
      "tema": "Caneca de Porcelana Coração, sortida colorido",
-     "status": "agendado",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-25-story-c70cc5d5/01.jpg"
     },
@@ -469,8 +469,8 @@
      "data": "2026-11-23",
      "hora": "18:30",
      "tema": "Papete com Fivelas Cartago, marrom",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 18:31",
      "img": "postagens/2026-11-23-story-8665f270/01.jpg"
     },
     {
@@ -478,8 +478,8 @@
      "data": "2026-11-23",
      "hora": "16:45",
      "tema": "Tênis On Running Cloudvista 2 Waterproof Masculino, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 16:51",
      "img": "postagens/2026-11-23-story-dbe5116a/01.jpg"
     },
     {
@@ -487,7 +487,7 @@
      "data": "2026-11-23",
      "hora": "15:15",
      "tema": "Suéter Moletom Masculino, preto",
-     "status": "agendado",
+     "status": "erro",
      "publicado_em": null,
      "img": "postagens/2026-11-23-story-647cfd69/01.jpg"
     },
@@ -496,8 +496,8 @@
      "data": "2026-11-23",
      "hora": "13:15",
      "tema": "Chinelo Havaianas Essential, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 13:21",
      "img": "postagens/2026-11-23-story-470439ba/01.jpg"
     },
     {
@@ -505,8 +505,8 @@
      "data": "2026-11-23",
      "hora": "11:30",
      "tema": "Tênis On Running Cloudsurfer Max Masculino, laranja",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 11:31",
      "img": "postagens/2026-11-23-story-47970ae5/01.jpg"
     },
     {
@@ -514,8 +514,8 @@
      "data": "2026-11-23",
      "hora": "10:00",
      "tema": "Hoodie Moletom Masculino, branco",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 10:01",
      "img": "postagens/2026-11-23-story-dd065f32/01.jpg"
     },
     {
@@ -1109,8 +1109,8 @@
      "data": "2026-11-23",
      "hora": "08:45",
      "tema": "Garrafa térmica Tramontina Exata 1 L",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 08:51",
      "img": "postagens/2026-11-23-story-a4aa5038/01.jpg"
     },
     {
@@ -1118,8 +1118,8 @@
      "data": "2026-11-23",
      "hora": "07:30",
      "tema": "Jogo de panelas Tramontina Turim antiaderente, 10 peças",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 07:31",
      "img": "postagens/2026-11-23-story-c921991d/01.jpg"
     },
     {

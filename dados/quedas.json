@@ -96,14 +96,6 @@
   "data": "2026-11-05"
  },
  {
-  "id": "e8a1c7a1",
-  "href": "https://meli.la/1ESnEJ4",
-  "antes": "94,90",
-  "agora": "87,90",
-  "pct": 7,
-  "data": "2026-11-11"
- },
- {
   "id": "e1ac29dd",
   "href": "https://www.amazon.com.br/dp/B0GHP8GRX3?tag=herlisonsanto-20",
   "antes": "74,80",
@@ -150,6 +142,14 @@
   "agora": "59,28",
   "pct": 5,
   "data": "2026-11-16"
+ },
+ {
+  "id": "8d6f44c3",
+  "href": "https://www.magazinevoce.com.br/magazinein_400408/air-fryer-ultra-af-ut-01-preta-com-timer-32l/p/238533800/ep/efso/",
+  "antes": "199,99",
+  "agora": "189,90",
+  "pct": 5,
+  "data": "2026-11-23"
  },
  {
   "id": "d7b213e0",
@@ -208,6 +208,14 @@
   "data": "2026-11-05"
  },
  {
+  "id": "17039bc2",
+  "href": "https://www.magazinevoce.com.br/magazinein_400408/jogo-de-potes-de-plastico-hermeticos-electrolux-com-tampa-a23122901-12-pecas/p/234782800/ud/poud/",
+  "antes": "92,05",
+  "agora": "89,09",
+  "pct": 3,
+  "data": "2026-11-23"
+ },
+ {
   "id": "669494f8",
   "href": "https://meli.la/1wEhcae",
   "antes": "74,90",
@@ -232,6 +240,14 @@
   "data": "2026-11-09"
  },
  {
+  "id": "0ef7094d",
+  "href": "https://www.magazinevoce.com.br/magazinein_400408/garrafa-termica-1l-termolar-magic-pump/p/145615200/ud/gate/",
+  "antes": "58,20",
+  "agora": "57,23",
+  "pct": 2,
+  "data": "2026-11-23"
+ },
+ {
   "id": "6794859a",
   "href": "https://s.shopee.com.br/20wPfNCI2w",
   "antes": "37,99",
@@ -244,14 +260,6 @@
   "href": "https://s.shopee.com.br/2gC6Sb9kh8",
   "antes": "1.899,00",
   "agora": "1.889,00",
-  "pct": 1,
-  "data": "2026-11-05"
- },
- {
-  "id": "1a2ed99a",
-  "href": "https://meli.la/1u8TjRC",
-  "antes": "45,57",
-  "agora": "44,94",
   "pct": 1,
   "data": "2026-11-05"
  },
