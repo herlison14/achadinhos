@@ -4654,11 +4654,13 @@
    "postagens/2026-11-23-story-c921991d/01.jpg"
   ],
   "legenda": "Story: Jogo de panelas Tramontina Turim antiaderente, 10 peças: R$ 288,97 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 140
+  "num": 140,
+  "ig_id": "18111070298211868",
+  "publicado_em": "2026-11-23 07:31"
  },
  {
   "id": "2026-11-23-story-a4aa5038",
