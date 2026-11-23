@@ -5172,11 +5172,13 @@
    "postagens/2026-11-22-story-ef1a7536/01.jpg"
   ],
   "legenda": "Story: Cueca Masculina Mash Boxer, preta: R$ 35,99 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 139
+  "num": 139,
+  "ig_id": "18127841431692444",
+  "publicado_em": "2026-11-22 22:01"
  },
  {
   "id": "2026-11-23-story-dd065f32",
