@@ -1,20 +1,20 @@
 {
- "atualizado": "2026-11-22",
+ "atualizado": "2026-11-23",
  "posts_analisados": 30,
  "por_formato": [
   {
    "nome": "reel",
    "posts": 9,
-   "alcance_medio": 37.2,
-   "views_medio": 63.7,
-   "nota_media": 43.2,
+   "alcance_medio": 37.7,
+   "views_medio": 62.9,
+   "nota_media": 43.3,
    "confiavel": true
   },
   {
    "nome": "carrossel",
    "posts": 21,
-   "alcance_medio": 18.2,
-   "views_medio": 59.9,
+   "alcance_medio": 18.4,
+   "views_medio": 60.5,
    "nota_media": 20.0,
    "confiavel": true
   }
@@ -22,43 +22,43 @@
  "por_objetivo": [
   {
    "nome": "compartilhar",
-   "posts": 5,
-   "alcance_medio": 46.2,
-   "views_medio": 76.2,
-   "nota_media": 54.0,
+   "posts": 6,
+   "alcance_medio": 42.8,
+   "views_medio": 70.7,
+   "nota_media": 49.5,
    "confiavel": true
   },
   {
    "nome": "visita",
    "posts": 3,
-   "alcance_medio": 23.3,
-   "views_medio": 54.7,
-   "nota_media": 26.3,
+   "alcance_medio": 23.7,
+   "views_medio": 55.0,
+   "nota_media": 26.7,
    "confiavel": true
   },
   {
    "nome": "salvar",
-   "posts": 4,
-   "alcance_medio": 22.8,
-   "views_medio": 52.2,
-   "nota_media": 25.2,
+   "posts": 3,
+   "alcance_medio": 23.3,
+   "views_medio": 53.7,
+   "nota_media": 25.3,
    "confiavel": true
   },
   {
    "nome": "produto",
-   "posts": 14,
-   "alcance_medio": 17.9,
-   "views_medio": 59.5,
-   "nota_media": 19.8,
+   "posts": 13,
+   "alcance_medio": 18.5,
+   "views_medio": 61.7,
+   "nota_media": 20.2,
    "confiavel": true
   },
   {
    "nome": "enviar",
-   "posts": 2,
-   "alcance_medio": 19.0,
-   "views_medio": 63.5,
-   "nota_media": 21.0,
-   "confiavel": false
+   "posts": 3,
+   "alcance_medio": 16.7,
+   "views_medio": 56.3,
+   "nota_media": 18.0,
+   "confiavel": true
   },
   {
    "nome": "comentar",
@@ -73,57 +73,73 @@
   {
    "nome": "20:00",
    "posts": 8,
-   "alcance_medio": 22.9,
-   "views_medio": 42.8,
+   "alcance_medio": 23.2,
+   "views_medio": 41.8,
    "nota_media": 25.9,
+   "confiavel": true
+  },
+  {
+   "nome": "12:30",
+   "posts": 4,
+   "alcance_medio": 20.5,
+   "views_medio": 64.2,
+   "nota_media": 22.8,
    "confiavel": true
   },
   {
    "nome": "19:00",
    "posts": 4,
-   "alcance_medio": 19.8,
-   "views_medio": 63.8,
-   "nota_media": 22.2,
+   "alcance_medio": 20.0,
+   "views_medio": 64.0,
+   "nota_media": 22.5,
    "confiavel": true
   },
   {
-   "nome": "12:30",
-   "posts": 5,
-   "alcance_medio": 19.6,
-   "views_medio": 59.2,
-   "nota_media": 22.2,
+   "nome": "14:30",
+   "posts": 3,
+   "alcance_medio": 15.7,
+   "views_medio": 51.3,
+   "nota_media": 16.7,
    "confiavel": true
   },
   {
    "nome": "21:57",
    "posts": 1,
-   "alcance_medio": 152.0,
-   "views_medio": 231.0,
-   "nota_media": 182.0,
+   "alcance_medio": 153.0,
+   "views_medio": 232.0,
+   "nota_media": 183.0,
    "confiavel": false
   },
   {
    "nome": "21:00",
    "posts": 2,
-   "alcance_medio": 22.0,
-   "views_medio": 76.5,
-   "nota_media": 24.0,
+   "alcance_medio": 23.0,
+   "views_medio": 79.0,
+   "nota_media": 25.0,
    "confiavel": false
   },
   {
    "nome": "10:30",
    "posts": 2,
-   "alcance_medio": 18.5,
-   "views_medio": 55.0,
-   "nota_media": 20.5,
+   "alcance_medio": 19.5,
+   "views_medio": 56.0,
+   "nota_media": 21.5,
    "confiavel": false
   },
   {
-   "nome": "14:30",
+   "nome": "16:00",
+   "posts": 1,
+   "alcance_medio": 18.0,
+   "views_medio": 74.0,
+   "nota_media": 18.0,
+   "confiavel": false
+  },
+  {
+   "nome": "09:00",
    "posts": 2,
-   "alcance_medio": 18.5,
+   "alcance_medio": 16.5,
    "views_medio": 58.0,
-   "nota_media": 20.0,
+   "nota_media": 17.5,
    "confiavel": false
   },
   {
@@ -132,22 +148,6 @@
    "alcance_medio": 16.0,
    "views_medio": 55.0,
    "nota_media": 17.0,
-   "confiavel": false
-  },
-  {
-   "nome": "09:00",
-   "posts": 2,
-   "alcance_medio": 15.5,
-   "views_medio": 56.5,
-   "nota_media": 16.5,
-   "confiavel": false
-  },
-  {
-   "nome": "16:00",
-   "posts": 1,
-   "alcance_medio": 16.0,
-   "views_medio": 70.0,
-   "nota_media": 16.0,
    "confiavel": false
   },
   {
@@ -173,8 +173,8 @@
    "formato": "reel",
    "objetivo": "compartilhar",
    "hora": "21:57",
-   "alcance": 152,
-   "nota": 182
+   "alcance": 153,
+   "nota": 183
   },
   {
    "id": "2026-11-16-reel-flow-entrega",
@@ -210,14 +210,14 @@
   }
  ],
  "seguidores": {
-  "hoje": 417,
-  "ontem": 369,
-  "variacao_dia": 48,
-  "variacao_7_dias": 141
+  "hoje": 430,
+  "ontem": 417,
+  "variacao_dia": 13,
+  "variacao_7_dias": 111
  },
  "dicas": [
-  "Melhor formato até agora: reel (nota média 43.2 em 9 posts).",
-  "Melhor objetivo até agora: compartilhar (nota média 54.0 em 5 posts).",
+  "Melhor formato até agora: reel (nota média 43.3 em 9 posts).",
+  "Melhor objetivo até agora: compartilhar (nota média 49.5 em 6 posts).",
   "Melhor horário até agora: 20:00 (nota média 25.9 em 8 posts)."
  ],
  "aviso": "Amostra pequena: tratar como pista, não como regra. Só números de desempenho, sem comissão."

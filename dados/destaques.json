@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-22 05:35",
+ "atualizado": "2026-11-23 06:34",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -523,8 +523,8 @@
      "data": "2026-11-22",
      "hora": "22:00",
      "tema": "Cueca Masculina Mash Boxer, preta",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 22:01",
      "img": "postagens/2026-11-22-story-ef1a7536/01.jpg"
     },
     {
@@ -532,8 +532,8 @@
      "data": "2026-11-22",
      "hora": "20:15",
      "tema": "Tênis On Running Cloudrunner 3 Feminino, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 20:21",
      "img": "postagens/2026-11-22-story-56d44a85/01.jpg"
     },
     {
@@ -541,8 +541,8 @@
      "data": "2026-11-22",
      "hora": "16:45",
      "tema": "Hoodie Moletom Masculino, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 16:51",
      "img": "postagens/2026-11-22-story-b55039d4/01.jpg"
     },
     {
@@ -550,7 +550,7 @@
      "data": "2026-11-22",
      "hora": "15:15",
      "tema": "Calça Chino Carrot de Alfaiataria Masculina, preta",
-     "status": "agendado",
+     "status": "erro",
      "publicado_em": null,
      "img": "postagens/2026-11-22-story-c83b7e64/01.jpg"
     },
@@ -559,8 +559,8 @@
      "data": "2026-11-22",
      "hora": "13:15",
      "tema": "Tênis On Running Cloudsurfer 2 Masculino, branco",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 13:21",
      "img": "postagens/2026-11-22-story-a397b5f8/01.jpg"
     },
     {
@@ -568,8 +568,8 @@
      "data": "2026-11-22",
      "hora": "10:00",
      "tema": "Suéter Moletom Masculino, branco",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 10:01",
      "img": "postagens/2026-11-22-story-88b10f4a/01.jpg"
     },
     {
@@ -884,6 +884,24 @@
    "nome": "BELEZA",
    "stories": [
     {
+     "id": "2026-11-28-story-470d5163",
+     "data": "2026-11-28",
+     "hora": "07:30",
+     "tema": "NIVEA SUN Protetor Solar Protect & Hidrata FPS 50 200 ml",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-28-story-470d5163/01.jpg"
+    },
+    {
+     "id": "2026-11-22-story-16b683b6",
+     "data": "2026-11-22",
+     "hora": "18:30",
+     "tema": "Kit Hidratante Facial L'Oréal Revitalift Hialurônico Dia + N",
+     "status": "publicado",
+     "publicado_em": "2026-11-22 18:31",
+     "img": "postagens/2026-11-22-story-16b683b6/01.jpg"
+    },
+    {
      "id": "2026-11-22-story-a0a0c7b8",
      "data": "2026-11-22",
      "hora": "11:30",
@@ -897,8 +915,8 @@
      "data": "2026-11-22",
      "hora": "11:30",
      "tema": "Principia Kit Dupla Diária: Creme Hidratante + Protetor Sola",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 11:31",
      "img": "postagens/2026-11-22-story-e1ac29dd/01.jpg"
     },
     {
@@ -1109,8 +1127,8 @@
      "data": "2026-11-22",
      "hora": "08:45",
      "tema": "4 potes de vidro herméticos para marmita 640 ml, 4 travas",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 08:51",
      "img": "postagens/2026-11-22-story-1bdb46d2/01.jpg"
     },
     {
@@ -1249,7 +1267,7 @@
      "data": "2026-11-22",
      "hora": "18:30",
      "tema": "Polishop Ultra Hand Steamer",
-     "status": "agendado",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-22-story-d61d1607/01.jpg"
     },
@@ -1258,8 +1276,8 @@
      "data": "2026-11-22",
      "hora": "07:30",
      "tema": "Carrinho organizador multiuso 3 andares com rodinhas",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-22 07:31",
      "img": "postagens/2026-11-22-story-9605bf1d/01.jpg"
     },
     {
