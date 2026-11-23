@@ -5198,11 +5198,13 @@
    "postagens/2026-11-23-story-dd065f32/01.jpg"
   ],
   "legenda": "Story: Hoodie Moletom Masculino, branco: R$ 369,00 (conferido em 16/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 142
+  "num": 142,
+  "ig_id": "18100929086451158",
+  "publicado_em": "2026-11-23 10:01"
  },
  {
   "id": "2026-11-23-story-47970ae5",
