@@ -1,11 +1,17 @@
 {
- "gerado": "2026-11-23 08:57",
+ "gerado": "2026-11-23 13:53",
  "contagem": {
-  "ALTO": 22,
-  "INFO": 2,
-  "MEDIO": 12
+  "MEDIO": 13,
+  "ALTO": 25,
+  "INFO": 2
  },
  "achados": [
+  {
+   "nivel": "MEDIO",
+   "area": "publicação",
+   "texto": "2026-11-25-meli-tech-pet está só 'planejado' para 2026-11-25 12:00 (não vai sair sozinho)",
+   "acao": "aprovar (agendado) ou cancelar"
+  },
   {
    "nivel": "ALTO",
    "area": "publicação",
@@ -130,6 +136,24 @@
    "nivel": "ALTO",
    "area": "pré-voo",
    "texto": "2026-11-25-story-3a3b0a44 (2026-11-25 20:15) vai ser BLOQUEADO: preço de 3a3b0a44 conferido há 9 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-26-story-24cc9e6a (2026-11-26 10:00) vai ser BLOQUEADO: preço de 24cc9e6a conferido há 10 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-26-story-3537cc1d (2026-11-26 11:30) vai ser BLOQUEADO: preço de 3537cc1d conferido há 8 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-26-story-32987bff (2026-11-26 13:15) vai ser BLOQUEADO: preço de 32987bff conferido há 10 dias (máximo 7)",
    "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
