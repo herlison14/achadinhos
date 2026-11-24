@@ -5490,11 +5490,13 @@
    "postagens/2026-11-24-story-247d459d/01.jpg"
   ],
   "legenda": "Story: Bermuda Masculina Reta Chino, preta: R$ 99,99 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 155
+  "num": 155,
+  "ig_id": "18156965257483349",
+  "publicado_em": "2026-11-24 15:21"
  },
  {
   "id": "2026-11-24-story-5b7c3bd8",
