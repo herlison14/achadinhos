@@ -1,8 +1,7 @@
 {
- "gerado": "2026-11-23 13:53",
+ "gerado": "2026-11-23 23:53",
  "contagem": {
-  "MEDIO": 13,
-  "ALTO": 25,
+  "MEDIO": 5,
   "INFO": 2
  },
  "achados": [
@@ -13,148 +12,10 @@
    "acao": "aprovar (agendado) ou cancelar"
   },
   {
-   "nivel": "ALTO",
+   "nivel": "MEDIO",
    "area": "publicação",
-   "texto": "2026-11-22-story-c83b7e64 está com erro: HTTP 400 Media ID is not available",
-   "acao": "corrigir o motivo e voltar o status para agendado"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-4dcaa306 (2026-11-24 07:30) vai ser BLOQUEADO: preço de 4dcaa306 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-5b89e0f0 (2026-11-24 08:45) vai ser BLOQUEADO: preço de 5b89e0f0 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-8d6f44c3 (2026-11-25 07:30) vai ser BLOQUEADO: preço de 8d6f44c3 conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-17039bc2 (2026-11-25 08:45) vai ser BLOQUEADO: preço de 17039bc2 conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-26-story-244eda85 (2026-11-26 07:30) vai ser BLOQUEADO: preço de 244eda85 conferido há 10 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-26-story-0ef7094d (2026-11-26 08:45) vai ser BLOQUEADO: preço de 0ef7094d conferido há 10 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-e8d1b283 (2026-11-24 10:00) vai ser BLOQUEADO: preço de e8d1b283 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-47a6dcd5 (2026-11-24 11:30) vai ser BLOQUEADO: preço de 47a6dcd5 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-5788bf35 (2026-11-24 13:15) vai ser BLOQUEADO: preço de 5788bf35 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-247d459d (2026-11-24 15:15) vai ser BLOQUEADO: preço de 247d459d conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-5b7c3bd8 (2026-11-24 16:45) vai ser BLOQUEADO: preço de 5b7c3bd8 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-936e771c (2026-11-24 18:30) vai ser BLOQUEADO: preço de 936e771c conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-52318df4 (2026-11-24 20:15) vai ser BLOQUEADO: preço de 52318df4 conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-24-story-843ee78a (2026-11-24 22:00) vai ser BLOQUEADO: preço de 843ee78a conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-9452bed0 (2026-11-25 10:00) vai ser BLOQUEADO: preço de 9452bed0 conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-6277768d (2026-11-25 11:30) vai ser BLOQUEADO: preço de 6277768d conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-a923059c (2026-11-25 13:15) vai ser BLOQUEADO: preço de a923059c conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-1fb8dc60 (2026-11-25 15:15) vai ser BLOQUEADO: preço de 1fb8dc60 conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-2bd2dfaf (2026-11-25 16:45) vai ser BLOQUEADO: preço de 2bd2dfaf conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-25-story-3a3b0a44 (2026-11-25 20:15) vai ser BLOQUEADO: preço de 3a3b0a44 conferido há 9 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-26-story-24cc9e6a (2026-11-26 10:00) vai ser BLOQUEADO: preço de 24cc9e6a conferido há 10 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-26-story-3537cc1d (2026-11-26 11:30) vai ser BLOQUEADO: preço de 3537cc1d conferido há 8 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-26-story-32987bff (2026-11-26 13:15) vai ser BLOQUEADO: preço de 32987bff conferido há 10 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+   "texto": "sem Story em 2026-11-25 às 18:30",
+   "acao": "rodar tools/stories.py (precisa de itens conferidos há até 3 dias)"
   },
   {
    "nivel": "INFO",
@@ -163,9 +24,9 @@
    "acao": "já resolvido em 12/11/2026; nada a fazer"
   },
   {
-   "nivel": "ALTO",
+   "nivel": "MEDIO",
    "area": "preços",
-   "texto": "312 de 464 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "57 de 481 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -177,73 +38,13 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "nenhum item da loja shopee conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
-   "texto": "nenhum item da loja meli conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
-   "texto": "nenhum item da loja kabum conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
-   "texto": "nenhum item da loja nike conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
-   "texto": "nenhum item da loja dafiti conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
-   "texto": "nenhum item da loja docebeleza conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
-   "texto": "nenhum item da loja puma conferido nos últimos 7 dias",
-   "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "preços",
-   "texto": "nenhum item da loja hope conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
   },
   {
    "nivel": "INFO",
    "area": "calendário",
    "texto": "2026-11-23 sem post de produto",
-   "acao": "completar a programação"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
-   "texto": "2026-11-24 sem post de produto",
-   "acao": "completar a programação"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
-   "texto": "2026-11-25 sem post de produto",
    "acao": "completar a programação"
   }
  ]
