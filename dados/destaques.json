@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23 20:03",
+ "atualizado": "2026-11-23 21:10",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -108,6 +108,87 @@
   {
    "nome": "TECH",
    "stories": [
+    {
+     "id": "2026-12-04-story-603f1c0a",
+     "data": "2026-12-04",
+     "hora": "07:30",
+     "tema": "Mouse sem fio Logitech M170 com receptor USB",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-04-story-603f1c0a/01.jpg"
+    },
+    {
+     "id": "2026-12-03-story-f101c696",
+     "data": "2026-12-03",
+     "hora": "07:30",
+     "tema": "Carregador de Parede Rápido Tipo C Baseus",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-03-story-f101c696/01.jpg"
+    },
+    {
+     "id": "2026-12-02-story-a35e5966",
+     "data": "2026-12-02",
+     "hora": "08:45",
+     "tema": "Caixa de Som Torre Aiwa AWS-T2W-02 Bluetooth 2300W",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-02-story-a35e5966/01.jpg"
+    },
+    {
+     "id": "2026-12-02-story-ec36ab29",
+     "data": "2026-12-02",
+     "hora": "07:30",
+     "tema": "Carregador Turbo 30W com Cabo para iPhone",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-02-story-ec36ab29/01.jpg"
+    },
+    {
+     "id": "2026-12-01-story-ef5cf06e",
+     "data": "2026-12-01",
+     "hora": "08:45",
+     "tema": "Suporte para notebook e MacBook em alumínio com altura ajust",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-01-story-ef5cf06e/01.jpg"
+    },
+    {
+     "id": "2026-12-01-story-3b0e101f",
+     "data": "2026-12-01",
+     "hora": "07:30",
+     "tema": "Fone de Ouvido Bluetooth Samsung Buds Core com Microfone",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-01-story-3b0e101f/01.jpg"
+    },
+    {
+     "id": "2026-11-30-story-c5a3cf15",
+     "data": "2026-11-30",
+     "hora": "08:45",
+     "tema": "Soundcore P20i da Anker Fone de Ouvido Bluetooth 5.3 Sem Fio",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-30-story-c5a3cf15/01.jpg"
+    },
+    {
+     "id": "2026-11-30-story-0b2e7141",
+     "data": "2026-11-30",
+     "hora": "07:30",
+     "tema": "Fone QCY Buds T43 TWS Bluetooth 5.3",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-30-story-0b2e7141/01.jpg"
+    },
+    {
+     "id": "2026-11-28-story-cafebb2b",
+     "data": "2026-11-28",
+     "hora": "08:45",
+     "tema": "Caixinha de Som USB para PC e Notebook Coolmusic 6W",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-28-story-cafebb2b/01.jpg"
+    },
     {
      "id": "2026-11-19-story-feb13ddd",
      "data": "2026-11-19",
@@ -460,8 +541,8 @@
      "data": "2026-11-23",
      "hora": "20:15",
      "tema": "Kit 2 Polos Pima, branco e preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 20:21",
      "img": "postagens/2026-11-23-story-a1cda672/01.jpg"
     },
     {
@@ -487,8 +568,8 @@
      "data": "2026-11-23",
      "hora": "15:15",
      "tema": "Suéter Moletom Masculino, preto",
-     "status": "erro",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 20:12",
      "img": "postagens/2026-11-23-story-647cfd69/01.jpg"
     },
     {
@@ -550,7 +631,7 @@
      "data": "2026-11-22",
      "hora": "15:15",
      "tema": "Calça Chino Carrot de Alfaiataria Masculina, preta",
-     "status": "erro",
+     "status": "cancelado",
      "publicado_em": null,
      "img": "postagens/2026-11-22-story-c83b7e64/01.jpg"
     },
@@ -883,6 +964,24 @@
   {
    "nome": "BELEZA",
    "stories": [
+    {
+     "id": "2026-12-06-story-60c6c3c2",
+     "data": "2026-12-06",
+     "hora": "07:30",
+     "tema": "SKIN1004 Madagascar Centella Kit de Viagem",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-06-story-60c6c3c2/01.jpg"
+    },
+    {
+     "id": "2026-12-05-story-aa0401d5",
+     "data": "2026-12-05",
+     "hora": "07:30",
+     "tema": "Pantene Pro-V Science Molecular Bond Repair Shampoo 510 ml",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-05-story-aa0401d5/01.jpg"
+    },
     {
      "id": "2026-11-28-story-470d5163",
      "data": "2026-11-28",
@@ -1262,6 +1361,42 @@
   {
    "nome": "CASA",
    "stories": [
+    {
+     "id": "2026-12-06-story-dce4ccf5",
+     "data": "2026-12-06",
+     "hora": "08:45",
+     "tema": "Kit chaves com catraca reversível e soquetes, 46 peças e mal",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-06-story-dce4ccf5/01.jpg"
+    },
+    {
+     "id": "2026-12-05-story-d9eda127",
+     "data": "2026-12-05",
+     "hora": "08:45",
+     "tema": "Ferro de passar a vapor Black+Decker FX1050",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-05-story-d9eda127/01.jpg"
+    },
+    {
+     "id": "2026-12-04-story-8dd478f3",
+     "data": "2026-12-04",
+     "hora": "08:45",
+     "tema": "Ferro de passar a vapor Electrolux Efficient ESI10",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-04-story-8dd478f3/01.jpg"
+    },
+    {
+     "id": "2026-12-03-story-15813dd2",
+     "data": "2026-12-03",
+     "hora": "08:45",
+     "tema": "Tramontina Trena com Fita de Aço 5 Metros",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-12-03-story-15813dd2/01.jpg"
+    },
     {
      "id": "2026-11-22-story-d61d1607",
      "data": "2026-11-22",
