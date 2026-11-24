@@ -5302,11 +5302,13 @@
    "postagens/2026-11-23-story-e44f6b53/01.jpg"
   ],
   "legenda": "Story: Tênis On Running Cloudmonster 3 Feminino, rosa: R$ 1.349,10 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 149
+  "num": 149,
+  "ig_id": "18197463808397261",
+  "publicado_em": "2026-11-23 22:01"
  },
  {
   "id": "2026-11-24-story-4dcaa306",
