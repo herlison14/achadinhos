@@ -1605,8 +1605,8 @@
     "ef1a7536"
    ],
    "tema": "Story: Cueca Masculina Mash Boxer, preta",
-   "lido_em": "2026-11-23 11:55",
-   "horas_no_ar": 13.9,
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 24,
    "views": 7,
    "reach": 6,
    "replies": 0,
@@ -1651,18 +1651,18 @@
     "c921991d"
    ],
    "tema": "Story: Jogo de panelas Tramontina Turim antiaderente, 10 peças",
-   "lido_em": "2026-11-23 11:55",
-   "horas_no_ar": 4.4,
-   "views": 6,
-   "reach": 5,
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 16.4,
+   "views": 14,
+   "reach": 14,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 0,
+   "total_interactions": 2,
    "navegacao": {
-    "swipe_forward": 1,
-    "tap_forward": 4
+    "tap_forward": 13,
+    "swipe_forward": 1
    }
   },
   "2026-11-23-story-a4aa5038": {
@@ -1674,16 +1674,19 @@
     "a4aa5038"
    ],
    "tema": "Story: Garrafa térmica Tramontina Exata 1 L",
-   "lido_em": "2026-11-23 11:55",
-   "horas_no_ar": 3.1,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 15.0,
+   "views": 14,
+   "reach": 13,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_exit": 1,
+    "tap_forward": 13
+   }
   },
   "2026-11-23-story-dd065f32": {
    "publicado_em": "2026-11-23 10:01",
@@ -1694,16 +1697,19 @@
     "dd065f32"
    ],
    "tema": "Story: Hoodie Moletom Masculino, branco",
-   "lido_em": "2026-11-23 11:55",
-   "horas_no_ar": 1.9,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 13.9,
+   "views": 13,
+   "reach": 13,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_forward": 12,
+    "swipe_forward": 1
+   }
   },
   "2026-11-23-story-47970ae5": {
    "publicado_em": "2026-11-23 11:31",
@@ -1714,8 +1720,145 @@
     "47970ae5"
    ],
    "tema": "Story: Tênis On Running Cloudsurfer Max Masculino, laranja",
-   "lido_em": "2026-11-23 11:55",
-   "horas_no_ar": 0.4,
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 12.4,
+   "views": 13,
+   "reach": 13,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_forward": 13
+   }
+  },
+  "2026-11-23-story-470439ba": {
+   "publicado_em": "2026-11-23 13:21",
+   "hora": "13:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "470439ba"
+   ],
+   "tema": "Story: Chinelo Havaianas Essential, preto",
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 10.5,
+   "views": 13,
+   "reach": 11,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 1,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_forward": 10,
+    "tap_exit": 3
+   }
+  },
+  "2026-11-23-story-647cfd69": {
+   "publicado_em": "2026-11-23 20:12",
+   "hora": "15:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "647cfd69"
+   ],
+   "tema": "Story: Suéter Moletom Masculino, preto",
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 3.7,
+   "views": 6,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 6
+   }
+  },
+  "2026-11-23-story-dbe5116a": {
+   "publicado_em": "2026-11-23 16:51",
+   "hora": "16:45",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "dbe5116a"
+   ],
+   "tema": "Story: Tênis On Running Cloudvista 2 Waterproof Masculino, preto",
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 7.0,
+   "views": 10,
+   "reach": 10,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "swipe_forward": 1,
+    "tap_forward": 8,
+    "tap_exit": 1
+   }
+  },
+  "2026-11-23-story-8665f270": {
+   "publicado_em": "2026-11-23 18:31",
+   "hora": "18:30",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "8665f270"
+   ],
+   "tema": "Story: Papete com Fivelas Cartago, marrom",
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 5.4,
+   "views": 10,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_exit": 3,
+    "tap_forward": 7
+   }
+  },
+  "2026-11-23-story-a1cda672": {
+   "publicado_em": "2026-11-23 20:21",
+   "hora": "20:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "a1cda672"
+   ],
+   "tema": "Story: Kit 2 Polos Pima, branco e preto",
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 3.5,
+   "views": 6,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_forward": 5,
+    "tap_exit": 1
+   }
+  },
+  "2026-11-23-story-e44f6b53": {
+   "publicado_em": "2026-11-23 22:01",
+   "hora": "22:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "e44f6b53"
+   ],
+   "tema": "Story: Tênis On Running Cloudmonster 3 Feminino, rosa",
+   "lido_em": "2026-11-23 23:53",
+   "horas_no_ar": 1.9,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -1726,9 +1869,9 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-23 11:55",
+ "atualizado": "2026-11-23 23:53",
  "resumo": {
-  "stories_com_leitura_final": 53,
+  "stories_com_leitura_final": 54,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -1792,13 +1935,13 @@
    },
    {
     "nome": "2026-11-22",
-    "stories": 4,
-    "views_medio": 9.2,
-    "alcance_medio": 8.2,
-    "views_total": 37,
+    "stories": 5,
+    "views_medio": 8.8,
+    "alcance_medio": 7.8,
+    "views_total": 44,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": null
+    "saidas_pct": 14.3
    }
   ],
   "por_hora": [
@@ -1914,13 +2057,13 @@
    },
    {
     "nome": "22:00",
-    "stories": 5,
-    "views_medio": 15.2,
-    "alcance_medio": 11.4,
-    "views_total": 76,
+    "stories": 6,
+    "views_medio": 13.8,
+    "alcance_medio": 10.5,
+    "views_total": 83,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 3.8
+    "saidas_pct": 6.1
    }
   ],
   "por_area": [
@@ -1976,13 +2119,13 @@
    },
    {
     "nome": "MODA",
-    "stories": 25,
-    "views_medio": 14.6,
-    "alcance_medio": 11.2,
-    "views_total": 364,
+    "stories": 26,
+    "views_medio": 14.3,
+    "alcance_medio": 11.0,
+    "views_total": 371,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 7.3
+    "saidas_pct": 7.5
    }
   ],
   "por_tipo": [
@@ -1998,13 +2141,13 @@
    },
    {
     "nome": "oferta",
-    "stories": 48,
-    "views_medio": 17.4,
-    "alcance_medio": 12.4,
-    "views_total": 835,
+    "stories": 49,
+    "views_medio": 17.2,
+    "alcance_medio": 12.3,
+    "views_total": 842,
     "respostas": 0,
     "visitas_perfil": 3,
-    "saidas_pct": 7.9
+    "saidas_pct": 8.0
    },
    {
     "nome": "sem_preco",
