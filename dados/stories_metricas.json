@@ -1697,8 +1697,8 @@
     "dd065f32"
    ],
    "tema": "Story: Hoodie Moletom Masculino, branco",
-   "lido_em": "2026-11-23 23:58",
-   "horas_no_ar": 14.0,
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 24,
    "views": 13,
    "reach": 13,
    "replies": 0,
@@ -1720,8 +1720,8 @@
     "47970ae5"
    ],
    "tema": "Story: Tênis On Running Cloudsurfer Max Masculino, laranja",
-   "lido_em": "2026-11-23 23:58",
-   "horas_no_ar": 12.5,
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 24,
    "views": 13,
    "reach": 13,
    "replies": 0,
@@ -1742,17 +1742,17 @@
     "470439ba"
    ],
    "tema": "Story: Chinelo Havaianas Essential, preto",
-   "lido_em": "2026-11-23 23:58",
-   "horas_no_ar": 10.6,
-   "views": 13,
-   "reach": 11,
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 22.6,
+   "views": 15,
+   "reach": 13,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 1,
    "total_interactions": 2,
    "navegacao": {
-    "tap_forward": 10,
+    "tap_forward": 12,
     "tap_exit": 3
    }
   },
@@ -1765,17 +1765,18 @@
     "647cfd69"
    ],
    "tema": "Story: Suéter Moletom Masculino, preto",
-   "lido_em": "2026-11-23 23:58",
-   "horas_no_ar": 3.8,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 15.8,
+   "views": 11,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 6
+    "tap_back": 1,
+    "tap_forward": 10
    }
   },
   "2026-11-23-story-dbe5116a": {
@@ -1787,10 +1788,10 @@
     "dbe5116a"
    ],
    "tema": "Story: Tênis On Running Cloudvista 2 Waterproof Masculino, preto",
-   "lido_em": "2026-11-23 23:58",
-   "horas_no_ar": 7.1,
-   "views": 10,
-   "reach": 10,
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 19.1,
+   "views": 12,
+   "reach": 12,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -1798,7 +1799,7 @@
    "total_interactions": 2,
    "navegacao": {
     "swipe_forward": 1,
-    "tap_forward": 8,
+    "tap_forward": 10,
     "tap_exit": 1
    }
   },
@@ -1811,10 +1812,10 @@
     "8665f270"
    ],
    "tema": "Story: Papete com Fivelas Cartago, marrom",
-   "lido_em": "2026-11-23 23:58",
-   "horas_no_ar": 5.5,
-   "views": 10,
-   "reach": 8,
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 17.5,
+   "views": 13,
+   "reach": 10,
    "replies": 0,
    "shares": 0,
    "follows": 0,
@@ -1822,7 +1823,7 @@
    "total_interactions": 1,
    "navegacao": {
     "tap_exit": 3,
-    "tap_forward": 7
+    "tap_forward": 10
    }
   },
   "2026-11-23-story-a1cda672": {
@@ -1834,18 +1835,19 @@
     "a1cda672"
    ],
    "tema": "Story: Kit 2 Polos Pima, branco e preto",
-   "lido_em": "2026-11-23 23:58",
-   "horas_no_ar": 3.6,
-   "views": 6,
-   "reach": 6,
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 15.6,
+   "views": 11,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_forward": 5,
-    "tap_exit": 1
+    "tap_back": 1,
+    "tap_exit": 1,
+    "tap_forward": 9
    }
   },
   "2026-11-23-story-e44f6b53": {
@@ -1857,8 +1859,92 @@
     "e44f6b53"
    ],
    "tema": "Story: Tênis On Running Cloudmonster 3 Feminino, rosa",
-   "lido_em": "2026-11-23 23:58",
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 14.0,
+   "views": 10,
+   "reach": 6,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_back": 1,
+    "swipe_forward": 1,
+    "tap_forward": 8
+   }
+  },
+  "2026-11-24-story-4dcaa306": {
+   "publicado_em": "2026-11-24 07:31",
+   "hora": "07:30",
+   "area": "COZINHA",
+   "tipo": "oferta",
+   "produtos": [
+    "4dcaa306"
+   ],
+   "tema": "Story: Jogo de potes de vidro hermético Brinox Ekko, 7 peças",
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 4.5,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-24-story-5b89e0f0": {
+   "publicado_em": "2026-11-24 08:51",
+   "hora": "08:45",
+   "area": "COZINHA",
+   "tipo": "oferta",
+   "produtos": [
+    "5b89e0f0"
+   ],
+   "tema": "Story: Liquidificador Mondial Easy Power 550 W",
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 3.1,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-24-story-e8d1b283": {
+   "publicado_em": "2026-11-24 10:01",
+   "hora": "10:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "e8d1b283"
+   ],
+   "tema": "Story: Bermuda Masculina Reta Chino, bege",
+   "lido_em": "2026-11-24 11:59",
    "horas_no_ar": 2.0,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-24-story-47a6dcd5": {
+   "publicado_em": "2026-11-24 11:31",
+   "hora": "11:30",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "47a6dcd5"
+   ],
+   "tema": "Story: Kit 2 Polos Pima Piquet, marinho",
+   "lido_em": "2026-11-24 11:59",
+   "horas_no_ar": 0.5,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -1869,9 +1955,9 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-23 23:58",
+ "atualizado": "2026-11-24 11:59",
  "resumo": {
-  "stories_com_leitura_final": 54,
+  "stories_com_leitura_final": 58,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -1942,6 +2028,16 @@
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 14.3
+   },
+   {
+    "nome": "2026-11-23",
+    "stories": 4,
+    "views_medio": 13.2,
+    "alcance_medio": 12.8,
+    "views_total": 53,
+    "respostas": 0,
+    "visitas_perfil": 1,
+    "saidas_pct": 14.8
    }
   ],
   "por_hora": [
@@ -1977,33 +2073,33 @@
    },
    {
     "nome": "10:00",
-    "stories": 7,
-    "views_medio": 19.1,
+    "stories": 8,
+    "views_medio": 18.4,
     "alcance_medio": 13.1,
-    "views_total": 134,
+    "views_total": 147,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 10.8
    },
    {
     "nome": "11:30",
-    "stories": 6,
-    "views_medio": 13.8,
-    "alcance_medio": 10.5,
-    "views_total": 83,
+    "stories": 7,
+    "views_medio": 13.7,
+    "alcance_medio": 10.9,
+    "views_total": 96,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 8.2
    },
    {
     "nome": "13:15",
-    "stories": 7,
-    "views_medio": 14.1,
-    "alcance_medio": 11.6,
-    "views_total": 99,
+    "stories": 8,
+    "views_medio": 14.2,
+    "alcance_medio": 11.8,
+    "views_total": 114,
     "respostas": 0,
-    "visitas_perfil": 0,
-    "saidas_pct": 7.7
+    "visitas_perfil": 1,
+    "saidas_pct": 10.0
    },
    {
     "nome": "15:15",
@@ -2017,13 +2113,13 @@
    },
    {
     "nome": "16:45",
-    "stories": 4,
-    "views_medio": 18.2,
-    "alcance_medio": 12.5,
-    "views_total": 73,
+    "stories": 5,
+    "views_medio": 17.0,
+    "alcance_medio": 12.4,
+    "views_total": 85,
     "respostas": 0,
     "visitas_perfil": 0,
-    "saidas_pct": 6.2
+    "saidas_pct": 6.6
    },
    {
     "nome": "18:30",
@@ -2119,13 +2215,13 @@
    },
    {
     "nome": "MODA",
-    "stories": 26,
-    "views_medio": 14.3,
-    "alcance_medio": 11.0,
-    "views_total": 371,
+    "stories": 30,
+    "views_medio": 14.1,
+    "alcance_medio": 11.2,
+    "views_total": 424,
     "respostas": 0,
-    "visitas_perfil": 1,
-    "saidas_pct": 7.5
+    "visitas_perfil": 2,
+    "saidas_pct": 8.2
    }
   ],
   "por_tipo": [
@@ -2141,13 +2237,13 @@
    },
    {
     "nome": "oferta",
-    "stories": 49,
-    "views_medio": 17.2,
+    "stories": 53,
+    "views_medio": 16.9,
     "alcance_medio": 12.3,
-    "views_total": 842,
+    "views_total": 895,
     "respostas": 0,
-    "visitas_perfil": 3,
-    "saidas_pct": 8.0
+    "visitas_perfil": 4,
+    "saidas_pct": 8.2
    },
    {
     "nome": "sem_preco",
