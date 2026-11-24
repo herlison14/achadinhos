@@ -5400,11 +5400,13 @@
    "postagens/2026-11-24-story-e8d1b283/01.jpg"
   ],
   "legenda": "Story: Bermuda Masculina Reta Chino, bege: R$ 99,99 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 152
+  "num": 152,
+  "ig_id": "18125159044933664",
+  "publicado_em": "2026-11-24 10:01"
  },
  {
   "id": "2026-11-24-story-47a6dcd5",
