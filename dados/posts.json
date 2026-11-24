@@ -5324,11 +5324,13 @@
    "postagens/2026-11-24-story-4dcaa306/01.jpg"
   ],
   "legenda": "Story: Jogo de potes de vidro hermético Brinox Ekko, 7 peças: R$ 79,81 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 150
+  "num": 150,
+  "ig_id": "18098642990261617",
+  "publicado_em": "2026-11-24 07:31"
  },
  {
   "id": "2026-11-24-story-5b89e0f0",
