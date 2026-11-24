@@ -5515,11 +5515,13 @@
    "postagens/2026-11-24-story-5b7c3bd8/01.jpg"
   ],
   "legenda": "Story: Calça Jeans Slim Blue Summer, indigo: R$ 238,90 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 156
+  "num": 156,
+  "ig_id": "18094333280700686",
+  "publicado_em": "2026-11-24 16:51"
  },
  {
   "id": "2026-11-24-story-936e771c",
