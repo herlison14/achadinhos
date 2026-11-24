@@ -5422,11 +5422,13 @@
    "postagens/2026-11-24-story-47a6dcd5/01.jpg"
   ],
   "legenda": "Story: Kit 2 Polos Pima Piquet, marinho: R$ 899,90 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 153
+  "num": 153,
+  "ig_id": "17913862278312477",
+  "publicado_em": "2026-11-24 11:31"
  },
  {
   "id": "2026-11-24-story-5788bf35",
