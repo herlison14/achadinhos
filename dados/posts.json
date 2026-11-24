@@ -5537,11 +5537,13 @@
    "postagens/2026-11-24-story-936e771c/01.jpg"
   ],
   "legenda": "Story: Calça Slim Masculina Xadrez com Bolsos, azul: R$ 259,99 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 157
+  "num": 157,
+  "ig_id": "17999693405837806",
+  "publicado_em": "2026-11-24 18:31"
  },
  {
   "id": "2026-11-24-reel-mascote-bf-contagem",
