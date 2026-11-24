@@ -5576,11 +5576,13 @@
    "postagens/2026-11-24-story-52318df4/01.jpg"
   ],
   "legenda": "Story: Calça Surpresa Cores Variadas Reserva, branca: R$ 189,00 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 158
+  "num": 158,
+  "ig_id": "18008711228794503",
+  "publicado_em": "2026-11-24 20:21"
  },
  {
   "id": "2026-11-24-story-843ee78a",
