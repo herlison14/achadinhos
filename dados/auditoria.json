@@ -1,9 +1,9 @@
 {
- "gerado": "2026-11-24 00:00",
+ "gerado": "2026-11-24 09:53",
  "contagem": {
   "MEDIO": 5,
-  "INFO": 1,
-  "ALTO": 1
+  "ALTO": 3,
+  "INFO": 1
  },
  "achados": [
   {
@@ -17,6 +17,18 @@
    "area": "publicação",
    "texto": "sem Story em 2026-11-25 às 18:30",
    "acao": "rodar tools/stories.py (precisa de itens conferidos há até 3 dias)"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-27-story-71623c4d (2026-11-27 07:30) vai ser BLOQUEADO: preço de 71623c4d conferido há 11 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
+  },
+  {
+   "nivel": "ALTO",
+   "area": "pré-voo",
+   "texto": "2026-11-27-story-ebe21e2e (2026-11-27 08:45) vai ser BLOQUEADO: preço de ebe21e2e conferido há 11 dias (máximo 7)",
+   "acao": "reconferir o preço / ajustar a legenda antes do horário"
   },
   {
    "nivel": "INFO",
