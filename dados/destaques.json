@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23 21:42",
+ "atualizado": "2026-11-24 08:28",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -532,8 +532,8 @@
      "data": "2026-11-23",
      "hora": "22:00",
      "tema": "Tênis On Running Cloudmonster 3 Feminino, rosa",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-23 22:01",
      "img": "postagens/2026-11-23-story-e44f6b53/01.jpg"
     },
     {
@@ -1199,8 +1199,8 @@
      "data": "2026-11-24",
      "hora": "07:30",
      "tema": "Jogo de potes de vidro hermético Brinox Ekko, 7 peças",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-24 07:31",
      "img": "postagens/2026-11-24-story-4dcaa306/01.jpg"
     },
     {
