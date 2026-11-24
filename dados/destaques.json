@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-23 21:10",
+ "atualizado": "2026-11-23 21:42",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -93,6 +93,15 @@
      "status": "publicado",
      "publicado_em": "2026-11-04 18:31",
      "img": "postagens/2026-11-04-story-93f49b8a/01.jpg"
+    },
+    {
+     "id": "2026-11-04-story-96fd14c8",
+     "data": "2026-11-04",
+     "hora": "11:30",
+     "tema": "Mini Compressor de Ar Portátil Digital Sem Fio para Pneus e ",
+     "status": "publicado",
+     "publicado_em": "2026-11-04 11:31",
+     "img": "postagens/2026-11-04-story-96fd14c8/01.jpg"
     },
     {
      "id": "2026-11-03-story-30f6e7fd",
@@ -233,15 +242,6 @@
      "status": "publicado",
      "publicado_em": "2026-11-12 11:31",
      "img": "postagens/2026-11-12-story-22f38da9/01.jpg"
-    },
-    {
-     "id": "2026-11-04-story-96fd14c8",
-     "data": "2026-11-04",
-     "hora": "11:30",
-     "tema": "Mini Compressor de Ar Portátil Digital Sem Fio para Pneus e ",
-     "status": "publicado",
-     "publicado_em": "2026-11-04 11:31",
-     "img": "postagens/2026-11-04-story-96fd14c8/01.jpg"
     },
     {
      "id": "2026-11-03-story-30f6e7fd",
