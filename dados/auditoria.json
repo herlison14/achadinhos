@@ -1,16 +1,10 @@
 {
- "gerado": "2026-11-25 08:39",
+ "gerado": "2026-11-25 13:53",
  "contagem": {
-  "MEDIO": 7,
+  "MEDIO": 6,
   "INFO": 1
  },
  "achados": [
-  {
-   "nivel": "MEDIO",
-   "area": "publicação",
-   "texto": "2026-11-25-meli-tech-pet está só 'planejado' para 2026-11-25 12:00 (não vai sair sozinho)",
-   "acao": "aprovar (agendado) ou cancelar"
-  },
   {
    "nivel": "MEDIO",
    "area": "publicação",
