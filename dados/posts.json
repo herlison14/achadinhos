@@ -5862,11 +5862,13 @@
    "postagens/2026-11-25-story-3a3b0a44/01.jpg"
   ],
   "legenda": "Story: Kit 2 Camisas ML Oxford Color, marinho: R$ 847,90 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 169
+  "num": 169,
+  "ig_id": "18350811664255727",
+  "publicado_em": "2026-11-25 20:21"
  },
  {
   "id": "2026-11-25-qual-categoria-black-friday",
