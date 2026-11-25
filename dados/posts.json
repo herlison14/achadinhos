@@ -5620,11 +5620,13 @@
    "postagens/2026-11-25-story-8d6f44c3/01.jpg"
   ],
   "legenda": "Story: Air Fryer Ultra 3,2 L com timer: R$ 189,90 (conferido em 23/11/2026) — antes R$ 199,99, queda de 5% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 160
+  "num": 160,
+  "ig_id": "17890857354688014",
+  "publicado_em": "2026-11-25 07:31"
  },
  {
   "id": "2026-11-25-story-17039bc2",
