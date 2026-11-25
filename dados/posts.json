@@ -5642,11 +5642,13 @@
    "postagens/2026-11-25-story-17039bc2/01.jpg"
   ],
   "legenda": "Story: Jogo de potes de plástico herméticos Electrolux, 12 peças: R$ 89,09 (conferido em 23/11/2026) — antes R$ 92,05, queda de 3% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 161
+  "num": 161,
+  "ig_id": "18056200772820601",
+  "publicado_em": "2026-11-25 08:51"
  },
  {
   "id": "2026-11-25-story-9452bed0",
