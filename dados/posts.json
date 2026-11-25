@@ -5727,11 +5727,13 @@
    "postagens/2026-11-25-story-a923059c/01.jpg"
   ],
   "legenda": "Story: Calça Indaia Clean, cinza mescla: R$ 538,90 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 165
+  "num": 165,
+  "ig_id": "18108304319017583",
+  "publicado_em": "2026-11-25 13:21"
  },
  {
   "id": "2026-11-25-story-1fb8dc60",
