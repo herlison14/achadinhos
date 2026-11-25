@@ -5749,11 +5749,13 @@
    "postagens/2026-11-25-story-1fb8dc60/01.jpg"
   ],
   "legenda": "Story: Camiseta Box Fit Masculina com Algodão e Recorte Manga Curta, preta: R$ 99,99 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 166
+  "num": 166,
+  "ig_id": "17945055207401025",
+  "publicado_em": "2026-11-25 15:21"
  },
  {
   "id": "2026-11-25-story-2bd2dfaf",
