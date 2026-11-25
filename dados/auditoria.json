@@ -1,8 +1,7 @@
 {
- "gerado": "2026-11-24 13:54",
+ "gerado": "2026-11-24 22:01",
  "contagem": {
   "MEDIO": 4,
-  "ALTO": 5,
   "INFO": 1
  },
  "achados": [
@@ -13,36 +12,6 @@
    "acao": "aprovar (agendado) ou cancelar"
   },
   {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-27-story-71623c4d (2026-11-27 07:30) vai ser BLOQUEADO: preço de 71623c4d conferido há 11 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-27-story-ebe21e2e (2026-11-27 08:45) vai ser BLOQUEADO: preço de ebe21e2e conferido há 11 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-27-story-1baf9abc (2026-11-27 10:00) vai ser BLOQUEADO: preço de 1baf9abc conferido há 11 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-27-story-617eeddf (2026-11-27 11:30) vai ser BLOQUEADO: preço de 617eeddf conferido há 11 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
-   "nivel": "ALTO",
-   "area": "pré-voo",
-   "texto": "2026-11-27-story-ef0d9d55 (2026-11-27 13:15) vai ser BLOQUEADO: preço de ef0d9d55 conferido há 11 dias (máximo 7)",
-   "acao": "reconferir o preço / ajustar a legenda antes do horário"
-  },
-  {
    "nivel": "INFO",
    "area": "telegram",
    "texto": "19 posts publicados durante o problema do token (05 a 12/11/2026) ficaram sem espelho no Telegram",
@@ -51,7 +20,7 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "121 de 481 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "77 de 481 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
