@@ -5771,11 +5771,13 @@
    "postagens/2026-11-25-story-2bd2dfaf/01.jpg"
   ],
   "legenda": "Story: Kit 2 Camisas Oxford Sport, branco e azul: R$ 847,90 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 167
+  "num": 167,
+  "ig_id": "18125673541899605",
+  "publicado_em": "2026-11-25 16:51"
  },
  {
   "id": "2026-11-25-story-c70cc5d5",
