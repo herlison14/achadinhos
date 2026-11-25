@@ -5686,11 +5686,13 @@
    "postagens/2026-11-25-story-6277768d/01.jpg"
   ],
   "legenda": "Story: Camiseta Masculina Comfort de Malha Interlock Lisa, azul: R$ 119,99 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 163
+  "num": 163,
+  "ig_id": "18100999616389686",
+  "publicado_em": "2026-11-25 11:31"
  },
  {
   "id": "2026-11-25-meli-tech-pet",
