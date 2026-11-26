@@ -5973,11 +5973,12 @@
    "postagens/2026-11-26-story-24cc9e6a/01.jpg"
   ],
   "legenda": "Story: Acessórios Rsv Porta-Cartão Basic, preto: R$ 99,00 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "erro",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 173
+  "num": 173,
+  "nota": "HTTP 400 Media ID is not available"
  },
  {
   "id": "2026-11-26-story-3537cc1d",
