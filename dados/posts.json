@@ -5961,8 +5961,8 @@
  },
  {
   "id": "2026-11-26-story-24cc9e6a",
-  "data": "2026-11-26",
-  "hora": "10:00",
+  "data": "2026-11-27",
+  "hora": "18:30",
   "formato": "story",
   "canal": "ig",
   "tema": "Story: Acessórios Rsv Porta-Cartão Basic, preto",
@@ -5973,12 +5973,12 @@
    "postagens/2026-11-26-story-24cc9e6a/01.jpg"
   ],
   "legenda": "Story: Acessórios Rsv Porta-Cartão Basic, preto: R$ 99,00 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "erro",
+  "status": "agendado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
   "num": 173,
-  "nota": "HTTP 400 Media ID is not available"
+  "nota": "Remarcado de 26/11 10:00 (HTTP 400 Media ID is not available, falha passageira da Meta) pelo controle de 26/11 14:20."
  },
  {
   "id": "2026-11-26-story-3537cc1d",

@@ -1,7 +1,7 @@
 {
- "gerado": "2026-11-26 08:26",
+ "gerado": "2026-11-26 14:18",
  "contagem": {
-  "MEDIO": 8,
+  "MEDIO": 7,
   "INFO": 1
  },
  "achados": [
@@ -10,12 +10,6 @@
    "area": "publicação",
    "texto": "2026-11-27-bf-lista está só 'planejado' para 2026-11-27 08:00 (não vai sair sozinho)",
    "acao": "aprovar (agendado) ou cancelar"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "publicação",
-   "texto": "sem Story em 2026-11-27 às 18:30",
-   "acao": "rodar tools/stories.py (precisa de itens conferidos há até 3 dias)"
   },
   {
    "nivel": "MEDIO",
