@@ -5907,11 +5907,13 @@
    "postagens/2026-11-25-story-c030e2cd/01.jpg"
   ],
   "legenda": "Story: Garrafa de Metal Sports Club Mindset, prateada: R$ 49,99 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 170
+  "num": 170,
+  "ig_id": "18001433697047494",
+  "publicado_em": "2026-11-25 22:01"
  },
  {
   "id": "2026-11-26-story-244eda85",
