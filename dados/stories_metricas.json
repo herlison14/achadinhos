@@ -2112,15 +2112,15 @@
     "8d6f44c3"
    ],
    "tema": "Story: Air Fryer Ultra 3,2 L com timer",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 11.3,
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 17.7,
    "views": 6,
    "reach": 5,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 0,
+   "total_interactions": 2,
    "navegacao": {
     "tap_forward": 5
    }
@@ -2134,15 +2134,15 @@
     "17039bc2"
    ],
    "tema": "Story: Jogo de potes de plástico herméticos Electrolux, 12 peças",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 10.0,
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 16.4,
    "views": 6,
    "reach": 5,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 0,
+   "total_interactions": 2,
    "navegacao": {
     "tap_forward": 5
    }
@@ -2156,15 +2156,15 @@
     "9452bed0"
    ],
    "tema": "Story: Calça Jeans Slim Kasper Summer, indigo",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 8.8,
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 15.2,
    "views": 7,
    "reach": 5,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
-   "total_interactions": 0,
+   "total_interactions": 2,
    "navegacao": {
     "tap_forward": 6
    }
@@ -2178,16 +2178,18 @@
     "6277768d"
    ],
    "tema": "Story: Camiseta Masculina Comfort de Malha Interlock Lisa, azul",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 7.3,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 13.7,
+   "views": 6,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 2,
+   "navegacao": {
+    "tap_forward": 5
+   }
   },
   "2026-11-25-story-a923059c": {
    "publicado_em": "2026-11-25 13:21",
@@ -2198,8 +2200,8 @@
     "a923059c"
    ],
    "tema": "Story: Calça Indaia Clean, cinza mescla",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 5.5,
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 11.9,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -2218,8 +2220,8 @@
     "1fb8dc60"
    ],
    "tema": "Story: Camiseta Box Fit Masculina com Algodão e Recorte Manga Curta",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 3.5,
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 9.9,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -2238,8 +2240,8 @@
     "2bd2dfaf"
    ],
    "tema": "Story: Kit 2 Camisas Oxford Sport, branco e azul",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 2.0,
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 8.4,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -2258,8 +2260,48 @@
     "a77c1d6a"
    ],
    "tema": "Story: Ring Light 12 polegadas com Tripé de 2,10 m e 3 Cores de Luz",
-   "lido_em": "2026-11-25 18:50",
-   "horas_no_ar": 0.3,
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 6.7,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-25-story-3a3b0a44": {
+   "publicado_em": "2026-11-25 20:21",
+   "hora": "20:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "3a3b0a44"
+   ],
+   "tema": "Story: Kit 2 Camisas ML Oxford Color, marinho",
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 4.9,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-25-story-c030e2cd": {
+   "publicado_em": "2026-11-25 22:01",
+   "hora": "22:00",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "c030e2cd"
+   ],
+   "tema": "Story: Garrafa de Metal Sports Club Mindset, prateada",
+   "lido_em": "2026-11-26 01:12",
+   "horas_no_ar": 3.2,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -2270,7 +2312,7 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-25 18:50",
+ "atualizado": "2026-11-26 01:12",
  "resumo": {
   "stories_com_leitura_final": 70,
   "por_dia": [
