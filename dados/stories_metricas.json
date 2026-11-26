@@ -2264,15 +2264,15 @@
     "a77c1d6a"
    ],
    "tema": "Story: Ring Light 12 polegadas com Tripé de 2,10 m e 3 Cores de Luz",
-   "lido_em": "2026-11-26 11:01",
-   "horas_no_ar": 16.5,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 24,
+   "views": null,
+   "reach": null,
+   "replies": null,
+   "shares": null,
+   "follows": null,
+   "profile_visits": null,
+   "total_interactions": null,
    "navegacao": null
   },
   "2026-11-25-story-3a3b0a44": {
@@ -2284,8 +2284,8 @@
     "3a3b0a44"
    ],
    "tema": "Story: Kit 2 Camisas ML Oxford Color, marinho",
-   "lido_em": "2026-11-26 11:01",
-   "horas_no_ar": 14.7,
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 23.7,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -2304,16 +2304,18 @@
     "c030e2cd"
    ],
    "tema": "Story: Garrafa de Metal Sports Club Mindset, prateada",
-   "lido_em": "2026-11-26 11:01",
-   "horas_no_ar": 13.0,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 22.1,
+   "views": 7,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_forward": 6
+   }
   },
   "2026-11-26-story-244eda85": {
    "publicado_em": "2026-11-26 07:31",
@@ -2324,16 +2326,20 @@
     "244eda85"
    ],
    "tema": "Story: Air Fryer Mondial Family 4 L com timer",
-   "lido_em": "2026-11-26 11:01",
-   "horas_no_ar": 3.5,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 12.6,
+   "views": 8,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 0,
+   "navegacao": {
+    "tap_exit": 1,
+    "tap_forward": 5,
+    "tap_back": 1
+   }
   },
   "2026-11-26-story-0ef7094d": {
    "publicado_em": "2026-11-26 08:51",
@@ -2344,8 +2350,108 @@
     "0ef7094d"
    ],
    "tema": "Story: Garrafa térmica 1 L Termolar Magic Pump",
-   "lido_em": "2026-11-26 11:01",
-   "horas_no_ar": 2.2,
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 11.2,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-26-story-3537cc1d": {
+   "publicado_em": "2026-11-26 11:31",
+   "hora": "11:30",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "3537cc1d"
+   ],
+   "tema": "Story: Bolsa para Vinho Estampada, vermelha",
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 8.6,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-26-story-32987bff": {
+   "publicado_em": "2026-11-26 13:21",
+   "hora": "13:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "32987bff"
+   ],
+   "tema": "Story: Acessórios Rsv Copo Minimal, verde",
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 6.7,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-26-story-a2936a75": {
+   "publicado_em": "2026-11-26 15:21",
+   "hora": "15:15",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "a2936a75"
+   ],
+   "tema": "Story: Kit de 3 Velas Aromáticas Beleza C&A",
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 4.7,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-26-story-3585d070": {
+   "publicado_em": "2026-11-26 16:51",
+   "hora": "16:45",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "3585d070"
+   ],
+   "tema": "Story: Acessórios Rsv Necessaire Mitaka, preta",
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 3.2,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
+  },
+  "2026-11-26-story-e1a04228": {
+   "publicado_em": "2026-11-26 18:31",
+   "hora": "18:30",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "e1a04228"
+   ],
+   "tema": "Story: Caderno Capa Dura Pautado Mindset, off white",
+   "lido_em": "2026-11-26 20:05",
+   "horas_no_ar": 1.6,
    "views": "menos de 5",
    "reach": "menos de 5",
    "replies": "menos de 5",
@@ -2356,9 +2462,9 @@
    "navegacao": null
   }
  },
- "atualizado": "2026-11-26 11:01",
+ "atualizado": "2026-11-26 20:05",
  "resumo": {
-  "stories_com_leitura_final": 75,
+  "stories_com_leitura_final": 78,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -2452,10 +2558,10 @@
    },
    {
     "nome": "2026-11-25",
-    "stories": 5,
+    "stories": 8,
     "views_medio": 7.0,
-    "alcance_medio": 5.7,
-    "views_total": 21,
+    "alcance_medio": 5.5,
+    "views_total": 28,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 14.3
@@ -2544,7 +2650,7 @@
    },
    {
     "nome": "18:30",
-    "stories": 5,
+    "stories": 6,
     "views_medio": 12.8,
     "alcance_medio": 9.4,
     "views_total": 64,
@@ -2554,7 +2660,7 @@
    },
    {
     "nome": "20:15",
-    "stories": 7,
+    "stories": 8,
     "views_medio": 14.9,
     "alcance_medio": 10.7,
     "views_total": 104,
@@ -2574,10 +2680,10 @@
    },
    {
     "nome": "22:00",
-    "stories": 8,
-    "views_medio": 13.1,
-    "alcance_medio": 10.0,
-    "views_total": 105,
+    "stories": 9,
+    "views_medio": 12.4,
+    "alcance_medio": 9.4,
+    "views_total": 112,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 6.1
@@ -2606,7 +2712,7 @@
    },
    {
     "nome": "TECH",
-    "stories": 1,
+    "stories": 2,
     "views_medio": 21.0,
     "alcance_medio": 13.0,
     "views_total": 21,
@@ -2636,10 +2742,10 @@
    },
    {
     "nome": "MODA",
-    "stories": 45,
-    "views_medio": 12.5,
-    "alcance_medio": 10.1,
-    "views_total": 537,
+    "stories": 47,
+    "views_medio": 12.4,
+    "alcance_medio": 10.0,
+    "views_total": 544,
     "respostas": 0,
     "visitas_perfil": 2,
     "saidas_pct": 9.0
@@ -2658,10 +2764,10 @@
    },
    {
     "nome": "oferta",
-    "stories": 70,
-    "views_medio": 15.2,
-    "alcance_medio": 11.3,
-    "views_total": 1032,
+    "stories": 73,
+    "views_medio": 15.1,
+    "alcance_medio": 11.2,
+    "views_total": 1039,
     "respostas": 0,
     "visitas_perfil": 4,
     "saidas_pct": 8.6
@@ -2677,6 +2783,6 @@
     "saidas_pct": null
    }
   ],
-  "menos_de_5": 2
+  "menos_de_5": 3
  }
 }
