@@ -5951,11 +5951,13 @@
    "postagens/2026-11-26-story-0ef7094d/01.jpg"
   ],
   "legenda": "Story: Garrafa térmica 1 L Termolar Magic Pump: R$ 57,23 (conferido em 23/11/2026) — antes R$ 58,20, queda de 2% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "COZINHA",
-  "num": 172
+  "num": 172,
+  "ig_id": "18457619710126620",
+  "publicado_em": "2026-11-26 08:51"
  },
  {
   "id": "2026-11-26-story-24cc9e6a",
