@@ -5708,8 +5708,8 @@
    "1a2ed99a",
    "96fd14c8"
   ],
-  "status": "planejado",
-  "nota": "Novo (29/10/2026): rascunho com preços de 29/10/2026. Reconferir na loja, gerar os cards (1080x1350, JPEG) e só então agendar. Preço do Mercado Livre pode variar por vendedor: reconferir antes.",
+  "status": "cancelado",
+  "nota": "Novo (29/10/2026): rascunho com preços de 29/10/2026. Reconferir na loja, gerar os cards (1080x1350, JPEG) e só então agendar. Preço do Mercado Livre pode variar por vendedor: reconferir antes. | 26/11/2026: cancelado (vencido sem sair; item 96fd14c8 removido; tema coberto por 2026-11-26-tech-meli, publicado).",
   "legenda": "4 achadinhos no Mercado Livre de R$ 23,40 a R$ 65,00 🔌\n1. Caixinha de Som USB para PC e Notebook: R$ 23,40\n2. Carregador Turbo 30W com Cabo para iPhone: R$ 44,00\n3. Tapete Higiênico Biosec, 50 un: R$ 44,94\n4. Mini Compressor de Ar Portátil Digital Sem Fio: R$ 65,00\nLink na bio. Salve pra comprar depois.\nPreços conferidos no Mercado Livre em 05/11/2026. Podem mudar.\n🔗 Link na bio → produto Nº 164\nPublicidade: links de afiliado\n#achadinhos #achadinhosmercadolivre #mercadolivre #ofertas #achadinhosdobinga",
   "num": 164
  },
@@ -6227,7 +6227,7 @@
    "fae05098",
    "22f38da9"
   ],
-  "status": "planejado",
+  "status": "agendado",
   "nota": "Preços reconferidos em 23/11/2026 (Amazon e Mercado Livre confirmados sem mudança de link quebrado; Shopee com altas reais: panelas 303,91→285,00, celular 1.889,00→2.299,00 — confirmar visualmente antes de publicar). No dia 27/11 de manhã trocar de novo pelo preço do dia; só falar em \"menor preço\" se o histórico confirmar. Falta gerar os cards.",
   "legenda": "Black Friday: 5 itens na minha lista e o preço de 23/11 🖤\nAnotei o preço de hoje pra comparar no dia. Só chamo de desconto o que o histórico confirmar.\n1. Máquina de Acabamento Kemei KM-2299: R$ 77,34 (Mercado Livre)\n2. LEGO Classic 10713 Maleta da Criatividade: R$ 94,89 (Amazon)\n3. Jogo de Ferramentas Vonder, 36 peças: R$ 150,00 (Amazon)\n4. Jogo de Panelas Brinox Ceramic Life, 6 peças: R$ 285,00 (Shopee)\n5. Celular Xiaomi Poco M8 5G 256GB: R$ 2.299,00 (Shopee)\nLink na bio. Salve pra comprar depois.\nPreços conferidos nas lojas em 23/11/2026. Podem mudar.\nComo Associado da Amazon, posso receber comissão pelas compras qualificadas.\n🔗 Link na bio → produto Nº 183\nPublicidade: links de afiliado\n#blackfriday #achadinhos #ofertas #achadinhosdobinga #bf2026",
   "num": 183,
@@ -7111,5 +7111,45 @@
    "postagens/2026-12-06-natal-ja-comprou-algum-presente/03.jpg"
   ],
   "legenda": "Faltam menos de 20 dias pro Natal (25/12). Como está a sua lista de presentes? 🎄\n\nJá comprou tudo, comprou alguns ou ainda não começou?\n\nConta nos comentários. Se ainda não começou, dá pra montar a lista pelo site, por categoria e por loja. Link na bio 🔗\n\nPublicidade: links de afiliado.\n\n#natal #presentes #achadinhos #dicasdecompra #comprasonline"
+ },
+ {
+  "id": "2026-11-29-story-6e9dbadd",
+  "data": "2026-11-29",
+  "hora": "07:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Condicionador Madamelis We Love Hair Love Hydra Maciez 200 m",
+  "produtos": [
+   "6e9dbadd"
+  ],
+  "imagens": [
+   "postagens/2026-11-29-story-6e9dbadd/01.jpg"
+  ],
+  "legenda": "Story: Condicionador Madamelis We Love Hair Love Hydra Maciez 200 ml: R$ 14,90 (conferido em 23/11/2026) — antes R$ 22,41, queda de 34% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA",
+  "num": 217
+ },
+ {
+  "id": "2026-11-29-story-542da9bc",
+  "data": "2026-11-29",
+  "hora": "08:45",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Aparador de Pelos Super Groom 10 Mondial Preto",
+  "produtos": [
+   "542da9bc"
+  ],
+  "imagens": [
+   "postagens/2026-11-29-story-542da9bc/01.jpg"
+  ],
+  "legenda": "Story: Aparador de Pelos Super Groom 10 Mondial Preto: R$ 110,19 (conferido em 23/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA",
+  "num": 218
  }
 ]
