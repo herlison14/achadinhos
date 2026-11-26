@@ -5994,11 +5994,13 @@
    "postagens/2026-11-26-story-3537cc1d/01.jpg"
   ],
   "legenda": "Story: Bolsa para Vinho Estampada, vermelha: R$ 59,99 (conferido em 23/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 174
+  "num": 174,
+  "ig_id": "18389121628235155",
+  "publicado_em": "2026-11-26 11:31"
  },
  {
   "id": "2026-11-26-tech-meli",
