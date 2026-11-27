@@ -6275,11 +6275,13 @@
    "postagens/2026-11-27-story-ebe21e2e/01.jpg"
   ],
   "legenda": "Story: Copo de Viagem 450ml, bege: R$ 25,99 (conferido em 26/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 184
+  "num": 184,
+  "ig_id": "18121438817001645",
+  "publicado_em": "2026-11-27 08:51"
  },
  {
   "id": "2026-11-27-story-1baf9abc",
