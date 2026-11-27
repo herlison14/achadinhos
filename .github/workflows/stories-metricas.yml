@@ -1,7 +1,7 @@
 name: Instagram (métricas dos Stories)
 on:
   schedule:
-    - cron: "20 */2 * * *"   # a cada 2 h: a Meta só mostra os números do Story enquanto ele está no ar (24 h)
+    - cron: "47 * * * *"   # de hora em hora, minuto 47 (menos disputado que :00/:20; o GitHub pulava execuções e deixava 6-12 h sem leitura): a Meta só mostra os números do Story enquanto ele está no ar (24 h)
   workflow_dispatch:
 permissions:
   contents: write   # só para gravar dados/stories_metricas.json (números de desempenho, sem segredo)

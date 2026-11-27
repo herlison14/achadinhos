@@ -46,6 +46,7 @@ correção nova, escreva aqui: a tarefa lê o arquivo inteiro antes de agir.
 | Sintoma no log | Correção automática |
 |---|---|
 | `rejected`/`non-fast-forward`/`cannot lock ref` no push, `Connection reset`, `timed out`, HTTP 5xx, `rate limit`, runner cancelado | Reexecutar só os jobs que falharam, uma vez: `gh api -X POST repos/herlison14/achadinhos/actions/runs/<id>/rerun-failed-jobs`. |
+| Fluxo "Instagram (métricas dos Stories)" sem rodar há mais de 6 h (o GitHub pula execuções agendadas; recorrente desde 17/11/2026) | Disparar uma vez à mão: `gh api -X POST repos/herlison14/achadinhos/actions/workflows/stories-metricas.yml/dispatches -f ref=main`, conferir após 2 min e registrar. Não conta como problema recorrente para push (já tem conserto definitivo: cron de hora em hora no minuto 47, desde 26/11/2026); só avisar se passar de 12 h ou o disparo falhar. |
 | Erro de código Python (Traceback) | Não muda código sozinho: avisar com arquivo, linha e a causa. |
 | `SINCRONIA` falhou | Rodar `python3 -I tools/sincronia.py` local; corrigir só o que estiver nas tabelas 2 e 3; o resto avisar. |
 
