@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-26 06:55",
+ "atualizado": "2026-11-26 21:11",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -267,6 +267,15 @@
    "nome": "MODA",
    "stories": [
     {
+     "id": "2026-11-26-story-24cc9e6a",
+     "data": "2026-11-27",
+     "hora": "18:30",
+     "tema": "Acessórios Rsv Porta-Cartão Basic, preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-26-story-24cc9e6a/01.jpg"
+    },
+    {
      "id": "2026-11-27-story-12906c2c",
      "data": "2026-11-27",
      "hora": "15:15",
@@ -334,8 +343,8 @@
      "data": "2026-11-26",
      "hora": "20:15",
      "tema": "Acessórios Rsv Sketchbook Office, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 20:21",
      "img": "postagens/2026-11-26-story-56c04883/01.jpg"
     },
     {
@@ -343,8 +352,8 @@
      "data": "2026-11-26",
      "hora": "18:30",
      "tema": "Caderno Capa Dura Pautado Mindset, off white",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 18:31",
      "img": "postagens/2026-11-26-story-e1a04228/01.jpg"
     },
     {
@@ -352,8 +361,8 @@
      "data": "2026-11-26",
      "hora": "16:45",
      "tema": "Acessórios Rsv Necessaire Mitaka, preta",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 16:51",
      "img": "postagens/2026-11-26-story-3585d070/01.jpg"
     },
     {
@@ -361,8 +370,8 @@
      "data": "2026-11-26",
      "hora": "15:15",
      "tema": "Kit de 3 Velas Aromáticas Beleza C&A",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 15:21",
      "img": "postagens/2026-11-26-story-a2936a75/01.jpg"
     },
     {
@@ -370,8 +379,8 @@
      "data": "2026-11-26",
      "hora": "13:15",
      "tema": "Acessórios Rsv Copo Minimal, verde",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 13:21",
      "img": "postagens/2026-11-26-story-32987bff/01.jpg"
     },
     {
@@ -379,18 +388,9 @@
      "data": "2026-11-26",
      "hora": "11:30",
      "tema": "Bolsa para Vinho Estampada, vermelha",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 11:31",
      "img": "postagens/2026-11-26-story-3537cc1d/01.jpg"
-    },
-    {
-     "id": "2026-11-26-story-24cc9e6a",
-     "data": "2026-11-26",
-     "hora": "10:00",
-     "tema": "Acessórios Rsv Porta-Cartão Basic, preto",
-     "status": "agendado",
-     "publicado_em": null,
-     "img": "postagens/2026-11-26-story-24cc9e6a/01.jpg"
     },
     {
      "id": "2026-11-25-story-c030e2cd",
@@ -992,6 +992,24 @@
      "img": "postagens/2026-12-05-story-aa0401d5/01.jpg"
     },
     {
+     "id": "2026-11-29-story-542da9bc",
+     "data": "2026-11-29",
+     "hora": "08:45",
+     "tema": "Aparador de Pelos Super Groom 10 Mondial Preto",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-29-story-542da9bc/01.jpg"
+    },
+    {
+     "id": "2026-11-29-story-6e9dbadd",
+     "data": "2026-11-29",
+     "hora": "07:30",
+     "tema": "Condicionador Madamelis We Love Hair Love Hydra Maciez 200 m",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-29-story-6e9dbadd/01.jpg"
+    },
+    {
      "id": "2026-11-28-story-470d5163",
      "data": "2026-11-28",
      "hora": "07:30",
@@ -1163,8 +1181,8 @@
      "data": "2026-11-26",
      "hora": "08:45",
      "tema": "Garrafa térmica 1 L Termolar Magic Pump",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 08:51",
      "img": "postagens/2026-11-26-story-0ef7094d/01.jpg"
     },
     {
@@ -1172,8 +1190,8 @@
      "data": "2026-11-26",
      "hora": "07:30",
      "tema": "Air Fryer Mondial Family 4 L com timer",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-26 07:31",
      "img": "postagens/2026-11-26-story-244eda85/01.jpg"
     },
     {
