@@ -6365,11 +6365,13 @@
    "postagens/2026-11-27-story-ef0d9d55/01.jpg"
   ],
   "legenda": "Story: Acessórios Rsv To Go, preto: R$ 68,90 (conferido em 26/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 187
+  "num": 187,
+  "ig_id": "18223722613357938",
+  "publicado_em": "2026-11-27 13:21"
  },
  {
   "id": "2026-11-27-story-12906c2c",
