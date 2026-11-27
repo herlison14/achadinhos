@@ -1,16 +1,10 @@
 {
- "gerado": "2026-11-26 14:18",
+ "gerado": "2026-11-26 21:45",
  "contagem": {
-  "MEDIO": 7,
+  "MEDIO": 5,
   "INFO": 1
  },
  "achados": [
-  {
-   "nivel": "MEDIO",
-   "area": "publicação",
-   "texto": "2026-11-27-bf-lista está só 'planejado' para 2026-11-27 08:00 (não vai sair sozinho)",
-   "acao": "aprovar (agendado) ou cancelar"
-  },
   {
    "nivel": "MEDIO",
    "area": "publicação",
@@ -26,7 +20,7 @@
   {
    "nivel": "MEDIO",
    "area": "preços",
-   "texto": "78 de 481 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
+   "texto": "76 de 481 itens sem conferência há mais de 7 dias (não vão a Instagram/Telegram)",
    "acao": "conferência diária pelo Chrome (tarefa das 11:07 precisa do computador ligado)"
   },
   {
@@ -40,12 +34,6 @@
    "area": "preços",
    "texto": "nenhum item da loja aliexpress conferido nos últimos 7 dias",
    "acao": "incluir na próxima conferência"
-  },
-  {
-   "nivel": "MEDIO",
-   "area": "calendário",
-   "texto": "2026-11-27 sem post de produto",
-   "acao": "completar a programação"
   },
   {
    "nivel": "MEDIO",
