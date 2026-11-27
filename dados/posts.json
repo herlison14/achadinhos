@@ -7166,5 +7166,45 @@
   "sem_preco": false,
   "area": "BELEZA",
   "num": 218
+ },
+ {
+  "id": "2026-11-28-story-a82261f8",
+  "data": "2026-11-28",
+  "hora": "11:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Máscara Madamelis We Love Hair Love Hydra Hidratação 200 ml",
+  "produtos": [
+   "a82261f8"
+  ],
+  "imagens": [
+   "postagens/2026-11-28-story-a82261f8/01.jpg"
+  ],
+  "legenda": "Story: Máscara Madamelis We Love Hair Love Hydra Hidratação 200 ml: R$ 15,90 (conferido em 23/11/2026) — antes R$ 24,21, queda de 34% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA",
+  "num": 219
+ },
+ {
+  "id": "2026-11-28-story-0049470d",
+  "data": "2026-11-28",
+  "hora": "18:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Chapinha Taiff Cerâmica 180",
+  "produtos": [
+   "0049470d"
+  ],
+  "imagens": [
+   "postagens/2026-11-28-story-0049470d/01.jpg"
+  ],
+  "legenda": "Story: Chapinha Taiff Cerâmica 180: R$ 113,91 (conferido em 23/11/2026) — antes R$ 119,00, queda de 4% no histórico. Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA",
+  "num": 220
  }
 ]
