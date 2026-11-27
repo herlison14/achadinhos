@@ -6297,11 +6297,13 @@
    "postagens/2026-11-27-story-1baf9abc/01.jpg"
   ],
   "legenda": "Story: Acessórios Rsv Porta-Cartão Minimal, preto: R$ 129,00 (conferido em 26/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 185
+  "num": 185,
+  "ig_id": "18117125291629410",
+  "publicado_em": "2026-11-27 10:01"
  },
  {
   "id": "2026-11-27-hoje-black-friday-5-conferencias",
