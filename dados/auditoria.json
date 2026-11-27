@@ -1,16 +1,10 @@
 {
- "gerado": "2026-11-27 08:21",
+ "gerado": "2026-11-27 13:54",
  "contagem": {
-  "MEDIO": 6,
-  "INFO": 1
+  "INFO": 1,
+  "MEDIO": 5
  },
  "achados": [
-  {
-   "nivel": "MEDIO",
-   "area": "publicação",
-   "texto": "sem Story em 2026-11-29 às 11:30, 18:30",
-   "acao": "rodar tools/stories.py (precisa de itens conferidos há até 3 dias)"
-  },
   {
    "nivel": "INFO",
    "area": "telegram",

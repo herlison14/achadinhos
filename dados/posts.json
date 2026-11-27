@@ -7222,5 +7222,45 @@
   "sem_preco": false,
   "area": "BELEZA",
   "num": 220
+ },
+ {
+  "id": "2026-11-29-story-fae05098",
+  "data": "2026-11-29",
+  "hora": "11:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Jogo de Panelas Brinox Ceramic Life Easy 6 Peças",
+  "produtos": [
+   "fae05098"
+  ],
+  "imagens": [
+   "postagens/2026-11-29-story-fae05098/01.jpg"
+  ],
+  "legenda": "Story: Jogo de Panelas Brinox Ceramic Life Easy 6 Peças: R$ 309,99 (conferido em 26/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "COZINHA",
+  "num": 221
+ },
+ {
+  "id": "2026-11-29-story-669494f8",
+  "data": "2026-11-29",
+  "hora": "18:30",
+  "formato": "story",
+  "canal": "ig",
+  "tema": "Story: Máquina de Acabamento Kemei KM-2299 Profissional",
+  "produtos": [
+   "669494f8"
+  ],
+  "imagens": [
+   "postagens/2026-11-29-story-669494f8/01.jpg"
+  ],
+  "legenda": "Story: Máquina de Acabamento Kemei KM-2299 Profissional: R$ 78,93 (conferido em 26/11/2026). Publicidade: links de afiliado.",
+  "status": "agendado",
+  "objetivo": "story",
+  "sem_preco": false,
+  "area": "BELEZA",
+  "num": 222
  }
 ]
