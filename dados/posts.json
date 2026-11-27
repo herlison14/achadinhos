@@ -6343,11 +6343,13 @@
    "postagens/2026-11-27-story-617eeddf/01.jpg"
   ],
   "legenda": "Story: Kit Brisa Cítrica com Difusor de Ambiente e Sabonete Líquido Beleza C&A: R$ 89,99 (conferido em 26/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "MODA",
-  "num": 186
+  "num": 186,
+  "ig_id": "18472375750184841",
+  "publicado_em": "2026-11-27 11:31"
  },
  {
   "id": "2026-11-27-story-ef0d9d55",
