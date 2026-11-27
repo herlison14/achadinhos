@@ -1,31 +1,31 @@
 {
- "gerado_em": "2026-11-26",
+ "gerado_em": "2026-11-27",
  "datas_proximas": [
   {
    "nome": "Black Friday",
    "data": "2026-11-27",
-   "dias": 1,
-   "fase": "ultimos-dias",
+   "dias": 0,
+   "fase": "dia",
    "pauta": "preço inflado antes, como comparar com o histórico"
   },
   {
    "nome": "Cyber Monday",
    "data": "2026-11-30",
-   "dias": 4,
-   "fase": "contagem",
+   "dias": 3,
+   "fase": "ultimos-dias",
    "pauta": "tecnologia e eletrônicos"
   },
   {
    "nome": "Natal",
    "data": "2026-12-25",
-   "dias": 29,
+   "dias": 28,
    "fase": "esquenta",
    "pauta": "presentes, decoração, ceia, amigo secreto"
   },
   {
    "nome": "Ano Novo",
    "data": "2027-01-01",
-   "dias": 36,
+   "dias": 35,
    "fase": "esquenta",
    "pauta": "organização, casa, virada, metas"
   }
@@ -37,19 +37,19 @@
   },
   {
    "categoria": "Casa e cozinha",
-   "quedas": 27
+   "quedas": 26
   },
   {
    "categoria": "Beleza e cuidados",
-   "quedas": 13
+   "quedas": 11
   },
   {
    "categoria": "Mercado e guloseimas",
    "quedas": 7
   },
   {
-   "categoria": "Infantil e brinquedos",
-   "quedas": 4
+   "categoria": "Ferramentas e garagem",
+   "quedas": 3
   }
  ],
  "categorias_com_mais_ofertas": [
