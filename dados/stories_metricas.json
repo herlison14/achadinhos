@@ -2508,8 +2508,8 @@
     "28b9a809"
    ],
    "tema": "Story: Garrafa de Metal Limão, branca",
-   "lido_em": "2026-11-27 16:12",
-   "horas_no_ar": 18.2,
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 24,
    "views": 7,
    "reach": 6,
    "replies": 0,
@@ -2530,16 +2530,19 @@
     "71623c4d"
    ],
    "tema": "Story: Acessórios Rsv Kit Lancheira Office, preta",
-   "lido_em": "2026-11-27 16:12",
-   "horas_no_ar": 8.7,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 15.7,
+   "views": 10,
+   "reach": 9,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 3,
+   "navegacao": {
+    "tap_exit": 2,
+    "tap_forward": 7
+   }
   },
   "2026-11-27-story-ebe21e2e": {
    "publicado_em": "2026-11-27 08:51",
@@ -2550,16 +2553,19 @@
     "ebe21e2e"
    ],
    "tema": "Story: Copo de Viagem 450ml, bege",
-   "lido_em": "2026-11-27 16:12",
-   "horas_no_ar": 7.4,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 14.4,
+   "views": 8,
+   "reach": 7,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 3,
+   "navegacao": {
+    "tap_forward": 5,
+    "tap_exit": 2
+   }
   },
   "2026-11-27-story-1baf9abc": {
    "publicado_em": "2026-11-27 10:01",
@@ -2570,16 +2576,18 @@
     "1baf9abc"
    ],
    "tema": "Story: Acessórios Rsv Porta-Cartão Minimal, preto",
-   "lido_em": "2026-11-27 16:12",
-   "horas_no_ar": 6.2,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 13.2,
+   "views": 8,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 3,
+   "navegacao": {
+    "tap_forward": 7
+   }
   },
   "2026-11-27-story-617eeddf": {
    "publicado_em": "2026-11-27 11:31",
@@ -2590,16 +2598,18 @@
     "617eeddf"
    ],
    "tema": "Story: Kit Brisa Cítrica com Difusor de Ambiente e Sabonete Líquido",
-   "lido_em": "2026-11-27 16:12",
-   "horas_no_ar": 4.7,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 11.7,
+   "views": 8,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 3,
+   "navegacao": {
+    "tap_forward": 7
+   }
   },
   "2026-11-27-story-ef0d9d55": {
    "publicado_em": "2026-11-27 13:21",
@@ -2610,16 +2620,19 @@
     "ef0d9d55"
    ],
    "tema": "Story: Acessórios Rsv To Go, preto",
-   "lido_em": "2026-11-27 16:12",
-   "horas_no_ar": 2.9,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 9.9,
+   "views": 8,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 3,
+   "navegacao": {
+    "tap_forward": 6,
+    "tap_exit": 1
+   }
   },
   "2026-11-27-story-12906c2c": {
    "publicado_em": "2026-11-27 15:21",
@@ -2630,19 +2643,46 @@
     "12906c2c"
    ],
    "tema": "Story: Acessórios Rsv Caneca Mug, preto e natural",
-   "lido_em": "2026-11-27 16:12",
-   "horas_no_ar": 0.9,
-   "views": "menos de 5",
-   "reach": "menos de 5",
-   "replies": "menos de 5",
-   "shares": "menos de 5",
-   "follows": "menos de 5",
-   "profile_visits": "menos de 5",
-   "total_interactions": "menos de 5",
-   "navegacao": null
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 7.9,
+   "views": 10,
+   "reach": 8,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 3,
+   "navegacao": {
+    "swipe_forward": 1,
+    "tap_exit": 2,
+    "tap_forward": 5
+   }
+  },
+  "2026-11-26-story-24cc9e6a": {
+   "publicado_em": "2026-11-27 18:31",
+   "hora": "18:30",
+   "area": "MODA",
+   "tipo": "oferta",
+   "produtos": [
+    "24cc9e6a"
+   ],
+   "tema": "Story: Acessórios Rsv Porta-Cartão Basic, preto",
+   "lido_em": "2026-11-27 23:13",
+   "horas_no_ar": 4.7,
+   "views": 7,
+   "reach": 5,
+   "replies": 0,
+   "shares": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "total_interactions": 1,
+   "navegacao": {
+    "tap_exit": 1,
+    "tap_forward": 4
+   }
   }
  },
- "atualizado": "2026-11-27 16:12",
+ "atualizado": "2026-11-27 23:13",
  "resumo": {
   "stories_com_leitura_final": 87,
   "por_dia": [
