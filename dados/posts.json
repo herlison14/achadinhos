@@ -7207,11 +7207,13 @@
    "postagens/2026-11-28-story-a82261f8/01.jpg"
   ],
   "legenda": "Story: Máscara Madamelis We Love Hair Love Hydra Hidratação 200 ml: R$ 15,90 (conferido em 23/11/2026) — antes R$ 24,21, queda de 34% no histórico. Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
-  "num": 219
+  "num": 219,
+  "ig_id": "18119052923326645",
+  "publicado_em": "2026-11-28 11:31"
  },
  {
   "id": "2026-11-28-story-0049470d",
