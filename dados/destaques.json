@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-27 07:00",
+ "atualizado": "2026-11-28 06:15",
  "areas": [
   {
    "nome": "OFERTAS",
@@ -271,8 +271,8 @@
      "data": "2026-11-27",
      "hora": "18:30",
      "tema": "Acessórios Rsv Porta-Cartão Basic, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-27 18:31",
      "img": "postagens/2026-11-26-story-24cc9e6a/01.jpg"
     },
     {
@@ -280,8 +280,8 @@
      "data": "2026-11-27",
      "hora": "15:15",
      "tema": "Acessórios Rsv Caneca Mug, preto e natural",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-27 15:21",
      "img": "postagens/2026-11-27-story-12906c2c/01.jpg"
     },
     {
@@ -289,8 +289,8 @@
      "data": "2026-11-27",
      "hora": "13:15",
      "tema": "Acessórios Rsv To Go, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-27 13:21",
      "img": "postagens/2026-11-27-story-ef0d9d55/01.jpg"
     },
     {
@@ -298,8 +298,8 @@
      "data": "2026-11-27",
      "hora": "11:30",
      "tema": "Kit Brisa Cítrica com Difusor de Ambiente e Sabonete Líquido",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-27 11:31",
      "img": "postagens/2026-11-27-story-617eeddf/01.jpg"
     },
     {
@@ -307,8 +307,8 @@
      "data": "2026-11-27",
      "hora": "10:00",
      "tema": "Acessórios Rsv Porta-Cartão Minimal, preto",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-27 10:01",
      "img": "postagens/2026-11-27-story-1baf9abc/01.jpg"
     },
     {
@@ -316,8 +316,8 @@
      "data": "2026-11-27",
      "hora": "08:45",
      "tema": "Copo de Viagem 450ml, bege",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-27 08:51",
      "img": "postagens/2026-11-27-story-ebe21e2e/01.jpg"
     },
     {
@@ -325,8 +325,8 @@
      "data": "2026-11-27",
      "hora": "07:30",
      "tema": "Acessórios Rsv Kit Lancheira Office, preta",
-     "status": "agendado",
-     "publicado_em": null,
+     "status": "publicado",
+     "publicado_em": "2026-11-27 07:31",
      "img": "postagens/2026-11-27-story-71623c4d/01.jpg"
     },
     {
@@ -992,6 +992,15 @@
      "img": "postagens/2026-12-05-story-aa0401d5/01.jpg"
     },
     {
+     "id": "2026-11-29-story-669494f8",
+     "data": "2026-11-29",
+     "hora": "18:30",
+     "tema": "Máquina de Acabamento Kemei KM-2299 Profissional",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-29-story-669494f8/01.jpg"
+    },
+    {
      "id": "2026-11-29-story-542da9bc",
      "data": "2026-11-29",
      "hora": "08:45",
@@ -1194,6 +1203,15 @@
   {
    "nome": "COZINHA",
    "stories": [
+    {
+     "id": "2026-11-29-story-fae05098",
+     "data": "2026-11-29",
+     "hora": "11:30",
+     "tema": "Jogo de Panelas Brinox Ceramic Life Easy 6 Peças",
+     "status": "agendado",
+     "publicado_em": null,
+     "img": "postagens/2026-11-29-story-fae05098/01.jpg"
+    },
     {
      "id": "2026-11-26-story-0ef7094d",
      "data": "2026-11-26",
