@@ -45,6 +45,7 @@ footer{padding:8px 16px 40px;color:var(--mut);font-size:.9rem}
 <li>Contamos cliques nos botões das ofertas e as buscas que não acharam nada, <strong>sem guardar IP</strong> e sem identificar ninguém.</li>
 <li>Ao clicar em uma oferta você sai do site e passa a seguir a política da loja.</li>
 <li>Se você comentar nos nossos posts ou mandar mensagem para o <strong>robô de respostas</strong> (Instagram e Telegram), usamos o texto só para responder na hora e <strong>não guardamos</strong> a conversa.</li>
+<li>Se você enviar uma <strong>foto</strong> na caixa "Procura um produto específico?", ela é reduzida no seu aparelho, usada só para identificar o produto e <strong>não fica guardada</strong> (<a href="#pedir-produto">detalhes</a>).</li>
 <li>Você pode falar com a gente a qualquer momento pelo contato abaixo.</li>
 </ul>
 </section>
@@ -78,6 +79,17 @@ footer{padding:8px 16px 40px;color:var(--mut);font-size:.9rem}
 <li><strong>Registros técnicos:</strong> a Cloudflare guarda por pouco tempo os registros de funcionamento do robô (por exemplo, "resposta enviada" ou o código de erro devolvido pela Meta). Não gravamos o conteúdo da sua mensagem nesses registros; comentários que parecem reclamação ou golpe são ignorados pelo robô e só o identificador do comentário é anotado para uma pessoa olhar.</li>
 <li><strong>Compartilhamento:</strong> não vendemos nem repassamos esses dados e não os usamos para anúncios ou para montar perfil de ninguém. Eles passam apenas pela Meta (Instagram), pelo Telegram e pela Cloudflare, que os tratam sob as políticas delas.</li>
 <li><strong>Para parar:</strong> escreva "parar" na conversa e o robô não manda mais nada. Você também pode apagar seu comentário ou a conversa no próprio aplicativo.</li>
+</ul>
+</section>
+
+<section class="card" id="pedir-produto">
+<h2>Caixa "Procura um produto específico?" (texto, link ou foto)</h2>
+<p>No site você pode escrever o nome de um produto, colar o link de uma loja ou enviar uma foto do que procura. Usamos isso só para mostrar ofertas parecidas que já conferimos e abrir a busca nas lojas parceiras.</p>
+<ul>
+<li><strong>Texto e link:</strong> o link colado é lido no seu próprio navegador, só para tirar o nome do produto dele; não abrimos nem guardamos o link. O texto buscado entra na contagem anônima de buscas (item 3 acima).</li>
+<li><strong>Foto:</strong> antes de enviar, a foto é reduzida no seu aparelho, o que também apaga dados escondidos nela, como local e data. Ela é enviada ao nosso contador na Cloudflare e analisada por um modelo de inteligência artificial (Workers AI, da Cloudflare, com modelo da Meta) <strong>só para descobrir o nome do produto</strong>. A foto <strong>não é gravada</strong> por nós em nenhum banco, arquivo ou registro, e não é usada para treinar nada nem para montar perfil de ninguém. O resultado é apenas um nome, que você pode corrigir antes de buscar. Evite enviar fotos com pessoas, documentos ou outros dados pessoais.</li>
+<li><strong>Limite de uso:</strong> para evitar abuso e custo, limitamos as fotos por dia. Para isso guardamos, só até o dia seguinte, um código irreversível (que não permite descobrir seu IP) e a contagem de fotos daquele dia. Depois disso ele é apagado.</li>
+<li><strong>Base legal:</strong> legítimo interesse (art. 7º, IX da LGPD) em oferecer a busca e proteger o serviço contra abuso. Se preferir não usar a foto, é só escrever o nome do produto.</li>
 </ul>
 </section>
 

@@ -264,6 +264,25 @@ footer{margin-top:34px;border-top:1px solid var(--line);padding:18px 0 96px}
 .rc .k.pct{width:auto;min-width:24px;padding:0 8px;background:var(--acc);color:#fff;border-radius:12px;font-size:.78rem}
 .rc .p small.era{text-decoration:line-through}
 .pgs h2{font-family:var(--disp);font-size:1.15rem;margin:0 0 10px}.nav2{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}.nav2 a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-weight:800;font-size:.85rem;text-decoration:none}
+.pedir{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:18px 0}
+.pedir h2{font-family:var(--disp);font-size:1.15rem;margin:0 0 4px}
+.pedir .pds{margin:0 0 12px;color:var(--mut);font-size:.92rem}
+.pedir textarea{display:block;width:100%;min-height:64px;resize:vertical;font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--fg)}
+.pedir textarea:focus-visible,.pdbt:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.pdb{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.pdbt{font:inherit;font-weight:800;font-size:.9rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer}
+.pdbt.pri{background:var(--pill);color:var(--pillfg);border-color:transparent}
+.pdbt:disabled{opacity:.6;cursor:default}
+.pdm{min-height:1.3em;margin:10px 0 0;font-size:.9rem;color:var(--mut)}.pdm.ok{color:var(--fg);font-weight:700}
+#pdprev{display:flex;align-items:center;gap:10px;margin:10px 0 0}#pdprev[hidden]{display:none}
+#pdprev img{width:64px;height:64px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.pdnota{font-size:.8rem;color:var(--mut);margin:10px 0 0}.pdnota a{color:inherit}
+#pdres{margin-top:12px}#pdres h3{font-family:var(--disp);font-size:1.05rem;margin:0 0 8px}
+#pdres .vbt{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+#pdres .vbt a,#pdres .pdver{display:inline-block;background:var(--pill);color:var(--pillfg);text-decoration:none;font-weight:800;font-size:.9rem;padding:10px 16px;border-radius:999px;border:0;font-family:inherit;cursor:pointer}
+#pdres .vpl{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:6px}
+#pdres .vpl a{display:flex;justify-content:space-between;gap:10px;color:inherit;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-weight:700;font-size:.88rem}
+#pdres .vpl b{color:var(--acc);white-space:nowrap}
 /* busca-css-fim */
 .brand{display:grid!important;grid-template-columns:1fr auto 1fr;gap:8px}.brand .lg{justify-self:start}.brand .vi{justify-self:center}.brand .ig{justify-self:end}.vi{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:.85rem;text-decoration:none;background:var(--pill);color:var(--pillfg);padding:9px 14px;border-radius:999px;white-space:nowrap}.vi svg{width:16px;height:16px}.vi:hover{filter:brightness(1.08)}@media (max-width:719px){.brand .ig{font-size:0;gap:0;padding:10px}.brand .ig svg{width:20px;height:20px}.brand .vi{padding:9px 12px}}
 </style>
@@ -521,6 +540,19 @@ footer{margin-top:72px;padding:36px 0 110px}
 <p>Não achou? Peça pra gente e a gente procura o melhor preço.</p>
 <a href="https://ig.me/m/achadinhosdobinga" rel="noopener">Pedir este produto</a>
 </div>
+<section id="pedir" class="pedir" aria-labelledby="pdt">
+<h2 id="pdt">Procura um produto específico?</h2>
+<p class="pds">Escreva o nome, cole o link de uma loja ou envie uma foto. Mostramos o que já conferimos e abrimos a busca nas lojas.</p>
+<form id="pdf" onsubmit="return false">
+<label for="pdq" class="vh">Nome do produto ou link</label>
+<textarea id="pdq" rows="2" maxlength="300" placeholder="Ex.: tênis de corrida Olympikus, ou cole um link"></textarea>
+<div id="pdprev" hidden><img id="pdimg" alt="Foto escolhida" width="64" height="64"><button type="button" class="pdbt" id="pdrm">Remover foto</button></div>
+<div class="pdb"><button type="button" class="pdbt" id="pdfoto">Enviar foto</button><input type="file" id="pdarq" accept="image/*" hidden><button type="submit" class="pdbt pri" id="pdgo">Procurar</button></div>
+<p class="pdm" id="pdm" role="status" aria-live="polite"></p>
+</form>
+<div id="pdres" aria-live="polite"></div>
+<p class="pdnota">A foto é reduzida no seu aparelho, usada só para identificar o produto e não fica guardada. <a href="privacidade.html#pedir-produto">Saiba mais</a>. Publicidade: links de afiliado.</p>
+</section>
 <!--busca-fim-->
 <main id="ofertas">
 <h2>Casa e cozinha</h2>
@@ -842,6 +874,85 @@ var msgs=$$('.ann .in span');
 if(msgs.length>1&&window.matchMedia&&window.matchMedia('(max-width:719px)').matches&&!window.matchMedia('(prefers-reduced-motion:reduce)').matches){
 var k=0;setInterval(function(){msgs[k].classList.remove('on');k=(k+1)%msgs.length;msgs[k].classList.add('on');},4000);
 }
+/* pedir um produto: texto, link ou foto */
+(function(){
+var W='https://cliques-binga.herlison14.workers.dev',AMZ='https://www.amazon.com.br/s?k=',TAG='&tag=herlisonsanto-20',MAG='https://www.magazinevoce.com.br/magazinein_400408/busca/';
+var pq=$('#pdq'),pf=$('#pdf');if(!pq||!pf)return;
+var pgo=$('#pdgo'),pfoto=$('#pdfoto'),parq=$('#pdarq'),pm=$('#pdm'),pres=$('#pdres'),pprev=$('#pdprev'),pimg=$('#pdimg'),prm=$('#pdrm');
+var ocupado=false,espera=0;
+function msg(t,ok){pm.textContent=t||'';pm.className='pdm'+(ok?' ok':'');}
+function termoDeLink(s){var u;try{u=new URL(s);}catch(e){return '';}
+var melhor=[];
+u.pathname.split('/').filter(Boolean).forEach(function(sg){
+try{sg=decodeURIComponent(sg);}catch(e){}
+if(/^(dp|gp|p|i|item|produto|product|s|c|ip|cj)$/i.test(sg))return;
+var w=sg.replace(/\.html?$/i,'').replace(/_JM$/i,'').split(/[-_+ ]+/).filter(function(x){return x&&x.length<30&&!/^\d+$/.test(x)&&!/^mlbu?\d*$/i.test(x)&&!/^i\.\d/.test(x)&&!/[=%]/.test(x);});
+if(w.length>melhor.length)melhor=w;});
+return melhor.length>=2?melhor.join(' ').slice(0,60):'';}
+function beacon(t){var k=t.toLowerCase();if(bFeitos[k])return;bFeitos[k]=1;
+try{var d=JSON.stringify({t:t});if(!(navigator.sendBeacon&&navigator.sendBeacon(W+'/b',new Blob([d],{type:'text/plain;charset=UTF-8'}))))fetch(W+'/b',{method:'POST',body:d,keepalive:true,mode:'no-cors'});}catch(_){}}
+function mostrar(t){
+pres.textContent='';
+var e=encodeURIComponent(t),terms=norm(t).split(/\s+/).filter(function(x){return x.length>=3;}),cand=[];
+var minimo=terms.length>=3?2:1;
+if(terms.length)items.forEach(function(li){var s=0;terms.forEach(function(x){if(li._t.indexOf(x)>-1)s++;});if(s>=minimo)cand.push([s,li]);});
+cand.sort(function(a,b){return b[0]-a[0];});
+pres.appendChild(mk('h3','','Resultados para “'+t+'”'));
+if(cand.length){pres.appendChild(mk('p','pdm','Já conferidos por aqui:'));
+var ul=mk('ul','vpl');
+cand.slice(0,4).forEach(function(c){var a=c[1].querySelector('a'),nm=c[1].querySelector('.nm'),pr=c[1].querySelector('.pr b');if(!a||!nm)return;
+var l=mk('li'),x=mk('a');x.href=a.href;x.rel='noopener sponsored';x.target='_blank';x.setAttribute('data-p',nm.textContent);x.setAttribute('data-c','Pedir um produto (catálogo)');
+x.appendChild(mk('span','nm',nm.textContent));if(pr)x.appendChild(mk('b','',pr.textContent));l.appendChild(x);ul.appendChild(l);});
+pres.appendChild(ul);
+var ver=mk('button','pdver','Ver todos no catálogo');ver.type='button';
+ver.addEventListener('click',function(){q.value=t;run();lista.scrollIntoView({behavior:REDUCE?'auto':'smooth',block:'start'});});
+pres.appendChild(ver);}
+else pres.appendChild(mk('p','pdm','Não temos esse produto conferido. Procure direto nas lojas:'));
+var bt=mk('div','vbt'),a1=mk('a','','Buscar na Amazon'),a2=mk('a','','Buscar no Magalu');
+a1.href=AMZ+e+TAG;a2.href=MAG+e.replace(/%20/g,'+')+'/';
+[a1,a2].forEach(function(a){a.rel='noopener sponsored';a.target='_blank';a.setAttribute('data-p','Pedido: '+t);a.setAttribute('data-c','Pedir um produto');bt.appendChild(a);});
+pres.appendChild(bt);
+pres.appendChild(mk('p','pdnota','A busca abre na loja; preço e estoque são os de lá. Se não achar, peça pelo Instagram: @achadinhosdobinga.'));
+beacon(t);}
+function procurar(txt){
+var t=(txt||'').trim();
+if(!t){msg('Escreva o nome do produto, cole um link ou envie uma foto.');pq.focus();return;}
+var m=t.match(/https?:\/\/\S+/i);
+if(m){var d=termoDeLink(m[0]);if(!d){msg('Esse link não traz o nome do produto. Escreva o nome ou envie uma foto.');return;}t=d;pq.value=d;}
+t=t.replace(/\s+/g,' ').slice(0,60);msg('');mostrar(t);}
+function reduzir(f){
+if(!/^image\//.test(f.type)||f.size>15*1024*1024)return Promise.reject(new Error('arquivo'));
+if(!window.createImageBitmap)return Promise.reject(new Error('suporte'));
+return createImageBitmap(f,{imageOrientation:'from-image'}).catch(function(){return createImageBitmap(f);}).then(function(bmp){
+var L=768,s=Math.min(1,L/Math.max(bmp.width,bmp.height)),c=document.createElement('canvas');
+c.width=Math.max(1,Math.round(bmp.width*s));c.height=Math.max(1,Math.round(bmp.height*s));
+var g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,c.width,c.height);g.drawImage(bmp,0,0,c.width,c.height);if(bmp.close)bmp.close();
+return c.toDataURL('image/jpeg',0.72);});}
+function foto(f){
+if(ocupado)return;
+if(Date.now()<espera){msg('Aguarde alguns segundos para enviar outra foto.');return;}
+ocupado=true;pfoto.disabled=true;pgo.disabled=true;msg('Lendo a foto…');
+var falha='A busca por foto não está disponível agora. Escreva o nome do produto.';
+reduzir(f).then(function(du){
+pimg.src=du;pprev.hidden=false;msg('Identificando o produto…');
+var ctl=window.AbortController?new AbortController():null,tm=setTimeout(function(){if(ctl)ctl.abort();},25000);
+return fetch(W+'/identificar',{method:'POST',body:JSON.stringify({img:du}),headers:{'Content-Type':'text/plain;charset=UTF-8'},signal:ctl?ctl.signal:undefined}).then(function(r){clearTimeout(tm);
+return r.json().catch(function(){return {};}).then(function(j){return {s:r.status,j:j||{}};});});
+},function(){throw new Error('abrir');}).then(function(r){
+if(r.s===429){msg('Hoje já recebemos muitas fotos. Escreva o nome do produto que a gente procura.');return;}
+if(r.s!==200){msg(falha);return;}
+var n=String(r.j.nome||'').replace(/\s+/g,' ').trim().slice(0,60);
+if(!n){msg('Não consegui identificar um produto nessa foto. Escreva o nome ou tente outra foto.');return;}
+pq.value=n;msg('Parece ser: '+n+'. Se não for, corrija o texto e toque em Procurar.',true);mostrar(n);
+}).catch(function(e){msg(e&&e.message==='abrir'?'Não consegui abrir essa foto. Tente uma foto JPG ou PNG.':falha);
+}).then(function(){ocupado=false;pfoto.disabled=false;pgo.disabled=false;espera=Date.now()+8000;});}
+pf.addEventListener('submit',function(){procurar(pq.value);});
+pq.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();procurar(pq.value);}});
+pfoto.addEventListener('click',function(){parq.click();});
+parq.addEventListener('change',function(){var f=parq.files&&parq.files[0];parq.value='';if(f)foto(f);});
+prm.addEventListener('click',function(){pimg.removeAttribute('src');pprev.hidden=true;msg('');});
+pq.addEventListener('paste',function(e){var fs=e.clipboardData&&e.clipboardData.files;if(fs&&fs[0]&&/^image\//.test(fs[0].type)){e.preventDefault();foto(fs[0]);}});
+})();
 })();
 /* busca-js-fim */
 </script>

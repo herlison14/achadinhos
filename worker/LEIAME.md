@@ -9,6 +9,8 @@ O Worker publicado (Cloudflare) tem o contador de cliques (`POST /c`, `GET /rela
 
 4. `bloco_5_visitas.js` — visitas reais e funil: `POST /v` (público, aviso do `cliques.js` quando um navegador de verdade abre a página; só dia, origem, tipo de página e se é a 1ª da sessão; tabela `visitas` criada sozinha) e `GET /api/funil` (aba **Funil** do painel: visitas → cliques → pedidos do CSV, só contagens, atrás de `protegido`). Rotas: `if (url.pathname === '/v') return visitaRegistrar(req, env);` e `if (url.pathname === '/api/funil') return protegido(req, env, url, apiFunil);`. Criado em 12/11/2026. **Atualizado em 14/11/2026:** `apiFunil` também lê a tabela `interacoes_robo` (dia, canal, tipo, n — sem identificar ninguém) e devolve em `interacoesRobo`; essa tabela é escrita pelo Worker `bot-binga` (ver `worker/bot/LEIAME.md`), que precisa estar vinculado ao MESMO banco D1 deste Worker (vinculação `DB`) para os números aparecerem.
 
+5. `bloco_6_identificar.js` — caixa "Procura um produto específico?" do site: `POST /identificar` (público, só do próprio site) recebe uma foto já reduzida e devolve `{nome}` usando o Workers AI (`@cf/meta/llama-3.2-11b-vision-instruct`). **Antes de colar:** vincular o Workers AI com o nome `AI` e aceitar a licença do modelo (passo a passo no cabeçalho do arquivo). Rota: `if (url.pathname === '/identificar') return identificarProduto(req, env);`. A foto não é gravada; limites por dia (300 no total, 8 por visitante) com tabela `ident_uso` (só hash do IP + dia, apagada no dia seguinte). Sem este bloco o site continua funcionando só com texto/link. Criado em 28/11/2026.
+
 Rotas dentro do `fetch`, logo depois de `const url = new URL(req.url);`:
 
 ```js
