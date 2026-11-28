@@ -2530,8 +2530,8 @@
     "71623c4d"
    ],
    "tema": "Story: Acessórios Rsv Kit Lancheira Office, preta",
-   "lido_em": "2026-11-27 23:13",
-   "horas_no_ar": 15.7,
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 24,
    "views": 10,
    "reach": 9,
    "replies": 0,
@@ -2553,18 +2553,18 @@
     "ebe21e2e"
    ],
    "tema": "Story: Copo de Viagem 450ml, bege",
-   "lido_em": "2026-11-27 23:13",
-   "horas_no_ar": 14.4,
-   "views": 8,
-   "reach": 7,
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 23.1,
+   "views": 9,
+   "reach": 8,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 3,
    "navegacao": {
-    "tap_forward": 5,
-    "tap_exit": 2
+    "tap_exit": 2,
+    "tap_forward": 6
    }
   },
   "2026-11-27-story-1baf9abc": {
@@ -2576,17 +2576,17 @@
     "1baf9abc"
    ],
    "tema": "Story: Acessórios Rsv Porta-Cartão Minimal, preto",
-   "lido_em": "2026-11-27 23:13",
-   "horas_no_ar": 13.2,
-   "views": 8,
-   "reach": 8,
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 21.9,
+   "views": 9,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 3,
    "navegacao": {
-    "tap_forward": 7
+    "tap_forward": 8
    }
   },
   "2026-11-27-story-617eeddf": {
@@ -2598,17 +2598,17 @@
     "617eeddf"
    ],
    "tema": "Story: Kit Brisa Cítrica com Difusor de Ambiente e Sabonete Líquido",
-   "lido_em": "2026-11-27 23:13",
-   "horas_no_ar": 11.7,
-   "views": 8,
-   "reach": 8,
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 20.4,
+   "views": 10,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 3,
    "navegacao": {
-    "tap_forward": 7
+    "tap_forward": 9
    }
   },
   "2026-11-27-story-ef0d9d55": {
@@ -2620,18 +2620,19 @@
     "ef0d9d55"
    ],
    "tema": "Story: Acessórios Rsv To Go, preto",
-   "lido_em": "2026-11-27 23:13",
-   "horas_no_ar": 9.9,
-   "views": 8,
-   "reach": 8,
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 18.6,
+   "views": 10,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 3,
    "navegacao": {
-    "tap_forward": 6,
-    "tap_exit": 1
+    "tap_back": 1,
+    "tap_exit": 1,
+    "tap_forward": 7
    }
   },
   "2026-11-27-story-12906c2c": {
@@ -2643,19 +2644,19 @@
     "12906c2c"
    ],
    "tema": "Story: Acessórios Rsv Caneca Mug, preto e natural",
-   "lido_em": "2026-11-27 23:13",
-   "horas_no_ar": 7.9,
-   "views": 10,
-   "reach": 8,
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 16.6,
+   "views": 11,
+   "reach": 9,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 3,
    "navegacao": {
-    "swipe_forward": 1,
+    "tap_forward": 6,
     "tap_exit": 2,
-    "tap_forward": 5
+    "swipe_forward": 1
    }
   },
   "2026-11-26-story-24cc9e6a": {
@@ -2667,24 +2668,44 @@
     "24cc9e6a"
    ],
    "tema": "Story: Acessórios Rsv Porta-Cartão Basic, preto",
-   "lido_em": "2026-11-27 23:13",
-   "horas_no_ar": 4.7,
-   "views": 7,
-   "reach": 5,
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 13.4,
+   "views": 10,
+   "reach": 8,
    "replies": 0,
    "shares": 0,
    "follows": 0,
    "profile_visits": 0,
    "total_interactions": 1,
    "navegacao": {
-    "tap_exit": 1,
-    "tap_forward": 4
+    "tap_forward": 7,
+    "tap_exit": 1
    }
+  },
+  "2026-11-28-story-470d5163": {
+   "publicado_em": "2026-11-28 07:31",
+   "hora": "07:30",
+   "area": "BELEZA",
+   "tipo": "oferta",
+   "produtos": [
+    "470d5163"
+   ],
+   "tema": "Story: NIVEA SUN Protetor Solar Protect & Hidrata FPS 50 200 ml",
+   "lido_em": "2026-11-28 07:56",
+   "horas_no_ar": 0.4,
+   "views": "menos de 5",
+   "reach": "menos de 5",
+   "replies": "menos de 5",
+   "shares": "menos de 5",
+   "follows": "menos de 5",
+   "profile_visits": "menos de 5",
+   "total_interactions": "menos de 5",
+   "navegacao": null
   }
  },
- "atualizado": "2026-11-27 23:13",
+ "atualizado": "2026-11-28 07:56",
  "resumo": {
-  "stories_com_leitura_final": 87,
+  "stories_com_leitura_final": 92,
   "por_dia": [
    {
     "nome": "2026-11-16",
@@ -2795,28 +2816,38 @@
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 10.3
+   },
+   {
+    "nome": "2026-11-27",
+    "stories": 5,
+    "views_medio": 9.6,
+    "alcance_medio": 8.8,
+    "views_total": 48,
+    "respostas": 0,
+    "visitas_perfil": 0,
+    "saidas_pct": 17.2
    }
   ],
   "por_hora": [
    {
     "nome": "07:30",
-    "stories": 4,
-    "views_medio": 23.8,
-    "alcance_medio": 16.8,
-    "views_total": 95,
+    "stories": 5,
+    "views_medio": 21.0,
+    "alcance_medio": 15.2,
+    "views_total": 105,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 9.5
+    "saidas_pct": 10.5
    },
    {
     "nome": "08:45",
-    "stories": 6,
-    "views_medio": 16.0,
-    "alcance_medio": 11.0,
-    "views_total": 96,
+    "stories": 7,
+    "views_medio": 15.0,
+    "alcance_medio": 10.6,
+    "views_total": 105,
     "respostas": 0,
     "visitas_perfil": 1,
-    "saidas_pct": 7.0
+    "saidas_pct": 9.1
    },
    {
     "nome": "09:30",
@@ -2830,30 +2861,30 @@
    },
    {
     "nome": "10:00",
-    "stories": 10,
-    "views_medio": 16.3,
-    "alcance_medio": 11.9,
-    "views_total": 163,
+    "stories": 11,
+    "views_medio": 15.6,
+    "alcance_medio": 11.6,
+    "views_total": 172,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 10.8
    },
    {
     "nome": "11:30",
-    "stories": 10,
-    "views_medio": 12.2,
-    "alcance_medio": 9.9,
-    "views_total": 122,
+    "stories": 11,
+    "views_medio": 12.0,
+    "alcance_medio": 9.8,
+    "views_total": 132,
     "respostas": 0,
     "visitas_perfil": 0,
     "saidas_pct": 9.0
    },
    {
     "nome": "13:15",
-    "stories": 11,
-    "views_medio": 12.5,
-    "alcance_medio": 10.5,
-    "views_total": 138,
+    "stories": 12,
+    "views_medio": 12.3,
+    "alcance_medio": 10.3,
+    "views_total": 148,
     "respostas": 0,
     "visitas_perfil": 1,
     "saidas_pct": 10.5
@@ -2972,13 +3003,13 @@
    },
    {
     "nome": "MODA",
-    "stories": 54,
-    "views_medio": 11.8,
+    "stories": 59,
+    "views_medio": 11.6,
     "alcance_medio": 9.5,
-    "views_total": 604,
+    "views_total": 652,
     "respostas": 0,
     "visitas_perfil": 2,
-    "saidas_pct": 9.1
+    "saidas_pct": 9.8
    }
   ],
   "por_tipo": [
@@ -2994,13 +3025,13 @@
    },
    {
     "nome": "oferta",
-    "stories": 82,
-    "views_medio": 14.4,
-    "alcance_medio": 10.7,
-    "views_total": 1120,
+    "stories": 87,
+    "views_medio": 14.1,
+    "alcance_medio": 10.6,
+    "views_total": 1168,
     "respostas": 0,
     "visitas_perfil": 4,
-    "saidas_pct": 8.7
+    "saidas_pct": 9.0
    },
    {
     "nome": "sem_preco",
