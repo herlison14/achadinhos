@@ -6428,11 +6428,13 @@
    "postagens/2026-11-28-story-470d5163/01.jpg"
   ],
   "legenda": "Story: NIVEA SUN Protetor Solar Protect & Hidrata FPS 50 200 ml: R$ 39,84 (conferido em 26/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "BELEZA",
-  "num": 195
+  "num": 195,
+  "ig_id": "18075954521495431",
+  "publicado_em": "2026-11-28 07:31"
  },
  {
   "id": "2026-11-28-story-cafebb2b",
