@@ -6450,11 +6450,13 @@
    "postagens/2026-11-28-story-cafebb2b/01.jpg"
   ],
   "legenda": "Story: Caixinha de Som USB para PC e Notebook Coolmusic 6W: R$ 23,40 (conferido em 26/11/2026). Publicidade: links de afiliado.",
-  "status": "agendado",
+  "status": "publicado",
   "objetivo": "story",
   "sem_preco": false,
   "area": "TECH",
-  "num": 198
+  "num": 198,
+  "ig_id": "18107569157457863",
+  "publicado_em": "2026-11-28 08:51"
  },
  {
   "id": "2026-11-28-cyber-monday-o-que-quer-ver",
